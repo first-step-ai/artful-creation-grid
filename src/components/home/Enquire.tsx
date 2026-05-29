@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { toast } from "sonner";
 import { useReveal } from "@/hooks/use-reveal";
+import studio from "@/assets/studio.jpg";
 
 const projectTypes = ["Bathroom", "Kitchen", "Laundry", "Whole home"];
 
