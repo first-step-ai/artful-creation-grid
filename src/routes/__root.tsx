@@ -77,6 +77,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "AM Bathrooms + Projects" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "AM Bathrooms + Projects — Sydney Renovation Specialists" },
+      { name: "twitter:title", content: "AM Bathrooms + Projects — Sydney Renovation Specialists" },
+      { property: "og:description", content: "Sydney design + build studio shaping bathrooms, kitchens, laundries and interiors since 1998." },
+      { name: "twitter:description", content: "Sydney design + build studio shaping bathrooms, kitchens, laundries and interiors since 1998." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/974a5e9b-be50-4d6f-9559-c62d32971168/id-preview-0ad1a1fa--7845c90f-b684-47ba-ac4e-fa40de7dabd9.lovable.app-1780039546659.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/974a5e9b-be50-4d6f-9559-c62d32971168/id-preview-0ad1a1fa--7845c90f-b684-47ba-ac4e-fa40de7dabd9.lovable.app-1780039546659.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
