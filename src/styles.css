@@ -49,6 +49,8 @@
   --burgundy-soft:  oklch(0.40 0.105 16);   /* #6b2a35 */
   --ivory:          oklch(0.94 0.012 70);   /* #f0ebe3 */
   --ivory-muted:    oklch(0.78 0.018 60);   /* #c9b9a8 */
+  --brass:          oklch(0.78 0.095 80);   /* warm brass accent */
+  --brass-soft:     oklch(0.68 0.075 75);
 
   --background: var(--oxblood);
   --foreground: var(--ivory);
