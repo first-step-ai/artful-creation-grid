@@ -5,7 +5,9 @@ import { Nav } from "@/components/home/Nav";
 import { Hero } from "@/components/home/Hero";
 import { Manifesto } from "@/components/home/Manifesto";
 import { Services } from "@/components/home/Services";
+import { Materials } from "@/components/home/Materials";
 import { Work } from "@/components/home/Work";
+import { Pullquote } from "@/components/home/Pullquote";
 import { Process } from "@/components/home/Process";
 import { Recognition } from "@/components/home/Recognition";
 import { Enquire } from "@/components/home/Enquire";
@@ -43,7 +45,9 @@ function Home() {
         <Hero />
         <Manifesto />
         <Services />
+        <Materials />
         <Work />
+        <Pullquote />
         <Process />
         <Recognition />
         <Enquire />

@@ -26,7 +26,12 @@ export function Hero() {
         className="reveal relative z-10 mx-auto flex min-h-[92vh] md:min-h-screen max-w-[1600px] flex-col justify-between px-6 md:px-10 pt-32 md:pt-40 pb-12"
       >
         <div className="max-w-4xl">
-          <div className="eyebrow mb-8">Est. 1998 — Sydney</div>
+          <div className="eyebrow mb-8 flex items-center gap-3">
+            <span className="text-brass">✦</span>
+            <span>Est. 1998 — Sydney</span>
+            <span className="h-px w-10 bg-ivory-muted/60" />
+            <span>Booking 2026</span>
+          </div>
           <h1 className="font-serif font-light text-ivory text-[2.75rem] leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-[-0.01em]">
             Considered interiors,
             <br />
@@ -38,20 +43,22 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
-          <a
-            href="#work"
-            className="group inline-flex items-center gap-4 self-start text-ivory"
-          >
-            <span className="text-[11px] tracking-[0.28em] uppercase">View selected work</span>
-            <span className="h-px w-12 bg-ivory transition-all duration-500 group-hover:w-24" />
-          </a>
-          <div className="hidden md:flex items-center gap-3 text-ivory-muted text-[11px] tracking-[0.28em] uppercase">
-            <span className="h-px w-8 bg-ivory-muted/60" />
-            Scroll
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 pt-10 border-t border-ivory/15">
+          <HeroStat k="Practising since" v="1998" />
+          <HeroStat k="Rooms delivered" v="400+" />
+          <HeroStat k="Awards" v="HIA Finalist" />
+          <HeroStat k="Now booking" v="Spring 2026" />
         </div>
       </div>
     </section>
+  );
+}
+
+function HeroStat({ k, v }: { k: string; v: string }) {
+  return (
+    <div>
+      <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;{k}</div>
+      <div className="mt-3 font-serif text-xl md:text-2xl text-ivory font-light">{v}</div>
+    </div>
   );
 }

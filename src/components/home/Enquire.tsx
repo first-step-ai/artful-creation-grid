@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { toast } from "sonner";
 import { useReveal } from "@/hooks/use-reveal";
+import studio from "@/assets/studio.jpg";
 
 const projectTypes = ["Bathroom", "Kitchen", "Laundry", "Whole home"];
 
@@ -23,8 +24,8 @@ export function Enquire() {
     <section id="enquire" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-40">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
-          <div className="md:col-span-5">
-            <div className="eyebrow">05 — Enquire</div>
+          <div className="md:col-span-5 flex flex-col">
+            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;05 — Enquire</div>
             <h2 className="mt-6 font-serif text-5xl md:text-7xl lg:text-[5.5rem] text-ivory font-light leading-[1.02] tracking-[-0.01em]">
               Let's
               <br />
@@ -48,6 +49,21 @@ export function Enquire() {
                 <dd>studio@ambathrooms.com.au</dd>
               </div>
             </dl>
+
+            <div className="mt-12 relative overflow-hidden aspect-[4/5] hidden md:block">
+              <img
+                src={studio}
+                alt="Inside the studio — a hand placing a brass tap on a marble sample"
+                loading="lazy"
+                width={1200}
+                height={1500}
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-oxblood/60 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6 eyebrow text-ivory">
+                Inside the studio — Alexandria
+              </div>
+            </div>
           </div>
 
           <form

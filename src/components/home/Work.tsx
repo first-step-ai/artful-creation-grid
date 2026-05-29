@@ -1,58 +1,103 @@
 import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
 import p3 from "@/assets/project-3.jpg";
+import feature from "@/assets/project-feature.jpg";
 import { useReveal } from "@/hooks/use-reveal";
 
 const projects = [
-  { title: "Travertine Ensuite", suburb: "Mosman", year: "2025", image: p1, span: "tall" as const },
-  { title: "Stained Oak Kitchen", suburb: "Paddington", year: "2025", image: p2, span: "wide" as const },
-  { title: "Fluted Powder Room", suburb: "Vaucluse", year: "2024", image: p3, span: "tall" as const },
+  { n: "01", title: "Travertine Ensuite", suburb: "Mosman", year: "2025", image: p1 },
+  { n: "02", title: "Stained Oak Kitchen", suburb: "Paddington", year: "2025", image: p2 },
+  { n: "03", title: "Fluted Powder Room", suburb: "Vaucluse", year: "2024", image: p3 },
+];
+
+const suburbs = [
+  "Mosman", "Paddington", "Vaucluse", "Bellevue Hill", "Woollahra",
+  "Bondi", "Double Bay", "Rose Bay", "Bronte", "Darlinghurst",
+  "Surry Hills", "Balmain", "Hunters Hill", "Cremorne", "Neutral Bay",
 ];
 
 export function Work() {
   const ref = useReveal<HTMLDivElement>();
+  const featRef = useReveal<HTMLDivElement>();
   return (
     <section id="work" className="border-t border-border/60 bg-burgundy/40">
-      <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-32">
-        <div className="flex items-end justify-between mb-16 md:mb-24">
-          <div>
-            <div className="eyebrow">03 — Selected Work</div>
+      <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-24 md:pt-32 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 md:mb-24 items-end">
+          <div className="md:col-span-7">
+            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;03 — Selected Work</div>
             <h2 className="mt-6 font-serif text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
-              Recent projects.
+              Recent projects,
+              <br />
+              <em className="not-italic text-ivory-muted">across Sydney.</em>
             </h2>
           </div>
-          <a href="#enquire" className="hidden sm:inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
-            All work
-          </a>
+          <div className="md:col-span-4 md:col-start-9 text-ivory-muted leading-relaxed">
+            <p>A small selection of the homes we've shaped this season — each one a study in restraint, material and light.</p>
+            <a href="#enquire" className="mt-6 inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
+              View full portfolio
+            </a>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
-          <ProjectTile project={projects[0]} className="md:col-span-5 md:row-span-2 md:mt-0" />
-          <ProjectTile project={projects[1]} className="md:col-span-7 md:mt-24" />
-          <ProjectTile project={projects[2]} className="md:col-span-5 md:col-start-8 md:mt-8" />
+        {/* Featured project — full bleed */}
+        <div ref={featRef} className="reveal group relative overflow-hidden mb-20 md:mb-28">
+          <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-oxblood">
+            <img
+              src={feature}
+              alt="Featured project — arched stone bathroom in Bellevue Hill"
+              loading="lazy"
+              width={1920}
+              height={1080}
+              className="h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.03]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-oxblood/80 via-oxblood/10 to-transparent" />
+          </div>
+          <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 right-6 md:right-10 flex items-end justify-between gap-8">
+            <div>
+              <div className="eyebrow"><span className="text-brass">Featured</span>&nbsp;&nbsp;·&nbsp;&nbsp;00</div>
+              <div className="mt-3 font-serif italic text-ivory text-3xl md:text-5xl font-light">
+                The Arched House
+              </div>
+              <div className="eyebrow mt-2">Bellevue Hill · 2026</div>
+            </div>
+            <div className="hidden md:block eyebrow text-ivory">A study in stone &amp; arch ↗</div>
+          </div>
+        </div>
+
+        {/* 3-up evenly distributed — no voids */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {projects.map((p) => (
+            <ProjectTile key={p.n} project={p} />
+          ))}
+        </div>
+      </div>
+
+      {/* Suburb marquee */}
+      <div className="border-t border-border/60 py-8 overflow-hidden">
+        <div className="marquee marquee-slow gap-12 text-ivory-muted">
+          {[...suburbs, ...suburbs].map((s, i) => (
+            <span key={i} className="flex items-center gap-12 whitespace-nowrap">
+              <span className="font-serif italic text-2xl md:text-3xl font-light">{s}</span>
+              <span className="text-brass">✦</span>
+            </span>
+          ))}
         </div>
       </div>
     </section>
   );
 }
 
-function ProjectTile({
-  project,
-  className,
-}: {
-  project: (typeof projects)[number];
-  className?: string;
-}) {
-  const aspect = project.span === "wide" ? "aspect-[16/10]" : "aspect-[4/5]";
+function ProjectTile({ project }: { project: (typeof projects)[number] }) {
   return (
-    <figure className={["group", className].filter(Boolean).join(" ")}>
-      <div className={`relative overflow-hidden bg-oxblood ${aspect}`}>
+    <figure className="group">
+      <div className="relative overflow-hidden aspect-[4/5] bg-oxblood">
         <img
           src={project.image}
           alt={`${project.title}, ${project.suburb}`}
           loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.03]"
+          className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
         />
+        <div className="absolute top-5 left-5 eyebrow text-ivory">{project.n}</div>
       </div>
       <figcaption className="mt-5 flex items-baseline justify-between gap-6">
         <div>
