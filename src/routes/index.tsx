@@ -1,28 +1,66 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "sonner";
+import { TopBar } from "@/components/home/TopBar";
+import { Nav } from "@/components/home/Nav";
+import { Hero } from "@/components/home/Hero";
+import { Manifesto } from "@/components/home/Manifesto";
+import { Services } from "@/components/home/Services";
+import { Work } from "@/components/home/Work";
+import { Process } from "@/components/home/Process";
+import { Recognition } from "@/components/home/Recognition";
+import { Enquire } from "@/components/home/Enquire";
+import { Footer } from "@/components/home/Footer";
+import heroImg from "@/assets/hero.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "AM Bathrooms + Projects — Sydney Renovation Specialists" },
+      {
+        name: "description",
+        content:
+          "A Sydney design + build studio shaping bathrooms, kitchens, laundries and interiors with care, collaboration and a fixed-price promise.",
+      },
+      { property: "og:title", content: "AM Bathrooms + Projects — Sydney Renovation Specialists" },
+      {
+        property: "og:description",
+        content:
+          "Considered interiors, built across Sydney. Design + build renovations since 1998.",
+      },
+      { property: "og:image", content: heroImg },
+      { name: "twitter:image", content: heroImg },
     ],
   }),
-  component: Index,
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
+    <div className="min-h-screen bg-background text-foreground">
+      <TopBar />
+      <Nav />
+      <main>
+        <Hero />
+        <Manifesto />
+        <Services />
+        <Work />
+        <Process />
+        <Recognition />
+        <Enquire />
+      </main>
+      <Footer />
+      <Toaster
+        position="bottom-center"
+        toastOptions={{
+          style: {
+            background: "var(--ivory)",
+            color: "var(--oxblood)",
+            border: "none",
+            borderRadius: "0",
+            fontFamily: "var(--font-sans)",
+            letterSpacing: "0.04em",
+          },
+        }}
       />
     </div>
   );
