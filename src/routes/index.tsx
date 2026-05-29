@@ -45,7 +45,9 @@ function Home() {
         <Hero />
         <Manifesto />
         <Services />
+        <Materials />
         <Work />
+        <Pullquote />
         <Process />
         <Recognition />
         <Enquire />
