@@ -3,7 +3,7 @@ import { Toaster } from "sonner";
 import { TopBar } from "@/components/home/TopBar";
 import { Nav } from "@/components/home/Nav";
 import { Hero } from "@/components/home/Hero";
-import { Manifesto } from "@/components/home/Manifesto";
+
 import { Services } from "@/components/home/Services";
 import { Work } from "@/components/home/Work";
 import { Pullquote } from "@/components/home/Pullquote";
@@ -42,12 +42,11 @@ function Home() {
       <Nav />
       <main>
         <Hero />
-        <Manifesto />
+        <Studio />
         <Services />
         <Work />
         <Pullquote />
         <Process />
-        <Studio />
         <Recognition />
       </main>
       <Footer />
