@@ -43,14 +43,14 @@
 :root {
   --radius: 0.25rem;
 
-  /* Brand palette — moody burgundy */
-  --oxblood:        oklch(0.18 0.045 20);   /* #1a0d0f */
-  --burgundy:       oklch(0.28 0.075 18);   /* #3d1a1f */
-  --burgundy-soft:  oklch(0.40 0.105 16);   /* #6b2a35 */
-  --ivory:          oklch(0.94 0.012 70);   /* #f0ebe3 */
-  --ivory-muted:    oklch(0.78 0.018 60);   /* #c9b9a8 */
-  --brass:          oklch(0.78 0.095 80);   /* warm brass accent */
-  --brass-soft:     oklch(0.68 0.075 75);
+  /* Brand palette — deep dark green */
+  --oxblood:        oklch(0.17 0.030 155);  /* deep forest */
+  --burgundy:       oklch(0.25 0.050 155);  /* dark moss */
+  --burgundy-soft:  oklch(0.38 0.070 152);  /* moss accent */
+  --ivory:          oklch(0.94 0.012 95);   /* warm ivory */
+  --ivory-muted:    oklch(0.78 0.018 95);   /* muted ivory */
+  --brass:          oklch(0.80 0.095 85);   /* warm brass accent */
+  --brass-soft:     oklch(0.68 0.075 80);
 
   --background: var(--oxblood);
   --foreground: var(--ivory);
