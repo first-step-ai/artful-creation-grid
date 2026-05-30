@@ -72,17 +72,6 @@ export function Work() {
         </div>
       </div>
 
-      {/* Suburb marquee */}
-      <div className="border-t border-border/60 py-8 overflow-hidden">
-        <div className="marquee marquee-slow gap-12 text-ivory-muted">
-          {[...suburbs, ...suburbs].map((s, i) => (
-            <span key={i} className="flex items-center gap-12 whitespace-nowrap">
-              <span className="font-serif italic text-2xl md:text-3xl font-light">{s}</span>
-              <span className="text-brass">✦</span>
-            </span>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }
