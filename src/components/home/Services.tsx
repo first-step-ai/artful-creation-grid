@@ -71,7 +71,7 @@ function ServiceCard({
 }) {
   return (
     <article className="group">
-      <div className="relative overflow-hidden h-[42vh] md:h-[58vh] max-h-[640px] bg-burgundy">
+      <div className="relative overflow-hidden h-[36vh] md:h-[46vh] max-h-[520px] bg-burgundy">
         <img
           src={image}
           alt={title}
@@ -81,16 +81,16 @@ function ServiceCard({
           className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
         />
         <div className="absolute inset-0 bg-oxblood/30 transition-opacity duration-700 group-hover:opacity-0" />
-        <div className="absolute top-6 left-6 font-serif italic text-ivory text-lg">{num}</div>
+        <div className="absolute top-4 left-4 font-serif italic text-ivory text-base">{num}</div>
       </div>
-      <div className="mt-6 flex items-start justify-between gap-8">
+      <div className="mt-4 flex items-start justify-between gap-6">
         <div>
-          <h3 className="font-serif text-3xl md:text-4xl text-ivory font-light tracking-[-0.005em]">
+          <h3 className="font-serif text-2xl md:text-3xl text-ivory font-light tracking-[-0.005em]">
             {title}
           </h3>
-          <p className="mt-3 max-w-sm text-ivory-muted leading-relaxed">{body}</p>
+          <p className="mt-2 max-w-sm text-sm text-ivory-muted leading-relaxed">{body}</p>
         </div>
-        <span className="mt-3 hidden sm:inline-block text-[11px] tracking-[0.28em] uppercase text-ivory-muted group-hover:text-ivory transition-colors">
+        <span className="mt-1 hidden sm:inline-block text-[11px] tracking-[0.28em] uppercase text-ivory-muted group-hover:text-ivory transition-colors">
           ↗
         </span>
       </div>
