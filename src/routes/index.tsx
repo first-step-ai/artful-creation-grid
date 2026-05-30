@@ -10,7 +10,7 @@ import { Work } from "@/components/home/Work";
 import { Pullquote } from "@/components/home/Pullquote";
 import { Process } from "@/components/home/Process";
 import { Recognition } from "@/components/home/Recognition";
-import { Enquire } from "@/components/home/Enquire";
+import { Work } from "@/components/home/Work";
 import { Footer } from "@/components/home/Footer";
 import heroImg from "@/assets/hero.jpg";
 
