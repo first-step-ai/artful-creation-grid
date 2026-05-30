@@ -42,12 +42,11 @@ function Home() {
       <Nav />
       <main>
         <Hero />
-        <Manifesto />
+        <Studio />
         <Services />
         <Work />
         <Pullquote />
         <Process />
-        <Studio />
         <Recognition />
       </main>
       <Footer />
