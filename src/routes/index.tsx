@@ -9,6 +9,7 @@ import { Work } from "@/components/home/Work";
 import { Pullquote } from "@/components/home/Pullquote";
 import { Process } from "@/components/home/Process";
 import { Recognition } from "@/components/home/Recognition";
+import { Studio } from "@/components/home/Studio";
 import { Footer } from "@/components/home/Footer";
 import heroImg from "@/assets/hero.jpg";
 
