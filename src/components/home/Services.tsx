@@ -35,20 +35,20 @@ export function Services() {
   const ref = useReveal<HTMLDivElement>();
   return (
     <section id="services" className="border-t border-border/60">
-      <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-32">
-        <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between mb-16 md:mb-24">
+      <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-24">
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between mb-10 md:mb-14">
           <div>
             <div className="eyebrow">02 — Expertise</div>
-            <h2 className="mt-6 font-serif text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
+            <h2 className="mt-4 font-serif text-3xl md:text-5xl text-ivory font-light tracking-[-0.01em]">
               Four rooms, <em className="not-italic text-ivory-muted">one practice.</em>
             </h2>
           </div>
-          <p className="md:max-w-sm text-ivory-muted leading-relaxed">
+          <p className="md:max-w-sm text-sm text-ivory-muted leading-relaxed">
             Design and construction handled by a single team, under one fixed-price contract.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 md:gap-y-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
           {services.map((s) => (
             <ServiceCard key={s.title} {...s} />
           ))}
