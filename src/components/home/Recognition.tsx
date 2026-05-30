@@ -6,7 +6,7 @@ export function Recognition() {
     "Est. Sydney 1998",
   ];
   return (
-    <section id="studio" className="border-t border-border/60 bg-burgundy/30">
+    <section id="recognition" className="border-t border-border/60 bg-burgundy/30">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-10 md:py-14">
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-center">
           {items.map((label, i) => (
