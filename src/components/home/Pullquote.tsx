@@ -13,9 +13,9 @@ export function Pullquote() {
     staleTime: 1000 * 60 * 60,
   });
 
-  const reviews = data?.reviews ?? [];
-  const [active, setActive] = useState(0);
-  const [paused, setPaused] = useState(false);
+  const allReviews = data?.reviews ?? [];
+  // Only keep concise reviews so the layout stays calm
+  const reviews = allReviews.filter((r) => r.text && r.text.length <= 240);
 
   useEffect(() => {
     if (reviews.length < 2 || paused) return;
