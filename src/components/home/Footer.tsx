@@ -19,7 +19,7 @@ export function Footer() {
       className="w-full"
       style={{ backgroundColor: FOOTER_BG, color: PARCHMENT }}
     >
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-24 md:py-32 flex flex-col items-center text-center">
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-14 md:py-20 flex flex-col items-center text-center">
         {/* Logo */}
         <div
           className="font-serif text-2xl md:text-3xl font-light flex items-center justify-center gap-5"
@@ -32,7 +32,7 @@ export function Footer() {
 
         {/* Tagline */}
         <p
-          className="mt-8 max-w-md text-sm md:text-[15px] font-light leading-relaxed"
+          className="mt-5 max-w-md text-sm md:text-[15px] font-light leading-relaxed"
           style={{ color: SAGE }}
         >
           A Sydney design + build studio shaping bathrooms, kitchens, laundries
@@ -43,7 +43,7 @@ export function Footer() {
         <Divider />
 
         {/* Nav columns */}
-        <nav className="mt-16 w-full grid grid-cols-3 max-w-2xl">
+        <nav className="mt-10 w-full grid grid-cols-3 max-w-2xl">
           {COLUMNS.map((col, idx) => (
             <div
               key={col.label}
@@ -65,7 +65,7 @@ export function Footer() {
               >
                 {col.label}
               </div>
-              <ul className="mt-6 space-y-4">
+              <ul className="mt-4 space-y-2.5">
                 {col.links.map((l, i) => (
                   <li key={l}>
                     <a
@@ -90,7 +90,7 @@ export function Footer() {
         <Divider />
 
         {/* Social strip */}
-        <ul className="mt-12 flex items-center justify-center gap-10 md:gap-14">
+        <ul className="mt-8 flex items-center justify-center gap-7 md:gap-10">
           {SOCIALS.map((s) => (
             <li key={s}>
               <a
@@ -151,7 +151,7 @@ export function Footer() {
 function Divider() {
   return (
     <div
-      className="mt-12 flex items-center justify-center gap-6 w-full max-w-md"
+      className="mt-8 flex items-center justify-center gap-6 w-full max-w-md"
       aria-hidden="true"
     >
       <span
