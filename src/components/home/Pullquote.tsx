@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
-import { useReveal } from "@/hooks/use-reveal";
 import { getGoogleReviews, type GoogleReview } from "@/lib/google-reviews.functions";
 
 function Stars({ rating }: { rating: number }) {
