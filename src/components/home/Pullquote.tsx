@@ -13,7 +13,9 @@ export function Pullquote() {
     staleTime: 1000 * 60 * 60,
   });
 
-  const reviews = data?.reviews ?? [];
+  const allReviews = data?.reviews ?? [];
+  // Only keep concise reviews so the layout stays calm
+  const reviews = allReviews.filter((r) => r.text && r.text.length <= 240);
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -101,7 +103,7 @@ export function Pullquote() {
                         {current.author}
                       </span>
                       <span className="eyebrow text-ivory-muted/60 text-[10px]">
-                        {current.relativeTime}
+                        Google review
                       </span>
                     </div>
                   </figcaption>
