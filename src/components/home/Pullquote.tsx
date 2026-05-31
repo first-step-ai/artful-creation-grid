@@ -103,7 +103,7 @@ export function Pullquote() {
                         {current.author}
                       </span>
                       <span className="eyebrow text-ivory-muted/60 text-[10px]">
-                        {current.relativeTime}
+                        Google review
                       </span>
                     </div>
                   </figcaption>
