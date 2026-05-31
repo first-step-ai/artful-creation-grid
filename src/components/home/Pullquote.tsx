@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
-import { useReveal } from "@/hooks/use-reveal";
 import { getGoogleReviews, type GoogleReview } from "@/lib/google-reviews.functions";
 
 function Stars({ rating }: { rating: number }) {
@@ -75,7 +74,6 @@ function ReviewCard({
 }
 
 export function Pullquote() {
-  const ref = useReveal<HTMLDivElement>();
   const fetchReviews = useServerFn(getGoogleReviews);
   const { data, isLoading } = useQuery({
     queryKey: ["google-reviews"],
@@ -88,10 +86,7 @@ export function Pullquote() {
 
   return (
     <section className="border-t border-border/60 bg-oxblood">
-      <div
-        ref={ref}
-        className="reveal mx-auto max-w-[1400px] px-6 md:px-10 py-24 md:py-32"
-      >
+      <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-24 md:py-32">
         {/* Header rail */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-end mb-16 md:mb-20">
           <div className="md:col-span-7">
