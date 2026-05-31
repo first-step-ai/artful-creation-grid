@@ -52,7 +52,7 @@ function Marquee({ reviews, reverse = false, speed = 60 }: { reviews: GoogleRevi
   return (
     <div className="group relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
       <div
-        className="flex w-max animate-marquee group-hover:[animation-play-state:paused]"
+        className="marquee group-hover:[animation-play-state:paused]"
         style={{
           animationDuration: `${speed}s`,
           animationDirection: reverse ? "reverse" : "normal",
