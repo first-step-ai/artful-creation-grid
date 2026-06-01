@@ -47,7 +47,7 @@ function Home() {
         <Work />
         <Pullquote />
         <Process />
-        <Recognition />
+        
       </main>
       <Footer />
       <Toaster
