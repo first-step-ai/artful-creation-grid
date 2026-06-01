@@ -1,6 +1,6 @@
-const FOOTER_BG = "#848b7d";
-const TEXT = "#1a1a1a";
-const TEXT_MUTED = "#3a3a3a";
+const FOOTER_BG = "#1f1f1f";
+const TEXT = "#ebf0e9";
+const TEXT_MUTED = "#848b7d";
 const RULE = "rgba(26,26,26,0.18)";
 
 const EXPLORE = ["Projects", "Services", "About", "Awards", "Reviews", "Contact"];

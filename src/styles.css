@@ -43,34 +43,34 @@
 :root {
   --radius: 0.25rem;
 
-  /* Brand palette — sage + charcoal */
-  --oxblood:        #383d38;  /* dark section surface */
-  --burgundy:       #2e2d2d;  /* deeper charcoal surface */
-  --burgundy-soft:  #848b7d;  /* sage accent */
-  --ivory:          #ffffff;  /* light text on dark surfaces */
-  --ivory-muted:    #ebf0e9;  /* muted cream (use sparingly) */
-  --brass:          #ffffff;  /* accent (was warm brass) */
+  /* Brand palette — flipped: charcoal canvas, sage as accent */
+  --oxblood:        #2e2d2d;  /* deeper charcoal surface */
+  --burgundy:       #383d38;  /* secondary charcoal surface */
+  --burgundy-soft:  #848b7d;  /* sage accent (use deliberately) */
+  --ivory:          #ebf0e9;  /* soft cream text on charcoal */
+  --ivory-muted:    #848b7d;  /* sage for muted text */
+  --brass:          #848b7d;  /* sage accent */
   --brass-soft:     #ebf0e9;
 
-  --background: #848b7d;          /* sage page background */
-  --foreground: #1a1a1a;          /* near-black text on sage */
-  --card: var(--oxblood);
+  --background: #2e2d2d;          /* charcoal page background */
+  --foreground: #ebf0e9;          /* cream text on charcoal */
+  --card: #383d38;
   --card-foreground: var(--ivory);
-  --popover: var(--oxblood);
+  --popover: #383d38;
   --popover-foreground: var(--ivory);
-  --primary: #1a1a1a;
-  --primary-foreground: var(--ivory);
-  --secondary: var(--burgundy);
+  --primary: #848b7d;             /* sage primary accent */
+  --primary-foreground: #1a1a1a;  /* black text on sage buttons */
+  --secondary: #383d38;
   --secondary-foreground: var(--ivory);
-  --muted: var(--burgundy-soft);
-  --muted-foreground: #2e2d2d;
-  --accent: var(--burgundy-soft);
+  --muted: #383d38;
+  --muted-foreground: #848b7d;
+  --accent: #848b7d;
   --accent-foreground: #1a1a1a;
   --destructive: oklch(0.55 0.20 25);
   --destructive-foreground: var(--ivory);
-  --border: rgba(26, 26, 26, 0.18);
-  --input: rgba(26, 26, 26, 0.22);
-  --ring: #1a1a1a;
+  --border: rgba(235, 240, 233, 0.14);
+  --input: rgba(235, 240, 233, 0.18);
+  --ring: #848b7d;
 }
 
 
