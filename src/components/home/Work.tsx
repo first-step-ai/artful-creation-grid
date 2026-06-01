@@ -54,13 +54,11 @@ export function Work() {
           </div>
           <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 right-6 md:right-10 flex items-end justify-between gap-8">
             <div>
-              <div className="eyebrow"><span className="text-brass">Featured</span>&nbsp;&nbsp;·&nbsp;&nbsp;00</div>
               <div className="mt-3 font-serif italic text-ivory text-3xl md:text-5xl font-light">
                 The Arched House
               </div>
               <div className="eyebrow mt-2">Bellevue Hill · 2026</div>
             </div>
-            <div className="hidden md:block eyebrow text-ivory">A study in stone &amp; arch ↗</div>
           </div>
         </div>
 
