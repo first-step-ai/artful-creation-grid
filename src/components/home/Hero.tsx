@@ -1,8 +1,13 @@
+import { useEffect, useRef } from "react";
 import heroImg from "@/assets/hero.jpg";
-import { useReveal } from "@/hooks/use-reveal";
 
 export function Hero() {
-  const ref = useReveal<HTMLDivElement>();
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    // Above-the-fold: trigger the reveal immediately so text is always visible.
+    const id = requestAnimationFrame(() => ref.current?.classList.add("reveal-in"));
+    return () => cancelAnimationFrame(id);
+  }, []);
   return (
     <section id="top" className="relative isolate min-h-[92vh] md:min-h-screen overflow-hidden">
       <img
