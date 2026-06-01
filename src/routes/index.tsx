@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Toaster } from "sonner";
-import { TopBar } from "@/components/home/TopBar";
+
 import { Nav } from "@/components/home/Nav";
 import { Hero } from "@/components/home/Hero";
 
