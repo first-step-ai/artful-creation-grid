@@ -81,7 +81,7 @@ function ServiceCard({
           className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
         />
         <div className="absolute inset-0 bg-oxblood/30 transition-opacity duration-700 group-hover:opacity-0" />
-        <div className="absolute top-4 left-4 font-serif italic text-ivory text-base">{num}</div>
+        
       </div>
       <div className="mt-4 flex items-start justify-between gap-6">
         <div>
