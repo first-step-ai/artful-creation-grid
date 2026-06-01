@@ -58,30 +58,30 @@ export function Pullquote() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="mx-auto max-w-[1280px] px-6 md:px-12 py-24 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20">
+      <div className="mx-auto max-w-[1280px] px-6 md:px-12 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           {/* LEFT / meta column */}
-          <aside className="md:col-span-4 flex flex-col justify-between gap-12">
+          <aside className="md:col-span-4 flex flex-col justify-between gap-6">
             <div>
-              <div className="eyebrow text-ivory-muted">
+              <div className="eyebrow text-ivory-muted text-[10px]">
                 <span className="text-brass">✦</span>&nbsp;&nbsp;Testimonials
               </div>
-              <h2 className="mt-6 font-sans text-3xl md:text-[2.75rem] text-ivory font-light leading-[1.1] tracking-[-0.015em]">
-                Voices of the<br />
+              <h2 className="mt-3 font-sans text-base md:text-lg text-ivory font-light leading-[1.3] tracking-[-0.01em]">
+                Voices of the{" "}
                 <em className="not-italic text-ivory-muted">people we build for.</em>
               </h2>
             </div>
 
             {data?.rating != null && (
-              <div className="flex items-end gap-4 border-t border-ivory/10 pt-6">
-                <span className="font-sans text-5xl text-ivory leading-none">
+              <div className="flex items-end gap-3 border-t border-ivory/10 pt-3">
+                <span className="font-sans text-2xl text-ivory leading-none">
                   {data.rating.toFixed(1)}
                 </span>
-                <div className="flex flex-col gap-1 pb-1">
-                  <div className="flex gap-[2px] text-brass text-sm" aria-hidden>
+                <div className="flex flex-col gap-0.5 pb-0.5">
+                  <div className="flex gap-[2px] text-brass text-[10px]" aria-hidden>
                     {"✦✦✦✦✦"}
                   </div>
-                  <span className="eyebrow text-ivory-muted/70 text-[10px]">
+                  <span className="eyebrow text-ivory-muted/70 text-[9px]">
                     {data.totalRatings ?? 0} Google reviews
                   </span>
                 </div>
