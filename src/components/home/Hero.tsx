@@ -26,7 +26,7 @@ export function Hero() {
         className="reveal relative z-10 mx-auto flex min-h-[92vh] md:min-h-screen max-w-[1600px] flex-col justify-between px-6 md:px-10 pt-[15.6rem] md:pt-[20.8rem] pb-12"
       >
         <div className="max-w-4xl">
-          <h1 className="font-serif font-light text-white text-[2rem] leading-[1.05] sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.01em]">
+          <h1 className="font-sans font-light text-white text-[2rem] leading-[1.05] sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.01em]">
             Thoughtfully Designed Spaces. Beautifully Executed.
           </h1>
           <p className="mt-6 max-w-xl text-white/75 text-sm md:text-base font-light leading-relaxed">
