@@ -1,9 +1,7 @@
-const FOOTER_BG = "#0a1f12";
-const PARCHMENT = "#c8c0a8";
-const SAGE = "#4a7a58";
-const GOLD = "#c8a060";
-const NAV_LINK = "#a0a088";
-const RULE = "#1a3222";
+const FOOTER_BG = "#848b7d";
+const TEXT = "#1a1a1a";
+const TEXT_MUTED = "#3a3a3a";
+const RULE = "rgba(26,26,26,0.18)";
 
 const EXPLORE = ["Projects", "Services", "About", "Awards", "Reviews", "Contact"];
 const SERVICING = ["Inner West", "Eastern Suburbs", "Northern Beaches", "Lower North Shore"];
