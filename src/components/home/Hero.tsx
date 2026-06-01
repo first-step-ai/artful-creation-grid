@@ -27,10 +27,10 @@ export function Hero() {
       >
         <div className="max-w-4xl">
           <h1 className="font-sans font-light text-ivory text-[2.75rem] leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-[-0.01em]">
-            Bathrooms, kitchens and interiors. Designed and built in Sydney.
+            Thoughtfully Designed Spaces. Beautifully Executed.
           </h1>
           <p className="mt-8 max-w-xl text-ivory-muted text-base md:text-lg leading-relaxed">
-            Sydney homeowners have trusted us with their most-used rooms for over 25 years. We design it, we build it, we stand behind it.
+            Award-winning design and renovation specialists creating homes that feel effortless to live in. We Design Homes Around The Way You Live
           </p>
         </div>
 
