@@ -25,7 +25,7 @@ export function Work() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 md:mb-24 items-end">
           <div className="md:col-span-7">
             <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;03 / Selected Work</div>
-            <h2 className="mt-6 font-serif text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
+            <h2 className="mt-6 font-sans text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
               Recent projects,
               <br />
               <em className="not-italic text-ivory-muted">across Sydney.</em>
