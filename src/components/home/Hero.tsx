@@ -33,13 +33,10 @@ export function Hero() {
             <span>Booking 2026</span>
           </div>
           <h1 className="font-serif font-light text-ivory text-[2.75rem] leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-[-0.01em]">
-            Considered interiors,
-            <br />
-            <em className="not-italic text-ivory-muted">built across Sydney.</em>
+            Bathrooms, kitchens and interiors — designed and built in Sydney.
           </h1>
           <p className="mt-8 max-w-xl text-ivory-muted text-base md:text-lg leading-relaxed">
-            Bathrooms, kitchens, laundries and interiors — designed and built with care,
-            collaboration and a deep respect for material.
+            Sydney homeowners have trusted us with their most-used rooms for over 25 years. We design it, we build it, we stand behind it.
           </p>
         </div>
 
