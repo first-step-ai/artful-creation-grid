@@ -35,8 +35,8 @@ export function Services() {
   const ref = useReveal<HTMLDivElement>();
   return (
     <section id="services" className="border-t border-border/60">
-      <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-24">
-        <div className="mb-10 md:mb-14">
+      <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-20 md:pb-24">
+        <div className="mb-8 md:mb-10">
           <div className="eyebrow">02 / Services</div>
         </div>
 
