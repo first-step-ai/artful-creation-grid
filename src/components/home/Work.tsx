@@ -27,12 +27,7 @@ export function Work() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-24 md:pt-32 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 md:mb-24 items-end">
           <div className="md:col-span-7">
-            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;01 / Selected Work</div>
-            <h2 className="mt-6 font-sans text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
-              Recent projects,
-              <br />
-              <em className="not-italic text-ivory-muted">across Sydney.</em>
-            </h2>
+            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;01 / Featured Work</div>
           </div>
           <div className="md:col-span-4 md:col-start-9 text-ivory-muted leading-relaxed">
             <p>A small selection of the homes we've shaped this season. Each one a study in restraint, material and light.</p>
