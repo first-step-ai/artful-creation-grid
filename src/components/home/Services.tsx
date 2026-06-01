@@ -40,11 +40,11 @@ export function Services() {
           <div>
             <div className="eyebrow">02 — Expertise</div>
             <h2 className="mt-4 font-serif text-3xl md:text-5xl text-ivory font-light tracking-[-0.01em]">
-              Four rooms, <em className="not-italic text-ivory-muted">one practice.</em>
+              Every room you use every day.
             </h2>
           </div>
           <p className="md:max-w-sm text-sm text-ivory-muted leading-relaxed">
-            Design and construction handled by a single team, under one fixed-price contract.
+            We focus on the four rooms that matter most in your home — and we take care of everything, so you don't have to manage a dozen different trades.
           </p>
         </div>
 
