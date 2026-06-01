@@ -26,12 +26,6 @@ export function Hero() {
         className="reveal relative z-10 mx-auto flex min-h-[92vh] md:min-h-screen max-w-[1600px] flex-col justify-between px-6 md:px-10 pt-32 md:pt-40 pb-12"
       >
         <div className="max-w-4xl">
-          <div className="eyebrow mb-8 flex items-center gap-3">
-            <span className="text-brass">✦</span>
-            <span>Est. 1998 / Sydney</span>
-            <span className="h-px w-10 bg-ivory-muted/60" />
-            <span>Booking 2026</span>
-          </div>
           <h1 className="font-serif font-light text-ivory text-[2.75rem] leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-[-0.01em]">
             Bathrooms, kitchens and interiors. Designed and built in Sydney.
           </h1>
