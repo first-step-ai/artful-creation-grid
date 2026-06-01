@@ -43,12 +43,6 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 pt-10 border-t border-ivory/15">
-          <HeroStat k="Practising since" v="1998" />
-          <HeroStat k="Rooms delivered" v="400+" />
-          <HeroStat k="Awards" v="HIA Finalist" />
-          <HeroStat k="Now booking" v="Spring 2026" />
-        </div>
       </div>
     </section>
   );
