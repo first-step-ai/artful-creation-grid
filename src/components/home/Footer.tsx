@@ -5,13 +5,8 @@ const GOLD = "#c8a060";
 const NAV_LINK = "#a0a088";
 const RULE = "#1a3222";
 
-const NAV: { label: string; links: string[] }[] = [
-  { label: "Studio", links: ["About", "Process", "Showroom", "Careers"] },
-  { label: "Work", links: ["Bathrooms", "Kitchens", "Laundries", "Interiors"] },
-  { label: "Connect", links: ["Enquire", "Phone", "Email", "Visit"] },
-];
-
-const SOCIALS = ["Instagram", "Pinterest", "Houzz", "LinkedIn"];
+const EXPLORE = ["Projects", "Services", "About", "Awards", "Reviews", "Contact"];
+const SERVICING = ["Inner West", "Eastern Suburbs", "Northern Beaches", "Lower North Shore"];
 
 export function Footer() {
   return (
@@ -19,203 +14,178 @@ export function Footer() {
       className="w-full"
       style={{ backgroundColor: FOOTER_BG, color: PARCHMENT }}
     >
-      {/* Top band: oversized wordmark */}
-      <div className="w-full px-6 md:px-12 pt-20 md:pt-28 pb-10 md:pb-14">
-        <div className="grid grid-cols-12 gap-6 md:gap-10 items-end">
-          <div className="col-span-12 md:col-span-7">
-            <div
-              className="font-sans"
-              style={{
-                color: SAGE,
-                fontSize: "10px",
-                letterSpacing: "0.28em",
-                textTransform: "uppercase",
-              }}
-            >
-              Est. 1998 / Sydney
-            </div>
-            <h2
-              className="mt-6 font-serif font-light leading-[0.92] tracking-tight"
-              style={{
-                color: PARCHMENT,
-                fontSize: "clamp(54px, 11vw, 168px)",
-              }}
-            >
-              AM Bathrooms<span style={{ color: GOLD }}>.</span>
-            </h2>
-          </div>
-
-          <div className="col-span-12 md:col-span-5 md:pb-6">
-            <p
-              className="font-serif font-light italic leading-relaxed"
-              style={{ color: PARCHMENT, fontSize: "20px" }}
-            >
-              Quiet, considered rooms.
-              <br />
-              Designed and built by one team.
-            </p>
-            <a
-              href="#enquire"
-              className="mt-8 inline-flex items-center gap-3 font-sans transition-opacity hover:opacity-70"
-              style={{
-                color: GOLD,
-                fontSize: "11px",
-                letterSpacing: "0.28em",
-                textTransform: "uppercase",
-                borderBottom: `0.5px solid ${GOLD}`,
-                paddingBottom: "6px",
-              }}
-            >
-              Start a project
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Mid band: contact + nav columns */}
-      <div
-        className="w-full px-6 md:px-12 py-12 md:py-16"
-        style={{ borderTop: `0.5px solid ${RULE}` }}
-      >
-        <div className="grid grid-cols-12 gap-8 md:gap-10">
-          {/* Contact block */}
+      <div className="w-full px-6 md:px-12 pt-20 md:pt-24 pb-10">
+        <div className="grid grid-cols-12 gap-10 md:gap-12">
+          {/* Brand */}
           <div className="col-span-12 md:col-span-3">
             <div
-              className="font-sans"
-              style={{
-                color: GOLD,
-                fontSize: "10px",
-                letterSpacing: "0.28em",
-                textTransform: "uppercase",
-              }}
+              className="font-serif font-light leading-none"
+              style={{ color: PARCHMENT, letterSpacing: "0.04em" }}
             >
-              Studio
-            </div>
-            <address
-              className="mt-5 not-italic font-serif font-light leading-relaxed"
-              style={{ color: PARCHMENT, fontSize: "15px" }}
-            >
-              42 Bourke Road
-              <br />
-              Alexandria NSW 2015
-              <br />
-              <span style={{ color: NAV_LINK }}>By appointment</span>
-            </address>
-            <div
-              className="mt-6 font-serif font-light leading-relaxed"
-              style={{ color: PARCHMENT, fontSize: "15px" }}
-            >
-              <a href="tel:+61290000000" className="block hover:opacity-70 transition-opacity">
-                +61 2 9000 0000
-              </a>
-              <a href="mailto:studio@ambathrooms.com.au" className="block hover:opacity-70 transition-opacity italic">
-                studio@ambathrooms.com.au
-              </a>
-            </div>
-          </div>
-
-          {/* Nav columns */}
-          {NAV.map((col) => (
-            <div key={col.label} className="col-span-6 md:col-span-3">
+              <div style={{ fontSize: "56px" }}>AM</div>
               <div
-                className="font-sans"
+                className="font-sans mt-2"
                 style={{
-                  color: GOLD,
+                  color: NAV_LINK,
                   fontSize: "10px",
                   letterSpacing: "0.28em",
                   textTransform: "uppercase",
                 }}
               >
-                {col.label}
+                Bathrooms + Projects
               </div>
-              <ul className="mt-5 space-y-3">
-                {col.links.map((l, i) => (
-                  <li key={l}>
-                    <a
-                      href="#"
-                      className="font-serif transition-opacity hover:opacity-70"
-                      style={{
-                        color: NAV_LINK,
-                        fontSize: "15px",
-                        fontStyle: i % 2 === 1 ? "italic" : "normal",
-                      }}
-                    >
-                      {l}
-                    </a>
-                  </li>
-                ))}
-              </ul>
             </div>
-          ))}
+
+            <p
+              className="mt-10 font-serif font-light leading-relaxed"
+              style={{ color: NAV_LINK, fontSize: "15px" }}
+            >
+              Boutique design-and-build studio.
+              <br />
+              Based in Drummoyne, working across Sydney.
+            </p>
+
+            <div className="mt-8 flex items-center gap-5" style={{ color: NAV_LINK }}>
+              <a href="#" aria-label="Facebook" className="hover:opacity-70 transition-opacity">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram" className="hover:opacity-70 transition-opacity">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          {/* Contact */}
+          <div className="col-span-12 md:col-span-4">
+            <FooterLabel>Studio<br />(By Appointment Only)</FooterLabel>
+            <div
+              className="mt-5 font-serif font-light leading-relaxed"
+              style={{ color: PARCHMENT, fontSize: "15px" }}
+            >
+              8/77–105 Victoria Road
+              <br />
+              Drummoyne NSW 2047
+            </div>
+
+            <div className="mt-8">
+              <FooterLabel>Email</FooterLabel>
+              <a
+                href="mailto:info@ambathrooms.com.au"
+                className="mt-5 block font-serif font-light hover:opacity-70 transition-opacity"
+                style={{ color: PARCHMENT, fontSize: "15px" }}
+              >
+                info@ambathrooms.com.au
+              </a>
+            </div>
+
+            <div className="mt-8">
+              <FooterLabel>Phone</FooterLabel>
+              <a
+                href="tel:+61291814776"
+                className="mt-5 block font-serif font-light hover:opacity-70 transition-opacity"
+                style={{ color: PARCHMENT, fontSize: "15px" }}
+              >
+                (02) 9181 4776
+              </a>
+            </div>
+
+            <div className="mt-8">
+              <FooterLabel>Hours</FooterLabel>
+              <div
+                className="mt-5 font-serif font-light"
+                style={{ color: PARCHMENT, fontSize: "15px" }}
+              >
+                Monday – Friday: 8.30 am – 4.30 pm
+              </div>
+            </div>
+          </div>
+
+          {/* Explore */}
+          <div className="col-span-6 md:col-span-2">
+            <FooterLabel>Explore</FooterLabel>
+            <ul className="mt-5 space-y-3">
+              {EXPLORE.map((l) => (
+                <li key={l}>
+                  <a
+                    href="#"
+                    className="font-serif font-light hover:opacity-70 transition-opacity"
+                    style={{ color: PARCHMENT, fontSize: "15px" }}
+                  >
+                    {l}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Servicing */}
+          <div className="col-span-6 md:col-span-3">
+            <FooterLabel>Servicing</FooterLabel>
+            <ul className="mt-5 space-y-3">
+              {SERVICING.map((l) => (
+                <li key={l}>
+                  <a
+                    href="#"
+                    className="font-serif font-light hover:opacity-70 transition-opacity"
+                    style={{ color: PARCHMENT, fontSize: "15px" }}
+                  >
+                    {l}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 
       {/* Bottom bar */}
-      <div
-        className="w-full"
-        style={{ borderTop: `0.5px solid ${RULE}` }}
-      >
-        <div className="w-full px-6 md:px-12 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div className="flex items-center gap-5">
-            <span
-              className="font-sans"
-              style={{
-                color: SAGE,
-                fontSize: "10px",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-              }}
-            >
-              © {new Date().getFullYear()} AM Bathrooms + Projects
-            </span>
-            <span aria-hidden="true" style={{ color: RULE }}>/</span>
-            <a
-              href="#"
-              className="font-sans hover:opacity-70 transition-opacity"
-              style={{
-                color: SAGE,
-                fontSize: "10px",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-              }}
-            >
-              Privacy
-            </a>
-            <a
-              href="#"
-              className="font-sans hover:opacity-70 transition-opacity"
-              style={{
-                color: SAGE,
-                fontSize: "10px",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-              }}
-            >
-              Terms
-            </a>
-          </div>
-
-          <ul className="flex items-center gap-6">
-            {SOCIALS.map((s) => (
-              <li key={s}>
-                <a
-                  href="#"
-                  className="font-sans transition-opacity hover:opacity-70"
-                  style={{
-                    color: PARCHMENT,
-                    fontSize: "10px",
-                    letterSpacing: "0.22em",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  {s}
-                </a>
-              </li>
-            ))}
-          </ul>
+      <div className="w-full" style={{ borderTop: `0.5px solid ${RULE}` }}>
+        <div className="w-full px-6 md:px-12 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+          <span
+            className="font-sans"
+            style={{
+              color: SAGE,
+              fontSize: "11px",
+              letterSpacing: "0.14em",
+            }}
+          >
+            © AM Bathrooms Pty Ltd – ABN 51 613 280 149
+          </span>
+          <span
+            className="font-sans"
+            style={{
+              color: SAGE,
+              fontSize: "10px",
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+            }}
+          >
+            Made with care in Sydney
+          </span>
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <div
+      className="font-sans leading-relaxed"
+      style={{
+        color: GOLD,
+        fontSize: "10px",
+        letterSpacing: "0.28em",
+        textTransform: "uppercase",
+      }}
+    >
+      {children}
+    </div>
   );
 }
