@@ -1,9 +1,7 @@
-const FOOTER_BG = "#0a1f12";
-const PARCHMENT = "#c8c0a8";
-const SAGE = "#4a7a58";
-const GOLD = "#c8a060";
-const NAV_LINK = "#a0a088";
-const RULE = "#1a3222";
+const FOOTER_BG = "#848b7d";
+const TEXT = "#1a1a1a";
+const TEXT_MUTED = "#3a3a3a";
+const RULE = "rgba(26,26,26,0.18)";
 
 const EXPLORE = ["Projects", "Services", "About", "Awards", "Reviews", "Contact"];
 const SERVICING = ["Inner West", "Eastern Suburbs", "Northern Beaches", "Lower North Shore"];
@@ -12,7 +10,7 @@ export function Footer() {
   return (
     <footer
       className="w-full"
-      style={{ backgroundColor: FOOTER_BG, color: PARCHMENT }}
+      style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
       <div className="w-full px-6 md:px-12 pt-20 md:pt-24 pb-10">
         <div className="grid grid-cols-12 gap-10 md:gap-12">
@@ -20,13 +18,13 @@ export function Footer() {
           <div className="col-span-12 md:col-span-3">
             <div
               className="font-sans font-light leading-none"
-              style={{ color: PARCHMENT, letterSpacing: "0.04em" }}
+              style={{ color: TEXT, letterSpacing: "0.04em" }}
             >
               <div style={{ fontSize: "56px" }}>AM</div>
               <div
                 className="font-sans mt-2"
                 style={{
-                  color: NAV_LINK,
+                  color: TEXT_MUTED,
                   fontSize: "10px",
                   letterSpacing: "0.28em",
                   textTransform: "uppercase",
@@ -38,14 +36,14 @@ export function Footer() {
 
             <p
               className="mt-10 font-sans font-light leading-relaxed"
-              style={{ color: NAV_LINK, fontSize: "15px" }}
+              style={{ color: TEXT_MUTED, fontSize: "15px" }}
             >
               Boutique design-and-build studio.
               <br />
               Based in Drummoyne, working across Sydney.
             </p>
 
-            <div className="mt-8 flex items-center gap-5" style={{ color: NAV_LINK }}>
+            <div className="mt-8 flex items-center gap-5" style={{ color: TEXT_MUTED }}>
               <a href="#" aria-label="Facebook" className="hover:opacity-70 transition-opacity">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -66,7 +64,7 @@ export function Footer() {
             <FooterLabel>Studio<br />(By Appointment Only)</FooterLabel>
             <div
               className="mt-5 font-sans font-light leading-relaxed"
-              style={{ color: PARCHMENT, fontSize: "15px" }}
+              style={{ color: TEXT, fontSize: "15px" }}
             >
               8/77–105 Victoria Road
               <br />
@@ -78,7 +76,7 @@ export function Footer() {
               <a
                 href="mailto:info@ambathrooms.com.au"
                 className="mt-5 block font-sans font-light hover:opacity-70 transition-opacity"
-                style={{ color: PARCHMENT, fontSize: "15px" }}
+                style={{ color: TEXT, fontSize: "15px" }}
               >
                 info@ambathrooms.com.au
               </a>
@@ -89,7 +87,7 @@ export function Footer() {
               <a
                 href="tel:+61291814776"
                 className="mt-5 block font-sans font-light hover:opacity-70 transition-opacity"
-                style={{ color: PARCHMENT, fontSize: "15px" }}
+                style={{ color: TEXT, fontSize: "15px" }}
               >
                 (02) 9181 4776
               </a>
@@ -99,7 +97,7 @@ export function Footer() {
               <FooterLabel>Hours</FooterLabel>
               <div
                 className="mt-5 font-sans font-light"
-                style={{ color: PARCHMENT, fontSize: "15px" }}
+                style={{ color: TEXT, fontSize: "15px" }}
               >
                 Monday – Friday: 8.30 am – 4.30 pm
               </div>
@@ -115,7 +113,7 @@ export function Footer() {
                   <a
                     href="#"
                     className="font-sans font-light hover:opacity-70 transition-opacity"
-                    style={{ color: PARCHMENT, fontSize: "15px" }}
+                    style={{ color: TEXT, fontSize: "15px" }}
                   >
                     {l}
                   </a>
@@ -133,7 +131,7 @@ export function Footer() {
                   <a
                     href="#"
                     className="font-sans font-light hover:opacity-70 transition-opacity"
-                    style={{ color: PARCHMENT, fontSize: "15px" }}
+                    style={{ color: TEXT, fontSize: "15px" }}
                   >
                     {l}
                   </a>
@@ -150,7 +148,7 @@ export function Footer() {
           <span
             className="font-sans"
             style={{
-              color: SAGE,
+              color: TEXT_MUTED,
               fontSize: "11px",
               letterSpacing: "0.14em",
             }}
@@ -160,7 +158,7 @@ export function Footer() {
           <span
             className="font-sans"
             style={{
-              color: SAGE,
+              color: TEXT_MUTED,
               fontSize: "10px",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
@@ -179,7 +177,7 @@ function FooterLabel({ children }: { children: React.ReactNode }) {
     <div
       className="font-sans leading-relaxed"
       style={{
-        color: "#ffffff",
+        color: TEXT,
         fontSize: "10px",
         letterSpacing: "0.28em",
         textTransform: "uppercase",
