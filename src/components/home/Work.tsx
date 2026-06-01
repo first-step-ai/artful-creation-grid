@@ -6,7 +6,7 @@ const feature = featureAsset.url;
 import { useReveal } from "@/hooks/use-reveal";
 
 const projects = [
-  { n: "01", title: "Travertine Ensuite", suburb: "Mosman", year: "2025", image: p1 },
+  { n: "01", title: "Hotel-Inspired Luxury", suburb: "Abbotsford", year: "", image: p1 },
   { n: "02", title: "Stained Oak Kitchen", suburb: "Paddington", year: "2025", image: p2 },
   { n: "03", title: "Fluted Powder Room", suburb: "Vaucluse", year: "2024", image: p3 },
 ];
