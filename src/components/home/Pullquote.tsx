@@ -139,8 +139,8 @@ export function Pullquote() {
 
             {/* Controls row */}
             {total > 1 && (
-              <div className="md:pl-12 mt-12 flex items-center justify-between border-t border-ivory/10 pt-6">
-                <span className="font-sans text-ivory-muted/80 text-sm tabular-nums tracking-wider">
+              <div className="md:pl-8 mt-6 flex items-center justify-between border-t border-ivory/10 pt-3">
+                <span className="font-sans text-ivory-muted/80 text-[10px] tabular-nums tracking-wider">
                   <span className="text-ivory">{pad(active + 1)}</span>
                   <span className="mx-2 text-ivory-muted/40">/</span>
                   <span>{pad(total)}</span>
