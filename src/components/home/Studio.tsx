@@ -35,39 +35,6 @@ export function Studio() {
           </div>
         </div>
 
-        {/* Double rule */}
-        <div className="mt-20 mb-12">
-          <div className="h-[2px] w-full bg-brass" />
-          <div className="h-px w-full bg-brass mt-1 opacity-40" />
-        </div>
-
-        {/* Stats row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
-          <div className="flex flex-col gap-1">
-            <span className="text-brass text-xl font-semibold tracking-tighter font-sans">
-              25+
-            </span>
-            <span className="text-ivory text-[10px] tracking-[0.25em] font-medium uppercase font-sans">
-              Years Practising
-            </span>
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="text-brass text-xl font-semibold tracking-tighter font-sans">
-              400+
-            </span>
-            <span className="text-ivory text-[10px] tracking-[0.25em] font-medium uppercase font-sans">
-              Rooms Delivered
-            </span>
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="text-brass text-xl font-semibold tracking-tighter italic font-sans">
-              Finalist
-            </span>
-            <span className="text-ivory text-[10px] tracking-[0.25em] font-medium uppercase font-sans">
-              HIA Awards
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );
