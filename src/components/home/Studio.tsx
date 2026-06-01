@@ -18,20 +18,19 @@ export function Studio() {
               </span>
             </div>
             <h2 className="font-serif text-ivory text-5xl md:text-7xl italic leading-[1.1] font-light tracking-[-0.01em]">
-              A practice rooted
+              Built in-house.
               <br />
-              in patience.
+              Every time.
             </h2>
           </div>
 
           {/* Right: body */}
           <div className="lg:col-span-7">
             <p className="font-sans text-ivory/80 text-sm md:text-base leading-relaxed max-w-xl font-light">
-              For over twenty-five years we have shaped the everyday rooms of
-              Sydney homes — spaces measured not in square metres but in
-              mornings, evenings, in the soft arrival of light. Every project
-              begins as a conversation and ends as a place that feels, quietly,
-              inevitable.
+              For over 25 years we've been designing and building bathrooms,
+              kitchens, laundries and interiors across Sydney. We don't
+              outsource. Every project is handled by our own team — from the
+              first conversation to the final fixture.
             </p>
           </div>
         </div>
