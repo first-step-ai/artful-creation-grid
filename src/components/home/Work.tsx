@@ -8,7 +8,7 @@ const p1 = hotelAsset.url;
 import { useReveal } from "@/hooks/use-reveal";
 
 const projects = [
-  { n: "01", title: "Hotel-Inspired Luxury", suburb: "Abbotsford", year: "", image: p1 },
+  { n: "01", title: "Award-Winning Family Bathroom", suburb: "Enmore", year: "", image: p1 },
   { n: "02", title: "Award-Finalist Kitchen and Bath", suburb: "Drummoyne", year: "", image: p2 },
   { n: "03", title: "Functional Luxury for a Family of Four", suburb: "Rozelle", year: "", image: p3 },
 ];
