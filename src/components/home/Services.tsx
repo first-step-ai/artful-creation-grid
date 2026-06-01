@@ -33,6 +33,7 @@ const services = [
 
 export function Services() {
   const ref = useReveal<HTMLDivElement>();
+  const gridRef = useReveal<HTMLDivElement>();
   return (
     <section id="services" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-20 md:pb-24">
@@ -40,7 +41,7 @@ export function Services() {
           <div className="eyebrow">02 / Services</div>
         </div>
 
-        <div className="reveal reveal-stagger reveal-in grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
+        <div ref={gridRef} className="reveal reveal-stagger grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
           {services.map((s) => (
             <ServiceCard key={s.title} {...s} />
           ))}
