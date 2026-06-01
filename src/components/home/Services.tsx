@@ -25,7 +25,7 @@ const services = [
   },
   {
     num: "iv",
-    title: "Interior Design",
+    title: "Multi-space renovation",
     body: "A home that feels considered in every corner. We handle the full picture.",
     image: interiors,
   },
