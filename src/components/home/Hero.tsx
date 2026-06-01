@@ -25,7 +25,7 @@ export function Hero() {
         ref={ref}
         className="reveal relative z-10 mx-auto flex min-h-[92vh] md:min-h-screen max-w-[1600px] flex-col justify-between px-6 md:px-10 pt-48 md:pt-64 pb-12"
       >
-        <div className="max-w-4xl">
+        <div className="max-w-4xl p-6 -ml-6 rounded-2xl bg-gradient-to-r from-white/30 via-white/10 to-transparent backdrop-blur-[2px]">
           <h1 className="font-sans font-light text-oxblood text-[2rem] leading-[1.05] sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.01em]">
             Thoughtfully Designed Spaces. Beautifully Executed.
           </h1>
