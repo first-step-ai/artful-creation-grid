@@ -25,7 +25,7 @@ export function Work() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 md:mb-24 items-end">
           <div className="md:col-span-7">
             <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;03 / Selected Work</div>
-            <h2 className="mt-6 font-sans text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
+            <h2 className="mt-6 font-serif text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
               Recent projects,
               <br />
               <em className="not-italic text-ivory-muted">across Sydney.</em>
@@ -55,7 +55,7 @@ export function Work() {
           <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 right-6 md:right-10 flex items-end justify-between gap-8">
             <div>
               <div className="eyebrow"><span className="text-brass">Featured</span>&nbsp;&nbsp;·&nbsp;&nbsp;00</div>
-              <div className="mt-3 font-sans italic text-ivory text-3xl md:text-5xl font-light">
+              <div className="mt-3 font-serif italic text-ivory text-3xl md:text-5xl font-light">
                 The Arched House
               </div>
               <div className="eyebrow mt-2">Bellevue Hill · 2026</div>
@@ -90,7 +90,7 @@ function ProjectTile({ project }: { project: (typeof projects)[number] }) {
       </div>
       <figcaption className="mt-5 flex items-baseline justify-between gap-6">
         <div>
-          <div className="font-sans text-xl md:text-2xl text-ivory font-light italic">
+          <div className="font-serif text-xl md:text-2xl text-ivory font-light italic">
             {project.title}
           </div>
           <div className="eyebrow mt-2">{project.suburb}</div>
