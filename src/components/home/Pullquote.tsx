@@ -94,35 +94,35 @@ export function Pullquote() {
             {/* faint hairline */}
             <div aria-hidden className="hidden md:block absolute left-0 top-2 bottom-0 w-px bg-ivory/10" />
 
-            <div className="md:pl-12 relative min-h-[260px] md:min-h-[300px]">
-              {isLoading && <div className="h-6 w-64 bg-ivory/5 animate-pulse rounded" />}
+            <div className="md:pl-8 relative min-h-[140px] md:min-h-[160px]">
+              {isLoading && <div className="h-4 w-48 bg-ivory/5 animate-pulse rounded" />}
 
               {!isLoading && current && (
                 <figure key={active} className="animate-fade-in">
-                  <span aria-hidden className="block font-sans text-brass/60 text-6xl leading-none mb-4">
+                  <span aria-hidden className="block font-sans text-brass/60 text-3xl leading-none mb-2">
                     “
                   </span>
-                  <blockquote className="font-sans font-light text-ivory text-xl md:text-[1.75rem] leading-[1.4] tracking-[-0.005em]">
+                  <blockquote className="font-sans font-light text-ivory text-sm md:text-base leading-[1.55] tracking-[-0.005em]">
                     {current.text}
                   </blockquote>
-                  <figcaption className="mt-10 flex items-center gap-4">
+                  <figcaption className="mt-5 flex items-center gap-3">
                     {current.authorPhoto ? (
                       <img
                         src={current.authorPhoto}
                         alt={current.author}
-                        className="h-10 w-10 rounded-full object-cover ring-1 ring-brass/40"
+                        className="h-6 w-6 rounded-full object-cover ring-1 ring-brass/40"
                         loading="lazy"
                       />
                     ) : (
-                      <div className="h-10 w-10 rounded-full bg-brass/15 flex items-center justify-center text-brass font-sans">
+                      <div className="h-6 w-6 rounded-full bg-brass/15 flex items-center justify-center text-brass font-sans text-[10px]">
                         {current.author.charAt(0)}
                       </div>
                     )}
                     <div className="flex flex-col">
-                      <span className="font-sans italic text-ivory text-base">
+                      <span className="font-sans italic text-ivory text-xs">
                         {current.author}
                       </span>
-                      <span className="eyebrow text-ivory-muted/60 text-[10px]">
+                      <span className="eyebrow text-ivory-muted/60 text-[9px]">
                         Google review
                       </span>
                     </div>
@@ -131,7 +131,7 @@ export function Pullquote() {
               )}
 
               {!isLoading && !current && (
-                <p className="text-ivory-muted">
+                <p className="text-ivory-muted text-sm">
                   {data?.error ?? "No reviews available yet."}
                 </p>
               )}
