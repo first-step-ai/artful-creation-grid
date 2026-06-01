@@ -119,7 +119,7 @@ export function Footer() {
         className="w-full"
         style={{ borderTop: `0.5px solid ${RULE}` }}
       >
-        <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div className="mx-auto px-6 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <span
             className="font-sans"
             style={{
