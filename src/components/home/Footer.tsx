@@ -19,7 +19,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-12 md:col-span-3">
             <div
-              className="font-serif font-light leading-none"
+              className="font-sans font-light leading-none"
               style={{ color: PARCHMENT, letterSpacing: "0.04em" }}
             >
               <div style={{ fontSize: "56px" }}>AM</div>
@@ -37,7 +37,7 @@ export function Footer() {
             </div>
 
             <p
-              className="mt-10 font-serif font-light leading-relaxed"
+              className="mt-10 font-sans font-light leading-relaxed"
               style={{ color: NAV_LINK, fontSize: "15px" }}
             >
               Boutique design-and-build studio.
@@ -65,7 +65,7 @@ export function Footer() {
           <div className="col-span-12 md:col-span-4">
             <FooterLabel>Studio<br />(By Appointment Only)</FooterLabel>
             <div
-              className="mt-5 font-serif font-light leading-relaxed"
+              className="mt-5 font-sans font-light leading-relaxed"
               style={{ color: PARCHMENT, fontSize: "15px" }}
             >
               8/77–105 Victoria Road
@@ -77,7 +77,7 @@ export function Footer() {
               <FooterLabel>Email</FooterLabel>
               <a
                 href="mailto:info@ambathrooms.com.au"
-                className="mt-5 block font-serif font-light hover:opacity-70 transition-opacity"
+                className="mt-5 block font-sans font-light hover:opacity-70 transition-opacity"
                 style={{ color: PARCHMENT, fontSize: "15px" }}
               >
                 info@ambathrooms.com.au
@@ -88,7 +88,7 @@ export function Footer() {
               <FooterLabel>Phone</FooterLabel>
               <a
                 href="tel:+61291814776"
-                className="mt-5 block font-serif font-light hover:opacity-70 transition-opacity"
+                className="mt-5 block font-sans font-light hover:opacity-70 transition-opacity"
                 style={{ color: PARCHMENT, fontSize: "15px" }}
               >
                 (02) 9181 4776
@@ -98,7 +98,7 @@ export function Footer() {
             <div className="mt-8">
               <FooterLabel>Hours</FooterLabel>
               <div
-                className="mt-5 font-serif font-light"
+                className="mt-5 font-sans font-light"
                 style={{ color: PARCHMENT, fontSize: "15px" }}
               >
                 Monday – Friday: 8.30 am – 4.30 pm
@@ -114,7 +114,7 @@ export function Footer() {
                 <li key={l}>
                   <a
                     href="#"
-                    className="font-serif font-light hover:opacity-70 transition-opacity"
+                    className="font-sans font-light hover:opacity-70 transition-opacity"
                     style={{ color: PARCHMENT, fontSize: "15px" }}
                   >
                     {l}
@@ -132,7 +132,7 @@ export function Footer() {
                 <li key={l}>
                   <a
                     href="#"
-                    className="font-serif font-light hover:opacity-70 transition-opacity"
+                    className="font-sans font-light hover:opacity-70 transition-opacity"
                     style={{ color: PARCHMENT, fontSize: "15px" }}
                   >
                     {l}

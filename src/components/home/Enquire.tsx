@@ -26,7 +26,7 @@ export function Enquire() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
           <div className="md:col-span-5 flex flex-col">
             <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;05 / Enquire</div>
-            <h2 className="mt-6 font-serif text-5xl md:text-7xl lg:text-[5.5rem] text-ivory font-light leading-[1.02] tracking-[-0.01em]">
+            <h2 className="mt-6 font-sans text-5xl md:text-7xl lg:text-[5.5rem] text-ivory font-light leading-[1.02] tracking-[-0.01em]">
               Let's
               <br />
               <em className="not-italic text-ivory-muted">begin.</em>
@@ -103,7 +103,7 @@ export function Enquire() {
                 id="message"
                 name="message"
                 rows={5}
-                className="w-full bg-transparent border-b border-border focus:border-ivory outline-none py-3 text-ivory font-serif text-lg placeholder:text-ivory-muted/60 transition-colors"
+                className="w-full bg-transparent border-b border-border focus:border-ivory outline-none py-3 text-ivory font-sans text-lg placeholder:text-ivory-muted/60 transition-colors"
                 placeholder="A few sentences is plenty…"
               />
             </div>
@@ -147,7 +147,7 @@ function Field({
         name={name}
         type={type}
         required={required}
-        className="w-full bg-transparent border-b border-border focus:border-ivory outline-none py-3 text-ivory font-serif text-lg transition-colors"
+        className="w-full bg-transparent border-b border-border focus:border-ivory outline-none py-3 text-ivory font-sans text-lg transition-colors"
       />
     </div>
   );

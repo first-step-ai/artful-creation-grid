@@ -39,7 +39,7 @@ export function Services() {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between mb-10 md:mb-14">
           <div>
             <div className="eyebrow">02 / Expertise</div>
-            <h2 className="mt-4 font-serif text-3xl md:text-5xl text-ivory font-light tracking-[-0.01em]">
+            <h2 className="mt-4 font-sans text-3xl md:text-5xl text-ivory font-light tracking-[-0.01em]">
               Every room you use every day.
             </h2>
           </div>
@@ -81,11 +81,11 @@ function ServiceCard({
           className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
         />
         <div className="absolute inset-0 bg-oxblood/30 transition-opacity duration-700 group-hover:opacity-0" />
-        <div className="absolute top-4 left-4 font-serif italic text-ivory text-base">{num}</div>
+        <div className="absolute top-4 left-4 font-sans italic text-ivory text-base">{num}</div>
       </div>
       <div className="mt-4 flex items-start justify-between gap-6">
         <div>
-          <h3 className="font-serif text-2xl md:text-3xl text-ivory font-light tracking-[-0.005em]">
+          <h3 className="font-sans text-2xl md:text-3xl text-ivory font-light tracking-[-0.005em]">
             {title}
           </h3>
           <p className="mt-2 max-w-sm text-sm text-ivory-muted leading-relaxed">{body}</p>

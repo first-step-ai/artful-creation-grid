@@ -26,7 +26,7 @@ export function Hero() {
         className="reveal relative z-10 mx-auto flex min-h-[92vh] md:min-h-screen max-w-[1600px] flex-col justify-between px-6 md:px-10 pt-32 md:pt-40 pb-12"
       >
         <div className="max-w-4xl">
-          <h1 className="font-serif font-light text-ivory text-[2.75rem] leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-[-0.01em]">
+          <h1 className="font-sans font-light text-ivory text-[2.75rem] leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-[-0.01em]">
             Bathrooms, kitchens and interiors. Designed and built in Sydney.
           </h1>
           <p className="mt-8 max-w-xl text-ivory-muted text-base md:text-lg leading-relaxed">
