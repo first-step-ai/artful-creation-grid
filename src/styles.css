@@ -37,6 +37,7 @@
   --color-brass-soft: var(--brass-soft);
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
 }
 
 :root {
