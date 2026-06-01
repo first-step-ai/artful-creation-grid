@@ -16,13 +16,13 @@ import heroImg from "@/assets/hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AM Bathrooms + Projects — Sydney Renovation Specialists" },
+      { title: "AM Bathrooms + Projects | Sydney Renovation Specialists" },
       {
         name: "description",
         content:
           "A Sydney design + build studio shaping bathrooms, kitchens, laundries and interiors with care, collaboration and a fixed-price promise.",
       },
-      { property: "og:title", content: "AM Bathrooms + Projects — Sydney Renovation Specialists" },
+      { property: "og:title", content: "AM Bathrooms + Projects | Sydney Renovation Specialists" },
       {
         property: "og:description",
         content:
