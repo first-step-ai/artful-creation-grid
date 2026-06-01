@@ -40,7 +40,7 @@ export function Services() {
           <div className="eyebrow">02 / Services</div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
+        <div className="reveal reveal-stagger reveal-in grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
           {services.map((s) => (
             <ServiceCard key={s.title} {...s} />
           ))}
