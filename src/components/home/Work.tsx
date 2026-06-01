@@ -1,9 +1,10 @@
-import p1 from "@/assets/project-1.jpg";
 import p3 from "@/assets/project-3.jpg";
 import featureAsset from "@/assets/arched-house.jpg.asset.json";
 import kitchenAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
+import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
 const feature = featureAsset.url;
 const p2 = kitchenAsset.url;
+const p1 = hotelAsset.url;
 import { useReveal } from "@/hooks/use-reveal";
 
 const projects = [
