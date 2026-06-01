@@ -44,8 +44,9 @@ function Home() {
         <Hero />
         <Work />
         <Services />
-        <Pullquote />
         <Process />
+        <Pullquote />
+        
         
       </main>
       <Footer />

@@ -58,30 +58,30 @@ export function Pullquote() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="mx-auto max-w-[1280px] px-6 md:px-12 py-24 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20">
+      <div className="mx-auto max-w-[1280px] px-6 md:px-12 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           {/* LEFT / meta column */}
-          <aside className="md:col-span-4 flex flex-col justify-between gap-12">
+          <aside className="md:col-span-4 flex flex-col justify-between gap-6">
             <div>
-              <div className="eyebrow text-ivory-muted">
+              <div className="eyebrow text-ivory-muted text-[10px]">
                 <span className="text-brass">✦</span>&nbsp;&nbsp;Testimonials
               </div>
-              <h2 className="mt-6 font-sans text-3xl md:text-[2.75rem] text-ivory font-light leading-[1.1] tracking-[-0.015em]">
-                Voices of the<br />
+              <h2 className="mt-3 font-sans text-base md:text-lg text-ivory font-light leading-[1.3] tracking-[-0.01em]">
+                Voices of the{" "}
                 <em className="not-italic text-ivory-muted">people we build for.</em>
               </h2>
             </div>
 
             {data?.rating != null && (
-              <div className="flex items-end gap-4 border-t border-ivory/10 pt-6">
-                <span className="font-sans text-5xl text-ivory leading-none">
+              <div className="flex items-end gap-3 border-t border-ivory/10 pt-3">
+                <span className="font-sans text-2xl text-ivory leading-none">
                   {data.rating.toFixed(1)}
                 </span>
-                <div className="flex flex-col gap-1 pb-1">
-                  <div className="flex gap-[2px] text-brass text-sm" aria-hidden>
+                <div className="flex flex-col gap-0.5 pb-0.5">
+                  <div className="flex gap-[2px] text-brass text-[10px]" aria-hidden>
                     {"✦✦✦✦✦"}
                   </div>
-                  <span className="eyebrow text-ivory-muted/70 text-[10px]">
+                  <span className="eyebrow text-ivory-muted/70 text-[9px]">
                     {data.totalRatings ?? 0} Google reviews
                   </span>
                 </div>
@@ -94,35 +94,35 @@ export function Pullquote() {
             {/* faint hairline */}
             <div aria-hidden className="hidden md:block absolute left-0 top-2 bottom-0 w-px bg-ivory/10" />
 
-            <div className="md:pl-12 relative min-h-[260px] md:min-h-[300px]">
-              {isLoading && <div className="h-6 w-64 bg-ivory/5 animate-pulse rounded" />}
+            <div className="md:pl-8 relative min-h-[140px] md:min-h-[160px]">
+              {isLoading && <div className="h-4 w-48 bg-ivory/5 animate-pulse rounded" />}
 
               {!isLoading && current && (
                 <figure key={active} className="animate-fade-in">
-                  <span aria-hidden className="block font-sans text-brass/60 text-6xl leading-none mb-4">
+                  <span aria-hidden className="block font-sans text-brass/60 text-3xl leading-none mb-2">
                     “
                   </span>
-                  <blockquote className="font-sans font-light text-ivory text-xl md:text-[1.75rem] leading-[1.4] tracking-[-0.005em]">
+                  <blockquote className="font-sans font-light text-ivory text-sm md:text-base leading-[1.55] tracking-[-0.005em]">
                     {current.text}
                   </blockquote>
-                  <figcaption className="mt-10 flex items-center gap-4">
+                  <figcaption className="mt-5 flex items-center gap-3">
                     {current.authorPhoto ? (
                       <img
                         src={current.authorPhoto}
                         alt={current.author}
-                        className="h-10 w-10 rounded-full object-cover ring-1 ring-brass/40"
+                        className="h-6 w-6 rounded-full object-cover ring-1 ring-brass/40"
                         loading="lazy"
                       />
                     ) : (
-                      <div className="h-10 w-10 rounded-full bg-brass/15 flex items-center justify-center text-brass font-sans">
+                      <div className="h-6 w-6 rounded-full bg-brass/15 flex items-center justify-center text-brass font-sans text-[10px]">
                         {current.author.charAt(0)}
                       </div>
                     )}
                     <div className="flex flex-col">
-                      <span className="font-sans italic text-ivory text-base">
+                      <span className="font-sans italic text-ivory text-xs">
                         {current.author}
                       </span>
-                      <span className="eyebrow text-ivory-muted/60 text-[10px]">
+                      <span className="eyebrow text-ivory-muted/60 text-[9px]">
                         Google review
                       </span>
                     </div>
@@ -131,7 +131,7 @@ export function Pullquote() {
               )}
 
               {!isLoading && !current && (
-                <p className="text-ivory-muted">
+                <p className="text-ivory-muted text-sm">
                   {data?.error ?? "No reviews available yet."}
                 </p>
               )}
@@ -139,8 +139,8 @@ export function Pullquote() {
 
             {/* Controls row */}
             {total > 1 && (
-              <div className="md:pl-12 mt-12 flex items-center justify-between border-t border-ivory/10 pt-6">
-                <span className="font-sans text-ivory-muted/80 text-sm tabular-nums tracking-wider">
+              <div className="md:pl-8 mt-6 flex items-center justify-between border-t border-ivory/10 pt-3">
+                <span className="font-sans text-ivory-muted/80 text-[10px] tabular-nums tracking-wider">
                   <span className="text-ivory">{pad(active + 1)}</span>
                   <span className="mx-2 text-ivory-muted/40">/</span>
                   <span>{pad(total)}</span>
