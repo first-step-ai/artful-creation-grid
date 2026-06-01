@@ -61,17 +61,7 @@ export function Footer() {
 
           {/* Contact */}
           <div className="col-span-12 md:col-span-4">
-            <FooterLabel>Studio<br />(By Appointment Only)</FooterLabel>
-            <div
-              className="mt-5 font-sans font-light leading-relaxed"
-              style={{ color: TEXT, fontSize: "15px" }}
-            >
-              8/77–105 Victoria Road
-              <br />
-              Drummoyne NSW 2047
-            </div>
-
-            <div className="mt-8">
+            <div className="mt-0">
               <FooterLabel>Email</FooterLabel>
               <a
                 href="mailto:info@ambathrooms.com.au"
