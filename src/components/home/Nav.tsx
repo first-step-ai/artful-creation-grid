@@ -23,7 +23,7 @@ export function Nav() {
   return (
     <header
       className={[
-        "sticky top-0 z-40 w-full transition-colors duration-500",
+        "fixed top-0 left-0 right-0 z-40 w-full transition-colors duration-500",
         scrolled ? "bg-oxblood/85 backdrop-blur-md border-b border-border/60" : "bg-transparent",
       ].join(" ")}
     >
