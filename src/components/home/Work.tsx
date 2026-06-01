@@ -72,7 +72,7 @@ export function Work() {
 
 function ProjectTile({ project }: { project: (typeof projects)[number] }) {
   return (
-    <figure className="group">
+    <figure className="group lift">
       <div className="relative overflow-hidden aspect-[4/5] bg-oxblood">
         <img
           src={project.image}
