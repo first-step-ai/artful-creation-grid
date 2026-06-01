@@ -30,7 +30,7 @@ export function Hero() {
             Thoughtfully Designed Spaces. Beautifully Executed.
           </h1>
           <p className="mt-6 max-w-xl text-white/75 text-sm md:text-base font-light leading-relaxed">
-            Award-winning design and renovation specialists creating homes that feel effortless to live in. We Design Homes Around The Way You Live
+            Award-winning design and renovation specialists creating homes that feel effortless to live in.
           </p>
         </div>
 
