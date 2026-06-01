@@ -40,7 +40,7 @@ export function Pullquote() {
     >
       <div className="mx-auto max-w-[1280px] px-6 md:px-12 py-24 md:py-32">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20">
-          {/* LEFT — meta column */}
+          {/* LEFT / meta column */}
           <aside className="md:col-span-4 flex flex-col justify-between gap-12">
             <div>
               <div className="eyebrow text-ivory-muted">
@@ -69,7 +69,7 @@ export function Pullquote() {
             )}
           </aside>
 
-          {/* RIGHT — quote stage */}
+          {/* RIGHT / quote stage */}
           <div className="md:col-span-8 relative flex flex-col">
             {/* faint hairline */}
             <div aria-hidden className="hidden md:block absolute left-0 top-2 bottom-0 w-px bg-ivory/10" />
