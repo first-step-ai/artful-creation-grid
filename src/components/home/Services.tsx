@@ -63,8 +63,9 @@ function ServiceCard({
   image: string;
 }) {
   return (
-    <article className="group">
+    <article className="group lift">
       <div className="relative overflow-hidden h-[36vh] md:h-[46vh] max-h-[520px] bg-burgundy">
+
         <img
           src={image}
           alt={title}
