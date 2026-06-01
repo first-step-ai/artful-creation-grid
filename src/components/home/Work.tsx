@@ -29,9 +29,8 @@ export function Work() {
           <div className="md:col-span-7">
             <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;01 / Featured Work</div>
           </div>
-          <div className="md:col-span-4 md:col-start-9 text-ivory-muted leading-relaxed">
-            <p>A small selection of the homes we've shaped this season. Each one a study in restraint, material and light.</p>
-            <a href="#enquire" className="mt-6 inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
+          <div className="md:col-span-4 md:col-start-9">
+            <a href="#enquire" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
               View full portfolio
             </a>
           </div>
