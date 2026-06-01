@@ -5,7 +5,7 @@ const GOLD = "#c8a060";
 const NAV_LINK = "#a0a088";
 const RULE = "#1a3222";
 
-const COLUMNS: { label: string; links: string[] }[] = [
+const NAV: { label: string; links: string[] }[] = [
   { label: "Studio", links: ["About", "Process", "Showroom", "Careers"] },
   { label: "Work", links: ["Bathrooms", "Kitchens", "Laundries", "Interiors"] },
   { label: "Connect", links: ["Enquire", "Phone", "Email", "Visit"] },
@@ -19,58 +19,122 @@ export function Footer() {
       className="w-full"
       style={{ backgroundColor: FOOTER_BG, color: PARCHMENT }}
     >
-      <div className="mx-auto px-6 md:px-10 py-14 md:py-20 flex flex-col items-center text-center">
-        {/* Logo */}
-        <div
-          className="font-serif text-2xl md:text-3xl font-light flex items-center justify-center gap-5"
-          style={{ color: PARCHMENT, letterSpacing: "0.32em" }}
-        >
-          <span>AM</span>
-          <span style={{ color: GOLD }} aria-hidden="true">✦</span>
-          <span>BATHROOMS</span>
-        </div>
-
-        {/* Tagline */}
-        <p
-          className="mt-5 max-w-md text-sm md:text-[15px] font-light leading-relaxed"
-          style={{ color: SAGE }}
-        >
-          A Sydney design + build studio shaping bathrooms, kitchens, laundries
-          and interiors with quiet precision since 1998.
-        </p>
-
-        {/* Ornamental divider */}
-        <Divider />
-
-        {/* Nav columns */}
-        <nav className="mt-10 w-full grid grid-cols-3 max-w-2xl">
-          {COLUMNS.map((col, idx) => (
+      {/* Top band: oversized wordmark */}
+      <div className="w-full px-6 md:px-12 pt-20 md:pt-28 pb-10 md:pb-14">
+        <div className="grid grid-cols-12 gap-6 md:gap-10 items-end">
+          <div className="col-span-12 md:col-span-7">
             <div
-              key={col.label}
-              className="flex flex-col items-center px-4"
-              style={
-                idx > 0
-                  ? { borderLeft: `0.5px solid ${RULE}` }
-                  : undefined
-              }
+              className="font-sans"
+              style={{
+                color: SAGE,
+                fontSize: "10px",
+                letterSpacing: "0.28em",
+                textTransform: "uppercase",
+              }}
             >
+              Est. 1998 / Sydney
+            </div>
+            <h2
+              className="mt-6 font-serif font-light leading-[0.92] tracking-tight"
+              style={{
+                color: PARCHMENT,
+                fontSize: "clamp(54px, 11vw, 168px)",
+              }}
+            >
+              AM Bathrooms<span style={{ color: GOLD }}>.</span>
+            </h2>
+          </div>
+
+          <div className="col-span-12 md:col-span-5 md:pb-6">
+            <p
+              className="font-serif font-light italic leading-relaxed"
+              style={{ color: PARCHMENT, fontSize: "20px" }}
+            >
+              Quiet, considered rooms.
+              <br />
+              Designed and built by one team.
+            </p>
+            <a
+              href="#enquire"
+              className="mt-8 inline-flex items-center gap-3 font-sans transition-opacity hover:opacity-70"
+              style={{
+                color: GOLD,
+                fontSize: "11px",
+                letterSpacing: "0.28em",
+                textTransform: "uppercase",
+                borderBottom: `0.5px solid ${GOLD}`,
+                paddingBottom: "6px",
+              }}
+            >
+              Start a project
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Mid band: contact + nav columns */}
+      <div
+        className="w-full px-6 md:px-12 py-12 md:py-16"
+        style={{ borderTop: `0.5px solid ${RULE}` }}
+      >
+        <div className="grid grid-cols-12 gap-8 md:gap-10">
+          {/* Contact block */}
+          <div className="col-span-12 md:col-span-3">
+            <div
+              className="font-sans"
+              style={{
+                color: GOLD,
+                fontSize: "10px",
+                letterSpacing: "0.28em",
+                textTransform: "uppercase",
+              }}
+            >
+              Studio
+            </div>
+            <address
+              className="mt-5 not-italic font-serif font-light leading-relaxed"
+              style={{ color: PARCHMENT, fontSize: "15px" }}
+            >
+              42 Bourke Road
+              <br />
+              Alexandria NSW 2015
+              <br />
+              <span style={{ color: NAV_LINK }}>By appointment</span>
+            </address>
+            <div
+              className="mt-6 font-serif font-light leading-relaxed"
+              style={{ color: PARCHMENT, fontSize: "15px" }}
+            >
+              <a href="tel:+61290000000" className="block hover:opacity-70 transition-opacity">
+                +61 2 9000 0000
+              </a>
+              <a href="mailto:studio@ambathrooms.com.au" className="block hover:opacity-70 transition-opacity italic">
+                studio@ambathrooms.com.au
+              </a>
+            </div>
+          </div>
+
+          {/* Nav columns */}
+          {NAV.map((col) => (
+            <div key={col.label} className="col-span-6 md:col-span-3">
               <div
-                className="text-[10px] font-sans"
+                className="font-sans"
                 style={{
-                  color: PARCHMENT,
-                  letterSpacing: "0.22em",
+                  color: GOLD,
+                  fontSize: "10px",
+                  letterSpacing: "0.28em",
                   textTransform: "uppercase",
-                  fontWeight: 400,
                 }}
               >
                 {col.label}
               </div>
-              <ul className="mt-4 space-y-2.5">
+              <ul className="mt-5 space-y-3">
                 {col.links.map((l, i) => (
                   <li key={l}>
                     <a
                       href="#"
-                      className="font-serif transition-colors hover:opacity-100"
+                      className="font-serif transition-opacity hover:opacity-70"
                       style={{
                         color: NAV_LINK,
                         fontSize: "15px",
@@ -84,34 +148,7 @@ export function Footer() {
               </ul>
             </div>
           ))}
-        </nav>
-
-        {/* Ornamental divider */}
-        <Divider />
-
-        {/* Social strip */}
-        <ul className="mt-8 flex items-center justify-center gap-7 md:gap-10">
-          {SOCIALS.map((s) => (
-            <li key={s}>
-              <a
-                href="#"
-                className="font-sans transition-opacity hover:opacity-70"
-                style={{
-                  color: PARCHMENT,
-                  fontSize: "10px",
-                  letterSpacing: "0.22em",
-                  textTransform: "uppercase",
-                  fontWeight: 400,
-                  textDecoration: "underline",
-                  textDecorationThickness: "0.5px",
-                  textUnderlineOffset: "6px",
-                }}
-              >
-                {s}
-              </a>
-            </li>
-          ))}
-        </ul>
+        </div>
       </div>
 
       {/* Bottom bar */}
@@ -119,50 +156,66 @@ export function Footer() {
         className="w-full"
         style={{ borderTop: `0.5px solid ${RULE}` }}
       >
-        <div className="mx-auto px-6 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <span
-            className="font-sans"
-            style={{
-              color: SAGE,
-              fontSize: "10px",
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-            }}
-          >
-            © {new Date().getFullYear()} AM Bathrooms + Projects
-          </span>
-          <span
-            className="font-sans"
-            style={{
-              color: SAGE,
-              fontSize: "10px",
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-            }}
-          >
-            Made with care in Sydney
-          </span>
+        <div className="w-full px-6 md:px-12 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div className="flex items-center gap-5">
+            <span
+              className="font-sans"
+              style={{
+                color: SAGE,
+                fontSize: "10px",
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+              }}
+            >
+              © {new Date().getFullYear()} AM Bathrooms + Projects
+            </span>
+            <span aria-hidden="true" style={{ color: RULE }}>/</span>
+            <a
+              href="#"
+              className="font-sans hover:opacity-70 transition-opacity"
+              style={{
+                color: SAGE,
+                fontSize: "10px",
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+              }}
+            >
+              Privacy
+            </a>
+            <a
+              href="#"
+              className="font-sans hover:opacity-70 transition-opacity"
+              style={{
+                color: SAGE,
+                fontSize: "10px",
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+              }}
+            >
+              Terms
+            </a>
+          </div>
+
+          <ul className="flex items-center gap-6">
+            {SOCIALS.map((s) => (
+              <li key={s}>
+                <a
+                  href="#"
+                  className="font-sans transition-opacity hover:opacity-70"
+                  style={{
+                    color: PARCHMENT,
+                    fontSize: "10px",
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {s}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
-  );
-}
-
-function Divider() {
-  return (
-    <div
-      className="mt-8 flex items-center justify-center gap-6 w-full max-w-md"
-      aria-hidden="true"
-    >
-      <span
-        className="flex-1"
-        style={{ height: "0.5px", backgroundColor: RULE }}
-      />
-      <span style={{ color: GOLD, fontSize: "14px" }}>✦</span>
-      <span
-        className="flex-1"
-        style={{ height: "0.5px", backgroundColor: RULE }}
-      />
-    </div>
   );
 }
