@@ -9,7 +9,7 @@ const steps = [
   {
     n: "02",
     title: "Design",
-    body: "Plans, joinery, materials, fittings. Drawn, sampled and reviewed together before a single thing is ordered.",
+    body: "Plans, joinery, materials and fittings. Drawn, sampled and reviewed together before a single thing is ordered.",
   },
   {
     n: "03",
@@ -19,7 +19,7 @@ const steps = [
   {
     n: "04",
     title: "Handover",
-    body: "We walk the room with you. A two-year defects period and a long, quiet relationship after that.",
+    body: "We walk the room with you. A two-year defects period and a long relationship after that.",
   },
 ];
 
@@ -32,12 +32,12 @@ export function Process() {
           <div className="md:col-span-4">
             <div className="eyebrow">04 — Process</div>
             <h2 className="mt-6 font-serif text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
-              A measured method.
+              How it works.
             </h2>
           </div>
           <p className="md:col-span-6 md:col-start-7 self-end text-ivory-muted leading-relaxed">
-            Every renovation we undertake follows the same four-stage rhythm — protecting
-            the work, your time, and the quiet confidence of a fixed price.
+            Every renovation we undertake follows the same four stages — protecting
+            the work, your time, and the certainty of a fixed price.
           </p>
         </div>
 
