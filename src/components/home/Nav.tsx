@@ -3,7 +3,7 @@ import logo from "@/assets/logo.png";
 
 
 const links = [
-  { href: "#work", label: "Our Portfolio" },
+  { href: "#work", label: "Portfolio" },
   { href: "#services", label: "Services" },
   { href: "#process", label: "Process" },
   { href: "#studio", label: "Studio" },
