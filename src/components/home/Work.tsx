@@ -1,14 +1,14 @@
 import p3 from "@/assets/project-3.jpg";
 import featureAsset from "@/assets/arched-house.jpg.asset.json";
 import kitchenAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
-import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
+import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
 const feature = featureAsset.url;
 const p2 = kitchenAsset.url;
-const p1 = hotelAsset.url;
+const p1 = bexleyAsset.url;
 import { useReveal } from "@/hooks/use-reveal";
 
 const projects = [
-  { n: "01", title: "Award-Winning Family Bathroom", suburb: "Enmore", year: "", image: p1 },
+  { n: "01", title: "Bold Utility", suburb: "Bexley", year: "", image: p1 },
   { n: "02", title: "Award-Finalist Kitchen and Bath", suburb: "Drummoyne", year: "", image: p2 },
   { n: "03", title: "Functional Luxury for a Family of Four", suburb: "Rozelle", year: "", image: p3 },
 ];
