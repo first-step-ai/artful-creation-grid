@@ -24,7 +24,7 @@ export function Work() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-24 md:pt-32 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 md:mb-24 items-end">
           <div className="md:col-span-7">
-            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;03 / Selected Work</div>
+            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;02 / Selected Work</div>
             <h2 className="mt-6 font-sans text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
               Recent projects,
               <br />

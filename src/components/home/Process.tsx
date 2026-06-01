@@ -30,7 +30,7 @@ export function Process() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-32">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16 md:mb-24">
           <div className="md:col-span-4">
-            <div className="eyebrow">04 / Process</div>
+            <div className="eyebrow">03 / Process</div>
             <h2 className="mt-6 font-sans text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
               How it works.
             </h2>

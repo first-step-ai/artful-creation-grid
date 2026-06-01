@@ -9,7 +9,7 @@ import { Work } from "@/components/home/Work";
 import { Pullquote } from "@/components/home/Pullquote";
 import { Process } from "@/components/home/Process";
 
-import { Studio } from "@/components/home/Studio";
+
 import { Footer } from "@/components/home/Footer";
 import heroImg from "@/assets/hero.jpg";
 
@@ -42,7 +42,6 @@ function Home() {
       <Nav />
       <main>
         <Hero />
-        <Studio />
         <Services />
         <Work />
         <Pullquote />
