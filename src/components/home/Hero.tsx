@@ -38,12 +38,3 @@ export function Hero() {
     </section>
   );
 }
-
-function HeroStat({ k, v }: { k: string; v: string }) {
-  return (
-    <div>
-      <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;{k}</div>
-      <div className="mt-3 font-serif text-xl md:text-2xl text-ivory font-light">{v}</div>
-    </div>
-  );
-}
