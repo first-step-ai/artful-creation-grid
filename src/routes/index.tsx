@@ -42,8 +42,8 @@ function Home() {
       <Nav />
       <main>
         <Hero />
-        <Services />
         <Work />
+        <Services />
         <Pullquote />
         <Process />
         
