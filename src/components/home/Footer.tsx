@@ -18,11 +18,12 @@ export function Footer() {
         <div className="grid grid-cols-12 gap-10 md:gap-12">
           {/* Brand */}
           <div className="col-span-12 md:col-span-3">
-            <div
-              className="font-sans font-light leading-none"
-              style={{ color: TEXT, letterSpacing: "0.04em" }}
-            >
-              <div style={{ fontSize: "56px" }}>AM</div>
+            <div className="flex flex-col items-start">
+              <img
+                src={logo}
+                alt="AM Bathrooms + Projects"
+                className="h-10 w-auto invert opacity-90"
+              />
               <div
                 className="font-sans mt-2"
                 style={{
