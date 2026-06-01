@@ -8,25 +8,25 @@ const services = [
   {
     num: "i",
     title: "Bathrooms",
-    body: "Sanctuary spaces composed in stone, timber and brass — fully designed and built in-house.",
+    body: "A bathroom built around your routine — materials and details chosen with you, built by us.",
     image: bathrooms,
   },
   {
     num: "ii",
     title: "Kitchens",
-    body: "Joinery-led kitchens that hold a household's rhythm without ever raising their voice.",
+    body: "A kitchen that fits the way your family actually uses it — not just how it looks in a render.",
     image: kitchens,
   },
   {
     num: "iii",
     title: "Laundries",
-    body: "The quiet rooms — engineered for daily use, finished as carefully as the rest of the home.",
+    body: "The room that works hardest in your home, finished as carefully as the rest.",
     image: laundries,
   },
   {
     num: "iv",
     title: "Interior Design",
-    body: "Whole-home interiors, from architectural detailing to the final pieces in the room.",
+    body: "A home that feels considered in every corner — we handle the full picture.",
     image: interiors,
   },
 ];
