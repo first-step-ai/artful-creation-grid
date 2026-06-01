@@ -37,18 +37,7 @@ export function Process() {
   return (
     <section id="process" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12 md:mb-16">
-          <div className="md:col-span-5">
-            <div className="eyebrow">03 / Process</div>
-            <h2 className="mt-6 font-sans text-4xl md:text-5xl text-ivory font-light tracking-[-0.01em]">
-              How it works.
-            </h2>
-          </div>
-          <p className="md:col-span-6 md:col-start-7 self-end text-ivory-muted leading-relaxed">
-            Every renovation we undertake follows the same four stages, protecting
-            the work, your time, and the certainty of a fixed price.
-          </p>
-        </div>
+        <div className="eyebrow mb-12 md:mb-16">03 / Process</div>
 
         <div ref={gridRef} className="reveal reveal-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {steps.map((s) => (
