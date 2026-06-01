@@ -179,7 +179,7 @@ function FooterLabel({ children }: { children: React.ReactNode }) {
     <div
       className="font-sans leading-relaxed"
       style={{
-        color: GOLD,
+        color: "#ffffff",
         fontSize: "10px",
         letterSpacing: "0.28em",
         textTransform: "uppercase",
