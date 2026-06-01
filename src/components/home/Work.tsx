@@ -59,7 +59,7 @@ export function Work() {
         </div>
 
         {/* 3-up evenly distributed, no voids */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div ref={tilesRef} className="reveal reveal-stagger grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {projects.map((p) => (
             <ProjectTile key={p.n} project={p} />
           ))}
