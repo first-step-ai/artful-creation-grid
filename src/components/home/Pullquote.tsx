@@ -14,8 +14,11 @@ export function Pullquote() {
   });
 
   const allReviews = data?.reviews ?? [];
-  // Only keep concise reviews so the layout stays calm
-  const reviews = allReviews.filter((r) => r.text && r.text.length <= 240);
+  // Trim each review to a calm, readable excerpt (≈ 280 chars, cut at a
+  // sentence or word boundary so it never ends mid-word).
+  const reviews = allReviews
+    .filter((r) => r.text && r.text.trim().length > 0)
+    .map((r) => ({ ...r, text: excerpt(r.text, 280) }));
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
 
