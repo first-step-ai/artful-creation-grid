@@ -45,7 +45,7 @@ export function Work() {
           <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-oxblood">
             <img
               src={feature}
-              alt="Featured project: arched stone bathroom in Bellevue Hill"
+              alt="Featured project: Refined Family Living in Rozelle"
               loading="lazy"
               width={1920}
               height={1080}
@@ -56,9 +56,9 @@ export function Work() {
           <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 right-6 md:right-10 flex items-end justify-between gap-8">
             <div>
               <div className="mt-3 font-serif italic text-ivory text-3xl md:text-5xl font-light">
-                The Arched House
+                Refined Family Living
               </div>
-              <div className="eyebrow mt-2">Bellevue Hill · 2026</div>
+              <div className="eyebrow mt-2">Rozelle</div>
             </div>
           </div>
         </div>
