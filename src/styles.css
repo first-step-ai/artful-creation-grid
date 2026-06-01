@@ -101,6 +101,9 @@
   .font-sans {
     font-family: var(--font-sans);
   }
+  .font-serif {
+    font-family: var(--font-serif);
+  }
   .eyebrow {
     font-family: var(--font-sans);
     font-size: 0.6875rem;
