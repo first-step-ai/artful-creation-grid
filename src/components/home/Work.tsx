@@ -50,7 +50,7 @@ export function Work() {
               height={1080}
               className="h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.03]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-oxblood/80 via-oxblood/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-oxblood/95 via-oxblood/30 to-transparent" />
           </div>
           <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 right-6 md:right-10 flex items-end justify-between gap-8">
             <div>
