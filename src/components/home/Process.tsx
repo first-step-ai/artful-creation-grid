@@ -25,6 +25,7 @@ const steps = [
 
 export function Process() {
   const ref = useReveal<HTMLDivElement>();
+  const listRef = useReveal<HTMLOListElement>();
   return (
     <section id="process" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-32">
@@ -41,7 +42,7 @@ export function Process() {
           </p>
         </div>
 
-        <ol className="divide-y divide-border/60 border-y border-border/60">
+        <ol ref={listRef} className="reveal reveal-stagger divide-y divide-border/60 border-y border-border/60">
           {steps.map((s) => (
             <li key={s.n} className="grid grid-cols-1 md:grid-cols-12 gap-6 py-10 md:py-14 group">
               <div className="md:col-span-2 font-sans italic text-ivory-muted text-2xl md:text-3xl font-light">

@@ -22,9 +22,11 @@ const suburbs = [
 export function Work() {
   const ref = useReveal<HTMLDivElement>();
   const featRef = useReveal<HTMLDivElement>();
+  const tilesRef = useReveal<HTMLDivElement>();
   return (
     <section id="work" className="border-t border-border/60 bg-burgundy/40">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-12">
+
         <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
           <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;01 / Featured Work</div>
           <a href="#enquire" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
@@ -57,7 +59,7 @@ export function Work() {
         </div>
 
         {/* 3-up evenly distributed, no voids */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div ref={tilesRef} className="reveal reveal-stagger grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {projects.map((p) => (
             <ProjectTile key={p.n} project={p} />
           ))}
@@ -70,7 +72,7 @@ export function Work() {
 
 function ProjectTile({ project }: { project: (typeof projects)[number] }) {
   return (
-    <figure className="group">
+    <figure className="group lift">
       <div className="relative overflow-hidden aspect-[4/5] bg-oxblood">
         <img
           src={project.image}
