@@ -26,7 +26,7 @@ export function Nav() {
         "fixed top-0 left-0 right-0 z-40 w-full transition-colors duration-500",
         scrolled
           ? "bg-oxblood/95 backdrop-blur-md border-b border-border/70"
-          : "bg-oxblood/88 backdrop-blur-sm border-b border-border/50",
+          : "bg-gradient-to-b from-black/40 to-transparent",
       ].join(" ")}
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 py-5 md:py-6">
