@@ -43,35 +43,36 @@
 :root {
   --radius: 0.25rem;
 
-  /* Brand palette — deep dark green */
-  --oxblood:        oklch(0.17 0.030 155);  /* deep forest */
-  --burgundy:       oklch(0.25 0.050 155);  /* dark moss */
-  --burgundy-soft:  oklch(0.38 0.070 152);  /* moss accent */
-  --ivory:          oklch(0.94 0.012 95);   /* warm ivory */
-  --ivory-muted:    oklch(0.78 0.018 95);   /* muted ivory */
-  --brass:          oklch(0.80 0.095 85);   /* warm brass accent */
-  --brass-soft:     oklch(0.68 0.075 80);
+  /* Brand palette — sage + charcoal */
+  --oxblood:        #383d38;  /* dark section surface */
+  --burgundy:       #2e2d2d;  /* deeper charcoal surface */
+  --burgundy-soft:  #848b7d;  /* sage accent */
+  --ivory:          #ffffff;  /* light text on dark surfaces */
+  --ivory-muted:    #ebf0e9;  /* muted cream (use sparingly) */
+  --brass:          #ffffff;  /* accent (was warm brass) */
+  --brass-soft:     #ebf0e9;
 
-  --background: var(--oxblood);
-  --foreground: var(--ivory);
-  --card: var(--burgundy);
+  --background: #848b7d;          /* sage page background */
+  --foreground: #1a1a1a;          /* near-black text on sage */
+  --card: var(--oxblood);
   --card-foreground: var(--ivory);
-  --popover: var(--burgundy);
+  --popover: var(--oxblood);
   --popover-foreground: var(--ivory);
-  --primary: var(--ivory);
-  --primary-foreground: var(--oxblood);
+  --primary: #1a1a1a;
+  --primary-foreground: var(--ivory);
   --secondary: var(--burgundy);
   --secondary-foreground: var(--ivory);
-  --muted: var(--burgundy);
-  --muted-foreground: var(--ivory-muted);
+  --muted: var(--burgundy-soft);
+  --muted-foreground: #2e2d2d;
   --accent: var(--burgundy-soft);
-  --accent-foreground: var(--ivory);
+  --accent-foreground: #1a1a1a;
   --destructive: oklch(0.55 0.20 25);
   --destructive-foreground: var(--ivory);
-  --border: oklch(0.94 0.012 70 / 18%);
-  --input: oklch(0.94 0.012 70 / 22%);
-  --ring: var(--ivory-muted);
+  --border: rgba(26, 26, 26, 0.18);
+  --input: rgba(26, 26, 26, 0.22);
+  --ring: #1a1a1a;
 }
+
 
 @layer base {
   * {
