@@ -4,7 +4,7 @@ const steps = [
   {
     n: "01",
     title: "Consult",
-    body: "We meet in your home or our showroom. Brief, budget, brief again — until the project's shape is honest.",
+    body: "We meet in your home for a paid consultation. Brief, budget, brief again — until the project's shape is honest.",
   },
   {
     n: "02",
