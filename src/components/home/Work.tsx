@@ -24,7 +24,7 @@ export function Work() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-24 md:pt-32 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 md:mb-24 items-end">
           <div className="md:col-span-7">
-            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;03 — Selected Work</div>
+            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;03 / Selected Work</div>
             <h2 className="mt-6 font-serif text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
               Recent projects,
               <br />
@@ -32,19 +32,19 @@ export function Work() {
             </h2>
           </div>
           <div className="md:col-span-4 md:col-start-9 text-ivory-muted leading-relaxed">
-            <p>A small selection of the homes we've shaped this season — each one a study in restraint, material and light.</p>
+            <p>A small selection of the homes we've shaped this season. Each one a study in restraint, material and light.</p>
             <a href="#enquire" className="mt-6 inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
               View full portfolio
             </a>
           </div>
         </div>
 
-        {/* Featured project — full bleed */}
+        {/* Featured project: full bleed */}
         <div ref={featRef} className="reveal group relative overflow-hidden mb-20 md:mb-28">
           <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-oxblood">
             <img
               src={feature}
-              alt="Featured project — arched stone bathroom in Bellevue Hill"
+              alt="Featured project: arched stone bathroom in Bellevue Hill"
               loading="lazy"
               width={1920}
               height={1080}
@@ -64,7 +64,7 @@ export function Work() {
           </div>
         </div>
 
-        {/* 3-up evenly distributed — no voids */}
+        {/* 3-up evenly distributed, no voids */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {projects.map((p) => (
             <ProjectTile key={p.n} project={p} />
