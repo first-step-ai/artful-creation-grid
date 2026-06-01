@@ -5,6 +5,23 @@ import { getGoogleReviews } from "@/lib/google-reviews.functions";
 
 const ROTATE_MS = 8000;
 
+function excerpt(text: string, max: number): string {
+  // Collapse line breaks / whitespace into a single space so paragraphs
+  // don't break the layout.
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const slice = clean.slice(0, max);
+  // Prefer a sentence boundary, otherwise fall back to the last word.
+  const sentenceEnd = Math.max(
+    slice.lastIndexOf(". "),
+    slice.lastIndexOf("! "),
+    slice.lastIndexOf("? "),
+  );
+  if (sentenceEnd > max * 0.6) return clean.slice(0, sentenceEnd + 1);
+  const wordEnd = slice.lastIndexOf(" ");
+  return clean.slice(0, wordEnd > 0 ? wordEnd : max).trimEnd() + "…";
+}
+
 export function Pullquote() {
   const fetchReviews = useServerFn(getGoogleReviews);
   const { data, isLoading } = useQuery({
@@ -14,8 +31,11 @@ export function Pullquote() {
   });
 
   const allReviews = data?.reviews ?? [];
-  // Only keep concise reviews so the layout stays calm
-  const reviews = allReviews.filter((r) => r.text && r.text.length <= 240);
+  // Trim each review to a calm, readable excerpt (≈ 280 chars, cut at a
+  // sentence or word boundary so it never ends mid-word).
+  const reviews = allReviews
+    .filter((r) => r.text && r.text.trim().length > 0)
+    .map((r) => ({ ...r, text: excerpt(r.text, 280) }));
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
 
