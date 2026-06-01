@@ -86,7 +86,7 @@ function ProjectTile({ project }: { project: (typeof projects)[number] }) {
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
         />
-        <div className="absolute top-5 left-5 eyebrow text-ivory">{project.n}</div>
+        
       </div>
       <figcaption className="mt-5 flex items-baseline justify-between gap-6">
         <div>
