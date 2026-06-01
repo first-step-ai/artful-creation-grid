@@ -31,7 +31,7 @@ export function Process() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16 md:mb-24">
           <div className="md:col-span-4">
             <div className="eyebrow">04 / Process</div>
-            <h2 className="mt-6 font-serif text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
+            <h2 className="mt-6 font-sans text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
               How it works.
             </h2>
           </div>
@@ -44,10 +44,10 @@ export function Process() {
         <ol className="divide-y divide-border/60 border-y border-border/60">
           {steps.map((s) => (
             <li key={s.n} className="grid grid-cols-1 md:grid-cols-12 gap-6 py-10 md:py-14 group">
-              <div className="md:col-span-2 font-serif italic text-ivory-muted text-2xl md:text-3xl font-light">
+              <div className="md:col-span-2 font-sans italic text-ivory-muted text-2xl md:text-3xl font-light">
                 {s.n}
               </div>
-              <div className="md:col-span-4 font-serif text-3xl md:text-5xl text-ivory font-light tracking-[-0.01em] group-hover:translate-x-2 transition-transform duration-700">
+              <div className="md:col-span-4 font-sans text-3xl md:text-5xl text-ivory font-light tracking-[-0.01em] group-hover:translate-x-2 transition-transform duration-700">
                 {s.title}
               </div>
               <p className="md:col-span-5 md:col-start-8 self-center text-ivory-muted leading-relaxed max-w-lg">

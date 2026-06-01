@@ -26,7 +26,7 @@ export function Nav() {
       ].join(" ")}
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 py-5 md:py-6">
-        <a href="#top" className="font-serif text-ivory text-xl md:text-2xl tracking-[0.32em] font-light">
+        <a href="#top" className="font-sans text-ivory text-xl md:text-2xl tracking-[0.32em] font-light">
           AM <span className="text-ivory-muted">·</span> BATHROOMS
         </a>
         <nav className="hidden md:flex items-center gap-9">

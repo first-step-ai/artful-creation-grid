@@ -66,7 +66,7 @@ export function Pullquote() {
               <div className="eyebrow text-ivory-muted">
                 <span className="text-brass">✦</span>&nbsp;&nbsp;Testimonials
               </div>
-              <h2 className="mt-6 font-serif text-3xl md:text-[2.75rem] text-ivory font-light leading-[1.1] tracking-[-0.015em]">
+              <h2 className="mt-6 font-sans text-3xl md:text-[2.75rem] text-ivory font-light leading-[1.1] tracking-[-0.015em]">
                 Voices of the<br />
                 <em className="not-italic text-ivory-muted">people we build for.</em>
               </h2>
@@ -74,7 +74,7 @@ export function Pullquote() {
 
             {data?.rating != null && (
               <div className="flex items-end gap-4 border-t border-ivory/10 pt-6">
-                <span className="font-serif text-5xl text-ivory leading-none">
+                <span className="font-sans text-5xl text-ivory leading-none">
                   {data.rating.toFixed(1)}
                 </span>
                 <div className="flex flex-col gap-1 pb-1">
@@ -99,10 +99,10 @@ export function Pullquote() {
 
               {!isLoading && current && (
                 <figure key={active} className="animate-fade-in">
-                  <span aria-hidden className="block font-serif text-brass/60 text-6xl leading-none mb-4">
+                  <span aria-hidden className="block font-sans text-brass/60 text-6xl leading-none mb-4">
                     “
                   </span>
-                  <blockquote className="font-serif font-light text-ivory text-xl md:text-[1.75rem] leading-[1.4] tracking-[-0.005em]">
+                  <blockquote className="font-sans font-light text-ivory text-xl md:text-[1.75rem] leading-[1.4] tracking-[-0.005em]">
                     {current.text}
                   </blockquote>
                   <figcaption className="mt-10 flex items-center gap-4">
@@ -114,12 +114,12 @@ export function Pullquote() {
                         loading="lazy"
                       />
                     ) : (
-                      <div className="h-10 w-10 rounded-full bg-brass/15 flex items-center justify-center text-brass font-serif">
+                      <div className="h-10 w-10 rounded-full bg-brass/15 flex items-center justify-center text-brass font-sans">
                         {current.author.charAt(0)}
                       </div>
                     )}
                     <div className="flex flex-col">
-                      <span className="font-serif italic text-ivory text-base">
+                      <span className="font-sans italic text-ivory text-base">
                         {current.author}
                       </span>
                       <span className="eyebrow text-ivory-muted/60 text-[10px]">
@@ -140,7 +140,7 @@ export function Pullquote() {
             {/* Controls row */}
             {total > 1 && (
               <div className="md:pl-12 mt-12 flex items-center justify-between border-t border-ivory/10 pt-6">
-                <span className="font-serif text-ivory-muted/80 text-sm tabular-nums tracking-wider">
+                <span className="font-sans text-ivory-muted/80 text-sm tabular-nums tracking-wider">
                   <span className="text-ivory">{pad(active + 1)}</span>
                   <span className="mx-2 text-ivory-muted/40">/</span>
                   <span>{pad(total)}</span>
