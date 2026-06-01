@@ -8,25 +8,25 @@ const services = [
   {
     num: "i",
     title: "Bathrooms",
-    body: "Sanctuary spaces composed in stone, timber and brass — fully designed and built in-house.",
+    body: "A bathroom built around your routine — materials and details chosen with you, built by us.",
     image: bathrooms,
   },
   {
     num: "ii",
     title: "Kitchens",
-    body: "Joinery-led kitchens that hold a household's rhythm without ever raising their voice.",
+    body: "A kitchen that fits the way your family actually uses it — not just how it looks in a render.",
     image: kitchens,
   },
   {
     num: "iii",
     title: "Laundries",
-    body: "The quiet rooms — engineered for daily use, finished as carefully as the rest of the home.",
+    body: "The room that works hardest in your home, finished as carefully as the rest.",
     image: laundries,
   },
   {
     num: "iv",
     title: "Interior Design",
-    body: "Whole-home interiors, from architectural detailing to the final pieces in the room.",
+    body: "A home that feels considered in every corner — we handle the full picture.",
     image: interiors,
   },
 ];
@@ -40,11 +40,11 @@ export function Services() {
           <div>
             <div className="eyebrow">02 — Expertise</div>
             <h2 className="mt-4 font-serif text-3xl md:text-5xl text-ivory font-light tracking-[-0.01em]">
-              Four rooms, <em className="not-italic text-ivory-muted">one practice.</em>
+              Every room you use every day.
             </h2>
           </div>
           <p className="md:max-w-sm text-sm text-ivory-muted leading-relaxed">
-            Design and construction handled by a single team, under one fixed-price contract.
+            We focus on the four rooms that matter most in your home — and we take care of everything, so you don't have to manage a dozen different trades.
           </p>
         </div>
 
