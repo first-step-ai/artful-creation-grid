@@ -56,9 +56,9 @@ export function Work() {
           <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 right-6 md:right-10 flex items-end justify-between gap-8">
             <div>
               <div className="mt-3 font-serif italic text-ivory text-3xl md:text-5xl font-light">
-                The Arched House
+                Refined Family Living
               </div>
-              <div className="eyebrow mt-2">Bellevue Hill · 2026</div>
+              <div className="eyebrow mt-2">Rozelle</div>
             </div>
           </div>
         </div>
