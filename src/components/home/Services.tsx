@@ -36,16 +36,8 @@ export function Services() {
   return (
     <section id="services" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-24">
-        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between mb-10 md:mb-14">
-          <div>
-            <div className="eyebrow">02 / Services</div>
-            <h2 className="mt-4 font-sans text-3xl md:text-5xl text-ivory font-light tracking-[-0.01em]">
-              Every room you use every day.
-            </h2>
-          </div>
-          <p className="md:max-w-sm text-sm text-ivory-muted leading-relaxed">
-            We focus on the four rooms that matter most in your home, and we take care of everything, so you don't have to manage a dozen different trades.
-          </p>
+        <div className="mb-10 md:mb-14">
+          <div className="eyebrow">02 / Services</div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
