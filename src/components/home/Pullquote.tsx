@@ -5,6 +5,23 @@ import { getGoogleReviews } from "@/lib/google-reviews.functions";
 
 const ROTATE_MS = 8000;
 
+function excerpt(text: string, max: number): string {
+  // Collapse line breaks / whitespace into a single space so paragraphs
+  // don't break the layout.
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const slice = clean.slice(0, max);
+  // Prefer a sentence boundary, otherwise fall back to the last word.
+  const sentenceEnd = Math.max(
+    slice.lastIndexOf(". "),
+    slice.lastIndexOf("! "),
+    slice.lastIndexOf("? "),
+  );
+  if (sentenceEnd > max * 0.6) return clean.slice(0, sentenceEnd + 1);
+  const wordEnd = slice.lastIndexOf(" ");
+  return clean.slice(0, wordEnd > 0 ? wordEnd : max).trimEnd() + "…";
+}
+
 export function Pullquote() {
   const fetchReviews = useServerFn(getGoogleReviews);
   const { data, isLoading } = useQuery({
