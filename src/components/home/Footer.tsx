@@ -19,7 +19,7 @@ export function Footer() {
       className="w-full"
       style={{ backgroundColor: FOOTER_BG, color: PARCHMENT }}
     >
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-14 md:py-20 flex flex-col items-center text-center">
+      <div className="mx-auto px-6 md:px-10 py-14 md:py-20 flex flex-col items-center text-center">
         {/* Logo */}
         <div
           className="font-serif text-2xl md:text-3xl font-light flex items-center justify-center gap-5"
@@ -119,7 +119,7 @@ export function Footer() {
         className="w-full"
         style={{ borderTop: `0.5px solid ${RULE}` }}
       >
-        <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div className="mx-auto px-6 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <span
             className="font-sans"
             style={{

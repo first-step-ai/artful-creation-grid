@@ -19,7 +19,7 @@ export function Materials() {
             <div className="aspect-[4/5] md:aspect-[5/6] overflow-hidden">
               <img
                 src={materials}
-                alt="Material palette — travertine, brass, oak, linen on burgundy"
+                alt="Material palette: travertine, brass, oak, linen on burgundy"
                 loading="lazy"
                 width={1600}
                 height={1000}
@@ -29,14 +29,14 @@ export function Materials() {
           </div>
 
           <div className="md:col-span-5 md:col-start-8">
-            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;Interlude — Material</div>
+            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;Interlude / Material</div>
             <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl text-ivory font-light tracking-[-0.01em] leading-[1.05]">
               The palette is
               <br />
               <em className="not-italic text-ivory-muted">always the room.</em>
             </h2>
             <p className="mt-8 text-ivory-muted leading-relaxed max-w-md">
-              We work in a tight, considered library — stones quarried in Italy, brass
+              We work in a tight, considered library. Stones quarried in Italy, brass
               from a Sydney foundry, oak milled in Tasmania. Materials chosen for how
               they age, not how they photograph.
             </p>

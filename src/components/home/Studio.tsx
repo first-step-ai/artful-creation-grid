@@ -14,7 +14,7 @@ export function Studio() {
           <div className="lg:col-span-5 flex flex-col gap-6">
             <div className="flex items-center gap-4">
               <span className="text-brass text-[10px] tracking-[0.4em] font-semibold uppercase font-sans">
-                01 — Studio
+                01 / Studio
               </span>
             </div>
             <h2 className="font-serif text-ivory text-5xl md:text-7xl italic leading-[1.1] font-light tracking-[-0.01em]">
@@ -29,7 +29,7 @@ export function Studio() {
             <p className="font-sans text-ivory/80 text-sm md:text-base leading-relaxed max-w-xl font-light">
               For over 25 years we've been designing and building bathrooms,
               kitchens, laundries and interiors across Sydney. We don't
-              outsource. Every project is handled by our own team — from the
+              outsource. Every project is handled by our own team, from the
               first conversation to the final fixture.
             </p>
           </div>

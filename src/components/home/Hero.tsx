@@ -28,12 +28,12 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="eyebrow mb-8 flex items-center gap-3">
             <span className="text-brass">✦</span>
-            <span>Est. 1998 — Sydney</span>
+            <span>Est. 1998 / Sydney</span>
             <span className="h-px w-10 bg-ivory-muted/60" />
             <span>Booking 2026</span>
           </div>
           <h1 className="font-serif font-light text-ivory text-[2.75rem] leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-[-0.01em]">
-            Bathrooms, kitchens and interiors — designed and built in Sydney.
+            Bathrooms, kitchens and interiors. Designed and built in Sydney.
           </h1>
           <p className="mt-8 max-w-xl text-ivory-muted text-base md:text-lg leading-relaxed">
             Sydney homeowners have trusted us with their most-used rooms for over 25 years. We design it, we build it, we stand behind it.

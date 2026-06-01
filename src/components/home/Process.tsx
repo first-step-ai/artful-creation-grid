@@ -4,7 +4,7 @@ const steps = [
   {
     n: "01",
     title: "Consult",
-    body: "We meet in your home for a paid consultation. Brief, budget, brief again — until the project's shape is honest.",
+    body: "We meet in your home for a paid consultation. Brief, budget, brief again, until the project's shape is honest.",
   },
   {
     n: "02",
@@ -30,13 +30,13 @@ export function Process() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-32">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16 md:mb-24">
           <div className="md:col-span-4">
-            <div className="eyebrow">04 — Process</div>
+            <div className="eyebrow">04 / Process</div>
             <h2 className="mt-6 font-serif text-4xl md:text-6xl text-ivory font-light tracking-[-0.01em]">
               How it works.
             </h2>
           </div>
           <p className="md:col-span-6 md:col-start-7 self-end text-ivory-muted leading-relaxed">
-            Every renovation we undertake follows the same four stages — protecting
+            Every renovation we undertake follows the same four stages, protecting
             the work, your time, and the certainty of a fixed price.
           </p>
         </div>
