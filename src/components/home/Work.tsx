@@ -45,7 +45,7 @@ export function Work() {
           <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-oxblood">
             <img
               src={feature}
-              alt="Featured project: arched stone bathroom in Bellevue Hill"
+              alt="Featured project: Refined Family Living in Rozelle"
               loading="lazy"
               width={1920}
               height={1080}
