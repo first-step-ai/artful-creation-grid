@@ -24,7 +24,7 @@ export function Work() {
   const featRef = useReveal<HTMLDivElement>();
   const tilesRef = useReveal<HTMLDivElement>();
   return (
-    <section id="work" className="border-t border-border/60 bg-burgundy/40">
+    <section id="work" className="border-t border-border/60 bg-oxblood">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-12">
 
         <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
