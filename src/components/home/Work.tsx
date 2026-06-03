@@ -2,10 +2,28 @@ import p3 from "@/assets/project-3.jpg";
 import featureAsset from "@/assets/arched-house.jpg.asset.json";
 import kitchenAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
 import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
+import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
+import materials from "@/assets/materials.jpg";
+import projectFeature from "@/assets/project-feature.jpg";
+import serviceBathrooms from "@/assets/service-bathrooms.jpg";
+import serviceInteriors from "@/assets/service-interiors.jpg";
 const feature = featureAsset.url;
 const p2 = kitchenAsset.url;
 const p1 = bexleyAsset.url;
 import { useReveal } from "@/hooks/use-reveal";
+
+const driftStrip = [
+  { n: "01", label: "Arch", image: feature },
+  { n: "02", label: "Oak", image: p2 },
+  { n: "03", label: "Stone", image: hotelAsset.url },
+  { n: "04", label: "Edge", image: p1 },
+  { n: "05", label: "Shadow", image: p3 },
+  { n: "06", label: "Linen", image: serviceBathrooms },
+  { n: "07", label: "Marble", image: serviceInteriors },
+  { n: "08", label: "Grain", image: materials },
+  { n: "09", label: "Quiet", image: projectFeature },
+];
+
 
 const projects = [
   { n: "01", title: "Bold Utility", suburb: "Bexley", year: "", image: p1 },
@@ -35,32 +53,31 @@ export function Work() {
         </div>
 
 
-        {/* Featured project: full bleed */}
-        <div ref={featRef} className="reveal group relative overflow-hidden mb-20 md:mb-28">
-          <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-oxblood relative">
-            <div className="marquee marquee-slow h-full">
-              {[0, 1].map((i) => (
-                <img
-                  key={i}
-                  src={feature}
-                  alt={i === 0 ? "Featured project: Refined Family Living in Rozelle" : ""}
-                  aria-hidden={i === 1}
-                  loading="lazy"
-                  width={1920}
-                  height={1080}
-                  className="h-full w-auto max-w-none object-cover shrink-0"
-                />
-              ))}
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-oxblood/95 via-oxblood/30 to-transparent pointer-events-none" />
-          </div>
-          <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 right-6 md:right-10 flex items-end justify-between gap-8">
-            <div>
-              <div className="mt-3 font-serif italic text-ivory text-3xl md:text-5xl font-light">
-                Refined Family Living
+        {/* DriftStrip: 9-image continuous marquee */}
+        <div ref={featRef} className="reveal relative mb-20 md:mb-28 -mx-6 md:-mx-10 overflow-hidden">
+          <div className="marquee">
+            {[0, 1].map((dup) => (
+              <div key={dup} className="flex shrink-0" aria-hidden={dup === 1}>
+                {driftStrip.map((item) => (
+                  <figure
+                    key={`${dup}-${item.n}`}
+                    className="shrink-0 w-[70vw] sm:w-[46vw] md:w-[34vw] lg:w-[26vw] px-3 md:px-4"
+                  >
+                    <div className="overflow-hidden bg-oxblood aspect-[3/4]">
+                      <img
+                        src={item.image}
+                        alt={`${item.n} — ${item.label}`}
+                        loading="lazy"
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                    <figcaption className="eyebrow mt-4 md:mt-5">
+                      {item.n} · {item.label.toUpperCase()}
+                    </figcaption>
+                  </figure>
+                ))}
               </div>
-              <div className="eyebrow mt-2">Rozelle</div>
-            </div>
+            ))}
           </div>
         </div>
 
