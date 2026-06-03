@@ -19,7 +19,7 @@ export function Awards() {
         {/* Awards headline — separated, sitting above the content block */}
         <div className="eyebrow mb-8 md:mb-10">Awards</div>
 
-        <div className="w-full flex flex-col md:flex-row gap-8 md:gap-0">
+        <div className="w-full flex flex-col md:flex-row gap-8 md:gap-0 md:items-stretch">
           {/* Left: Logo + Awards list — 35% — centered */}
           <div className="md:basis-[35%] md:pr-[2.5%] flex flex-col items-center text-center">
             {/* Logo placeholder */}
@@ -47,9 +47,9 @@ export function Awards() {
             </ul>
           </div>
 
-          {/* Right: Featured Image — 60% — matches left column height (logo top → last award bottom) */}
-          <div className="md:basis-[60%] md:ml-auto">
-            <div className="w-full h-full overflow-hidden bg-burgundy aspect-[4/5] md:aspect-auto">
+          {/* Right: Featured Image — 60% — matches left column height exactly */}
+          <div className="md:basis-[60%] md:ml-auto relative">
+            <div className="w-full overflow-hidden bg-burgundy aspect-[4/5] md:aspect-auto md:absolute md:inset-0">
               <img
                 src={featureAsset.url}
                 alt="Award-winning AM Bathrooms project"
