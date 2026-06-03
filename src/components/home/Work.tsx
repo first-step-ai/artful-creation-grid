@@ -12,16 +12,16 @@ const p2 = kitchenAsset.url;
 const p1 = bexleyAsset.url;
 import { useReveal } from "@/hooks/use-reveal";
 
-const driftStrip = [
-  { label: "Arch", image: feature },
-  { label: "Oak", image: p2 },
-  { label: "Stone", image: hotelAsset.url },
-  { label: "Edge", image: p1 },
-  { label: "Shadow", image: p3 },
-  { label: "Linen", image: serviceBathrooms },
-  { label: "Marble", image: serviceInteriors },
-  { label: "Grain", image: materials },
-  { label: "Quiet", image: projectFeature },
+const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
+  { label: "Arch", image: feature, orientation: "portrait" },
+  { label: "Oak", image: p2, orientation: "landscape" },
+  { label: "Stone", image: hotelAsset.url, orientation: "portrait" },
+  { label: "Edge", image: p1, orientation: "landscape" },
+  { label: "Shadow", image: p3, orientation: "portrait" },
+  { label: "Linen", image: serviceBathrooms, orientation: "landscape" },
+  { label: "Marble", image: serviceInteriors, orientation: "portrait" },
+  { label: "Grain", image: materials, orientation: "landscape" },
+  { label: "Quiet", image: projectFeature, orientation: "portrait" },
 ];
 
 
