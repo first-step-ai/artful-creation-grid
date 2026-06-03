@@ -19,15 +19,15 @@ const services = [
   },
   {
     num: "iii",
-    title: "Laundries",
-    body: "The room that works hardest in your home, finished as carefully as the rest.",
-    image: laundries,
+    title: "Multi-space Renovations",
+    body: "A home that feels considered in every corner. We handle the full picture.",
+    image: interiors,
   },
   {
     num: "iv",
-    title: "Multi-space renovation",
-    body: "A home that feels considered in every corner. We handle the full picture.",
-    image: interiors,
+    title: "Full Home Renovation",
+    body: "A complete transformation, finished with the same care we bring to every room.",
+    image: laundries,
   },
 ];
 
