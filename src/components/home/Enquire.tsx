@@ -31,7 +31,7 @@ export function Enquire() {
               <br />
               <span className="text-ivory-muted">begin.</span>
             </h2>
-            <p className="mt-8 max-w-md text-ivory-muted leading-relaxed">
+            <p className="mt-8 max-w-md text-sm text-brass leading-relaxed">
               We're currently booking projects for 2026. Share a little about your home and
               your hopes for it, and we'll arrange a conversation.
             </p>

@@ -35,7 +35,7 @@ export function Materials() {
               <br />
               <span className="text-ivory-muted">always the room.</span>
             </h2>
-            <p className="mt-8 text-ivory-muted leading-relaxed max-w-md">
+            <p className="mt-8 text-sm text-brass leading-relaxed max-w-md">
               We work in a tight, considered library. Stones quarried in Italy, brass
               from a Sydney foundry, oak milled in Tasmania. Materials chosen for how
               they age, not how they photograph.
