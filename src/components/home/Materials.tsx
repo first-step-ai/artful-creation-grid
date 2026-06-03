@@ -30,7 +30,7 @@ export function Materials() {
 
           <div className="md:col-span-5 md:col-start-8">
             <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;Interlude / Material</div>
-            <h2 className="mt-6 font-sans text-4xl md:text-5xl lg:text-6xl text-ivory font-light tracking-[-0.01em] leading-[1.05]">
+            <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl text-ivory font-light tracking-[-0.01em] leading-[1.05]">
               The palette is
               <br />
               <em className="not-italic text-ivory-muted">always the room.</em>
