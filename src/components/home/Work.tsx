@@ -12,16 +12,16 @@ const p2 = kitchenAsset.url;
 const p1 = bexleyAsset.url;
 import { useReveal } from "@/hooks/use-reveal";
 
-const driftStrip = [
-  { label: "Arch", image: feature },
-  { label: "Oak", image: p2 },
-  { label: "Stone", image: hotelAsset.url },
-  { label: "Edge", image: p1 },
-  { label: "Shadow", image: p3 },
-  { label: "Linen", image: serviceBathrooms },
-  { label: "Marble", image: serviceInteriors },
-  { label: "Grain", image: materials },
-  { label: "Quiet", image: projectFeature },
+const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
+  { label: "Arch", image: feature, orientation: "portrait" },
+  { label: "Oak", image: p2, orientation: "landscape" },
+  { label: "Stone", image: hotelAsset.url, orientation: "portrait" },
+  { label: "Edge", image: p1, orientation: "landscape" },
+  { label: "Shadow", image: p3, orientation: "portrait" },
+  { label: "Linen", image: serviceBathrooms, orientation: "landscape" },
+  { label: "Marble", image: serviceInteriors, orientation: "portrait" },
+  { label: "Grain", image: materials, orientation: "landscape" },
+  { label: "Quiet", image: projectFeature, orientation: "portrait" },
 ];
 
 
@@ -61,9 +61,17 @@ export function Work() {
                 {driftStrip.map((item) => (
                   <figure
                     key={`${dup}-${item.label}`}
-                    className="shrink-0 w-[70vw] sm:w-[46vw] md:w-[34vw] lg:w-[26vw] px-3 md:px-4"
+                    className={`shrink-0 px-3 md:px-4 ${
+                      item.orientation === "landscape"
+                        ? "w-[85vw] sm:w-[60vw] md:w-[46vw] lg:w-[38vw]"
+                        : "w-[70vw] sm:w-[46vw] md:w-[34vw] lg:w-[26vw]"
+                    }`}
                   >
-                    <div className="overflow-hidden bg-oxblood aspect-[3/4]">
+                    <div
+                      className={`overflow-hidden bg-oxblood ${
+                        item.orientation === "landscape" ? "aspect-[4/3]" : "aspect-[3/4]"
+                      }`}
+                    >
                       <img
                         src={item.image}
                         alt={item.label}
