@@ -26,10 +26,10 @@ export function Enquire() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
           <div className="md:col-span-5 flex flex-col">
             <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;05 / Enquire</div>
-            <h2 className="mt-6 font-serif text-5xl md:text-7xl lg:text-[5.5rem] text-ivory font-light leading-[1.02] tracking-[-0.01em]">
+            <h2 className="mt-6 font-serif text-3xl md:text-4xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.2]">
               Let's
               <br />
-              <em className="not-italic text-ivory-muted">begin.</em>
+              <span className="text-ivory-muted">begin.</span>
             </h2>
             <p className="mt-8 max-w-md text-ivory-muted leading-relaxed">
               We're currently booking projects for 2026. Share a little about your home and
