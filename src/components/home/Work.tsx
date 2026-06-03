@@ -60,19 +60,19 @@ export function Work() {
               <div key={dup} className="flex shrink-0" aria-hidden={dup === 1}>
                 {driftStrip.map((item) => (
                   <figure
-                    key={`${dup}-${item.n}`}
+                    key={`${dup}-${item.label}`}
                     className="shrink-0 w-[70vw] sm:w-[46vw] md:w-[34vw] lg:w-[26vw] px-3 md:px-4"
                   >
                     <div className="overflow-hidden bg-oxblood aspect-[3/4]">
                       <img
                         src={item.image}
-                        alt={`${item.n} — ${item.label}`}
+                        alt={item.label}
                         loading="lazy"
                         className="h-full w-full object-cover"
                       />
                     </div>
                     <figcaption className="eyebrow mt-4 md:mt-5">
-                      {item.n} · {item.label.toUpperCase()}
+                      {item.label.toUpperCase()}
                     </figcaption>
                   </figure>
                 ))}
@@ -83,8 +83,8 @@ export function Work() {
 
         {/* 3-up evenly distributed, no voids */}
         <div ref={tilesRef} className="reveal reveal-stagger grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {projects.map((p) => (
-            <ProjectTile key={p.n} project={p} />
+          {projects.map((p, i) => (
+            <ProjectTile key={i} project={p} />
           ))}
         </div>
       </div>
