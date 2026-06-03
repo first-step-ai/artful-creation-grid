@@ -2,10 +2,28 @@ import p3 from "@/assets/project-3.jpg";
 import featureAsset from "@/assets/arched-house.jpg.asset.json";
 import kitchenAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
 import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
+import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
+import materials from "@/assets/materials.jpg";
+import projectFeature from "@/assets/project-feature.jpg";
+import serviceBathrooms from "@/assets/service-bathrooms.jpg";
+import serviceInteriors from "@/assets/service-interiors.jpg";
 const feature = featureAsset.url;
 const p2 = kitchenAsset.url;
 const p1 = bexleyAsset.url;
 import { useReveal } from "@/hooks/use-reveal";
+
+const driftStrip = [
+  { n: "01", label: "Arch", image: feature },
+  { n: "02", label: "Oak", image: p2 },
+  { n: "03", label: "Stone", image: hotelAsset.url },
+  { n: "04", label: "Edge", image: p1 },
+  { n: "05", label: "Shadow", image: p3 },
+  { n: "06", label: "Linen", image: serviceBathrooms },
+  { n: "07", label: "Marble", image: serviceInteriors },
+  { n: "08", label: "Grain", image: materials },
+  { n: "09", label: "Quiet", image: projectFeature },
+];
+
 
 const projects = [
   { n: "01", title: "Bold Utility", suburb: "Bexley", year: "", image: p1 },
