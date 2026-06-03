@@ -9,20 +9,13 @@ const menuItems = [
   { label: "Enquire", ariaLabel: "Get in touch", link: "#enquire" },
 ];
 
-const socialItems = [
-  { label: "Instagram", link: "https://instagram.com" },
-  { label: "Pinterest", link: "https://pinterest.com" },
-  { label: "Facebook", link: "https://facebook.com" },
-];
-
 export function Nav() {
   return (
     <div className="fixed inset-0 z-40 pointer-events-none [&_*]:pointer-events-auto">
       <StaggeredMenu
         position="right"
         items={menuItems}
-        socialItems={socialItems}
-        displaySocials
+        displaySocials={false}
         displayItemNumbering={false}
         logoUrl={logo}
         menuButtonColor="#ebf0e9"
