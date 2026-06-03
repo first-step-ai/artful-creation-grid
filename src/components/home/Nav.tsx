@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { StaggeredMenu } from "@/components/staggered-menu/StaggeredMenu";
 import logo from "@/assets/logo.png";
 
@@ -10,9 +11,19 @@ const menuItems = [
 ];
 
 export function Nav() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div className="fixed inset-0 z-40 pointer-events-none [&_*]:pointer-events-auto">
       <StaggeredMenu
+        className={scrolled ? "is-scrolled" : ""}
         position="right"
         items={menuItems}
         displaySocials={false}
