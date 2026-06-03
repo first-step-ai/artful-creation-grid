@@ -1,4 +1,13 @@
 import logo from "@/assets/logo.png";
+import socialFacebook from "@/assets/service-bathrooms.jpg";
+import socialPinterest from "@/assets/service-kitchens.jpg";
+import socialInstagram from "@/assets/service-interiors.jpg";
+
+const SOCIALS = [
+  { label: "Facebook", img: socialFacebook, href: "#" },
+  { label: "Pinterest", img: socialPinterest, href: "#" },
+  { label: "Instagram", img: socialInstagram, href: "#" },
+];
 
 const FOOTER_BG = "var(--oxblood)";
 const TEXT = "#ebf0e9";
@@ -46,19 +55,34 @@ export function Footer() {
               Based in Drummoyne, working across Sydney.
             </p>
 
-            <div className="mt-8 flex items-center gap-5" style={{ color: TEXT_MUTED }}>
-              <a href="#" aria-label="Facebook" className="hover:opacity-70 transition-opacity">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25">
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                </svg>
-              </a>
-              <a href="#" aria-label="Instagram" className="hover:opacity-70 transition-opacity">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25">
-                  <rect x="2" y="2" width="20" height="20" rx="5" />
-                  <circle cx="12" cy="12" r="4" />
-                  <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
-                </svg>
-              </a>
+            <div className="mt-8 flex items-start gap-4">
+              {SOCIALS.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  aria-label={s.label}
+                  className="group block"
+                >
+                  <div className="overflow-hidden" style={{ width: 72, height: 92 }}>
+                    <img
+                      src={s.img}
+                      alt={s.label}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div
+                    className="mt-3 font-sans"
+                    style={{
+                      color: TEXT,
+                      fontSize: "10px",
+                      letterSpacing: "0.22em",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    {s.label}
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
 
