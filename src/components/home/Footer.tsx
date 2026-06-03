@@ -24,6 +24,39 @@ export function Footer() {
       style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
       <div className="w-full px-6 md:px-12 pt-20 md:pt-24 pb-10">
+        {/* Socials top-right */}
+        <div className="flex justify-end mb-10 md:mb-12">
+          <div className="flex items-start gap-4">
+            {SOCIALS.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                aria-label={s.label}
+                className="group block text-center"
+              >
+                <div className="overflow-hidden" style={{ width: 72, height: 92 }}>
+                  <img
+                    src={s.img}
+                    alt={s.label}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div
+                  className="mt-3 font-sans"
+                  style={{
+                    color: TEXT,
+                    fontSize: "10px",
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {s.label}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div className="grid grid-cols-12 gap-10 md:gap-12">
           {/* Brand */}
           <div className="col-span-12 md:col-span-3">
@@ -54,36 +87,6 @@ export function Footer() {
               <br />
               Based in Drummoyne, working across Sydney.
             </p>
-
-            <div className="mt-8 flex items-start gap-4">
-              {SOCIALS.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  aria-label={s.label}
-                  className="group block"
-                >
-                  <div className="overflow-hidden" style={{ width: 72, height: 92 }}>
-                    <img
-                      src={s.img}
-                      alt={s.label}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div
-                    className="mt-3 font-sans"
-                    style={{
-                      color: TEXT,
-                      fontSize: "10px",
-                      letterSpacing: "0.22em",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    {s.label}
-                  </div>
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Contact */}
