@@ -10,12 +10,12 @@ export function Manifesto() {
       >
         <div className="md:col-span-4">
           <div className="eyebrow">01 / Studio</div>
-          <p className="mt-6 font-serif text-2xl md:text-3xl text-ivory leading-snug font-light">
+          <p className="mt-6 font-serif text-2xl md:text-3xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.3]">
             A practice rooted in patience.
           </p>
         </div>
         <div className="md:col-span-7 md:col-start-6">
-          <p className="font-serif text-2xl md:text-[2.1rem] leading-[1.35] text-ivory font-light tracking-[-0.005em]">
+          <p className="text-sm text-brass leading-relaxed max-w-xl">
             For over twenty-five years we have shaped the everyday rooms of Sydney homes.
             Spaces measured not in square metres but in mornings, evenings, in the soft
             arrival of light. Every project begins as a conversation and ends as a place that
