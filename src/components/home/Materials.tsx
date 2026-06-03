@@ -30,12 +30,12 @@ export function Materials() {
 
           <div className="md:col-span-5 md:col-start-8">
             <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;Interlude / Material</div>
-            <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl text-ivory font-light tracking-[-0.01em] leading-[1.05]">
+            <h2 className="mt-6 font-serif text-3xl md:text-4xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.2]">
               The palette is
               <br />
-              <em className="not-italic text-ivory-muted">always the room.</em>
+              <span className="text-ivory-muted">always the room.</span>
             </h2>
-            <p className="mt-8 text-ivory-muted leading-relaxed max-w-md">
+            <p className="mt-8 text-sm text-brass leading-relaxed max-w-md">
               We work in a tight, considered library. Stones quarried in Italy, brass
               from a Sydney foundry, oak milled in Tasmania. Materials chosen for how
               they age, not how they photograph.
