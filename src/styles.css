@@ -44,7 +44,7 @@
   --radius: 0.25rem;
 
   /* Brand palette — flipped: charcoal canvas, sage as accent */
-  --oxblood:        #2e2d2d;  /* deeper charcoal surface */
+  --oxblood:        #383d38;  /* charcoal surface */
   --burgundy:       #383d38;  /* secondary charcoal surface */
   --burgundy-soft:  #848b7d;  /* sage accent (use deliberately) */
   --ivory:          #ebf0e9;  /* soft cream text on charcoal */
@@ -52,7 +52,7 @@
   --brass:          #848b7d;  /* sage accent */
   --brass-soft:     #ebf0e9;
 
-  --background: #2e2d2d;          /* charcoal page background */
+  --background: #383d38;          /* charcoal page background */
   --foreground: #ebf0e9;          /* cream text on charcoal */
   --card: #383d38;
   --card-foreground: var(--ivory);
