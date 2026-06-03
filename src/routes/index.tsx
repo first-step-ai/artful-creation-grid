@@ -6,7 +6,6 @@ import { Hero } from "@/components/home/Hero";
 
 import { Services } from "@/components/home/Services";
 import { Work } from "@/components/home/Work";
-import { Pullquote } from "@/components/home/Pullquote";
 import { Process } from "@/components/home/Process";
 
 
@@ -45,7 +44,7 @@ function Home() {
         <Work />
         <Services />
         <Process />
-        <Pullquote />
+        
         
         
       </main>
