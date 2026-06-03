@@ -1,58 +1,36 @@
-import { useEffect, useState } from "react";
+import { StaggeredMenu } from "@/components/staggered-menu/StaggeredMenu";
 import logo from "@/assets/logo.png";
 
+const menuItems = [
+  { label: "Portfolio", ariaLabel: "View our portfolio", link: "#work" },
+  { label: "Services", ariaLabel: "Explore our services", link: "#services" },
+  { label: "Process", ariaLabel: "Our process", link: "#process" },
+  { label: "Studio", ariaLabel: "About the studio", link: "#studio" },
+  { label: "Enquire", ariaLabel: "Get in touch", link: "#enquire" },
+];
 
-const links = [
-  { href: "#work", label: "Portfolio" },
-  { href: "#services", label: "Services" },
-  { href: "#process", label: "Process" },
-  { href: "#studio", label: "Studio" },
-  { href: "#enquire", label: "Enquire" },
+const socialItems = [
+  { label: "Instagram", link: "https://instagram.com" },
+  { label: "Pinterest", link: "https://pinterest.com" },
+  { label: "Facebook", link: "https://facebook.com" },
 ];
 
 export function Nav() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <header
-      className={[
-        "fixed top-0 left-0 right-0 z-40 w-full transition-colors duration-500",
-        scrolled
-          ? "bg-oxblood/40 backdrop-blur-md border-b border-border/40"
-          : "bg-gradient-to-b from-black/40 to-transparent",
-      ].join(" ")}
-    >
-      <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 py-5 md:py-6">
-        <a href="#top" className="flex items-center">
-          <img src={logo} alt="AM Bathrooms + Projects" className="h-8 md:h-10 w-auto invert drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)]" />
-        </a>
-
-        <nav className="hidden md:flex items-center gap-9">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-[12px] font-semibold tracking-[0.28em] uppercase text-ivory hover:text-ivory transition-colors [text-shadow:0_1px_8px_rgba(0,0,0,0.65)]"
-            >
-              {l.label}
-            </a>
-          ))}
-        </nav>
-        <a
-          href="#enquire"
-          className="md:hidden text-[12px] font-semibold tracking-[0.28em] uppercase text-ivory border-b border-ivory/60 pb-0.5 [text-shadow:0_1px_8px_rgba(0,0,0,0.65)]"
-        >
-          Enquire
-        </a>
-      </div>
-    </header>
-
+    <div className="fixed inset-0 z-40 pointer-events-none [&_*]:pointer-events-auto">
+      <StaggeredMenu
+        position="right"
+        items={menuItems}
+        socialItems={socialItems}
+        displaySocials
+        displayItemNumbering={false}
+        logoUrl={logo}
+        menuButtonColor="#ebf0e9"
+        openMenuButtonColor="#1a1a1a"
+        accentColor="#848b7d"
+        colors={["#848b7d", "#383d38"]}
+        changeMenuColorOnOpen
+      />
+    </div>
   );
 }
