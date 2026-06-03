@@ -37,16 +37,22 @@ export function Work() {
 
         {/* Featured project: full bleed */}
         <div ref={featRef} className="reveal group relative overflow-hidden mb-20 md:mb-28">
-          <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-oxblood">
-            <img
-              src={feature}
-              alt="Featured project: Refined Family Living in Rozelle"
-              loading="lazy"
-              width={1920}
-              height={1080}
-              className="h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.03]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-oxblood/95 via-oxblood/30 to-transparent" />
+          <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-oxblood relative">
+            <div className="marquee marquee-slow h-full">
+              {[0, 1].map((i) => (
+                <img
+                  key={i}
+                  src={feature}
+                  alt={i === 0 ? "Featured project: Refined Family Living in Rozelle" : ""}
+                  aria-hidden={i === 1}
+                  loading="lazy"
+                  width={1920}
+                  height={1080}
+                  className="h-full w-auto max-w-none object-cover shrink-0"
+                />
+              ))}
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-oxblood/95 via-oxblood/30 to-transparent pointer-events-none" />
           </div>
           <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 right-6 md:right-10 flex items-end justify-between gap-8">
             <div>
