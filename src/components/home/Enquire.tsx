@@ -25,7 +25,7 @@ export function Enquire() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-40">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
           <div className="md:col-span-5 flex flex-col">
-            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;05 / Enquire</div>
+            <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;Enquire</div>
             <h2 className="mt-6 font-serif text-3xl md:text-4xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.2]">
               Let's
               <br />
