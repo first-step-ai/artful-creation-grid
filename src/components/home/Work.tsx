@@ -61,9 +61,17 @@ export function Work() {
                 {driftStrip.map((item) => (
                   <figure
                     key={`${dup}-${item.label}`}
-                    className="shrink-0 w-[70vw] sm:w-[46vw] md:w-[34vw] lg:w-[26vw] px-3 md:px-4"
+                    className={`shrink-0 px-3 md:px-4 ${
+                      item.orientation === "landscape"
+                        ? "w-[85vw] sm:w-[60vw] md:w-[46vw] lg:w-[38vw]"
+                        : "w-[70vw] sm:w-[46vw] md:w-[34vw] lg:w-[26vw]"
+                    }`}
                   >
-                    <div className="overflow-hidden bg-oxblood aspect-[3/4]">
+                    <div
+                      className={`overflow-hidden bg-oxblood ${
+                        item.orientation === "landscape" ? "aspect-[4/3]" : "aspect-[3/4]"
+                      }`}
+                    >
                       <img
                         src={item.image}
                         alt={item.label}
