@@ -9,7 +9,7 @@ export function Manifesto() {
         className="reveal mx-auto grid max-w-[1600px] grid-cols-1 md:grid-cols-12 gap-10 px-6 md:px-10 py-24 md:py-40"
       >
         <div className="md:col-span-4">
-          <div className="eyebrow">01 / Studio</div>
+          <div className="eyebrow">Studio</div>
           <p className="mt-6 font-serif text-2xl md:text-3xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.3]">
             A practice rooted in patience.
           </p>

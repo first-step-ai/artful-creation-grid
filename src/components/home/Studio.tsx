@@ -14,7 +14,7 @@ export function Studio() {
           <div className="lg:col-span-5 flex flex-col gap-6">
             <div className="flex items-center gap-4">
               <span className="text-brass text-[10px] tracking-[0.4em] font-semibold uppercase font-sans">
-                01 / Studio
+                Studio
               </span>
             </div>
             <h2 className="font-serif text-3xl md:text-4xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.2]">
