@@ -28,7 +28,7 @@ export function Work() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-12">
 
         <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
-          <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;01 / Featured Work</div>
+          <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;Featured Work</div>
           <a href="#enquire" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
             View full portfolio
           </a>
