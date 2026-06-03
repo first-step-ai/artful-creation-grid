@@ -25,7 +25,7 @@ export function Nav() {
       className={[
         "fixed top-0 left-0 right-0 z-40 w-full transition-colors duration-500",
         scrolled
-          ? "bg-oxblood/95 backdrop-blur-md border-b border-border/70"
+          ? "bg-oxblood/40 backdrop-blur-md border-b border-border/40"
           : "bg-gradient-to-b from-black/40 to-transparent",
       ].join(" ")}
     >
