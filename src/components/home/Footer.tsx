@@ -1,4 +1,3 @@
-import logo from "@/assets/logo.png";
 import socialFacebook from "@/assets/service-bathrooms.jpg";
 import socialPinterest from "@/assets/service-kitchens.jpg";
 import socialInstagram from "@/assets/service-interiors.jpg";
@@ -13,9 +12,6 @@ const FOOTER_BG = "var(--oxblood)";
 const TEXT = "#ebf0e9";
 const TEXT_MUTED = "#848b7d";
 const RULE = "rgba(235,240,233,0.12)";
-
-const EXPLORE = ["Projects", "Services", "About", "Awards", "Reviews", "Contact"];
-const SERVICING = ["Inner West", "Eastern Suburbs", "Northern Beaches", "Lower North Shore"];
 
 export function Footer() {
   return (
