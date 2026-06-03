@@ -55,22 +55,19 @@ export function Work() {
 
         {/* DriftStrip: 9-image continuous marquee */}
         <div ref={featRef} className="reveal relative mb-20 md:mb-28 -mx-6 md:-mx-10 overflow-hidden">
-          <div className="marquee">
+          <div className="marquee marquee-slow">
             {[0, 1].map((dup) => (
               <div key={dup} className="flex shrink-0" aria-hidden={dup === 1}>
                 {driftStrip.map((item) => (
                   <figure
                     key={`${dup}-${item.label}`}
-                    className={`shrink-0 px-3 md:px-4 ${
-                      item.orientation === "landscape"
-                        ? "w-[85vw] sm:w-[60vw] md:w-[46vw] lg:w-[38vw]"
-                        : "w-[70vw] sm:w-[46vw] md:w-[34vw] lg:w-[26vw]"
-                    }`}
+                    className="shrink-0 px-3 md:px-4"
                   >
                     <div
-                      className={`overflow-hidden bg-oxblood ${
-                        item.orientation === "landscape" ? "aspect-[4/3]" : "aspect-[3/4]"
-                      }`}
+                      className="overflow-hidden bg-oxblood h-[42vh] md:h-[56vh] max-h-[560px]"
+                      style={{
+                        aspectRatio: item.orientation === "landscape" ? "4 / 3" : "3 / 4",
+                      }}
                     >
                       <img
                         src={item.image}
