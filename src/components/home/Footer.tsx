@@ -85,18 +85,3 @@ export function Footer() {
   );
 }
 
-function FooterLabel({ children }: { children: React.ReactNode }) {
-  return (
-    <div
-      className="font-sans leading-relaxed"
-      style={{
-        color: TEXT,
-        fontSize: "10px",
-        letterSpacing: "0.28em",
-        textTransform: "uppercase",
-      }}
-    >
-      {children}
-    </div>
-  );
-}
