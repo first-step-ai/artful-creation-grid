@@ -66,7 +66,7 @@ export function Pullquote() {
               <div className="eyebrow text-ivory-muted text-[10px]">
                 <span className="text-brass">✦</span>&nbsp;&nbsp;Testimonials
               </div>
-              <h2 className="mt-3 font-sans text-base md:text-lg text-ivory font-light leading-[1.3] tracking-[-0.01em]">
+              <h2 className="mt-3 font-serif text-base md:text-lg text-ivory font-light leading-[1.3] tracking-[-0.01em]">
                 Voices of the{" "}
                 <em className="not-italic text-ivory-muted">people we build for.</em>
               </h2>
