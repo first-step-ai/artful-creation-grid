@@ -26,7 +26,7 @@ export function Studio() {
 
           {/* Right: body */}
           <div className="lg:col-span-7">
-            <p className="font-sans text-ivory/80 text-sm md:text-base leading-relaxed max-w-xl font-light">
+            <p className="text-sm text-brass leading-relaxed max-w-xl">
               For over 25 years we've been designing and building bathrooms,
               kitchens, laundries and interiors across Sydney. We don't
               outsource. Every project is handled by our own team, from the
