@@ -1,9 +1,12 @@
 import logo from "@/assets/logo.png";
+import socialFacebook from "@/assets/service-bathrooms.jpg";
+import socialPinterest from "@/assets/service-kitchens.jpg";
+import socialInstagram from "@/assets/service-interiors.jpg";
 
 const SOCIALS = [
-  { label: "Facebook", href: "#" },
-  { label: "Pinterest", href: "#" },
-  { label: "Instagram", href: "#" },
+  { label: "Facebook", img: socialFacebook, href: "#" },
+  { label: "Pinterest", img: socialPinterest, href: "#" },
+  { label: "Instagram", img: socialInstagram, href: "#" },
 ];
 
 const FOOTER_BG = "var(--oxblood)";
