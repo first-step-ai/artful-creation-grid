@@ -41,7 +41,7 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="md:col-span-5 flex flex-col gap-5">
+          <div className="md:col-span-5 flex flex-col gap-5 md:items-center md:text-center">
             <div className="flex flex-col gap-3">
               <span style={labelStyle}>Contact</span>
               <a
