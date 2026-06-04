@@ -1,3 +1,4 @@
+import logo from "@/assets/logo.png";
 import socialFacebook from "@/assets/service-bathrooms.jpg";
 import socialPinterest from "@/assets/service-kitchens.jpg";
 import socialInstagram from "@/assets/service-interiors.jpg";
