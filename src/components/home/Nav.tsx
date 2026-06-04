@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { StaggeredMenu } from "@/components/staggered-menu/StaggeredMenu";
-import logo from "@/assets/logo.png";
+import amOnly from "@/assets/am-only.png.asset.json";
+import amFull from "@/assets/am-full.png.asset.json";
 
 const menuItems = [
   { label: "Portfolio", ariaLabel: "View our portfolio", link: "#work" },
@@ -28,7 +29,8 @@ export function Nav() {
         items={menuItems}
         displaySocials={false}
         displayItemNumbering={false}
-        logoUrl={logo}
+        logoUrl={amOnly.url}
+        centerLogoUrl={amFull.url}
         menuButtonColor="#ebf0e9"
         openMenuButtonColor="#1a1a1a"
         accentColor="#848b7d"
