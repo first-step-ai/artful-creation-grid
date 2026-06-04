@@ -21,8 +21,13 @@ export function Footer() {
       style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
       <div className="w-full px-6 md:px-12 pt-20 md:pt-24 pb-10">
-        {/* Socials top-right */}
-        <div className="flex justify-end mb-10 md:mb-12">
+        {/* Logo + Socials row */}
+        <div className="flex items-start justify-between mb-10 md:mb-12">
+          <img
+            src={logo}
+            alt="AM Bathrooms + Projects"
+            className="h-10 md:h-12 w-auto object-contain"
+          />
           <div className="flex items-start gap-4">
             {SOCIALS.map((s) => (
               <a
