@@ -112,7 +112,7 @@ function ProjectTile({ project }: { project: (typeof projects)[number] }) {
       </div>
       <figcaption className="mt-5 flex items-baseline justify-between gap-6">
         <div>
-          <div className="font-serif text-xl md:text-2xl text-ivory font-light tracking-[0.12em] uppercase">
+          <div className="font-sans text-xl md:text-2xl text-ivory font-light tracking-[0.12em] uppercase">
             {project.title}
           </div>
           <div className="eyebrow mt-2">{project.suburb}</div>

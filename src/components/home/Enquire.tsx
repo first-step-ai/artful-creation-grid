@@ -26,7 +26,7 @@ export function Enquire() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
           <div className="md:col-span-5 flex flex-col">
             <div className="eyebrow"><span className="text-brass">·</span>&nbsp;&nbsp;Enquire</div>
-            <h2 className="mt-6 font-serif text-3xl md:text-4xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.2]">
+            <h2 className="mt-6 font-sans text-3xl md:text-4xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.2]">
               Let's
               <br />
               <span className="text-ivory-muted">begin.</span>

@@ -17,7 +17,7 @@ export function Studio() {
                 Studio
               </span>
             </div>
-            <h2 className="font-serif text-3xl md:text-4xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.2]">
+            <h2 className="font-sans text-3xl md:text-4xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.2]">
               Built in-house.
               <br />
               Every time.
