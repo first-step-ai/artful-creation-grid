@@ -46,13 +46,13 @@ export function Awards() {
 
   return (
     <section id="awards" className="border-t border-border/60 bg-oxblood">
-      <div className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-20 py-16 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-16 py-10 md:py-14">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* Left: awards list */}
           <div className="lg:col-span-5 flex flex-col">
-            <header className="mb-12 md:mb-16">
-              <p className="eyebrow mb-4 opacity-70">Recognition</p>
-              <h2 className="font-serif italic font-light text-4xl md:text-5xl leading-tight text-ivory">
+            <header className="mb-6 md:mb-8">
+              <p className="eyebrow mb-2 opacity-70">Recognition</p>
+              <h2 className="font-serif italic font-light text-3xl md:text-4xl leading-tight text-ivory">
                 Selected Excellence
               </h2>
             </header>
@@ -69,27 +69,20 @@ export function Awards() {
                       onClick={() => setActive(i)}
                       aria-pressed={isActive}
                       className={[
-                        "group w-full text-left py-7 md:py-8 border-t border-ivory/15",
+                        "group w-full text-left py-3 md:py-4 border-t border-ivory/15",
                         i === awards.length - 1 ? "border-b" : "",
                         "transition-opacity duration-500",
                         isActive ? "opacity-100" : "opacity-40 hover:opacity-100",
                       ].join(" ")}
                     >
-                      <div className="flex justify-between items-start mb-2">
-                        <span className="text-[11px] tracking-[0.28em] uppercase text-ivory/80 font-sans">
+                      <div className="mb-1">
+                        <span className="text-[10px] tracking-[0.28em] uppercase text-ivory/80 font-sans">
                           {a.year}
                         </span>
-                        <span
-                          aria-hidden
-                          className={[
-                            "mt-2 h-px bg-brass transition-all duration-500 ease-out",
-                            isActive ? "w-12 opacity-100" : "w-4 opacity-40",
-                          ].join(" ")}
-                        />
                       </div>
                       <h3
                         className={[
-                          "font-serif font-light text-2xl md:text-3xl text-ivory leading-snug",
+                          "font-serif font-light text-xl md:text-2xl text-ivory leading-snug",
                           "transition-all duration-500 ease-out",
                           isActive ? "translate-x-2" : "group-hover:translate-x-1",
                         ].join(" ")}
@@ -98,7 +91,7 @@ export function Awards() {
                       </h3>
                       <p
                         className={[
-                          "font-serif italic text-sm md:text-base text-ivory/60 mt-1",
+                          "font-serif italic text-xs md:text-sm text-ivory/60",
                           "transition-all duration-500 ease-out",
                           isActive ? "translate-x-2" : "",
                         ].join(" ")}
@@ -114,7 +107,8 @@ export function Awards() {
 
           {/* Right: editorial image */}
           <div className="lg:col-span-7 relative group">
-            <div className="relative aspect-[4/5] overflow-hidden bg-burgundy">
+            <div className="relative aspect-[4/5] lg:aspect-[5/6] max-h-[78vh] overflow-hidden bg-burgundy mx-auto">
+
               {awards.map((a, i) => {
                 const isActive = active === i;
                 return (
