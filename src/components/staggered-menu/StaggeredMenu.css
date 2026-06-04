@@ -69,14 +69,14 @@
 
 .sm-logo-center-img {
   display: block;
-  height: 22px;
+  height: 40px;
   width: auto;
   object-fit: contain;
-  opacity: 0.95;
+  opacity: 1;
 }
 
 @media (max-width: 640px) {
-  .sm-logo-center-img { height: 16px; }
+  .sm-logo-center-img { height: 26px; }
 }
 
 .sm-toggle {
