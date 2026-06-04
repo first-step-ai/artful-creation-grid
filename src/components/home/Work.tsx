@@ -26,9 +26,9 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 
 
 const projects = [
-  { title: "Bold Utility", suburb: "Bexley", year: "", image: p1 },
-  { title: "Award-Finalist Kitchen and Bath", suburb: "Drummoyne", year: "", image: p2 },
-  { title: "Functional Luxury for a Family of Four", suburb: "Rozelle", year: "", image: p3 },
+  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: p1 },
+  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: p2 },
+  { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full Interior", image: p3 },
 ];
 
 const suburbs = [
@@ -112,12 +112,13 @@ function ProjectTile({ project }: { project: (typeof projects)[number] }) {
       </div>
       <figcaption className="mt-5 flex items-baseline justify-between gap-6">
         <div>
-          <div className="font-sans text-xl md:text-2xl text-ivory font-light tracking-[0.12em] uppercase">
-            {project.title}
+          <div className="font-sans text-base md:text-lg text-ivory font-light tracking-[0.12em] uppercase">
+            <span>{project.suburb}</span>
+            <span className="mx-2 opacity-50">|</span>
+            <span>{project.title}</span>
           </div>
-          <div className="eyebrow mt-2">{project.suburb}</div>
+          <div className="eyebrow mt-2">{project.category}</div>
         </div>
-        <div className="eyebrow">{project.year}</div>
       </figcaption>
     </figure>
   );
