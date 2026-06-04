@@ -10,7 +10,7 @@ export function Manifesto() {
       >
         <div className="md:col-span-4">
           <div className="eyebrow">Studio</div>
-          <p className="mt-6 font-serif text-2xl md:text-3xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.3]">
+          <p className="mt-6 font-sans text-2xl md:text-3xl text-ivory font-light tracking-[0.12em] uppercase leading-[1.3]">
             A practice rooted in patience.
           </p>
         </div>
