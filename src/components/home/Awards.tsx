@@ -24,12 +24,11 @@ export function Awards() {
           {/* Left: Logo + Awards list — 35% — centered */}
           <div className="md:basis-[35%] md:pr-[2.5%] flex flex-col items-center text-center">
             {/* Logo placeholder */}
-            <div
-              className="w-20 h-20 md:w-24 md:h-24 border border-ivory/30 flex items-center justify-center text-ivory/40 text-[10px] tracking-[0.28em] uppercase mb-3"
-              aria-label="Award logo"
-            >
-              Logo
-            </div>
+            <img
+              src={hiaLogo.url}
+              alt="HIA award logo"
+              className="w-20 h-20 md:w-24 md:h-24 object-contain mb-3"
+            />
 
             <div className="text-[11px] tracking-[0.28em] uppercase text-brass mb-5 md:mb-6">
               Multi-Award Winner
