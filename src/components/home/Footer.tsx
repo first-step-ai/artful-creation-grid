@@ -29,14 +29,14 @@ export function Footer() {
     >
       <div className="w-full px-6 md:px-12 pt-16 md:pt-20 pb-10">
         {/* Top: logo + columns */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-center">
           {/* Brand */}
-          <div className="md:col-span-5 flex flex-col gap-5">
+          <div className="md:col-span-5 flex flex-col gap-5 items-start">
             <span style={labelStyle}>Studio</span>
             <img
               src={logo}
               alt="AM Bathrooms + Projects"
-              className="h-10 md:h-12 w-auto object-contain"
+              className="h-10 md:h-12 w-auto object-contain object-left block -ml-1"
               style={{ filter: "brightness(0) invert(1)" }}
             />
             <p
@@ -54,27 +54,32 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="md:col-span-4 flex flex-col gap-3">
-            <span style={labelStyle}>Contact</span>
-            <a
-              href="tel:+61291234567"
-              className="font-sans hover:opacity-80 transition-opacity"
-              style={{ color: TEXT, fontSize: "15px", letterSpacing: "0.04em" }}
-            >
-              (02) 9123 4567
-            </a>
-            <span
-              className="font-sans"
-              style={{ color: TEXT_MUTED, fontSize: "13px", letterSpacing: "0.04em" }}
-            >
-              Mon – Fri  ·  9:00 – 17:00
-            </span>
+          <div className="md:col-span-4 flex flex-col gap-5">
+            <div className="flex flex-col gap-3">
+              <span style={labelStyle}>Contact</span>
+              <a
+                href="tel:+61291234567"
+                className="font-sans hover:opacity-80 transition-opacity"
+                style={{ color: TEXT, fontSize: "15px", letterSpacing: "0.04em" }}
+              >
+                (02) 9123 4567
+              </a>
+            </div>
+            <div className="flex flex-col gap-3">
+              <span style={labelStyle}>Hours</span>
+              <span
+                className="font-sans"
+                style={{ color: TEXT, fontSize: "15px", letterSpacing: "0.04em" }}
+              >
+                Mon to Fri · 8.30am to 4.30pm
+              </span>
+            </div>
           </div>
 
           {/* Social */}
           <div className="md:col-span-3 flex flex-col gap-3">
             <span style={labelStyle}>Follow</span>
-            <div className="flex items-start gap-4">
+            <div className="flex items-center gap-4">
               {SOCIALS.map((s) => (
                 <a
                   key={s.label}
