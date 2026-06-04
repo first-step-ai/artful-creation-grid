@@ -4,9 +4,9 @@ import socialPinterest from "@/assets/service-kitchens.jpg";
 import socialInstagram from "@/assets/service-interiors.jpg";
 
 const SOCIALS = [
-  { label: "Facebook", img: socialFacebook, href: "#" },
-  { label: "Pinterest", img: socialPinterest, href: "#" },
   { label: "Instagram", img: socialInstagram, href: "#" },
+  { label: "Pinterest", img: socialPinterest, href: "#" },
+  { label: "Facebook", img: socialFacebook, href: "#" },
 ];
 
 const FOOTER_BG = "var(--oxblood)";
