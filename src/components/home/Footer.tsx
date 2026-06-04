@@ -1,4 +1,4 @@
-
+import footerLogo from "@/assets/am-footer-logo.png.asset.json";
 import socialFacebook from "@/assets/service-bathrooms.jpg";
 import socialPinterest from "@/assets/service-kitchens.jpg";
 import socialInstagram from "@/assets/service-interiors.jpg";
@@ -30,8 +30,18 @@ export function Footer() {
       <div className="w-full px-6 md:px-12 pt-16 md:pt-20 pb-10">
         {/* Top: logo + columns */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-center">
+          {/* Logo */}
+          <div className="md:col-span-3 flex">
+            <img
+              src={footerLogo.url}
+              alt="AM Bathrooms + Projects"
+              className="h-10 md:h-12 w-auto object-contain object-left"
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
+          </div>
+
           {/* Contact */}
-          <div className="md:col-span-6 flex flex-col gap-5">
+          <div className="md:col-span-5 flex flex-col gap-5">
             <div className="flex flex-col gap-3">
               <span style={labelStyle}>Contact</span>
               <a
@@ -54,7 +64,7 @@ export function Footer() {
           </div>
 
           {/* Social */}
-          <div className="md:col-span-6 flex flex-col gap-3 md:items-end">
+          <div className="md:col-span-4 flex flex-col gap-3 md:items-end">
             <div className="flex items-center gap-4">
               {SOCIALS.map((s) => (
                 <a
