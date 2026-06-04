@@ -1,142 +1,168 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import archedAsset from "@/assets/arched-house.jpg.asset.json";
 import kitchenAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
 import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
 import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
 
-const awards: { top: string; bottom: string; image: string }[] = [
-  { top: "Winner 2025 HIA", bottom: "New South Wales Kitchen of the Year", image: kitchenAsset.url },
-  { top: "Winner 2024 HIA", bottom: "New South Wales Bathroom of the Year", image: bexleyAsset.url },
-  { top: "National Winner 2024", bottom: "Small Business Management", image: archedAsset.url },
-  { top: "New South Wales 2023", bottom: "Small Business Management", image: hotelAsset.url },
+const awards: {
+  year: string;
+  title: string;
+  subtitle: string;
+  image: string;
+  caption: string;
+}[] = [
+  {
+    year: "2025 HIA",
+    title: "Kitchen of the Year",
+    subtitle: "New South Wales Winner",
+    image: kitchenAsset.url,
+    caption: "The curated spatial balance of the Paddington Residence.",
+  },
+  {
+    year: "2024 HIA",
+    title: "Bathroom of the Year",
+    subtitle: "New South Wales Winner",
+    image: bexleyAsset.url,
+    caption: "Considered materiality and quiet luxury, Bexley project.",
+  },
+  {
+    year: "2024 National",
+    title: "Small Business Management",
+    subtitle: "National Winner Recognition",
+    image: archedAsset.url,
+    caption: "Architectural rigour brought to a heritage Sydney home.",
+  },
+  {
+    year: "2023 HIA",
+    title: "Small Business Management",
+    subtitle: "New South Wales Winner",
+    image: hotelAsset.url,
+    caption: "Hotel-inspired calm, tailored to a private residence.",
+  },
 ];
 
 export function Awards() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
   const [active, setActive] = useState(0);
-
-  useEffect(() => {
-    const io = new IntersectionObserver(
-      (entries) => {
-        let bestIdx = -1;
-        let bestRatio = -1;
-        entries.forEach((e) => {
-          if (e.isIntersecting && e.intersectionRatio > bestRatio) {
-            bestRatio = e.intersectionRatio;
-            bestIdx = Number((e.target as HTMLElement).dataset.idx);
-          }
-        });
-        if (bestIdx >= 0) setActive(bestIdx);
-      },
-      { rootMargin: "-40% 0px -40% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] },
-    );
-    itemRefs.current.forEach((el) => el && io.observe(el));
-    return () => io.disconnect();
-  }, []);
 
   return (
     <section id="awards" className="border-t border-border/60 bg-oxblood">
-      <div
-        ref={containerRef}
-        className="mx-auto max-w-[1600px] px-6 md:px-10 py-10 md:py-12"
-      >
-        <div className="eyebrow mb-8 md:mb-10">Awards</div>
+      <div className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-20 py-16 md:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+          {/* Left: awards list */}
+          <div className="lg:col-span-5 flex flex-col">
+            <header className="mb-12 md:mb-16">
+              <p className="eyebrow mb-4 opacity-70">Recognition</p>
+              <h2 className="font-serif italic font-light text-4xl md:text-5xl leading-tight text-ivory">
+                Selected Excellence
+              </h2>
+            </header>
 
-        <div className="w-full flex flex-col md:flex-row gap-10 md:gap-0 md:items-start">
-          {/* Left: Logo + scrolling awards list */}
-          <div className="md:basis-[40%] md:pr-[4%] flex flex-col items-center text-center">
-            <div
-              className="w-20 h-20 md:w-24 md:h-24 border border-ivory/30 flex items-center justify-center text-ivory/40 text-[10px] tracking-[0.28em] uppercase mb-3"
-              aria-label="Award logo"
-            >
-              Logo
-            </div>
-
-            <div className="text-[11px] tracking-[0.28em] uppercase text-brass mb-8 md:mb-10">
-              Multi-Award Winner
-            </div>
-
-            <ul className="w-full flex flex-col border-t border-ivory/15">
+            <ul className="flex flex-col">
               {awards.map((a, i) => {
                 const isActive = active === i;
                 return (
-                  <li
-                    key={a.bottom + a.top}
-                    data-idx={i}
-                    ref={(el) => {
-                      itemRefs.current[i] = el;
-                    }}
-                    className={[
-                      "relative border-b border-ivory/15 py-6 md:py-8 font-serif tracking-[0.04em] leading-snug",
-                      "transition-all duration-700 ease-out",
-                      isActive
-                        ? "text-ivory text-base md:text-lg opacity-100 translate-x-0"
-                        : "text-ivory/35 text-sm md:text-base opacity-60 -translate-x-1",
-                    ].join(" ")}
-                  >
-                    <div>
-                      <div>{a.top}</div>
-                      <div>{a.bottom}</div>
-                    </div>
+                  <li key={a.title + a.year}>
+                    <button
+                      type="button"
+                      onMouseEnter={() => setActive(i)}
+                      onFocus={() => setActive(i)}
+                      onClick={() => setActive(i)}
+                      aria-pressed={isActive}
+                      className={[
+                        "group w-full text-left py-7 md:py-8 border-t border-ivory/15",
+                        i === awards.length - 1 ? "border-b" : "",
+                        "transition-opacity duration-500",
+                        isActive ? "opacity-100" : "opacity-40 hover:opacity-100",
+                      ].join(" ")}
+                    >
+                      <div className="flex justify-between items-start mb-2">
+                        <span className="text-[11px] tracking-[0.28em] uppercase text-ivory/80 font-sans">
+                          {a.year}
+                        </span>
+                        <span
+                          aria-hidden
+                          className={[
+                            "mt-2 h-px bg-brass transition-all duration-500 ease-out",
+                            isActive ? "w-12 opacity-100" : "w-4 opacity-40",
+                          ].join(" ")}
+                        />
+                      </div>
+                      <h3
+                        className={[
+                          "font-serif font-light text-2xl md:text-3xl text-ivory leading-snug",
+                          "transition-all duration-500 ease-out",
+                          isActive ? "translate-x-2" : "group-hover:translate-x-1",
+                        ].join(" ")}
+                      >
+                        {a.title}
+                      </h3>
+                      <p
+                        className={[
+                          "font-serif italic text-sm md:text-base text-ivory/60 mt-1",
+                          "transition-all duration-500 ease-out",
+                          isActive ? "translate-x-2" : "",
+                        ].join(" ")}
+                      >
+                        {a.subtitle}
+                      </p>
+                    </button>
                   </li>
                 );
               })}
             </ul>
           </div>
 
-
-          {/* Right: Sticky 3D image stack */}
-          <div className="md:basis-[60%] md:ml-auto md:sticky md:top-24 self-start">
-            <div
-              className="relative w-full aspect-[4/5] bg-burgundy overflow-hidden"
-              style={{ perspective: "1400px" }}
-            >
+          {/* Right: editorial image */}
+          <div className="lg:col-span-7 relative group">
+            <div className="relative aspect-[4/5] overflow-hidden bg-burgundy">
               {awards.map((a, i) => {
-                const offset = i - active;
-                const isActive = offset === 0;
-                const isPrev = offset < 0;
-                // 3D transform: active flat & front; others tilted and pushed back
-                const translateY = isActive ? 0 : isPrev ? -8 : 8;
-                const rotateX = isActive ? 0 : isPrev ? 12 : -12;
-                const translateZ = isActive ? 0 : -180;
-                const opacity = isActive ? 1 : 0;
+                const isActive = active === i;
                 return (
-                  <div
+                  <img
                     key={a.image}
-                    className="absolute inset-0 will-change-transform"
-                    style={{
-                      transform: `translate3d(0, ${translateY}%, ${translateZ}px) rotateX(${rotateX}deg)`,
-                      opacity,
-                      transition:
-                        "transform 1100ms cubic-bezier(0.22,0.61,0.36,1), opacity 700ms ease-out",
-                      transformStyle: "preserve-3d",
-                      transformOrigin: isPrev ? "top center" : "bottom center",
-                      zIndex: isActive ? 10 : 1,
-                      boxShadow: isActive
-                        ? "0 30px 80px -20px rgba(0,0,0,0.55)"
-                        : "0 10px 30px -10px rgba(0,0,0,0.4)",
-                    }}
-                  >
-                    <img
-                      src={a.image}
-                      alt={`${a.top} — ${a.bottom}`}
-                      loading="lazy"
-                      className="h-full w-full object-cover"
-                    />
-                    {/* Subtle gradient for depth */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-oxblood/30 via-transparent to-transparent pointer-events-none" />
-                  </div>
+                    src={a.image}
+                    alt={`${a.year} — ${a.title}`}
+                    loading="lazy"
+                    className={[
+                      "absolute inset-0 h-full w-full object-cover",
+                      "transition-[opacity,transform] duration-[1100ms] ease-[cubic-bezier(0.22,0.61,0.36,1)]",
+                      isActive
+                        ? "opacity-100 scale-100 group-hover:scale-105"
+                        : "opacity-0 scale-[1.04]",
+                    ].join(" ")}
+                  />
                 );
               })}
+              <div className="absolute inset-0 bg-gradient-to-t from-oxblood/30 via-transparent to-transparent pointer-events-none" />
+            </div>
 
-              {/* Index indicator */}
-              <div className="absolute bottom-4 right-4 z-20 flex items-center gap-2 text-[11px] tracking-[0.28em] uppercase text-ivory/80">
-                <span className="font-serif text-base text-ivory">
-                  {String(active + 1).padStart(2, "0")}
-                </span>
-                <span className="opacity-60">/ {String(awards.length).padStart(2, "0")}</span>
-              </div>
+            {/* Floating caption card */}
+            <div
+              className="absolute -bottom-8 -left-4 md:-bottom-12 md:-left-12 p-8 md:p-10 border border-ivory/15 backdrop-blur-sm hidden md:block max-w-[280px]"
+              style={{ backgroundColor: "rgba(56, 61, 56, 0.72)" }}
+            >
+              <p className="text-[10px] tracking-[0.28em] uppercase text-ivory/60 mb-3 font-sans">
+                Project {String(active + 1).padStart(2, "0")}
+              </p>
+              <p
+                key={awards[active].caption}
+                className="font-serif text-lg leading-snug text-ivory animate-fade-in"
+              >
+                {awards[active].caption}
+              </p>
+            </div>
+
+            {/* Progress dashes */}
+            <div className="absolute bottom-6 right-6 flex gap-3">
+              {awards.map((_, i) => (
+                <span
+                  key={i}
+                  className={[
+                    "h-px transition-all duration-500 ease-out",
+                    active === i ? "w-10 bg-brass opacity-100" : "w-10 bg-ivory opacity-20",
+                  ].join(" ")}
+                />
+              ))}
             </div>
           </div>
         </div>
