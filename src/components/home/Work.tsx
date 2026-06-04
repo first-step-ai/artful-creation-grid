@@ -43,7 +43,7 @@ export function Work() {
   const tilesRef = useReveal<HTMLDivElement>();
   return (
     <section id="work" className="bg-oxblood">
-      <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-12 border-t border-border/60">
+      <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-12">
 
         <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
           <div className="eyebrow">Featured Work</div>
