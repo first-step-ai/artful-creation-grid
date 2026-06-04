@@ -1,4 +1,4 @@
-
+import footerLogo from "@/assets/am-footer-logo.png.asset.json";
 import socialFacebook from "@/assets/service-bathrooms.jpg";
 import socialPinterest from "@/assets/service-kitchens.jpg";
 import socialInstagram from "@/assets/service-interiors.jpg";
