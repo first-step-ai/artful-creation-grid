@@ -17,12 +17,12 @@ const RULE = "rgba(235,240,233,0.12)";
 export function Footer() {
   return (
     <footer
-      className="w-full"
-      style={{ backgroundColor: FOOTER_BG, color: TEXT }}
+      className="w-full flex flex-col justify-between"
+      style={{ backgroundColor: FOOTER_BG, color: TEXT, minHeight: "50vh" }}
     >
-      <div className="w-full px-6 md:px-12 pt-20 md:pt-24 pb-10">
+      <div className="w-full px-6 md:px-12 pt-16 md:pt-20 pb-6 flex-1 flex flex-col justify-between">
         {/* Logo + Socials row */}
-        <div className="flex items-start justify-between mb-10 md:mb-12">
+        <div className="flex items-start justify-between">
           <img
             src={logo}
             alt="AM Bathrooms + Projects"
@@ -59,6 +59,32 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Contact info */}
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mt-auto pt-12">
+          <div className="flex flex-col gap-2">
+            <span
+              className="font-sans"
+              style={{
+                color: TEXT,
+                fontSize: "13px",
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+              }}
+            >
+              (02) 9123 4567
+            </span>
+            <span
+              className="font-sans"
+              style={{
+                color: TEXT_MUTED,
+                fontSize: "11px",
+                letterSpacing: "0.14em",
+              }}
+            >
+              Mon – Fri  9:00 – 17:00
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* Bottom bar */}
@@ -90,4 +116,3 @@ export function Footer() {
     </footer>
   );
 }
-
