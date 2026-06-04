@@ -75,14 +75,7 @@ export function Awards() {
                         : "text-ivory/35 text-sm md:text-base opacity-60 -translate-x-1",
                     ].join(" ")}
                   >
-                    <span
-                      className={[
-                        "absolute left-0 top-1/2 -translate-y-1/2 h-[1px] bg-brass transition-all duration-700 ease-out",
-                        isActive ? "w-6 opacity-100" : "w-0 opacity-0",
-                      ].join(" ")}
-                      aria-hidden
-                    />
-                    <div className={isActive ? "md:pl-10" : "md:pl-0 transition-[padding] duration-700"}>
+                    <div>
                       <div>{a.top}</div>
                       <div>{a.bottom}</div>
                     </div>
@@ -91,6 +84,7 @@ export function Awards() {
               })}
             </ul>
           </div>
+
 
           {/* Right: Sticky 3D image stack */}
           <div className="md:basis-[60%] md:ml-auto md:sticky md:top-24 self-start">
