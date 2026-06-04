@@ -19,15 +19,15 @@ export function Awards() {
   useEffect(() => {
     const io = new IntersectionObserver(
       (entries) => {
-        // Pick the entry closest to viewport center
-        let best: { idx: number; ratio: number } | null = null;
+        let bestIdx = -1;
+        let bestRatio = -1;
         entries.forEach((e) => {
-          const idx = Number((e.target as HTMLElement).dataset.idx);
-          if (e.isIntersecting && (!best || e.intersectionRatio > best.ratio)) {
-            best = { idx, ratio: e.intersectionRatio };
+          if (e.isIntersecting && e.intersectionRatio > bestRatio) {
+            bestRatio = e.intersectionRatio;
+            bestIdx = Number((e.target as HTMLElement).dataset.idx);
           }
         });
-        if (best) setActive(best.idx);
+        if (bestIdx >= 0) setActive(bestIdx);
       },
       { rootMargin: "-40% 0px -40% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] },
     );
