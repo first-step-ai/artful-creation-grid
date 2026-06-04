@@ -24,14 +24,15 @@ const labelStyle = {
 export function Footer() {
   return (
     <footer
-      className="w-full"
+      className="w-full border-t border-border/60"
       style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
       <div className="w-full px-6 md:px-12 pt-16 md:pt-20 pb-10">
         {/* Top: logo + columns */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-start">
           {/* Brand */}
           <div className="md:col-span-5 flex flex-col gap-5">
+            <span style={labelStyle}>Studio</span>
             <img
               src={logo}
               alt="AM Bathrooms + Projects"
