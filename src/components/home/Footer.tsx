@@ -35,7 +35,8 @@ export function Footer() {
               src={footerLogo.url}
               alt="AM Bathrooms + Projects"
               className="h-12 md:h-16 w-auto object-contain object-left"
-            />
+              style={{ filter: "brightness(0) invert(1)" }}
+
           </div>
 
           {/* Socials row spans from center to right edge */}
