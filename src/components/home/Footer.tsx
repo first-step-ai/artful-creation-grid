@@ -28,10 +28,9 @@ export function Footer() {
       style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
       <div className="w-full px-6 md:px-12 pt-16 md:pt-20 pb-10">
-        {/* Top: logo + columns */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-center">
-          {/* Logo */}
-          <div className="md:col-span-3 flex">
+        <div className="relative flex items-center justify-between gap-10">
+          {/* Logo (left) */}
+          <div className="flex shrink-0">
             <img
               src={footerLogo.url}
               alt="AM Bathrooms + Projects"
@@ -40,9 +39,9 @@ export function Footer() {
             />
           </div>
 
-          {/* Contact */}
-          <div className="md:col-span-5 flex flex-col gap-5 md:items-center md:text-center">
-            <div className="flex flex-col gap-3">
+          {/* Contact (absolutely centered to the footer) */}
+          <div className="hidden md:flex flex-col gap-5 items-center text-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="flex flex-col gap-3 items-center">
               <span style={labelStyle}>Contact</span>
               <a
                 href="tel:+61291234567"
@@ -52,7 +51,7 @@ export function Footer() {
                 (02) 9123 4567
               </a>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 items-center">
               <span style={labelStyle}>Hours</span>
               <span
                 className="font-sans"
@@ -63,40 +62,59 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Social */}
-          <div className="md:col-span-4 flex flex-col gap-3 md:items-end">
-            <div className="flex items-center gap-4">
-              {SOCIALS.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  aria-label={s.label}
-                  className="group block text-center"
+          {/* Social (right) */}
+          <div className="flex shrink-0 items-center gap-4 md:mr-8 lg:mr-16">
+            {SOCIALS.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                aria-label={s.label}
+                className="group block text-center"
+              >
+                <div className="overflow-hidden" style={{ width: 64, height: 82 }}>
+                  <img
+                    src={s.img}
+                    alt={s.label}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div
+                  className="mt-2 font-sans"
+                  style={{
+                    color: TEXT,
+                    fontSize: "10px",
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                  }}
                 >
-                  <div className="overflow-hidden" style={{ width: 64, height: 82 }}>
-                    <img
-                      src={s.img}
-                      alt={s.label}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div
-                    className="mt-2 font-sans"
-                    style={{
-                      color: TEXT,
-                      fontSize: "10px",
-                      letterSpacing: "0.22em",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    {s.label}
-                  </div>
-                </a>
-              ))}
-            </div>
+                  {s.label}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Contact (mobile fallback) */}
+        <div className="md:hidden flex flex-col gap-5 items-center text-center mt-10">
+          <div className="flex flex-col gap-3 items-center">
+            <span style={labelStyle}>Contact</span>
+            <a
+              href="tel:+61291234567"
+              className="font-sans"
+              style={{ color: TEXT, fontSize: "15px", letterSpacing: "0.04em" }}
+            >
+              (02) 9123 4567
+            </a>
+          </div>
+          <div className="flex flex-col gap-3 items-center">
+            <span style={labelStyle}>Hours</span>
+            <span className="font-sans" style={{ color: TEXT, fontSize: "15px", letterSpacing: "0.04em" }}>
+              Mon to Fri · 8.30am to 4.30pm
+            </span>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+
