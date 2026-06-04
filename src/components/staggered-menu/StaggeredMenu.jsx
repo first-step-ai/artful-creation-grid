@@ -375,10 +375,13 @@ export const StaggeredMenu = ({
             alt="Logo"
             className="sm-logo-img"
             draggable={false}
-            width={110}
-            height={24}
           />
         </div>
+        {centerLogoUrl && (
+          <div className="sm-logo-center" aria-hidden="true">
+            <img src={centerLogoUrl} alt="" className="sm-logo-center-img" draggable={false} />
+          </div>
+        )}
         <button
           ref={toggleBtnRef}
           className="sm-toggle"
