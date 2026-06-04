@@ -30,31 +30,8 @@ export function Footer() {
       <div className="w-full px-6 md:px-12 pt-16 md:pt-20 pb-10">
         {/* Top: logo + columns */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-center">
-          {/* Brand */}
-          <div className="md:col-span-5 flex flex-col gap-5 items-start">
-            <span style={labelStyle}>Studio</span>
-            <img
-              src={logo}
-              alt="AM Bathrooms + Projects"
-              className="h-10 md:h-12 w-auto object-contain object-left block -ml-1"
-              style={{ filter: "brightness(0) invert(1)" }}
-            />
-            <p
-              className="font-sans max-w-sm"
-              style={{
-                color: TEXT_MUTED,
-                fontSize: "13px",
-                lineHeight: 1.7,
-                letterSpacing: "0.02em",
-              }}
-            >
-              Considered bathrooms, kitchens and whole-home renovations,
-              crafted across Sydney.
-            </p>
-          </div>
-
           {/* Contact */}
-          <div className="md:col-span-4 flex flex-col gap-5">
+          <div className="md:col-span-6 flex flex-col gap-5">
             <div className="flex flex-col gap-3">
               <span style={labelStyle}>Contact</span>
               <a
@@ -77,8 +54,7 @@ export function Footer() {
           </div>
 
           {/* Social */}
-          <div className="md:col-span-3 flex flex-col gap-3">
-            <span style={labelStyle}>Follow</span>
+          <div className="md:col-span-6 flex flex-col gap-3 md:items-end">
             <div className="flex items-center gap-4">
               {SOCIALS.map((s) => (
                 <a
@@ -109,21 +85,6 @@ export function Footer() {
               ))}
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Bottom bar */}
-      <div className="w-full" style={{ borderTop: `0.5px solid ${RULE}` }}>
-        <div className="w-full px-6 md:px-12 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
-          <span
-            className="font-sans"
-            style={{ color: TEXT_MUTED, fontSize: "11px", letterSpacing: "0.14em" }}
-          >
-            © AM Bathrooms Pty Ltd – ABN 51 613 280 149
-          </span>
-          <span className="font-sans" style={labelStyle}>
-            Made with care in Sydney
-          </span>
         </div>
       </div>
     </footer>
