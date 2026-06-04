@@ -27,7 +27,7 @@ export function Footer() {
       className="w-full border-t border-border/60"
       style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
-      <div className="w-full px-6 md:px-12 pt-16 md:pt-20 pb-10">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-16 md:pt-20 pb-10">
         <div className="relative flex items-start justify-between gap-10">
           {/* Logo (left) */}
           <div className="flex shrink-0">
