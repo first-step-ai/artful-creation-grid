@@ -1,4 +1,5 @@
 import featureAsset from "@/assets/arched-house.jpg.asset.json";
+import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const awards: { top: string; bottom: string }[] = [
