@@ -73,15 +73,32 @@ export function Footer() {
           {/* Social */}
           <div className="md:col-span-3 flex flex-col gap-3">
             <span style={labelStyle}>Follow</span>
-            <div className="flex flex-col gap-2">
+            <div className="flex items-start gap-4">
               {SOCIALS.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
-                  className="font-sans hover:opacity-80 transition-opacity w-fit"
-                  style={{ color: TEXT, fontSize: "14px", letterSpacing: "0.04em" }}
+                  aria-label={s.label}
+                  className="group block text-center"
                 >
-                  {s.label}
+                  <div className="overflow-hidden" style={{ width: 64, height: 82 }}>
+                    <img
+                      src={s.img}
+                      alt={s.label}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div
+                    className="mt-2 font-sans"
+                    style={{
+                      color: TEXT,
+                      fontSize: "10px",
+                      letterSpacing: "0.22em",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    {s.label}
+                  </div>
                 </a>
               ))}
             </div>
