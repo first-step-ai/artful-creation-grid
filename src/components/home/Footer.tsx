@@ -64,7 +64,7 @@ export function Footer() {
           </div>
 
           {/* Social */}
-          <div className="md:col-span-6 flex flex-col gap-3 md:items-end">
+          <div className="md:col-span-4 flex flex-col gap-3 md:items-end">
             <div className="flex items-center gap-4">
               {SOCIALS.map((s) => (
                 <a
