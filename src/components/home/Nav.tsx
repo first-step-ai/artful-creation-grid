@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { StaggeredMenu } from "@/components/staggered-menu/StaggeredMenu";
 import amOnly from "@/assets/am-mark.png.asset.json";
-import amFull from "@/assets/am-full.png.asset.json";
+
 
 const menuItems = [
   { label: "Portfolio", ariaLabel: "View our portfolio", link: "#work" },
