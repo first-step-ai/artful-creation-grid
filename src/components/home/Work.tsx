@@ -128,7 +128,7 @@ function ProjectTile({ project }: { project: (typeof projects)[number] }) {
             <span className="mx-2 opacity-50">|</span>
             <span>{project.title}</span>
           </div>
-          <div className="eyebrow mt-2 text-ivory">{project.category}</div>
+          <div className="mt-2 font-sans text-[11px] tracking-[0.28em] uppercase font-medium text-ivory">{project.category}</div>
         </div>
       </figcaption>
     </figure>
