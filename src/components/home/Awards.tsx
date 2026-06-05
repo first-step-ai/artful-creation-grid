@@ -43,7 +43,7 @@ export function Awards() {
               className="w-20 h-20 md:w-24 md:h-24 object-contain mb-3"
             />
 
-            <div className="text-[11px] tracking-[0.28em] uppercase text-brass mb-5 md:mb-6">
+            <div className="text-[11px] tracking-[0.28em] uppercase text-ivory mb-5 md:mb-6">
               Multi-Award Winner
             </div>
 
