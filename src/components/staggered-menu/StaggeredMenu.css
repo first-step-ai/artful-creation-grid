@@ -145,6 +145,8 @@
 }
 
 .sm-toggle-textWrap { display: none !important; }
+
+.sm-toggle:focus-visible {
   outline: 2px solid #ffffffaa;
   outline-offset: 4px;
   border-radius: 4px;
