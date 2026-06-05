@@ -74,8 +74,8 @@
   width: auto;
   object-fit: contain;
   opacity: 0;
-  transform: translateX(-24px);
-  transition: opacity 0.55s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateX(calc(-50vw + 4em + 22px)) scale(1.1);
+  transition: opacity 0.55s ease, transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .sm-logo-center-text {
@@ -90,7 +90,10 @@
   transition: opacity 0.55s ease 0.05s, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.05s;
 }
 
-.staggered-menu-wrapper.is-scrolled .sm-logo-center-img,
+.staggered-menu-wrapper.is-scrolled .sm-logo-center-img {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
 .staggered-menu-wrapper.is-scrolled .sm-logo-center-text {
   opacity: 1;
   transform: translateX(0);
