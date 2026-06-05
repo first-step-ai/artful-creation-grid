@@ -68,7 +68,7 @@ export function Work() {
                     className="shrink-0 px-3 md:px-4"
                   >
                     <div
-                      className="overflow-hidden bg-oxblood h-[38vh] md:h-[52vh] max-h-[520px]"
+                      className="overflow-hidden bg-oxblood h-[46vh] md:h-[62vh] max-h-[620px]"
                       style={{
                         aspectRatio: item.orientation === "landscape" ? "4 / 3" : "3 / 4",
                       }}
