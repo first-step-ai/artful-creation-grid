@@ -30,7 +30,9 @@ export function Nav() {
         displaySocials={false}
         displayItemNumbering={false}
         logoUrl={amOnly.url}
-        centerLogoUrl={amFull.url}
+        centerLogoUrl={amOnly.url}
+        centerText="BATHROOMS + PROJECTS"
+
         menuButtonColor="#ebf0e9"
         openMenuButtonColor="#1a1a1a"
         accentColor="#848b7d"
