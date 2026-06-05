@@ -46,12 +46,12 @@ export function Work() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-12">
 
         <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
-          <div className="eyebrow text-ivory">
+          <div className="eyebrow">
             <span>Award Winning</span>
             <span className="mx-2 opacity-50">|</span>
             <span>Refined Family Living</span>
           </div>
-          <div className="eyebrow text-ivory">
+          <div className="eyebrow">
             Rozelle
           </div>
         </div>
@@ -123,12 +123,12 @@ function ProjectTile({ project }: { project: (typeof projects)[number] }) {
       </div>
       <figcaption className="mt-5 flex items-baseline justify-between gap-6">
         <div>
-          <div className="font-sans text-sm md:text-base text-ivory font-light tracking-[0.1em] uppercase whitespace-nowrap">
+          <div className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase whitespace-nowrap">
             <span>{project.suburb}</span>
             <span className="mx-2 opacity-50">|</span>
             <span>{project.title}</span>
           </div>
-          <div className="eyebrow mt-2">{project.category}</div>
+          <div className="eyebrow mt-2 text-ivory">{project.category}</div>
         </div>
       </figcaption>
     </figure>

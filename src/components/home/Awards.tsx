@@ -43,7 +43,7 @@ export function Awards() {
               className="w-20 h-20 md:w-24 md:h-24 object-contain mb-3"
             />
 
-            <div className="text-[11px] tracking-[0.28em] uppercase text-brass mb-5 md:mb-6">
+            <div className="text-[11px] tracking-[0.28em] uppercase text-ivory mb-5 md:mb-6">
               Multi-Award Winner
             </div>
 
@@ -64,14 +64,10 @@ export function Awards() {
                         isActive ? "scale-y-100" : "scale-y-0"
                       }`}
                     />
-                    <div
-                      className={`text-[13px] md:text-[14px] tracking-[0.18em] uppercase font-normal transition-colors duration-500 ${
-                        isActive ? "text-brass" : "text-ivory"
-                      }`}
-                    >
+                    <div className="text-[13px] md:text-[14px] tracking-[0.18em] uppercase font-normal text-brass">
                       {a.title}
                     </div>
-                    <div className="mt-1 text-[11px] md:text-[12px] tracking-[0.18em] uppercase text-ivory/50 font-light">
+                    <div className="mt-1 text-[11px] md:text-[12px] tracking-[0.18em] uppercase text-ivory font-light">
                       {a.description}
                     </div>
                   </li>
