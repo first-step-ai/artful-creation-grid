@@ -2,11 +2,11 @@ import featureAsset from "@/assets/arched-house.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
-const awards: { left: string; right: string; sub: string }[] = [
-  { left: "Winner 2025 HIA", right: "Kitchen of the Year", sub: "New South Wales" },
-  { left: "Winner 2024 HIA", right: "Bathroom of the Year", sub: "New South Wales" },
-  { left: "National Winner 2024", right: "Small Business Management", sub: "Australia" },
-  { left: "NSW Winner 2023", right: "Small Business Management", sub: "New South Wales" },
+const awards: { title: string; description: string }[] = [
+  { title: "Winner 2025 HIA", description: "NSW Kitchen of the Year" },
+  { title: "Winner 2024 HIA", description: "NSW Bathroom of the Year" },
+  { title: "National Winner 2024 Australia", description: "Small Business Management Award" },
+  { title: "NSW Winner 2023", description: "Small Business Management Award" },
 ];
 
 export function Awards() {
