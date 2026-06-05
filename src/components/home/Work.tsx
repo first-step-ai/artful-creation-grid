@@ -46,15 +46,19 @@ export function Work() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-12">
 
         <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
-          <div className="eyebrow">Featured Work</div>
-          <a href="#enquire" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
-            View full portfolio
-          </a>
+          <div className="font-sans text-sm md:text-base text-ivory font-light tracking-[0.1em] uppercase">
+            <span>Award Winning</span>
+            <span className="mx-2 opacity-50">|</span>
+            <span>Refined Family Living</span>
+          </div>
+          <div className="font-sans text-sm md:text-base text-ivory font-light tracking-[0.1em] uppercase">
+            Rozelle
+          </div>
         </div>
 
 
         {/* DriftStrip: 9-image continuous marquee */}
-        <div ref={featRef} className="reveal relative mb-20 md:mb-28 -mx-6 md:-mx-10 overflow-hidden">
+        <div ref={featRef} className="reveal relative mb-10 md:mb-14 -mx-6 md:-mx-10 overflow-hidden">
           <div className="marquee marquee-slow">
             {[0, 1].map((dup) => (
               <div key={dup} className="flex shrink-0" aria-hidden={dup === 1}>
@@ -84,6 +88,13 @@ export function Work() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
+          <div className="eyebrow">Featured Work</div>
+          <a href="#enquire" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
+            View full portfolio
+          </a>
         </div>
 
         {/* 3-up evenly distributed, no voids */}
