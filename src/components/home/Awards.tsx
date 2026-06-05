@@ -37,14 +37,14 @@ export function Awards() {
             <ul className="w-full flex flex-col border-t border-ivory/15">
               {awards.map((a) => (
                 <li
-                  key={a.left + a.right}
+                  key={a.title}
                   className="border-b border-ivory/15 py-3 md:py-4"
                 >
-                  <div className="text-[13px] md:text-[14px] tracking-[0.18em] uppercase text-ivory font-light">
-                    {a.left} <span className="text-ivory/40 mx-1">|</span> {a.right}
+                  <div className="text-[13px] md:text-[14px] tracking-[0.18em] uppercase text-ivory font-normal">
+                    {a.title}
                   </div>
-                  <div className="mt-1.5 text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory/45">
-                    {a.sub}
+                  <div className="mt-1 text-[11px] md:text-[12px] tracking-[0.18em] uppercase text-ivory/50 font-light">
+                    {a.description}
                   </div>
                 </li>
               ))}
