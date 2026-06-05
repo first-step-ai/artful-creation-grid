@@ -2,11 +2,11 @@ import featureAsset from "@/assets/arched-house.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
-const awards: { left: string; right: string; sub: string }[] = [
-  { left: "Winner 2025 HIA", right: "Kitchen of the Year", sub: "New South Wales" },
-  { left: "Winner 2024 HIA", right: "Bathroom of the Year", sub: "New South Wales" },
-  { left: "National Winner 2024", right: "Small Business Management", sub: "Australia" },
-  { left: "NSW Winner 2023", right: "Small Business Management", sub: "New South Wales" },
+const awards: { title: string; description: string }[] = [
+  { title: "Winner 2025 HIA", description: "NSW Kitchen of the Year" },
+  { title: "Winner 2024 HIA", description: "NSW Bathroom of the Year" },
+  { title: "National Winner 2024 Australia", description: "Small Business Management Award" },
+  { title: "NSW Winner 2023", description: "Small Business Management Award" },
 ];
 
 export function Awards() {
@@ -37,14 +37,14 @@ export function Awards() {
             <ul className="w-full flex flex-col border-t border-ivory/15">
               {awards.map((a) => (
                 <li
-                  key={a.left + a.right}
+                  key={a.title}
                   className="border-b border-ivory/15 py-3 md:py-4"
                 >
-                  <div className="text-[13px] md:text-[14px] tracking-[0.18em] uppercase text-ivory font-light">
-                    {a.left} <span className="text-ivory/40 mx-1">|</span> {a.right}
+                  <div className="text-[13px] md:text-[14px] tracking-[0.18em] uppercase text-ivory font-normal">
+                    {a.title}
                   </div>
-                  <div className="mt-1.5 text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory/45">
-                    {a.sub}
+                  <div className="mt-1 text-[11px] md:text-[12px] tracking-[0.18em] uppercase text-ivory/50 font-light">
+                    {a.description}
                   </div>
                 </li>
               ))}
