@@ -123,12 +123,12 @@ function ProjectTile({ project }: { project: (typeof projects)[number] }) {
       </div>
       <figcaption className="mt-5 flex items-baseline justify-between gap-6">
         <div>
-          <div className="font-sans text-sm md:text-base text-ivory font-light tracking-[0.1em] uppercase whitespace-nowrap">
+          <div className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase whitespace-nowrap">
             <span>{project.suburb}</span>
             <span className="mx-2 opacity-50">|</span>
             <span>{project.title}</span>
           </div>
-          <div className="eyebrow mt-2">{project.category}</div>
+          <div className="eyebrow mt-2 text-ivory">{project.category}</div>
         </div>
       </figcaption>
     </figure>
