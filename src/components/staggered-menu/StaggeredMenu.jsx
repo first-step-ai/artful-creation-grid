@@ -12,6 +12,8 @@ export const StaggeredMenu = ({
   className,
   logoUrl = '/src/assets/logos/reactbits-gh-white.svg',
   centerLogoUrl,
+  centerText,
+
   menuButtonColor = '#fff',
   openMenuButtonColor = '#fff',
   accentColor = '#5227FF',
@@ -378,11 +380,17 @@ export const StaggeredMenu = ({
             draggable={false}
           />
         </div>
-        {centerLogoUrl && (
+        {(centerLogoUrl || centerText) && (
           <div className="sm-logo-center" aria-hidden="true">
-            <img src={centerLogoUrl} alt="" className="sm-logo-center-img" draggable={false} />
+            {centerLogoUrl && (
+              <img src={centerLogoUrl} alt="" className="sm-logo-center-img" draggable={false} />
+            )}
+            {centerText && (
+              <span className="sm-logo-center-text">{centerText}</span>
+            )}
           </div>
         )}
+
         <button
           ref={toggleBtnRef}
           className="sm-toggle"

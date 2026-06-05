@@ -21,6 +21,8 @@ export interface StaggeredMenuProps {
   className?: string;
   logoUrl?: string;
   centerLogoUrl?: string;
+  centerText?: string;
+
   menuButtonColor?: string;
   openMenuButtonColor?: string;
   accentColor?: string;
