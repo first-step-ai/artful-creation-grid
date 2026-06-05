@@ -12,6 +12,8 @@ export const StaggeredMenu = ({
   className,
   logoUrl = '/src/assets/logos/reactbits-gh-white.svg',
   centerLogoUrl,
+  centerText,
+
   menuButtonColor = '#fff',
   openMenuButtonColor = '#fff',
   accentColor = '#5227FF',
