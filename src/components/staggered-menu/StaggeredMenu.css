@@ -92,11 +92,12 @@
 
 .staggered-menu-wrapper.is-scrolled .sm-logo-center-img {
   opacity: 1;
-  transform: translateX(0) scale(1);
+  transform: translateX(0);
 }
 .staggered-menu-wrapper.is-scrolled .sm-logo-center-text {
   opacity: 1;
   transform: translateX(0);
+  transition-delay: 0.25s;
 }
 
 @media (max-width: 640px) {
