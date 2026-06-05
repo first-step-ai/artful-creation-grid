@@ -2,11 +2,11 @@ import featureAsset from "@/assets/arched-house.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
-const awards: { top: string; bottom: string }[] = [
-  { top: "Winner 2025 HIA", bottom: "New South Wales Kitchen of the Year" },
-  { top: "Winner 2024 HIA", bottom: "New South Wales Bathroom of the Year" },
-  { top: "National Winner 2024", bottom: "Small Business Management" },
-  { top: "New South Wales 2023", bottom: "Small Business Management" },
+const awards: { left: string; right: string; sub: string }[] = [
+  { left: "Winner 2025 HIA", right: "Kitchen of the Year", sub: "New South Wales" },
+  { left: "Winner 2024 HIA", right: "Bathroom of the Year", sub: "New South Wales" },
+  { left: "National Winner 2024", right: "Small Business Management", sub: "Australia" },
+  { left: "NSW Winner 2023", right: "Small Business Management", sub: "New South Wales" },
 ];
 
 export function Awards() {
@@ -37,15 +37,20 @@ export function Awards() {
             <ul className="w-full flex flex-col border-t border-ivory/15">
               {awards.map((a) => (
                 <li
-                  key={a.bottom + a.top}
-                  className="border-b border-ivory/15 py-2.5 md:py-3 font-serif text-sm md:text-base text-ivory font-light tracking-[0.04em] leading-snug"
+                  key={a.left + a.right}
+                  className="border-b border-ivory/15 py-3 md:py-4"
                 >
-                  <div>{a.top}</div>
-                  <div>{a.bottom}</div>
+                  <div className="text-[13px] md:text-[14px] tracking-[0.18em] uppercase text-ivory font-light">
+                    {a.left} <span className="text-ivory/40 mx-1">|</span> {a.right}
+                  </div>
+                  <div className="mt-1.5 text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory/45">
+                    {a.sub}
+                  </div>
                 </li>
               ))}
             </ul>
           </div>
+
 
           {/* Right: Featured Image — 60% — matches left column height exactly */}
           <div className="md:basis-[60%] md:ml-auto relative">
