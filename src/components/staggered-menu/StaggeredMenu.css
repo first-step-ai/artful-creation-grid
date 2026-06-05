@@ -34,9 +34,9 @@
 }
 
 .staggered-menu-wrapper.is-scrolled .staggered-menu-header {
-  background: color-mix(in oklab, #1a1a1a 35%, transparent);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: color-mix(in oklab, #1a1a1a 12%, transparent);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .staggered-menu-header > * {
