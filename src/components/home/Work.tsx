@@ -70,7 +70,7 @@ export function Work() {
                     <div
                       className="overflow-hidden bg-oxblood h-[46vh] md:h-[62vh] max-h-[620px]"
                       style={{
-                        aspectRatio: item.orientation === "landscape" ? "4 / 3" : "3 / 4",
+                        aspectRatio: item.orientation === "landscape" ? "16 / 10" : "3 / 4",
                       }}
                     >
                       <img
