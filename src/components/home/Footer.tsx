@@ -1,7 +1,7 @@
-import footerLogo from "@/assets/am-full.png.asset.json";
-import socialFacebook from "@/assets/service-bathrooms.jpg";
-import socialPinterest from "@/assets/service-kitchens.jpg";
-import socialInstagram from "@/assets/service-interiors.jpg";
+import footerLogo from "@/assets/am-only.png.asset.json";
+import socialInstagram from "@/assets/footer-social-1.jpg";
+import socialPinterest from "@/assets/footer-social-2.jpg";
+import socialFacebook from "@/assets/footer-social-3.jpg";
 
 const SOCIALS = [
   { label: "Instagram", img: socialInstagram, href: "#" },
@@ -9,10 +9,9 @@ const SOCIALS = [
   { label: "Facebook", img: socialFacebook, href: "#" },
 ];
 
-const FOOTER_BG = "var(--oxblood)";
-const TEXT = "#ebf0e9";
+const FOOTER_BG = "var(--background)";
+const TEXT = "var(--ivory)";
 const TEXT_MUTED = "rgba(235,240,233,0.6)";
-const RULE = "rgba(235,240,233,0.12)";
 
 const labelStyle = {
   color: TEXT_MUTED,
@@ -27,26 +26,23 @@ export function Footer() {
       className="w-full border-t border-border/60"
       style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
-      <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-16 md:pt-20 pb-10">
-        <div className="relative flex items-start justify-between gap-10">
-          {/* Logo (left) */}
-          <div className="flex shrink-0">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-16 md:pt-20 pb-16 md:pb-24">
+        <div className="flex items-end justify-between gap-10">
+          {/* Logo (left, aligned to bottom row) */}
+          <div className="flex shrink-0 items-end">
             <img
               src={footerLogo.url}
               alt="AM Bathrooms + Projects"
-              className="h-12 md:h-16 w-auto object-contain object-left"
+              className="h-16 md:h-24 w-auto object-contain object-left"
               style={{ filter: "brightness(0) invert(1)" }}
             />
-
-
           </div>
 
-          {/* Socials row spans from center to right edge */}
+          {/* Right cluster: contact + socials, ends at container right edge */}
           <div
-            className="hidden md:flex items-start justify-between"
+            className="hidden md:flex items-end justify-between"
             style={{ width: "50%" }}
           >
-            {/* Contact (left-aligned at the center of the footer) */}
             <div className="flex flex-col gap-5 items-start text-left">
               <div className="flex flex-col gap-3 items-start">
                 <span style={labelStyle}>Contact</span>
@@ -69,8 +65,8 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Social thumbnails (right-aligned to container edge) */}
-            <div className="flex shrink-0 items-center gap-4">
+            {/* Social thumbnails — right edge matches container (i.e. handover image edge) */}
+            <div className="flex shrink-0 items-end gap-4">
               {SOCIALS.map((s) => (
                 <a
                   key={s.label}
@@ -82,6 +78,7 @@ export function Footer() {
                     <img
                       src={s.img}
                       alt={s.label}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
@@ -102,7 +99,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Contact (mobile fallback) */}
+        {/* Mobile fallback */}
         <div className="md:hidden flex flex-col gap-5 items-start text-left mt-10">
           <div className="flex flex-col gap-3 items-start">
             <span style={labelStyle}>Contact</span>
@@ -120,10 +117,23 @@ export function Footer() {
               Mon to Fri · 8.30am to 4.30pm
             </span>
           </div>
+          <div className="flex items-end gap-4 mt-4">
+            {SOCIALS.map((s) => (
+              <a key={s.label} href={s.href} aria-label={s.label} className="group block text-center">
+                <div className="overflow-hidden" style={{ width: 56, height: 72 }}>
+                  <img src={s.img} alt={s.label} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+                <div
+                  className="mt-2 font-sans"
+                  style={{ color: TEXT, fontSize: "10px", letterSpacing: "0.22em", textTransform: "uppercase" }}
+                >
+                  {s.label}
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
   );
 }
-
-
