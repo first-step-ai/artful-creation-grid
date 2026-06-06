@@ -1,5 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
+import { slugify } from "@/lib/projects-data";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 
@@ -35,7 +36,7 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full Interior", image: p3, badge: "Award" },
+  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: p3, badge: "Award" },
   { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: hotelAsset.url },
   { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: oakAsset.url },
   { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: archedAsset.url, badge: "Finalist" },
