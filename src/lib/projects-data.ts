@@ -382,7 +382,7 @@ export function getProjectDetail(slug: string): ProjectDetail {
         suburb: "Project",
         title: "Coming soon",
         category: "Full Interior",
-        image: bexleyAsset.url,
+        image: rozelle1.url,
       }),
       slug,
     }
