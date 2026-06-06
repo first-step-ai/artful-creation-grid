@@ -8,25 +8,25 @@ const services = [
   {
     num: "i",
     title: "Bathrooms",
-    body: "A bathroom built around your routine. Materials and details chosen with you, built by us.",
+    body: "a bathroom built around your routine. materials and details chosen with you, built by us.",
     image: bathrooms,
   },
   {
     num: "ii",
     title: "Kitchens",
-    body: "A kitchen that fits the way your family actually uses it, not just how it looks in a render.",
+    body: "a kitchen that fits the way your family actually uses it, not just how it looks in a render.",
     image: kitchens,
   },
   {
     num: "iii",
     title: "Multi-space Renovations",
-    body: "A home that feels considered in every corner. We handle the full picture.",
+    body: "a home that feels considered in every corner. we handle the full picture.",
     image: interiors,
   },
   {
     num: "iv",
     title: "Full Home Renovation",
-    body: "A complete transformation, finished with the same care we bring to every room.",
+    body: "a complete transformation, finished with the same care we bring to every room.",
     image: laundries,
   },
 ];
@@ -82,7 +82,7 @@ function ServiceCard({
           <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase">
             {title}
           </h3>
-          <p className="mt-2 max-w-sm font-sans text-[11px] tracking-[0.28em] uppercase text-ivory">{body}</p>
+          <p className="mt-2 max-w-sm font-sans text-[11px] tracking-[0.28em] text-ivory">{body}</p>
         </div>
         <span className="mt-1 hidden sm:inline-block text-[11px] tracking-[0.28em] uppercase text-ivory-muted group-hover:text-ivory transition-colors">
           ↗

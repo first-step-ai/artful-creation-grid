@@ -7,10 +7,10 @@ import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const awards: { title: string; description: string; image: string }[] = [
-  { title: "Winner 2025 HIA", description: "NSW Kitchen of the Year", image: oakAsset.url },
-  { title: "Winner 2024 HIA", description: "NSW Bathroom of the Year", image: bexleyAsset.url },
-  { title: "National Winner 2024 Australia", description: "Small Business Management Award", image: featureAsset.url },
-  { title: "NSW Winner 2023", description: "Small Business Management Award", image: hotelAsset.url },
+  { title: "Winner 2025 HIA", description: "nsw kitchen of the year", image: oakAsset.url },
+  { title: "Winner 2024 HIA", description: "nsw bathroom of the year", image: bexleyAsset.url },
+  { title: "National Winner 2024 Australia", description: "small business management award", image: featureAsset.url },
+  { title: "NSW Winner 2023", description: "small business management award", image: hotelAsset.url },
 ];
 
 export function Awards() {
@@ -67,7 +67,7 @@ export function Awards() {
                     <div className="text-[13px] md:text-[14px] tracking-[0.18em] uppercase font-normal text-brass">
                       {a.title}
                     </div>
-                    <div className="mt-1 text-[11px] md:text-[12px] tracking-[0.18em] uppercase text-ivory font-light">
+                    <div className="mt-1 text-[11px] md:text-[12px] tracking-[0.18em] text-ivory font-light">
                       {a.description}
                     </div>
                   </li>
