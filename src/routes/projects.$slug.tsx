@@ -103,7 +103,7 @@ function ProjectDetailPage() {
             {/* RIGHT COLUMN — sticky scroll */}
             <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pl-2 space-y-10">
               <div>
-                <h2 className="font-serif text-3xl md:text-4xl font-light text-ivory leading-tight">
+                <h2 className="eyebrow text-ivory">
                   {p.rightHeading}
                 </h2>
                 <p className="mt-6 font-sans text-[15px] leading-relaxed text-ivory/85">
