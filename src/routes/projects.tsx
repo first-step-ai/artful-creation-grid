@@ -99,7 +99,7 @@ function ProjectsPage() {
   );
 }
 
-function Tile({ project }: { project: Project }) {
+function Tile({ project }: { project: ProjectSummary }) {
   const slug = slugify(project.suburb, project.title);
   return (
     <Link to="/projects/$slug" params={{ slug }} className="block group lift">
