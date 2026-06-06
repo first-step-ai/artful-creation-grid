@@ -61,7 +61,7 @@ function ProjectDetailPage() {
             {/* LEFT COLUMN — sticky scroll */}
             <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pr-2 space-y-10">
               <Block label="Scope">
-                <p className="font-sans text-[15px] leading-relaxed text-ivory/85">
+                <p className="font-sans text-[13px] leading-relaxed text-ivory/85">
                   {p.scope}
                 </p>
               </Block>
@@ -72,7 +72,7 @@ function ProjectDetailPage() {
                     {p.awards.map((a) => (
                       <li
                         key={a}
-                        className="font-sans text-[15px] leading-relaxed text-ivory/85"
+                        className="font-sans text-[13px] leading-relaxed text-ivory/85"
                       >
                         {a}
                       </li>
@@ -96,7 +96,7 @@ function ProjectDetailPage() {
                 <h2 className="eyebrow text-ivory">
                   {p.rightHeading}
                 </h2>
-                <p className="mt-6 font-sans text-[15px] leading-relaxed text-ivory/85">
+                <p className="mt-6 font-sans text-[13px] leading-relaxed text-ivory/85">
                   {p.rightIntro}
                 </p>
               </div>
@@ -224,7 +224,7 @@ function ExpandableBlock({
           {items.map((item, i) => (
             <li
               key={item}
-              className="flex gap-4 font-sans text-[14px] leading-relaxed text-ivory/85"
+              className="flex gap-4 font-sans text-[13px] leading-relaxed text-ivory/85"
             >
               <span className="font-sans text-[11px] tracking-[0.28em] text-ivory-muted pt-1 shrink-0 w-6">
                 {numbered ? String(i + 1).padStart(2, "0") : ""}
