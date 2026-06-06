@@ -1,34 +1,32 @@
-import p3 from "@/assets/project-3.jpg";
-import featureAsset from "@/assets/arched-house.jpg.asset.json";
-import kitchenAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
-import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
-import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
-import materials from "@/assets/materials.jpg";
-import projectFeature from "@/assets/project-feature.jpg";
-import serviceBathrooms from "@/assets/service-bathrooms.jpg";
-import serviceInteriors from "@/assets/service-interiors.jpg";
-const feature = featureAsset.url;
-const p2 = kitchenAsset.url;
-const p1 = bexleyAsset.url;
+import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
+import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
+import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
+import abbots1 from "@/assets/projects/abbotsford-1.jpg.asset.json";
+import abbots4 from "@/assets/projects/abbotsford-4.jpg.asset.json";
+import pyrmont1 from "@/assets/projects/pyrmont-1.jpg.asset.json";
+import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
+import camp1 from "@/assets/projects/camperdown-1.jpg.asset.json";
+import bexley1 from "@/assets/projects/bexley-1.jpg.asset.json";
+import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
-  { label: "Arch", image: feature, orientation: "portrait" },
-  { label: "Oak", image: p2, orientation: "landscape" },
-  { label: "Stone", image: hotelAsset.url, orientation: "portrait" },
-  { label: "Edge", image: p1, orientation: "landscape" },
-  { label: "Shadow", image: p3, orientation: "portrait" },
-  { label: "Linen", image: serviceBathrooms, orientation: "landscape" },
-  { label: "Marble", image: serviceInteriors, orientation: "portrait" },
-  { label: "Grain", image: materials, orientation: "landscape" },
-  { label: "Quiet", image: projectFeature, orientation: "portrait" },
+  { label: "Rozelle", image: rozelle1.url, orientation: "portrait" },
+  { label: "Abbotsford", image: abbots1.url, orientation: "landscape" },
+  { label: "Pyrmont", image: pyrmont1.url, orientation: "portrait" },
+  { label: "Annandale", image: annan1.url, orientation: "landscape" },
+  { label: "Camperdown", image: camp1.url, orientation: "portrait" },
+  { label: "Bexley", image: bexley1.url, orientation: "landscape" },
+  { label: "Drummoyne", image: drum1.url, orientation: "portrait" },
+  { label: "Rozelle", image: rozelle3.url, orientation: "landscape" },
+  { label: "Abbotsford", image: abbots4.url, orientation: "portrait" },
 ];
 
 
 const projects = [
-  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: p1 },
-  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: p2 },
-  { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full interior", image: p3 },
+  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url },
+  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url },
+  { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full interior", image: rozelle5.url },
 ];
 
 const suburbs = [
