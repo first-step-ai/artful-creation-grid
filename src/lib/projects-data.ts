@@ -1,7 +1,19 @@
-import projectFeature from "@/assets/project-feature.jpg";
-import materials from "@/assets/materials.jpg";
-import serviceBathrooms from "@/assets/service-bathrooms.jpg";
-import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
+// Bexley
+import bexley1 from "@/assets/projects/bexley-1.jpg.asset.json";
+import bexley2 from "@/assets/projects/bexley-2.jpg.asset.json";
+import bexley3 from "@/assets/projects/bexley-3.jpg.asset.json";
+import bexley4 from "@/assets/projects/bexley-4.jpg.asset.json";
+import bexley5 from "@/assets/projects/bexley-5.jpg.asset.json";
+import bexley6 from "@/assets/projects/bexley-6.jpg.asset.json";
+import bexley7 from "@/assets/projects/bexley-7.jpg.asset.json";
+// Drummoyne
+import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
+import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
+import drum3 from "@/assets/projects/drummoyne-3.jpg.asset.json";
+import drum4 from "@/assets/projects/drummoyne-4.jpg.asset.json";
+import drum5 from "@/assets/projects/drummoyne-5.jpg.asset.json";
+import drum6 from "@/assets/projects/drummoyne-6.jpg.asset.json";
+import drum7 from "@/assets/projects/drummoyne-7.jpg.asset.json";
 
 // Rozelle
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
@@ -80,8 +92,8 @@ export const projects: ProjectSummary[] = [
   { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont1.url },
   { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan1.url, badge: "Finalist" },
   { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url },
-  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexleyAsset.url },
-  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: projectFeature },
+  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url },
+  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url },
 ];
 
 // Rich detail overrides (keyed by slug). Anything missing falls back to a sensible default.
@@ -278,7 +290,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We had a difficult bathroom layout and AM came up with something that far exceeded our expectations. They were patiently attentive to our tastes and came up with options that made decisions easy, this resulted in a design that felt like our own.",
-    gallery: [bexleyAsset.url, materials, serviceBathrooms],
+    gallery: [bexley2.url, bexley3.url, bexley4.url, bexley5.url, bexley6.url, bexley7.url],
   },
 
   "drummoyne-modern-luxury-living": {
@@ -309,7 +321,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Streamlined vanity designs improving circulation",
       "Light-filled layouts despite compact proportions",
     ],
-    gallery: [projectFeature, serviceBathrooms, materials],
+    gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url],
   },
 };
 
@@ -349,7 +361,7 @@ function buildDetail(s: ProjectSummary): ProjectDetail {
     ],
     whatWeDid: o.whatWeDid,
     testimonial: o.testimonial,
-    gallery: o.gallery ?? [s.image, materials, projectFeature],
+    gallery: o.gallery ?? [s.image],
     beforeImage: o.beforeImage,
     afterImage: o.afterImage,
     badge: o.badge ?? s.badge ?? null,
@@ -370,7 +382,7 @@ export function getProjectDetail(slug: string): ProjectDetail {
         suburb: "Project",
         title: "Coming soon",
         category: "Full Interior",
-        image: bexleyAsset.url,
+        image: rozelle1.url,
       }),
       slug,
     }
