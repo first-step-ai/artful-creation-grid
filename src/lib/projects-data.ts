@@ -349,7 +349,7 @@ function buildDetail(s: ProjectSummary): ProjectDetail {
     ],
     whatWeDid: o.whatWeDid,
     testimonial: o.testimonial,
-    gallery: o.gallery ?? [s.image, materials, serviceInteriors],
+    gallery: o.gallery ?? [s.image, materials, projectFeature],
     beforeImage: o.beforeImage,
     afterImage: o.afterImage,
     badge: o.badge ?? s.badge ?? null,
