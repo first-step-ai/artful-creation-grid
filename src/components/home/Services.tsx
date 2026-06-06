@@ -1,7 +1,7 @@
-import bathrooms from "@/assets/service-bathrooms.jpg";
-import kitchens from "@/assets/service-kitchens.jpg";
-import laundries from "@/assets/service-laundries.jpg";
-import interiors from "@/assets/service-interiors.jpg";
+import bathrooms from "@/assets/projects/annandale-1.jpg.asset.json";
+import kitchens from "@/assets/projects/rozelle-1.jpg.asset.json";
+import laundries from "@/assets/projects/drummoyne-2.jpg.asset.json";
+import interiors from "@/assets/projects/abbotsford-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const services = [
