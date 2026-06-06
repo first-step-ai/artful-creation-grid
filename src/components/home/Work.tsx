@@ -11,9 +11,9 @@ import { useReveal } from "@/hooks/use-reveal";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
   { label: "Heritage panelled walls", image: rozelle1.url, orientation: "portrait" },
-  { label: "Sculptural brass pendants", image: rozelle2.url, orientation: "landscape" },
+  { label: "Sculptural brass pendants", image: rozelle2.url, orientation: "portrait" },
   { label: "Bespoke brass-handled joinery", image: rozelle3.url, orientation: "portrait" },
-  { label: "Curved oak vanity nook", image: rozelle4.url, orientation: "landscape" },
+  { label: "Curved oak vanity nook", image: rozelle4.url, orientation: "portrait" },
   { label: "Fluted glass cabinetry", image: rozelle5.url, orientation: "portrait" },
   { label: "Verde Tempest fireplace", image: rozelle6.url, orientation: "landscape" },
   { label: "Backlit bar nook", image: rozelle7.url, orientation: "portrait" },
