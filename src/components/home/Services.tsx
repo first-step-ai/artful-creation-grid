@@ -1,7 +1,7 @@
-import bathrooms from "@/assets/service-bathrooms.jpg";
-import kitchens from "@/assets/service-kitchens.jpg";
-import laundries from "@/assets/service-laundries.jpg";
-import interiors from "@/assets/service-interiors.jpg";
+import bathrooms from "@/assets/projects/annandale-1.jpg.asset.json";
+import kitchens from "@/assets/projects/rozelle-1.jpg.asset.json";
+import laundries from "@/assets/projects/drummoyne-2.jpg.asset.json";
+import interiors from "@/assets/projects/abbotsford-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const services = [
@@ -9,25 +9,25 @@ const services = [
     num: "i",
     title: "Bathrooms",
     body: "A bathroom built around your routine. materials and details chosen with you, built by us.",
-    image: bathrooms,
+    image: bathrooms.url,
   },
   {
     num: "ii",
     title: "Kitchens",
     body: "A kitchen that fits the way your family actually uses it, not just how it looks in a render.",
-    image: kitchens,
+    image: kitchens.url,
   },
   {
     num: "iii",
     title: "Multi-space Renovations",
     body: "A home that feels considered in every corner. we handle the full picture.",
-    image: interiors,
+    image: interiors.url,
   },
   {
     num: "iv",
     title: "Full Home Renovation",
     body: "A complete transformation, finished with the same care we bring to every room.",
-    image: laundries,
+    image: laundries.url,
   },
 ];
 
