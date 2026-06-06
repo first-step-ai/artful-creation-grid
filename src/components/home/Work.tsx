@@ -1,7 +1,7 @@
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
-import rozelle4 from "@/assets/projects/rozelle-4.jpg.asset.json";
+import rozelle2 from "@/assets/projects/rozelle-2.jpg.asset.json";
+import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
 import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
-import rozelle6 from "@/assets/projects/rozelle-6.jpg.asset.json";
 import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
 import bexley1 from "@/assets/projects/bexley-1.jpg.asset.json";
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
@@ -9,9 +9,9 @@ import { useReveal } from "@/hooks/use-reveal";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
   { label: "Heritage panelled walls", image: rozelle1.url, orientation: "portrait" },
-  { label: "Curved oak vanity nook", image: rozelle4.url, orientation: "portrait" },
-  { label: "Verde Tempest fireplace", image: rozelle6.url, orientation: "landscape" },
-  { label: "Fluted glass cabinetry", image: rozelle5.url, orientation: "portrait" },
+  { label: "Curved oak vanity nook", image: rozelle2.url, orientation: "portrait" },
+  { label: "Verde Tempest fireplace", image: rozelle3.url, orientation: "landscape" },
+  { label: "Fluted glass cabinetry", image: rozelle5.url, orientation: "landscape" },
   { label: "Backlit bar nook", image: rozelle7.url, orientation: "portrait" },
 ];
 
@@ -19,7 +19,7 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 const projects = [
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url },
-  { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full interior", image: rozelle5.url },
+  { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full interior", image: rozelle3.url },
 ];
 
 const suburbs = [

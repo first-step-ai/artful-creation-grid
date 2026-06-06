@@ -6,6 +6,7 @@ import bexley4 from "@/assets/projects/bexley-4.jpg.asset.json";
 import bexley5 from "@/assets/projects/bexley-5.jpg.asset.json";
 import bexley6 from "@/assets/projects/bexley-6.jpg.asset.json";
 import bexley7 from "@/assets/projects/bexley-7.jpg.asset.json";
+import bexley8 from "@/assets/projects/bexley-8.jpg.asset.json";
 // Drummoyne
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
@@ -14,6 +15,7 @@ import drum4 from "@/assets/projects/drummoyne-4.jpg.asset.json";
 import drum5 from "@/assets/projects/drummoyne-5.jpg.asset.json";
 import drum6 from "@/assets/projects/drummoyne-6.jpg.asset.json";
 import drum7 from "@/assets/projects/drummoyne-7.jpg.asset.json";
+import drum8 from "@/assets/projects/drummoyne-8.jpg.asset.json";
 
 // Rozelle
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
@@ -23,6 +25,7 @@ import rozelle4 from "@/assets/projects/rozelle-4.jpg.asset.json";
 import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
 import rozelle6 from "@/assets/projects/rozelle-6.jpg.asset.json";
 import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
+import rozelle8 from "@/assets/projects/rozelle-8.jpg.asset.json";
 // Abbotsford
 import abbots1 from "@/assets/projects/abbotsford-1.jpg.asset.json";
 import abbots2 from "@/assets/projects/abbotsford-2.jpg.asset.json";
@@ -31,6 +34,7 @@ import abbots4 from "@/assets/projects/abbotsford-4.jpg.asset.json";
 import abbots5 from "@/assets/projects/abbotsford-5.jpg.asset.json";
 import abbots6 from "@/assets/projects/abbotsford-6.jpg.asset.json";
 import abbots7 from "@/assets/projects/abbotsford-7.jpg.asset.json";
+import abbots8 from "@/assets/projects/abbotsford-8.jpg.asset.json";
 // Pyrmont
 import pyrmont1 from "@/assets/projects/pyrmont-1.jpg.asset.json";
 import pyrmont2 from "@/assets/projects/pyrmont-2.jpg.asset.json";
@@ -38,6 +42,8 @@ import pyrmont3 from "@/assets/projects/pyrmont-3.jpg.asset.json";
 import pyrmont4 from "@/assets/projects/pyrmont-4.jpg.asset.json";
 import pyrmont5 from "@/assets/projects/pyrmont-5.jpg.asset.json";
 import pyrmont6 from "@/assets/projects/pyrmont-6.jpg.asset.json";
+import pyrmont7 from "@/assets/projects/pyrmont-7.jpg.asset.json";
+import pyrmont8 from "@/assets/projects/pyrmont-8.jpg.asset.json";
 // Annandale
 import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
 import annan2 from "@/assets/projects/annandale-2.jpg.asset.json";
@@ -45,6 +51,8 @@ import annan3 from "@/assets/projects/annandale-3.jpg.asset.json";
 import annan4 from "@/assets/projects/annandale-4.jpg.asset.json";
 import annan5 from "@/assets/projects/annandale-5.jpg.asset.json";
 import annan6 from "@/assets/projects/annandale-6.jpg.asset.json";
+import annan7 from "@/assets/projects/annandale-7.jpg.asset.json";
+import annan8 from "@/assets/projects/annandale-8.jpg.asset.json";
 // Camperdown
 import camp1 from "@/assets/projects/camperdown-1.jpg.asset.json";
 import camp2 from "@/assets/projects/camperdown-2.jpg.asset.json";
@@ -52,6 +60,8 @@ import camp3 from "@/assets/projects/camperdown-3.jpg.asset.json";
 import camp4 from "@/assets/projects/camperdown-4.jpg.asset.json";
 import camp5 from "@/assets/projects/camperdown-5.jpg.asset.json";
 import camp6 from "@/assets/projects/camperdown-6.jpg.asset.json";
+import camp7 from "@/assets/projects/camperdown-7.jpg.asset.json";
+import camp8 from "@/assets/projects/camperdown-8.jpg.asset.json";
 
 export type ProjectSummary = {
   suburb: string;
@@ -135,7 +145,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Jenny listened carefully to my design aesthetic and consistently provided great suggestions which have turned out beautifully. When you engage Jenny and Ante, you are selecting a team that truely care.",
-    gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url],
+    gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url],
   },
 
   "abbotsford-hotel-inspired-luxury": {
@@ -167,7 +177,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We recently had AM complete our renovation and could not be any happier. From the design stage to handover, everything went as smooth as possible. Highly recommend the whole team!!",
-    gallery: [abbots2.url, abbots3.url, abbots4.url, abbots5.url, abbots6.url, abbots7.url],
+    gallery: [abbots2.url, abbots3.url, abbots4.url, abbots5.url, abbots6.url, abbots7.url, abbots8.url],
   },
 
   "pyrmont-elevated-city-living": {
@@ -196,7 +206,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Layered storage resolving everyday function",
       "Considered finishes connecting each space cohesively",
     ],
-    gallery: [pyrmont2.url, pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url],
+    gallery: [pyrmont2.url, pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url, pyrmont7.url, pyrmont8.url],
   },
 
   "annandale-smart-family-living": {
@@ -228,7 +238,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Renovations, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
-    gallery: [annan2.url, annan3.url, annan4.url, annan5.url, annan6.url],
+    gallery: [annan2.url, annan3.url, annan4.url, annan5.url, annan6.url, annan7.url, annan8.url],
   },
 
   "camperdown-inner-city-charm": {
@@ -257,7 +267,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Warm tonal material palette connecting each space",
       "Carefully resolved storage reducing visual clutter throughout",
     ],
-    gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url],
+    gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url],
   },
 
   "bexley-bold-utility": {
@@ -290,7 +300,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We had a difficult bathroom layout and AM came up with something that far exceeded our expectations. They were patiently attentive to our tastes and came up with options that made decisions easy, this resulted in a design that felt like our own.",
-    gallery: [bexley2.url, bexley3.url, bexley4.url, bexley5.url, bexley6.url, bexley7.url],
+    gallery: [bexley2.url, bexley3.url, bexley4.url, bexley5.url, bexley6.url, bexley7.url, bexley8.url],
   },
 
   "drummoyne-modern-luxury-living": {
@@ -321,7 +331,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Streamlined vanity designs improving circulation",
       "Light-filled layouts despite compact proportions",
     ],
-    gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url],
+    gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url, drum8.url],
   },
 };
 
