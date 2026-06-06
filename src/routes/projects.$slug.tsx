@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, type ReactNode } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { Plus, Minus, ArrowRight } from "lucide-react";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
@@ -87,18 +87,8 @@ function ProjectDetailPage() {
             </aside>
 
             {/* CENTER — image stack */}
-            <div className="space-y-6 md:space-y-8">
-              {p.gallery.map((src, i) => (
-                <figure key={i} className="overflow-hidden bg-burgundy">
-                  <img
-                    src={src}
-                    alt={`${p.title} — image ${i + 1}`}
-                    loading="lazy"
-                    className="w-full h-auto object-cover"
-                  />
-                </figure>
-              ))}
-            </div>
+            <GalleryStack images={p.gallery} title={p.title} />
+
 
             {/* RIGHT COLUMN — sticky scroll */}
             <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pl-2 space-y-10">
@@ -250,5 +240,79 @@ function BeforeAfter({ src, label }: { src: string; label: string }) {
         {label}
       </figcaption>
     </figure>
+  );
+}
+
+type Orient = "portrait" | "landscape" | "unknown";
+
+function GalleryStack({ images, title }: { images: string[]; title: string }) {
+  const [orients, setOrients] = useState<Orient[]>(() => images.map(() => "unknown"));
+
+  useEffect(() => {
+    let cancelled = false;
+    images.forEach((src, i) => {
+      const img = new Image();
+      img.onload = () => {
+        if (cancelled) return;
+        setOrients((prev) => {
+          const next = [...prev];
+          next[i] = img.naturalHeight > img.naturalWidth ? "portrait" : "landscape";
+          return next;
+        });
+      };
+      img.src = src;
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [images]);
+
+  // Group consecutive portraits into pairs; landscapes/unknowns stand alone.
+  const rows: { type: "single" | "pair"; items: { src: string; index: number }[] }[] = [];
+  let i = 0;
+  while (i < images.length) {
+    if (orients[i] === "portrait" && orients[i + 1] === "portrait") {
+      rows.push({
+        type: "pair",
+        items: [
+          { src: images[i], index: i },
+          { src: images[i + 1], index: i + 1 },
+        ],
+      });
+      i += 2;
+    } else {
+      rows.push({ type: "single", items: [{ src: images[i], index: i }] });
+      i += 1;
+    }
+  }
+
+  return (
+    <div className="space-y-6 md:space-y-8">
+      {rows.map((row, ri) =>
+        row.type === "pair" ? (
+          <div key={ri} className="grid grid-cols-2 gap-3 md:gap-4">
+            {row.items.map((it) => (
+              <figure key={it.index} className="overflow-hidden bg-burgundy aspect-[3/4]">
+                <img
+                  src={it.src}
+                  alt={`${title} — image ${it.index + 1}`}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+              </figure>
+            ))}
+          </div>
+        ) : (
+          <figure key={ri} className="overflow-hidden bg-burgundy">
+            <img
+              src={row.items[0].src}
+              alt={`${title} — image ${row.items[0].index + 1}`}
+              loading="lazy"
+              className="w-full h-auto object-cover"
+            />
+          </figure>
+        )
+      )}
+    </div>
   );
 }
