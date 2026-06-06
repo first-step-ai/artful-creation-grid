@@ -3,7 +3,7 @@ import { useState, type ReactNode } from "react";
 import { Plus, Minus, ArrowRight } from "lucide-react";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
-import { getProjectDetail } from "@/lib/projects-data";
+import { getProjectDetail, getMoreProjects, slugify } from "@/lib/projects-data";
 
 export const Route = createFileRoute("/projects/$slug")({
   head: ({ params }) => {
