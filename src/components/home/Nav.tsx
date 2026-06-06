@@ -7,7 +7,7 @@ const menuItems = [
   {
     label: "Projects",
     ariaLabel: "View our projects",
-    link: "#work",
+    link: "/projects",
     subItems: [
       { label: "Belle Magazine", link: "https://www.belle.com.au", external: true },
       { label: "Vogue Living", link: "https://www.vogue.com.au/vogue-living", external: true },
