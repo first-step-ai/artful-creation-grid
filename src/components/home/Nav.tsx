@@ -17,7 +17,6 @@ const menuItems = [
   },
   { label: "Services", ariaLabel: "Explore our services", link: "#services" },
   { label: "Process", ariaLabel: "Our process", link: "#process" },
-  { label: "Studio", ariaLabel: "About the studio", link: "#studio" },
   { label: "Contact", ariaLabel: "Get in touch", link: "#enquire" },
 ];
 
