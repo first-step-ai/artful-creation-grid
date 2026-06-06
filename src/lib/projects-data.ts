@@ -321,7 +321,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Streamlined vanity designs improving circulation",
       "Light-filled layouts despite compact proportions",
     ],
-    gallery: [projectFeature, serviceBathrooms, materials],
+    gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url],
   },
 };
 
