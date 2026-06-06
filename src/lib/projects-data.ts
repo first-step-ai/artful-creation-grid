@@ -1,7 +1,19 @@
-import projectFeature from "@/assets/project-feature.jpg";
-import materials from "@/assets/materials.jpg";
-import serviceBathrooms from "@/assets/service-bathrooms.jpg";
-import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
+// Bexley
+import bexley1 from "@/assets/projects/bexley-1.jpg.asset.json";
+import bexley2 from "@/assets/projects/bexley-2.jpg.asset.json";
+import bexley3 from "@/assets/projects/bexley-3.jpg.asset.json";
+import bexley4 from "@/assets/projects/bexley-4.jpg.asset.json";
+import bexley5 from "@/assets/projects/bexley-5.jpg.asset.json";
+import bexley6 from "@/assets/projects/bexley-6.jpg.asset.json";
+import bexley7 from "@/assets/projects/bexley-7.jpg.asset.json";
+// Drummoyne
+import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
+import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
+import drum3 from "@/assets/projects/drummoyne-3.jpg.asset.json";
+import drum4 from "@/assets/projects/drummoyne-4.jpg.asset.json";
+import drum5 from "@/assets/projects/drummoyne-5.jpg.asset.json";
+import drum6 from "@/assets/projects/drummoyne-6.jpg.asset.json";
+import drum7 from "@/assets/projects/drummoyne-7.jpg.asset.json";
 
 // Rozelle
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
