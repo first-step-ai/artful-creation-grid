@@ -1,55 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { slugify } from "@/lib/projects-data";
+import { projects, slugify, type ProjectSummary } from "@/lib/projects-data";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 
-import p3 from "@/assets/project-3.jpg";
-import projectFeature from "@/assets/project-feature.jpg";
-import materials from "@/assets/materials.jpg";
-import serviceBathrooms from "@/assets/service-bathrooms.jpg";
-import serviceKitchens from "@/assets/service-kitchens.jpg";
-import serviceLaundries from "@/assets/service-laundries.jpg";
-import serviceInteriors from "@/assets/service-interiors.jpg";
-import archedAsset from "@/assets/arched-house.jpg.asset.json";
-import oakAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
-import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
-import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
-
-type Category =
-  | "Bathroom"
-  | "Kitchen"
-  | "Laundry"
-  | "Living Room"
-  | "Ensuite"
-  | "Multi-Space"
-  | "Full Interior";
-
-type Badge = "Award" | "Finalist" | null;
-
-type Project = {
-  suburb: string;
-  title: string;
-  category: Category;
-  image: string;
-  badge?: Badge;
-};
-
-const projects: Project[] = [
-  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: p3, badge: "Award" },
-  { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: hotelAsset.url },
-  { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: oakAsset.url },
-  { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: archedAsset.url, badge: "Finalist" },
-  { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: serviceBathrooms },
-  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexleyAsset.url },
-  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: projectFeature },
-  { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: serviceInteriors },
-  { suburb: "Mosman", title: "Considered Kitchen", category: "Kitchen", image: serviceKitchens },
-  { suburb: "Paddington", title: "Quiet Laundry", category: "Laundry", image: serviceLaundries },
-  { suburb: "Bondi", title: "Soft Ensuite", category: "Ensuite", image: materials },
-];
-
-const filters: ("All" | Category | "Award Winning" | "Award Finalist")[] = [
+const filters = [
   "All",
   "Bathroom",
   "Kitchen",
@@ -60,7 +15,7 @@ const filters: ("All" | Category | "Award Winning" | "Award Finalist")[] = [
   "Full Interior",
   "Award Winning",
   "Award Finalist",
-];
+] as const;
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
