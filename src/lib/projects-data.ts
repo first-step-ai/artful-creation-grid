@@ -145,7 +145,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Jenny listened carefully to my design aesthetic and consistently provided great suggestions which have turned out beautifully. When you engage Jenny and Ante, you are selecting a team that truely care.",
-    gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url],
+    gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url],
   },
 
   "abbotsford-hotel-inspired-luxury": {
@@ -177,7 +177,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We recently had AM complete our renovation and could not be any happier. From the design stage to handover, everything went as smooth as possible. Highly recommend the whole team!!",
-    gallery: [abbots2.url, abbots3.url, abbots4.url, abbots5.url, abbots6.url, abbots7.url],
+    gallery: [abbots2.url, abbots3.url, abbots4.url, abbots5.url, abbots6.url, abbots7.url, abbots8.url],
   },
 
   "pyrmont-elevated-city-living": {
@@ -206,7 +206,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Layered storage resolving everyday function",
       "Considered finishes connecting each space cohesively",
     ],
-    gallery: [pyrmont2.url, pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url],
+    gallery: [pyrmont2.url, pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url, pyrmont7.url, pyrmont8.url],
   },
 
   "annandale-smart-family-living": {
@@ -238,7 +238,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Renovations, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
-    gallery: [annan2.url, annan3.url, annan4.url, annan5.url, annan6.url],
+    gallery: [annan2.url, annan3.url, annan4.url, annan5.url, annan6.url, annan7.url, annan8.url],
   },
 
   "camperdown-inner-city-charm": {
@@ -267,7 +267,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Warm tonal material palette connecting each space",
       "Carefully resolved storage reducing visual clutter throughout",
     ],
-    gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url],
+    gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url],
   },
 
   "bexley-bold-utility": {
@@ -300,7 +300,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We had a difficult bathroom layout and AM came up with something that far exceeded our expectations. They were patiently attentive to our tastes and came up with options that made decisions easy, this resulted in a design that felt like our own.",
-    gallery: [bexley2.url, bexley3.url, bexley4.url, bexley5.url, bexley6.url, bexley7.url],
+    gallery: [bexley2.url, bexley3.url, bexley4.url, bexley5.url, bexley6.url, bexley7.url, bexley8.url],
   },
 
   "drummoyne-modern-luxury-living": {
@@ -331,7 +331,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Streamlined vanity designs improving circulation",
       "Light-filled layouts despite compact proportions",
     ],
-    gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url],
+    gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url, drum8.url],
   },
 };
 
