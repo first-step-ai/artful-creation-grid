@@ -216,7 +216,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Renovations, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
-    gallery: [archedAsset.url, serviceBathrooms, materials],
+    gallery: [annan2.url, annan3.url, annan4.url, annan5.url, annan6.url],
   },
 
   "camperdown-inner-city-charm": {
