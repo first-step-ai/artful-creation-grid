@@ -9,7 +9,7 @@ const services = [
     num: "i",
     title: "Bathrooms",
     body: "A bathroom built around your routine. materials and details chosen with you, built by us.",
-    image: bathrooms,
+    image: bathrooms.url,
   },
   {
     num: "ii",
