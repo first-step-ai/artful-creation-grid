@@ -472,12 +472,6 @@
   display: inline-block;
   font-weight: 300;
   font-size: 0.9em;
-  color: var(--sm-accent, #848b7d);
-}
-.sm-panel-caret {
-  display: inline-block;
-  font-weight: 300;
-  font-size: 0.9em;
   color: #848b7d;
 }
 .sm-panel-sublist {
