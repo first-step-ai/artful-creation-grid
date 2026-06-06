@@ -184,7 +184,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Layered storage resolving everyday function",
       "Considered finishes connecting each space cohesively",
     ],
-    gallery: [oakAsset.url, serviceInteriors, materials],
+    gallery: [pyrmont2.url, pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url],
   },
 
   "annandale-smart-family-living": {
