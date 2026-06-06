@@ -75,11 +75,11 @@ export function slugify(suburb: string, title: string) {
 
 // All projects shown on /projects (single source of truth)
 export const projects: ProjectSummary[] = [
-  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: p3, badge: "Award" },
-  { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: hotelAsset.url },
-  { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: oakAsset.url },
-  { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: archedAsset.url, badge: "Finalist" },
-  { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: serviceBathrooms },
+  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: rozelle1.url, badge: "Award" },
+  { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: abbots1.url },
+  { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont1.url },
+  { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan1.url, badge: "Finalist" },
+  { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexleyAsset.url },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: projectFeature },
 ];
