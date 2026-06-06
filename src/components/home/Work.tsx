@@ -10,13 +10,13 @@ import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
-  { label: "Design", image: rozelle1.url, orientation: "portrait" },
-  { label: "Design", image: rozelle2.url, orientation: "landscape" },
-  { label: "Design", image: rozelle3.url, orientation: "portrait" },
-  { label: "Design", image: rozelle4.url, orientation: "landscape" },
-  { label: "Design", image: rozelle5.url, orientation: "portrait" },
-  { label: "Design", image: rozelle6.url, orientation: "landscape" },
-  { label: "Design", image: rozelle7.url, orientation: "portrait" },
+  { label: "Sculptural curved island", image: rozelle1.url, orientation: "portrait" },
+  { label: "Bespoke concealed joinery", image: rozelle2.url, orientation: "landscape" },
+  { label: "Verde Tempest stone", image: rozelle3.url, orientation: "portrait" },
+  { label: "Fluted glass cabinetry", image: rozelle4.url, orientation: "landscape" },
+  { label: "Jack-and-Jill ensuite", image: rozelle5.url, orientation: "portrait" },
+  { label: "Curved mosaic feature wall", image: rozelle6.url, orientation: "landscape" },
+  { label: "Warm brass fixtures", image: rozelle7.url, orientation: "portrait" },
 ];
 
 
