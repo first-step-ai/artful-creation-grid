@@ -15,19 +15,19 @@ const services = [
     num: "ii",
     title: "Kitchens",
     body: "A kitchen that fits the way your family actually uses it, not just how it looks in a render.",
-    image: kitchens,
+    image: kitchens.url,
   },
   {
     num: "iii",
     title: "Multi-space Renovations",
     body: "A home that feels considered in every corner. we handle the full picture.",
-    image: interiors,
+    image: interiors.url,
   },
   {
     num: "iv",
     title: "Full Home Renovation",
     body: "A complete transformation, finished with the same care we bring to every room.",
-    image: laundries,
+    image: laundries.url,
   },
 ];
 
