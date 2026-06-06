@@ -1,4 +1,4 @@
-import materials from "@/assets/materials.jpg";
+import materials from "@/assets/projects/abbotsford-2.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const palette = [
