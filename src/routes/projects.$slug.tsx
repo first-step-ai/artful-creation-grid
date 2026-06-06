@@ -148,6 +148,36 @@ function ProjectDetailPage() {
               View all <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-8 gap-y-14">
+            {getMoreProjects(p.slug, 3).map((m) => {
+              const mSlug = slugify(m.suburb, m.title);
+              return (
+                <Link
+                  key={mSlug}
+                  to="/projects/$slug"
+                  params={{ slug: mSlug }}
+                  className="block group"
+                >
+                  <div className="relative overflow-hidden aspect-[4/5] bg-oxblood">
+                    <img
+                      src={m.image}
+                      alt={`${m.title}, ${m.suburb}`}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                    />
+                  </div>
+                  <div className="mt-5 font-serif text-2xl font-light text-ivory leading-tight">
+                    <span>{m.suburb}</span>
+                    <span className="mx-3 opacity-50">|</span>
+                    <span>{m.title}</span>
+                  </div>
+                  <div className="mt-2 font-sans text-[11px] tracking-[0.28em] uppercase text-ivory-muted">
+                    {m.category}
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </section>
       </main>
       <Footer />
