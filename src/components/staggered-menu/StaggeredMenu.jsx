@@ -423,9 +423,13 @@ export const StaggeredMenu = ({
             {items && items.length ? (
               items.map((it, idx) => (
                 <li className="sm-panel-itemWrap" key={it.label + idx}>
-                  <a className="sm-panel-item" href={it.link} aria-label={it.ariaLabel} data-index={idx + 1}>
-                    <span className="sm-panel-itemLabel">{it.label}</span>
-                  </a>
+                  {it.subItems && it.subItems.length ? (
+                    <SubmenuItem item={it} index={idx} />
+                  ) : (
+                    <a className="sm-panel-item" href={it.link} aria-label={it.ariaLabel} data-index={idx + 1}>
+                      <span className="sm-panel-itemLabel">{it.label}</span>
+                    </a>
+                  )}
                 </li>
               ))
             ) : (
