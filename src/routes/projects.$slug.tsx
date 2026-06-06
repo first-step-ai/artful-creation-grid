@@ -87,18 +87,8 @@ function ProjectDetailPage() {
             </aside>
 
             {/* CENTER — image stack */}
-            <div className="space-y-6 md:space-y-8">
-              {p.gallery.map((src, i) => (
-                <figure key={i} className="overflow-hidden bg-burgundy">
-                  <img
-                    src={src}
-                    alt={`${p.title} — image ${i + 1}`}
-                    loading="lazy"
-                    className="w-full h-auto object-cover"
-                  />
-                </figure>
-              ))}
-            </div>
+            <GalleryStack images={p.gallery} title={p.title} />
+
 
             {/* RIGHT COLUMN — sticky scroll */}
             <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pl-2 space-y-10">
