@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, type ReactNode } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { Plus, Minus, ArrowRight } from "lucide-react";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
