@@ -290,9 +290,9 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
     <div className="space-y-6 md:space-y-8">
       {rows.map((row, ri) =>
         row.type === "pair" ? (
-          <div key={ri} className="grid grid-cols-2 gap-3 md:gap-4">
+          <div key={ri} className="grid grid-cols-2 gap-3 md:gap-4 aspect-[3/2]">
             {row.items.map((it) => (
-              <figure key={it.index} className="overflow-hidden bg-burgundy aspect-[3/4]">
+              <figure key={it.index} className="overflow-hidden bg-burgundy h-full">
                 <img
                   src={it.src}
                   alt={`${title} — image ${it.index + 1}`}
