@@ -8,25 +8,25 @@ const steps = [
   {
     n: "01",
     title: "Discovery",
-    body: "we come to your home, walk the space, and listen to how you live before a single line is drawn.",
+    body: "We come to your home, walk the space, and listen to how you live before a single line is drawn.",
     image: discovery,
   },
   {
     n: "02",
     title: "Concept + Design",
-    body: "layouts, materials and a transparent quote. everything resolved before the first trade arrives.",
+    body: "Layouts, materials and a transparent quote. everything resolved before the first trade arrives.",
     image: design,
   },
   {
     n: "03",
     title: "Build",
-    body: "one team accountable from demolition to final detail. our trades, our schedule, our supervision.",
+    body: "One team accountable from demolition to final detail. our trades, our schedule, our supervision.",
     image: build,
   },
   {
     n: "04",
     title: "Handover",
-    body: "final walkthrough, clean site, and the keys back to you. we stay reachable in the months after.",
+    body: "Final walkthrough, clean site, and the keys back to you. we stay reachable in the months after.",
     image: handover,
   },
 ];

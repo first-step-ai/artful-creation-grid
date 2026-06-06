@@ -7,10 +7,10 @@ import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const awards: { title: string; description: string; image: string }[] = [
-  { title: "Winner 2025 HIA", description: "nsw kitchen of the year", image: oakAsset.url },
-  { title: "Winner 2024 HIA", description: "nsw bathroom of the year", image: bexleyAsset.url },
-  { title: "National Winner 2024 Australia", description: "small business management award", image: featureAsset.url },
-  { title: "NSW Winner 2023", description: "small business management award", image: hotelAsset.url },
+  { title: "Winner 2025 HIA", description: "Nsw kitchen of the year", image: oakAsset.url },
+  { title: "Winner 2024 HIA", description: "Nsw bathroom of the year", image: bexleyAsset.url },
+  { title: "National Winner 2024 Australia", description: "Small business management award", image: featureAsset.url },
+  { title: "NSW Winner 2023", description: "Small business management award", image: hotelAsset.url },
 ];
 
 export function Awards() {
