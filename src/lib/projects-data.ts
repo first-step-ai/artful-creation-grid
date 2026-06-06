@@ -1,14 +1,45 @@
-import p3 from "@/assets/project-3.jpg";
 import projectFeature from "@/assets/project-feature.jpg";
 import materials from "@/assets/materials.jpg";
 import serviceBathrooms from "@/assets/service-bathrooms.jpg";
-import serviceKitchens from "@/assets/service-kitchens.jpg";
-import serviceLaundries from "@/assets/service-laundries.jpg";
-import serviceInteriors from "@/assets/service-interiors.jpg";
-import archedAsset from "@/assets/arched-house.jpg.asset.json";
-import oakAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
 import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
-import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
+
+// Rozelle
+import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
+import rozelle2 from "@/assets/projects/rozelle-2.jpg.asset.json";
+import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
+import rozelle4 from "@/assets/projects/rozelle-4.jpg.asset.json";
+import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
+import rozelle6 from "@/assets/projects/rozelle-6.jpg.asset.json";
+import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
+// Abbotsford
+import abbots1 from "@/assets/projects/abbotsford-1.jpg.asset.json";
+import abbots2 from "@/assets/projects/abbotsford-2.jpg.asset.json";
+import abbots3 from "@/assets/projects/abbotsford-3.jpg.asset.json";
+import abbots4 from "@/assets/projects/abbotsford-4.jpg.asset.json";
+import abbots5 from "@/assets/projects/abbotsford-5.jpg.asset.json";
+import abbots6 from "@/assets/projects/abbotsford-6.jpg.asset.json";
+import abbots7 from "@/assets/projects/abbotsford-7.jpg.asset.json";
+// Pyrmont
+import pyrmont1 from "@/assets/projects/pyrmont-1.jpg.asset.json";
+import pyrmont2 from "@/assets/projects/pyrmont-2.jpg.asset.json";
+import pyrmont3 from "@/assets/projects/pyrmont-3.jpg.asset.json";
+import pyrmont4 from "@/assets/projects/pyrmont-4.jpg.asset.json";
+import pyrmont5 from "@/assets/projects/pyrmont-5.jpg.asset.json";
+import pyrmont6 from "@/assets/projects/pyrmont-6.jpg.asset.json";
+// Annandale
+import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
+import annan2 from "@/assets/projects/annandale-2.jpg.asset.json";
+import annan3 from "@/assets/projects/annandale-3.jpg.asset.json";
+import annan4 from "@/assets/projects/annandale-4.jpg.asset.json";
+import annan5 from "@/assets/projects/annandale-5.jpg.asset.json";
+import annan6 from "@/assets/projects/annandale-6.jpg.asset.json";
+// Camperdown
+import camp1 from "@/assets/projects/camperdown-1.jpg.asset.json";
+import camp2 from "@/assets/projects/camperdown-2.jpg.asset.json";
+import camp3 from "@/assets/projects/camperdown-3.jpg.asset.json";
+import camp4 from "@/assets/projects/camperdown-4.jpg.asset.json";
+import camp5 from "@/assets/projects/camperdown-5.jpg.asset.json";
+import camp6 from "@/assets/projects/camperdown-6.jpg.asset.json";
 
 export type ProjectSummary = {
   suburb: string;
@@ -44,11 +75,11 @@ export function slugify(suburb: string, title: string) {
 
 // All projects shown on /projects (single source of truth)
 export const projects: ProjectSummary[] = [
-  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: p3, badge: "Award" },
-  { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: hotelAsset.url },
-  { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: oakAsset.url },
-  { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: archedAsset.url, badge: "Finalist" },
-  { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: serviceBathrooms },
+  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: rozelle1.url, badge: "Award" },
+  { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: abbots1.url },
+  { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont1.url },
+  { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan1.url, badge: "Finalist" },
+  { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexleyAsset.url },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: projectFeature },
 ];
@@ -92,9 +123,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Jenny listened carefully to my design aesthetic and consistently provided great suggestions which have turned out beautifully. When you engage Jenny and Ante, you are selecting a team that truely care.",
-    gallery: [oakAsset.url, archedAsset.url, hotelAsset.url, projectFeature],
-    beforeImage: serviceLaundries,
-    afterImage: serviceKitchens,
+    gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url],
   },
 
   "abbotsford-hotel-inspired-luxury": {
@@ -126,7 +155,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We recently had AM complete our renovation and could not be any happier. From the design stage to handover, everything went as smooth as possible. Highly recommend the whole team!!",
-    gallery: [hotelAsset.url, materials, serviceBathrooms],
+    gallery: [abbots2.url, abbots3.url, abbots4.url, abbots5.url, abbots6.url, abbots7.url],
   },
 
   "pyrmont-elevated-city-living": {
@@ -155,7 +184,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Layered storage resolving everyday function",
       "Considered finishes connecting each space cohesively",
     ],
-    gallery: [oakAsset.url, serviceInteriors, materials],
+    gallery: [pyrmont2.url, pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url],
   },
 
   "annandale-smart-family-living": {
@@ -187,7 +216,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Renovations, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
-    gallery: [archedAsset.url, serviceBathrooms, materials],
+    gallery: [annan2.url, annan3.url, annan4.url, annan5.url, annan6.url],
   },
 
   "camperdown-inner-city-charm": {
@@ -216,7 +245,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Warm tonal material palette connecting each space",
       "Carefully resolved storage reducing visual clutter throughout",
     ],
-    gallery: [serviceBathrooms, serviceKitchens, materials],
+    gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url],
   },
 
   "bexley-bold-utility": {
@@ -320,7 +349,7 @@ function buildDetail(s: ProjectSummary): ProjectDetail {
     ],
     whatWeDid: o.whatWeDid,
     testimonial: o.testimonial,
-    gallery: o.gallery ?? [s.image, materials, serviceInteriors],
+    gallery: o.gallery ?? [s.image, materials, projectFeature],
     beforeImage: o.beforeImage,
     afterImage: o.afterImage,
     badge: o.badge ?? s.badge ?? null,
