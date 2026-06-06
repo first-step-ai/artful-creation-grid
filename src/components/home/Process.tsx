@@ -1,33 +1,33 @@
 import { useReveal } from "@/hooks/use-reveal";
-import discovery from "@/assets/studio.jpg";
-import design from "@/assets/service-kitchens.jpg";
-import build from "@/assets/materials.jpg";
-import handover from "@/assets/service-bathrooms.jpg";
+import discovery from "@/assets/projects/pyrmont-1.jpg.asset.json";
+import design from "@/assets/projects/abbotsford-3.jpg.asset.json";
+import build from "@/assets/projects/rozelle-3.jpg.asset.json";
+import handover from "@/assets/projects/camperdown-1.jpg.asset.json";
 
 const steps = [
   {
     n: "01",
     title: "Discovery",
     body: "We come to your home, walk the space, and listen to how you live before a single line is drawn.",
-    image: discovery,
+    image: discovery.url,
   },
   {
     n: "02",
     title: "Concept + Design",
     body: "Layouts, materials and a transparent quote. everything resolved before the first trade arrives.",
-    image: design,
+    image: design.url,
   },
   {
     n: "03",
     title: "Build",
     body: "One team accountable from demolition to final detail. our trades, our schedule, our supervision.",
-    image: build,
+    image: build.url,
   },
   {
     n: "04",
     title: "Handover",
     body: "Final walkthrough, clean site, and the keys back to you. we stay reachable in the months after.",
-    image: handover,
+    image: handover.url,
   },
 ];
 
