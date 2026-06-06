@@ -423,9 +423,13 @@ export const StaggeredMenu = ({
             {items && items.length ? (
               items.map((it, idx) => (
                 <li className="sm-panel-itemWrap" key={it.label + idx}>
-                  <a className="sm-panel-item" href={it.link} aria-label={it.ariaLabel} data-index={idx + 1}>
-                    <span className="sm-panel-itemLabel">{it.label}</span>
-                  </a>
+                  {it.subItems && it.subItems.length ? (
+                    <SubmenuItem item={it} index={idx} />
+                  ) : (
+                    <a className="sm-panel-item" href={it.link} aria-label={it.ariaLabel} data-index={idx + 1}>
+                      <span className="sm-panel-itemLabel">{it.label}</span>
+                    </a>
+                  )}
                 </li>
               ))
             ) : (
@@ -453,6 +457,44 @@ export const StaggeredMenu = ({
         </div>
       </aside>
     </div>
+  );
+};
+
+const SubmenuItem = ({ item, index }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <button
+        type="button"
+        className="sm-panel-item sm-panel-item-toggle"
+        aria-label={item.ariaLabel}
+        aria-expanded={open}
+        data-index={index + 1}
+        onClick={() => setOpen(o => !o)}
+      >
+        <span className="sm-panel-itemLabel">
+          {item.label}
+          <span className="sm-panel-caret" aria-hidden="true">{open ? '−' : '+'}</span>
+        </span>
+      </button>
+      {open && (
+        <ul className="sm-panel-sublist" role="list">
+          <li className="sm-panel-subheading">As seen in</li>
+          {item.subItems.map((s, i) => (
+            <li key={s.label + i}>
+              <a
+                className="sm-panel-subitem"
+                href={s.link}
+                target={s.external ? '_blank' : undefined}
+                rel={s.external ? 'noopener noreferrer' : undefined}
+              >
+                {s.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
   );
 };
 

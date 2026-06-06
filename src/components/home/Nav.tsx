@@ -4,11 +4,21 @@ import amOnly from "@/assets/am-mark.png.asset.json";
 
 
 const menuItems = [
-  { label: "Portfolio", ariaLabel: "View our portfolio", link: "#work" },
+  {
+    label: "Projects",
+    ariaLabel: "View our projects",
+    link: "#work",
+    subItems: [
+      { label: "Belle Magazine", link: "https://www.belle.com.au", external: true },
+      { label: "Vogue Living", link: "https://www.vogue.com.au/vogue-living", external: true },
+      { label: "Houzz Feature", link: "https://www.houzz.com.au", external: true },
+      { label: "Australian House & Garden", link: "https://www.homestolove.com.au/australian-house-and-garden", external: true },
+    ],
+  },
   { label: "Services", ariaLabel: "Explore our services", link: "#services" },
   { label: "Process", ariaLabel: "Our process", link: "#process" },
   { label: "Studio", ariaLabel: "About the studio", link: "#studio" },
-  { label: "Enquire", ariaLabel: "Get in touch", link: "#enquire" },
+  { label: "Contact", ariaLabel: "Get in touch", link: "#enquire" },
 ];
 
 export function Nav() {
