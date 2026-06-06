@@ -44,7 +44,7 @@ export function Awards() {
             />
 
             <div className="text-[11px] tracking-[0.28em] uppercase text-ivory mb-5 md:mb-6">
-              Multi-Award Winner
+              Year after Year
             </div>
 
             <ul className="w-full flex flex-col border-t border-ivory/15">
