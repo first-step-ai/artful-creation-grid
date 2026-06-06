@@ -1,25 +1,22 @@
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
+import rozelle2 from "@/assets/projects/rozelle-2.jpg.asset.json";
 import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
+import rozelle4 from "@/assets/projects/rozelle-4.jpg.asset.json";
 import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
-import abbots1 from "@/assets/projects/abbotsford-1.jpg.asset.json";
-import abbots4 from "@/assets/projects/abbotsford-4.jpg.asset.json";
-import pyrmont1 from "@/assets/projects/pyrmont-1.jpg.asset.json";
-import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
-import camp1 from "@/assets/projects/camperdown-1.jpg.asset.json";
+import rozelle6 from "@/assets/projects/rozelle-6.jpg.asset.json";
+import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
 import bexley1 from "@/assets/projects/bexley-1.jpg.asset.json";
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
   { label: "Rozelle", image: rozelle1.url, orientation: "portrait" },
-  { label: "Abbotsford", image: abbots1.url, orientation: "landscape" },
-  { label: "Pyrmont", image: pyrmont1.url, orientation: "portrait" },
-  { label: "Annandale", image: annan1.url, orientation: "landscape" },
-  { label: "Camperdown", image: camp1.url, orientation: "portrait" },
-  { label: "Bexley", image: bexley1.url, orientation: "landscape" },
-  { label: "Drummoyne", image: drum1.url, orientation: "portrait" },
-  { label: "Rozelle", image: rozelle3.url, orientation: "landscape" },
-  { label: "Abbotsford", image: abbots4.url, orientation: "portrait" },
+  { label: "Rozelle", image: rozelle2.url, orientation: "landscape" },
+  { label: "Rozelle", image: rozelle3.url, orientation: "portrait" },
+  { label: "Rozelle", image: rozelle4.url, orientation: "landscape" },
+  { label: "Rozelle", image: rozelle5.url, orientation: "portrait" },
+  { label: "Rozelle", image: rozelle6.url, orientation: "landscape" },
+  { label: "Rozelle", image: rozelle7.url, orientation: "portrait" },
 ];
 
 
