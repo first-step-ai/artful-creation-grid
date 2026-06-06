@@ -460,16 +460,20 @@
   background: none;
   border: none;
   text-align: left;
-  font: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
-  color: inherit;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sm-panel-item-toggle .sm-panel-itemLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
 }
 .sm-panel-caret {
   display: inline-block;
-  margin-left: 0.6em;
   font-weight: 300;
+  font-size: 0.9em;
   color: var(--sm-accent, #848b7d);
 }
 .sm-panel-sublist {
