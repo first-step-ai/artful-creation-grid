@@ -1,6 +1,4 @@
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
-import rozelle2 from "@/assets/projects/rozelle-2.jpg.asset.json";
-import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
 import rozelle4 from "@/assets/projects/rozelle-4.jpg.asset.json";
 import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
 import rozelle6 from "@/assets/projects/rozelle-6.jpg.asset.json";
