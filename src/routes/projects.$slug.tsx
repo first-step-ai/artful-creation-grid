@@ -1,0 +1,224 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState, type ReactNode } from "react";
+import { Plus, Minus, ArrowRight } from "lucide-react";
+import { Nav } from "@/components/home/Nav";
+import { Footer } from "@/components/home/Footer";
+import { getProjectDetail } from "@/lib/projects-data";
+
+export const Route = createFileRoute("/projects/$slug")({
+  head: ({ params }) => {
+    const p = getProjectDetail(params.slug);
+    return {
+      meta: [
+        { title: `${p.suburb} | ${p.title} — AM Bathrooms + Projects` },
+        { name: "description", content: p.heroCaption },
+        { property: "og:title", content: `${p.suburb} | ${p.title}` },
+        { property: "og:description", content: p.heroCaption },
+        { property: "og:image", content: p.hero },
+      ],
+    };
+  },
+  component: ProjectDetailPage,
+});
+
+function ProjectDetailPage() {
+  const { slug } = Route.useParams();
+  const p = getProjectDetail(slug);
+
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <main>
+        {/* HERO */}
+        <section className="relative h-[90vh] min-h-[640px] w-full overflow-hidden">
+          <img
+            src={p.hero}
+            alt={`${p.title}, ${p.suburb}`}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-oxblood/85 via-oxblood/40 to-oxblood/20" />
+          <div className="relative z-10 mx-auto max-w-[1600px] px-6 md:px-10 h-full flex flex-col justify-end pb-16 md:pb-24">
+            <div className="eyebrow text-ivory/80 mb-4">
+              {p.category} · {p.suburb}
+            </div>
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-ivory leading-[1.05] max-w-5xl">
+              {p.suburb} <span className="opacity-50">|</span> {p.title}
+            </h1>
+            <p className="mt-6 max-w-xl font-sans text-base md:text-lg text-ivory/85 leading-relaxed">
+              {p.heroCaption}
+            </p>
+            {p.badge && (
+              <div className="mt-8 inline-block self-start border border-ivory/40 px-5 py-3 text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory">
+                {p.badge}
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* THREE-COLUMN BODY */}
+        <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,2fr)_1fr] gap-10 lg:gap-12">
+            {/* LEFT COLUMN — sticky scroll */}
+            <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pr-2 space-y-10">
+              <Block label="Scope">
+                <p className="font-sans text-[15px] leading-relaxed text-ivory/85">
+                  {p.scope}
+                </p>
+              </Block>
+
+              {p.awards.length > 0 && (
+                <Block label="Awards">
+                  <ul className="space-y-2">
+                    {p.awards.map((a) => (
+                      <li
+                        key={a}
+                        className="font-sans text-[15px] leading-relaxed text-ivory/85"
+                      >
+                        {a}
+                      </li>
+                    ))}
+                  </ul>
+                </Block>
+              )}
+
+              {p.whatWasntWorking.length > 0 && (
+                <ExpandableBlock label="What wasn't working" items={p.whatWasntWorking} />
+              )}
+            </aside>
+
+            {/* CENTER — image stack */}
+            <div className="space-y-6 md:space-y-8">
+              {p.gallery.map((src, i) => (
+                <figure key={i} className="overflow-hidden bg-burgundy">
+                  <img
+                    src={src}
+                    alt={`${p.title} — image ${i + 1}`}
+                    loading="lazy"
+                    className="w-full h-auto object-cover"
+                  />
+                </figure>
+              ))}
+            </div>
+
+            {/* RIGHT COLUMN — sticky scroll */}
+            <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pl-2 space-y-10">
+              <div>
+                <h2 className="font-serif text-3xl md:text-4xl font-light text-ivory leading-tight">
+                  {p.rightHeading}
+                </h2>
+                <p className="mt-6 font-sans text-[15px] leading-relaxed text-ivory/85">
+                  {p.rightIntro}
+                </p>
+              </div>
+
+              {p.designFeatures.length > 0 && (
+                <ExpandableBlock
+                  label="Design features"
+                  items={p.designFeatures}
+                  numbered
+                />
+              )}
+            </aside>
+          </div>
+        </section>
+
+        {/* BEFORE & AFTER */}
+        {p.beforeImage && p.afterImage && (
+          <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28 border-t border-ivory/10">
+            <h2 className="font-serif text-4xl md:text-6xl font-light text-ivory mb-12">
+              Before &amp; After
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <BeforeAfter src={p.beforeImage} label="Before" />
+              <BeforeAfter src={p.afterImage} label="After" />
+            </div>
+          </section>
+        )}
+
+        {/* MORE PROJECTS */}
+        <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28 border-t border-ivory/10">
+          <div className="flex items-end justify-between mb-12">
+            <h2 className="font-serif text-4xl md:text-6xl font-light text-ivory">
+              More projects
+            </h2>
+            <Link
+              to="/projects"
+              className="font-sans text-[11px] tracking-[0.28em] uppercase text-ivory hover:text-brass inline-flex items-center gap-2"
+            >
+              View all <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+function Block({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div>
+      <div className="eyebrow mb-4 text-ivory-muted">{label}</div>
+      {children}
+    </div>
+  );
+}
+
+function ExpandableBlock({
+  label,
+  items,
+  numbered = false,
+}: {
+  label: string;
+  items: string[];
+  numbered?: boolean;
+}) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-t border-ivory/15 pt-5">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        className="w-full flex items-center justify-between text-left group"
+        aria-expanded={open}
+      >
+        <span className="eyebrow text-ivory">{label}</span>
+        <span className="text-ivory/70 group-hover:text-ivory transition-colors">
+          {open ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+        </span>
+      </button>
+      <div
+        className={`grid transition-[grid-template-rows,opacity] duration-500 ease-out ${
+          open ? "grid-rows-[1fr] opacity-100 mt-5" : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <ul className="overflow-hidden space-y-4">
+          {items.map((item, i) => (
+            <li
+              key={item}
+              className="flex gap-4 font-sans text-[14px] leading-relaxed text-ivory/85"
+            >
+              <span className="font-sans text-[11px] tracking-[0.28em] text-ivory-muted pt-1 shrink-0 w-6">
+                {numbered ? String(i + 1).padStart(2, "0") : ""}
+              </span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function BeforeAfter({ src, label }: { src: string; label: string }) {
+  return (
+    <figure>
+      <div className="overflow-hidden bg-burgundy aspect-[4/3]">
+        <img src={src} alt={label} loading="lazy" className="w-full h-full object-cover" />
+      </div>
+      <figcaption className="mt-5 font-sans text-[11px] tracking-[0.28em] uppercase text-ivory-muted">
+        {label}
+      </figcaption>
+    </figure>
+  );
+}

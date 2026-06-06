@@ -1,5 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
+import { slugify } from "@/lib/projects-data";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 
@@ -35,7 +36,7 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full Interior", image: p3, badge: "Award" },
+  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: p3, badge: "Award" },
   { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: hotelAsset.url },
   { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: oakAsset.url },
   { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: archedAsset.url, badge: "Finalist" },
@@ -144,31 +145,34 @@ function ProjectsPage() {
 }
 
 function Tile({ project }: { project: Project }) {
+  const slug = slugify(project.suburb, project.title);
   return (
-    <figure className="group lift">
-      <div className="relative overflow-hidden aspect-[4/5] bg-oxblood">
-        <img
-          src={project.image}
-          alt={`${project.title}, ${project.suburb}`}
-          loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
-        />
-        {project.badge && (
-          <span className="absolute top-5 right-5 bg-ivory text-oxblood px-3 py-1.5 text-[10px] tracking-[0.28em] uppercase font-medium">
-            {project.badge}
-          </span>
-        )}
-      </div>
-      <figcaption className="mt-5">
-        <div className="font-serif text-2xl md:text-3xl font-light text-ivory leading-tight">
-          <span>{project.suburb}</span>
-          <span className="mx-3 opacity-50">|</span>
-          <span>{project.title}</span>
+    <Link to="/projects/$slug" params={{ slug }} className="block group lift">
+      <figure>
+        <div className="relative overflow-hidden aspect-[4/5] bg-oxblood">
+          <img
+            src={project.image}
+            alt={`${project.title}, ${project.suburb}`}
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+          />
+          {project.badge && (
+            <span className="absolute top-5 right-5 bg-ivory text-oxblood px-3 py-1.5 text-[10px] tracking-[0.28em] uppercase font-medium">
+              {project.badge}
+            </span>
+          )}
         </div>
-        <div className="mt-3 font-sans text-[11px] tracking-[0.28em] uppercase font-medium text-ivory-muted">
-          {project.category}
-        </div>
-      </figcaption>
-    </figure>
+        <figcaption className="mt-5">
+          <div className="font-serif text-2xl md:text-3xl font-light text-ivory leading-tight">
+            <span>{project.suburb}</span>
+            <span className="mx-3 opacity-50">|</span>
+            <span>{project.title}</span>
+          </div>
+          <div className="mt-3 font-sans text-[11px] tracking-[0.28em] uppercase font-medium text-ivory-muted">
+            {project.category}
+          </div>
+        </figcaption>
+      </figure>
+    </Link>
   );
 }
