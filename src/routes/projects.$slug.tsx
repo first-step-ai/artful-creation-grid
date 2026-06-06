@@ -101,12 +101,20 @@ function ProjectDetailPage() {
                 </p>
               </div>
 
+              {p.whatWeDid && (
+                <ExpandableBlock label="What we did" items={[p.whatWeDid]} />
+              )}
+
               {p.designFeatures.length > 0 && (
                 <ExpandableBlock
                   label="Design features"
                   items={p.designFeatures}
                   numbered
                 />
+              )}
+
+              {p.testimonial && (
+                <ExpandableBlock label="Testimonial" items={[p.testimonial]} />
               )}
             </aside>
           </div>
