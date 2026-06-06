@@ -1,14 +1,45 @@
-import p3 from "@/assets/project-3.jpg";
 import projectFeature from "@/assets/project-feature.jpg";
 import materials from "@/assets/materials.jpg";
 import serviceBathrooms from "@/assets/service-bathrooms.jpg";
-import serviceKitchens from "@/assets/service-kitchens.jpg";
-import serviceLaundries from "@/assets/service-laundries.jpg";
-import serviceInteriors from "@/assets/service-interiors.jpg";
-import archedAsset from "@/assets/arched-house.jpg.asset.json";
-import oakAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
 import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
-import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
+
+// Rozelle
+import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
+import rozelle2 from "@/assets/projects/rozelle-2.jpg.asset.json";
+import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
+import rozelle4 from "@/assets/projects/rozelle-4.jpg.asset.json";
+import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
+import rozelle6 from "@/assets/projects/rozelle-6.jpg.asset.json";
+import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
+// Abbotsford
+import abbots1 from "@/assets/projects/abbotsford-1.jpg.asset.json";
+import abbots2 from "@/assets/projects/abbotsford-2.jpg.asset.json";
+import abbots3 from "@/assets/projects/abbotsford-3.jpg.asset.json";
+import abbots4 from "@/assets/projects/abbotsford-4.jpg.asset.json";
+import abbots5 from "@/assets/projects/abbotsford-5.jpg.asset.json";
+import abbots6 from "@/assets/projects/abbotsford-6.jpg.asset.json";
+import abbots7 from "@/assets/projects/abbotsford-7.jpg.asset.json";
+// Pyrmont
+import pyrmont1 from "@/assets/projects/pyrmont-1.jpg.asset.json";
+import pyrmont2 from "@/assets/projects/pyrmont-2.jpg.asset.json";
+import pyrmont3 from "@/assets/projects/pyrmont-3.jpg.asset.json";
+import pyrmont4 from "@/assets/projects/pyrmont-4.jpg.asset.json";
+import pyrmont5 from "@/assets/projects/pyrmont-5.jpg.asset.json";
+import pyrmont6 from "@/assets/projects/pyrmont-6.jpg.asset.json";
+// Annandale
+import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
+import annan2 from "@/assets/projects/annandale-2.jpg.asset.json";
+import annan3 from "@/assets/projects/annandale-3.jpg.asset.json";
+import annan4 from "@/assets/projects/annandale-4.jpg.asset.json";
+import annan5 from "@/assets/projects/annandale-5.jpg.asset.json";
+import annan6 from "@/assets/projects/annandale-6.jpg.asset.json";
+// Camperdown
+import camp1 from "@/assets/projects/camperdown-1.jpg.asset.json";
+import camp2 from "@/assets/projects/camperdown-2.jpg.asset.json";
+import camp3 from "@/assets/projects/camperdown-3.jpg.asset.json";
+import camp4 from "@/assets/projects/camperdown-4.jpg.asset.json";
+import camp5 from "@/assets/projects/camperdown-5.jpg.asset.json";
+import camp6 from "@/assets/projects/camperdown-6.jpg.asset.json";
 
 export type ProjectSummary = {
   suburb: string;
