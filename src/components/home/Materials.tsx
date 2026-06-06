@@ -18,7 +18,7 @@ export function Materials() {
           <div className="md:col-span-6 relative overflow-hidden grain">
             <div className="aspect-[4/5] md:aspect-[5/6] overflow-hidden">
               <img
-                src={materials}
+                src={materials.url}
                 alt="Material palette: travertine, brass, oak, linen on burgundy"
                 loading="lazy"
                 width={1600}
