@@ -102,7 +102,12 @@ function ProjectsPage() {
 function Tile({ project }: { project: ProjectSummary }) {
   const slug = slugify(project.suburb, project.title);
   return (
-    <Link to="/projects/$slug" params={{ slug }} className="block group lift">
+    <Link
+      to="/projects/$slug"
+      params={{ slug }}
+      preload="intent"
+      className="block group lift relative z-10 cursor-pointer"
+    >
       <figure>
         <div className="relative overflow-hidden aspect-[4/5] bg-oxblood">
           <img
