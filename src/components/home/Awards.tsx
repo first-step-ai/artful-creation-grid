@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
-import featureAsset from "@/assets/arched-house.jpg.asset.json";
-import bexleyAsset from "@/assets/bexley-bathroom.jpg.asset.json";
-import hotelAsset from "@/assets/hotel-inspired-luxury.jpg.asset.json";
-import oakAsset from "@/assets/stained-oak-kitchen.jpg.asset.json";
+import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
+import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
+import abbots1 from "@/assets/projects/abbotsford-1.jpg.asset.json";
+import pyrmont1 from "@/assets/projects/pyrmont-1.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const awards: { title: string; description: string; image: string }[] = [
-  { title: "Winner 2025 HIA", description: "Nsw kitchen of the year", image: oakAsset.url },
-  { title: "Winner 2024 HIA", description: "Nsw bathroom of the year", image: bexleyAsset.url },
-  { title: "National Winner 2024 Australia", description: "Small business management award", image: featureAsset.url },
-  { title: "NSW Winner 2023", description: "Small business management award", image: hotelAsset.url },
+  { title: "Winner 2025 HIA", description: "Nsw kitchen of the year", image: rozelle1.url },
+  { title: "Finalist 2025 HIA", description: "Nsw bathroom of the year", image: annan1.url },
+  { title: "Featured Project", description: "Hotel-inspired luxury", image: abbots1.url },
+  { title: "Featured Project", description: "Elevated city living", image: pyrmont1.url },
 ];
 
 export function Awards() {
