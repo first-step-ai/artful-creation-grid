@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
 import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
@@ -16,12 +16,49 @@ const awards: { title: string; description: string; image: string; fit?: "cover"
 export function Awards() {
   const ref = useReveal<HTMLDivElement>();
   const [active, setActive] = useState(0);
+  const [previous, setPrevious] = useState<number | null>(null);
+  const [isHovering, setIsHovering] = useState(false);
+  const hoverIntent = useRef<number | null>(null);
+
+  const selectAward = (index: number) => {
+    setActive((current) => {
+      if (current === index) return current;
+      setPrevious(current);
+      return index;
+    });
+  };
+
+  const queueAward = (index: number) => {
+    if (hoverIntent.current) window.clearTimeout(hoverIntent.current);
+    hoverIntent.current = window.setTimeout(() => selectAward(index), 90);
+  };
 
   useEffect(() => {
-    const id = setInterval(() => {
-      setActive((i) => (i + 1) % awards.length);
-    }, 3500);
-    return () => clearInterval(id);
+    awards.forEach((award) => {
+      const image = new Image();
+      image.src = award.image;
+      image.decode?.().catch(() => undefined);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (isHovering) return undefined;
+
+    const id = window.setInterval(() => {
+      setActive((current) => {
+        const next = (current + 1) % awards.length;
+        setPrevious(current);
+        return next;
+      });
+    }, 4200);
+
+    return () => window.clearInterval(id);
+  }, [isHovering]);
+
+  useEffect(() => {
+    return () => {
+      if (hoverIntent.current) window.clearTimeout(hoverIntent.current);
+    };
   }, []);
 
   return (
@@ -53,10 +90,12 @@ export function Awards() {
                 return (
                   <li
                     key={a.title}
-                    onMouseEnter={() => setActive(i)}
-                    onClick={() => setActive(i)}
-                    className={`relative border-b border-ivory/15 py-3 md:py-4 cursor-pointer transition-all duration-500 ${
-                      isActive ? "opacity-100" : "opacity-40"
+                    onMouseEnter={() => queueAward(i)}
+                    onFocus={() => queueAward(i)}
+                    onClick={() => selectAward(i)}
+                    tabIndex={0}
+                    className={`relative border-b border-ivory/15 py-3 md:py-4 cursor-pointer transition-all duration-500 ease-out ${
+                      isActive ? "opacity-100" : "opacity-45 hover:opacity-75"
                     }`}
                   >
                     <span
@@ -78,20 +117,29 @@ export function Awards() {
 
 
           {/* Right: Featured Image — 60% — matches left column height exactly */}
-          <div className="md:basis-[60%] md:ml-auto relative">
+          <div
+            className="md:basis-[60%] md:ml-auto relative"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+          >
             <div className="w-full overflow-hidden bg-burgundy aspect-[4/5] md:aspect-auto md:absolute md:inset-0">
-              {awards.map((a, i) => (
+              {previous !== null && previous !== active && (
                 <img
-                  key={a.title}
-                  src={a.image}
-                  alt={`${a.title} — ${a.description}`}
+                  key={`previous-${awards[previous].title}`}
+                  src={awards[previous].image}
+                  alt={`${awards[previous].title} — ${awards[previous].description}`}
                   loading="eager"
-                  className={`absolute inset-0 h-full w-full ${a.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} transition-opacity duration-[900ms] ease-in-out ${
-                    i === active ? "opacity-100 z-10" : "opacity-0 z-0"
-                  }`}
-                  style={{ willChange: "opacity" }}
+                  className={`absolute inset-0 h-full w-full ${awards[previous].fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} scale-100 opacity-100`}
                 />
-              ))}
+              )}
+
+              <img
+                key={awards[active].title}
+                src={awards[active].image}
+                alt={`${awards[active].title} — ${awards[active].description}`}
+                loading="eager"
+                className={`absolute inset-0 h-full w-full ${awards[active].fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} animate-award-image-in`}
+              />
             </div>
           </div>
         </div>
