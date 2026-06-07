@@ -95,7 +95,7 @@ function ServiceCard({
   return (
     <article
       ref={ref}
-      className="reveal group relative overflow-hidden h-[45vh] min-h-[340px] max-h-[480px] bg-oxblood"
+      className="reveal group relative overflow-hidden h-[32vh] min-h-[260px] max-h-[360px] bg-oxblood"
     >
       <img
         src={image}
@@ -104,11 +104,11 @@ function ServiceCard({
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
-      <div className="relative h-full flex flex-col justify-end p-8 md:p-12 max-w-2xl">
-        <h2 className="font-serif text-2xl md:text-4xl font-light text-ivory leading-tight">
+      <div className="relative h-full flex flex-col justify-end p-6 md:p-10 max-w-2xl">
+        <h2 className="font-serif text-xl md:text-2xl font-light text-ivory leading-tight">
           {title}
         </h2>
-        <p className="mt-4 font-sans text-sm md:text-base text-ivory/85 leading-relaxed max-w-lg">
+        <p className="mt-3 font-sans text-xs md:text-sm text-ivory/80 leading-relaxed max-w-md">
           {body}
         </p>
       </div>
