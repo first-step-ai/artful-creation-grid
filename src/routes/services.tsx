@@ -29,17 +29,17 @@ export const Route = createFileRoute("/services")({
 const services = [
   {
     title: "Bathroom + Laundry",
-    body: "Considered, calm bathrooms and hardworking laundries — replanned, replumbed and rebuilt to look beautiful for decades, not seasons.",
+    body: "Considered, calm bathrooms and hardworking laundries. Replanned, replumbed and rebuilt to look beautiful for decades, not seasons.",
     image: bathroom.url,
   },
   {
     title: "Kitchen",
-    body: "Kitchens designed around how you actually cook, host and live — built once, properly, with materials that age beautifully.",
+    body: "Kitchens designed around how you actually cook, host and live. Built once, properly, with materials that age beautifully.",
     image: kitchen.url,
   },
   {
     title: "Full Interior Renovations",
-    body: "Multiple rooms or whole-of-home renovations, planned and delivered as a single cohesive project — one team, one manager, one schedule.",
+    body: "Multiple rooms or whole-of-home renovations, planned and delivered as a single cohesive project. One team, one manager, one schedule.",
     image: interiors.url,
   },
 ];
@@ -70,13 +70,13 @@ function Hero() {
       ref={ref}
       className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-40 md:pt-48 pb-20 md:pb-28"
     >
-      <div className="eyebrow mb-8">Our Expertise</div>
-      <h1 className="font-serif text-6xl md:text-8xl font-light tracking-tight text-ivory leading-[0.95]">
+      <div className="eyebrow mb-6">Our Expertise</div>
+      <h1 className="font-serif text-4xl md:text-5xl font-light tracking-tight text-ivory leading-[1.05]">
         What we do.
       </h1>
-      <div className="mt-10 max-w-2xl font-sans text-base md:text-lg text-ivory/80 leading-relaxed space-y-2">
+      <div className="mt-6 max-w-xl font-sans text-sm md:text-base text-ivory/75 leading-relaxed space-y-1">
         <p>Everything from a single bathroom to a full interior renovation.</p>
-        <p>We design, build and manage it all — one team, end to end.</p>
+        <p>We design, build and manage it all. One team, end to end.</p>
       </div>
     </section>
   );
@@ -95,7 +95,7 @@ function ServiceCard({
   return (
     <article
       ref={ref}
-      className="reveal group relative overflow-hidden h-[45vh] min-h-[340px] max-h-[480px] bg-oxblood"
+      className="reveal group relative overflow-hidden h-[32vh] min-h-[260px] max-h-[360px] bg-oxblood"
     >
       <img
         src={image}
@@ -104,11 +104,11 @@ function ServiceCard({
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
-      <div className="relative h-full flex flex-col justify-end p-8 md:p-12 max-w-2xl">
-        <h2 className="font-serif text-2xl md:text-4xl font-light text-ivory leading-tight">
+      <div className="relative h-full flex flex-col justify-end p-6 md:p-10 max-w-2xl">
+        <h2 className="font-serif text-xl md:text-2xl font-light text-ivory leading-tight">
           {title}
         </h2>
-        <p className="mt-4 font-sans text-sm md:text-base text-ivory/85 leading-relaxed max-w-lg">
+        <p className="mt-3 font-sans text-xs md:text-sm text-ivory/80 leading-relaxed max-w-md">
           {body}
         </p>
       </div>
