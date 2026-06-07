@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import { useReveal } from "@/hooks/use-reveal";
+import teamPhoto from "@/assets/am-team-group.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -130,15 +131,19 @@ function StudioStory() {
           </div>
         </div>
 
-        {/* PORTRAIT: editorial half-length of Jenny + Ante on a current
-            site, late-afternoon light, soft sage and charcoal palette */}
+        {/* TEAM: the AM Bathrooms + Projects crew, on-site in a finished space */}
         <div className="lg:pt-12">
-          <div className="relative aspect-[4/5] w-full border border-ivory/15 bg-[color:var(--burgundy)] overflow-hidden">
-            <div className="absolute inset-0 bg-[linear-gradient(160deg,#3a3f3a_0%,#2c302c_100%)]" />
-            <span className="absolute bottom-4 left-4 font-mono text-[0.6rem] tracking-[0.2em] text-ivory/40 uppercase">
-              Portrait — on site
-            </span>
+          <div className="relative aspect-[4/5] w-full border border-ivory/15 overflow-hidden bg-[color:var(--burgundy)]">
+            <img
+              src={teamPhoto.url}
+              alt="The AM Bathrooms + Projects team — Jenny, Ante and the crew"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover object-center"
+            />
           </div>
+          <p className="mt-5 font-mono text-[0.6rem] tracking-[0.2em] uppercase text-ivory/45">
+            The team — on site
+          </p>
         </div>
       </div>
     </Section>
