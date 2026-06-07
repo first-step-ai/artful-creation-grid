@@ -101,11 +101,13 @@ export function CardStack({
                   sendToBack(card.id);
                 }
               }}
-              onClick={() => {
-                if (isTop) {
-                  if (sendToBackOnClick) sendToBack(card.id);
-                } else {
+              onClickCapture={(e) => {
+                if (!isTop) {
+                  e.preventDefault();
+                  e.stopPropagation();
                   bringToFront(card.id);
+                } else if (sendToBackOnClick) {
+                  sendToBack(card.id);
                 }
               }}
             >
