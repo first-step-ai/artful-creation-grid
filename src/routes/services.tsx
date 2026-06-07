@@ -83,12 +83,10 @@ function Hero() {
 }
 
 function ServiceCard({
-  num,
   title,
   body,
   image,
 }: {
-  num: string;
   title: string;
   body: string;
   image: string;
@@ -97,7 +95,7 @@ function ServiceCard({
   return (
     <article
       ref={ref}
-      className="reveal group relative overflow-hidden h-[70vh] min-h-[520px] max-h-[760px] bg-oxblood"
+      className="reveal group relative overflow-hidden h-[45vh] min-h-[340px] max-h-[480px] bg-oxblood"
     >
       <img
         src={image}
@@ -106,17 +104,11 @@ function ServiceCard({
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
-      <div className="relative h-full flex flex-col justify-end p-8 md:p-14 max-w-2xl">
-        <div className="flex items-center gap-4 mb-6">
-          <span className="font-serif text-5xl md:text-6xl font-light text-ivory leading-none">
-            {num}
-          </span>
-          <span className="block h-px w-16 bg-ivory/50" />
-        </div>
-        <h2 className="font-serif text-3xl md:text-5xl font-light text-ivory leading-tight">
+      <div className="relative h-full flex flex-col justify-end p-8 md:p-12 max-w-2xl">
+        <h2 className="font-serif text-2xl md:text-4xl font-light text-ivory leading-tight">
           {title}
         </h2>
-        <p className="mt-5 font-sans text-sm md:text-base text-ivory/85 leading-relaxed max-w-lg">
+        <p className="mt-4 font-sans text-sm md:text-base text-ivory/85 leading-relaxed max-w-lg">
           {body}
         </p>
       </div>
