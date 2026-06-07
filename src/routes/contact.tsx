@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
 import { Nav } from "@/components/home/Nav";
+import { Footer } from "@/components/home/Footer";
 import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
 
 export const Route = createFileRoute("/contact")({
@@ -82,22 +83,22 @@ function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f5f1ea] text-[#1a1a1a]">
+    <div className="min-h-screen bg-[#f5f1ea] text-[#1a1a1a] flex flex-col">
       <Nav />
-      <main className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+      <main className="grid grid-cols-1 lg:grid-cols-2 flex-1">
         {/* LEFT — form panel */}
-        <section className="flex flex-col px-6 md:px-14 lg:px-20 pt-32 pb-16 lg:min-h-screen">
+        <section className="flex flex-col px-6 md:px-14 lg:px-20 pt-28 md:pt-32 pb-20">
           <div className="max-w-xl w-full">
-            <p className="text-[11px] tracking-[0.32em] uppercase text-[#1a1a1a]/60 mb-10">
+            <p className="text-[11px] tracking-[0.32em] uppercase text-[#1a1a1a]/60 mb-8">
               Contact
             </p>
-            <h1 className="font-serif font-light leading-[0.95] text-5xl md:text-6xl lg:text-[5.5rem] text-[#1a1a1a]">
+            <h1 className="font-serif font-light leading-[0.95] text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a]">
               Let's talk about
               <br />
               your home.
             </h1>
 
-            <div className="mt-10 space-y-5 text-[15px] leading-relaxed text-[#1a1a1a]/70 font-light max-w-md">
+            <div className="mt-8 space-y-4 text-[14px] leading-relaxed text-[#1a1a1a]/70 font-light max-w-md">
               <p>
                 Tell us a little about what you're thinking. Share your details for
                 a quick, obligation-free phone call.
@@ -237,15 +238,18 @@ function ContactPage() {
           </div>
         </section>
 
-        {/* RIGHT — image panel */}
+        {/* RIGHT — sticky image panel */}
         <aside className="relative hidden lg:block">
-          <img
-            src={bathroom.url}
-            alt="A finished AM bathroom interior"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+          <div className="sticky top-0 h-screen w-full overflow-hidden">
+            <img
+              src={bathroom.url}
+              alt="A finished AM bathroom interior"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
         </aside>
       </main>
+      <Footer />
     </div>
   );
 }
