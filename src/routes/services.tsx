@@ -28,19 +28,16 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    num: "01",
     title: "Bathroom + Laundry",
     body: "Considered, calm bathrooms and hardworking laundries — replanned, replumbed and rebuilt to look beautiful for decades, not seasons.",
     image: bathroom.url,
   },
   {
-    num: "02",
     title: "Kitchen",
     body: "Kitchens designed around how you actually cook, host and live — built once, properly, with materials that age beautifully.",
     image: kitchen.url,
   },
   {
-    num: "03",
     title: "Full Interior Renovations",
     body: "Multiple rooms or whole-of-home renovations, planned and delivered as a single cohesive project — one team, one manager, one schedule.",
     image: interiors.url,
