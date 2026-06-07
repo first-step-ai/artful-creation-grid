@@ -63,31 +63,33 @@ export function CardStack({
         return (
           <motion.div
             key={card.id}
-            className="absolute inset-0 cursor-grab active:cursor-grabbing rounded-md overflow-hidden shadow-[0_30px_60px_-20px_rgba(0,0,0,0.55)] bg-burgundy"
-            style={{
-              transformOrigin: "90% 90%",
-            }}
+            className="absolute inset-0"
+            style={{ transformOrigin: "90% 90%", zIndex: index }}
             animate={{
               rotateZ: (cards.length - index - 1) * 3 + rotations[index % rotations.length],
               scale: 1 + 0.04 * index - cards.length * 0.04,
               y: offset * -6,
-              zIndex: index,
             }}
             transition={{ type: "spring", stiffness: 260, damping: 22 }}
-            drag={isTop}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.6}
-            onDragEnd={(_, info) => {
-              if (
-                Math.abs(info.offset.x) > sensitivity ||
-                Math.abs(info.offset.y) > sensitivity
-              ) {
-                sendToBack(card.id);
-              }
-            }}
-            onClick={() => sendToBackOnClick && sendToBack(card.id)}
           >
-            {card.content}
+            <motion.div
+              className="h-full w-full cursor-grab active:cursor-grabbing rounded-md overflow-hidden shadow-[0_30px_60px_-20px_rgba(0,0,0,0.55)] bg-burgundy"
+              drag={isTop}
+              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+              dragElastic={0.6}
+              dragSnapToOrigin
+              onDragEnd={(_, info) => {
+                if (
+                  Math.abs(info.offset.x) > sensitivity ||
+                  Math.abs(info.offset.y) > sensitivity
+                ) {
+                  sendToBack(card.id);
+                }
+              }}
+              onClick={() => sendToBackOnClick && sendToBack(card.id)}
+            >
+              {card.content}
+            </motion.div>
           </motion.div>
         );
       })}
