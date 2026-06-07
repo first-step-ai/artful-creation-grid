@@ -118,8 +118,8 @@ function ProjectCard({ project }: { project: ProjectAward }) {
         }`}
       />
       {/* Bottom gradient + info */}
-      <div className="absolute inset-x-0 bottom-0 p-6 md:p-7 bg-gradient-to-t from-black/85 via-black/55 to-transparent">
-        <div className="text-[11px] tracking-[0.28em] uppercase text-brass mb-2">
+      <div className="absolute inset-x-0 bottom-0 pt-20 px-6 pb-6 md:px-7 md:pb-7 bg-gradient-to-t from-black/95 via-black/75 to-transparent">
+        <div className="text-[11px] tracking-[0.28em] uppercase text-ivory/85 mb-2">
           {project.suburb}
         </div>
         <div className="font-serif text-2xl md:text-[28px] leading-tight text-ivory mb-4">
@@ -162,10 +162,10 @@ function YearSection({ group }: { group: YearGroup }) {
   return (
     <section
       ref={ref}
-      className="reveal border-t border-ivory/10 py-20 md:py-28"
+      className="reveal border-t border-ivory/10 py-20 md:py-28 overflow-hidden"
     >
-      <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
-        <div className="md:col-span-5 md:sticky md:top-32">
+      <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
+        <div className="md:col-span-5">
           <div className="eyebrow mb-4">Recognition</div>
           <div className="font-serif text-[64px] md:text-[110px] leading-none text-ivory">
             {group.year}
@@ -181,10 +181,10 @@ function YearSection({ group }: { group: YearGroup }) {
           )}
         </div>
 
-        <div className="md:col-span-7 flex justify-center md:justify-end">
+        <div className="md:col-span-7 flex justify-center">
           <CardStack
             cards={cards}
-            cardDimensions={{ width: 480, height: 600 }}
+            cardDimensions={{ width: 440, height: 560 }}
             className="max-w-full"
           />
         </div>
