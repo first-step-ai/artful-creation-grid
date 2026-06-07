@@ -48,6 +48,17 @@ export function CardStack({
     });
   };
 
+  const bringToFront = (id: StackCard["id"]) => {
+    setCards((prev) => {
+      const next = [...prev];
+      const idx = next.findIndex((c) => c.id === id);
+      if (idx === -1) return prev;
+      const [card] = next.splice(idx, 1);
+      next.push(card);
+      return next;
+    });
+  };
+
   return (
     <div
       className={`relative select-none ${className ?? ""}`}
