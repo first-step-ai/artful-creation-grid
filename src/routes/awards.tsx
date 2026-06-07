@@ -201,43 +201,32 @@ function AwardsPage() {
       <main className="flex-1">
         <header
           ref={headerRef}
-          className="reveal mx-auto max-w-[1400px] px-6 md:px-10 pt-32 md:pt-40 pb-16 md:pb-24"
+          className="reveal relative isolate overflow-hidden"
         >
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-end">
-            <div className="md:col-span-7">
+          <img
+            src={rozelle1.url}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover ken-burns opacity-40"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, color-mix(in oklab, var(--oxblood) 70%, transparent) 0%, color-mix(in oklab, var(--oxblood) 78%, transparent) 50%, var(--oxblood) 100%), linear-gradient(90deg, color-mix(in oklab, var(--oxblood) 75%, transparent) 0%, transparent 70%)",
+            }}
+          />
+          <div className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-32 md:pt-40 pb-20 md:pb-32">
+            <div className="max-w-3xl">
               <div className="eyebrow mb-6">Awards · Year Timeline</div>
-              <h1 className="font-serif italic font-light text-ivory text-[2.25rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl tracking-normal">
+              <h1 className="font-serif italic font-light text-ivory text-[2.25rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl tracking-normal [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]">
                 A timeline of recognition.
               </h1>
-              <p className="mt-6 max-w-xl text-ivory/90 text-sm md:text-base font-light leading-relaxed">
+              <p className="mt-6 max-w-xl text-ivory/90 text-sm md:text-base font-light leading-relaxed [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">
                 Year by year, the projects and the people behind them recognised by
                 the industry. Drag the cards to shuffle through each year's awards.
               </p>
             </div>
-            <div className="md:col-span-5 grid grid-cols-3 gap-6 md:gap-8 md:border-l md:border-ivory/15 md:pl-10">
-              {[
-                { n: "10+", l: "Awards & Finalist Nods" },
-                { n: "3", l: "HIA NSW Wins" },
-                { n: "28", l: "Years in Sydney" },
-              ].map((s) => (
-                <div key={s.l}>
-                  <div className="font-serif text-[40px] md:text-[56px] leading-none text-ivory">
-                    {s.n}
-                  </div>
-                  <div className="mt-3 text-ivory/55 text-[10px] tracking-[0.22em] uppercase leading-snug">
-                    {s.l}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-14 md:mt-20 h-px w-full bg-ivory/10" />
-          <div className="mt-6 flex flex-wrap items-center gap-x-10 gap-y-3 text-ivory/55 text-[10px] tracking-[0.28em] uppercase">
-            <span>HIA NSW Housing Awards</span>
-            <span className="text-ivory/20">·</span>
-            <span>National Small Business Awards</span>
-            <span className="text-ivory/20">·</span>
-            <span>Master Builders Member</span>
           </div>
         </header>
 
