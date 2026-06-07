@@ -118,8 +118,8 @@ function ProjectCard({ project }: { project: ProjectAward }) {
         }`}
       />
       {/* Bottom gradient + info */}
-      <div className="absolute inset-x-0 bottom-0 p-6 md:p-7 bg-gradient-to-t from-black/85 via-black/55 to-transparent">
-        <div className="text-[11px] tracking-[0.28em] uppercase text-brass mb-2">
+      <div className="absolute inset-x-0 bottom-0 pt-20 px-6 pb-6 md:px-7 md:pb-7 bg-gradient-to-t from-black/95 via-black/75 to-transparent">
+        <div className="text-[11px] tracking-[0.28em] uppercase text-ivory/85 mb-2">
           {project.suburb}
         </div>
         <div className="font-serif text-2xl md:text-[28px] leading-tight text-ivory mb-4">
