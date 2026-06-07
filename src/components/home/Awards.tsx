@@ -84,7 +84,11 @@ export function Awards() {
               Year after Year
             </div>
 
-            <ul className="w-full flex flex-col border-t border-ivory/15">
+            <ul
+              className="w-full flex flex-col border-t border-ivory/15"
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
+            >
               {awards.map((a, i) => {
                 const isActive = i === active;
                 return (
