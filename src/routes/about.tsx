@@ -117,13 +117,13 @@ function Story() {
         <div className="lg:pt-6">
           <p className="eyebrow text-brass mb-8">Who we are</p>
 
-          <h2 className="font-serif font-light text-ivory leading-[1.05] text-4xl md:text-5xl lg:text-6xl mb-10 max-w-[14ch]">
+          <h2 className="font-serif font-light text-ivory leading-[1.05] text-3xl md:text-4xl lg:text-5xl mb-10 max-w-[14ch]">
             A boutique studio that does things differently.
           </h2>
 
           <div className="h-px w-16 bg-brass/60 mb-12" />
 
-          <div className="space-y-8 text-ivory/80 text-base md:text-lg leading-relaxed font-light max-w-[58ch]">
+          <div className="space-y-8 text-ivory/80 text-sm md:text-base leading-relaxed font-light max-w-[58ch]">
             <p>
               AM Bathrooms + Projects was founded by Jenny and Ante Matek
               because they kept hearing the same story. A renovation that
