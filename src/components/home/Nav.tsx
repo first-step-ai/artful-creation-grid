@@ -8,7 +8,7 @@ const menuItems = [
   { label: "Projects", ariaLabel: "View our projects", link: "/projects" },
   { label: "About", ariaLabel: "About us", link: "/about" },
   { label: "Services", ariaLabel: "Explore our services", link: "/services" },
-  { label: "Awards", ariaLabel: "Awards and recognition", link: "/#recognition" },
+  { label: "Awards", ariaLabel: "Awards and recognition", link: "/awards" },
   { label: "Contact", ariaLabel: "Get in touch", link: "/contact" },
 ];
 
