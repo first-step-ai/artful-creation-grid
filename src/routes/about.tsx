@@ -3,6 +3,7 @@ import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import { useReveal } from "@/hooks/use-reveal";
 import team from "@/assets/am-team.jpg.asset.json";
+import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -31,7 +32,7 @@ function AboutPage() {
     <div className="min-h-screen bg-background text-foreground">
       <Nav />
       <main>
-        <Intro />
+        <Hero />
         <Story />
       </main>
       <Footer />
@@ -39,45 +40,44 @@ function AboutPage() {
   );
 }
 
-function Intro() {
-  const ref = useReveal<HTMLDivElement>();
+function Hero() {
   return (
-    <section className="px-6 md:px-16 pt-32 md:pt-40 pb-20 md:pb-28">
-      <div
-        ref={ref}
-        className="reveal max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24 items-start"
-      >
-        <div className="md:col-span-5">
-          <span className="eyebrow block mb-10">About the studio</span>
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] font-light italic text-ivory">
-            One team.
-            <br />
-            Every detail.
+    <section className="relative w-full h-[88vh] min-h-[620px] overflow-hidden">
+      <img
+        src={team.url}
+        alt="Jenny, Ante and the AM studio team"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#1a1d1a]/85 via-[#1a1d1a]/30 to-transparent" />
+
+      <div className="relative h-full flex items-end">
+        <div className="w-full px-6 md:px-16 pb-16 md:pb-24">
+          <span className="eyebrow block mb-8 text-ivory/80">
+            About the studio
+          </span>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.02] font-light italic text-ivory max-w-5xl">
+            One team. Every detail.
             <br />
             <span className="not-italic">Start to finish.</span>
           </h1>
         </div>
+      </div>
 
-        <div className="md:col-span-7 relative">
-          <div className="aspect-[4/5] w-full bg-[color:var(--burgundy)] relative overflow-hidden">
-            <img
-              src={team.url}
-              alt="Jenny and Ante Matek with the AM studio team"
-              loading="lazy"
-              className="w-full h-full object-cover opacity-95"
-            />
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 border-l border-b border-brass/40 pointer-events-none" />
+      {/* Team chip */}
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-6 md:bottom-10 z-10">
+        <div className="flex items-center gap-4 bg-background/85 backdrop-blur-md border border-ivory/15 rounded-full pl-2 pr-6 py-2 shadow-2xl">
+          <div className="flex -space-x-2">
+            <span className="w-9 h-9 rounded-full bg-[color:var(--burgundy-soft)] text-[#1a1a1a] text-[11px] font-medium tracking-widest flex items-center justify-center border-2 border-background">
+              JM
+            </span>
+            <span className="w-9 h-9 rounded-full bg-ivory text-[#1a1a1a] text-[11px] font-medium tracking-widest flex items-center justify-center border-2 border-background">
+              AM
+            </span>
+            <span className="w-9 h-9 rounded-full bg-[color:var(--burgundy)] text-ivory text-[11px] font-medium flex items-center justify-center border-2 border-background">
+              +8
+            </span>
           </div>
-          <div className="mt-6 flex items-center gap-6">
-            <div className="flex items-center gap-2 font-serif italic text-ivory text-lg">
-              <span>JM</span>
-              <span className="text-brass">·</span>
-              <span>AM</span>
-              <span className="text-brass">·</span>
-              <span className="text-ivory/70">+8</span>
-            </div>
-            <span className="eyebrow">Our dedicated team</span>
-          </div>
+          <span className="eyebrow text-ivory/80">Our dedicated team</span>
         </div>
       </div>
     </section>
@@ -87,44 +87,56 @@ function Intro() {
 function Story() {
   const ref = useReveal<HTMLDivElement>();
   return (
-    <section className="px-6 md:px-16 py-24 md:py-32 border-t border-ivory/10">
-      <div
-        ref={ref}
-        className="reveal max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24"
-      >
-        <div className="md:col-span-4">
+    <section ref={ref} className="reveal grid grid-cols-1 lg:grid-cols-2 min-h-[80vh]">
+      <div className="relative min-h-[60vh] lg:min-h-full overflow-hidden">
+        <img
+          src={bathroom.url}
+          alt="An AM bathroom renovation"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="flex items-center px-6 md:px-16 py-20 md:py-28">
+        <div className="max-w-xl">
           <span className="eyebrow block mb-6">Who we are</span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-light italic text-ivory">
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.05] font-light italic text-ivory mb-4">
             A boutique studio that does things differently.
           </h2>
-        </div>
+          <div className="h-px w-16 bg-brass/60 mb-10" />
 
-        <div className="md:col-span-7 md:col-start-6 space-y-6 text-ivory/80 text-base md:text-lg leading-relaxed font-light">
-          <p>
-            AM Bathrooms + Projects was founded by Jenny and Ante Matek because
-            they kept hearing the same story: a renovation that should have been
-            exciting had become stressful, drawn out, and full of surprises.
-          </p>
-          <p>
-            So they built a studio where the designer, the builder, and the
-            project manager all sit in the same room. Jenny leads the design and
-            client experience. Ante leads the build. And around them is a tight
-            team of trades, stylists, and coordinators who&rsquo;ve worked
-            together for years.
-          </p>
-          <p>
-            The result is a renovation process where nothing falls between the
-            cracks. One team, one standard, from first sketch to final handover.
-          </p>
+          <div className="space-y-6 text-ivory/80 text-base md:text-lg leading-relaxed font-light">
+            <p>
+              AM Bathrooms + Projects was founded by Jenny and Ante Matek
+              because they kept hearing the same story: a renovation that
+              should have been exciting had become stressful, drawn out, and
+              full of surprises.
+            </p>
+            <p>
+              So they built a studio where the designer, the builder, and the
+              project manager all sit in the same room. Jenny leads the design
+              and client experience. Ante leads the build. And around them is
+              a tight team of trades, stylists, and coordinators who&rsquo;ve
+              worked together for years.
+            </p>
+            <p>
+              The result is a renovation process where nothing falls between
+              the cracks. One team, one standard, from first sketch to final
+              handover.
+            </p>
+          </div>
 
           <div className="pt-10">
             <Link
               to="/"
               hash="enquire"
-              className="group inline-flex items-center gap-4 py-5 px-10 border border-ivory/20 hover:border-brass transition-colors duration-700"
+              className="group inline-flex items-center gap-4 bg-ivory text-[#1a1a1a] px-8 py-4 hover:bg-brass transition-colors duration-500"
             >
-              <span className="text-ivory text-[10px] tracking-[0.5em] uppercase font-medium">
+              <span className="text-[10px] tracking-[0.5em] uppercase font-medium">
                 Start a conversation
+              </span>
+              <span aria-hidden className="transition-transform duration-500 group-hover:translate-x-1">
+                →
               </span>
             </Link>
           </div>
