@@ -127,23 +127,16 @@ export function Awards() {
             onMouseLeave={() => setIsHovering(false)}
           >
             <div className="w-full overflow-hidden bg-burgundy aspect-[4/5] md:aspect-auto md:absolute md:inset-0">
-              {previous !== null && previous !== active && (
+              {awards.map((a, i) => (
                 <img
-                  key={`previous-${awards[previous].title}`}
-                  src={awards[previous].image}
-                  alt={`${awards[previous].title} — ${awards[previous].description}`}
+                  key={a.title}
+                  src={a.image}
+                  alt={`${a.title} — ${a.description}`}
                   loading="eager"
-                  className={`absolute inset-0 h-full w-full ${awards[previous].fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} scale-100 opacity-100`}
+                  className={`absolute inset-0 h-full w-full ${a.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} transition-opacity duration-700 ease-in-out ${i === active ? "opacity-100" : "opacity-0"}`}
+                  style={{ willChange: "opacity" }}
                 />
-              )}
-
-              <img
-                key={awards[active].title}
-                src={awards[active].image}
-                alt={`${awards[active].title} — ${awards[active].description}`}
-                loading="eager"
-                className={`absolute inset-0 h-full w-full ${awards[active].fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} animate-award-image-in`}
-              />
+              ))}
             </div>
           </div>
         </div>
