@@ -204,11 +204,11 @@ function AwardsPage() {
           className="reveal mx-auto max-w-[1400px] px-6 md:px-10 pt-32 md:pt-40 pb-12 md:pb-20"
         >
           <div className="eyebrow mb-6">Awards · Year Timeline</div>
-          <h1 className="font-serif text-[44px] md:text-[88px] leading-[0.95] text-ivory max-w-4xl">
+          <h1 className="font-serif text-[32px] md:text-[56px] leading-[1.05] text-ivory max-w-3xl">
             A timeline of recognition.
           </h1>
-          <p className="mt-6 md:mt-8 text-ivory/70 max-w-xl text-[15px] md:text-[16px]">
-            Year by year, the projects — and the people behind them — recognised by the
+          <p className="mt-5 md:mt-6 text-ivory/70 max-w-xl text-[14px] md:text-[15px]">
+            Year by year, the projects and the people behind them recognised by the
             industry. Drag the cards to shuffle through each year's awards.
           </p>
         </header>
