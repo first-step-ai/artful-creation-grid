@@ -162,10 +162,10 @@ function YearSection({ group }: { group: YearGroup }) {
   return (
     <section
       ref={ref}
-      className="reveal border-t border-ivory/10 py-20 md:py-28"
+      className="reveal border-t border-ivory/10 py-20 md:py-28 overflow-hidden"
     >
-      <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
-        <div className="md:col-span-5 md:sticky md:top-32">
+      <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
+        <div className="md:col-span-5">
           <div className="eyebrow mb-4">Recognition</div>
           <div className="font-serif text-[64px] md:text-[110px] leading-none text-ivory">
             {group.year}
@@ -181,10 +181,10 @@ function YearSection({ group }: { group: YearGroup }) {
           )}
         </div>
 
-        <div className="md:col-span-7 flex justify-center md:justify-end">
+        <div className="md:col-span-7 flex justify-center">
           <CardStack
             cards={cards}
-            cardDimensions={{ width: 480, height: 600 }}
+            cardDimensions={{ width: 440, height: 560 }}
             className="max-w-full"
           />
         </div>
