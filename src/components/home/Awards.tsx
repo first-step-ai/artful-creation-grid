@@ -7,10 +7,10 @@ import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const awards: { title: string; description: string; image: string }[] = [
-  { title: "Winner 2025 HIA", description: "Nsw kitchen of the year", image: rozelle1.url },
-  { title: "Finalist 2025 HIA", description: "Nsw bathroom of the year", image: annan1.url },
-  { title: "Featured Project", description: "Hotel-inspired luxury", image: abbots1.url },
-  { title: "Featured Project", description: "Elevated city living", image: pyrmont1.url },
+  { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: rozelle1.url },
+  { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: annan1.url },
+  { title: "NATIONAL WINNER 2024 AUSTRALIA", description: "Small Business Management Award", image: abbots1.url },
+  { title: "NSW WINNER 2023", description: "Small Business Management Award", image: pyrmont1.url },
 ];
 
 export function Awards() {
