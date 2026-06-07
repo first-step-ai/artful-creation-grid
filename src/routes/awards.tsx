@@ -207,16 +207,16 @@ function AwardsPage() {
             src={rozelle1.url}
             alt=""
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover ken-burns opacity-40"
+            className="absolute inset-0 h-full w-full object-cover ken-burns opacity-70"
           />
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, color-mix(in oklab, var(--oxblood) 70%, transparent) 0%, color-mix(in oklab, var(--oxblood) 78%, transparent) 50%, var(--oxblood) 100%), linear-gradient(90deg, color-mix(in oklab, var(--oxblood) 75%, transparent) 0%, transparent 70%)",
+                "linear-gradient(180deg, color-mix(in oklab, var(--oxblood) 55%, transparent) 0%, color-mix(in oklab, var(--oxblood) 65%, transparent) 50%, var(--oxblood) 100%), linear-gradient(90deg, color-mix(in oklab, var(--oxblood) 65%, transparent) 0%, transparent 75%)",
             }}
           />
-          <div className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-32 md:pt-40 pb-20 md:pb-32">
+          <div className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-24 md:pt-28 pb-16 md:pb-20">
             <div className="max-w-3xl">
               <div className="eyebrow mb-6">Awards · Year Timeline</div>
               <h1 className="font-serif italic font-light text-ivory text-[2.25rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl tracking-normal [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]">
