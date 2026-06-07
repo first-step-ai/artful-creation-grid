@@ -29,7 +29,7 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Nav />
       <main>
         <Hero />
@@ -42,43 +42,45 @@ function AboutPage() {
 
 function Hero() {
   return (
-    <section className="relative w-full h-[88vh] min-h-[620px] overflow-hidden">
-      <img
-        src={team.url}
-        alt="Jenny, Ante and the AM studio team"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#1a1d1a]/85 via-[#1a1d1a]/30 to-transparent" />
+    <section className="relative w-full min-h-screen flex flex-col justify-end overflow-hidden">
+      {/* Background portrait */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={team.url}
+          alt="Jenny, Ante and the AM studio team"
+          className="absolute inset-0 w-full h-full object-cover grayscale-[0.15] brightness-[0.75] scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-transparent to-transparent" />
+      </div>
 
-      <div className="relative h-full flex items-end">
-        <div className="w-full px-6 md:px-16 pb-16 md:pb-24">
-          <span className="eyebrow block mb-8 text-ivory/80">
-            About the studio
+      {/* Floating chip top-left */}
+      <div className="absolute top-28 md:top-32 left-6 md:left-16 z-20">
+        <div className="inline-flex items-center gap-4 px-5 py-2.5 rounded-full border border-ivory/15 bg-background/40 backdrop-blur-xl">
+          <span className="relative flex h-1.5 w-1.5">
+            <span className="absolute inline-flex h-full w-full rounded-full bg-brass opacity-60 motion-safe:animate-ping" />
+            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-brass" />
           </span>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.02] font-light italic text-ivory max-w-5xl">
-            One team. Every detail.
-            <br />
-            <span className="not-italic">Start to finish.</span>
-          </h1>
+          <span className="text-[10px] uppercase tracking-[0.28em] font-medium text-ivory/90">
+            JM · AM · +8 — Our dedicated team
+          </span>
         </div>
       </div>
 
-      {/* Team chip */}
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-6 md:bottom-10 z-10">
-        <div className="flex items-center gap-4 bg-background/85 backdrop-blur-md border border-ivory/15 rounded-full pl-2 pr-6 py-2 shadow-2xl">
-          <div className="flex -space-x-2">
-            <span className="w-9 h-9 rounded-full bg-[color:var(--burgundy-soft)] text-[#1a1a1a] text-[11px] font-medium tracking-widest flex items-center justify-center border-2 border-background">
-              JM
-            </span>
-            <span className="w-9 h-9 rounded-full bg-ivory text-[#1a1a1a] text-[11px] font-medium tracking-widest flex items-center justify-center border-2 border-background">
-              AM
-            </span>
-            <span className="w-9 h-9 rounded-full bg-[color:var(--burgundy)] text-ivory text-[11px] font-medium flex items-center justify-center border-2 border-background">
-              +8
-            </span>
-          </div>
-          <span className="eyebrow text-ivory/80">Our dedicated team</span>
-        </div>
+      {/* Headline lockup bottom-left */}
+      <div className="relative z-10 px-6 md:px-16 pb-20 md:pb-28 max-w-7xl">
+        <span className="eyebrow block mb-8 text-ivory/70">
+          About the studio
+        </span>
+        <h1
+          className="font-serif italic font-light leading-[0.88] tracking-tight text-ivory text-6xl md:text-8xl lg:text-[8.5rem]"
+        >
+          One team.
+          <br />
+          Every detail.
+          <br />
+          <span className="text-ivory/45">Start to finish.</span>
+        </h1>
       </div>
     </section>
   );
@@ -87,25 +89,36 @@ function Hero() {
 function Story() {
   const ref = useReveal<HTMLDivElement>();
   return (
-    <section ref={ref} className="reveal grid grid-cols-1 lg:grid-cols-2 min-h-[80vh]">
-      <div className="relative min-h-[60vh] lg:min-h-full overflow-hidden">
-        <img
-          src={bathroom.url}
-          alt="An AM bathroom renovation"
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
+    <section
+      ref={ref}
+      className="reveal relative py-28 md:py-44 px-6 md:px-16"
+    >
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+        {/* Image column */}
+        <div className="lg:col-span-5">
+          <div className="relative aspect-[3/4] w-full overflow-hidden">
+            <img
+              src={bathroom.url}
+              alt="An AM bathroom renovation"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms] ease-out hover:scale-105"
+            />
+            <div className="absolute inset-0 border border-ivory/5 pointer-events-none" />
+          </div>
+          <p className="mt-6 eyebrow text-ivory/50">
+            Detail 01 — Annandale
+          </p>
+        </div>
 
-      <div className="flex items-center px-6 md:px-16 py-20 md:py-28">
-        <div className="max-w-xl">
-          <span className="eyebrow block mb-6">Who we are</span>
-          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.05] font-light italic text-ivory mb-4">
+        {/* Content column */}
+        <div className="lg:col-span-7 lg:pt-16">
+          <span className="eyebrow block mb-10 text-brass">Who we are</span>
+
+          <h2 className="font-serif italic font-light leading-[1.05] text-ivory text-4xl md:text-5xl lg:text-6xl mb-14 max-w-xl">
             A boutique studio that does things differently.
           </h2>
-          <div className="h-px w-16 bg-brass/60 mb-10" />
 
-          <div className="space-y-6 text-ivory/80 text-base md:text-lg leading-relaxed font-light">
+          <div className="space-y-8 max-w-lg text-ivory/75 text-base md:text-lg leading-relaxed font-light">
             <p>
               AM Bathrooms + Projects was founded by Jenny and Ante Matek
               because they kept hearing the same story: a renovation that
@@ -126,18 +139,19 @@ function Story() {
             </p>
           </div>
 
-          <div className="pt-10">
+          <div className="mt-16">
             <Link
               to="/"
               hash="enquire"
-              className="group inline-flex items-center gap-4 bg-ivory text-[#1a1a1a] px-8 py-4 hover:bg-brass transition-colors duration-500"
+              className="group inline-flex items-center gap-8 py-4 border-b border-ivory/20 hover:border-brass transition-colors duration-700"
             >
-              <span className="text-[10px] tracking-[0.5em] uppercase font-medium">
+              <span className="text-[11px] tracking-[0.32em] uppercase font-medium text-ivory">
                 Start a conversation
               </span>
-              <span aria-hidden className="transition-transform duration-500 group-hover:translate-x-1">
-                →
-              </span>
+              <span
+                aria-hidden
+                className="block h-px w-12 bg-brass transition-all duration-700 ease-out group-hover:w-20"
+              />
             </Link>
           </div>
         </div>
