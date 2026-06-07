@@ -3,6 +3,7 @@ import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import { useReveal } from "@/hooks/use-reveal";
 import teamPhoto from "@/assets/am-team-group.jpg.asset.json";
+import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -11,47 +12,20 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "AM Bathrooms + Projects — a Sydney studio handling design, build and project management in-house, from first sketch to final handover.",
+          "A boutique studio founded by Jenny and Ante Matek. One team handling design, build and project management from first sketch to final handover.",
       },
       { property: "og:title", content: "About | AM Bathrooms + Projects" },
       {
         property: "og:description",
         content:
-          "A Sydney studio handling design, build and project management in-house.",
+          "One team. Every detail. Start to finish.",
       },
+      { property: "og:image", content: teamPhoto.url },
+      { name: "twitter:image", content: teamPhoto.url },
     ],
   }),
   component: AboutPage,
 });
-
-/* ------------------------------------------------------------------ */
-/*  Shared building blocks                                            */
-/* ------------------------------------------------------------------ */
-
-const eyebrowCls =
-  "font-mono uppercase text-[0.65rem] tracking-[0.2em] text-brass";
-
-function Section({
-  children,
-  className = "",
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  const ref = useReveal<HTMLElement>();
-  return (
-    <section
-      ref={ref}
-      className={`reveal reveal-stagger py-16 md:py-32 px-6 md:px-10 ${className}`}
-    >
-      <div className="max-w-[1200px] mx-auto">{children}</div>
-    </section>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  Page                                                              */
-/* ------------------------------------------------------------------ */
 
 function AboutPage() {
   return (
@@ -59,279 +33,136 @@ function AboutPage() {
       <Nav />
       <main>
         <Hero />
-        <StudioStory />
-        <TheCraft />
-        <PullQuote />
-        <ByTheNumbers />
-        <Suppliers />
-        <ClosingCTA />
+        <Story />
       </main>
       <Footer />
     </div>
   );
 }
 
-/* ------------------------------------------------------------------ */
-/*  1. Hero                                                            */
-/* ------------------------------------------------------------------ */
+/* -------------------------------------------------------------- */
+/*  Hero                                                          */
+/* -------------------------------------------------------------- */
 
 function Hero() {
   return (
-    <section className="relative w-full h-screen min-h-[640px] overflow-hidden flex flex-col justify-end">
-      {/* HERO: slow-pan of a finished AM master bathroom, natural side light,
-          stone vanity in foreground, brass tapware catching highlight */}
-      <div className="absolute inset-0 bg-[color:var(--burgundy)]">
-        <div className="absolute inset-0 bg-[linear-gradient(135deg,#2f342f_0%,#3d4239_55%,#2a2e2a_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/20 to-background/30" />
-      </div>
+    <section className="relative w-full h-screen min-h-[680px] overflow-hidden">
+      <img
+        src={teamPhoto.url}
+        alt="The AM Bathrooms + Projects team"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      {/* Quiet darkening for legibility, kept light per reference */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent" />
 
-      <div className="relative z-10 px-6 md:px-10 pb-20 md:pb-28 max-w-[1200px] w-full mx-auto">
-        <p className={`${eyebrowCls} mb-10`}>
-          EST. 2013 · SYDNEY
-        </p>
-        <h1 className="font-serif italic font-light text-ivory leading-[0.95] tracking-tight text-5xl md:text-7xl lg:text-[5.5rem] max-w-4xl">
-          A small studio for rooms
-          <br />
-          that take their time.
-        </h1>
-        <p className="mt-8 max-w-[58ch] text-ivory/70 text-base md:text-lg font-light leading-relaxed">
-          Design, build and project management under one roof — handled by
-          the same team from first sketch to the day you walk in.
-        </p>
+      <div className="relative h-full max-w-[1400px] mx-auto flex items-end px-6 md:px-12 lg:px-16 pb-16 md:pb-24">
+        <div>
+          <p className="eyebrow text-ivory/80 mb-8">About the studio</p>
+          <h1 className="font-serif font-light text-ivory leading-[0.95] tracking-tight text-5xl md:text-7xl lg:text-[6.5rem]">
+            One team. Every detail.
+            <br />
+            Start to finish.
+          </h1>
+        </div>
       </div>
     </section>
   );
 }
 
-/* ------------------------------------------------------------------ */
-/*  2. Studio story                                                    */
-/* ------------------------------------------------------------------ */
+/* -------------------------------------------------------------- */
+/*  Story                                                         */
+/* -------------------------------------------------------------- */
 
-function StudioStory() {
-  return (
-    <Section>
-      <div className="grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-12 lg:gap-24 items-start">
-        <div>
-          <p className={`${eyebrowCls} mb-8`}>The studio</p>
-          <h2 className="font-serif italic font-light text-ivory leading-[1.05] text-3xl md:text-5xl mb-10 max-w-[16ch]">
-            Founded by Jenny and Ante Matek in 2013.
-          </h2>
-          <div className="space-y-6 max-w-[58ch] text-ivory/75 text-base md:text-lg font-light leading-relaxed">
-            <p>
-              Jenny leads design and the client side of every project. Ante
-              leads the build and runs the site. They started the studio
-              after a decade of seeing the designer, the builder and the
-              project manager work from three different rooms.
-            </p>
-            <p>
-              Around them is a tight crew of trades, stylists and
-              coordinators who have worked together for years. One team,
-              one standard, one number to call.
-            </p>
-          </div>
-        </div>
-
-        {/* TEAM: the AM Bathrooms + Projects crew, on-site in a finished space */}
-        <div className="lg:pt-12">
-          <div className="relative aspect-[4/5] w-full border border-ivory/15 overflow-hidden bg-[color:var(--burgundy)]">
-            <img
-              src={teamPhoto.url}
-              alt="The AM Bathrooms + Projects team — Jenny, Ante and the crew"
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover object-center"
-            />
-          </div>
-          <p className="mt-5 font-mono text-[0.6rem] tracking-[0.2em] uppercase text-ivory/45">
-            The team — on site
-          </p>
-        </div>
-      </div>
-    </Section>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  3. The craft                                                       */
-/* ------------------------------------------------------------------ */
-
-const pillars = [
-  {
-    n: "01",
-    title: "Design",
-    body: "Drawings, joinery details and material boards developed in-house, refined against your space.",
-  },
-  {
-    n: "02",
-    title: "Materials",
-    body: "Stone, tile and tapware selected with you and ordered direct — no markup hidden behind a catalogue.",
-  },
-  {
-    n: "03",
-    title: "Build",
-    body: "Site run by Ante with our own trades. One foreman from demo through final silicone bead.",
-  },
-  {
-    n: "04",
-    title: "Aftercare",
-    body: "Twelve-month check-in, a maintenance brief, and the same people on the phone if something needs attention.",
-  },
-];
-
-function TheCraft() {
-  return (
-    <Section>
-      <p className={`${eyebrowCls} mb-8`}>The craft</p>
-      <h2 className="font-serif italic font-light text-ivory leading-[1.05] text-3xl md:text-5xl mb-16 max-w-[20ch]">
-        Four stages, one team across every one of them.
-      </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-ivory/15">
-        {pillars.map((p, i) => (
-          <div
-            key={p.n}
-            className={`py-10 lg:py-12 lg:px-8 ${
-              i > 0 ? "lg:border-l border-ivory/15" : ""
-            } ${i > 0 ? "sm:border-t-0 border-t border-ivory/15 sm:border-t" : ""}`}
-          >
-            <p className="font-mono text-[0.65rem] tracking-[0.2em] text-brass mb-6">
-              {p.n}
-            </p>
-            <h3 className="font-serif italic font-light text-ivory text-2xl md:text-3xl mb-4">
-              {p.title}
-            </h3>
-            <p className="text-ivory/70 text-sm md:text-base font-light leading-relaxed max-w-[36ch]">
-              {p.body}
-            </p>
-          </div>
-        ))}
-      </div>
-    </Section>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  4. Pull quote                                                      */
-/* ------------------------------------------------------------------ */
-
-function PullQuote() {
+function Story() {
   const ref = useReveal<HTMLElement>();
   return (
     <section
       ref={ref}
-      className="reveal py-32 md:py-56 px-6 md:px-10"
+      className="reveal py-24 md:py-40 px-6 md:px-12 lg:px-16"
     >
-      <div className="max-w-[1100px] mx-auto text-center">
-        <p className="font-serif italic font-light text-ivory leading-[1.1] text-3xl md:text-5xl lg:text-[3.5rem]">
-          We finish the rooms we draw, so the drawing has to
-          survive the build.
-        </p>
-        <p className={`${eyebrowCls} mt-12`}>
-          Ante Matek · Director, build
-        </p>
-      </div>
-    </section>
-  );
-}
+      <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+        {/* Image column with floating chip */}
+        <div className="relative">
+          <div className="relative w-full aspect-[4/5] overflow-hidden border border-ivory/10">
+            <img
+              src={bathroom.url}
+              alt="An AM bathroom renovation"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
 
-/* ------------------------------------------------------------------ */
-/*  5. By the numbers                                                  */
-/* ------------------------------------------------------------------ */
+          {/* Floating team chip */}
+          <div className="absolute left-1/2 -translate-x-1/2 -bottom-7 z-10">
+            <div className="flex items-center gap-4 bg-background border border-ivory/15 rounded-full pl-2 pr-6 py-2">
+              <div className="flex -space-x-2">
+                <span className="w-9 h-9 rounded-full bg-[color:var(--burgundy-soft)] text-[#1a1a1a] text-[10px] font-medium tracking-widest flex items-center justify-center border-2 border-background">
+                  JM
+                </span>
+                <span className="w-9 h-9 rounded-full bg-ivory text-[#1a1a1a] text-[10px] font-medium tracking-widest flex items-center justify-center border-2 border-background">
+                  AM
+                </span>
+                <span className="w-9 h-9 rounded-full bg-[color:var(--burgundy)] text-ivory text-[10px] font-medium flex items-center justify-center border-2 border-background">
+                  +8
+                </span>
+              </div>
+              <span className="eyebrow text-ivory/80">
+                Our dedicated team
+              </span>
+            </div>
+          </div>
+        </div>
 
-const stats = [
-  { n: "13", label: "Years in trade" },
-  { n: "140", label: "Projects delivered" },
-  { n: "22", label: "Sydney suppliers" },
-  { n: "100%", label: "In-house build" },
-];
+        {/* Content column */}
+        <div className="lg:pt-6">
+          <p className="eyebrow text-brass mb-8">Who we are</p>
 
-function ByTheNumbers() {
-  return (
-    <Section>
-      <p className={`${eyebrowCls} mb-12`}>By the numbers</p>
-      <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-ivory/15">
-        {stats.map((s, i) => (
-          <div
-            key={s.label}
-            className={`py-10 md:py-14 lg:px-8 ${
-              i > 0 ? "lg:border-l border-ivory/15" : ""
-            }`}
-          >
-            <p className="font-serif italic font-light text-ivory text-5xl md:text-6xl lg:text-7xl leading-none mb-5">
-              {s.n}
+          <h2 className="font-serif font-light text-ivory leading-[1.05] text-4xl md:text-5xl lg:text-6xl mb-10 max-w-[14ch]">
+            A boutique studio that does things differently.
+          </h2>
+
+          <div className="h-px w-16 bg-brass/60 mb-12" />
+
+          <div className="space-y-8 text-ivory/80 text-base md:text-lg leading-relaxed font-light max-w-[58ch]">
+            <p>
+              AM Bathrooms + Projects was founded by Jenny and Ante Matek
+              because they kept hearing the same story. A renovation that
+              should have been exciting had become stressful, drawn out,
+              and full of surprises.
             </p>
-            <p className="font-mono uppercase text-[0.65rem] tracking-[0.2em] text-ivory/55">
-              {s.label}
+            <p>
+              So they built a studio where the designer, the builder, and
+              the project manager all sit in the same room. Jenny leads
+              the design and client experience. Ante leads the build. And
+              around them is a tight team of trades, stylists, and
+              coordinators who&rsquo;ve worked together for years.
+            </p>
+            <p>
+              The result is a renovation process where nothing falls
+              between the cracks. One team, one standard, from first
+              sketch to final handover.
             </p>
           </div>
-        ))}
+
+          <div className="pt-14">
+            <Link
+              to="/"
+              hash="enquire"
+              className="group inline-flex items-center gap-6 bg-[color:var(--burgundy)] border border-ivory/15 text-ivory px-10 py-5 hover:bg-[color:var(--brass)] hover:text-[#1a1a1a] transition-colors duration-500"
+            >
+              <span className="text-[11px] tracking-[0.32em] uppercase font-medium">
+                Start a conversation
+              </span>
+              <span
+                aria-hidden
+                className="transition-transform duration-500 group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </Link>
+          </div>
+        </div>
       </div>
-    </Section>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  6. Suppliers                                                       */
-/* ------------------------------------------------------------------ */
-
-const suppliers = [
-  "Artedomus",
-  "Signorino",
-  "Astra Walker",
-  "Brodware",
-  "Sussex Taps",
-  "Rogerseller",
-  "Reece",
-  "CDK Stone",
-  "Academy Tiles",
-  "Eco Outdoor",
-  "Mafi Timber",
-  "Apaiser",
-];
-
-function Suppliers() {
-  return (
-    <Section>
-      <p className={`${eyebrowCls} mb-10`}>Trusted partners</p>
-      <p className="font-serif italic font-light text-ivory leading-[1.25] text-2xl md:text-4xl lg:text-5xl max-w-[1100px]">
-        {suppliers.map((name, i) => (
-          <span key={name}>
-            {name}
-            {i < suppliers.length - 1 && (
-              <span className="text-brass mx-3 md:mx-5">·</span>
-            )}
-          </span>
-        ))}
-      </p>
-    </Section>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  7. Closing CTA                                                     */
-/* ------------------------------------------------------------------ */
-
-function ClosingCTA() {
-  return (
-    <Section className="border-t border-ivory/15">
-      <div className="max-w-[1200px] mx-auto flex flex-col items-start gap-10 md:gap-12">
-        <p className={eyebrowCls}>Next step</p>
-        <p className="font-serif italic font-light text-ivory leading-[1.1] text-3xl md:text-5xl max-w-[20ch]">
-          If you have a project in mind, we&rsquo;d love to talk.
-        </p>
-        <Link
-          to="/"
-          hash="enquire"
-          className="group inline-flex items-center gap-6 border border-ivory/30 hover:border-brass px-8 py-4 transition-colors duration-500"
-        >
-          <span className="font-mono uppercase text-[0.65rem] tracking-[0.2em] text-ivory">
-            Start a conversation
-          </span>
-          <span
-            aria-hidden
-            className="block h-px w-8 bg-brass transition-all duration-500 group-hover:w-14"
-          />
-        </Link>
-      </div>
-    </Section>
+    </section>
   );
 }
