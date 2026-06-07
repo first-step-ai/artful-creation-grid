@@ -206,10 +206,10 @@ function AwardsPage() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-end">
             <div className="md:col-span-7">
               <div className="eyebrow mb-6">Awards · Year Timeline</div>
-              <h1 className="font-serif text-[32px] md:text-[56px] leading-[1.05] text-ivory max-w-3xl">
+              <h1 className="font-serif italic font-light text-ivory text-[2.25rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl tracking-normal">
                 A timeline of recognition.
               </h1>
-              <p className="mt-5 md:mt-6 text-ivory/70 max-w-xl text-[14px] md:text-[15px]">
+              <p className="mt-6 max-w-xl text-ivory/90 text-sm md:text-base font-light leading-relaxed">
                 Year by year, the projects and the people behind them recognised by
                 the industry. Drag the cards to shuffle through each year's awards.
               </p>
