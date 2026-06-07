@@ -48,7 +48,7 @@ function Hero() {
         <img
           src={team.url}
           alt="Jenny, Ante and the AM studio team"
-          className="absolute inset-0 w-full h-full object-cover grayscale-[0.15] brightness-[0.75] scale-105 motion-safe:animate-[kenburns_20s_ease-out_forwards]"
+          className="absolute inset-0 w-full h-full object-cover grayscale-[0.15] brightness-[0.75] scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/30" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-transparent to-transparent" />
