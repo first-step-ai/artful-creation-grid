@@ -292,13 +292,7 @@ function YearSection({ group }: { group: YearGroup }) {
   const ref = useReveal<HTMLDivElement>();
   const cards: StackCard[] = group.projects.map((p) => ({
     id: p.id,
-    content: p.href ? (
-      <Link to={p.href} className="block h-full w-full">
-        <ProjectCard project={p} />
-      </Link>
-    ) : (
-      <ProjectCard project={p} />
-    ),
+    content: <ProjectCard project={p} />,
   }));
 
   return (
