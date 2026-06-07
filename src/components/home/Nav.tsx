@@ -6,7 +6,7 @@ import amOnly from "@/assets/am-mark.png.asset.json";
 const menuItems = [
   { label: "Home", ariaLabel: "Home", link: "/" },
   { label: "Projects", ariaLabel: "View our projects", link: "/projects" },
-  { label: "About", ariaLabel: "About us", link: "/#manifesto" },
+  { label: "About", ariaLabel: "About us", link: "/about" },
   { label: "Services", ariaLabel: "Explore our services", link: "/services" },
   { label: "Awards", ariaLabel: "Awards and recognition", link: "/#recognition" },
   { label: "Contact", ariaLabel: "Get in touch", link: "/#enquire" },
