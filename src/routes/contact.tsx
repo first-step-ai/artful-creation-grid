@@ -1,0 +1,323 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { toast } from "sonner";
+import { Nav } from "@/components/home/Nav";
+import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
+
+export const Route = createFileRoute("/contact")({
+  head: () => ({
+    meta: [
+      { title: "Contact | AM Bathrooms + Projects" },
+      {
+        name: "description",
+        content:
+          "Tell us a little about your home. We'll arrange a quick, obligation-free phone call, then come to you for a paid in-home consult.",
+      },
+      { property: "og:title", content: "Contact | AM Bathrooms + Projects" },
+      {
+        property: "og:description",
+        content: "Let's talk about your home.",
+      },
+      { property: "og:image", content: bathroom.url },
+      { name: "twitter:image", content: bathroom.url },
+    ],
+  }),
+  component: ContactPage,
+});
+
+type FormData = {
+  project: string;
+  address: string;
+  stage: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  notes: string;
+};
+
+const initial: FormData = {
+  project: "",
+  address: "",
+  stage: "",
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  notes: "",
+};
+
+const projectTypes = ["Bathroom", "Kitchen", "Laundry", "Multi-Space", "Full Renovation", "Not sure yet"];
+const stages = ["Just starting to explore", "Have a rough budget", "Ready to get quotes", "Ready to start soon"];
+
+function ContactPage() {
+  const [step, setStep] = useState(1);
+  const [data, setData] = useState<FormData>(initial);
+  const total = 4;
+  const pct = Math.round((step / total) * 100);
+
+  const update = <K extends keyof FormData>(k: K, v: FormData[K]) =>
+    setData((d) => ({ ...d, [k]: v }));
+
+  const canContinue =
+    (step === 1 && data.project) ||
+    (step === 2 && data.address.trim().length > 2) ||
+    (step === 3 && data.stage) ||
+    step === 4;
+
+  const next = () => {
+    if (step < total) setStep(step + 1);
+  };
+  const back = () => setStep(Math.max(1, step - 1));
+
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!data.firstName || !data.lastName || !data.email) {
+      toast.error("Please share your name and email so we can reach you.");
+      return;
+    }
+    toast.success("Thank you. We'll be in touch within two business days.");
+    setData(initial);
+    setStep(1);
+  };
+
+  return (
+    <div className="min-h-screen bg-[#f5f1ea] text-[#1a1a1a]">
+      <Nav />
+      <main className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+        {/* LEFT — form panel */}
+        <section className="flex flex-col px-6 md:px-14 lg:px-20 pt-32 pb-16 lg:min-h-screen">
+          <div className="max-w-xl w-full">
+            <p className="text-[11px] tracking-[0.32em] uppercase text-[#1a1a1a]/60 mb-10">
+              Contact
+            </p>
+            <h1 className="font-serif font-light leading-[0.95] text-5xl md:text-6xl lg:text-[5.5rem] text-[#1a1a1a]">
+              Let's talk about
+              <br />
+              your home.
+            </h1>
+
+            <div className="mt-10 space-y-5 text-[15px] leading-relaxed text-[#1a1a1a]/70 font-light max-w-md">
+              <p>
+                Tell us a little about what you're thinking. Share your details for
+                a quick, obligation-free phone call.
+              </p>
+              <p>
+                Then we come to you. A paid in-home consult to see the space, hear
+                the dream, and start making it real.
+              </p>
+            </div>
+
+            {/* Progress */}
+            <div className="mt-14">
+              <div className="flex items-center justify-between text-[11px] tracking-[0.28em] uppercase text-[#1a1a1a]/60 mb-3">
+                <span>Step {step} of {total}</span>
+                <span>{pct}%</span>
+              </div>
+              <div className="h-px w-full bg-[#1a1a1a]/12 relative">
+                <div
+                  className="absolute inset-y-0 left-0 bg-[#1a1a1a] transition-all duration-500 ease-out"
+                  style={{ width: `${pct}%`, height: "1px" }}
+                />
+              </div>
+            </div>
+
+            {/* Step content */}
+            <form onSubmit={submit} className="mt-12">
+              {step === 1 && (
+                <Step title="What are you thinking about renovating?">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {projectTypes.map((t) => (
+                      <Choice
+                        key={t}
+                        label={t}
+                        selected={data.project === t}
+                        onClick={() => update("project", t)}
+                      />
+                    ))}
+                  </div>
+                </Step>
+              )}
+
+              {step === 2 && (
+                <Step title="Where is the property located?">
+                  <div>
+                    <label
+                      htmlFor="address"
+                      className="block text-[11px] tracking-[0.28em] uppercase text-[#1a1a1a]/60 mb-3"
+                    >
+                      Full address
+                    </label>
+                    <input
+                      id="address"
+                      autoFocus
+                      value={data.address}
+                      onChange={(e) => update("address", e.target.value)}
+                      className="w-full bg-transparent border-b border-[#1a1a1a]/25 focus:border-[#1a1a1a] outline-none py-3 text-lg text-[#1a1a1a] placeholder:text-[#1a1a1a]/30 transition-colors"
+                      placeholder=""
+                    />
+                  </div>
+                </Step>
+              )}
+
+              {step === 3 && (
+                <Step title="Where are you in the process?">
+                  <div className="space-y-3">
+                    {stages.map((s) => (
+                      <Choice
+                        key={s}
+                        label={s}
+                        selected={data.stage === s}
+                        onClick={() => update("stage", s)}
+                        full
+                      />
+                    ))}
+                  </div>
+                </Step>
+              )}
+
+              {step === 4 && (
+                <Step title="Your details">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+                    <Field label="First name" value={data.firstName} onChange={(v) => update("firstName", v)} required />
+                    <Field label="Last name" value={data.lastName} onChange={(v) => update("lastName", v)} required />
+                    <Field label="Email" type="email" value={data.email} onChange={(v) => update("email", v)} required />
+                    <Field label="Phone" type="tel" value={data.phone} onChange={(v) => update("phone", v)} />
+                    <div className="sm:col-span-2">
+                      <label className="block text-[11px] tracking-[0.28em] uppercase text-[#1a1a1a]/60 mb-3">
+                        Anything else you'd like us to know (optional)
+                      </label>
+                      <textarea
+                        value={data.notes}
+                        onChange={(e) => update("notes", e.target.value)}
+                        rows={4}
+                        className="w-full bg-transparent border-b border-[#1a1a1a]/25 focus:border-[#1a1a1a] outline-none py-3 text-[#1a1a1a] resize-y transition-colors"
+                      />
+                    </div>
+                  </div>
+                </Step>
+              )}
+
+              {/* Nav buttons */}
+              <div className="mt-14 flex items-center justify-between">
+                {step > 1 ? (
+                  <button
+                    type="button"
+                    onClick={back}
+                    className="group inline-flex items-center gap-3 text-[11px] tracking-[0.32em] uppercase text-[#1a1a1a]/70 hover:text-[#1a1a1a] transition-colors"
+                  >
+                    <span aria-hidden className="transition-transform group-hover:-translate-x-1">←</span>
+                    Back
+                  </button>
+                ) : (
+                  <span />
+                )}
+
+                {step < total ? (
+                  <button
+                    type="button"
+                    onClick={next}
+                    disabled={!canContinue}
+                    className="group inline-flex items-center gap-4 bg-[#383d38] text-[#ebf0e9] px-8 py-4 text-[11px] tracking-[0.32em] uppercase disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#1a1a1a] transition-colors"
+                  >
+                    Continue
+                    <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                  </button>
+                ) : (
+                  <button
+                    type="submit"
+                    className="group inline-flex items-center gap-4 bg-[#383d38] text-[#ebf0e9] px-8 py-4 text-[11px] tracking-[0.32em] uppercase hover:bg-[#1a1a1a] transition-colors"
+                  >
+                    Share my info
+                    <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                  </button>
+                )}
+              </div>
+            </form>
+          </div>
+        </section>
+
+        {/* RIGHT — image panel */}
+        <aside className="relative hidden lg:block">
+          <img
+            src={bathroom.url}
+            alt="A finished AM bathroom interior"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </aside>
+      </main>
+    </div>
+  );
+}
+
+function Step({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="space-y-8 animate-in fade-in duration-500">
+      <h2 className="font-serif font-light text-2xl md:text-[28px] leading-tight text-[#1a1a1a]">
+        {title}
+      </h2>
+      {children}
+    </div>
+  );
+}
+
+function Choice({
+  label,
+  selected,
+  onClick,
+  full,
+}: {
+  label: string;
+  selected: boolean;
+  onClick: () => void;
+  full?: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={[
+        "text-left px-5 py-4 border transition-all text-[14px]",
+        full ? "w-full" : "",
+        selected
+          ? "bg-[#383d38] text-[#ebf0e9] border-[#383d38]"
+          : "bg-transparent text-[#1a1a1a] border-[#1a1a1a]/20 hover:border-[#1a1a1a]/60",
+      ].join(" ")}
+    >
+      <span className="flex items-center justify-between gap-4">
+        <span>{label}</span>
+        {selected && <span aria-hidden>✓</span>}
+      </span>
+    </button>
+  );
+}
+
+function Field({
+  label,
+  value,
+  onChange,
+  type = "text",
+  required,
+}: {
+  label: string;
+  value: string;
+  onChange: (v: string) => void;
+  type?: string;
+  required?: boolean;
+}) {
+  return (
+    <div>
+      <label className="block text-[11px] tracking-[0.28em] uppercase text-[#1a1a1a]/60 mb-3">
+        {label}
+        {required && <span className="ml-1">*</span>}
+      </label>
+      <input
+        type={type}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        required={required}
+        className="w-full bg-transparent border-b border-[#1a1a1a]/25 focus:border-[#1a1a1a] outline-none py-3 text-[#1a1a1a] transition-colors"
+      />
+    </div>
+  );
+}

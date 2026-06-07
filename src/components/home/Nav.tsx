@@ -9,7 +9,7 @@ const menuItems = [
   { label: "About", ariaLabel: "About us", link: "/about" },
   { label: "Services", ariaLabel: "Explore our services", link: "/services" },
   { label: "Awards", ariaLabel: "Awards and recognition", link: "/#recognition" },
-  { label: "Contact", ariaLabel: "Get in touch", link: "/#enquire" },
+  { label: "Contact", ariaLabel: "Get in touch", link: "/contact" },
 ];
 
 export function Nav() {
