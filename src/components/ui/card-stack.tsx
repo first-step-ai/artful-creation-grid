@@ -48,6 +48,17 @@ export function CardStack({
     });
   };
 
+  const bringToFront = (id: StackCard["id"]) => {
+    setCards((prev) => {
+      const next = [...prev];
+      const idx = next.findIndex((c) => c.id === id);
+      if (idx === -1) return prev;
+      const [card] = next.splice(idx, 1);
+      next.push(card);
+      return next;
+    });
+  };
+
   return (
     <div
       className={`relative select-none ${className ?? ""}`}
@@ -74,19 +85,29 @@ export function CardStack({
           >
             <motion.div
               className="h-full w-full cursor-grab active:cursor-grabbing rounded-md overflow-hidden shadow-[0_30px_60px_-20px_rgba(0,0,0,0.55)] bg-burgundy"
-              drag={isTop}
+              drag
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
               dragElastic={0.6}
               dragSnapToOrigin
+              onDragStart={() => {
+                if (!isTop) bringToFront(card.id);
+              }}
               onDragEnd={(_, info) => {
                 if (
-                  Math.abs(info.offset.x) > sensitivity ||
-                  Math.abs(info.offset.y) > sensitivity
+                  isTop &&
+                  (Math.abs(info.offset.x) > sensitivity ||
+                    Math.abs(info.offset.y) > sensitivity)
                 ) {
                   sendToBack(card.id);
                 }
               }}
-              onClick={() => sendToBackOnClick && sendToBack(card.id)}
+              onClick={() => {
+                if (isTop) {
+                  if (sendToBackOnClick) sendToBack(card.id);
+                } else {
+                  bringToFront(card.id);
+                }
+              }}
             >
               {card.content}
             </motion.div>
