@@ -6,11 +6,11 @@ import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
-const awards: { title: string; description: string; image: string }[] = [
+const awards: { title: string; description: string; image: string; fit?: "cover" | "contain" }[] = [
   { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: rozelle1.url },
   { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: annan1.url },
-  { title: "NATIONAL WINNER 2024 AUSTRALIA", description: "Small Business Management Award", image: national2024.url },
-  { title: "NSW WINNER 2022", description: "Small Business Management Award", image: nsw2022.url },
+  { title: "NATIONAL WINNER 2024 AUSTRALIA", description: "Small Business Management Award", image: national2024.url, fit: "contain" },
+  { title: "NSW WINNER 2022", description: "Small Business Management Award", image: nsw2022.url, fit: "contain" },
 ];
 
 export function Awards() {
@@ -86,7 +86,7 @@ export function Awards() {
                   src={a.image}
                   alt={`${a.title} — ${a.description}`}
                   loading="lazy"
-                  className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1200ms] ease-out ${
+                  className={`absolute inset-0 h-full w-full ${a.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} transition-opacity duration-[1200ms] ease-out ${
                     i === active ? "opacity-100" : "opacity-0"
                   }`}
                 />
