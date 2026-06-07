@@ -4,7 +4,12 @@ import { Footer } from "@/components/home/Footer";
 import { CardStack, type StackCard } from "@/components/ui/card-stack";
 import { useReveal } from "@/hooks/use-reveal";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
+import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
 import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
+import annan2 from "@/assets/projects/annandale-2.jpg.asset.json";
+import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
+import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
+import drum3 from "@/assets/projects/drummoyne-3.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
 
@@ -13,7 +18,7 @@ type ProjectAward = {
   id: string;
   suburb: string;
   title: string;
-  image: string;
+  image?: string;
   fit?: "cover" | "contain";
   awards: AwardEntry[];
   href?: string;
@@ -23,7 +28,7 @@ type YearGroup = { year: string; intro: string; projects: ProjectAward[] };
 const years: YearGroup[] = [
   {
     year: "2025",
-    intro: "HIA NSW Housing Awards",
+    intro: "HIA NSW Housing, Kitchen & Bathroom Awards",
     projects: [
       {
         id: "rozelle-2025",
@@ -38,6 +43,24 @@ const years: YearGroup[] = [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
       },
+      {
+        id: "annandale-2025",
+        suburb: "Annandale",
+        title: "Considered Bathroom Renewal",
+        image: annan1.url,
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
+        ],
+      },
+      {
+        id: "newtown-2025",
+        suburb: "Newtown",
+        title: "Inner-West Bathroom",
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+        ],
+      },
     ],
   },
   {
@@ -45,14 +68,36 @@ const years: YearGroup[] = [
     intro: "HIA NSW Housing Awards · National Business Awards",
     projects: [
       {
-        id: "annandale-2024",
-        suburb: "Annandale",
-        title: "Smart Family Living",
-        image: annan1.url,
-        href: "/projects/annandale-smart-family-living",
+        id: "enmore-2024",
+        suburb: "Enmore",
+        title: "Renovated Bathroom Winner",
         awards: [
-          { kind: "Winner", label: "HIA NSW Bathroom of the Year" },
+          { kind: "Winner", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+        ],
+      },
+      {
+        id: "linfield-2024",
+        suburb: "Lindfield",
+        title: "Twin Bathroom Renovation",
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
+        ],
+      },
+      {
+        id: "drummoyne-2024",
+        suburb: "Drummoyne",
+        title: "Modern Luxury Living",
+        image: drum1.url,
+        href: "/projects/drummoyne-modern-luxury-living",
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
+          { kind: "Finalist", label: "HIA NSW Kitchen Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Renovated Kitchen of the Year" },
         ],
       },
       {
@@ -68,9 +113,64 @@ const years: YearGroup[] = [
     ],
   },
   {
-    year: "2022",
-    intro: "HIA NSW Business Awards",
+    year: "2023",
+    intro: "HIA NSW Kitchen & Bathroom Awards",
     projects: [
+      {
+        id: "drummoyne-2023",
+        suburb: "Drummoyne",
+        title: "Kitchen Design Recognition",
+        image: drum2.url,
+        href: "/projects/drummoyne-modern-luxury-living",
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Kitchen Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Renovated Kitchen of the Year" },
+        ],
+      },
+      {
+        id: "rozelle-2023",
+        suburb: "Rozelle",
+        title: "Bathroom Design Finalist",
+        image: rozelle3.url,
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+        ],
+      },
+      {
+        id: "lane-cove-2023",
+        suburb: "Lane Cove",
+        title: "Bathroom Design Finalist",
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+        ],
+      },
+    ],
+  },
+  {
+    year: "2022",
+    intro: "HIA NSW Awards · NSW Business Awards",
+    projects: [
+      {
+        id: "drummoyne-2022",
+        suburb: "Drummoyne",
+        title: "Bathroom Design & New Build",
+        image: drum3.url,
+        href: "/projects/drummoyne-modern-luxury-living",
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW New Bathroom over $425,000" },
+        ],
+      },
+      {
+        id: "annandale-2022",
+        suburb: "Annandale",
+        title: "New Bathroom Finalist",
+        image: annan2.url,
+        awards: [
+          { kind: "Finalist", label: "HIA NSW New Bathroom of the Year" },
+        ],
+      },
       {
         id: "nsw-2022",
         suburb: "AM Studio",
@@ -79,6 +179,36 @@ const years: YearGroup[] = [
         fit: "contain",
         awards: [
           { kind: "Winner", label: "NSW Small Business Management Award" },
+        ],
+      },
+    ],
+  },
+  {
+    year: "2021",
+    intro: "HIA-CSR NSW Housing and Kitchen & Bathroom Awards",
+    projects: [
+      {
+        id: "castle-cove-2021",
+        suburb: "Castle Cove",
+        title: "Three-Category Recognition",
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Bathroom Design" },
+          { kind: "Finalist", label: "HIA NSW Bathroom of the Year · Medium (6–10sqm Ensuite)" },
+          { kind: "Finalist", label: "HIA NSW Bathroom of the Year · Small (Powder Room)" },
+        ],
+      },
+    ],
+  },
+  {
+    year: "2020",
+    intro: "HIA NSW Housing Awards",
+    projects: [
+      {
+        id: "birchgrove-2020",
+        suburb: "Birchgrove",
+        title: "Bathroom of the Year Finalist",
+        awards: [
+          { kind: "Finalist", label: "HIA NSW Bathroom of the Year" },
         ],
       },
     ],
@@ -97,7 +227,7 @@ export const Route = createFileRoute("/awards")({
       { property: "og:title", content: "Awards | AM Bathrooms + Projects" },
       {
         property: "og:description",
-        content: "A timeline of recognition — projects and the awards they earned.",
+        content: "A timeline of recognition. Projects and the awards they earned.",
       },
       { property: "og:image", content: rozelle1.url },
       { name: "twitter:image", content: rozelle1.url },
@@ -107,16 +237,28 @@ export const Route = createFileRoute("/awards")({
 });
 
 function ProjectCard({ project }: { project: ProjectAward }) {
+  const hasImage = Boolean(project.image);
   return (
     <div className="relative h-full w-full">
-      <img
-        src={project.image}
-        alt={`${project.suburb} — ${project.title}`}
-        draggable={false}
-        className={`absolute inset-0 h-full w-full ${
-          project.fit === "contain" ? "object-contain p-6 bg-burgundy" : "object-cover"
-        }`}
-      />
+      {hasImage ? (
+        <img
+          src={project.image}
+          alt={`${project.suburb} ${project.title}`}
+          draggable={false}
+          className={`absolute inset-0 h-full w-full ${
+            project.fit === "contain" ? "object-contain p-6 bg-burgundy" : "object-cover"
+          }`}
+        />
+      ) : (
+        <div className="absolute inset-0 bg-burgundy flex flex-col items-center justify-center px-8 text-center">
+          <div className="font-serif italic text-ivory/30 text-[120px] leading-none">
+            {project.suburb.charAt(0)}
+          </div>
+          <div className="mt-4 text-[10px] tracking-[0.3em] uppercase text-ivory/50">
+            Private Residence
+          </div>
+        </div>
+      )}
       {/* Bottom gradient + info */}
       <div className="absolute inset-x-0 bottom-0 pt-20 px-6 pb-6 md:px-7 md:pb-7 bg-gradient-to-t from-black/95 via-black/75 to-transparent">
         <div className="text-[11px] tracking-[0.28em] uppercase text-ivory/85 mb-2">
