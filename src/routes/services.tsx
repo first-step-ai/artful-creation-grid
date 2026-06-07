@@ -28,19 +28,16 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    num: "01",
     title: "Bathroom + Laundry",
     body: "Considered, calm bathrooms and hardworking laundries — replanned, replumbed and rebuilt to look beautiful for decades, not seasons.",
     image: bathroom.url,
   },
   {
-    num: "02",
     title: "Kitchen",
     body: "Kitchens designed around how you actually cook, host and live — built once, properly, with materials that age beautifully.",
     image: kitchen.url,
   },
   {
-    num: "03",
     title: "Full Interior Renovations",
     body: "Multiple rooms or whole-of-home renovations, planned and delivered as a single cohesive project — one team, one manager, one schedule.",
     image: interiors.url,
@@ -55,8 +52,8 @@ function ServicesPage() {
         <Hero />
         <section className="pb-24 md:pb-32">
           <div className="mx-auto max-w-[1600px] px-6 md:px-10 space-y-8 md:space-y-10">
-            {services.map((s) => (
-              <ServiceCard key={s.num} {...s} />
+            {services.map((s, i) => (
+              <ServiceCard key={i} {...s} />
             ))}
           </div>
         </section>
@@ -86,12 +83,10 @@ function Hero() {
 }
 
 function ServiceCard({
-  num,
   title,
   body,
   image,
 }: {
-  num: string;
   title: string;
   body: string;
   image: string;
@@ -100,7 +95,7 @@ function ServiceCard({
   return (
     <article
       ref={ref}
-      className="reveal group relative overflow-hidden h-[70vh] min-h-[520px] max-h-[760px] bg-oxblood"
+      className="reveal group relative overflow-hidden h-[45vh] min-h-[340px] max-h-[480px] bg-oxblood"
     >
       <img
         src={image}
@@ -109,17 +104,11 @@ function ServiceCard({
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
-      <div className="relative h-full flex flex-col justify-end p-8 md:p-14 max-w-2xl">
-        <div className="flex items-center gap-4 mb-6">
-          <span className="font-serif text-5xl md:text-6xl font-light text-ivory leading-none">
-            {num}
-          </span>
-          <span className="block h-px w-16 bg-ivory/50" />
-        </div>
-        <h2 className="font-serif text-3xl md:text-5xl font-light text-ivory leading-tight">
+      <div className="relative h-full flex flex-col justify-end p-8 md:p-12 max-w-2xl">
+        <h2 className="font-serif text-2xl md:text-4xl font-light text-ivory leading-tight">
           {title}
         </h2>
-        <p className="mt-5 font-sans text-sm md:text-base text-ivory/85 leading-relaxed max-w-lg">
+        <p className="mt-4 font-sans text-sm md:text-base text-ivory/85 leading-relaxed max-w-lg">
           {body}
         </p>
       </div>
