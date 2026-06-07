@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import { useReveal } from "@/hooks/use-reveal";
+import teamPhoto from "@/assets/am-team-group.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
