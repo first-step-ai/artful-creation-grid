@@ -32,7 +32,7 @@ export function CardStack({
   const rotations = useMemo(
     () =>
       initialCards.map(() =>
-        randomRotation ? Math.random() * 10 - 5 : 0,
+        randomRotation ? Math.random() * 6 - 3 : 0,
       ),
     [initialCards, randomRotation],
   );
