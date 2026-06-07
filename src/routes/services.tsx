@@ -70,13 +70,13 @@ function Hero() {
       ref={ref}
       className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-40 md:pt-48 pb-20 md:pb-28"
     >
-      <div className="eyebrow mb-8">Our Expertise</div>
-      <h1 className="font-serif text-6xl md:text-8xl font-light tracking-tight text-ivory leading-[0.95]">
+      <div className="eyebrow mb-6">Our Expertise</div>
+      <h1 className="font-serif text-4xl md:text-5xl font-light tracking-tight text-ivory leading-[1.05]">
         What we do.
       </h1>
-      <div className="mt-10 max-w-2xl font-sans text-base md:text-lg text-ivory/80 leading-relaxed space-y-2">
+      <div className="mt-6 max-w-xl font-sans text-sm md:text-base text-ivory/75 leading-relaxed space-y-1">
         <p>Everything from a single bathroom to a full interior renovation.</p>
-        <p>We design, build and manage it all — one team, end to end.</p>
+        <p>We design, build and manage it all. One team, end to end.</p>
       </div>
     </section>
   );
