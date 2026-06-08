@@ -18,14 +18,15 @@ import drum7 from "@/assets/projects/drummoyne-7.jpg.asset.json";
 import drum8 from "@/assets/projects/drummoyne-8.jpg.asset.json";
 
 // Rozelle
-import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
-import rozelle2 from "@/assets/projects/rozelle-2.jpg.asset.json";
-import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
-import rozelle4 from "@/assets/projects/rozelle-4.jpg.asset.json";
-import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
-import rozelle6 from "@/assets/projects/rozelle-6.jpg.asset.json";
-import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
-import rozelle8 from "@/assets/projects/rozelle-8.jpg.asset.json";
+import rozelle1 from "@/assets/projects/rozelle-new-9.jpg.asset.json";
+import rozelle2 from "@/assets/projects/rozelle-new-2.jpg.asset.json";
+import rozelle3 from "@/assets/projects/rozelle-new-5.jpg.asset.json";
+import rozelle4 from "@/assets/projects/rozelle-new-1.jpg.asset.json";
+import rozelle5 from "@/assets/projects/rozelle-new-6.jpg.asset.json";
+import rozelle6 from "@/assets/projects/rozelle-new-8.jpg.asset.json";
+import rozelle7 from "@/assets/projects/rozelle-new-3.jpg.asset.json";
+import rozelle8 from "@/assets/projects/rozelle-new-4.jpg.asset.json";
+import rozelle9 from "@/assets/projects/rozelle-new-7.jpg.asset.json";
 // Abbotsford
 import abbots1 from "@/assets/projects/abbotsford-1.jpg.asset.json";
 import abbots2 from "@/assets/projects/abbotsford-2.jpg.asset.json";
