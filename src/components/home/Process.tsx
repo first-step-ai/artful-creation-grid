@@ -48,7 +48,9 @@ export function Process() {
                   alt={s.title}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                  style={s.title === "Design" ? { objectPosition: "30% center" } : undefined}
                 />
+
                 <div className="absolute top-3 left-3 eyebrow text-ivory/80 text-[10px]">
                   {s.n}
                 </div>
