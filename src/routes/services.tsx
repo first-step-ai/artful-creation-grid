@@ -4,7 +4,7 @@ import { Footer } from "@/components/home/Footer";
 import { useReveal } from "@/hooks/use-reveal";
 import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
 import kitchen from "@/assets/projects/rozelle-1.jpg.asset.json";
-import interiors from "@/assets/projects/abbotsford-2.jpg.asset.json";
+import interiors from "@/assets/projects/rozelle-multispace.jpg.asset.json";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
