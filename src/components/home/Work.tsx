@@ -5,7 +5,7 @@ import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
 import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
 import rozelleMultispace from "@/assets/projects/rozelle-multispace.jpg.asset.json";
 import camp2 from "@/assets/projects/camperdown-2.jpg.asset.json";
-import bexley1 from "@/assets/projects/bexley-1.jpg.asset.json";
+import drummoyne1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
@@ -20,7 +20,7 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 const projects = [
   { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full interior", image: rozelleMultispace.url },
   { suburb: "Camperdown", title: "Inner-city Charm", category: "Kitchen", image: camp2.url },
-  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url },
+  { suburb: "Drummoyne", title: "Full Home Renewal", category: "Bathroom", image: drummoyne1.url },
 ];
 
 const suburbs = [
