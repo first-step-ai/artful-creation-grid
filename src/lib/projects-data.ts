@@ -101,7 +101,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: abbots1.url },
   { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont1.url },
   { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan1.url, badge: "Finalist" },
-  { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url },
+  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexleyAlt2.url },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url },
 ];
