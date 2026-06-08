@@ -227,7 +227,7 @@ function ContactPage() {
                 ) : (
                   <button
                     type="submit"
-                    className="group inline-flex items-center gap-4 bg-[var(--background)] text-[var(--ivory)] px-8 py-4 text-[11px] tracking-[0.32em] uppercase hover:bg-[var(--ivory)] transition-colors"
+                    className="group inline-flex items-center gap-4 bg-[var(--brass)] text-[var(--background)] px-8 py-4 text-[11px] tracking-[0.32em] uppercase hover:bg-[var(--ivory)] transition-colors"
                   >
                     Share my info
                     <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
