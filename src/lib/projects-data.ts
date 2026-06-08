@@ -8,14 +8,17 @@ import bexley6 from "@/assets/projects/bexley-6.jpg.asset.json";
 import bexley7 from "@/assets/projects/bexley-7.jpg.asset.json";
 import bexley8 from "@/assets/projects/bexley-8.jpg.asset.json";
 // Drummoyne
-import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
-import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
-import drum3 from "@/assets/projects/drummoyne-3.jpg.asset.json";
-import drum4 from "@/assets/projects/drummoyne-4.jpg.asset.json";
-import drum5 from "@/assets/projects/drummoyne-5.jpg.asset.json";
-import drum6 from "@/assets/projects/drummoyne-6.jpg.asset.json";
-import drum7 from "@/assets/projects/drummoyne-7.jpg.asset.json";
-import drum8 from "@/assets/projects/drummoyne-8.jpg.asset.json";
+import drum1 from "@/assets/projects/drummoyne-v2-1.jpg.asset.json";
+import drum2 from "@/assets/projects/drummoyne-v2-2.jpg.asset.json";
+import drum3 from "@/assets/projects/drummoyne-v2-3.jpg.asset.json";
+import drum4 from "@/assets/projects/drummoyne-v2-4.jpg.asset.json";
+import drum5 from "@/assets/projects/drummoyne-v2-5.jpg.asset.json";
+import drum6 from "@/assets/projects/drummoyne-v2-6.jpg.asset.json";
+import drum7 from "@/assets/projects/drummoyne-v2-7.jpg.asset.json";
+import drum8 from "@/assets/projects/drummoyne-v2-8.jpg.asset.json";
+import drum9 from "@/assets/projects/drummoyne-v2-9.jpg.asset.json";
+import drum10 from "@/assets/projects/drummoyne-v2-10.jpg.asset.json";
+import drum11 from "@/assets/projects/drummoyne-v2-11.jpg.asset.json";
 
 // Rozelle
 import rozelle1 from "@/assets/projects/rozelle-new-9.jpg.asset.json";
@@ -346,7 +349,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Streamlined vanity designs improving circulation",
       "Light-filled layouts despite compact proportions",
     ],
-    gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url, drum8.url],
+    gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url, drum8.url, drum9.url, drum10.url, drum11.url],
   },
 };
 

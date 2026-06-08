@@ -5,7 +5,7 @@ import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
 import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
 import rozelleMultispace from "@/assets/projects/rozelle-multispace.jpg.asset.json";
 import camp2 from "@/assets/projects/camperdown-v3-1.jpg.asset.json";
-import drummoyne1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
+import drummoyne1 from "@/assets/projects/drummoyne-v2-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
