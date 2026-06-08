@@ -13,7 +13,7 @@ const steps = [
   },
   {
     n: "02",
-    title: "Concept + Design",
+    title: "Design",
     body: "Layouts, materials and a transparent quote. Everything resolved before the first trade arrives.",
     image: design.url,
   },
