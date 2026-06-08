@@ -319,7 +319,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We had a difficult bathroom layout and AM came up with something that far exceeded our expectations. They were patiently attentive to our tastes and came up with options that made decisions easy, this resulted in a design that felt like our own.",
-    gallery: [bexley2.url, bexley3.url, bexley4.url, bexley5.url, bexley6.url, bexley7.url, bexley8.url],
+    gallery: [bexley1.url, bexley2.url, bexley3.url, bexley4.url, bexley5.url, bexley6.url, bexley7.url, bexley8.url, bexley9.url],
   },
 
   "drummoyne-modern-luxury-living": {
