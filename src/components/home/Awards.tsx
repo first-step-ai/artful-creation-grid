@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
-import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
+import enmoreWinner from "@/assets/projects/enmore-bathroom-winner.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
 import hia2025 from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
