@@ -28,14 +28,23 @@ import rozelle7 from "@/assets/projects/rozelle-new-3.jpg.asset.json";
 import rozelle8 from "@/assets/projects/rozelle-new-4.jpg.asset.json";
 import rozelle9 from "@/assets/projects/rozelle-new-7.jpg.asset.json";
 // Abbotsford
-import abbots1 from "@/assets/projects/abbotsford-1.jpg.asset.json";
-import abbots2 from "@/assets/projects/abbotsford-2.jpg.asset.json";
-import abbots3 from "@/assets/projects/abbotsford-3.jpg.asset.json";
-import abbots4 from "@/assets/projects/abbotsford-4.jpg.asset.json";
-import abbots5 from "@/assets/projects/abbotsford-5.jpg.asset.json";
-import abbots6 from "@/assets/projects/abbotsford-6.jpg.asset.json";
-import abbots7 from "@/assets/projects/abbotsford-7.jpg.asset.json";
-import abbots8 from "@/assets/projects/abbotsford-8.jpg.asset.json";
+import abbots1 from "@/assets/projects/abbotsford-new-1.jpg.asset.json";
+import abbots2 from "@/assets/projects/abbotsford-new-2.jpg.asset.json";
+import abbots3 from "@/assets/projects/abbotsford-new-3.jpg.asset.json";
+import abbots4 from "@/assets/projects/abbotsford-new-4.jpg.asset.json";
+import abbots5 from "@/assets/projects/abbotsford-new-5.jpg.asset.json";
+import abbots6 from "@/assets/projects/abbotsford-new-6.jpg.asset.json";
+import abbots7 from "@/assets/projects/abbotsford-new-7.jpg.asset.json";
+import abbots8 from "@/assets/projects/abbotsford-new-8.jpg.asset.json";
+import abbots9 from "@/assets/projects/abbotsford-new-9.jpg.asset.json";
+import abbots10 from "@/assets/projects/abbotsford-new-10.jpg.asset.json";
+import abbots11 from "@/assets/projects/abbotsford-new-11.jpg.asset.json";
+import abbots12 from "@/assets/projects/abbotsford-new-12.jpg.asset.json";
+import abbots13 from "@/assets/projects/abbotsford-new-13.jpg.asset.json";
+import abbots14 from "@/assets/projects/abbotsford-new-14.jpg.asset.json";
+import abbots15 from "@/assets/projects/abbotsford-new-15.jpg.asset.json";
+import abbots16 from "@/assets/projects/abbotsford-new-16.jpg.asset.json";
+import abbots17 from "@/assets/projects/abbotsford-new-17.jpg.asset.json";
 // Pyrmont
 import pyrmont1 from "@/assets/projects/pyrmont-1.jpg.asset.json";
 import pyrmont2 from "@/assets/projects/pyrmont-2.jpg.asset.json";
@@ -179,7 +188,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We recently had AM complete our renovation and could not be any happier. From the design stage to handover, everything went as smooth as possible. Highly recommend the whole team!!",
-    gallery: [abbots2.url, abbots3.url, abbots4.url, abbots5.url, abbots6.url, abbots7.url, abbots8.url],
+    gallery: [abbots2.url, abbots3.url, abbots4.url, abbots5.url, abbots8.url, abbots6.url, abbots7.url, abbots11.url, abbots12.url, abbots9.url, abbots13.url, abbots14.url, abbots10.url, abbots15.url, abbots16.url, abbots17.url],
   },
 
   "pyrmont-elevated-city-living": {
