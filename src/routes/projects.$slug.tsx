@@ -43,7 +43,7 @@ function ProjectDetailPage() {
             <div className="eyebrow text-ivory/90 mb-4 drop-shadow-md">
               {p.category} · {p.suburb}
             </div>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-ivory leading-[1.05] max-w-5xl drop-shadow-lg">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-ivory leading-[1.05] max-w-5xl drop-shadow-lg">
               {p.suburb} <span className="opacity-50">|</span> {p.title}
             </h1>
             <p className="mt-6 max-w-xl font-sans text-base md:text-lg text-ivory leading-relaxed drop-shadow-md">
