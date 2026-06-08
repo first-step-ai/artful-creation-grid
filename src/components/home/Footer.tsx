@@ -102,7 +102,6 @@ export function Footer() {
                 </div>
               </a>
             ))}
-          </div>
         </div>
       </div>
     </footer>
