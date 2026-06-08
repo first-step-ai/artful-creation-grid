@@ -58,7 +58,7 @@ function Hero() {
       <div className="relative h-full max-w-[1400px] mx-auto flex items-end pl-4 md:pl-6 lg:pl-8 pr-6 md:pr-12 lg:pr-16 pb-16 md:pb-24">
         <div>
           <p className="eyebrow mb-8 [text-shadow:0_1px_12px_rgba(0,0,0,0.9)]" style={{ color: "var(--ivory)" }}>About the studio</p>
-          <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-3xl md:text-5xl lg:text-6xl [text-shadow:0_2px_18px_rgba(0,0,0,0.75)]">
+          <h1 className="font-sans font-light text-ivory uppercase tracking-[0.02em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl [text-shadow:0_2px_18px_rgba(0,0,0,0.75)]">
             One team. Every detail.
             <br />
             Start to finish.
