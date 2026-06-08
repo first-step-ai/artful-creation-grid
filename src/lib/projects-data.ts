@@ -1,12 +1,13 @@
 // Bexley
-import bexley1 from "@/assets/projects/bexley-1.jpg.asset.json";
-import bexley2 from "@/assets/projects/bexley-2.jpg.asset.json";
-import bexley3 from "@/assets/projects/bexley-3.jpg.asset.json";
-import bexley4 from "@/assets/projects/bexley-4.jpg.asset.json";
-import bexley5 from "@/assets/projects/bexley-5.jpg.asset.json";
-import bexley6 from "@/assets/projects/bexley-6.jpg.asset.json";
-import bexley7 from "@/assets/projects/bexley-7.jpg.asset.json";
-import bexley8 from "@/assets/projects/bexley-8.jpg.asset.json";
+import bexley1 from "@/assets/projects/bexley-v2-1.jpg.asset.json";
+import bexley2 from "@/assets/projects/bexley-v2-2.jpg.asset.json";
+import bexley3 from "@/assets/projects/bexley-v2-3.jpg.asset.json";
+import bexley4 from "@/assets/projects/bexley-v2-4.jpg.asset.json";
+import bexley5 from "@/assets/projects/bexley-v2-5.jpg.asset.json";
+import bexley6 from "@/assets/projects/bexley-v2-6.jpg.asset.json";
+import bexley7 from "@/assets/projects/bexley-v2-7.jpg.asset.json";
+import bexley8 from "@/assets/projects/bexley-v2-8.jpg.asset.json";
+import bexley9 from "@/assets/projects/bexley-v2-9.jpg.asset.json";
 // Drummoyne
 import drum1 from "@/assets/projects/drummoyne-v2-1.jpg.asset.json";
 import drum2 from "@/assets/projects/drummoyne-v2-4.jpg.asset.json";
