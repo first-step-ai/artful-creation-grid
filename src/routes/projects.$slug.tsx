@@ -79,7 +79,7 @@ function ProjectDetailPage() {
                           <span className="font-sans text-[10px] tracking-[0.28em] text-ivory-muted pt-[3px] tabular-nums">
                             {String(i + 1).padStart(2, "0")}
                           </span>
-                          <span className="flex-1 font-serif text-[14px] font-light leading-snug text-ivory/90">
+                          <span className="flex-1 font-sans text-sm text-ivory/90">
                             {name}
                           </span>
                           {status && (
