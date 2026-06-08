@@ -214,7 +214,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     heroCaption: "An Annandale terrace bathroom reworked for a family — light, layered and properly functional.",
     scope:
       "Reworked bathroom within an existing terrace footprint — separate bath and shower, retained skylight, bespoke detailing.",
-    awards: ["HIA Award Finalist"],
+    awards: ["2024 HIA Renovated Bathroom of the Year · Finalist"],
     rightHeading: "Smart Family Living",
     rightIntro:
       "An Annandale terrace bathroom that wasn't working for a family. Dark, tight, and short on storage — the brief was to make it genuinely functional without losing character. The result is a light-filled space with a separate bath and shower, generous storage, and bespoke detailing throughout.",
