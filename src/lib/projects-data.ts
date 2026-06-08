@@ -18,14 +18,15 @@ import drum7 from "@/assets/projects/drummoyne-7.jpg.asset.json";
 import drum8 from "@/assets/projects/drummoyne-8.jpg.asset.json";
 
 // Rozelle
-import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
-import rozelle2 from "@/assets/projects/rozelle-2.jpg.asset.json";
-import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
-import rozelle4 from "@/assets/projects/rozelle-4.jpg.asset.json";
-import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
-import rozelle6 from "@/assets/projects/rozelle-6.jpg.asset.json";
-import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
-import rozelle8 from "@/assets/projects/rozelle-8.jpg.asset.json";
+import rozelle1 from "@/assets/projects/rozelle-new-9.jpg.asset.json";
+import rozelle2 from "@/assets/projects/rozelle-new-2.jpg.asset.json";
+import rozelle3 from "@/assets/projects/rozelle-new-5.jpg.asset.json";
+import rozelle4 from "@/assets/projects/rozelle-new-1.jpg.asset.json";
+import rozelle5 from "@/assets/projects/rozelle-new-6.jpg.asset.json";
+import rozelle6 from "@/assets/projects/rozelle-new-8.jpg.asset.json";
+import rozelle7 from "@/assets/projects/rozelle-new-3.jpg.asset.json";
+import rozelle8 from "@/assets/projects/rozelle-new-4.jpg.asset.json";
+import rozelle9 from "@/assets/projects/rozelle-new-7.jpg.asset.json";
 // Abbotsford
 import abbots1 from "@/assets/projects/abbotsford-1.jpg.asset.json";
 import abbots2 from "@/assets/projects/abbotsford-2.jpg.asset.json";
@@ -146,7 +147,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Jenny listened carefully to my design aesthetic and consistently provided great suggestions which have turned out beautifully. When you engage Jenny and Ante, you are selecting a team that truely care.",
-    gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url],
+    gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
   },
 
   "abbotsford-hotel-inspired-luxury": {
