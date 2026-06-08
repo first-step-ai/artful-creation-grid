@@ -63,7 +63,7 @@ function ProjectDetailPage() {
             {/* LEFT COLUMN — sticky scroll */}
             <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pr-2 space-y-12">
               <Block label="Scope">
-                <p className="font-serif text-[15px] md:text-base font-light italic leading-[1.7] text-ivory/90">
+                <p className="font-sans text-sm text-ivory/85">
                   {p.scope}
                 </p>
               </Block>
