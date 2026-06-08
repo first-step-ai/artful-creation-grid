@@ -8,25 +8,25 @@ const services = [
   {
     num: "i",
     title: "Bathrooms",
-    body: "A BATHROOM BUILT AROUND YOUR ROUTINE. MATERIALS AND DETAILS CHOSEN WITH YOU, BUILT BY US.",
+    body: "A bathroom built around your routine. Materials and details chosen with you, built by us.",
     image: bathrooms.url,
   },
   {
     num: "ii",
     title: "Kitchens",
-    body: "A KITCHEN THAT FITS THE WAY YOUR FAMILY ACTUALLY USES IT, NOT JUST HOW IT LOOKS IN A RENDER.",
+    body: "A kitchen that fits the way your family actually uses it, not just how it looks in a render.",
     image: kitchens.url,
   },
   {
     num: "iii",
     title: "Multi-space Renovations",
-    body: "A HOME THAT FEELS CONSIDERED IN EVERY CORNER. WE HANDLE THE FULL PICTURE.",
+    body: "A home that feels considered in every corner. We handle the full picture.",
     image: interiors.url,
   },
   {
     num: "iv",
     title: "Full Home Renovation",
-    body: "A COMPLETE TRANSFORMATION, FINISHED WITH THE SAME CARE WE BRING TO EVERY ROOM.",
+    body: "A complete transformation, finished with the same care we bring to every room.",
     image: laundries.url,
   },
 ];
@@ -82,7 +82,7 @@ function ServiceCard({
           <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase">
             {title}
           </h3>
-          <p className="mt-2 max-w-sm font-sans text-[11px] tracking-[0.10em] text-ivory">{body}</p>
+          <p className="mt-2 max-w-sm font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">{body}</p>
         </div>
         <span className="mt-1 hidden sm:inline-block text-[11px] tracking-[0.28em] uppercase text-ivory-muted group-hover:text-ivory transition-colors">
           ↗

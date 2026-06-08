@@ -8,25 +8,25 @@ const steps = [
   {
     n: "01",
     title: "Discovery",
-    body: "WE COME TO YOUR HOME, WALK THE SPACE, AND LISTEN TO HOW YOU LIVE BEFORE A SINGLE LINE IS DRAWN.",
+    body: "We come to your home, walk the space, and listen to how you live before a single line is drawn.",
     image: discovery.url,
   },
   {
     n: "02",
     title: "Concept + Design",
-    body: "LAYOUTS, MATERIALS AND A TRANSPARENT QUOTE. EVERYTHING RESOLVED BEFORE THE FIRST TRADE ARRIVES.",
+    body: "Layouts, materials and a transparent quote. Everything resolved before the first trade arrives.",
     image: design.url,
   },
   {
     n: "03",
     title: "Build",
-    body: "ONE TEAM ACCOUNTABLE FROM DEMOLITION TO FINAL DETAIL. OUR TRADES, OUR SCHEDULE, OUR SUPERVISION.",
+    body: "One team accountable from demolition to final detail. Our trades, our schedule, our supervision.",
     image: build.url,
   },
   {
     n: "04",
     title: "Handover",
-    body: "FINAL WALKTHROUGH, CLEAN SITE, AND THE KEYS BACK TO YOU. WE STAY REACHABLE IN THE MONTHS AFTER.",
+    body: "Final walkthrough, clean site, and the keys back to you. We stay reachable in the months after.",
     image: handover.url,
   },
 ];
@@ -57,7 +57,7 @@ export function Process() {
                 <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase whitespace-nowrap">
                   {s.title}
                 </h3>
-                <p className="mt-2 font-sans text-[11px] tracking-[0.10em] text-ivory">
+                <p className="mt-2 font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">
                   {s.body}
                 </p>
               </div>
