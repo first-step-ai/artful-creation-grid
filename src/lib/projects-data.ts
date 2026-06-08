@@ -149,7 +149,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "abbotsford-hotel-inspired-luxury": {
-    heroCaption: "Award Winning",
+    heroCaption: "A hotel-inspired Abbotsford master suite where ensuite, robe and bathroom finally feel like one home.",
     scope:
       "Ensuite, walk-in robe, main bathroom and bespoke study storage — reimagined as one cohesive master suite.",
     awards: [],
@@ -181,7 +181,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "pyrmont-elevated-city-living": {
-    heroCaption: "Award Winning",
+    heroCaption: "A Pyrmont apartment rezoned around harbour views, bespoke joinery and a calmer way to live.",
     scope:
       "Full apartment rezoning with bespoke joinery, dedicated bar, integrated study, and harbour-oriented living.",
     awards: [],
@@ -211,7 +211,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
 
   "annandale-smart-family-living": {
     badge: "Finalist",
-    heroCaption: "Award Winning",
+    heroCaption: "An Annandale terrace bathroom reworked for a family — light, layered and properly functional.",
     scope:
       "Reworked bathroom within an existing terrace footprint — separate bath and shower, retained skylight, bespoke detailing.",
     awards: ["HIA Award Finalist"],
@@ -242,7 +242,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "camperdown-inner-city-charm": {
-    heroCaption: "Award Winning",
+    heroCaption: "A Camperdown apartment reconsidered within a fixed footprint — calm, cohesive and quietly tailored.",
     scope:
       "Kitchen, bathroom, and living spaces reconsidered within a fixed apartment footprint.",
     awards: [],
@@ -271,7 +271,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "bexley-bold-utility": {
-    heroCaption: "Award Winning",
+    heroCaption: "A Bexley bathroom and laundry brought back to life with sculptural form, warmth and bold personality.",
     scope:
       "Bathroom and laundry redesigned within the existing footprint — sculptural, layered, and tailored to the clients.",
     awards: [],
@@ -304,7 +304,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "drummoyne-modern-luxury-living": {
-    heroCaption: "Award Winning",
+    heroCaption: "Two Drummoyne apartment bathrooms reimagined within a fixed footprint — warm, light and quietly luxurious.",
     scope:
       "Two bathrooms in a Drummoyne apartment, each reimagined from the ground up within a fixed footprint.",
     awards: [],
