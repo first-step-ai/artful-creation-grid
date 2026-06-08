@@ -9,7 +9,7 @@ import { useReveal } from "@/hooks/use-reveal";
 
 const awards: { title: string; description: string; image: string; fit?: "cover" | "contain" }[] = [
   { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: hia2025.url },
-  { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: annan1.url },
+  { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: enmoreWinner.url },
   { title: "NATIONAL WINNER 2024 AUSTRALIA", description: "Small Business Management Award", image: national2024.url, fit: "contain" },
   { title: "NSW WINNER 2022", description: "Small Business Management Award", image: nsw2022.url, fit: "contain" },
 ];
