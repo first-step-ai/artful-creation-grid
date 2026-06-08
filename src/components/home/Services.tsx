@@ -82,7 +82,7 @@ function ServiceCard({
           <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase">
             {title}
           </h3>
-          <p className="mt-2 max-w-sm font-sans text-[11px] tracking-[0.15em] text-ivory">{body}</p>
+          <p className="mt-2 max-w-sm font-sans text-[11px] tracking-[0.10em] text-ivory">{body}</p>
         </div>
         <span className="mt-1 hidden sm:inline-block text-[11px] tracking-[0.28em] uppercase text-ivory-muted group-hover:text-ivory transition-colors">
           ↗
