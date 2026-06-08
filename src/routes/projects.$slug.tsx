@@ -63,7 +63,7 @@ function ProjectDetailPage() {
             {/* LEFT COLUMN — sticky scroll */}
             <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pr-2 space-y-12">
               <Block label="Scope">
-                <p className="font-serif text-[15px] md:text-base font-light italic leading-[1.7] text-ivory/90">
+                <p className="font-sans text-sm text-ivory/85">
                   {p.scope}
                 </p>
               </Block>
@@ -79,7 +79,7 @@ function ProjectDetailPage() {
                           <span className="font-sans text-[10px] tracking-[0.28em] text-ivory-muted pt-[3px] tabular-nums">
                             {String(i + 1).padStart(2, "0")}
                           </span>
-                          <span className="flex-1 font-serif text-[14px] font-light leading-snug text-ivory/90">
+                          <span className="flex-1 font-sans text-sm text-ivory/90">
                             {name}
                           </span>
                           {status && (
@@ -110,14 +110,11 @@ function ProjectDetailPage() {
             {/* RIGHT COLUMN — sticky scroll */}
             <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pl-2 space-y-12">
               <div>
-                <div className="flex items-center gap-3 mb-5">
-                  <span className="h-px w-8 bg-brass/60" />
-                  <span className="eyebrow text-ivory-muted">Project Story</span>
-                </div>
-                <h2 className="font-serif text-2xl md:text-[28px] font-light leading-[1.2] text-ivory">
+                <div className="eyebrow mb-4 text-ivory-muted">Project Story</div>
+                <h2 className="font-sans text-2xl md:text-3xl font-light leading-tight text-ivory">
                   {p.rightHeading}
                 </h2>
-                <p className="mt-6 font-sans text-[13.5px] leading-[1.75] text-ivory/80">
+                <p className="mt-6 font-sans text-sm leading-relaxed text-ivory/85">
                   {p.rightIntro}
                 </p>
               </div>
