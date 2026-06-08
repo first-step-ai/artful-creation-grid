@@ -49,9 +49,9 @@ function ProjectDetailPage() {
             <p className="mt-6 max-w-xl font-sans text-base md:text-lg text-ivory leading-relaxed drop-shadow-md">
               {p.heroCaption}
             </p>
-            {p.badge && (
-              <div className="mt-8 inline-flex self-start items-center border border-ivory/60 bg-black/30 backdrop-blur-sm px-5 py-3 text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory font-medium">
-                {p.badge}
+            {(p.awards[0] || p.badge) && (
+              <div className="mt-8 inline-flex self-start items-center border border-ivory/40 bg-ivory/10 backdrop-blur-xl px-5 py-3 text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory font-medium shadow-[0_8px_32px_rgba(0,0,0,0.25)] ring-1 ring-inset ring-ivory/10">
+                {(p.awards[0] ?? p.badge)?.toUpperCase()}
               </div>
             )}
           </div>

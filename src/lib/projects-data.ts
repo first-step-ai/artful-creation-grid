@@ -110,7 +110,7 @@ export const projects: ProjectSummary[] = [
 const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   "rozelle-refined-family-living": {
     badge: "Award",
-    heroCaption: "Award Winning",
+    heroCaption: "Award-winning Inner West renovation blending heritage charm with modern family life.",
     scope:
       "Full design + build across kitchen, laundry and ensuite within a traditional Rozelle terrace footprint.",
     awards: [
