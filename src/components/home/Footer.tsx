@@ -1,4 +1,4 @@
-import footerLogo from "@/assets/am-footer-logo.png.asset.json";
+import amOnly from "@/assets/am-mark.png.asset.json";
 import socialInstagram from "@/assets/projects/bexley-3.jpg.asset.json";
 import socialPinterest from "@/assets/projects/pyrmont-4.jpg.asset.json";
 import socialFacebook from "@/assets/projects/annandale-4.jpg.asset.json";
