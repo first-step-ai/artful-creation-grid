@@ -110,11 +110,10 @@ function ProjectDetailPage() {
             {/* RIGHT COLUMN — sticky scroll */}
             <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pl-2 space-y-12">
               <div>
-                <div className="eyebrow mb-4 text-ivory-muted">Project Story</div>
-                <h2 className="font-sans text-2xl md:text-3xl font-light leading-tight text-ivory">
-                  {p.rightHeading}
+                <h2 className="font-sans text-lg md:text-xl font-light leading-snug text-ivory">
+                  {p.rightHeading.replace(/[-–—]/g, " ")}
                 </h2>
-                <p className="mt-6 font-sans text-sm leading-relaxed text-ivory/85">
+                <p className="mt-5 font-sans text-[13px] leading-relaxed text-ivory/80">
                   {p.rightIntro}
                 </p>
               </div>
