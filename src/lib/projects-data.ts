@@ -147,7 +147,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Jenny listened carefully to my design aesthetic and consistently provided great suggestions which have turned out beautifully. When you engage Jenny and Ante, you are selecting a team that truely care.",
-    gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url],
+    gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
   },
 
   "abbotsford-hotel-inspired-luxury": {
