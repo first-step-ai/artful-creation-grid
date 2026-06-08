@@ -8,25 +8,25 @@ const services = [
   {
     num: "i",
     title: "Bathrooms",
-    body: "A bathroom built around your routine. materials and details chosen with you, built by us.",
+    body: "A BATHROOM BUILT AROUND YOUR ROUTINE. MATERIALS AND DETAILS CHOSEN WITH YOU, BUILT BY US.",
     image: bathrooms.url,
   },
   {
     num: "ii",
     title: "Kitchens",
-    body: "A kitchen that fits the way your family actually uses it, not just how it looks in a render.",
+    body: "A KITCHEN THAT FITS THE WAY YOUR FAMILY ACTUALLY USES IT, NOT JUST HOW IT LOOKS IN A RENDER.",
     image: kitchens.url,
   },
   {
     num: "iii",
     title: "Multi-space Renovations",
-    body: "A home that feels considered in every corner. we handle the full picture.",
+    body: "A HOME THAT FEELS CONSIDERED IN EVERY CORNER. WE HANDLE THE FULL PICTURE.",
     image: interiors.url,
   },
   {
     num: "iv",
     title: "Full Home Renovation",
-    body: "A complete transformation, finished with the same care we bring to every room.",
+    body: "A COMPLETE TRANSFORMATION, FINISHED WITH THE SAME CARE WE BRING TO EVERY ROOM.",
     image: laundries.url,
   },
 ];
