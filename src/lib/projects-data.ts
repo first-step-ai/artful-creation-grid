@@ -69,6 +69,7 @@ export type ProjectSummary = {
   category: string;
   image: string;
   badge?: "Award" | "Finalist" | null;
+  tags?: string[];
 };
 
 export type ProjectDetail = ProjectSummary & {
@@ -97,13 +98,13 @@ export function slugify(suburb: string, title: string) {
 
 // All projects shown on /projects (single source of truth)
 export const projects: ProjectSummary[] = [
-  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: rozelle1.url, badge: "Award" },
-  { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: abbots1.url },
-  { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont1.url },
-  { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan1.url, badge: "Finalist" },
-  { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url },
-  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url },
-  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url },
+  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: rozelle1.url, badge: "Award", tags: ["Full Interior", "Multi-Space", "Kitchen", "Laundry", "Ensuite"] },
+  { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: abbots1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
+  { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont1.url, tags: ["Full Interior", "Multi-Space", "Living Room"] },
+  { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan1.url, badge: "Finalist", tags: ["Bathroom"] },
+  { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Living Room"] },
+  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
+  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url, tags: ["Multi-Space", "Bathroom", "Ensuite"] },
 ];
 
 // Rich detail overrides (keyed by slug). Anything missing falls back to a sensible default.
