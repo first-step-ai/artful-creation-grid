@@ -64,14 +64,14 @@ import annan6 from "@/assets/projects/annandale-6.jpg.asset.json";
 import annan7 from "@/assets/projects/annandale-7.jpg.asset.json";
 import annan8 from "@/assets/projects/annandale-8.jpg.asset.json";
 // Camperdown
-import camp1 from "@/assets/projects/camperdown-1.jpg.asset.json";
-import camp2 from "@/assets/projects/camperdown-2.jpg.asset.json";
-import camp3 from "@/assets/projects/camperdown-3.jpg.asset.json";
-import camp4 from "@/assets/projects/camperdown-4.jpg.asset.json";
-import camp5 from "@/assets/projects/camperdown-5.jpg.asset.json";
-import camp6 from "@/assets/projects/camperdown-6.jpg.asset.json";
-import camp7 from "@/assets/projects/camperdown-7.jpg.asset.json";
-import camp8 from "@/assets/projects/camperdown-8.jpg.asset.json";
+import camp1 from "@/assets/projects/camperdown-new-1.jpg.asset.json";
+import camp2 from "@/assets/projects/camperdown-new-2.jpg.asset.json";
+import camp3 from "@/assets/projects/camperdown-new-3.jpg.asset.json";
+import camp4 from "@/assets/projects/camperdown-new-4.jpg.asset.json";
+import camp5 from "@/assets/projects/camperdown-new-5.jpg.asset.json";
+import camp6 from "@/assets/projects/camperdown-new-6.jpg.asset.json";
+import camp7 from "@/assets/projects/camperdown-new-7.jpg.asset.json";
+import camp8 from "@/assets/projects/camperdown-new-8.jpg.asset.json";
 
 export type ProjectSummary = {
   suburb: string;
