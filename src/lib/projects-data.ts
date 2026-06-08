@@ -64,14 +64,18 @@ import annan6 from "@/assets/projects/annandale-6.jpg.asset.json";
 import annan7 from "@/assets/projects/annandale-7.jpg.asset.json";
 import annan8 from "@/assets/projects/annandale-8.jpg.asset.json";
 // Camperdown
-import camp1 from "@/assets/projects/camperdown-new-1.jpg.asset.json";
-import camp2 from "@/assets/projects/camperdown-new-2.jpg.asset.json";
-import camp3 from "@/assets/projects/camperdown-new-3.jpg.asset.json";
-import camp4 from "@/assets/projects/camperdown-new-4.jpg.asset.json";
-import camp5 from "@/assets/projects/camperdown-new-5.jpg.asset.json";
-import camp6 from "@/assets/projects/camperdown-new-6.jpg.asset.json";
-import camp7 from "@/assets/projects/camperdown-new-7.jpg.asset.json";
-import camp8 from "@/assets/projects/camperdown-new-8.jpg.asset.json";
+import camp1 from "@/assets/projects/camperdown-v3-1.jpg.asset.json";
+import camp2 from "@/assets/projects/camperdown-v3-2.jpg.asset.json";
+import camp3 from "@/assets/projects/camperdown-v3-3.jpg.asset.json";
+import camp4 from "@/assets/projects/camperdown-v3-4.jpg.asset.json";
+import camp5 from "@/assets/projects/camperdown-v3-5.jpg.asset.json";
+import camp6 from "@/assets/projects/camperdown-v3-6.jpg.asset.json";
+import camp7 from "@/assets/projects/camperdown-v3-7.jpg.asset.json";
+import camp8 from "@/assets/projects/camperdown-v3-8.jpg.asset.json";
+import camp9 from "@/assets/projects/camperdown-v3-9.jpg.asset.json";
+import camp10 from "@/assets/projects/camperdown-v3-10.jpg.asset.json";
+import camp11 from "@/assets/projects/camperdown-v3-11.jpg.asset.json";
+import camp12 from "@/assets/projects/camperdown-v3-12.jpg.asset.json";
 
 export type ProjectSummary = {
   suburb: string;
@@ -278,7 +282,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Warm tonal material palette connecting each space",
       "Carefully resolved storage reducing visual clutter throughout",
     ],
-    gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url],
+    gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url, camp9.url, camp10.url, camp11.url, camp12.url],
   },
 
   "bexley-bold-utility": {
