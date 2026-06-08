@@ -64,6 +64,7 @@
   height: 44px;
   width: auto;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .sm-logo-center {
@@ -93,7 +94,7 @@
   font-family: var(--font-sans, system-ui), sans-serif;
   font-size: 14px;
   letter-spacing: 0.18em;
-  color: #1a1a1a;
+  color: #ffffff;
   white-space: nowrap;
   opacity: 0;
   transform: translateX(calc(50vw - 2em - 100px));
