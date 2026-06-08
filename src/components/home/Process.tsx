@@ -1,6 +1,6 @@
 import { useReveal } from "@/hooks/use-reveal";
 import discovery from "@/assets/projects/discovery-new.jpg.asset.json";
-import design from "@/assets/projects/design-new.jpg.asset.json";
+import design from "@/assets/projects/design-centered.jpg.asset.json";
 import build from "@/assets/projects/rozelle-3.jpg.asset.json";
 import handover from "@/assets/projects/camperdown-1.jpg.asset.json";
 
@@ -48,7 +48,7 @@ export function Process() {
                   alt={s.title}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
-                  style={s.title === "Design" ? { objectPosition: "30% center" } : undefined}
+
                 />
 
                 <div className="absolute top-3 left-3 eyebrow text-ivory/80 text-[10px]">
