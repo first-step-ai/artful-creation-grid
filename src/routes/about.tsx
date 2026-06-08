@@ -92,25 +92,6 @@ function Story() {
             />
           </div>
 
-          {/* Floating team chip */}
-          <div className="absolute left-1/2 -translate-x-1/2 -bottom-7 z-10">
-            <div className="flex items-center gap-4 bg-background border border-ivory/15 rounded-full pl-2 pr-6 py-2">
-              <div className="flex -space-x-2">
-                <span className="w-9 h-9 rounded-full bg-[color:var(--burgundy-soft)] text-[#1a1a1a] text-[10px] font-medium tracking-widest flex items-center justify-center border-2 border-background">
-                  JM
-                </span>
-                <span className="w-9 h-9 rounded-full bg-ivory text-[#1a1a1a] text-[10px] font-medium tracking-widest flex items-center justify-center border-2 border-background">
-                  AM
-                </span>
-                <span className="w-9 h-9 rounded-full bg-[color:var(--burgundy)] text-ivory text-[10px] font-medium flex items-center justify-center border-2 border-background">
-                  +8
-                </span>
-              </div>
-              <span className="eyebrow text-ivory/80">
-                Our dedicated team
-              </span>
-            </div>
-          </div>
         </div>
 
         {/* Content column */}
