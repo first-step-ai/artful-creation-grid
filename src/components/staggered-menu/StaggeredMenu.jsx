@@ -175,7 +175,7 @@ export const StaggeredMenu = ({
       onComplete: () => {
         const itemEls = Array.from(panel.querySelectorAll('.sm-panel-itemLabel'));
         if (itemEls.length) {
-          gsap.set(itemEls, { yPercent: 140, rotate: 10 });
+          gsap.set(itemEls, { yPercent: 0, rotate: 0, opacity: 0 });
         }
         const numberEls = Array.from(panel.querySelectorAll('.sm-panel-list[data-numbering] .sm-panel-item'));
         if (numberEls.length) {
@@ -184,7 +184,7 @@ export const StaggeredMenu = ({
         const socialTitle = panel.querySelector('.sm-socials-title');
         const socialLinks = Array.from(panel.querySelectorAll('.sm-socials-link'));
         if (socialTitle) gsap.set(socialTitle, { opacity: 0 });
-        if (socialLinks.length) gsap.set(socialLinks, { y: 25, opacity: 0 });
+        if (socialLinks.length) gsap.set(socialLinks, { opacity: 0 });
         busyRef.current = false;
       }
     });
