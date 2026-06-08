@@ -46,14 +46,14 @@ import abbots15 from "@/assets/projects/abbotsford-new-15.jpg.asset.json";
 import abbots16 from "@/assets/projects/abbotsford-new-16.jpg.asset.json";
 import abbots17 from "@/assets/projects/abbotsford-new-17.jpg.asset.json";
 // Pyrmont
-import pyrmont1 from "@/assets/projects/pyrmont-1.jpg.asset.json";
-import pyrmont2 from "@/assets/projects/pyrmont-2.jpg.asset.json";
-import pyrmont3 from "@/assets/projects/pyrmont-3.jpg.asset.json";
-import pyrmont4 from "@/assets/projects/pyrmont-4.jpg.asset.json";
-import pyrmont5 from "@/assets/projects/pyrmont-5.jpg.asset.json";
-import pyrmont6 from "@/assets/projects/pyrmont-6.jpg.asset.json";
-import pyrmont7 from "@/assets/projects/pyrmont-7.jpg.asset.json";
-import pyrmont8 from "@/assets/projects/pyrmont-8.jpg.asset.json";
+import pyrmont1 from "@/assets/projects/pyrmont-new-1.jpg.asset.json";
+import pyrmont2 from "@/assets/projects/pyrmont-new-2.jpg.asset.json";
+import pyrmont3 from "@/assets/projects/pyrmont-new-3.jpg.asset.json";
+import pyrmont4 from "@/assets/projects/pyrmont-new-4.jpg.asset.json";
+import pyrmont5 from "@/assets/projects/pyrmont-new-5.jpg.asset.json";
+import pyrmont6 from "@/assets/projects/pyrmont-new-6.jpg.asset.json";
+import pyrmont7 from "@/assets/projects/pyrmont-new-7.jpg.asset.json";
+import pyrmont8 from "@/assets/projects/pyrmont-new-8.jpg.asset.json";
 // Annandale
 import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
 import annan2 from "@/assets/projects/annandale-2.jpg.asset.json";
