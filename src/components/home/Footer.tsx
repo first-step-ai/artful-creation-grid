@@ -88,24 +88,7 @@ export function Footer() {
         </div>
 
         {/* Mobile fallback */}
-        <div className="md:hidden flex flex-col gap-5 items-start text-left mt-10">
-          <div className="flex flex-col gap-3 items-start">
-            <span style={labelStyle}>Contact</span>
-            <a
-              href="tel:+61291234567"
-              className="font-sans"
-              style={{ color: TEXT, fontSize: "15px", letterSpacing: "0.04em" }}
-            >
-              (02) 9123 4567
-            </a>
-          </div>
-          <div className="flex flex-col gap-3 items-start">
-            <span style={labelStyle}>Hours</span>
-            <span className="font-sans" style={{ color: TEXT, fontSize: "15px", letterSpacing: "0.04em" }}>
-              Mon to Fri · 8.30am to 4.30pm
-            </span>
-          </div>
-          <div className="flex items-end gap-4 mt-4">
+        <div className="md:hidden flex items-end gap-4 mt-10">
             {SOCIALS.map((s) => (
               <a key={s.label} href={s.href} aria-label={s.label} className="group block text-center">
                 <div className="overflow-hidden" style={{ width: 56, height: 72 }}>
