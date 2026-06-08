@@ -36,19 +36,21 @@ function ProjectDetailPage() {
             alt={`${p.title}, ${p.suburb}`}
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-oxblood/85 via-oxblood/40 to-oxblood/20" />
+          {/* Stronger gradient for legibility — dark at bottom where text sits */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />
           <div className="relative z-10 mx-auto max-w-[1600px] px-6 md:px-10 h-full flex flex-col justify-end pb-16 md:pb-24">
-            <div className="eyebrow text-ivory/80 mb-4">
+            <div className="eyebrow text-ivory/90 mb-4 drop-shadow-md">
               {p.category} · {p.suburb}
             </div>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-ivory leading-[1.05] max-w-5xl">
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-ivory leading-[1.05] max-w-5xl drop-shadow-lg">
               {p.suburb} <span className="opacity-50">|</span> {p.title}
             </h1>
-            <p className="mt-6 max-w-xl font-sans text-base md:text-lg text-ivory/85 leading-relaxed">
+            <p className="mt-6 max-w-xl font-sans text-base md:text-lg text-ivory leading-relaxed drop-shadow-md">
               {p.heroCaption}
             </p>
             {p.badge && (
-              <div className="mt-8 inline-block self-start border border-ivory/40 px-5 py-3 text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory">
+              <div className="mt-8 inline-flex self-start items-center border border-ivory/60 bg-black/30 backdrop-blur-sm px-5 py-3 text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory font-medium">
                 {p.badge}
               </div>
             )}
