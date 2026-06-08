@@ -29,13 +29,23 @@ export function Footer() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-16 md:pt-20 pb-16 md:pb-24">
         <div className="flex items-end justify-between gap-10">
           {/* Logo (left, aligned to bottom row) */}
-          <div className="flex shrink-0 items-end">
+          <div className="flex shrink-0 items-center gap-4 md:gap-5">
             <img
-              src={footerLogo.url}
-              alt="AM Bathrooms + Projects"
-              className="h-16 md:h-24 w-auto object-contain object-left"
+              src={amOnly.url}
+              alt="AM"
+              className="h-16 md:h-24 w-auto object-contain"
               style={{ filter: "brightness(0) invert(1)" }}
             />
+            <span
+              className="font-sans whitespace-nowrap"
+              style={{
+                color: TEXT,
+                fontSize: "clamp(14px, 2vw, 22px)",
+                letterSpacing: "0.18em",
+              }}
+            >
+              BATHROOMS + PROJECTS
+            </span>
           </div>
 
           {/* Right cluster: contact + socials, ends at container right edge */}
