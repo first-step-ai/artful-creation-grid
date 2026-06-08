@@ -123,7 +123,7 @@ function Tile({ project }: { project: ProjectSummary }) {
           )}
         </div>
         <figcaption className="mt-5">
-          <div className="font-serif text-2xl md:text-3xl font-light text-ivory leading-tight">
+          <div className="font-sans text-2xl md:text-3xl font-light text-ivory leading-tight">
             <span>{project.suburb}</span>
             <span className="mx-3 opacity-50">|</span>
             <span>{project.title}</span>
