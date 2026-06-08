@@ -320,7 +320,7 @@ function YearSection({ group }: { group: YearGroup }) {
         <div className="md:col-span-7 flex justify-center">
           <CardStack
             cards={cards}
-            cardDimensions={{ width: 440, height: 560 }}
+            cardDimensions={{ width: 560, height: 720 }}
             className="max-w-full"
           />
         </div>
