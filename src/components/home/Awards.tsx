@@ -11,7 +11,7 @@ const awards: { title: string; description: string; image: string; fit?: "cover"
   { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: hia2025.url },
   { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: annan1.url },
   { title: "NATIONAL WINNER 2024 AUSTRALIA", description: "Small Business Management Award", image: national2024.url },
-  { title: "NSW WINNER 2022", description: "Small Business Management Award", image: teamGroup.url },
+  { title: "NSW WINNER 2022", description: "Small Business Management Award", image: teamGroup.url, fit: "contain" },
 ];
 
 export function Awards() {
