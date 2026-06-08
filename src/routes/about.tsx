@@ -98,7 +98,7 @@ function Story() {
         <div className="lg:pt-6">
           <p className="eyebrow text-brass mb-8">Who we are</p>
 
-          <h2 className="font-serif font-light text-ivory leading-[1.05] text-3xl md:text-4xl lg:text-5xl mb-10 max-w-[14ch]">
+          <h2 className="font-sans font-light text-ivory leading-[1.15] text-3xl md:text-4xl lg:text-5xl mb-10 max-w-[20ch]">
             A boutique studio that does things differently.
           </h2>
 
