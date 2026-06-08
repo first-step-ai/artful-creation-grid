@@ -27,7 +27,7 @@ export function Footer() {
       style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-16 md:pt-20 pb-16 md:pb-24">
-        <div className="flex items-end justify-between gap-10">
+        <div className="flex items-center justify-between gap-10">
           {/* Logo (left, aligned to bottom row) */}
           <div className="flex shrink-0 items-center gap-3 md:gap-4">
             <img
