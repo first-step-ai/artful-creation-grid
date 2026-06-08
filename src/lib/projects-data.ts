@@ -7,6 +7,7 @@ import bexley5 from "@/assets/projects/bexley-5.jpg.asset.json";
 import bexley6 from "@/assets/projects/bexley-6.jpg.asset.json";
 import bexley7 from "@/assets/projects/bexley-7.jpg.asset.json";
 import bexley8 from "@/assets/projects/bexley-8.jpg.asset.json";
+import bexleyAlt2 from "@/assets/projects/bexley-bold-utility-alt-2.jpg.asset.json";
 // Drummoyne
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
