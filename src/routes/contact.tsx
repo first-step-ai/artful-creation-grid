@@ -83,22 +83,22 @@ function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f5f1ea] text-[#1a1a1a] flex flex-col">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--ivory)] flex flex-col">
       <Nav />
       <main className="grid grid-cols-1 lg:grid-cols-2 flex-1">
         {/* LEFT — form panel */}
         <section className="flex flex-col px-6 md:px-14 lg:px-20 pt-28 md:pt-32 pb-20">
           <div className="max-w-xl w-full">
-            <p className="text-[11px] tracking-[0.32em] uppercase text-[#1a1a1a]/60 mb-8">
+            <p className="text-[11px] tracking-[0.32em] uppercase text-[var(--ivory)]/60 mb-8">
               Contact
             </p>
-            <h1 className="font-serif font-light leading-[0.95] text-4xl md:text-5xl lg:text-6xl text-[#1a1a1a]">
+            <h1 className="font-serif font-light leading-[0.95] text-4xl md:text-5xl lg:text-6xl text-[var(--ivory)]">
               Let's talk about
               <br />
               your home.
             </h1>
 
-            <div className="mt-8 space-y-4 text-[14px] leading-relaxed text-[#1a1a1a]/70 font-light max-w-md">
+            <div className="mt-8 space-y-4 text-[14px] leading-relaxed text-[var(--ivory)]/70 font-light max-w-md">
               <p>
                 Tell us a little about what you're thinking. Share your details for
                 a quick, obligation-free phone call.
@@ -111,13 +111,13 @@ function ContactPage() {
 
             {/* Progress */}
             <div className="mt-14">
-              <div className="flex items-center justify-between text-[11px] tracking-[0.28em] uppercase text-[#1a1a1a]/60 mb-3">
+              <div className="flex items-center justify-between text-[11px] tracking-[0.28em] uppercase text-[var(--ivory)]/60 mb-3">
                 <span>Step {step} of {total}</span>
                 <span>{pct}%</span>
               </div>
-              <div className="h-px w-full bg-[#1a1a1a]/12 relative">
+              <div className="h-px w-full bg-[var(--ivory)]/12 relative">
                 <div
-                  className="absolute inset-y-0 left-0 bg-[#1a1a1a] transition-all duration-500 ease-out"
+                  className="absolute inset-y-0 left-0 bg-[var(--ivory)] transition-all duration-500 ease-out"
                   style={{ width: `${pct}%`, height: "1px" }}
                 />
               </div>
@@ -145,7 +145,7 @@ function ContactPage() {
                   <div>
                     <label
                       htmlFor="address"
-                      className="block text-[11px] tracking-[0.28em] uppercase text-[#1a1a1a]/60 mb-3"
+                      className="block text-[11px] tracking-[0.28em] uppercase text-[var(--ivory)]/60 mb-3"
                     >
                       Full address
                     </label>
@@ -154,7 +154,7 @@ function ContactPage() {
                       autoFocus
                       value={data.address}
                       onChange={(e) => update("address", e.target.value)}
-                      className="w-full bg-transparent border-b border-[#1a1a1a]/25 focus:border-[#1a1a1a] outline-none py-3 text-lg text-[#1a1a1a] placeholder:text-[#1a1a1a]/30 transition-colors"
+                      className="w-full bg-transparent border-b border-[var(--ivory)]/25 focus:border-[var(--ivory)] outline-none py-3 text-lg text-[var(--ivory)] placeholder:text-[var(--ivory)]/30 transition-colors"
                       placeholder=""
                     />
                   </div>
@@ -185,14 +185,14 @@ function ContactPage() {
                     <Field label="Email" type="email" value={data.email} onChange={(v) => update("email", v)} required />
                     <Field label="Phone" type="tel" value={data.phone} onChange={(v) => update("phone", v)} />
                     <div className="sm:col-span-2">
-                      <label className="block text-[11px] tracking-[0.28em] uppercase text-[#1a1a1a]/60 mb-3">
+                      <label className="block text-[11px] tracking-[0.28em] uppercase text-[var(--ivory)]/60 mb-3">
                         Anything else you'd like us to know (optional)
                       </label>
                       <textarea
                         value={data.notes}
                         onChange={(e) => update("notes", e.target.value)}
                         rows={4}
-                        className="w-full bg-transparent border-b border-[#1a1a1a]/25 focus:border-[#1a1a1a] outline-none py-3 text-[#1a1a1a] resize-y transition-colors"
+                        className="w-full bg-transparent border-b border-[var(--ivory)]/25 focus:border-[var(--ivory)] outline-none py-3 text-[var(--ivory)] resize-y transition-colors"
                       />
                     </div>
                   </div>
@@ -205,7 +205,7 @@ function ContactPage() {
                   <button
                     type="button"
                     onClick={back}
-                    className="group inline-flex items-center gap-3 text-[11px] tracking-[0.32em] uppercase text-[#1a1a1a]/70 hover:text-[#1a1a1a] transition-colors"
+                    className="group inline-flex items-center gap-3 text-[11px] tracking-[0.32em] uppercase text-[var(--ivory)]/70 hover:text-[var(--ivory)] transition-colors"
                   >
                     <span aria-hidden className="transition-transform group-hover:-translate-x-1">←</span>
                     Back
@@ -219,7 +219,7 @@ function ContactPage() {
                     type="button"
                     onClick={next}
                     disabled={!canContinue}
-                    className="group inline-flex items-center gap-4 bg-[#383d38] text-[#ebf0e9] px-8 py-4 text-[11px] tracking-[0.32em] uppercase disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#1a1a1a] transition-colors"
+                    className="group inline-flex items-center gap-4 bg-[var(--brass)] text-[var(--background)] px-8 py-4 text-[11px] tracking-[0.32em] uppercase disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--ivory)] transition-colors"
                   >
                     Continue
                     <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
@@ -227,7 +227,7 @@ function ContactPage() {
                 ) : (
                   <button
                     type="submit"
-                    className="group inline-flex items-center gap-4 bg-[#383d38] text-[#ebf0e9] px-8 py-4 text-[11px] tracking-[0.32em] uppercase hover:bg-[#1a1a1a] transition-colors"
+                    className="group inline-flex items-center gap-4 bg-[var(--brass)] text-[var(--background)] px-8 py-4 text-[11px] tracking-[0.32em] uppercase hover:bg-[var(--ivory)] transition-colors"
                   >
                     Share my info
                     <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
@@ -257,7 +257,7 @@ function ContactPage() {
 function Step({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
-      <h2 className="font-serif font-light text-2xl md:text-[28px] leading-tight text-[#1a1a1a]">
+      <h2 className="font-serif font-light text-2xl md:text-[28px] leading-tight text-[var(--ivory)]">
         {title}
       </h2>
       {children}
@@ -284,8 +284,8 @@ function Choice({
         "text-left px-5 py-4 border transition-all text-[14px]",
         full ? "w-full" : "",
         selected
-          ? "bg-[#383d38] text-[#ebf0e9] border-[#383d38]"
-          : "bg-transparent text-[#1a1a1a] border-[#1a1a1a]/20 hover:border-[#1a1a1a]/60",
+          ? "bg-[var(--brass)] text-[var(--background)] border-[var(--brass)]"
+          : "bg-transparent text-[var(--ivory)] border-[var(--ivory)]/20 hover:border-[var(--ivory)]/60",
       ].join(" ")}
     >
       <span className="flex items-center justify-between gap-4">
@@ -311,7 +311,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-[11px] tracking-[0.28em] uppercase text-[#1a1a1a]/60 mb-3">
+      <label className="block text-[11px] tracking-[0.28em] uppercase text-[var(--ivory)]/60 mb-3">
         {label}
         {required && <span className="ml-1">*</span>}
       </label>
@@ -320,7 +320,7 @@ function Field({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         required={required}
-        className="w-full bg-transparent border-b border-[#1a1a1a]/25 focus:border-[#1a1a1a] outline-none py-3 text-[#1a1a1a] transition-colors"
+        className="w-full bg-transparent border-b border-[var(--ivory)]/25 focus:border-[var(--ivory)] outline-none py-3 text-[var(--ivory)] transition-colors"
       />
     </div>
   );
