@@ -7,7 +7,6 @@ import bexley5 from "@/assets/projects/bexley-5.jpg.asset.json";
 import bexley6 from "@/assets/projects/bexley-6.jpg.asset.json";
 import bexley7 from "@/assets/projects/bexley-7.jpg.asset.json";
 import bexley8 from "@/assets/projects/bexley-8.jpg.asset.json";
-import bexleyAlt2 from "@/assets/projects/bexley-bold-utility-alt-2.jpg.asset.json";
 // Drummoyne
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
@@ -102,7 +101,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: abbots1.url },
   { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont1.url },
   { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan1.url, badge: "Finalist" },
-  { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexleyAlt2.url },
+  { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url },
 ];
