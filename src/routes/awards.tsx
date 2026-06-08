@@ -355,7 +355,7 @@ function AwardsPage() {
           <div className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-24 md:pt-28 pb-16 md:pb-20">
             <div className="max-w-3xl">
               <div className="eyebrow mb-6">Awards · Year Timeline</div>
-              <h1 className="font-serif italic font-light text-ivory text-[2.25rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl tracking-normal [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]">
+              <h1 className="font-sans font-light text-ivory uppercase tracking-[0.12em] leading-[1.2] text-2xl sm:text-3xl md:text-4xl lg:text-5xl [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]">
                 A timeline of recognition.
               </h1>
               <p className="mt-6 max-w-xl text-ivory/90 text-sm md:text-base font-light leading-relaxed [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">
