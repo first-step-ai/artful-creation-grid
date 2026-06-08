@@ -92,7 +92,7 @@ function ContactPage() {
             <p className="text-[11px] tracking-[0.32em] uppercase text-[var(--ivory)]/60 mb-8">
               Contact
             </p>
-            <h1 className="font-sans font-light uppercase tracking-[0.12em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl text-[var(--ivory)]">
+            <h1 className="font-sans font-light uppercase tracking-[0.06em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl text-[var(--ivory)]">
               Let's talk about
               <br />
               your home.

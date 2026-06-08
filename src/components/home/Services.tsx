@@ -79,7 +79,7 @@ function ServiceCard({
       </div>
       <div className="mt-4 flex items-start justify-between gap-6">
         <div>
-          <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase">
+          <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.05em] uppercase">
             {title}
           </h3>
           <p className="mt-2 max-w-sm font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">{body}</p>
