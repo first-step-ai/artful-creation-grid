@@ -25,18 +25,18 @@
   align-items: center;
   justify-content: space-between;
   padding: 2em;
-  background: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: background 0.375s ease, backdrop-filter 0.375s ease;
   pointer-events: none;
   z-index: 20;
 }
 
 .staggered-menu-wrapper.is-scrolled .staggered-menu-header {
-  background: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 
