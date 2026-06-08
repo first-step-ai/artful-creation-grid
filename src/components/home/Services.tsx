@@ -1,7 +1,7 @@
 import bathrooms from "@/assets/projects/annandale-1.jpg.asset.json";
 import kitchens from "@/assets/projects/kitchen-services.jpg.asset.json";
-import laundries from "@/assets/projects/drummoyne-2.jpg.asset.json";
-import interiors from "@/assets/projects/abbotsford-1.jpg.asset.json";
+import laundries from "@/assets/projects/drummoyne-fullhome.jpg.asset.json";
+import interiors from "@/assets/projects/rozelle-multispace.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const services = [
