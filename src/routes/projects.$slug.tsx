@@ -30,7 +30,7 @@ function ProjectDetailPage() {
       <Nav />
       <main>
         {/* HERO */}
-        <section className="relative h-[90vh] min-h-[640px] w-full overflow-hidden">
+        <section className="relative h-[75vh] min-h-[540px] w-full overflow-hidden">
           <img
             src={p.hero}
             alt={`${p.title}, ${p.suburb}`}
