@@ -1,12 +1,12 @@
 import footerLogo from "@/assets/am-mark.png.asset.json";
-import socialInstagram from "@/assets/footer-social-1.jpg";
-import socialPinterest from "@/assets/footer-social-2.jpg";
-import socialFacebook from "@/assets/footer-social-3.jpg";
+import socialInstagram from "@/assets/projects/bexley-3.jpg.asset.json";
+import socialPinterest from "@/assets/projects/pyrmont-4.jpg.asset.json";
+import socialFacebook from "@/assets/projects/annandale-4.jpg.asset.json";
 
 const SOCIALS = [
-  { label: "Instagram", img: socialInstagram, href: "#" },
-  { label: "Pinterest", img: socialPinterest, href: "#" },
-  { label: "Facebook", img: socialFacebook, href: "#" },
+  { label: "Instagram", img: socialInstagram.url, href: "#" },
+  { label: "Pinterest", img: socialPinterest.url, href: "#" },
+  { label: "Facebook", img: socialFacebook.url, href: "#" },
 ];
 
 const FOOTER_BG = "var(--background)";
