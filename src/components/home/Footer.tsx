@@ -4,9 +4,9 @@ import socialPinterest from "@/assets/footer-pinterest.jpg.asset.json";
 import socialFacebook from "@/assets/footer-facebook.jpg.asset.json";
 
 const SOCIALS = [
-  { label: "Instagram", img: socialInstagram, href: "#" },
-  { label: "Pinterest", img: socialPinterest, href: "#" },
-  { label: "Facebook", img: socialFacebook, href: "#" },
+  { label: "Instagram", img: socialInstagram.url, href: "#" },
+  { label: "Pinterest", img: socialPinterest.url, href: "#" },
+  { label: "Facebook", img: socialFacebook.url, href: "#" },
 ];
 
 const FOOTER_BG = "var(--background)";
