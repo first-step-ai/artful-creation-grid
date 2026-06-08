@@ -284,7 +284,7 @@ function Choice({
         "text-left px-5 py-4 border transition-all text-[14px]",
         full ? "w-full" : "",
         selected
-          ? "bg-[var(--background)] text-[var(--ivory)] border-[var(--background)]"
+          ? "bg-[var(--brass)] text-[var(--background)] border-[var(--brass)]"
           : "bg-transparent text-[var(--ivory)] border-[var(--ivory)]/20 hover:border-[var(--ivory)]/60",
       ].join(" ")}
     >
