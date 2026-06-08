@@ -69,9 +69,9 @@ import annan7 from "@/assets/projects/annandale-7.jpg.asset.json";
 import annan8 from "@/assets/projects/annandale-8.jpg.asset.json";
 // Camperdown
 import camp1 from "@/assets/projects/camperdown-v3-4.jpg.asset.json";
-import camp2 from "@/assets/projects/camperdown-v3-1.jpg.asset.json";
-import camp3 from "@/assets/projects/camperdown-v3-11.jpg.asset.json";
-import camp4 from "@/assets/projects/camperdown-v3-7.jpg.asset.json";
+import camp2 from "@/assets/projects/camperdown-v3-7.jpg.asset.json";
+import camp3 from "@/assets/projects/camperdown-v3-1.jpg.asset.json";
+import camp4 from "@/assets/projects/camperdown-v3-11.jpg.asset.json";
 import camp5 from "@/assets/projects/camperdown-v3-2.jpg.asset.json";
 import camp6 from "@/assets/projects/camperdown-v3-3.jpg.asset.json";
 import camp7 from "@/assets/projects/camperdown-v3-10.jpg.asset.json";
