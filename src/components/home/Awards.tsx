@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
 import annan1 from "@/assets/projects/2024-hia-bathroom.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
-import teamGroup from "@/assets/am-team-group.jpg.asset.json";
+import teamGroup from "@/assets/am-team-group-tall.jpg.asset.json";
 import hia2025 from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
@@ -11,7 +11,7 @@ const awards: { title: string; description: string; image: string; fit?: "cover"
   { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: hia2025.url },
   { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: annan1.url },
   { title: "NATIONAL WINNER 2024 AUSTRALIA", description: "Small Business Management Award", image: national2024.url },
-  { title: "NSW WINNER 2022", description: "Small Business Management Award", image: teamGroup.url, fit: "contain" },
+  { title: "NSW WINNER 2022", description: "Small Business Management Award", image: teamGroup.url },
 ];
 
 export function Awards() {
