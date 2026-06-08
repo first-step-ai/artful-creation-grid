@@ -292,23 +292,33 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
     };
   }, [images]);
 
-  // Group consecutive portraits into pairs; landscapes/unknowns stand alone.
+  // Pair portraits side-by-side (greedy lookahead, not just consecutive);
+  // landscapes/unknowns render full-width on their own row.
   const rows: { type: "single" | "pair"; items: { src: string; index: number }[] }[] = [];
-  let i = 0;
-  while (i < images.length) {
-    if (orients[i] === "portrait" && orients[i + 1] === "portrait") {
-      rows.push({
-        type: "pair",
-        items: [
-          { src: images[i], index: i },
-          { src: images[i + 1], index: i + 1 },
-        ],
-      });
-      i += 2;
-    } else {
-      rows.push({ type: "single", items: [{ src: images[i], index: i }] });
-      i += 1;
+  const consumed = new Set<number>();
+  for (let idx = 0; idx < images.length; idx++) {
+    if (consumed.has(idx)) continue;
+    if (orients[idx] === "portrait") {
+      let pair = -1;
+      for (let j = idx + 1; j < images.length; j++) {
+        if (!consumed.has(j) && orients[j] === "portrait") {
+          pair = j;
+          break;
+        }
+      }
+      if (pair !== -1) {
+        consumed.add(pair);
+        rows.push({
+          type: "pair",
+          items: [
+            { src: images[idx], index: idx },
+            { src: images[pair], index: pair },
+          ],
+        });
+        continue;
+      }
     }
+    rows.push({ type: "single", items: [{ src: images[idx], index: idx }] });
   }
 
   return (
