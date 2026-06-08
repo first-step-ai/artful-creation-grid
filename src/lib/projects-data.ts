@@ -188,7 +188,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We recently had AM complete our renovation and could not be any happier. From the design stage to handover, everything went as smooth as possible. Highly recommend the whole team!!",
-    gallery: [abbots2.url, abbots3.url, abbots4.url, abbots5.url, abbots8.url, abbots6.url, abbots7.url, abbots11.url, abbots12.url, abbots9.url, abbots13.url, abbots14.url, abbots10.url, abbots15.url, abbots16.url, abbots17.url],
+    gallery: [abbots4.url, abbots5.url, abbots8.url, abbots2.url, abbots3.url, abbots6.url, abbots7.url, abbots11.url, abbots12.url, abbots9.url, abbots13.url, abbots14.url, abbots10.url, abbots15.url, abbots16.url, abbots17.url],
   },
 
   "pyrmont-elevated-city-living": {
