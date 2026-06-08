@@ -1,4 +1,4 @@
-import footerLogo from "@/assets/am-mark.png.asset.json";
+import footerLogo from "@/assets/am-footer-logo.png.asset.json";
 import socialInstagram from "@/assets/projects/bexley-3.jpg.asset.json";
 import socialPinterest from "@/assets/projects/pyrmont-4.jpg.asset.json";
 import socialFacebook from "@/assets/projects/annandale-4.jpg.asset.json";
@@ -34,7 +34,7 @@ export function Footer() {
               src={footerLogo.url}
               alt="AM Bathrooms + Projects"
               className="h-16 md:h-24 w-auto object-contain object-left"
-              style={{ filter: "brightness(0)" }}
+              style={{ filter: "brightness(0) invert(1)" }}
             />
           </div>
 
