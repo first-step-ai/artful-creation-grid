@@ -3,11 +3,12 @@ import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
 import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
+import hia2025 from "@/assets/hia-2025-group-photo.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const awards: { title: string; description: string; image: string; fit?: "cover" | "contain" }[] = [
-  { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: rozelle1.url },
+  { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: hia2025.url },
   { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: annan1.url },
   { title: "NATIONAL WINNER 2024 AUSTRALIA", description: "Small Business Management Award", image: national2024.url, fit: "contain" },
   { title: "NSW WINNER 2022", description: "Small Business Management Award", image: nsw2022.url, fit: "contain" },
