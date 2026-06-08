@@ -56,7 +56,7 @@ function ProjectsPage() {
       <main>
         <section className="mx-auto max-w-[1600px] px-6 md:px-10 pt-40 md:pt-48 pb-16">
           <div className="eyebrow mb-6">Portfolio</div>
-          <h1 className="font-sans font-light text-ivory uppercase tracking-[0.12em] leading-[1.2] text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-3xl md:text-4xl lg:text-5xl">
             The work.
           </h1>
           <p className="mt-8 max-w-xl font-sans text-base md:text-lg text-ivory/80 leading-relaxed">
