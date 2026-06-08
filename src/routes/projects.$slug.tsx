@@ -61,7 +61,7 @@ function ProjectDetailPage() {
         <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,2fr)_1fr] gap-10 lg:gap-12">
             {/* LEFT COLUMN — sticky scroll */}
-            <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pr-2 space-y-12">
+            <aside className="lg:sticky lg:top-28 lg:self-start pr-2 space-y-12">
               <Block label="Scope">
                 <p className="font-sans text-sm text-ivory/85">
                   {p.scope}
