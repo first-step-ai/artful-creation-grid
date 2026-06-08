@@ -282,7 +282,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Warm tonal material palette connecting each space",
       "Carefully resolved storage reducing visual clutter throughout",
     ],
-    gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url],
+    gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url, camp9.url, camp10.url, camp11.url, camp12.url],
   },
 
   "bexley-bold-utility": {
