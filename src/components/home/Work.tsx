@@ -4,7 +4,7 @@ import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
 import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
 import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
 import bexley1 from "@/assets/projects/bexley-1.jpg.asset.json";
-import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
+import bexleyAlt from "@/assets/projects/bexley-bold-utility-alt.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
