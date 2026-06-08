@@ -46,7 +46,8 @@ function ProjectsPage() {
     if (active === "All") return true;
     if (active === "Award Winning") return p.badge === "Award";
     if (active === "Award Finalist") return p.badge === "Finalist";
-    return p.category === active;
+    const tags = p.tags ?? [p.category];
+    return tags.includes(active);
   });
 
   return (
