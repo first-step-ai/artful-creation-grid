@@ -251,7 +251,7 @@ function ProjectCard({ project }: { project: ProjectAward }) {
         />
       ) : (
         <div className="absolute inset-0 bg-burgundy flex flex-col items-center justify-center px-8 text-center">
-          <div className="font-serif italic text-ivory/30 text-[120px] leading-none">
+          <div className="font-sans italic text-ivory/30 text-[120px] leading-none">
             {project.suburb.charAt(0)}
           </div>
           <div className="mt-4 text-[10px] tracking-[0.3em] uppercase text-ivory/50">
@@ -264,7 +264,7 @@ function ProjectCard({ project }: { project: ProjectAward }) {
         <div className="text-[11px] tracking-[0.28em] uppercase text-ivory/85 mb-2">
           {project.suburb}
         </div>
-        <div className="font-serif text-2xl md:text-[28px] leading-tight text-ivory mb-4">
+        <div className="font-sans text-2xl md:text-[28px] leading-tight text-ivory mb-4">
           {project.title}
         </div>
         <ul className="space-y-2">
@@ -303,7 +303,7 @@ function YearSection({ group }: { group: YearGroup }) {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
         <div className="md:col-span-5">
           <div className="eyebrow mb-4">Recognition</div>
-          <div className="font-serif text-[64px] md:text-[110px] leading-none text-ivory">
+          <div className="font-sans text-[64px] md:text-[110px] leading-none text-ivory">
             {group.year}
           </div>
           <div className="mt-6 h-px w-16 bg-brass" />
