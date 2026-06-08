@@ -61,24 +61,39 @@ function ProjectDetailPage() {
         <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,2fr)_1fr] gap-10 lg:gap-12">
             {/* LEFT COLUMN — sticky scroll */}
-            <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pr-2 space-y-10">
+            <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pr-2 space-y-12">
               <Block label="Scope">
-                <p className="font-sans text-[13px] leading-relaxed text-ivory/85">
+                <p className="font-serif text-[15px] md:text-base font-light italic leading-[1.7] text-ivory/90">
                   {p.scope}
                 </p>
               </Block>
 
               {p.awards.length > 0 && (
                 <Block label="Awards">
-                  <ul className="space-y-2">
-                    {p.awards.map((a) => (
-                      <li
-                        key={a}
-                        className="font-sans text-[13px] leading-relaxed text-ivory/85"
-                      >
-                        {a}
-                      </li>
-                    ))}
+                  <ul className="divide-y divide-ivory/10 border-t border-ivory/10">
+                    {p.awards.map((a, i) => {
+                      const isWinner = /winner/i.test(a);
+                      const [name, status] = a.split(/·|\u00b7/).map((s) => s.trim());
+                      return (
+                        <li key={a} className="py-4 flex items-start gap-4">
+                          <span className="font-sans text-[10px] tracking-[0.28em] text-ivory-muted pt-[3px] tabular-nums">
+                            {String(i + 1).padStart(2, "0")}
+                          </span>
+                          <span className="flex-1 font-serif text-[14px] font-light leading-snug text-ivory/90">
+                            {name}
+                          </span>
+                          {status && (
+                            <span
+                              className={`font-sans text-[9px] tracking-[0.28em] uppercase pt-[5px] ${
+                                isWinner ? "text-brass" : "text-ivory-muted"
+                              }`}
+                            >
+                              {status}
+                            </span>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </Block>
               )}
@@ -93,12 +108,16 @@ function ProjectDetailPage() {
 
 
             {/* RIGHT COLUMN — sticky scroll */}
-            <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pl-2 space-y-10">
+            <aside className="lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pl-2 space-y-12">
               <div>
-                <h2 className="eyebrow text-ivory">
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="h-px w-8 bg-brass/60" />
+                  <span className="eyebrow text-ivory-muted">Project Story</span>
+                </div>
+                <h2 className="font-serif text-2xl md:text-[28px] font-light leading-[1.2] text-ivory">
                   {p.rightHeading}
                 </h2>
-                <p className="mt-6 font-sans text-[13px] leading-relaxed text-ivory/85">
+                <p className="mt-6 font-sans text-[13.5px] leading-[1.75] text-ivory/80">
                   {p.rightIntro}
                 </p>
               </div>
