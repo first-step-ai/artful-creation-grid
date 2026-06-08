@@ -3,8 +3,9 @@ import rozelle2 from "@/assets/projects/rozelle-2.jpg.asset.json";
 import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
 import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
 import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
+import rozelleMultispace from "@/assets/projects/rozelle-multispace.jpg.asset.json";
+import rozelleKitchen from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
 import bexley1 from "@/assets/projects/bexley-1.jpg.asset.json";
-import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
@@ -17,9 +18,9 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 
 
 const projects = [
+  { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full interior", image: rozelleMultispace.url },
+  { suburb: "Rozelle", title: "Refined Kitchen", category: "Kitchen", image: rozelleKitchen.url },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url },
-  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url },
-  { suburb: "Rozelle", title: "Award-Winning Family Living", category: "Full interior", image: rozelle3.url },
 ];
 
 const suburbs = [
