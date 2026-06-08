@@ -34,7 +34,7 @@ export function Footer() {
               src={footerLogo.url}
               alt="AM Bathrooms + Projects"
               className="h-16 md:h-24 w-auto object-contain object-left"
-              style={{ filter: "brightness(0) invert(1)" }}
+              style={{ filter: "brightness(0)" }}
             />
           </div>
 
