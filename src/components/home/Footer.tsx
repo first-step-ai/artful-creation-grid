@@ -29,18 +29,18 @@ export function Footer() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-16 md:pt-20 pb-16 md:pb-24">
         <div className="flex items-end justify-between gap-10">
           {/* Logo (left, aligned to bottom row) */}
-          <div className="flex shrink-0 items-center gap-4 md:gap-5">
+          <div className="flex shrink-0 items-center gap-3 md:gap-4">
             <img
               src={amOnly.url}
               alt="AM"
-              className="h-16 md:h-24 w-auto object-contain"
+              className="h-12 md:h-16 w-auto object-contain"
               style={{ filter: "brightness(0) invert(1)" }}
             />
             <span
               className="font-sans whitespace-nowrap"
               style={{
                 color: TEXT,
-                fontSize: "clamp(14px, 2vw, 22px)",
+                fontSize: "clamp(11px, 1.4vw, 16px)",
                 letterSpacing: "0.18em",
               }}
             >
