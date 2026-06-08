@@ -219,7 +219,7 @@ function ContactPage() {
                     type="button"
                     onClick={next}
                     disabled={!canContinue}
-                    className="group inline-flex items-center gap-4 bg-[var(--background)] text-[var(--ivory)] px-8 py-4 text-[11px] tracking-[0.32em] uppercase disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--ivory)] transition-colors"
+                    className="group inline-flex items-center gap-4 bg-[var(--brass)] text-[var(--background)] px-8 py-4 text-[11px] tracking-[0.32em] uppercase disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--ivory)] transition-colors"
                   >
                     Continue
                     <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
