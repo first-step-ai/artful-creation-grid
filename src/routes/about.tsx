@@ -55,7 +55,7 @@ function Hero() {
       {/* Quiet darkening for legibility, kept light per reference */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent" />
 
-      <div className="relative h-full max-w-[1400px] mx-auto flex items-end px-6 md:px-12 lg:px-16 pb-16 md:pb-24">
+      <div className="relative h-full max-w-[1400px] mx-auto flex items-end pl-4 md:pl-6 lg:pl-8 pr-6 md:pr-12 lg:pr-16 pb-16 md:pb-24">
         <div>
           <p className="eyebrow mb-8 [text-shadow:0_1px_12px_rgba(0,0,0,0.9)]" style={{ color: "var(--ivory)" }}>About the studio</p>
           <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-3xl md:text-5xl lg:text-6xl [text-shadow:0_2px_18px_rgba(0,0,0,0.75)]">
