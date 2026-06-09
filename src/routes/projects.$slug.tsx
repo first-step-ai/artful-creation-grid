@@ -104,6 +104,31 @@ function ProjectDetailPage() {
                 </Block>
               )}
 
+              {p.press && p.press.length > 0 && (
+                <Block label="Press">
+                  <ul className="divide-y divide-ivory/10 border-t border-ivory/10">
+                    {p.press.map((item, i) => (
+                      <li key={item.url} className="py-4 flex items-start gap-4">
+                        <span className="font-sans text-[10px] tracking-[0.28em] text-ivory-muted pt-[3px] tabular-nums">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 font-sans text-sm text-ivory/90 hover:text-brass transition-colors inline-flex items-start gap-2 group"
+                        >
+                          <span className="underline decoration-ivory/20 group-hover:decoration-brass underline-offset-4">
+                            {item.label}
+                          </span>
+                          <ArrowRight className="h-3.5 w-3.5 mt-1 shrink-0 opacity-70 group-hover:opacity-100 transition-opacity" />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </Block>
+              )}
+
             </aside>
 
             {/* CENTER — image stack */}
