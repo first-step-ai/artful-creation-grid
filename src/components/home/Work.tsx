@@ -104,26 +104,32 @@ export function Work() {
 
 function ProjectTile({ project }: { project: (typeof projects)[number] }) {
   return (
-    <figure className="group lift">
-      <div className="relative overflow-hidden aspect-[4/5] bg-oxblood">
-        <img
-          src={project.image}
-          alt={`${project.title}, ${project.suburb}`}
-          loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
-        />
-        
-      </div>
-      <figcaption className="mt-5 flex items-baseline justify-between gap-6">
-        <div>
-          <div className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase whitespace-nowrap">
-            <span>{project.suburb}</span>
-            <span className="mx-2 opacity-50">|</span>
-            <span>{project.title}</span>
-          </div>
-          <div className="mt-2 font-sans text-[11px] tracking-[0.28em] font-medium text-ivory">{project.category}</div>
+    <Link
+      to="/projects/$slug"
+      params={{ slug: project.slug }}
+      preload="intent"
+      className="block group lift"
+    >
+      <figure>
+        <div className="relative overflow-hidden aspect-[4/5] bg-oxblood">
+          <img
+            src={project.image}
+            alt={`${project.title}, ${project.suburb}`}
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+          />
         </div>
-      </figcaption>
-    </figure>
+        <figcaption className="mt-5 flex items-baseline justify-between gap-6">
+          <div>
+            <div className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase whitespace-nowrap">
+              <span>{project.suburb}</span>
+              <span className="mx-2 opacity-50">|</span>
+              <span>{project.title}</span>
+            </div>
+            <div className="mt-2 font-sans text-[11px] tracking-[0.28em] font-medium text-ivory">{project.category}</div>
+          </div>
+        </figcaption>
+      </figure>
+    </Link>
   );
 }
