@@ -102,6 +102,7 @@ export type ProjectDetail = ProjectSummary & {
   whatWasntWorking: string[];
   whatWeDid?: string;
   testimonial?: string;
+  press?: { label: string; url: string }[];
   gallery: string[];
   beforeImage?: string;
   afterImage?: string;
@@ -164,6 +165,12 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Jenny listened carefully to my design aesthetic and consistently provided great suggestions which have turned out beautifully. When you engage Jenny and Ante, you are selecting a team that truely care.",
+    press: [
+      {
+        label: "HIA · Renovated Kitchen of the Year 2025",
+        url: "https://hia.com.au/awards-and-events/awards/new-south-wales-awards-program/new-south-wales-award-winners-2025/kitchen-of-the-year/renovated-kitchen",
+      },
+    ],
     gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
   },
 
@@ -390,6 +397,7 @@ function buildDetail(s: ProjectSummary): ProjectDetail {
     ],
     whatWeDid: o.whatWeDid,
     testimonial: o.testimonial,
+    press: o.press,
     gallery: o.gallery ?? [s.image],
     beforeImage: o.beforeImage,
     afterImage: o.afterImage,
