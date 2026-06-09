@@ -123,12 +123,12 @@ function Tile({ project }: { project: ProjectSummary }) {
           )}
         </div>
         <figcaption className="mt-5">
-          <div className="font-sans text-lg md:text-xl font-light text-ivory leading-tight">
+          <div className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase whitespace-nowrap">
             <span>{project.suburb}</span>
-            <span className="mx-3 opacity-50">|</span>
+            <span className="mx-2 opacity-50">|</span>
             <span>{project.title}</span>
           </div>
-          <div className="mt-3 font-sans text-[11px] tracking-[0.28em] uppercase font-medium text-ivory-muted">
+          <div className="mt-2 font-sans text-[11px] tracking-[0.28em] font-medium text-ivory">
             {project.category}
           </div>
         </figcaption>
