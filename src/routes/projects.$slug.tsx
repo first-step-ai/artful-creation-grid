@@ -186,10 +186,8 @@ function ProjectDetailPage() {
 
         {/* MORE PROJECTS */}
         <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28 border-t border-ivory/10">
-          <div className="flex items-end justify-between mb-12">
-            <h2 className="font-serif text-4xl md:text-6xl font-light text-ivory">
-              More projects
-            </h2>
+          <div className="flex items-center justify-between mb-12">
+            <div className="eyebrow">More Projects</div>
             <Link
               to="/projects"
               className="font-sans text-[11px] tracking-[0.28em] uppercase text-ivory hover:text-brass inline-flex items-center gap-2"
@@ -197,6 +195,7 @@ function ProjectDetailPage() {
               View all <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-8 gap-y-14">
             {getMoreProjects(p.slug, 3).map((m) => {
               const mSlug = slugify(m.suburb, m.title);
