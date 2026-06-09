@@ -397,6 +397,7 @@ function buildDetail(s: ProjectSummary): ProjectDetail {
     ],
     whatWeDid: o.whatWeDid,
     testimonial: o.testimonial,
+    press: o.press,
     gallery: o.gallery ?? [s.image],
     beforeImage: o.beforeImage,
     afterImage: o.afterImage,
