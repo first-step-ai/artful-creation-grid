@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, useEffect, type ReactNode } from "react";
-import { Plus, Minus, ArrowRight } from "lucide-react";
+import { Plus, Minus, ArrowRight, ArrowLeft } from "lucide-react";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import { getProjectDetail, getMoreProjects, slugify } from "@/lib/projects-data";
@@ -31,6 +31,12 @@ function ProjectDetailPage() {
       <main>
         {/* HERO */}
         <section className="relative h-[75vh] min-h-[540px] w-full overflow-hidden">
+          <Link
+            to="/projects"
+            className="absolute top-24 md:top-28 left-6 md:left-10 z-20 inline-flex items-center gap-2 font-sans text-[11px] tracking-[0.28em] uppercase text-ivory hover:text-brass transition-colors bg-oxblood/40 backdrop-blur-md border border-ivory/25 px-4 py-2.5"
+          >
+            <ArrowLeft className="h-4 w-4" /> Full Portfolio
+          </Link>
           <img
             src={p.hero}
             alt={`${p.title}, ${p.suburb}`}
@@ -98,9 +104,6 @@ function ProjectDetailPage() {
                 </Block>
               )}
 
-              {p.whatWasntWorking.length > 0 && (
-                <ExpandableBlock label="What wasn't working" items={p.whatWasntWorking} />
-              )}
             </aside>
 
             {/* CENTER — image stack */}
@@ -117,6 +120,12 @@ function ProjectDetailPage() {
                   {p.rightIntro}
                 </p>
               </div>
+
+              {p.whatWasntWorking.length > 0 && (
+                <ExpandableBlock label="What wasn't working" items={p.whatWasntWorking} />
+              )}
+
+
 
               {p.whatWeDid && (
                 <ExpandableBlock label="What we did" items={[p.whatWeDid]} />
@@ -181,12 +190,12 @@ function ProjectDetailPage() {
                       className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
                     />
                   </div>
-                  <div className="mt-5 font-serif text-2xl font-light text-ivory leading-tight">
+                  <div className="mt-5 font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase">
                     <span>{m.suburb}</span>
-                    <span className="mx-3 opacity-50">|</span>
+                    <span className="mx-2 opacity-50">|</span>
                     <span>{m.title}</span>
                   </div>
-                  <div className="mt-2 font-sans text-[11px] tracking-[0.28em] uppercase text-ivory-muted">
+                  <div className="mt-2 font-sans text-[11px] tracking-[0.28em] font-medium uppercase text-ivory">
                     {m.category}
                   </div>
                 </Link>
