@@ -102,6 +102,7 @@ export type ProjectDetail = ProjectSummary & {
   whatWasntWorking: string[];
   whatWeDid?: string;
   testimonial?: string;
+  press?: { label: string; url: string }[];
   gallery: string[];
   beforeImage?: string;
   afterImage?: string;
