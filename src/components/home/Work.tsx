@@ -19,8 +19,8 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 
 const projects = [
   { suburb: "Rozelle", title: "Award-Winning Family Living", category: "FULL INTERIOR", image: rozelleMultispace.url },
-  { suburb: "Camperdown", title: "Inner-city Charm", category: "KITCHEN", image: camp2.url },
-  { suburb: "Drummoyne", title: "Full Home Renewal", category: "BATHROOM", image: drummoyne1.url },
+  { suburb: "Drummoyne", title: "Full Home Renewal", category: "LIVING ROOM", image: drummoyne1.url },
+  { suburb: "Camperdown", title: "Inner-City Charm", category: "BATHROOM", image: camp2.url },
 ];
 
 const suburbs = [
