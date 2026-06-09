@@ -7,6 +7,7 @@ import rozelleMultispace from "@/assets/projects/rozelle-multispace.jpg.asset.js
 import camp2 from "@/assets/projects/camperdown-v3-1.jpg.asset.json";
 import drummoyne1 from "@/assets/projects/drummoyne-v2-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
+import { Link } from "@tanstack/react-router";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
   { label: "Curved mosaic feature wall", image: rozelle1.url, orientation: "portrait" },
