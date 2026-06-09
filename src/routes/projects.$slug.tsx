@@ -125,20 +125,7 @@ function ProjectDetailPage() {
                 <ExpandableBlock label="What wasn't working" items={p.whatWasntWorking} />
               )}
 
-            {/* CENTER — image stack */}
-            <GalleryStack images={p.gallery} title={p.title} />
 
-
-            {/* RIGHT COLUMN — sticky scroll */}
-            <aside className="lg:sticky lg:top-28 lg:self-start pl-2 space-y-12">
-              <div>
-                <h2 className="font-sans text-lg md:text-xl font-light leading-snug text-ivory">
-                  {p.rightHeading.replace(/[-–—]/g, " ")}
-                </h2>
-                <p className="mt-5 font-sans text-[13px] leading-relaxed text-ivory/80">
-                  {p.rightIntro}
-                </p>
-              </div>
 
               {p.whatWeDid && (
                 <ExpandableBlock label="What we did" items={[p.whatWeDid]} />
