@@ -7,13 +7,14 @@ import rozelleMultispace from "@/assets/projects/rozelle-multispace.jpg.asset.js
 import camp2 from "@/assets/projects/camperdown-v3-1.jpg.asset.json";
 import drummoyne1 from "@/assets/projects/drummoyne-v2-1.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
+import { Link } from "@tanstack/react-router";
 
 const driftStrip: { label: string; image: string; orientation: "portrait" | "landscape" }[] = [
-  { label: "Heritage panelled walls", image: rozelle1.url, orientation: "portrait" },
-  { label: "Curved oak vanity nook", image: rozelle2.url, orientation: "portrait" },
-  { label: "Verde Tempest fireplace", image: rozelle3.url, orientation: "landscape" },
-  { label: "Fluted glass cabinetry", image: rozelle5.url, orientation: "landscape" },
-  { label: "Backlit bar nook", image: rozelle7.url, orientation: "portrait" },
+  { label: "Curved mosaic feature wall", image: rozelle1.url, orientation: "portrait" },
+  { label: "Arched mirrors & skylit ensuite", image: rozelle2.url, orientation: "portrait" },
+  { label: "Fluted vanity & brass tapware", image: rozelle3.url, orientation: "landscape" },
+  { label: "Fluted glass cabinetry & marble island", image: rozelle5.url, orientation: "landscape" },
+  { label: "Verde Tempest fireplace", image: rozelle7.url, orientation: "portrait" },
 ];
 
 
@@ -84,9 +85,9 @@ export function Work() {
 
         <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
           <div className="eyebrow">Featured Work</div>
-          <a href="#enquire" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
+          <Link to="/projects" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
             View full portfolio
-          </a>
+          </Link>
         </div>
 
         {/* 3-up evenly distributed, no voids */}
