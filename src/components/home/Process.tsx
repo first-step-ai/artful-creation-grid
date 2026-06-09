@@ -1,8 +1,8 @@
 import { useReveal } from "@/hooks/use-reveal";
 import discovery from "@/assets/projects/discovery-new.jpg.asset.json";
 import design from "@/assets/projects/design-centered.jpg.asset.json";
-import build from "@/assets/projects/rozelle-3.jpg.asset.json";
-import handover from "@/assets/projects/camperdown-1.jpg.asset.json";
+import build from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
+import handover from "@/assets/projects/pyrmont-2.jpg.asset.json";
 
 const steps = [
   {
