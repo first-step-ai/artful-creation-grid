@@ -84,9 +84,9 @@ export function Work() {
 
         <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
           <div className="eyebrow">Featured Work</div>
-          <a href="#enquire" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
+          <Link to="/projects" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
             View full portfolio
-          </a>
+          </Link>
         </div>
 
         {/* 3-up evenly distributed, no voids */}
