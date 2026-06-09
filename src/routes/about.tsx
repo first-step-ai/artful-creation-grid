@@ -127,8 +127,7 @@ function Story() {
 
           <div className="pt-14">
             <Link
-              to="/"
-              hash="enquire"
+              to="/contact"
               className="group inline-flex items-center gap-6 bg-[color:var(--burgundy)] border border-ivory/15 text-ivory px-10 py-5 hover:bg-[color:var(--brass)] hover:text-[#1a1a1a] transition-colors duration-500"
             >
               <span className="text-[11px] tracking-[0.32em] uppercase font-medium">
