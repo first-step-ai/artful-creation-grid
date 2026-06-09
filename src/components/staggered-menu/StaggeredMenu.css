@@ -127,6 +127,7 @@
 }
 
 @media (max-width: 640px) {
+  .sm-logo-img { height: 26px; }
   .sm-logo-center-img { height: 26px; }
   .sm-logo-center-text { font-size: 11px; }
 }
