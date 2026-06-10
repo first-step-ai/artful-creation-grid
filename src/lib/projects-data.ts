@@ -124,6 +124,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Living Room"] },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url, tags: ["Multi-Space", "Bathroom", "Ensuite"] },
+  { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: rozelle1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
 ];
 
 // Rich detail overrides (keyed by slug). Anything missing falls back to a sensible default.
@@ -358,6 +359,47 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Light-filled layouts despite compact proportions",
     ],
     gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url, drum8.url, drum9.url, drum10.url, drum11.url],
+  },
+
+  "putney-reimagined-heritage-living": {
+    heroCaption:
+      "A thoughtfully reimagined Putney heritage home, transforming awkward unused spaces into a refined family retreat with a luxurious master suite and intelligent modern living.",
+    scope:
+      "This heritage Putney home renovation was designed to completely reimagine how the home functions for modern family living. Working within the constraints of an older floorplan filled with awkward, disconnected rooms, the project focused on transforming underutilised spaces into a highly functional and luxurious master suite while improving the overall flow, comfort, and liveability of the home for a family of four. The renovation included a complete redesign of the downstairs floorplan, transforming a former bathroom, spare bedroom, and long unused room into a refined master suite complete with a custom walk-in robe, luxurious ensuite, powder room, and integrated bar servicing the living area. Alongside the spatial redesign, the home was refreshed with new carpet, paintwork, shutters, and window furnishings, bringing cohesion and warmth back into the home.",
+    awards: [],
+    rightHeading: "Reimagined Heritage Living",
+    rightIntro:
+      "A heritage Putney home reworked from the inside out — converting awkward, underused rooms into a luxurious downstairs master suite, with refined finishes and considered detailing carried throughout the home.",
+    whatWasntWorking: [
+      "After years as an investment property, the home no longer supported the clients' lifestyle or modern family living",
+      "Generous room sizes, but the layout felt inefficient and disconnected with awkward transitional spaces",
+      "Upstairs master bedroom lacked both an ensuite and walk-in robe, making it impractical as a long-term retreat",
+      "Downstairs rooms — an outdated bathroom and redundant playroom — lacked purpose, storage, or flow",
+      "Family needed additional bathroom functionality, improved storage, and more cohesive, calmer living spaces",
+      "Beautiful heritage character needed thoughtful modernisation without losing warmth and charm",
+    ],
+    whatWeDid:
+      "Through a highly considered floorplan redesign, we completely reimagined the way the home functions. Rather than retaining the oversized upstairs bedroom as the master suite, we strategically converted it into a standard bedroom and focused on transforming the underutilised downstairs rooms into a luxurious new master retreat. The former bathroom, spare room, and long unusable playroom were reconfigured into a beautifully resolved master suite featuring a custom walk-in robe, spacious hotel-inspired ensuite, and adjoining powder room. A bespoke bar was also integrated into the living space, elevating the functionality of the entertaining areas while creating a stronger connection between the private and shared zones of the home. Structural openings, including a custom arched doorway, were carefully introduced to soften transitions between spaces and create a stronger architectural identity throughout the renovation. Within the ensuite, every detail was designed to balance luxury with practicality. Full-height tiling, layered lighting, custom joinery, heated flooring, integrated niches, and carefully zoned wet and dry areas transformed the compact footprint into a calming, high-functioning retreat. The main bathroom was also upgraded to better support family living, improving storage, usability, and overall spatial efficiency while maintaining consistency with the home's refined material palette. To complete the transformation, fresh paintwork, new carpet, shutters, and curtains were introduced throughout the home, bringing softness, cohesion, and renewed warmth to the heritage interiors.",
+    designFeatures: [
+      "Complete floorplan reconfiguration improving family functionality and flow",
+      "Transformation of unused rooms into a luxurious master suite",
+      "Bespoke walk-in robe with integrated custom storage solutions",
+      "Hotel-inspired ensuite designed within a compact footprint",
+      "Custom arched doorway introducing softness and architectural character",
+      "Integrated living room bar enhancing entertaining functionality",
+      "Full-height tiling creating a refined, immersive bathroom experience",
+      "Freestanding bath positioned within a carefully zoned wet area",
+      "Motion-sensor LED lighting integrated into the walk-in robe skirting",
+      "Heated flooring and vertical heated towel rails for added comfort",
+      "Layered LED lighting integrated throughout niches, shelving, and joinery",
+      "Verde Tempest quartzite benchtops introducing natural texture and luxury",
+      "Handmade vertical stack subway tiles paired with Moroccan geometric mosaics",
+      "Custom vanity joinery with integrated shaving cabinet and concealed functionality",
+      "Frameless shower detailing and linear strip drainage for a seamless finish",
+      "Refreshed heritage interiors with new carpet, paintwork, shutters, and curtains throughout",
+    ],
+    testimonial:
+      "AM Bathrooms and Projects completed Part 1 of our renovation on Christmas Eve. Ante and his team work tirelessly and go above and beyond to deliver a quality finished renovation. Their workmanship and attention to detail is second to none. They delivered a beautiful master suite and powder room. They make the process of renovating stress free for their clients and we would highly recommend using AM Bathrooms and Projects.",
   },
 };
 
