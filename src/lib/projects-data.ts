@@ -514,6 +514,36 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     gallery: [rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url, rozelle1.url],
   },
+
+  "manly-beachside-apartment-revival": {
+    heroCaption:
+      "A tired 1980s beachside Manly apartment fully reimagined into a bright, modern three-bedroom home built for relaxed coastal entertaining.",
+    scope:
+      "This beachside Manly apartment was tired and stuck in the 1980s. AMBP were engaged to design and renovate the three-bedroom, two-bathroom unit, successfully transforming it into a modern home built for entertaining.",
+    awards: [],
+    rightHeading: "Beachside Apartment Revival",
+    rightIntro:
+      "A tired 1980s beachside Manly apartment fully reimagined into a bright, modern three-bedroom home built for relaxed coastal entertaining.",
+    whatWasntWorking: [
+      "The apartment was tired and stuck in the 1980s",
+      "The dated layout and finishes no longer supported modern living",
+      "The space did not suit the way the owners wanted to entertain",
+    ],
+    whatWeDid:
+      "AMBP designed and renovated the three-bedroom, two-bathroom unit from end to end, transforming the tired beachside apartment into a modern home built for entertaining.",
+    designFeatures: [
+      "Full renovation of a three-bedroom, two-bathroom beachside apartment",
+      "Reimagined kitchen with improved light and a small island for connection",
+      "Laundry off the kitchen reworked as a practical extension of the kitchen",
+      "New engineered timber flooring throughout, brightening the apartment and adding a sense of space",
+      "New curtains and blinds creating a homely feeling and providing privacy",
+      "Bathrooms reflecting the beach location with calming selections and family-suited features",
+      "New nib wall in the ensuite providing a more usable vanity area next to the shower",
+    ],
+    testimonial:
+      "It is incredible enjoying my new space and look forward to working together in the future.",
+    gallery: [pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url, pyrmont7.url, pyrmont8.url],
+  },
 };
 
 function buildDetail(s: ProjectSummary): ProjectDetail {
