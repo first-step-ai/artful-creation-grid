@@ -127,6 +127,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: rozelle1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
   { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom", "Family"] },
   { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Bathroom", image: drum1.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
+  { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rozelle3.url, tags: ["Bathroom", "Ensuite", "Study"] },
 ];
 
 // Rich detail overrides (keyed by slug). Anything missing falls back to a sensible default.
@@ -456,6 +457,30 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "A new curved corner detail wall for easy flow",
     ],
     gallery: [drum1.url, drum2.url, drum3.url, drum4.url, drum5.url, drum6.url],
+  },
+
+  "rozelle-ensuite-and-study-conversion": {
+    heroCaption:
+      "A Rozelle renovation transforming an unused bedroom into a refined private ensuite and practical home study through considered floorplan reconfiguration.",
+    scope:
+      "What was once an unused bedroom is now a beautifully resolved ensuite and study, designed to enhance both function and flow. By reworking the floor plan, a seamless entry was created from the bedroom, and the space was carefully divided to deliver a private ensuite on one side and a practical study on the other.",
+    awards: [],
+    rightHeading: "Ensuite and Study Conversion",
+    rightIntro:
+      "A Rozelle renovation transforming an unused bedroom into a refined private ensuite and practical home study through considered floorplan reconfiguration.",
+    whatWasntWorking: [
+      "A spare bedroom was sitting unused, adding no real value to the home",
+      "The master had no ensuite attached",
+      "Overall the home's footprint was being underutilised, leaving everyday potential on the table",
+    ],
+    whatWeDid:
+      "By reworking the floor plan, we created a seamless entry from the bedroom and carefully divided the space to deliver a private ensuite on one side and a practical study on the other. Through thoughtful planning and a fully managed design and build process, this transformation adds everyday luxury while making smarter use of the home's footprint.",
+    designFeatures: [
+      "Floor plan reconfiguration",
+      "New ensuite",
+      "Integrated study space",
+    ],
+    gallery: [rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
   },
 };
 
