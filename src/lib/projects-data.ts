@@ -402,6 +402,34 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "AM Bathrooms and Projects completed Part 1 of our renovation on Christmas Eve. Ante and his team work tirelessly and go above and beyond to deliver a quality finished renovation. Their workmanship and attention to detail is second to none. They delivered a beautiful master suite and powder room. They make the process of renovating stress free for their clients and we would highly recommend using AM Bathrooms and Projects.",
   },
+
+  "rozelle-calm-family-bathroom": {
+    heroCaption:
+      "A compact Rozelle family bathroom reimagined as a calm, light-filled retreat, with custom joinery, wall-to-wall niches, and a generous bath and walk-in shower for everyday family life.",
+    scope:
+      "This Rozelle family bathroom was reimagined as a calm, light-filled retreat designed to support the rhythm of everyday family life. Working within a compact footprint and limited natural light, the focus was on softness, storage, and ease of use.",
+    awards: [],
+    rightHeading: "Calm Family Bathroom",
+    rightIntro:
+      "A Rozelle family bathroom reimagined as a calm, light-filled retreat designed to support the rhythm of everyday family life.",
+    whatWasntWorking: [
+      "The bathroom was compact, with limited natural light to work with",
+      "It needed to serve the rhythm of a busy family",
+      "Softness, better storage, and ease of use were needed within tight proportions",
+    ],
+    whatWeDid:
+      "Layered lighting, warm neutral tones, and subtle curves bring a sense of serenity, while custom joinery, wall-to-wall niches, and a generous bath and walk-in shower ensure the space works beautifully for a busy household. The result is a quietly luxurious bathroom that feels composed, practical, and effortlessly refined.",
+    designFeatures: [
+      "Layered lighting",
+      "Warm neutral tones",
+      "Subtle curves",
+      "Custom joinery",
+      "Wall-to-wall niches",
+      "Generous bath",
+      "Walk-in shower",
+    ],
+    gallery: [rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
+  },
 };
 
 function buildDetail(s: ProjectSummary): ProjectDetail {
