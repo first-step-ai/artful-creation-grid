@@ -82,7 +82,7 @@ export function Awards() {
             />
 
             <div className="text-[11px] tracking-[0.28em] uppercase text-ivory mb-5 md:mb-6">
-              Year after Year
+              AWARD WINNING YEAR AFTER YEAR
             </div>
 
             <ul
