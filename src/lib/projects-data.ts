@@ -555,6 +555,49 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "It is incredible enjoying my new space and look forward to working together in the future.",
     gallery: [pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url, pyrmont7.url, pyrmont8.url],
   },
+
+  "drummoyne-award-finalist-kitchen-and-bath": {
+    badge: "Finalist",
+    heroCaption:
+      "An award-finalist Drummoyne renovation spanning a refined kitchen and bathroom, recognised across multiple 2024 HIA NSW design categories.",
+    scope:
+      "This Drummoyne home renovation combined a full interior design service and floor plan reconfiguration with the addition of a brand new family bathroom. The kitchen was reconfigured to incorporate a walk-through pantry and an internally accessible laundry, while the new bathroom was carefully designed to maximise a narrow footprint with natural light, smart storage, and a considered shower zone.",
+    awards: [
+      "2022 HIA NSW Bathroom Design of the Year · Finalist",
+      "2022 HIA NSW New Bathroom over $425K · Finalist",
+      "2023 HIA NSW Kitchen Design of the Year · Winner",
+      "2023 HIA NSW Renovated Kitchen · Finalist",
+      "2024 HIA NSW Bathroom Design · Finalist",
+      "2024 HIA NSW Kitchen Design · Finalist",
+      "2024 HIA NSW Renovated Bathroom of the Year · Finalist",
+      "2024 HIA NSW Renovated Kitchen of the Year · Finalist",
+    ],
+    rightHeading: "Award-Finalist Kitchen and Bath",
+    rightIntro:
+      "An award-finalist Drummoyne renovation spanning a refined kitchen and bathroom, recognised across multiple 2024 HIA NSW design categories.",
+    whatWasntWorking: [
+      "Despite having plenty of rooms, the home felt disconnected and poorly lit",
+      "Flow throughout was inefficient and the layout no longer served the family well",
+      "The laundry could only be reached from outside the home — a daily frustration that disrupted the rhythm of family life",
+      "The space allocated for a new bathroom was narrow and constrained, making it difficult to achieve the openness, storage, and light the family needed",
+    ],
+    whatWeDid:
+      "An interior design service was engaged to thoroughly review and reconfigure the floor plan, with options provided to suit the family. The kitchen was reconfigured to incorporate a walk-through pantry and a laundry now accessible from within the home, resolving the key functional issue and improving connectivity throughout. For the new bathroom, an existing skylight was upgraded to a solar-operated skylight to flood the narrow space with natural light. Large format tiles on both floor and walls opened the space visually. The shower was positioned at the end of the room to eliminate the need for a door, and a practical niche along the back wall with an integrated LED strip was added for mood lighting. Storage was addressed with two recessed shaving cabinets and a deep vanity.",
+    designFeatures: [
+      "Full floor plan reconfiguration and interior design service",
+      "Kitchen reconfiguration incorporating walk-through pantry",
+      "Internally accessible laundry",
+      "New bathroom addition",
+      "Solar-operated skylight upgrade",
+      "Large format tiles on floor and walls",
+      "Doorless shower positioned at end of room",
+      "Niche with integrated LED strip lighting",
+      "Two recessed shaving cabinets",
+      "Deep vanity",
+    ],
+    testimonial: "",
+    gallery: [renwick2.url, renwick3.url, renwick4.url, renwick5.url, renwick6.url, renwick7.url, renwick8.url, renwick9.url],
+  },
 };
 
 function buildDetail(s: ProjectSummary): ProjectDetail {
