@@ -99,9 +99,7 @@ export function Awards() {
                     onFocus={() => queueAward(i)}
                     onClick={() => selectAward(i)}
                     tabIndex={0}
-                    className={`relative border-b border-ivory/15 py-3 md:py-4 cursor-pointer transition-all duration-500 ease-out ${
-                      isActive ? "opacity-100" : "opacity-45 hover:opacity-75"
-                    }`}
+                    className="relative border-b border-ivory/15 py-3 md:py-4 cursor-pointer transition-opacity duration-300 ease-out opacity-100 hover:opacity-80"
                   >
                     <span
                       className={`absolute left-0 top-0 h-full w-[2px] bg-brass transition-transform duration-500 origin-top ${
