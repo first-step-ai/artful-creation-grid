@@ -125,6 +125,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url, tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: rozelle1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
+  { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom", "Family"] },
 ];
 
 // Rich detail overrides (keyed by slug). Anything missing falls back to a sensible default.
