@@ -602,6 +602,133 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial: "",
     gallery: [renwick2.url, renwick3.url, renwick4.url, renwick5.url, renwick6.url, renwick7.url, renwick8.url, renwick9.url],
   },
+
+  "birchgrove-modern-hamptons-bathrooms": {
+    badge: "Finalist",
+    heroCaption:
+      "An award-finalist Birchgrove renovation reconfiguring three bathrooms in a refined modern Hamptons aesthetic that honours the home's original character.",
+    scope:
+      "Engaged for interior design and a three-bathroom renovation across a much-loved Birchgrove family home — main bathroom, ensuite and powder room — in a modern Hamptons palette that respects the home's heritage character.",
+    awards: ["2020 HIA NSW Bathroom of the Year · Finalist"],
+    rightHeading: "Modern Hamptons Bathrooms",
+    rightIntro:
+      "Three reconfigured bathrooms designed around the family, balancing classic Hamptons detailing with a modern, liveable feel.",
+    whatWasntWorking: [
+      "Dated bathrooms that no longer suited the family",
+      "Layouts that wasted the available footprint",
+      "Storage and lighting that didn't support daily routines",
+      "Finishes out of step with the home's character",
+    ],
+    whatWeDid:
+      "AMBP designed and built three new bathrooms across the home, reconfiguring layouts for better flow and storage and selecting a refined modern Hamptons palette that ties the spaces together while honouring the home's original character.",
+    designFeatures: [
+      "Three-bathroom reconfiguration — main, ensuite and powder",
+      "Modern Hamptons palette of soft tones and classic detailing",
+      "Layouts reworked for family-friendly daily use",
+      "Considered storage and vanity planning in each room",
+      "Tile and stone selections that respect the home's heritage",
+    ],
+    testimonial:
+      "AM Bathrooms took the time to visit, measure up and discuss my new bathroom and laundry plans. He was very helpful and knowledgeable and had other ideas for me to consider. He kept in contact throughout the planning and fitting stages. I've had so many comments about the workmanship — I'd highly recommend AM Bathrooms.",
+    gallery: [abbots3.url, abbots4.url, abbots5.url, abbots6.url, abbots7.url, abbots8.url],
+  },
+
+  "castle-cove-full-family-home-refresh": {
+    badge: "Finalist",
+    heroCaption:
+      "An award-finalist Castle Cove transformation refreshing the entire family home — three calming bathrooms, a new laundry, plus flooring, staircase and kitchen updates.",
+    scope:
+      "A full family home refresh in Castle Cove covering three bathrooms, a new laundry, a kitchen update with reconstituted stone feature and stainless-steel splashback, new floorboards (sanded and polished), new timber stair treads, a timber slat staircase railing, new electrical and a full repaint.",
+    awards: [
+      "2021 HIA-CSR NSW Bathroom Design · Finalist",
+      "2021 HIA-CSR NSW Bathroom of the Year, Medium (6–10sqm) Ensuite · Finalist",
+      "2021 HIA-CSR NSW Bathroom of the Year, Small (up to 6sqm) Powder Room · Finalist",
+    ],
+    rightHeading: "Full Family Home Refresh",
+    rightIntro:
+      "A whole-home update for a returning client — three calming bathrooms, a new laundry, kitchen, flooring, staircase and electrical, all coordinated end-to-end.",
+    whatWasntWorking: [
+      "Dated finishes throughout the home pulling the overall feel down",
+      "Bathrooms and laundry that didn't suit a busy family",
+      "A tired kitchen and worn flooring that needed refreshing",
+      "A staircase and railing that no longer matched the new aesthetic",
+    ],
+    whatWeDid:
+      "We refreshed the entire home end-to-end — designing and building three new bathrooms and a new laundry, updating the kitchen with a reconstituted stone feature and stainless-steel splashback, refinishing the floorboards, replacing stair treads with timber and adding a timber slat railing, plus new electrical and a full repaint. The third project completed with this returning client — all designed over Zoom.",
+    designFeatures: [
+      "Three new bathrooms in a calming family palette",
+      "New laundry designed for daily use",
+      "Kitchen update with reconstituted stone feature and stainless-steel splashback",
+      "New floorboards — sanded and polished",
+      "New timber stair treads",
+      "Timber slat staircase railing",
+      "New electrical throughout",
+      "Full repaint",
+    ],
+    testimonial:
+      "Our third renovation with the team and we couldn't be happier — considering we completed all the design over Zoom!",
+    gallery: [camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url],
+  },
+
+  "five-dock-family-bathroom-and-bedroom-storage": {
+    badge: null,
+    heroCaption: "A reimagined attic space for a family-shared bathroom.",
+    scope:
+      "We reimagined the first floor of this Five Dock home — borrowing some attic space — to deliver a generous family bathroom with a wet zone, a luxurious freestanding bath and proper storage for a family that shares the room.",
+    awards: [],
+    rightHeading: "Family Bathroom and Bedroom Storage Upgrade",
+    rightIntro:
+      "A reworked first floor turns awkward attic angles into a calm, functional family bathroom built around how the family actually shares the space.",
+    whatWasntWorking: [
+      "The family bathroom had little to no storage",
+      "The layout didn't function for a sharing family",
+      "Awkward angled ceilings made the room feel cramped",
+      "The toilet was a feature of the room rather than tucked away",
+    ],
+    whatWeDid:
+      "We reimagined the first floor and borrowed some attic space to create a proper wet zone with a private freestanding bath. A new freestanding wall with a soft curve softens the angled ceilings, the toilet is tucked around a corner so it isn't a feature, and intentional niches give the family the storage they need to share the room comfortably.",
+    designFeatures: [
+      "Reimagined first floor borrowing attic space",
+      "New freestanding wall with a soft curve to soften the angled ceiling",
+      "Private wet zone with a freestanding bath",
+      "Walk-around shower",
+      "Toilet tucked around a corner — usable but not a feature",
+      "Intentional niches for shared family storage",
+    ],
+    testimonial:
+      "We are very happy with how the renovation went and how the design all came together.",
+    gallery: [annan3.url, annan4.url, annan5.url, annan6.url, annan7.url, annan8.url],
+  },
+
+  "rozelle-home-facelift": {
+    badge: "Finalist",
+    heroCaption:
+      "With the design and selections signed off, our clients took a long holiday overseas while the work was completed.",
+    scope:
+      "A home facelift across three levels for a busy family — two bathrooms reworked along with broader updates so the home flows more functionally for daily life.",
+    awards: ["2023 HIA NSW Bathroom Design of the Year · Finalist"],
+    rightHeading: "Rozelle Home Facelift",
+    rightIntro:
+      "A three-level family home given the tender love and care it needed — including two reworked bathrooms designed around awkward attic angles.",
+    whatWasntWorking: [
+      "A three-level family home needing much-needed care",
+      "Bathrooms that didn't flow functionally for the family",
+      "Awkward attic ceilings limiting how the upstairs bathroom could be used",
+      "Selections and finishes that no longer suited the home",
+    ],
+    whatWeDid:
+      "We designed and built the home facelift end-to-end so the family could sign off on the design and selections and head overseas while works were completed. Bathrooms were reworked to flow more functionally, with the upstairs bath placed at the lowest point of the attic ceiling and feature tiles used to frame the room and make the awkward ceiling feel intentional rather than enclosed.",
+    designFeatures: [
+      "Two reworked bathrooms across a three-level family home",
+      "Freestanding bath placed at the lowest point of the attic ceiling",
+      "Feature tiles framing the bathroom to open up the awkward ceiling",
+      "Layouts reconfigured to flow more functionally for the family",
+      "Full design and selections signed off ahead of works so the family could travel",
+    ],
+    testimonial:
+      "Wow!! Congratulations on being finalist. It's already award winning in our book. A year on — love the bathrooms AND all the new stuff you made happen last year. Gives us constant happiness.",
+    gallery: [rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url, rozelle2.url, rozelle3.url],
+  },
 };
 
 function buildDetail(s: ProjectSummary): ProjectDetail {
