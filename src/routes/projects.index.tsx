@@ -128,7 +128,7 @@ function Tile({ project }: { project: ProjectSummary }) {
             <span className="mx-2 opacity-50">|</span>
             <span>{project.title}</span>
           </div>
-          <div className="mt-2 font-sans text-[11px] tracking-[0.28em] font-medium text-ivory">
+          <div className="mt-2 font-sans text-[11px] tracking-[0.28em] font-medium uppercase text-ivory">
             {project.category}
           </div>
         </figcaption>
