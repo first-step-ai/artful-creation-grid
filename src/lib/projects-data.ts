@@ -483,6 +483,36 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     gallery: [rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
   },
+
+  "rozelle-whole-home-transformation": {
+    heroCaption:
+      "A whole-home Rozelle renovation, including a dedicated laundry, delivering refined, cohesive living throughout the entire house.",
+    scope:
+      "This Rozelle townhouse was transformed through a long-running, staged renovation that ultimately covered four bathrooms, a laundry, a kitchen, and a personalised sauna oasis - a complete reimagining of the home delivered across multiple engagements with the same trusted clients. The final chapter transformed an awkward, unappealing laundry into a moody infrared sauna retreat through clever floor plan manipulation, completing a home that now reflects the clients' lifestyle in full.",
+    awards: [],
+    rightHeading: "Whole-Home Transformation",
+    rightIntro:
+      "A whole-home Rozelle renovation, including a dedicated laundry, delivering refined, cohesive living throughout the entire house.",
+    whatWasntWorking: [
+      "A bathroom and ensuite sharing a common wall were constrained and underperforming, limiting the vanity configuration and storage both rooms needed",
+      "The broader ensuite renovation required a complete rethink to deliver the indulgent, functional finish the clients envisioned",
+      "The laundry — the last remaining space in the home yet to be touched — was awkward and unappealing",
+      "The clients had long dreamed of incorporating an infrared sauna but needed expert advice on whether it was achievable within the existing footprint",
+    ],
+    whatWeDid:
+      "The common wall shared between the bathroom and ensuite was altered to unlock valuable space, allowing a custom timber vanity to be installed and creating a far more usable bathroom for two. In the ensuite, a wall was moved to accommodate a double basin vanity, and the finish was elevated with fancy tapware featuring push button heat control and a demister LED mirror. For the final space, clever floor plan manipulation allowed an infrared sauna to be integrated into what had been an awkward laundry, creating a moody personalised oasis that connects cohesively to the rest of the now-complete home.",
+    designFeatures: [
+      "Altered common wall to unlock ensuite space",
+      "Custom timber vanity",
+      "Wall relocation to accommodate double basin vanity",
+      "Fancy tapware with push button heat control",
+      "Demister LED mirror",
+      "Infrared sauna",
+      "Floor plan reconfiguration to create a moody oasis aesthetic",
+      "Laundry integration within the sauna space",
+    ],
+    gallery: [rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url, rozelle1.url],
+  },
 };
 
 function buildDetail(s: ProjectSummary): ProjectDetail {
