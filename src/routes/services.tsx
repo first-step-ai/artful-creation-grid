@@ -3,6 +3,10 @@ import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import { Process } from "@/components/home/Process";
 import { useReveal } from "@/hooks/use-reveal";
+import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
+import kitchen from "@/assets/projects/rozelle-1.jpg.asset.json";
+import multiSpace from "@/assets/projects/rozelle-multispace.jpg.asset.json";
+import fullInterior from "@/assets/projects/drummoyne-fullhome.jpg.asset.json";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -28,24 +32,25 @@ const services = [
   {
     title: "Bathrooms + Laundries",
     body: "Considered, calm bathrooms and hardworking laundries. Replanned, replumbed and rebuilt to look beautiful for decades, not seasons.",
-    image: "",
+    image: bathroom.url,
   },
   {
     title: "Kitchen",
     body: "Kitchens designed around how you actually cook, host and live. Built once, properly, with materials that age beautifully.",
-    image: "",
+    image: kitchen.url,
   },
   {
     title: "Multi-Space",
     body: "Two or more connected spaces planned and built together — kitchen and living, ensuite and main bath, or a whole level. One schedule, one team.",
-    image: "",
+    image: multiSpace.url,
   },
   {
     title: "Full Interior",
     body: "Whole-of-home interior renovations, planned and delivered as a single cohesive project. One team, one manager, one schedule.",
-    image: "",
+    image: fullInterior.url,
   },
 ];
+
 
 function ServicesPage() {
   return (
