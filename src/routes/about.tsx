@@ -4,6 +4,8 @@ import { Footer } from "@/components/home/Footer";
 import { useReveal } from "@/hooks/use-reveal";
 import teamPhoto from "@/assets/am-team-group.jpg.asset.json";
 import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
+import jennyPhoto from "@/assets/am-team.jpg.asset.json";
+import antePhoto from "@/assets/am-team-group-tall.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
