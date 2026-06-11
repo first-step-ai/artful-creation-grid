@@ -60,8 +60,9 @@ function ProjectsPage() {
             HOMES WE ARE PROUD OF
           </h1>
           <p className="mt-8 max-w-xl font-sans text-base md:text-lg text-ivory/80 leading-relaxed">
-            Every project here is a real home. Real people, real results. Click
-            through to see the full story.
+            Every project here is a real home. Real people, real results.
+            <br />
+            Click through to see the full story.
           </p>
 
           <div className="mt-14 flex flex-wrap gap-3">
