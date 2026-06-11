@@ -118,7 +118,7 @@ function Tile({ project }: { project: ProjectSummary }) {
           />
           {project.badge && (
             <span className="absolute top-5 right-5 bg-ivory text-oxblood px-3 py-1.5 text-[10px] tracking-[0.28em] uppercase font-medium">
-              {project.badge}
+              {project.badge === "Award" ? "AWARD WINNING" : project.badge}
             </span>
           )}
         </div>
