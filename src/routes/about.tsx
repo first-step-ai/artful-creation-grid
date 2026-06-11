@@ -4,6 +4,8 @@ import { Footer } from "@/components/home/Footer";
 import { useReveal } from "@/hooks/use-reveal";
 import teamPhoto from "@/assets/am-team-group.jpg.asset.json";
 import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
+import jennyPhoto from "@/assets/am-team.jpg.asset.json";
+import antePhoto from "@/assets/am-team-group-tall.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -34,6 +36,7 @@ function AboutPage() {
       <main>
         <Hero />
         <Story />
+        <Profiles />
       </main>
       <Footer />
     </div>
@@ -141,6 +144,82 @@ function Story() {
               </span>
             </Link>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* -------------------------------------------------------------- */
+/*  Profiles — Jenny & Ante                                       */
+/* -------------------------------------------------------------- */
+
+function Profiles() {
+  const ref = useReveal<HTMLElement>();
+
+  const people = [
+    {
+      name: "Jenny Matek",
+      role: "Design + client experience",
+      image: jennyPhoto.url,
+      heading: "Meet Jenny Matek",
+      paragraphs: [
+        "Jenny Matek is the award-winning interior designer and creative force behind AM Bathrooms + Projects. With more than 20 years of experience across design, construction and renovation, Jenny brings a rare combination of creative vision, practical thinking and real project knowledge.",
+        "What clients value most is that Jenny is not only focused on how a space looks, but how it functions, how it feels to live in, and how it can be delivered well in real life. Her ability to bridge design and construction gives clients clarity early, helps avoid costly missteps, and creates spaces that feel both beautiful and considered.",
+      ],
+    },
+    {
+      name: "Ante Matek",
+      role: "Build + delivery",
+      image: antePhoto.url,
+      heading: "Meet Ante Matek",
+      paragraphs: [
+        "Ante Matek leads the build side of AM Bathrooms + Projects, bringing two decades of hands-on construction and project management experience to every renovation. His skill set sits where craft and coordination meet — running trades, sequencing work tightly, and protecting the quality of the finish from demolition through to handover.",
+        "Ante started the studio with Jenny because he kept seeing the same problem on site: a disconnect between the people designing a space and the people building it, which left clients absorbing the cost in time, money and stress. He wanted a model where design decisions and build decisions were made by the same team, in the same room.",
+        "What he is most proud of is the way that model now plays out in real homes. One accountable team, clear communication, fewer surprises, and a finished result that holds up to the way families actually live.",
+      ],
+    },
+  ];
+
+  return (
+    <section
+      ref={ref}
+      className="reveal pb-24 md:pb-40 px-6 md:px-12 lg:px-16"
+    >
+      <div className="max-w-[1400px] mx-auto">
+        <p className="eyebrow text-brass mb-8">Meet the team</p>
+        <div className="h-px w-16 bg-brass/60 mb-16" />
+
+        <div className="space-y-24 md:space-y-32">
+          {people.map((person, i) => (
+            <article
+              key={person.name}
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center ${
+                i % 2 === 1 ? "lg:[&>div:first-child]:order-2" : ""
+              }`}
+            >
+              <div className="relative w-full aspect-[4/5] overflow-hidden border border-ivory/10">
+                <img
+                  src={person.image}
+                  alt={person.name}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+
+              <div>
+                <p className="eyebrow text-brass/80 mb-4">{person.role}</p>
+                <h3 className="font-sans font-light text-ivory leading-[1.15] text-2xl md:text-3xl mb-8">
+                  {person.heading}
+                </h3>
+                <div className="space-y-6 text-ivory/80 text-sm md:text-base leading-relaxed font-light max-w-[58ch]">
+                  {person.paragraphs.map((p, idx) => (
+                    <p key={idx}>{p}</p>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
