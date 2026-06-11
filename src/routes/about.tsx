@@ -36,6 +36,7 @@ function AboutPage() {
       <main>
         <Hero />
         <Story />
+        <Profiles />
       </main>
       <Footer />
     </div>
