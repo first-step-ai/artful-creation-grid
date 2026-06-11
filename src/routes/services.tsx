@@ -1,10 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
+import { Process } from "@/components/home/Process";
 import { useReveal } from "@/hooks/use-reveal";
-import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
-import kitchen from "@/assets/projects/rozelle-1.jpg.asset.json";
-import interiors from "@/assets/projects/rozelle-multispace.jpg.asset.json";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -13,7 +11,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Bathrooms, kitchens and full interior renovations across Sydney — designed, built and managed by AM Bathrooms + Projects.",
+          "Bathrooms, laundries, kitchens, multi-space and full interior renovations across Sydney — designed, built and managed by AM Bathrooms + Projects.",
       },
       { property: "og:title", content: "Services | AM Bathrooms + Projects" },
       {
@@ -28,19 +26,24 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    title: "Bathroom + Laundry",
+    title: "Bathrooms + Laundries",
     body: "Considered, calm bathrooms and hardworking laundries. Replanned, replumbed and rebuilt to look beautiful for decades, not seasons.",
-    image: bathroom.url,
+    image: "",
   },
   {
     title: "Kitchen",
     body: "Kitchens designed around how you actually cook, host and live. Built once, properly, with materials that age beautifully.",
-    image: kitchen.url,
+    image: "",
   },
   {
-    title: "Full Interior Renovations",
-    body: "Multiple rooms or whole-of-home renovations, planned and delivered as a single cohesive project. One team, one manager, one schedule.",
-    image: interiors.url,
+    title: "Multi-Space",
+    body: "Two or more connected spaces planned and built together — kitchen and living, ensuite and main bath, or a whole level. One schedule, one team.",
+    image: "",
+  },
+  {
+    title: "Full Interior",
+    body: "Whole-of-home interior renovations, planned and delivered as a single cohesive project. One team, one manager, one schedule.",
+    image: "",
   },
 ];
 
@@ -57,6 +60,7 @@ function ServicesPage() {
             ))}
           </div>
         </section>
+        <Process />
       </main>
       <Footer />
     </div>
@@ -97,12 +101,14 @@ function ServiceCard({
       ref={ref}
       className="reveal group relative overflow-hidden h-[32vh] min-h-[260px] max-h-[360px] bg-oxblood"
     >
-      <img
-        src={image}
-        alt={title}
-        loading="lazy"
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
-      />
+      {image ? (
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
+        />
+      ) : null}
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
       <div className="relative h-full flex flex-col justify-end p-6 md:p-10 max-w-2xl">
         <h2 className="font-serif text-xl md:text-2xl font-light text-ivory leading-tight">
