@@ -1,7 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
-import { CardStack, type StackCard } from "@/components/ui/card-stack";
 import { useReveal } from "@/hooks/use-reveal";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
 import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
@@ -259,7 +259,6 @@ function ProjectCard({ project }: { project: ProjectAward }) {
           </div>
         </div>
       )}
-      {/* Bottom gradient + info */}
       <div className="absolute inset-x-0 bottom-0 pt-20 px-6 pb-6 md:px-7 md:pb-7 bg-gradient-to-t from-black/95 via-black/75 to-transparent">
         <div className="text-[11px] tracking-[0.28em] uppercase text-ivory/85 mb-2">
           {project.suburb}
@@ -288,17 +287,66 @@ function ProjectCard({ project }: { project: ProjectAward }) {
   );
 }
 
+function AutoCarousel({ projects }: { projects: ProjectAward[] }) {
+  const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const count = projects.length;
+
+  useEffect(() => {
+    if (paused || count <= 1) return;
+    const id = setInterval(() => setIndex((i) => (i + 1) % count), 5000);
+    return () => clearInterval(id);
+  }, [paused, count]);
+
+  return (
+    <div
+      className="w-full flex flex-col items-center"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      <div
+        className="relative w-full max-w-[560px]"
+        style={{ aspectRatio: "560 / 720" }}
+      >
+        {projects.map((p, i) => (
+          <div
+            key={p.id}
+            aria-hidden={i !== index}
+            className={`absolute inset-0 overflow-hidden rounded-sm shadow-[0_30px_60px_-20px_rgba(0,0,0,0.55)] bg-burgundy transition-opacity duration-700 ease-out ${
+              i === index ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+          >
+            <ProjectCard project={p} />
+          </div>
+        ))}
+      </div>
+
+      {count > 1 && (
+        <div className="mt-6 flex items-center gap-3">
+          {projects.map((p, i) => (
+            <button
+              key={p.id}
+              type="button"
+              onClick={() => setIndex(i)}
+              aria-label={`Show ${p.suburb} ${p.title}`}
+              className={`h-[2px] transition-all duration-500 ${
+                i === index ? "w-10 bg-ivory" : "w-5 bg-ivory/30 hover:bg-ivory/60"
+              }`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function YearSection({ group }: { group: YearGroup }) {
   const ref = useReveal<HTMLDivElement>();
-  const cards: StackCard[] = group.projects.map((p) => ({
-    id: p.id,
-    content: <ProjectCard project={p} />,
-  }));
 
   return (
     <section
       ref={ref}
-      className="reveal border-t border-ivory/10 py-20 md:py-28 overflow-hidden"
+      className="reveal border-t border-ivory/10 py-20 md:py-28"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
         <div className="md:col-span-5">
@@ -312,17 +360,13 @@ function YearSection({ group }: { group: YearGroup }) {
           </p>
           {group.projects.length > 1 && (
             <p className="mt-3 text-ivory/45 text-[11px] tracking-[0.22em] uppercase">
-              Drag or tap to shuffle · {group.projects.length} cards
+              Auto-transitioning · {group.projects.length} cards
             </p>
           )}
         </div>
 
         <div className="md:col-span-7 flex justify-center">
-          <CardStack
-            cards={cards}
-            cardDimensions={{ width: 560, height: 720 }}
-            className="max-w-full"
-          />
+          <AutoCarousel projects={group.projects} />
         </div>
       </div>
     </section>
@@ -335,10 +379,7 @@ function AwardsPage() {
     <div className="min-h-screen flex flex-col bg-oxblood">
       <Nav />
       <main className="flex-1">
-        <header
-          ref={headerRef}
-          className="reveal relative isolate overflow-hidden"
-        >
+        <header ref={headerRef} className="reveal relative isolate overflow-hidden">
           <img
             src={rozelle1.url}
             alt=""
@@ -360,7 +401,7 @@ function AwardsPage() {
               </h1>
               <p className="mt-6 max-w-xl text-ivory/90 text-sm md:text-base font-light leading-relaxed [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">
                 Year by year, the projects and the people behind them recognised by
-                the industry. Drag the cards to shuffle through each year's awards.
+                the industry. Cards rotate automatically — hover to pause.
               </p>
             </div>
           </div>
