@@ -294,7 +294,7 @@ function AutoCarousel({ projects }: { projects: ProjectAward[] }) {
 
   useEffect(() => {
     if (paused || count <= 1) return;
-    const id = setInterval(() => setIndex((i) => (i + 1) % count), 3350);
+    const id = setInterval(() => setIndex((i) => (i + 1) % count), 1800);
     return () => clearInterval(id);
   }, [paused, count]);
 
