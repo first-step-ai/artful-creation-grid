@@ -48,12 +48,27 @@ export function Footer() {
             </span>
           </div>
 
-          {/* Right cluster: contact + socials, ends at container right edge */}
-          <div
-            className="hidden md:flex items-end justify-end"
-            style={{ width: "50%" }}
-          >
-            {/* Social thumbnails — right edge matches container (i.e. handover image edge) */}
+          {/* Center: studio address + phone */}
+          <div className="hidden md:flex flex-1 justify-center">
+            <div className="text-left" style={{ color: TEXT }}>
+              <div style={labelStyle} className="mb-2">Studio</div>
+              <div className="font-sans text-[13px] leading-relaxed">
+                By appointment only<br />
+                Alexandria, Sydney
+              </div>
+              <div style={labelStyle} className="mt-4 mb-2">Phone</div>
+              <a
+                href="tel:+61290000000"
+                className="font-sans text-[13px] hover:opacity-80 transition-opacity"
+                style={{ color: TEXT }}
+              >
+                +61 2 9000 0000
+              </a>
+            </div>
+          </div>
+
+          {/* Right cluster: socials */}
+          <div className="hidden md:flex items-end justify-end">
             <div className="flex shrink-0 items-end gap-4">
               {SOCIALS.map((s) => (
                 <a
@@ -85,6 +100,19 @@ export function Footer() {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Mobile fallback: address + phone */}
+        <div className="md:hidden mt-10" style={{ color: TEXT }}>
+          <div style={labelStyle} className="mb-2">Studio</div>
+          <div className="font-sans text-[13px] leading-relaxed">
+            By appointment only<br />
+            Alexandria, Sydney
+          </div>
+          <div style={labelStyle} className="mt-4 mb-2">Phone</div>
+          <a href="tel:+61290000000" className="font-sans text-[13px]" style={{ color: TEXT }}>
+            +61 2 9000 0000
+          </a>
         </div>
 
         {/* Mobile fallback */}
