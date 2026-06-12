@@ -138,6 +138,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom", "Family"] },
   { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Bathroom", image: drum1.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rozelle3.url, tags: ["Bathroom", "Ensuite", "Study"] },
+  { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: rozelle2.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rozelle4.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
@@ -498,6 +499,36 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Integrated study space",
     ],
     gallery: [rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
+  },
+
+  "roseville-calm-family-spaces": {
+    heroCaption:
+      "A seamlessly managed Roseville renovation creating practical, family-friendly bathroom and laundry spaces, delivered with minimal disruption for a growing family.",
+    scope:
+      "This Roseville project brought together a collection of spaces that were no longer working for the clients and their growing family. With the client eight months pregnant, a seamless and fully managed approach was essential. Through thoughtful planning and clever design solutions, practical, family-friendly spaces were created that feel cohesive, calm, and effortlessly functional.",
+    awards: [],
+    rightHeading: "Calm Family Spaces",
+    rightIntro:
+      "A seamlessly managed Roseville renovation creating practical, family-friendly bathroom and laundry spaces, delivered with minimal disruption for a growing family.",
+    whatWasntWorking: [
+      "A collection of spaces throughout the home were no longer working for the clients and their growing family",
+      "With the client eight months pregnant, a low-disruption, fully managed approach was essential — the work had to progress seamlessly without upending daily life",
+      "The laundry was large with unusable areas due to the placement of plumbing points",
+      "A key request was for practical storage and an area for their cat to call home",
+    ],
+    whatWeDid:
+      "Through thoughtful planning and clever design solutions, we created practical, family-friendly spaces that feel cohesive, calm, and effortlessly functional within the home. A fully managed approach kept the process seamless from start to finish.",
+    designFeatures: [
+      "The oversized laundry next to the main bathroom was reworked, stealing valuable real estate so the client could get a large bath in the main bathroom",
+      "The laundry layout was reimagined with the client's wishlist at the forefront",
+      "An unusable corner cupboard area was dedicated to the family's cat",
+      "Storage and appliances were placed in optimal areas for easy use",
+      "The family bathroom gained a walk-in shower and bath area by reshifting the entry door and reclaiming space from the laundry",
+      "Calming material selections create a retreat for the family",
+    ],
+    testimonial:
+      "We absolutely love using the new bathroom, it's like being in a spa every day!",
+    gallery: [],
   },
 
   "rozelle-whole-home-transformation": {
