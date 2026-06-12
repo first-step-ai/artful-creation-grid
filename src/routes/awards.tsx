@@ -356,8 +356,8 @@ function YearSection({ group }: { group: YearGroup }) {
           <div className="font-sans text-[64px] md:text-[110px] leading-none text-ivory">
             {group.year}
           </div>
-          <div className="mt-6 h-px w-16 bg-brass" />
-          <p className="mt-6 text-ivory/70 text-[14px] md:text-[15px] max-w-sm">
+          <div className="mt-6 h-px w-16 bg-brass mx-auto" />
+          <p className="mt-6 text-ivory/70 text-[14px] md:text-[15px] max-w-sm mx-auto">
             {group.intro}
           </p>
           {group.projects.length > 1 && (
