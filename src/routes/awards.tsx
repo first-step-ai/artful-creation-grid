@@ -12,6 +12,7 @@ import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
 import drum3 from "@/assets/projects/drummoyne-3.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
+import hiaLogo from "@/assets/hia-logo.png.asset.json";
 
 type AwardEntry = { kind: "Winner" | "Finalist"; label: string };
 type ProjectAward = {
