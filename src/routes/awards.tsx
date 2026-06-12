@@ -347,10 +347,11 @@ function YearSection({ group }: { group: YearGroup }) {
   return (
     <section
       ref={ref}
-      className="reveal border-t border-ivory/10 py-20 md:py-28"
+      className="reveal border-t border-ivory/10 py-10 md:py-14"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
         <div className="md:col-span-5">
+          <img src={hiaLogo.url} alt="HIA" className="h-10 md:h-12 w-auto mb-4 opacity-90" />
           <div className="eyebrow mb-4">Recognition</div>
           <div className="font-sans text-[64px] md:text-[110px] leading-none text-ivory">
             {group.year}
