@@ -138,6 +138,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom", "Family"] },
   { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Bathroom", image: drum1.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rozelle3.url, tags: ["Bathroom", "Ensuite", "Study"] },
+  { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: rozelle2.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rozelle4.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
