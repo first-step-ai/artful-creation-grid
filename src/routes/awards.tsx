@@ -12,6 +12,7 @@ import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
 import drum3 from "@/assets/projects/drummoyne-3.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
+import hiaLogo from "@/assets/hia-logo.png.asset.json";
 
 type AwardEntry = { kind: "Winner" | "Finalist"; label: string };
 type ProjectAward = {
@@ -346,10 +347,11 @@ function YearSection({ group }: { group: YearGroup }) {
   return (
     <section
       ref={ref}
-      className="reveal border-t border-ivory/10 py-20 md:py-28"
+      className="reveal border-t border-ivory/10 py-10 md:py-14"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
         <div className="md:col-span-5">
+          <img src={hiaLogo.url} alt="HIA" className="h-10 md:h-12 w-auto mb-4 opacity-90" />
           <div className="eyebrow mb-4">Recognition</div>
           <div className="font-sans text-[64px] md:text-[110px] leading-none text-ivory">
             {group.year}
