@@ -54,15 +54,16 @@ export function Footer() {
               <div style={labelStyle} className="mb-2">Studio</div>
               <div className="font-sans text-[13px] leading-relaxed">
                 By appointment only<br />
-                Alexandria, Sydney
+                Shop 8, 77 - 105 Victoria Road<br />
+                Drummoyne NSW 2047
               </div>
               <div style={labelStyle} className="mt-4 mb-2">Phone</div>
               <a
-                href="tel:+61290000000"
+                href="tel:0291814776"
                 className="font-sans text-[13px] hover:opacity-80 transition-opacity"
                 style={{ color: TEXT }}
               >
-                +61 2 9000 0000
+                (02) 9181 4776
               </a>
             </div>
           </div>
@@ -107,11 +108,12 @@ export function Footer() {
           <div style={labelStyle} className="mb-2">Studio</div>
           <div className="font-sans text-[13px] leading-relaxed">
             By appointment only<br />
-            Alexandria, Sydney
+            Shop 8, 77 - 105 Victoria Road<br />
+            Drummoyne NSW 2047
           </div>
           <div style={labelStyle} className="mt-4 mb-2">Phone</div>
-          <a href="tel:+61290000000" className="font-sans text-[13px]" style={{ color: TEXT }}>
-            +61 2 9000 0000
+          <a href="tel:0291814776" className="font-sans text-[13px]" style={{ color: TEXT }}>
+            (02) 9181 4776
           </a>
         </div>
 
