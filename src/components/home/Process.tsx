@@ -56,7 +56,7 @@ export function Process() {
                 </div>
               </div>
               <div className="mt-5">
-                <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.05em] uppercase whitespace-nowrap">
+                <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.05em] uppercase">
                   {s.title}
                 </h3>
                 <p className="mt-2 font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">

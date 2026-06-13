@@ -72,8 +72,8 @@ export function Awards() {
         <div className="eyebrow mb-8 md:mb-10">Awards</div>
 
         <div className="w-full flex flex-col md:flex-row gap-8 md:gap-0 md:items-stretch">
-          {/* Left: Logo + Awards list — 35% — centered */}
-          <div className="md:basis-[35%] md:pr-[2.5%] flex flex-col items-center text-center">
+          {/* Left: Logo + Awards list — 35% — centered (rendered second on mobile so featured image appears first) */}
+          <div className="order-2 md:order-1 md:basis-[35%] md:pr-[2.5%] flex flex-col items-center text-center">
             {/* Logo placeholder */}
             <img
               src={hiaLogo.url}
@@ -121,7 +121,7 @@ export function Awards() {
 
           {/* Right: Featured Image — 60% — matches left column height exactly */}
           <div
-            className="md:basis-[60%] md:ml-auto relative"
+            className="order-1 md:order-2 md:basis-[60%] md:ml-auto relative"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
           >

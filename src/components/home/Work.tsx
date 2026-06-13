@@ -38,7 +38,7 @@ export function Work() {
     <section id="work" className="bg-oxblood">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-12">
 
-        <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
+        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 mb-10 md:mb-14">
           <div className="eyebrow">
             <span>Award Winning</span>
             <span className="mx-2 opacity-50">|</span>
@@ -83,9 +83,9 @@ export function Work() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-8 mb-10 md:mb-14">
+        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3 mb-10 md:mb-14">
           <div className="eyebrow">Featured Work</div>
-          <Link to="/projects" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all">
+          <Link to="/projects" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap">
             View full portfolio
           </Link>
         </div>
@@ -120,8 +120,8 @@ function ProjectTile({ project }: { project: (typeof projects)[number] }) {
           />
         </div>
         <figcaption className="mt-5 flex items-baseline justify-between gap-6">
-          <div>
-            <div className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase whitespace-nowrap">
+          <div className="min-w-0">
+            <div className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase">
               <span>{project.suburb}</span>
               <span className="mx-2 opacity-50">|</span>
               <span>{project.title}</span>
