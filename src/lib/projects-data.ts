@@ -140,6 +140,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rozelle3.url, tags: ["Bathroom", "Ensuite", "Study"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: rozelle2.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: rozelle2.url, badge: "Award", tags: ["Bathroom", "Family"] },
+  { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: rozelle2.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rozelle4.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
@@ -559,6 +560,37 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Feature Robert Gordon basin",
       "Feature wall light",
       "Reconfigured layout to bring the courtyard into the room, with the bath now feeling part of it",
+    ],
+    gallery: [],
+  },
+
+  "lindfield-award-finalist-bathrooms": {
+    badge: "Finalist",
+    heroCaption:
+      "An award-finalist Lindfield renovation delivering two refined bathrooms with cohesive detailing and an elevated, timeless material palette.",
+    scope:
+      "This Lindfield home renovation encompassed two bathrooms across the same property: a family bathroom and an ensuite. Both were recognised at the 2024 HIA NSW Awards, winning Bathroom of the Year and named finalists for Bathroom Design of the Year. The family bathroom, set within a wonderful character home, was transformed to deliver a light-filled, luxurious bathing space with ample family storage and a dedicated shower zone. The ensuite addressed an oversized and poorly configured shower, a dark palette, and a vanity too small to share - the goal being a calming retreat, easily used by two, with enough storage for all.",
+    awards: [
+      "2024 HIA NSW Bathroom Design of the Year · Finalist",
+      "2024 HIA NSW Renovated Bathroom of the Year · Finalist",
+    ],
+    rightHeading: "Award-Finalist Bathrooms",
+    rightIntro:
+      "An award-finalist Lindfield renovation delivering two refined bathrooms with cohesive detailing and an elevated, timeless material palette.",
+    whatWasntWorking: [
+      "The ensuite was dysfunctional and uninviting - a continual wet floor caused by an oversized shower, a vanity impossible to share, and a dark palette made it a space neither occupant wanted to spend time in",
+      "The family bathroom, while set within a beautiful character home, had not kept pace with the home's quality and no longer met the needs of the household",
+    ],
+    whatWeDid:
+      "In the ensuite, the shower was reconfigured to resolve the wet floor issue and right-size the space. A larger double vanity was introduced to make sharing effortless, and the dark palette was replaced with a calm, light-filled aesthetic with storage built in throughout. The family bathroom was given a full modern transformation that honoured the home's character - delivering a light-filled luxury bath, dedicated storage for the whole family, and a shower zone designed as a proper escape.",
+    designFeatures: [
+      "Reconfigured shower resolving wet floor issue",
+      "Enlarged double vanity designed for shared use",
+      "Lightened palette replacing dark finishes",
+      "Generous storage throughout both bathrooms",
+      "Light-filled luxury bath",
+      "Dedicated shower zone",
+      "Character-respecting aesthetic blending old and new",
     ],
     gallery: [],
   },
