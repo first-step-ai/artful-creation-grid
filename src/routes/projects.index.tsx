@@ -39,16 +39,35 @@ export const Route = createFileRoute("/projects/")({
   component: ProjectsPage,
 });
 
+const PAGE_SIZE = 12;
+
 function ProjectsPage() {
   const [active, setActive] = useState<(typeof filters)[number]>("All");
+  const [page, setPage] = useState(1);
 
-  const visible = projects.filter((p) => {
+  const filtered = projects.filter((p) => {
     if (active === "All") return true;
     if (active === "Award Winning") return p.badge === "Award";
     if (active === "Award Finalist") return p.badge === "Finalist";
     const tags = p.tags ?? [p.category];
     return tags.includes(active);
   });
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const currentPage = Math.min(page, totalPages);
+  const visible = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+
+  const handleFilter = (f: (typeof filters)[number]) => {
+    setActive(f);
+    setPage(1);
+  };
+
+  const goToPage = (n: number) => {
+    setPage(n);
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -71,7 +90,7 @@ function ProjectsPage() {
               return (
                 <button
                   key={f}
-                  onClick={() => setActive(f)}
+                  onClick={() => handleFilter(f)}
                   className={`px-5 py-2.5 text-[11px] tracking-[0.28em] uppercase font-medium border transition-colors ${
                     isActive
                       ? "bg-ivory text-oxblood border-ivory"
@@ -93,6 +112,45 @@ function ProjectsPage() {
               <Tile key={`${p.suburb}-${p.title}`} project={p} />
             ))}
           </div>
+
+          {totalPages > 1 && (
+            <nav
+              aria-label="Pagination"
+              className="mt-16 md:mt-20 flex items-center justify-center gap-2 flex-wrap"
+            >
+              <button
+                onClick={() => goToPage(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="px-4 py-2 text-[11px] tracking-[0.28em] uppercase font-medium border border-ivory/30 text-ivory hover:border-ivory/70 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              >
+                Prev
+              </button>
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => {
+                const isActive = n === currentPage;
+                return (
+                  <button
+                    key={n}
+                    onClick={() => goToPage(n)}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`min-w-[40px] px-3 py-2 text-[11px] tracking-[0.28em] uppercase font-medium border transition-colors ${
+                      isActive
+                        ? "bg-ivory text-oxblood border-ivory"
+                        : "bg-transparent text-ivory border-ivory/30 hover:border-ivory/70"
+                    }`}
+                  >
+                    {n}
+                  </button>
+                );
+              })}
+              <button
+                onClick={() => goToPage(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className="px-4 py-2 text-[11px] tracking-[0.28em] uppercase font-medium border border-ivory/30 text-ivory hover:border-ivory/70 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              >
+                Next
+              </button>
+            </nav>
+          )}
         </section>
       </main>
       <Footer />
