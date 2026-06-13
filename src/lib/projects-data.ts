@@ -139,6 +139,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Bathroom", image: drum1.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rozelle3.url, tags: ["Bathroom", "Ensuite", "Study"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: rozelle2.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
+  { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: rozelle2.url, badge: "Award", tags: ["Bathroom", "Family"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rozelle4.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
@@ -530,6 +531,39 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "We absolutely love using the new bathroom, it's like being in a spa every day!",
     gallery: [],
   },
+
+  "enmore-award-winning-family-bathroom": {
+    badge: "Award",
+    heroCaption:
+      "An award-winning Enmore bathroom designed for multi-generational living, resolving an awkwardly shaped space into a beautifully zoned, characterful family bathroom.",
+    scope:
+      "This Enmore main bathroom was designed for a multi-generational family, with the client's elderly mother in mind. The brief called for a layout that worked beautifully for daily family life while accommodating mobility needs, all within an awkwardly shaped existing footprint that opened to a courtyard.",
+    awards: [
+      "2024 HIA NSW Renovated Bathroom of the Year · Winner",
+      "2024 HIA NSW Bathroom Design of the Year · Finalist",
+    ],
+    rightHeading: "Award-Winning Family Bathroom",
+    rightIntro:
+      "An award-winning Enmore bathroom designed for multi-generational living, resolving an awkwardly shaped space into a beautifully zoned, characterful family bathroom.",
+    whatWasntWorking: [
+      "The existing bathroom was awkwardly shaped and did not flow well with the adjoining courtyard",
+      "The layout did not support multi-generational living or the mobility needs of the client's elderly mother",
+      "Natural light and the connection to the courtyard were underutilised",
+    ],
+    whatWeDid:
+      "A complete reconsideration of the layout created a functional wet zone large enough for those with mobility needs, while inviting the courtyard into the room through the new configuration. Thoughtful material selections and considered detailing enhanced the layout to be crowned HIA NSW Bathroom of the Year 2024.",
+    designFeatures: [
+      "Functional wet zone large enough for those with mobility issues",
+      "Heated shower seat for comfort",
+      "Marble floor with underfloor heating",
+      "Feature Robert Gordon basin",
+      "Feature wall light",
+      "Reconfigured layout to bring the courtyard into the room, with the bath now feeling part of it",
+    ],
+    gallery: [],
+  },
+
+
 
   "rozelle-whole-home-transformation": {
     heroCaption:
