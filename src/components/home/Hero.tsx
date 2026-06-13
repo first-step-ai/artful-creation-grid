@@ -23,7 +23,7 @@ export function Hero() {
         className="absolute inset-0 z-10 mx-auto flex max-w-[1600px] flex-col justify-end md:justify-between px-6 md:px-10 pt-32 md:pt-[20.8rem] pb-20 md:pb-12"
       >
         <div className="max-w-4xl">
-          <h1 className="font-serif font-light text-ivory leading-[1.15] text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:0_2px_18px_rgba(0,0,0,0.75)]">
+          <h1 className="font-serif font-light text-ivory leading-[1.15] text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl uppercase [text-shadow:0_2px_18px_rgba(0,0,0,0.75)]">
             Thoughtfully designed spaces. Beautifully executed.
           </h1>
           <p className="mt-5 md:mt-6 max-w-xl text-ivory/90 text-[13px] md:text-base font-light leading-relaxed [text-shadow:0_1px_12px_rgba(0,0,0,0.8)]">
