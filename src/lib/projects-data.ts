@@ -42,7 +42,7 @@ import rozelle7 from "@/assets/projects/rozelle-new-3.jpg.asset.json";
 import rozelle8 from "@/assets/projects/rozelle-new-4.jpg.asset.json";
 import rozelle9 from "@/assets/projects/rozelle-new-7.jpg.asset.json";
 // Abbotsford
-import abbots1 from "@/assets/projects/abbotsford-new-1.jpg.asset.json";
+import abbots1 from "@/assets/projects/abbotsford-hero-new.jpg.asset.json";
 import abbots2 from "@/assets/projects/abbotsford-new-2.jpg.asset.json";
 import abbots3 from "@/assets/projects/abbotsford-new-3.jpg.asset.json";
 import abbots4 from "@/assets/projects/abbotsford-new-4.jpg.asset.json";
@@ -60,7 +60,7 @@ import abbots15 from "@/assets/projects/abbotsford-new-15.jpg.asset.json";
 import abbots16 from "@/assets/projects/abbotsford-new-16.jpg.asset.json";
 import abbots17 from "@/assets/projects/abbotsford-new-17.jpg.asset.json";
 // Pyrmont
-import pyrmont1 from "@/assets/projects/pyrmont-new-1.jpg.asset.json";
+import pyrmont1 from "@/assets/projects/pyrmont-hero-new.jpg.asset.json";
 import pyrmont2 from "@/assets/projects/pyrmont-new-2.jpg.asset.json";
 import pyrmont3 from "@/assets/projects/pyrmont-new-3.jpg.asset.json";
 import pyrmont4 from "@/assets/projects/pyrmont-new-4.jpg.asset.json";
