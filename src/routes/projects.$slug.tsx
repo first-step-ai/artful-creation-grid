@@ -30,12 +30,12 @@ function ProjectDetailPage() {
       <Nav />
       <main>
         {/* HERO */}
-        <section className="relative h-[75vh] min-h-[540px] w-full overflow-hidden">
+        <section className="relative h-[70vh] min-h-[520px] md:h-[75vh] md:min-h-[540px] w-full overflow-hidden">
           <Link
             to="/projects"
-            className="absolute top-24 md:top-28 left-6 md:left-10 z-20 inline-flex items-center gap-2 font-sans text-[11px] tracking-[0.28em] uppercase text-ivory hover:text-brass transition-colors bg-oxblood/40 backdrop-blur-md border border-ivory/25 px-4 py-2.5"
+            className="absolute top-20 md:top-28 left-4 md:left-10 z-20 inline-flex items-center gap-2 font-sans text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory hover:text-brass transition-colors bg-oxblood/40 backdrop-blur-md border border-ivory/25 px-3 py-2 md:px-4 md:py-2.5"
           >
-            <ArrowLeft className="h-4 w-4" /> Full Portfolio
+            <ArrowLeft className="h-3.5 w-3.5 md:h-4 md:w-4" /> Full Portfolio
           </Link>
           <img
             src={p.hero}
@@ -64,10 +64,10 @@ function ProjectDetailPage() {
         </section>
 
         {/* THREE-COLUMN BODY */}
-        <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
+        <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-14 md:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,2fr)_1fr] gap-10 lg:gap-12">
-            {/* LEFT COLUMN — sticky scroll */}
-            <aside className="lg:sticky lg:top-28 lg:self-start pr-2 space-y-12">
+            {/* LEFT COLUMN — sticky scroll (mobile: after gallery) */}
+            <aside className="order-3 lg:order-1 lg:sticky lg:top-28 lg:self-start lg:pr-2 space-y-12">
               <Block label="Scope">
                 <p className="font-sans text-sm text-ivory/85">
                   {p.scope}
@@ -132,11 +132,13 @@ function ProjectDetailPage() {
             </aside>
 
             {/* CENTER — image stack */}
-            <GalleryStack images={p.gallery} title={p.title} />
+            <div className="order-2 lg:order-2">
+              <GalleryStack images={p.gallery} title={p.title} />
+            </div>
 
 
-            {/* RIGHT COLUMN — sticky scroll */}
-            <aside className="lg:sticky lg:top-28 lg:self-start pl-2 space-y-12">
+            {/* RIGHT COLUMN — sticky scroll (mobile: first) */}
+            <aside className="order-1 lg:order-3 lg:sticky lg:top-28 lg:self-start lg:pl-2 space-y-12">
               <div>
                 <h2 className="font-sans text-lg md:text-xl font-light leading-snug text-ivory">
                   {p.rightHeading.replace(/[-–—]/g, " ")}
@@ -185,8 +187,8 @@ function ProjectDetailPage() {
         )}
 
         {/* MORE PROJECTS */}
-        <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28 border-t border-ivory/10">
-          <div className="flex items-center justify-between mb-12">
+        <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-16 md:py-28 border-t border-ivory/10">
+          <div className="flex items-center justify-between gap-4 mb-10 md:mb-12 flex-wrap">
             <div className="eyebrow">More Projects</div>
             <Link
               to="/projects"
