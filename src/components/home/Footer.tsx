@@ -4,9 +4,9 @@ import socialPinterest from "@/assets/projects/pyrmont-4.jpg.asset.json";
 import socialFacebook from "@/assets/projects/annandale-4.jpg.asset.json";
 
 const SOCIALS = [
-  { label: "Instagram", img: socialInstagram.url, href: "#" },
-  { label: "Pinterest", img: socialPinterest.url, href: "#" },
-  { label: "Facebook", img: socialFacebook.url, href: "#" },
+  { label: "Instagram", img: socialInstagram.url, href: "https://www.instagram.com/ambathrooms/" },
+  { label: "Pinterest", img: socialPinterest.url, href: "https://pinterest.com/ambathroomsprojects/" },
+  { label: "Facebook", img: socialFacebook.url, href: "https://www.facebook.com/ambathrooms/" },
 ];
 
 const FOOTER_BG = "var(--background)";
