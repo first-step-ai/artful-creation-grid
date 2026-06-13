@@ -20,7 +20,7 @@ export function Hero() {
       />
 
       <div
-        className="relative z-10 mx-auto flex min-h-[100svh] md:min-h-screen max-w-[1600px] flex-col justify-end md:justify-between px-6 md:px-10 pt-32 md:pt-[20.8rem] pb-16 md:pb-12"
+        className="absolute inset-0 z-10 mx-auto flex max-w-[1600px] flex-col justify-end md:justify-between px-6 md:px-10 pt-32 md:pt-[20.8rem] pb-20 md:pb-12"
       >
         <div className="max-w-4xl">
           <h1 className="font-serif font-light text-ivory leading-[1.15] text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:0_2px_18px_rgba(0,0,0,0.75)]">
