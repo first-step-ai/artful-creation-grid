@@ -187,8 +187,8 @@ function ProjectDetailPage() {
         )}
 
         {/* MORE PROJECTS */}
-        <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28 border-t border-ivory/10">
-          <div className="flex items-center justify-between mb-12">
+        <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-16 md:py-28 border-t border-ivory/10">
+          <div className="flex items-center justify-between gap-4 mb-10 md:mb-12 flex-wrap">
             <div className="eyebrow">More Projects</div>
             <Link
               to="/projects"
