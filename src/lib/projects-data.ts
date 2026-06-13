@@ -141,6 +141,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: rozelle2.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: rozelle2.url, badge: "Award", tags: ["Bathroom", "Family"] },
   { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: rozelle2.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
+  { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rozelle4.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
@@ -595,7 +596,28 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     gallery: [],
   },
 
-
+  "canada-bay-considered-main-bathroom": {
+    heroCaption:
+      "A Canada Bay main bathroom transformed from cramped to considered, with a space-saving barn door, marble flooring, and modern comforts including heated towel rails.",
+    scope:
+      "This Canada Bay main bathroom had limited storage and an awkward shower layout. By adding a barn door and repositioning key fixtures, the space was transformed. Modern day luxuries including an in-wall toilet cistern, timber vanity, and heated towel rails were incorporated to give the bathroom a well-deserved touch of luxury.",
+    awards: [],
+    rightHeading: "Considered Main Bathroom",
+    rightIntro:
+      "A Canada Bay main bathroom transformed from cramped to considered, with a space-saving barn door, marble flooring, and modern comforts including heated towel rails.",
+    whatWasntWorking: [
+      "The main bathroom had limited storage and an awkward shower, leaving the space cramped and difficult to use day to day.",
+    ],
+    whatWeDid:
+      "A barn door was added and the necessities repositioned to transform the layout. Modern-day luxuries, from an in-wall toilet cistern to heated towel rails, were introduced to give the bathroom a touch of luxury.",
+    designFeatures: [
+      "Barn door",
+      "Repositioned fixtures",
+      "In-wall toilet cistern",
+      "Heated towel rails",
+    ],
+    gallery: [],
+  },
 
   "rozelle-whole-home-transformation": {
     heroCaption:
