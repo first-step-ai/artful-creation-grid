@@ -132,11 +132,13 @@ function ProjectDetailPage() {
             </aside>
 
             {/* CENTER — image stack */}
-            <GalleryStack images={p.gallery} title={p.title} />
+            <div className="order-2 lg:order-2">
+              <GalleryStack images={p.gallery} title={p.title} />
+            </div>
 
 
-            {/* RIGHT COLUMN — sticky scroll */}
-            <aside className="lg:sticky lg:top-28 lg:self-start pl-2 space-y-12">
+            {/* RIGHT COLUMN — sticky scroll (mobile: first) */}
+            <aside className="order-1 lg:order-3 lg:sticky lg:top-28 lg:self-start lg:pl-2 space-y-12">
               <div>
                 <h2 className="font-sans text-lg md:text-xl font-light leading-snug text-ivory">
                   {p.rightHeading.replace(/[-–—]/g, " ")}
