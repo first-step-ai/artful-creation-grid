@@ -42,7 +42,7 @@ import rozelle7 from "@/assets/projects/rozelle-new-3.jpg.asset.json";
 import rozelle8 from "@/assets/projects/rozelle-new-4.jpg.asset.json";
 import rozelle9 from "@/assets/projects/rozelle-new-7.jpg.asset.json";
 // Abbotsford
-import abbots1 from "@/assets/projects/abbotsford-hero-new.jpg.asset.json";
+import abbots1 from "@/assets/projects/abbotsford-new-1.jpg.asset.json";
 import abbots2 from "@/assets/projects/abbotsford-new-2.jpg.asset.json";
 import abbots3 from "@/assets/projects/abbotsford-new-3.jpg.asset.json";
 import abbots4 from "@/assets/projects/abbotsford-new-4.jpg.asset.json";
@@ -60,7 +60,7 @@ import abbots15 from "@/assets/projects/abbotsford-new-15.jpg.asset.json";
 import abbots16 from "@/assets/projects/abbotsford-new-16.jpg.asset.json";
 import abbots17 from "@/assets/projects/abbotsford-new-17.jpg.asset.json";
 // Pyrmont
-import pyrmont1 from "@/assets/projects/pyrmont-hero-new.jpg.asset.json";
+import pyrmont1 from "@/assets/projects/pyrmont-new-1.jpg.asset.json";
 import pyrmont2 from "@/assets/projects/pyrmont-new-2.jpg.asset.json";
 import pyrmont3 from "@/assets/projects/pyrmont-new-3.jpg.asset.json";
 import pyrmont4 from "@/assets/projects/pyrmont-new-4.jpg.asset.json";
@@ -128,8 +128,8 @@ export function slugify(suburb: string, title: string) {
 // All projects shown on /projects (single source of truth)
 export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: rozelle1.url, badge: "Award", tags: ["Full Interior", "Multi-Space", "Kitchen", "Laundry", "Ensuite"] },
-  { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: abbots1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
-  { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont1.url, tags: ["Full Interior", "Multi-Space", "Living Room"] },
+  { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: abbots5.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
+  { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont3.url, tags: ["Full Interior", "Multi-Space", "Living Room"] },
   { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan1.url, badge: "Finalist", tags: ["Bathroom"] },
   { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Living Room"] },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
