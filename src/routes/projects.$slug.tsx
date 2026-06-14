@@ -217,7 +217,7 @@ function ProjectDetailPage() {
                 <div className="md:hidden h-px w-full bg-ivory/20" />
 
                 {/* After group */}
-                <div className="flex flex-col gap-6 md:gap-8">
+                <div className="flex flex-col gap-3 md:gap-4">
                   <div className="eyebrow">After</div>
                   <div className="grid grid-cols-3 gap-3 md:gap-5">
                     {afters.slice(0, count).map((src, i) => (
