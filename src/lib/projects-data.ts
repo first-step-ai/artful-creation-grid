@@ -334,6 +334,13 @@ import rhf23p from "@/assets/projects/rozelle-facelift/rhf-23p.jpg.asset.json";
 import rhf28p from "@/assets/projects/rozelle-facelift/rhf-28p.jpg.asset.json";
 import rhf29p from "@/assets/projects/rozelle-facelift/rhf-29p.jpg.asset.json";
 import rhf31p from "@/assets/projects/rozelle-facelift/rhf-31p.jpg.asset.json";
+// Bexley before/after
+import bexleyBefore1 from "@/assets/projects/bexley-ba/bexley-before-1.jpg.asset.json";
+import bexleyBefore2 from "@/assets/projects/bexley-ba/bexley-before-2.jpg.asset.json";
+import bexleyBefore3 from "@/assets/projects/bexley-ba/bexley-before-3.jpg.asset.json";
+import bexleyAfter1 from "@/assets/projects/bexley-ba/bexley-after-1.jpg.asset.json";
+import bexleyAfter2 from "@/assets/projects/bexley-ba/bexley-after-2.jpg.asset.json";
+import bexleyAfter3 from "@/assets/projects/bexley-ba/bexley-after-3.jpg.asset.json";
 import birch01p from "@/assets/projects/birchgrove/birch-01p.jpg.asset.json";
 import birch13p from "@/assets/projects/birchgrove/birch-13p.jpg.asset.json";
 import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
@@ -604,6 +611,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "We had a difficult bathroom layout and AM came up with something that far exceeded our expectations. They were patiently attentive to our tastes and came up with options that made decisions easy, this resulted in a design that felt like our own.",
     gallery: [bexley1.url, bexley2.url, bexley3.url, bexley4.url, bexley5.url, bexley6.url, bexley7.url, bexley8.url, bexley9.url],
+    beforeImages: [bexleyBefore1.url, bexleyBefore2.url, bexleyBefore3.url],
+    afterImages: [bexleyAfter1.url, bexleyAfter2.url, bexleyAfter3.url],
   },
 
   "drummoyne-modern-luxury-living": {
