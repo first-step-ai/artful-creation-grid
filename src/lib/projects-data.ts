@@ -156,6 +156,20 @@ import eliz32 from "@/assets/projects/eliz-rozelle/eliz-32.jpg.asset.json";
 import eliz33 from "@/assets/projects/eliz-rozelle/eliz-33.jpg.asset.json";
 import eliz34 from "@/assets/projects/eliz-rozelle/eliz-34.jpg.asset.json";
 
+// Rozelle — Ensuite and Study Conversion
+import rze1 from "@/assets/projects/rozelle-ensuite-study/rze-1.jpg.asset.json";
+import rze2 from "@/assets/projects/rozelle-ensuite-study/rze-2.jpg.asset.json";
+import rze3 from "@/assets/projects/rozelle-ensuite-study/rze-3.jpg.asset.json";
+import rze4 from "@/assets/projects/rozelle-ensuite-study/rze-4.jpg.asset.json";
+import rze5 from "@/assets/projects/rozelle-ensuite-study/rze-5.jpg.asset.json";
+import rze8 from "@/assets/projects/rozelle-ensuite-study/rze-8.jpg.asset.json";
+import rze9 from "@/assets/projects/rozelle-ensuite-study/rze-9.jpg.asset.json";
+import rze10 from "@/assets/projects/rozelle-ensuite-study/rze-10.jpg.asset.json";
+import rze11 from "@/assets/projects/rozelle-ensuite-study/rze-11.jpg.asset.json";
+import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json";
+import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
+import rze15 from "@/assets/projects/rozelle-ensuite-study/rze-15.jpg.asset.json";
+
 export type ProjectSummary = {
   suburb: string;
   title: string;
@@ -204,7 +218,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: putney1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
   { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: eliz10.url, tags: ["Bathroom", "Family"] },
   { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Bathroom", image: drum1.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
-  { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rozelle3.url, tags: ["Bathroom", "Ensuite", "Study"] },
+  { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rze1.url, tags: ["Bathroom", "Ensuite", "Study"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: rozelle2.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: rozelle2.url, badge: "Award", tags: ["Bathroom", "Family"] },
   { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: rozelle2.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
@@ -579,7 +593,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "New ensuite",
       "Integrated study space",
     ],
-    gallery: [rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
+    gallery: [rze1.url, rze2.url, rze3.url, rze4.url, rze5.url, rze8.url, rze9.url, rze10.url, rze11.url, rze12.url, rze14.url, rze15.url],
   },
 
   "roseville-calm-family-spaces": {
