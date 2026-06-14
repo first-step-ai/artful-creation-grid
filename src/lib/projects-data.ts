@@ -170,6 +170,22 @@ import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json
 import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
 import rze15 from "@/assets/projects/rozelle-ensuite-study/rze-15.jpg.asset.json";
 
+// Rozelle — Whole-Home Transformation
+import rwh3 from "@/assets/projects/rozelle-whole/rwh-3.jpg.asset.json";
+import rwh6 from "@/assets/projects/rozelle-whole/rwh-6.jpg.asset.json";
+import rwh7 from "@/assets/projects/rozelle-whole/rwh-7.jpg.asset.json";
+import rwh8 from "@/assets/projects/rozelle-whole/rwh-8.jpg.asset.json";
+import rwh9 from "@/assets/projects/rozelle-whole/rwh-9.jpg.asset.json";
+import rwh11 from "@/assets/projects/rozelle-whole/rwh-11.jpg.asset.json";
+import rwh14 from "@/assets/projects/rozelle-whole/rwh-14.jpg.asset.json";
+import rwh16 from "@/assets/projects/rozelle-whole/rwh-16.jpg.asset.json";
+import rwh17 from "@/assets/projects/rozelle-whole/rwh-17.jpg.asset.json";
+import rwh18 from "@/assets/projects/rozelle-whole/rwh-18.jpg.asset.json";
+import rwh20 from "@/assets/projects/rozelle-whole/rwh-20.jpg.asset.json";
+import rwh21 from "@/assets/projects/rozelle-whole/rwh-21.jpg.asset.json";
+import rwh22 from "@/assets/projects/rozelle-whole/rwh-22.jpg.asset.json";
+import rwh24 from "@/assets/projects/rozelle-whole/rwh-24.jpg.asset.json";
+
 // Roseville — Calm Family Spaces
 import roseville1 from "@/assets/projects/roseville/roseville-1.jpg.asset.json";
 import roseville2 from "@/assets/projects/roseville/roseville-2.jpg.asset.json";
@@ -287,7 +303,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: enmore26.url, badge: "Award", tags: ["Bathroom", "Family"] },
   { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: lind10.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB1.url, tags: ["Bathroom"] },
-  { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rozelle4.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
+  { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: abbots2.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
@@ -833,7 +849,16 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Floor plan reconfiguration to create a moody oasis aesthetic",
       "Laundry integration within the sauna space",
     ],
-    gallery: [rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url, rozelle1.url],
+    gallery: [
+      rwh3.url,
+      rwh6.url, rwh7.url,
+      rwh8.url, rwh9.url,
+      rwh11.url, rwh14.url,
+      rwh16.url, rwh17.url,
+      rwh18.url, rwh20.url,
+      rwh21.url,
+      rwh22.url, rwh24.url,
+    ],
   },
 
   "manly-beachside-apartment-revival": {
