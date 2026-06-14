@@ -181,6 +181,8 @@ export type ProjectDetail = ProjectSummary & {
   gallery: string[];
   beforeImage?: string;
   afterImage?: string;
+  beforeImages?: string[];
+  afterImages?: string[];
 };
 
 export function slugify(suburb: string, title: string) {
@@ -966,6 +968,8 @@ function buildDetail(s: ProjectSummary): ProjectDetail {
     gallery: o.gallery ?? [s.image],
     beforeImage: o.beforeImage,
     afterImage: o.afterImage,
+    beforeImages: o.beforeImages,
+    afterImages: o.afterImages,
     badge: o.badge ?? s.badge ?? null,
   };
 }
