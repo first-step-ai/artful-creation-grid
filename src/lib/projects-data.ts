@@ -1009,6 +1009,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       lind41.url,
       lind47.url,
     ],
+    beforeImages: [lindBefore1.url, lindBefore2.url, lindBefore3.url],
+    afterImages: [lindAfter1.url, lindAfter2.url, lindAfter3.url],
   },
 
   "canada-bay-considered-main-bathroom": {
