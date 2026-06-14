@@ -91,20 +91,21 @@ import drumAfter3 from "@/assets/projects/drummoyne-ba/drum-after-3.png.asset.js
 import annan01 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
 import annan02 from "@/assets/projects/annandale-new/annan-02.jpg.asset.json";
 import annan03 from "@/assets/projects/annandale-new/annan-03.jpg.asset.json";
-import annan04 from "@/assets/projects/annandale-new/annan-04.jpg.asset.json";
 import annan05 from "@/assets/projects/annandale-new/annan-05.jpg.asset.json";
-import annan06 from "@/assets/projects/annandale-new/annan-06.jpg.asset.json";
 import annan07 from "@/assets/projects/annandale-new/annan-07.jpg.asset.json";
 import annan08 from "@/assets/projects/annandale-new/annan-08.jpg.asset.json";
-import annan09 from "@/assets/projects/annandale-new/annan-09.jpg.asset.json";
-import annan10 from "@/assets/projects/annandale-new/annan-10.jpg.asset.json";
-import annan11 from "@/assets/projects/annandale-new/annan-11.jpg.asset.json";
-import annan12 from "@/assets/projects/annandale-new/annan-12.jpg.asset.json";
-import annan13 from "@/assets/projects/annandale-new/annan-13.jpg.asset.json";
-import annan14 from "@/assets/projects/annandale-new/annan-14.jpg.asset.json";
 import annan15 from "@/assets/projects/annandale-new/annan-15.jpg.asset.json";
 import annan16 from "@/assets/projects/annandale-new/annan-16.jpg.asset.json";
 import annan17 from "@/assets/projects/annandale-new/annan-17.jpg.asset.json";
+import annanN01 from "@/assets/projects/annandale-extra/annan-n01.jpg.asset.json";
+import annanN02 from "@/assets/projects/annandale-extra/annan-n02.jpg.asset.json";
+import annanN03 from "@/assets/projects/annandale-extra/annan-n03.jpg.asset.json";
+import annanN04 from "@/assets/projects/annandale-extra/annan-n04.jpg.asset.json";
+import annanN05 from "@/assets/projects/annandale-extra/annan-n05.jpg.asset.json";
+import annanN07 from "@/assets/projects/annandale-extra/annan-n07.jpg.asset.json";
+import annanN09 from "@/assets/projects/annandale-extra/annan-n09.jpg.asset.json";
+import annanN10 from "@/assets/projects/annandale-extra/annan-n10.jpg.asset.json";
+import annanN11 from "@/assets/projects/annandale-extra/annan-n11.jpg.asset.json";
 import annanBefore1 from "@/assets/projects/annandale-ba/annan-before-1.jpg.asset.json";
 import annanBefore2 from "@/assets/projects/annandale-ba/annan-before-2.jpg.asset.json";
 import annanBefore3 from "@/assets/projects/annandale-ba/annan-before-3.jpg.asset.json";
@@ -601,9 +602,27 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Renovations, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
-    gallery: [annan02.url, annan03.url, annan04.url, annan05.url, annan06.url, annan07.url, annan08.url, annan09.url, annan10.url, annan11.url, annan12.url, annan13.url, annan14.url, annan15.url, annan16.url, annan17.url],
+    gallery: [
+      annanN09.url, // fireplace living
+      annan02.url,  // green bathroom basin+toilet
+      annan05.url,  // green basin
+      annan07.url,  // garden view
+      annanN01.url, // pantry storage
+      annan08.url,  // garden steps
+      annanN03.url, // pink wall niche tub
+      annanN02.url, // pink bathtub
+      annanN07.url, // wall toilet pink
+      annanN05.url, // long pink bathroom
+      annanN10.url, // staircase
+      annanN04.url, // vanity mirror cream
+      annan15.url,  // stone vanity
+      annan16.url,  // stone basin
+      annanN11.url, // shower
+      annan03.url,  // freestanding tub
+      annan17.url,  // stone niche
+    ],
     beforeImages: [annanBefore1.url, annanBefore2.url, annanBefore3.url],
-    afterImages: [annanAfter1.url, annanAfter2.url, annanAfter3.url],
+    afterImages: [annanAfter2.url, annanAfter1.url, annanAfter3.url],
   },
 
   "camperdown-inner-city-charm": {
