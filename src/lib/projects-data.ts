@@ -602,9 +602,27 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Renovations, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
-    gallery: [annan02.url, annan03.url, annan04.url, annan05.url, annan06.url, annan07.url, annan08.url, annan09.url, annan10.url, annan11.url, annan12.url, annan13.url, annan14.url, annan15.url, annan16.url, annan17.url],
+    gallery: [
+      annanN09.url, // fireplace living
+      annan02.url,  // green bathroom basin+toilet
+      annan05.url,  // green basin
+      annan07.url,  // garden view
+      annanN01.url, // pantry storage
+      annan08.url,  // garden steps
+      annanN03.url, // pink wall niche tub
+      annanN02.url, // pink bathtub
+      annanN07.url, // wall toilet pink
+      annanN05.url, // long pink bathroom
+      annanN10.url, // staircase
+      annanN04.url, // vanity mirror cream
+      annan15.url,  // stone vanity
+      annan16.url,  // stone basin
+      annanN11.url, // shower
+      annan03.url,  // freestanding tub
+      annan17.url,  // stone niche
+    ],
     beforeImages: [annanBefore1.url, annanBefore2.url, annanBefore3.url],
-    afterImages: [annanAfter1.url, annanAfter2.url, annanAfter3.url],
+    afterImages: [annanAfter2.url, annanAfter1.url, annanAfter3.url],
   },
 
   "camperdown-inner-city-charm": {
