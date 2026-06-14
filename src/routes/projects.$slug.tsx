@@ -219,17 +219,17 @@ function ProjectDetailPage() {
                 {/* After group */}
                 <div className="flex flex-col gap-6 md:gap-8">
                   <div className="eyebrow">After</div>
-                  <div className="flex flex-col gap-5 md:gap-8">
+                  <div className="grid grid-cols-3 gap-3 md:gap-5">
                     {afters.slice(0, count).map((src, i) => (
                       <figure
                         key={`after-${i}`}
-                        className="overflow-hidden bg-burgundy"
+                        className="overflow-hidden bg-burgundy aspect-[3/4]"
                       >
                         <img
                           src={src}
                           alt={`After ${i + 1}`}
                           loading="lazy"
-                          className="w-full h-auto object-cover"
+                          className="w-full h-full object-cover"
                         />
                       </figure>
                     ))}
