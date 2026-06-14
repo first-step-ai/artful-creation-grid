@@ -540,6 +540,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Considered finishes connecting each space cohesively",
     ],
     gallery: [pyrmont2.url, pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url, pyrmont7.url, pyrmont8.url],
+    beforeImages: [pyrmontBefore1.url, pyrmontBefore2.url, pyrmontBefore3.url],
+    afterImages: [pyrmontAfter1.url, pyrmontAfter2.url, pyrmontAfter3.url],
   },
 
   "annandale-smart-family-living": {
