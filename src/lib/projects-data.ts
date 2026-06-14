@@ -1161,7 +1161,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Wow!! Congratulations on being finalist. It's already award winning in our book. A year on — love the bathrooms AND all the new stuff you made happen last year. Gives us constant happiness.",
-    gallery: [rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url, rozelle2.url, rozelle3.url],
+    gallery: [rhf05L.url, rhf01p.url, rhf02p.url, rhf27L.url, rhf04p.url, rhf06p.url, rhf20L.url, rhf08p.url, rhf11p.url, rhf22L.url, rhf14p.url, rhf17p.url, rhf24L.url, rhf23p.url, rhf28p.url, rhf29p.url, rhf31p.url],
   },
 };
 
