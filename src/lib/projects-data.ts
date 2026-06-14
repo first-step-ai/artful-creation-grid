@@ -1064,7 +1064,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Our third renovation with the team and we couldn't be happier — considering we completed all the design over Zoom!",
-    gallery: [camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url],
+    gallery: [castle296L.url, castle201p.url, castle260p.url, castle211L.url, castle257p.url, castle218p.url, castle1761L.url, castle205p.url, castle251p.url, castle243L.url, castle266p.url, castle267p.url, castle248p.url, castle274p.url, castle1796p.url, castle1776p.url],
   },
 
   "five-dock-family-bathroom-and-bedroom-storage": {
