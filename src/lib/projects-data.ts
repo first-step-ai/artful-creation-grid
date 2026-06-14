@@ -280,6 +280,23 @@ import birch16 from "@/assets/projects/birchgrove/birch-16.jpg.asset.json";
 import birch17 from "@/assets/projects/birchgrove/birch-17.jpg.asset.json";
 import birch18 from "@/assets/projects/birchgrove/birch-18.jpg.asset.json";
 import birch19 from "@/assets/projects/birchgrove/birch-19.jpg.asset.json";
+// Castle Cove
+import castle296L from "@/assets/projects/castle-cove/castle-296L.jpg.asset.json";
+import castle211L from "@/assets/projects/castle-cove/castle-211L.jpg.asset.json";
+import castle243L from "@/assets/projects/castle-cove/castle-243L.jpg.asset.json";
+import castle1761L from "@/assets/projects/castle-cove/castle-1761L.jpg.asset.json";
+import castle201p from "@/assets/projects/castle-cove/castle-201p.jpg.asset.json";
+import castle260p from "@/assets/projects/castle-cove/castle-260p.jpg.asset.json";
+import castle257p from "@/assets/projects/castle-cove/castle-257p.jpg.asset.json";
+import castle218p from "@/assets/projects/castle-cove/castle-218p.jpg.asset.json";
+import castle205p from "@/assets/projects/castle-cove/castle-205p.jpg.asset.json";
+import castle251p from "@/assets/projects/castle-cove/castle-251p.jpg.asset.json";
+import castle266p from "@/assets/projects/castle-cove/castle-266p.jpg.asset.json";
+import castle267p from "@/assets/projects/castle-cove/castle-267p.jpg.asset.json";
+import castle248p from "@/assets/projects/castle-cove/castle-248p.jpg.asset.json";
+import castle274p from "@/assets/projects/castle-cove/castle-274p.jpg.asset.json";
+import castle1796p from "@/assets/projects/castle-cove/castle-1796p.jpg.asset.json";
+import castle1776p from "@/assets/projects/castle-cove/castle-1776p.jpg.asset.json";
 import birch01p from "@/assets/projects/birchgrove/birch-01p.jpg.asset.json";
 import birch13p from "@/assets/projects/birchgrove/birch-13p.jpg.asset.json";
 import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
@@ -344,7 +361,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manly8.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
-  { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: camp2.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
+  { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Bathroom", image: annan2.url, tags: ["Bathroom", "Family", "Storage"] },
   { suburb: "Rozelle", title: "Home Facelift", category: "Full Interior", image: rozelle5.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite"] },
 ];
@@ -1047,7 +1064,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Our third renovation with the team and we couldn't be happier — considering we completed all the design over Zoom!",
-    gallery: [camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url],
+    gallery: [castle296L.url, castle201p.url, castle260p.url, castle211L.url, castle257p.url, castle218p.url, castle1761L.url, castle205p.url, castle251p.url, castle243L.url, castle266p.url, castle267p.url, castle248p.url, castle274p.url, castle1796p.url, castle1776p.url],
   },
 
   "five-dock-family-bathroom-and-bedroom-storage": {
