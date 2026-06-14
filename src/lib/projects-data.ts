@@ -88,14 +88,29 @@ import drumAfter1 from "@/assets/projects/drummoyne-ba/drum-after-1.png.asset.js
 import drumAfter2 from "@/assets/projects/drummoyne-ba/drum-after-2.png.asset.json";
 import drumAfter3 from "@/assets/projects/drummoyne-ba/drum-after-3.png.asset.json";
 // Annandale
-import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
-import annan2 from "@/assets/projects/annandale-2.jpg.asset.json";
-import annan3 from "@/assets/projects/annandale-3.jpg.asset.json";
-import annan4 from "@/assets/projects/annandale-4.jpg.asset.json";
-import annan5 from "@/assets/projects/annandale-5.jpg.asset.json";
-import annan6 from "@/assets/projects/annandale-6.jpg.asset.json";
-import annan7 from "@/assets/projects/annandale-7.jpg.asset.json";
-import annan8 from "@/assets/projects/annandale-8.jpg.asset.json";
+import annan01 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
+import annan02 from "@/assets/projects/annandale-new/annan-02.jpg.asset.json";
+import annan03 from "@/assets/projects/annandale-new/annan-03.jpg.asset.json";
+import annan04 from "@/assets/projects/annandale-new/annan-04.jpg.asset.json";
+import annan05 from "@/assets/projects/annandale-new/annan-05.jpg.asset.json";
+import annan06 from "@/assets/projects/annandale-new/annan-06.jpg.asset.json";
+import annan07 from "@/assets/projects/annandale-new/annan-07.jpg.asset.json";
+import annan08 from "@/assets/projects/annandale-new/annan-08.jpg.asset.json";
+import annan09 from "@/assets/projects/annandale-new/annan-09.jpg.asset.json";
+import annan10 from "@/assets/projects/annandale-new/annan-10.jpg.asset.json";
+import annan11 from "@/assets/projects/annandale-new/annan-11.jpg.asset.json";
+import annan12 from "@/assets/projects/annandale-new/annan-12.jpg.asset.json";
+import annan13 from "@/assets/projects/annandale-new/annan-13.jpg.asset.json";
+import annan14 from "@/assets/projects/annandale-new/annan-14.jpg.asset.json";
+import annan15 from "@/assets/projects/annandale-new/annan-15.jpg.asset.json";
+import annan16 from "@/assets/projects/annandale-new/annan-16.jpg.asset.json";
+import annan17 from "@/assets/projects/annandale-new/annan-17.jpg.asset.json";
+import annanBefore1 from "@/assets/projects/annandale-ba/annan-before-1.jpg.asset.json";
+import annanBefore2 from "@/assets/projects/annandale-ba/annan-before-2.jpg.asset.json";
+import annanBefore3 from "@/assets/projects/annandale-ba/annan-before-3.jpg.asset.json";
+import annanAfter1 from "@/assets/projects/annandale-ba/annan-after-1.jpg.asset.json";
+import annanAfter2 from "@/assets/projects/annandale-ba/annan-after-2.jpg.asset.json";
+import annanAfter3 from "@/assets/projects/annandale-ba/annan-after-3.jpg.asset.json";
 // Camperdown
 import camp1 from "@/assets/projects/camperdown-v3-4.jpg.asset.json";
 import camp2 from "@/assets/projects/camperdown-v3-7.jpg.asset.json";
