@@ -190,10 +190,10 @@ function ProjectDetailPage() {
           const count = Math.min(befores.length, afters.length, 3);
           if (count === 0) return null;
           return (
-            <section className="mx-auto max-w-[1920px] px-6 md:px-10 py-16 md:py-28 border-t border-ivory/10">
-              <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-12 items-start">
+            <section className="mx-auto max-w-[1920px] px-6 md:px-10 py-8 md:py-12 border-t border-ivory/10">
+              <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-10 items-start">
                 {/* Before group */}
-                <div className="flex flex-col gap-6 md:gap-8">
+                <div className="flex flex-col gap-3 md:gap-4">
                   <div className="eyebrow">Before</div>
                   <div className="grid grid-cols-3 gap-3 md:gap-5">
                     {befores.slice(0, count).map((src, i) => (
@@ -217,7 +217,7 @@ function ProjectDetailPage() {
                 <div className="md:hidden h-px w-full bg-ivory/20" />
 
                 {/* After group */}
-                <div className="flex flex-col gap-6 md:gap-8">
+                <div className="flex flex-col gap-3 md:gap-4">
                   <div className="eyebrow">After</div>
                   <div className="grid grid-cols-3 gap-3 md:gap-5">
                     {afters.slice(0, count).map((src, i) => (
