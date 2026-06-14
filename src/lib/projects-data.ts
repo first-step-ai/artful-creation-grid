@@ -90,6 +90,41 @@ import camp9 from "@/assets/projects/camperdown-v3-6.jpg.asset.json";
 import camp10 from "@/assets/projects/camperdown-v3-8.jpg.asset.json";
 import camp11 from "@/assets/projects/camperdown-v3-9.jpg.asset.json";
 import camp12 from "@/assets/projects/camperdown-v3-12.jpg.asset.json";
+// Putney
+import putney1 from "@/assets/projects/putney/putney-1.jpg.asset.json";
+import putney2 from "@/assets/projects/putney/putney-2.jpg.asset.json";
+import putney3 from "@/assets/projects/putney/putney-3.jpg.asset.json";
+import putney4 from "@/assets/projects/putney/putney-4.jpg.asset.json";
+import putney5 from "@/assets/projects/putney/putney-5.jpg.asset.json";
+import putney6 from "@/assets/projects/putney/putney-6.jpg.asset.json";
+import putney11 from "@/assets/projects/putney/putney-11.jpg.asset.json";
+import putney17 from "@/assets/projects/putney/putney-17.jpg.asset.json";
+import putney20 from "@/assets/projects/putney/putney-20.jpg.asset.json";
+import putney27 from "@/assets/projects/putney/putney-27.jpg.asset.json";
+import putney32 from "@/assets/projects/putney/putney-32.jpg.asset.json";
+import putney37 from "@/assets/projects/putney/putney-37.jpg.asset.json";
+import putney39 from "@/assets/projects/putney/putney-39.jpg.asset.json";
+import putney40 from "@/assets/projects/putney/putney-40.jpg.asset.json";
+import putney42 from "@/assets/projects/putney/putney-42.jpg.asset.json";
+import putney43 from "@/assets/projects/putney/putney-43.jpg.asset.json";
+import putney44 from "@/assets/projects/putney/putney-44.jpg.asset.json";
+import putney45 from "@/assets/projects/putney/putney-45.jpg.asset.json";
+import putney46 from "@/assets/projects/putney/putney-46.jpg.asset.json";
+import putney47 from "@/assets/projects/putney/putney-47.jpg.asset.json";
+import putney48 from "@/assets/projects/putney/putney-48.jpg.asset.json";
+import putney49 from "@/assets/projects/putney/putney-49.jpg.asset.json";
+import putney54 from "@/assets/projects/putney/putney-54.jpg.asset.json";
+import putney57 from "@/assets/projects/putney/putney-57.jpg.asset.json";
+import putney59 from "@/assets/projects/putney/putney-59.jpg.asset.json";
+import putney60 from "@/assets/projects/putney/putney-60.jpg.asset.json";
+import putney63 from "@/assets/projects/putney/putney-63.jpg.asset.json";
+import putney76 from "@/assets/projects/putney/putney-76.jpg.asset.json";
+import putney78 from "@/assets/projects/putney/putney-78.jpg.asset.json";
+import putney85 from "@/assets/projects/putney/putney-85.jpg.asset.json";
+import putney87 from "@/assets/projects/putney/putney-87.jpg.asset.json";
+import putney90 from "@/assets/projects/putney/putney-90.jpg.asset.json";
+import putney94 from "@/assets/projects/putney/putney-94.jpg.asset.json";
+import putney95 from "@/assets/projects/putney/putney-95.jpg.asset.json";
 
 export type ProjectSummary = {
   suburb: string;
@@ -134,7 +169,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Living Room"] },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url, tags: ["Multi-Space", "Bathroom", "Ensuite"] },
-  { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: rozelle1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
+  { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: putney1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
   { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom", "Family"] },
   { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Bathroom", image: drum1.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rozelle3.url, tags: ["Bathroom", "Ensuite", "Study"] },
@@ -424,6 +459,15 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "AM Bathrooms and Projects completed Part 1 of our renovation on Christmas Eve. Ante and his team work tirelessly and go above and beyond to deliver a quality finished renovation. Their workmanship and attention to detail is second to none. They delivered a beautiful master suite and powder room. They make the process of renovating stress free for their clients and we would highly recommend using AM Bathrooms and Projects.",
+    gallery: [
+      putney1.url, putney2.url, putney3.url, putney4.url, putney5.url, putney6.url,
+      putney11.url, putney17.url, putney20.url, putney27.url, putney32.url,
+      putney37.url, putney39.url, putney40.url, putney42.url, putney43.url,
+      putney44.url, putney45.url, putney46.url, putney47.url, putney48.url,
+      putney49.url, putney54.url, putney57.url, putney59.url, putney60.url,
+      putney63.url, putney76.url, putney78.url, putney85.url, putney87.url,
+      putney90.url, putney94.url, putney95.url,
+    ],
   },
 
   "rozelle-calm-family-bathroom": {
