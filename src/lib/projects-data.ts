@@ -200,7 +200,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url, tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: putney1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
-  { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: eliz1.url, tags: ["Bathroom", "Family"] },
+  { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: eliz10.url, tags: ["Bathroom", "Family"] },
   { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Bathroom", image: drum1.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rozelle3.url, tags: ["Bathroom", "Ensuite", "Study"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: rozelle2.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
@@ -490,10 +490,10 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "AM Bathrooms and Projects completed Part 1 of our renovation on Christmas Eve. Ante and his team work tirelessly and go above and beyond to deliver a quality finished renovation. Their workmanship and attention to detail is second to none. They delivered a beautiful master suite and powder room. They make the process of renovating stress free for their clients and we would highly recommend using AM Bathrooms and Projects.",
     gallery: [
-      putney1.url, putney2.url, putney3.url, putney5.url,
-      putney6.url, putney17.url, putney20.url, putney27.url,
-      putney32.url, putney39.url, putney43.url, putney47.url,
-      putney54.url, putney60.url, putney78.url, putney90.url,
+      putney43.url, putney3.url, putney27.url, putney32.url,
+      putney40.url, putney44.url, putney45.url, putney47.url,
+      putney48.url, putney49.url, putney57.url, putney59.url,
+      putney63.url, putney78.url, putney85.url, putney6.url,
     ],
   },
 
@@ -523,10 +523,10 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Walk-in shower",
     ],
     gallery: [
-      eliz1.url, eliz2.url, eliz3.url, eliz5.url,
-      eliz6.url, eliz9.url, eliz11.url, eliz17.url,
-      eliz19.url, eliz21.url, eliz23.url, eliz25.url,
-      eliz27.url, eliz29.url, eliz31.url, eliz33.url,
+      eliz9.url, eliz2.url, eliz17.url, eliz23.url,
+      eliz24.url, eliz22.url, eliz25.url, eliz3.url,
+      eliz28.url, eliz27.url, eliz30.url, eliz33.url,
+      eliz34.url, eliz8.url, eliz32.url, eliz6.url,
     ],
   },
 
