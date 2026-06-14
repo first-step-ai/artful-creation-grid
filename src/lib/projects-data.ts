@@ -220,7 +220,19 @@ import lind18 from "@/assets/projects/lindfield/lindfield-18.jpg.asset.json";
 import lind26 from "@/assets/projects/lindfield/lindfield-26.jpg.asset.json";
 import lind30 from "@/assets/projects/lindfield/lindfield-30.jpg.asset.json";
 import lind33 from "@/assets/projects/lindfield/lindfield-33.jpg.asset.json";
-
+// Canada Bay — Considered Main Bathroom
+import canadaWEB1 from "@/assets/projects/canada-bay/canada-WEB_1.jpg.asset.json";
+import canadaWEB4 from "@/assets/projects/canada-bay/canada-WEB_4.jpg.asset.json";
+import canadaWEB6 from "@/assets/projects/canada-bay/canada-WEB_6.jpg.asset.json";
+import canadaWEB7 from "@/assets/projects/canada-bay/canada-WEB_7.jpg.asset.json";
+import canadaWEB8 from "@/assets/projects/canada-bay/canada-WEB_8.jpg.asset.json";
+import canadaWEB10 from "@/assets/projects/canada-bay/canada-WEB_10.jpg.asset.json";
+import canadaWEB11 from "@/assets/projects/canada-bay/canada-WEB_11.jpg.asset.json";
+import canadaWEB14 from "@/assets/projects/canada-bay/canada-WEB_14.jpg.asset.json";
+import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
+import canadaWEB21 from "@/assets/projects/canada-bay/canada-WEB_21.jpg.asset.json";
+import canadaWEB22 from "@/assets/projects/canada-bay/canada-WEB_22.jpg.asset.json";
+import canadaWEB23 from "@/assets/projects/canada-bay/canada-WEB_23.jpg.asset.json";
 
 export type ProjectSummary = {
   suburb: string;
