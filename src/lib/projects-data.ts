@@ -799,7 +799,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "In-wall toilet cistern",
       "Heated towel rails",
     ],
-    gallery: [],
+    gallery: [
+      canadaWEB4.url, canadaWEB6.url, canadaWEB7.url, canadaWEB8.url, canadaWEB10.url,
+      canadaWEB11.url, canadaWEB14.url, canadaWEB19.url, canadaWEB21.url, canadaWEB22.url,
+      canadaWEB23.url, canadaWEB1.url,
+    ],
   },
 
   "rozelle-whole-home-transformation": {
