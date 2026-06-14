@@ -218,6 +218,12 @@ import eliz31 from "@/assets/projects/eliz-rozelle/eliz-31.jpg.asset.json";
 import eliz32 from "@/assets/projects/eliz-rozelle/eliz-32.jpg.asset.json";
 import eliz33 from "@/assets/projects/eliz-rozelle/eliz-33.jpg.asset.json";
 import eliz34 from "@/assets/projects/eliz-rozelle/eliz-34.jpg.asset.json";
+import elizBefore1 from "@/assets/projects/eliz-rozelle-ba/eliz-before-1.jpg.asset.json";
+import elizBefore2 from "@/assets/projects/eliz-rozelle-ba/eliz-before-2.jpg.asset.json";
+import elizBefore3 from "@/assets/projects/eliz-rozelle-ba/eliz-before-3.jpg.asset.json";
+import elizAfter1 from "@/assets/projects/eliz-rozelle-ba/eliz-after-1.jpg.asset.json";
+import elizAfter2 from "@/assets/projects/eliz-rozelle-ba/eliz-after-2.jpg.asset.json";
+import elizAfter3 from "@/assets/projects/eliz-rozelle-ba/eliz-after-3.jpg.asset.json";
 
 // Rozelle — Ensuite and Study Conversion
 import rze1 from "@/assets/projects/rozelle-ensuite-study/rze-1.jpg.asset.json";
@@ -826,6 +832,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       eliz28.url, eliz27.url, eliz30.url, eliz33.url,
       eliz34.url, eliz8.url, eliz32.url, eliz6.url,
     ],
+    beforeImages: [elizBefore1.url, elizBefore2.url, elizBefore3.url],
+    afterImages: [elizAfter1.url, elizAfter2.url, elizAfter3.url],
   },
 
   "newtown-reimagined-ensuite-retreat": {
