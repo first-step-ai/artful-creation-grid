@@ -430,7 +430,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: rozelle1.url, badge: "Award", tags: ["Full Interior", "Multi-Space", "Kitchen", "Laundry", "Ensuite"] },
   { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Full Interior", image: abbots5.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
   { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont3.url, tags: ["Full Interior", "Multi-Space", "Living Room"] },
-  { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan1.url, badge: "Finalist", tags: ["Bathroom"] },
+  { suburb: "Annandale", title: "Smart Family Living", category: "Bathroom", image: annan01.url, badge: "Finalist", tags: ["Bathroom"] },
   { suburb: "Camperdown", title: "Inner-city Charm", category: "Full Interior", image: camp1.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Living Room"] },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url, tags: ["Multi-Space", "Bathroom", "Ensuite"] },
@@ -595,7 +595,9 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Renovations, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
-    gallery: [annan2.url, annan3.url, annan4.url, annan5.url, annan6.url, annan7.url, annan8.url],
+    gallery: [annan02.url, annan03.url, annan04.url, annan05.url, annan06.url, annan07.url, annan08.url, annan09.url, annan10.url, annan11.url, annan12.url, annan13.url, annan14.url, annan15.url, annan16.url, annan17.url],
+    beforeImages: [annanBefore1.url, annanBefore2.url, annanBefore3.url],
+    afterImages: [annanAfter1.url, annanAfter2.url, annanAfter3.url],
   },
 
   "camperdown-inner-city-charm": {
