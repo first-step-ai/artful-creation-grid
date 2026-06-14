@@ -381,7 +381,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
-  { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Bathroom", image: annan2.url, tags: ["Bathroom", "Family", "Storage"] },
+  { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Bathroom", image: fd05L.url, tags: ["Bathroom", "Family", "Storage"] },
   { suburb: "Rozelle", title: "Home Facelift", category: "Full Interior", image: rozelle5.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite"] },
 ];
 
