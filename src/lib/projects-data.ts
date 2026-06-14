@@ -59,6 +59,12 @@ import abbots14 from "@/assets/projects/abbotsford-new-14.jpg.asset.json";
 import abbots15 from "@/assets/projects/abbotsford-new-15.jpg.asset.json";
 import abbots16 from "@/assets/projects/abbotsford-new-16.jpg.asset.json";
 import abbots17 from "@/assets/projects/abbotsford-new-17.jpg.asset.json";
+import abbBefore1 from "@/assets/projects/abbotsford-ba/abb-before-1.jpg.asset.json";
+import abbBefore2 from "@/assets/projects/abbotsford-ba/abb-before-2.jpg.asset.json";
+import abbBefore3 from "@/assets/projects/abbotsford-ba/abb-before-3.jpg.asset.json";
+import abbAfter1 from "@/assets/projects/abbotsford-ba/abb-after-1.jpg.asset.json";
+import abbAfter2 from "@/assets/projects/abbotsford-ba/abb-after-2.jpg.asset.json";
+import abbAfter3 from "@/assets/projects/abbotsford-ba/abb-after-3.jpg.asset.json";
 // Pyrmont
 import pyrmont1 from "@/assets/projects/pyrmont-new-1.jpg.asset.json";
 import pyrmont2 from "@/assets/projects/pyrmont-new-2.jpg.asset.json";
@@ -497,6 +503,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "We recently had AM complete our renovation and could not be any happier. From the design stage to handover, everything went as smooth as possible. Highly recommend the whole team!!",
     gallery: [abbots4.url, abbots5.url, abbots8.url, abbots2.url, abbots3.url, abbots6.url, abbots7.url, abbots11.url, abbots12.url, abbots9.url, abbots13.url, abbots14.url, abbots10.url, abbots15.url, abbots16.url, abbots17.url],
+    beforeImages: [abbBefore1.url, abbBefore2.url, abbBefore3.url],
+    afterImages: [abbAfter1.url, abbAfter2.url, abbAfter3.url],
   },
 
   "pyrmont-elevated-city-living": {
