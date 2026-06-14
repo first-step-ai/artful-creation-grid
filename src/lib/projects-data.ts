@@ -74,6 +74,12 @@ import pyrmont5 from "@/assets/projects/pyrmont-new-5.jpg.asset.json";
 import pyrmont6 from "@/assets/projects/pyrmont-new-6.jpg.asset.json";
 import pyrmont7 from "@/assets/projects/pyrmont-new-7.jpg.asset.json";
 import pyrmont8 from "@/assets/projects/pyrmont-new-8.jpg.asset.json";
+import pyrmontBefore1 from "@/assets/projects/pyrmont-ba/pyrmont-before-1.jpg.asset.json";
+import pyrmontBefore2 from "@/assets/projects/pyrmont-ba/pyrmont-before-2.jpg.asset.json";
+import pyrmontBefore3 from "@/assets/projects/pyrmont-ba/pyrmont-before-3.jpg.asset.json";
+import pyrmontAfter1 from "@/assets/projects/pyrmont-ba/pyrmont-after-1.jpg.asset.json";
+import pyrmontAfter2 from "@/assets/projects/pyrmont-ba/pyrmont-after-2.jpg.asset.json";
+import pyrmontAfter3 from "@/assets/projects/pyrmont-ba/pyrmont-after-3.jpg.asset.json";
 // Annandale
 import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
 import annan2 from "@/assets/projects/annandale-2.jpg.asset.json";
@@ -534,6 +540,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Considered finishes connecting each space cohesively",
     ],
     gallery: [pyrmont2.url, pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url, pyrmont7.url, pyrmont8.url],
+    beforeImages: [pyrmontBefore1.url, pyrmontBefore2.url, pyrmontBefore3.url],
+    afterImages: [pyrmontAfter1.url, pyrmontAfter2.url, pyrmontAfter3.url],
   },
 
   "annandale-smart-family-living": {
