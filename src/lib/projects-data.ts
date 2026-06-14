@@ -265,6 +265,23 @@ import canadaWEB8 from "@/assets/projects/canada-bay/canada-WEB_8.jpg.asset.json
 import canadaWEB10 from "@/assets/projects/canada-bay/canada-WEB_10.jpg.asset.json";
 import canadaWEB11 from "@/assets/projects/canada-bay/canada-WEB_11.jpg.asset.json";
 import canadaWEB14 from "@/assets/projects/canada-bay/canada-WEB_14.jpg.asset.json";
+// Birchgrove — Modern Hamptons Bathrooms
+import birch03 from "@/assets/projects/birchgrove/birch-03.jpg.asset.json";
+import birch04 from "@/assets/projects/birchgrove/birch-04.jpg.asset.json";
+import birch05 from "@/assets/projects/birchgrove/birch-05.jpg.asset.json";
+import birch06 from "@/assets/projects/birchgrove/birch-06.jpg.asset.json";
+import birch07 from "@/assets/projects/birchgrove/birch-07.jpg.asset.json";
+import birch08 from "@/assets/projects/birchgrove/birch-08.jpg.asset.json";
+import birch09 from "@/assets/projects/birchgrove/birch-09.jpg.asset.json";
+import birch11 from "@/assets/projects/birchgrove/birch-11.jpg.asset.json";
+import birch14 from "@/assets/projects/birchgrove/birch-14.jpg.asset.json";
+import birch15 from "@/assets/projects/birchgrove/birch-15.jpg.asset.json";
+import birch16 from "@/assets/projects/birchgrove/birch-16.jpg.asset.json";
+import birch17 from "@/assets/projects/birchgrove/birch-17.jpg.asset.json";
+import birch18 from "@/assets/projects/birchgrove/birch-18.jpg.asset.json";
+import birch19 from "@/assets/projects/birchgrove/birch-19.jpg.asset.json";
+import birch01p from "@/assets/projects/birchgrove/birch-01p.jpg.asset.json";
+import birch13p from "@/assets/projects/birchgrove/birch-13p.jpg.asset.json";
 import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
 import canadaWEB21 from "@/assets/projects/canada-bay/canada-WEB_21.jpg.asset.json";
 import canadaWEB22 from "@/assets/projects/canada-bay/canada-WEB_22.jpg.asset.json";
@@ -326,7 +343,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manly8.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
-  { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: abbots2.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
+  { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: camp2.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Bathroom", image: annan2.url, tags: ["Bathroom", "Family", "Storage"] },
   { suburb: "Rozelle", title: "Home Facelift", category: "Full Interior", image: rozelle5.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite"] },
@@ -993,7 +1010,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "AM Bathrooms took the time to visit, measure up and discuss my new bathroom and laundry plans. He was very helpful and knowledgeable and had other ideas for me to consider. He kept in contact throughout the planning and fitting stages. I've had so many comments about the workmanship — I'd highly recommend AM Bathrooms.",
-    gallery: [abbots3.url, abbots4.url, abbots5.url, abbots6.url, abbots7.url, abbots8.url],
+    gallery: [birch08.url, birch03.url, birch04.url, birch05.url, birch01p.url, birch13p.url, birch06.url, birch07.url, birch09.url, birch11.url, birch14.url, birch15.url, birch16.url, birch17.url, birch18.url, birch19.url],
   },
 
   "castle-cove-full-family-home-refresh": {
