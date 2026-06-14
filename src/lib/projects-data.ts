@@ -640,7 +640,12 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We absolutely love using the new bathroom, it's like being in a spa every day!",
-    gallery: [],
+    gallery: [
+      roseville1.url, roseville2.url, roseville3.url, roseville6.url,
+      roseville9.url, roseville12.url, roseville13.url, roseville15.url,
+      roseville16.url, roseville21.url, roseville23.url, roseville24.url,
+      roseville34.url, roseville36.url, roseville38.url,
+    ],
   },
 
   "enmore-award-winning-family-bathroom": {
