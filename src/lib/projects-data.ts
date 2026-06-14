@@ -170,6 +170,23 @@ import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json
 import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
 import rze15 from "@/assets/projects/rozelle-ensuite-study/rze-15.jpg.asset.json";
 
+// Roseville — Calm Family Spaces
+import roseville1 from "@/assets/projects/roseville/roseville-1.jpg.asset.json";
+import roseville2 from "@/assets/projects/roseville/roseville-2.jpg.asset.json";
+import roseville3 from "@/assets/projects/roseville/roseville-3.jpg.asset.json";
+import roseville6 from "@/assets/projects/roseville/roseville-6.jpg.asset.json";
+import roseville9 from "@/assets/projects/roseville/roseville-9.jpg.asset.json";
+import roseville12 from "@/assets/projects/roseville/roseville-12.jpg.asset.json";
+import roseville13 from "@/assets/projects/roseville/roseville-13.jpg.asset.json";
+import roseville15 from "@/assets/projects/roseville/roseville-15.jpg.asset.json";
+import roseville16 from "@/assets/projects/roseville/roseville-16.jpg.asset.json";
+import roseville21 from "@/assets/projects/roseville/roseville-21.jpg.asset.json";
+import roseville23 from "@/assets/projects/roseville/roseville-23.jpg.asset.json";
+import roseville24 from "@/assets/projects/roseville/roseville-24.jpg.asset.json";
+import roseville34 from "@/assets/projects/roseville/roseville-34.jpg.asset.json";
+import roseville36 from "@/assets/projects/roseville/roseville-36.jpg.asset.json";
+import roseville38 from "@/assets/projects/roseville/roseville-38.jpg.asset.json";
+
 export type ProjectSummary = {
   suburb: string;
   title: string;
