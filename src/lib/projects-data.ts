@@ -170,6 +170,23 @@ import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json
 import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
 import rze15 from "@/assets/projects/rozelle-ensuite-study/rze-15.jpg.asset.json";
 
+// Roseville — Calm Family Spaces
+import roseville1 from "@/assets/projects/roseville/roseville-1.jpg.asset.json";
+import roseville2 from "@/assets/projects/roseville/roseville-2.jpg.asset.json";
+import roseville3 from "@/assets/projects/roseville/roseville-3.jpg.asset.json";
+import roseville6 from "@/assets/projects/roseville/roseville-6.jpg.asset.json";
+import roseville9 from "@/assets/projects/roseville/roseville-9.jpg.asset.json";
+import roseville12 from "@/assets/projects/roseville/roseville-12.jpg.asset.json";
+import roseville13 from "@/assets/projects/roseville/roseville-13.jpg.asset.json";
+import roseville15 from "@/assets/projects/roseville/roseville-15.jpg.asset.json";
+import roseville16 from "@/assets/projects/roseville/roseville-16.jpg.asset.json";
+import roseville21 from "@/assets/projects/roseville/roseville-21.jpg.asset.json";
+import roseville23 from "@/assets/projects/roseville/roseville-23.jpg.asset.json";
+import roseville24 from "@/assets/projects/roseville/roseville-24.jpg.asset.json";
+import roseville34 from "@/assets/projects/roseville/roseville-34.jpg.asset.json";
+import roseville36 from "@/assets/projects/roseville/roseville-36.jpg.asset.json";
+import roseville38 from "@/assets/projects/roseville/roseville-38.jpg.asset.json";
+
 export type ProjectSummary = {
   suburb: string;
   title: string;
@@ -219,7 +236,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: eliz10.url, tags: ["Bathroom", "Family"] },
   { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Bathroom", image: drum1.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rze1.url, tags: ["Bathroom", "Ensuite", "Study"] },
-  { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: rozelle2.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
+  { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: roseville1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: rozelle2.url, badge: "Award", tags: ["Bathroom", "Family"] },
   { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: rozelle2.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom"] },
@@ -623,7 +640,12 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We absolutely love using the new bathroom, it's like being in a spa every day!",
-    gallery: [],
+    gallery: [
+      roseville1.url, roseville2.url, roseville3.url, roseville6.url,
+      roseville9.url, roseville12.url, roseville13.url, roseville15.url,
+      roseville16.url, roseville21.url, roseville23.url, roseville24.url,
+      roseville34.url, roseville36.url, roseville38.url,
+    ],
   },
 
   "enmore-award-winning-family-bathroom": {
