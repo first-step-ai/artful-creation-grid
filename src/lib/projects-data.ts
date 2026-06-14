@@ -186,6 +186,26 @@ import rwh21 from "@/assets/projects/rozelle-whole/rwh-21.jpg.asset.json";
 import rwh22 from "@/assets/projects/rozelle-whole/rwh-22.jpg.asset.json";
 import rwh24 from "@/assets/projects/rozelle-whole/rwh-24.jpg.asset.json";
 
+// Manly — Beachside Apartment Revival
+import manly1 from "@/assets/projects/manly/manly-1.jpg.asset.json";
+import manly3 from "@/assets/projects/manly/manly-3.jpg.asset.json";
+import manly4 from "@/assets/projects/manly/manly-4.jpg.asset.json";
+import manly8 from "@/assets/projects/manly/manly-8.jpg.asset.json";
+import manly9 from "@/assets/projects/manly/manly-9.jpg.asset.json";
+import manly10 from "@/assets/projects/manly/manly-10.jpg.asset.json";
+import manly11 from "@/assets/projects/manly/manly-11.jpg.asset.json";
+import manly12 from "@/assets/projects/manly/manly-12.jpg.asset.json";
+import manly13 from "@/assets/projects/manly/manly-13.jpg.asset.json";
+import manly14 from "@/assets/projects/manly/manly-14.jpg.asset.json";
+import manly15 from "@/assets/projects/manly/manly-15.jpg.asset.json";
+import manly18 from "@/assets/projects/manly/manly-18.jpg.asset.json";
+import manly20 from "@/assets/projects/manly/manly-20.jpg.asset.json";
+import manly21 from "@/assets/projects/manly/manly-21.jpg.asset.json";
+import manly23 from "@/assets/projects/manly/manly-23.jpg.asset.json";
+import manly27 from "@/assets/projects/manly/manly-27.jpg.asset.json";
+import manly33 from "@/assets/projects/manly/manly-33.jpg.asset.json";
+import manly42 from "@/assets/projects/manly/manly-42.jpg.asset.json";
+
 // Roseville — Calm Family Spaces
 import roseville1 from "@/assets/projects/roseville/roseville-1.jpg.asset.json";
 import roseville2 from "@/assets/projects/roseville/roseville-2.jpg.asset.json";
