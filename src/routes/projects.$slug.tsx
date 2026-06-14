@@ -191,25 +191,25 @@ function ProjectDetailPage() {
           if (count === 0) return null;
           return (
             <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-16 md:py-28 border-t border-ivory/10">
-              <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-10 items-start">
+              <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-12 items-start">
                 {/* Before group */}
-                <div>
-                  <div className="grid grid-cols-3 gap-4 md:gap-6">
+                <div className="flex flex-col gap-6 md:gap-8">
+                  <div className="eyebrow">Before</div>
+                  <div className="flex flex-col gap-5 md:gap-8">
                     {befores.slice(0, count).map((src, i) => (
                       <figure
                         key={`before-${i}`}
-                        className="overflow-hidden bg-burgundy aspect-[3/4]"
+                        className="overflow-hidden bg-burgundy"
                       >
                         <img
                           src={src}
                           alt={`Before ${i + 1}`}
                           loading="lazy"
-                          className="w-full h-full object-cover"
+                          className="w-full h-auto object-cover"
                         />
                       </figure>
                     ))}
                   </div>
-                  <div className="eyebrow mt-6 md:mt-8">Before</div>
                 </div>
 
                 {/* Divider */}
@@ -217,27 +217,25 @@ function ProjectDetailPage() {
                 <div className="md:hidden h-px w-full bg-ivory/20" />
 
                 {/* After group */}
-                <div>
-                  <div className="grid grid-cols-3 gap-4 md:gap-6">
+                <div className="flex flex-col gap-6 md:gap-8">
+                  <div className="eyebrow">After</div>
+                  <div className="flex flex-col gap-5 md:gap-8">
                     {afters.slice(0, count).map((src, i) => (
                       <figure
                         key={`after-${i}`}
-                        className="overflow-hidden bg-burgundy aspect-[3/4]"
+                        className="overflow-hidden bg-burgundy"
                       >
                         <img
                           src={src}
                           alt={`After ${i + 1}`}
                           loading="lazy"
-                          className="w-full h-full object-cover"
+                          className="w-full h-auto object-cover"
                         />
                       </figure>
                     ))}
                   </div>
-                  <div className="eyebrow mt-6 md:mt-8">After</div>
                 </div>
               </div>
-
-
             </section>
           );
         })()}
