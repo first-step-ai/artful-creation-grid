@@ -3,7 +3,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
-import bathroom from "@/assets/projects/annandale-1.jpg.asset.json";
+import bathroom from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
