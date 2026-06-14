@@ -220,7 +220,19 @@ import lind18 from "@/assets/projects/lindfield/lindfield-18.jpg.asset.json";
 import lind26 from "@/assets/projects/lindfield/lindfield-26.jpg.asset.json";
 import lind30 from "@/assets/projects/lindfield/lindfield-30.jpg.asset.json";
 import lind33 from "@/assets/projects/lindfield/lindfield-33.jpg.asset.json";
-
+// Canada Bay — Considered Main Bathroom
+import canadaWEB1 from "@/assets/projects/canada-bay/canada-WEB_1.jpg.asset.json";
+import canadaWEB4 from "@/assets/projects/canada-bay/canada-WEB_4.jpg.asset.json";
+import canadaWEB6 from "@/assets/projects/canada-bay/canada-WEB_6.jpg.asset.json";
+import canadaWEB7 from "@/assets/projects/canada-bay/canada-WEB_7.jpg.asset.json";
+import canadaWEB8 from "@/assets/projects/canada-bay/canada-WEB_8.jpg.asset.json";
+import canadaWEB10 from "@/assets/projects/canada-bay/canada-WEB_10.jpg.asset.json";
+import canadaWEB11 from "@/assets/projects/canada-bay/canada-WEB_11.jpg.asset.json";
+import canadaWEB14 from "@/assets/projects/canada-bay/canada-WEB_14.jpg.asset.json";
+import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
+import canadaWEB21 from "@/assets/projects/canada-bay/canada-WEB_21.jpg.asset.json";
+import canadaWEB22 from "@/assets/projects/canada-bay/canada-WEB_22.jpg.asset.json";
+import canadaWEB23 from "@/assets/projects/canada-bay/canada-WEB_23.jpg.asset.json";
 
 export type ProjectSummary = {
   suburb: string;
@@ -274,7 +286,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: roseville1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: enmore26.url, badge: "Award", tags: ["Bathroom", "Family"] },
   { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: lind10.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
-  { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom"] },
+  { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB1.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rozelle4.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
@@ -787,7 +799,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "In-wall toilet cistern",
       "Heated towel rails",
     ],
-    gallery: [],
+    gallery: [
+      canadaWEB4.url, canadaWEB6.url, canadaWEB7.url, canadaWEB8.url, canadaWEB10.url,
+      canadaWEB11.url, canadaWEB14.url, canadaWEB19.url, canadaWEB21.url, canadaWEB22.url,
+      canadaWEB23.url, canadaWEB1.url,
+    ],
   },
 
   "rozelle-whole-home-transformation": {
