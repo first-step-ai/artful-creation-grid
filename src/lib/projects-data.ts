@@ -125,6 +125,36 @@ import putney87 from "@/assets/projects/putney/putney-87.jpg.asset.json";
 import putney90 from "@/assets/projects/putney/putney-90.jpg.asset.json";
 import putney94 from "@/assets/projects/putney/putney-94.jpg.asset.json";
 import putney95 from "@/assets/projects/putney/putney-95.jpg.asset.json";
+// Elizabeth St Rozelle — Calm Family Bathroom
+import eliz1 from "@/assets/projects/eliz-rozelle/eliz-1.jpg.asset.json";
+import eliz2 from "@/assets/projects/eliz-rozelle/eliz-2.jpg.asset.json";
+import eliz3 from "@/assets/projects/eliz-rozelle/eliz-3.jpg.asset.json";
+import eliz4 from "@/assets/projects/eliz-rozelle/eliz-4.jpg.asset.json";
+import eliz5 from "@/assets/projects/eliz-rozelle/eliz-5.jpg.asset.json";
+import eliz6 from "@/assets/projects/eliz-rozelle/eliz-6.jpg.asset.json";
+import eliz8 from "@/assets/projects/eliz-rozelle/eliz-8.jpg.asset.json";
+import eliz9 from "@/assets/projects/eliz-rozelle/eliz-9.jpg.asset.json";
+import eliz10 from "@/assets/projects/eliz-rozelle/eliz-10.jpg.asset.json";
+import eliz11 from "@/assets/projects/eliz-rozelle/eliz-11.jpg.asset.json";
+import eliz12 from "@/assets/projects/eliz-rozelle/eliz-12.jpg.asset.json";
+import eliz17 from "@/assets/projects/eliz-rozelle/eliz-17.jpg.asset.json";
+import eliz18 from "@/assets/projects/eliz-rozelle/eliz-18.jpg.asset.json";
+import eliz19 from "@/assets/projects/eliz-rozelle/eliz-19.jpg.asset.json";
+import eliz20 from "@/assets/projects/eliz-rozelle/eliz-20.jpg.asset.json";
+import eliz21 from "@/assets/projects/eliz-rozelle/eliz-21.jpg.asset.json";
+import eliz22 from "@/assets/projects/eliz-rozelle/eliz-22.jpg.asset.json";
+import eliz23 from "@/assets/projects/eliz-rozelle/eliz-23.jpg.asset.json";
+import eliz24 from "@/assets/projects/eliz-rozelle/eliz-24.jpg.asset.json";
+import eliz25 from "@/assets/projects/eliz-rozelle/eliz-25.jpg.asset.json";
+import eliz26 from "@/assets/projects/eliz-rozelle/eliz-26.jpg.asset.json";
+import eliz27 from "@/assets/projects/eliz-rozelle/eliz-27.jpg.asset.json";
+import eliz28 from "@/assets/projects/eliz-rozelle/eliz-28.jpg.asset.json";
+import eliz29 from "@/assets/projects/eliz-rozelle/eliz-29.jpg.asset.json";
+import eliz30 from "@/assets/projects/eliz-rozelle/eliz-30.jpg.asset.json";
+import eliz31 from "@/assets/projects/eliz-rozelle/eliz-31.jpg.asset.json";
+import eliz32 from "@/assets/projects/eliz-rozelle/eliz-32.jpg.asset.json";
+import eliz33 from "@/assets/projects/eliz-rozelle/eliz-33.jpg.asset.json";
+import eliz34 from "@/assets/projects/eliz-rozelle/eliz-34.jpg.asset.json";
 
 export type ProjectSummary = {
   suburb: string;
@@ -170,7 +200,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Bathroom", image: drum1.url, tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: putney1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom"] },
-  { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom", "Family"] },
+  { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: eliz1.url, tags: ["Bathroom", "Family"] },
   { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Bathroom", image: drum1.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rozelle3.url, tags: ["Bathroom", "Ensuite", "Study"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: rozelle2.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
@@ -495,7 +525,13 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Generous bath",
       "Walk-in shower",
     ],
-    gallery: [rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
+    gallery: [
+      eliz1.url, eliz2.url, eliz3.url, eliz4.url, eliz5.url, eliz6.url,
+      eliz8.url, eliz9.url, eliz10.url, eliz11.url, eliz12.url,
+      eliz17.url, eliz18.url, eliz19.url, eliz20.url, eliz21.url, eliz22.url,
+      eliz23.url, eliz24.url, eliz25.url, eliz26.url, eliz27.url, eliz28.url,
+      eliz29.url, eliz30.url, eliz31.url, eliz32.url, eliz33.url, eliz34.url,
+    ],
   },
 
   "newtown-reimagined-ensuite-retreat": {
