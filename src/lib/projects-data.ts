@@ -80,6 +80,13 @@ import pyrmontBefore3 from "@/assets/projects/pyrmont-ba/pyrmont-before-3.jpg.as
 import pyrmontAfter1 from "@/assets/projects/pyrmont-ba/pyrmont-after-1.jpg.asset.json";
 import pyrmontAfter2 from "@/assets/projects/pyrmont-ba/pyrmont-after-2.jpg.asset.json";
 import pyrmontAfter3 from "@/assets/projects/pyrmont-ba/pyrmont-after-3.jpg.asset.json";
+// Drummoyne — Modern Luxury Living before/after
+import drumBefore1 from "@/assets/projects/drummoyne-ba/drum-before-1.png.asset.json";
+import drumBefore2 from "@/assets/projects/drummoyne-ba/drum-before-2.png.asset.json";
+import drumBefore3 from "@/assets/projects/drummoyne-ba/drum-before-3.png.asset.json";
+import drumAfter1 from "@/assets/projects/drummoyne-ba/drum-after-1.png.asset.json";
+import drumAfter2 from "@/assets/projects/drummoyne-ba/drum-after-2.png.asset.json";
+import drumAfter3 from "@/assets/projects/drummoyne-ba/drum-after-3.png.asset.json";
 // Annandale
 import annan1 from "@/assets/projects/annandale-1.jpg.asset.json";
 import annan2 from "@/assets/projects/annandale-2.jpg.asset.json";
@@ -669,6 +676,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Light-filled layouts despite compact proportions",
     ],
     gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url, drum8.url, drum9.url, drum10.url, drum11.url],
+    beforeImages: [drumBefore1.url, drumBefore2.url, drumBefore3.url],
+    afterImages: [drumAfter1.url, drumAfter2.url, drumAfter3.url],
   },
 
   "putney-reimagined-heritage-living": {
