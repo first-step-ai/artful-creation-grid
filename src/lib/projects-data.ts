@@ -463,6 +463,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       },
     ],
     gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
+    beforeImages: [rozelleRefinedBefore1.url, rozelleRefinedBefore2.url, rozelleRefinedBefore3.url],
+    afterImages: [rozelleRefinedAfter1.url, rozelleRefinedAfter2.url, rozelleRefinedAfter3.url],
   },
 
   "abbotsford-hotel-inspired-luxury": {
