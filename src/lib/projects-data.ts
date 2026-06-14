@@ -316,6 +316,24 @@ import fd29p from "@/assets/projects/five-dock/fd-29p.jpg.asset.json";
 import fd30p from "@/assets/projects/five-dock/fd-30p.jpg.asset.json";
 import fd31p from "@/assets/projects/five-dock/fd-31p.jpg.asset.json";
 import fd38p from "@/assets/projects/five-dock/fd-38p.jpg.asset.json";
+// Rozelle Home Facelift
+import rhf05L from "@/assets/projects/rozelle-facelift/rhf-05L.jpg.asset.json";
+import rhf20L from "@/assets/projects/rozelle-facelift/rhf-20L.jpg.asset.json";
+import rhf22L from "@/assets/projects/rozelle-facelift/rhf-22L.jpg.asset.json";
+import rhf24L from "@/assets/projects/rozelle-facelift/rhf-24L.jpg.asset.json";
+import rhf27L from "@/assets/projects/rozelle-facelift/rhf-27L.jpg.asset.json";
+import rhf01p from "@/assets/projects/rozelle-facelift/rhf-01p.jpg.asset.json";
+import rhf02p from "@/assets/projects/rozelle-facelift/rhf-02p.jpg.asset.json";
+import rhf04p from "@/assets/projects/rozelle-facelift/rhf-04p.jpg.asset.json";
+import rhf06p from "@/assets/projects/rozelle-facelift/rhf-06p.jpg.asset.json";
+import rhf08p from "@/assets/projects/rozelle-facelift/rhf-08p.jpg.asset.json";
+import rhf11p from "@/assets/projects/rozelle-facelift/rhf-11p.jpg.asset.json";
+import rhf14p from "@/assets/projects/rozelle-facelift/rhf-14p.jpg.asset.json";
+import rhf17p from "@/assets/projects/rozelle-facelift/rhf-17p.jpg.asset.json";
+import rhf23p from "@/assets/projects/rozelle-facelift/rhf-23p.jpg.asset.json";
+import rhf28p from "@/assets/projects/rozelle-facelift/rhf-28p.jpg.asset.json";
+import rhf29p from "@/assets/projects/rozelle-facelift/rhf-29p.jpg.asset.json";
+import rhf31p from "@/assets/projects/rozelle-facelift/rhf-31p.jpg.asset.json";
 import birch01p from "@/assets/projects/birchgrove/birch-01p.jpg.asset.json";
 import birch13p from "@/assets/projects/birchgrove/birch-13p.jpg.asset.json";
 import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
@@ -382,7 +400,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Bathroom", image: fd05L.url, tags: ["Bathroom", "Family", "Storage"] },
-  { suburb: "Rozelle", title: "Home Facelift", category: "Full Interior", image: rozelle5.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite"] },
+  { suburb: "Rozelle", title: "Home Facelift", category: "Full Interior", image: rhf05L.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite"] },
 ];
 
 // Rich detail overrides (keyed by slug). Anything missing falls back to a sensible default.
@@ -1143,7 +1161,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Wow!! Congratulations on being finalist. It's already award winning in our book. A year on — love the bathrooms AND all the new stuff you made happen last year. Gives us constant happiness.",
-    gallery: [rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url, rozelle2.url, rozelle3.url],
+    gallery: [rhf05L.url, rhf01p.url, rhf02p.url, rhf27L.url, rhf04p.url, rhf06p.url, rhf20L.url, rhf08p.url, rhf11p.url, rhf22L.url, rhf14p.url, rhf17p.url, rhf24L.url, rhf23p.url, rhf28p.url, rhf29p.url, rhf31p.url],
   },
 };
 
