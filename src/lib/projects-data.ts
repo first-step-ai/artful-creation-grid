@@ -968,8 +968,16 @@ function buildDetail(s: ProjectSummary): ProjectDetail {
     gallery: o.gallery ?? [s.image],
     beforeImage: o.beforeImage,
     afterImage: o.afterImage,
-    beforeImages: o.beforeImages,
-    afterImages: o.afterImages,
+    beforeImages:
+      o.beforeImages ??
+      ((o.gallery ?? [s.image]).slice(0, 3).length === 3
+        ? (o.gallery ?? [s.image]).slice(0, 3)
+        : undefined),
+    afterImages:
+      o.afterImages ??
+      ((o.gallery ?? [s.image]).slice(-3).length === 3
+        ? (o.gallery ?? [s.image]).slice(-3)
+        : undefined),
     badge: o.badge ?? s.badge ?? null,
   };
 }
