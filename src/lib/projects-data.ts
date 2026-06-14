@@ -341,6 +341,13 @@ import bexleyBefore3 from "@/assets/projects/bexley-ba/bexley-before-3.jpg.asset
 import bexleyAfter1 from "@/assets/projects/bexley-ba/bexley-after-1.jpg.asset.json";
 import bexleyAfter2 from "@/assets/projects/bexley-ba/bexley-after-2.jpg.asset.json";
 import bexleyAfter3 from "@/assets/projects/bexley-ba/bexley-after-3.jpg.asset.json";
+// Rozelle Refined Family Living before/after
+import rozelleRefinedBefore1 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-before-1.jpg.asset.json";
+import rozelleRefinedBefore2 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-before-2.jpg.asset.json";
+import rozelleRefinedBefore3 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-before-3.jpg.asset.json";
+import rozelleRefinedAfter1 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-after-1.jpg.asset.json";
+import rozelleRefinedAfter2 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-after-2.jpg.asset.json";
+import rozelleRefinedAfter3 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-after-3.jpg.asset.json";
 import birch01p from "@/assets/projects/birchgrove/birch-01p.jpg.asset.json";
 import birch13p from "@/assets/projects/birchgrove/birch-13p.jpg.asset.json";
 import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
@@ -456,6 +463,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       },
     ],
     gallery: [rozelle2.url, rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
+    beforeImages: [rozelleRefinedBefore1.url, rozelleRefinedBefore2.url, rozelleRefinedBefore3.url],
+    afterImages: [rozelleRefinedAfter1.url, rozelleRefinedAfter2.url, rozelleRefinedAfter3.url],
   },
 
   "abbotsford-hotel-inspired-luxury": {
