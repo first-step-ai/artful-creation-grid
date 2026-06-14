@@ -191,11 +191,11 @@ function ProjectDetailPage() {
           if (count === 0) return null;
           return (
             <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-16 md:py-28 border-t border-ivory/10">
-              <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-start">
+              <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-8 items-start">
                 {/* Before group */}
-                <div className="flex flex-col gap-3 md:gap-4">
+                <div className="flex flex-col gap-5 md:gap-6">
                   <div className="eyebrow">Before</div>
-                  <div className="grid grid-cols-3 gap-3 md:gap-5">
+                  <div className="grid grid-cols-3 gap-4 md:gap-6">
                     {befores.slice(0, count).map((src, i) => (
                       <figure
                         key={`before-${i}`}
@@ -217,9 +217,9 @@ function ProjectDetailPage() {
                 <div className="md:hidden h-px w-full bg-ivory/20" />
 
                 {/* After group */}
-                <div className="flex flex-col gap-3 md:gap-4">
+                <div className="flex flex-col gap-5 md:gap-6">
                   <div className="eyebrow">After</div>
-                  <div className="grid grid-cols-3 gap-3 md:gap-5">
+                  <div className="grid grid-cols-3 gap-4 md:gap-6">
                     {afters.slice(0, count).map((src, i) => (
                       <figure
                         key={`after-${i}`}
