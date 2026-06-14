@@ -593,7 +593,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "New ensuite",
       "Integrated study space",
     ],
-    gallery: [rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
+    gallery: [rze1.url, rze2.url, rze3.url, rze4.url, rze5.url, rze8.url, rze9.url, rze10.url, rze11.url, rze12.url, rze14.url, rze15.url],
   },
 
   "roseville-calm-family-spaces": {
