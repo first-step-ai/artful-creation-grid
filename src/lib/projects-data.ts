@@ -341,6 +341,13 @@ import bexleyBefore3 from "@/assets/projects/bexley-ba/bexley-before-3.jpg.asset
 import bexleyAfter1 from "@/assets/projects/bexley-ba/bexley-after-1.jpg.asset.json";
 import bexleyAfter2 from "@/assets/projects/bexley-ba/bexley-after-2.jpg.asset.json";
 import bexleyAfter3 from "@/assets/projects/bexley-ba/bexley-after-3.jpg.asset.json";
+// Rozelle Refined Family Living before/after
+import rozelleRefinedBefore1 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-before-1.jpg.asset.json";
+import rozelleRefinedBefore2 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-before-2.jpg.asset.json";
+import rozelleRefinedBefore3 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-before-3.jpg.asset.json";
+import rozelleRefinedAfter1 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-after-1.jpg.asset.json";
+import rozelleRefinedAfter2 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-after-2.jpg.asset.json";
+import rozelleRefinedAfter3 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-after-3.jpg.asset.json";
 import birch01p from "@/assets/projects/birchgrove/birch-01p.jpg.asset.json";
 import birch13p from "@/assets/projects/birchgrove/birch-13p.jpg.asset.json";
 import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
