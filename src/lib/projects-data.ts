@@ -203,6 +203,23 @@ import enmore24 from "@/assets/projects/enmore/enmore-24.jpg.asset.json";
 import enmore31 from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
 import enmore32 from "@/assets/projects/enmore/enmore-32.jpg.asset.json";
 import enmore34 from "@/assets/projects/enmore/enmore-34.jpg.asset.json";
+// Lindfield — Award-Finalist Bathrooms
+import lind10 from "@/assets/projects/lindfield/lindfield-10.jpg.asset.json";
+import lind11 from "@/assets/projects/lindfield/lindfield-11.jpg.asset.json";
+import lind9 from "@/assets/projects/lindfield/lindfield-9.jpg.asset.json";
+import lind35 from "@/assets/projects/lindfield/lindfield-35.jpg.asset.json";
+import lind41 from "@/assets/projects/lindfield/lindfield-41.jpg.asset.json";
+import lind47 from "@/assets/projects/lindfield/lindfield-47.jpg.asset.json";
+import lind3 from "@/assets/projects/lindfield/lindfield-3.jpg.asset.json";
+import lind4 from "@/assets/projects/lindfield/lindfield-4.jpg.asset.json";
+import lind7 from "@/assets/projects/lindfield/lindfield-7.jpg.asset.json";
+import lind12 from "@/assets/projects/lindfield/lindfield-12.jpg.asset.json";
+import lind13 from "@/assets/projects/lindfield/lindfield-13.jpg.asset.json";
+import lind15 from "@/assets/projects/lindfield/lindfield-15.jpg.asset.json";
+import lind18 from "@/assets/projects/lindfield/lindfield-18.jpg.asset.json";
+import lind26 from "@/assets/projects/lindfield/lindfield-26.jpg.asset.json";
+import lind30 from "@/assets/projects/lindfield/lindfield-30.jpg.asset.json";
+import lind33 from "@/assets/projects/lindfield/lindfield-33.jpg.asset.json";
 
 
 export type ProjectSummary = {
@@ -256,7 +273,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Bathroom", image: rze1.url, tags: ["Bathroom", "Ensuite", "Study"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Bathroom", image: roseville1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: enmore26.url, badge: "Award", tags: ["Bathroom", "Family"] },
-  { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: rozelle2.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
+  { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: lind10.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: rozelle2.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rozelle4.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
@@ -735,7 +752,19 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Dedicated shower zone",
       "Character-respecting aesthetic blending old and new",
     ],
-    gallery: [],
+    gallery: [
+      lind10.url,
+      lind3.url, lind4.url,
+      lind7.url, lind12.url,
+      lind11.url,
+      lind13.url, lind15.url,
+      lind18.url, lind26.url,
+      lind9.url,
+      lind30.url, lind33.url,
+      lind35.url,
+      lind41.url,
+      lind47.url,
+    ],
   },
 
   "canada-bay-considered-main-bathroom": {
