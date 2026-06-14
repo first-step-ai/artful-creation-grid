@@ -124,6 +124,12 @@ import camp9 from "@/assets/projects/camperdown-v3-6.jpg.asset.json";
 import camp10 from "@/assets/projects/camperdown-v3-8.jpg.asset.json";
 import camp11 from "@/assets/projects/camperdown-v3-9.jpg.asset.json";
 import camp12 from "@/assets/projects/camperdown-v3-12.jpg.asset.json";
+import campBefore1 from "@/assets/projects/camperdown-ba/camp-before-1.png.asset.json";
+import campBefore2 from "@/assets/projects/camperdown-ba/camp-before-2.png.asset.json";
+import campBefore3 from "@/assets/projects/camperdown-ba/camp-before-3.png.asset.json";
+import campAfter1 from "@/assets/projects/camperdown-ba/camp-after-1.png.asset.json";
+import campAfter2 from "@/assets/projects/camperdown-ba/camp-after-2.png.asset.json";
+import campAfter3 from "@/assets/projects/camperdown-ba/camp-after-3.png.asset.json";
 // Putney
 import putney1 from "@/assets/projects/putney/putney-1.jpg.asset.json";
 import putney2 from "@/assets/projects/putney/putney-2.jpg.asset.json";
@@ -627,6 +633,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Carefully resolved storage reducing visual clutter throughout",
     ],
     gallery: [camp2.url, camp3.url, camp4.url, camp5.url, camp6.url, camp7.url, camp8.url, camp9.url, camp10.url, camp11.url, camp12.url],
+    beforeImages: [campBefore1.url, campBefore2.url, campBefore3.url],
+    afterImages: [campAfter1.url, campAfter2.url, campAfter3.url],
   },
 
   "bexley-bold-utility": {
