@@ -325,6 +325,12 @@ import lind18 from "@/assets/projects/lindfield/lindfield-18.jpg.asset.json";
 import lind26 from "@/assets/projects/lindfield/lindfield-26.jpg.asset.json";
 import lind30 from "@/assets/projects/lindfield/lindfield-30.jpg.asset.json";
 import lind33 from "@/assets/projects/lindfield/lindfield-33.jpg.asset.json";
+import lindBefore1 from "@/assets/projects/lindfield-ba/lind-before-1.jpg.asset.json";
+import lindBefore2 from "@/assets/projects/lindfield-ba/lind-before-2.jpg.asset.json";
+import lindBefore3 from "@/assets/projects/lindfield-ba/lind-before-3.jpg.asset.json";
+import lindAfter1 from "@/assets/projects/lindfield-ba/lind-after-1.jpg.asset.json";
+import lindAfter2 from "@/assets/projects/lindfield-ba/lind-after-2.jpg.asset.json";
+import lindAfter3 from "@/assets/projects/lindfield-ba/lind-after-3.jpg.asset.json";
 // Canada Bay — Considered Main Bathroom
 import canadaWEB1 from "@/assets/projects/canada-bay/canada-WEB_1.jpg.asset.json";
 import canadaWEB4 from "@/assets/projects/canada-bay/canada-WEB_4.jpg.asset.json";
@@ -1003,6 +1009,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       lind41.url,
       lind47.url,
     ],
+    beforeImages: [lindBefore1.url, lindBefore2.url, lindBefore3.url],
+    afterImages: [lindAfter1.url, lindAfter2.url, lindAfter3.url],
   },
 
   "canada-bay-considered-main-bathroom": {
