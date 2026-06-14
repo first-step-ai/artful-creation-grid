@@ -297,6 +297,25 @@ import castle248p from "@/assets/projects/castle-cove/castle-248p.jpg.asset.json
 import castle274p from "@/assets/projects/castle-cove/castle-274p.jpg.asset.json";
 import castle1796p from "@/assets/projects/castle-cove/castle-1796p.jpg.asset.json";
 import castle1776p from "@/assets/projects/castle-cove/castle-1776p.jpg.asset.json";
+// Five Dock
+import fd05L from "@/assets/projects/five-dock/fd-05L.jpg.asset.json";
+import fd28L from "@/assets/projects/five-dock/fd-28L.jpg.asset.json";
+import fd36L from "@/assets/projects/five-dock/fd-36L.jpg.asset.json";
+import fd39L from "@/assets/projects/five-dock/fd-39L.jpg.asset.json";
+import fd03p from "@/assets/projects/five-dock/fd-03p.jpg.asset.json";
+import fd06p from "@/assets/projects/five-dock/fd-06p.jpg.asset.json";
+import fd10p from "@/assets/projects/five-dock/fd-10p.jpg.asset.json";
+import fd11p from "@/assets/projects/five-dock/fd-11p.jpg.asset.json";
+import fd16p from "@/assets/projects/five-dock/fd-16p.jpg.asset.json";
+import fd18p from "@/assets/projects/five-dock/fd-18p.jpg.asset.json";
+import fd21p from "@/assets/projects/five-dock/fd-21p.jpg.asset.json";
+import fd23p from "@/assets/projects/five-dock/fd-23p.jpg.asset.json";
+import fd25p from "@/assets/projects/five-dock/fd-25p.jpg.asset.json";
+import fd27p from "@/assets/projects/five-dock/fd-27p.jpg.asset.json";
+import fd29p from "@/assets/projects/five-dock/fd-29p.jpg.asset.json";
+import fd30p from "@/assets/projects/five-dock/fd-30p.jpg.asset.json";
+import fd31p from "@/assets/projects/five-dock/fd-31p.jpg.asset.json";
+import fd38p from "@/assets/projects/five-dock/fd-38p.jpg.asset.json";
 import birch01p from "@/assets/projects/birchgrove/birch-01p.jpg.asset.json";
 import birch13p from "@/assets/projects/birchgrove/birch-13p.jpg.asset.json";
 import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
@@ -362,7 +381,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
-  { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Bathroom", image: annan2.url, tags: ["Bathroom", "Family", "Storage"] },
+  { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Bathroom", image: fd05L.url, tags: ["Bathroom", "Family", "Storage"] },
   { suburb: "Rozelle", title: "Home Facelift", category: "Full Interior", image: rozelle5.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite"] },
 ];
 
@@ -1094,7 +1113,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We are very happy with how the renovation went and how the design all came together.",
-    gallery: [annan3.url, annan4.url, annan5.url, annan6.url, annan7.url, annan8.url],
+    gallery: [fd05L.url, fd03p.url, fd06p.url, fd39L.url, fd10p.url, fd11p.url, fd28L.url, fd16p.url, fd18p.url, fd36L.url, fd21p.url, fd23p.url, fd25p.url, fd27p.url, fd29p.url, fd30p.url, fd31p.url, fd38p.url],
   },
 
   "rozelle-home-facelift": {
