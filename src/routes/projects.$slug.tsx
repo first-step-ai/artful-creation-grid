@@ -187,7 +187,7 @@ function ProjectDetailPage() {
               : p.afterImage
               ? [p.afterImage]
               : [];
-          const count = Math.min(black(befores.length, afters.length, 3);
+          const count = Math.min(befores.length, afters.length, 3);
           if (count === 0) return null;
           return (
             <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-16 md:py-28 border-t border-ivory/10">
