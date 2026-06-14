@@ -181,6 +181,8 @@ export type ProjectDetail = ProjectSummary & {
   gallery: string[];
   beforeImage?: string;
   afterImage?: string;
+  beforeImages?: string[];
+  afterImages?: string[];
 };
 
 export function slugify(suburb: string, title: string) {
