@@ -490,13 +490,10 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "AM Bathrooms and Projects completed Part 1 of our renovation on Christmas Eve. Ante and his team work tirelessly and go above and beyond to deliver a quality finished renovation. Their workmanship and attention to detail is second to none. They delivered a beautiful master suite and powder room. They make the process of renovating stress free for their clients and we would highly recommend using AM Bathrooms and Projects.",
     gallery: [
-      putney1.url, putney2.url, putney3.url, putney4.url, putney5.url, putney6.url,
-      putney11.url, putney17.url, putney20.url, putney27.url, putney32.url,
-      putney37.url, putney39.url, putney40.url, putney42.url, putney43.url,
-      putney44.url, putney45.url, putney46.url, putney47.url, putney48.url,
-      putney49.url, putney54.url, putney57.url, putney59.url, putney60.url,
-      putney63.url, putney76.url, putney78.url, putney85.url, putney87.url,
-      putney90.url, putney94.url, putney95.url,
+      putney1.url, putney2.url, putney3.url, putney5.url,
+      putney6.url, putney17.url, putney20.url, putney27.url,
+      putney32.url, putney39.url, putney43.url, putney47.url,
+      putney54.url, putney60.url, putney78.url, putney90.url,
     ],
   },
 
