@@ -191,47 +191,39 @@ function ProjectDetailPage() {
           if (count === 0) return null;
           return (
             <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-16 md:py-28 border-t border-ivory/10">
-              <div className="eyebrow mb-10 md:mb-12">Before &amp; After</div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                {/* Before column */}
-                <div className="space-y-4 md:space-y-5">
-                  <div className="font-sans text-[11px] tracking-[0.28em] uppercase text-ivory-muted">
-                    Before
-                  </div>
-                  {befores.slice(0, count).map((src, i) => (
-                    <figure
-                      key={`before-${i}`}
-                      className="overflow-hidden bg-burgundy aspect-[3/4]"
-                    >
-                      <img
-                        src={src}
-                        alt={`Before ${i + 1}`}
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                      />
-                    </figure>
-                  ))}
-                </div>
-                {/* After column */}
-                <div className="space-y-4 md:space-y-5">
-                  <div className="font-sans text-[11px] tracking-[0.28em] uppercase text-ivory-muted">
-                    After
-                  </div>
-                  {afters.slice(0, count).map((src, i) => (
-                    <figure
-                      key={`after-${i}`}
-                      className="overflow-hidden bg-burgundy aspect-[3/4]"
-                    >
-                      <img
-                        src={src}
-                        alt={`After ${i + 1}`}
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                      />
-                    </figure>
-                  ))}
-                </div>
+              <div className="flex items-center justify-between mb-10 md:mb-12">
+                <div className="eyebrow">Before</div>
+                <div className="eyebrow">After</div>
               </div>
+              <div className="grid grid-cols-6 gap-3 md:gap-5">
+                {befores.slice(0, count).map((src, i) => (
+                  <figure
+                    key={`before-${i}`}
+                    className="overflow-hidden bg-burgundy aspect-[3/4]"
+                  >
+                    <img
+                      src={src}
+                      alt={`Before ${i + 1}`}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                  </figure>
+                ))}
+                {afters.slice(0, count).map((src, i) => (
+                  <figure
+                    key={`after-${i}`}
+                    className="overflow-hidden bg-burgundy aspect-[3/4]"
+                  >
+                    <img
+                      src={src}
+                      alt={`After ${i + 1}`}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                  </figure>
+                ))}
+              </div>
+
             </section>
           );
         })()}
