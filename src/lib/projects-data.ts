@@ -30,6 +30,22 @@ import renwick6 from "@/assets/projects/drummoyne-6.jpg.asset.json";
 import renwick7 from "@/assets/projects/drummoyne-7.jpg.asset.json";
 import renwick8 from "@/assets/projects/drummoyne-8.jpg.asset.json";
 import renwick9 from "@/assets/projects/drummoyne-fullhome.jpg.asset.json";
+import drumN20 from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
+import drumN21 from "@/assets/projects/drummoyne-new/drum-21.jpg.asset.json";
+import drumN22 from "@/assets/projects/drummoyne-new/drum-22.jpg.asset.json";
+import drumN23 from "@/assets/projects/drummoyne-new/drum-23.jpg.asset.json";
+import drumN25 from "@/assets/projects/drummoyne-new/drum-25.jpg.asset.json";
+import drumN26 from "@/assets/projects/drummoyne-new/drum-26.jpg.asset.json";
+import drumN27 from "@/assets/projects/drummoyne-new/drum-27.jpg.asset.json";
+import drumN28 from "@/assets/projects/drummoyne-new/drum-28.jpg.asset.json";
+import drumN33 from "@/assets/projects/drummoyne-new/drum-33.jpg.asset.json";
+import drumN36 from "@/assets/projects/drummoyne-new/drum-36.jpg.asset.json";
+import drumN37 from "@/assets/projects/drummoyne-new/drum-37.jpg.asset.json";
+import drumN38 from "@/assets/projects/drummoyne-new/drum-38.jpg.asset.json";
+import drumN43 from "@/assets/projects/drummoyne-new/drum-43.jpg.asset.json";
+import drumN44 from "@/assets/projects/drummoyne-new/drum-44.jpg.asset.json";
+import drumN45 from "@/assets/projects/drummoyne-new/drum-45.jpg.asset.json";
+import drumN46 from "@/assets/projects/drummoyne-new/drum-46.jpg.asset.json";
 
 // Rozelle
 import rozelle1 from "@/assets/projects/rozelle-new-9.jpg.asset.json";
@@ -457,7 +473,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB1.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manly8.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
-  { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
+  { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: drumN20.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Bathroom", image: fd05L.url, tags: ["Bathroom", "Family", "Storage"] },
@@ -1129,7 +1145,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Deep vanity",
     ],
     testimonial: "",
-    gallery: [renwick2.url, renwick3.url, renwick4.url, renwick5.url, renwick6.url, renwick7.url, renwick8.url, renwick9.url],
+    hero: drumN20.url,
+    gallery: [drumN20.url, drumN46.url, drumN45.url, drumN33.url, drumN36.url, drumN44.url, drumN37.url, drumN38.url, drumN43.url, drumN28.url, drumN23.url, drumN21.url, drumN25.url, drumN22.url, drumN27.url, drumN26.url],
   },
 
   "birchgrove-modern-hamptons-bathrooms": {
