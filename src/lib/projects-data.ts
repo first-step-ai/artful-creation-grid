@@ -156,6 +156,20 @@ import eliz32 from "@/assets/projects/eliz-rozelle/eliz-32.jpg.asset.json";
 import eliz33 from "@/assets/projects/eliz-rozelle/eliz-33.jpg.asset.json";
 import eliz34 from "@/assets/projects/eliz-rozelle/eliz-34.jpg.asset.json";
 
+// Rozelle — Ensuite and Study Conversion
+import rze1 from "@/assets/projects/rozelle-ensuite-study/rze-1.jpg.asset.json";
+import rze2 from "@/assets/projects/rozelle-ensuite-study/rze-2.jpg.asset.json";
+import rze3 from "@/assets/projects/rozelle-ensuite-study/rze-3.jpg.asset.json";
+import rze4 from "@/assets/projects/rozelle-ensuite-study/rze-4.jpg.asset.json";
+import rze5 from "@/assets/projects/rozelle-ensuite-study/rze-5.jpg.asset.json";
+import rze8 from "@/assets/projects/rozelle-ensuite-study/rze-8.jpg.asset.json";
+import rze9 from "@/assets/projects/rozelle-ensuite-study/rze-9.jpg.asset.json";
+import rze10 from "@/assets/projects/rozelle-ensuite-study/rze-10.jpg.asset.json";
+import rze11 from "@/assets/projects/rozelle-ensuite-study/rze-11.jpg.asset.json";
+import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json";
+import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
+import rze15 from "@/assets/projects/rozelle-ensuite-study/rze-15.jpg.asset.json";
+
 export type ProjectSummary = {
   suburb: string;
   title: string;
