@@ -141,6 +141,12 @@ import putney6 from "@/assets/projects/putney/putney-6.jpg.asset.json";
 import putney11 from "@/assets/projects/putney/putney-11.jpg.asset.json";
 import putney17 from "@/assets/projects/putney/putney-17.jpg.asset.json";
 import putney20 from "@/assets/projects/putney/putney-20.jpg.asset.json";
+import putneyBefore1 from "@/assets/projects/putney-ba/putney-before-1.png.asset.json";
+import putneyBefore2 from "@/assets/projects/putney-ba/putney-before-2.png.asset.json";
+import putneyBefore3 from "@/assets/projects/putney-ba/putney-before-3.png.asset.json";
+import putneyAfter1 from "@/assets/projects/putney-ba/putney-after-1.png.asset.json";
+import putneyAfter2 from "@/assets/projects/putney-ba/putney-after-2.png.asset.json";
+import putneyAfter3 from "@/assets/projects/putney-ba/putney-after-3.png.asset.json";
 import putney27 from "@/assets/projects/putney/putney-27.jpg.asset.json";
 import putney32 from "@/assets/projects/putney/putney-32.jpg.asset.json";
 import putney37 from "@/assets/projects/putney/putney-37.jpg.asset.json";
@@ -769,6 +775,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       putney48.url, putney49.url, putney57.url, putney59.url,
       putney63.url, putney78.url, putney85.url, putney6.url,
     ],
+    beforeImages: [putneyBefore1.url, putneyBefore2.url, putneyBefore3.url],
+    afterImages: [putneyAfter1.url, putneyAfter2.url, putneyAfter3.url],
   },
 
   "rozelle-calm-family-bathroom": {
