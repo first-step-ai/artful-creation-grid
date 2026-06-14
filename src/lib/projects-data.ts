@@ -1113,7 +1113,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "We are very happy with how the renovation went and how the design all came together.",
-    gallery: [annan3.url, annan4.url, annan5.url, annan6.url, annan7.url, annan8.url],
+    gallery: [fd05L.url, fd03p.url, fd06p.url, fd39L.url, fd10p.url, fd11p.url, fd28L.url, fd16p.url, fd18p.url, fd36L.url, fd21p.url, fd23p.url, fd25p.url, fd27p.url, fd29p.url, fd30p.url, fd31p.url, fd38p.url],
   },
 
   "rozelle-home-facelift": {
