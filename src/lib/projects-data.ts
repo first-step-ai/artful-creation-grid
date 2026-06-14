@@ -525,7 +525,13 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Generous bath",
       "Walk-in shower",
     ],
-    gallery: [rozelle3.url, rozelle4.url, rozelle5.url, rozelle6.url, rozelle7.url, rozelle8.url, rozelle9.url],
+    gallery: [
+      eliz1.url, eliz2.url, eliz3.url, eliz4.url, eliz5.url, eliz6.url,
+      eliz8.url, eliz9.url, eliz10.url, eliz11.url, eliz12.url,
+      eliz17.url, eliz18.url, eliz19.url, eliz20.url, eliz21.url, eliz22.url,
+      eliz23.url, eliz24.url, eliz25.url, eliz26.url, eliz27.url, eliz28.url,
+      eliz29.url, eliz30.url, eliz31.url, eliz32.url, eliz33.url, eliz34.url,
+    ],
   },
 
   "newtown-reimagined-ensuite-retreat": {
