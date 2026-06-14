@@ -186,6 +186,26 @@ import rwh21 from "@/assets/projects/rozelle-whole/rwh-21.jpg.asset.json";
 import rwh22 from "@/assets/projects/rozelle-whole/rwh-22.jpg.asset.json";
 import rwh24 from "@/assets/projects/rozelle-whole/rwh-24.jpg.asset.json";
 
+// Manly — Beachside Apartment Revival
+import manly1 from "@/assets/projects/manly/manly-1.jpg.asset.json";
+import manly3 from "@/assets/projects/manly/manly-3.jpg.asset.json";
+import manly4 from "@/assets/projects/manly/manly-4.jpg.asset.json";
+import manly8 from "@/assets/projects/manly/manly-8.jpg.asset.json";
+import manly9 from "@/assets/projects/manly/manly-9.jpg.asset.json";
+import manly10 from "@/assets/projects/manly/manly-10.jpg.asset.json";
+import manly11 from "@/assets/projects/manly/manly-11.jpg.asset.json";
+import manly12 from "@/assets/projects/manly/manly-12.jpg.asset.json";
+import manly13 from "@/assets/projects/manly/manly-13.jpg.asset.json";
+import manly14 from "@/assets/projects/manly/manly-14.jpg.asset.json";
+import manly15 from "@/assets/projects/manly/manly-15.jpg.asset.json";
+import manly18 from "@/assets/projects/manly/manly-18.jpg.asset.json";
+import manly20 from "@/assets/projects/manly/manly-20.jpg.asset.json";
+import manly21 from "@/assets/projects/manly/manly-21.jpg.asset.json";
+import manly23 from "@/assets/projects/manly/manly-23.jpg.asset.json";
+import manly27 from "@/assets/projects/manly/manly-27.jpg.asset.json";
+import manly33 from "@/assets/projects/manly/manly-33.jpg.asset.json";
+import manly42 from "@/assets/projects/manly/manly-42.jpg.asset.json";
+
 // Roseville — Calm Family Spaces
 import roseville1 from "@/assets/projects/roseville/roseville-1.jpg.asset.json";
 import roseville2 from "@/assets/projects/roseville/roseville-2.jpg.asset.json";
@@ -304,7 +324,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: lind10.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB1.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
-  { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
+  { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manly8.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: abbots2.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: camp2.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
@@ -888,7 +908,19 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "It is incredible enjoying my new space and look forward to working together in the future.",
-    gallery: [pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url, pyrmont7.url, pyrmont8.url],
+    gallery: [
+      manly8.url,
+      manly1.url, manly3.url,
+      manly11.url,
+      manly4.url, manly9.url,
+      manly14.url,
+      manly10.url, manly12.url,
+      manly42.url,
+      manly13.url, manly15.url,
+      manly18.url, manly20.url,
+      manly21.url, manly23.url,
+      manly27.url, manly33.url,
+    ],
   },
 
   "drummoyne-award-finalist-kitchen-and-bath": {
