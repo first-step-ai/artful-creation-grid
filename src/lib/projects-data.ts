@@ -324,7 +324,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Lindfield", title: "Award-Finalist Bathrooms", category: "Bathroom", image: lind10.url, badge: "Finalist", tags: ["Bathroom", "Family", "Ensuite"] },
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB1.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
-  { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: pyrmont2.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
+  { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manly8.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Full Interior", image: renwick1.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: abbots2.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: camp2.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
@@ -908,7 +908,19 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "It is incredible enjoying my new space and look forward to working together in the future.",
-    gallery: [pyrmont3.url, pyrmont4.url, pyrmont5.url, pyrmont6.url, pyrmont7.url, pyrmont8.url],
+    gallery: [
+      manly8.url,
+      manly1.url, manly3.url,
+      manly11.url,
+      manly4.url, manly9.url,
+      manly14.url,
+      manly10.url, manly12.url,
+      manly42.url,
+      manly13.url, manly15.url,
+      manly18.url, manly20.url,
+      manly21.url, manly23.url,
+      manly27.url, manly33.url,
+    ],
   },
 
   "drummoyne-award-finalist-kitchen-and-bath": {
