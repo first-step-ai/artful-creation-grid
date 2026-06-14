@@ -297,6 +297,25 @@ import castle248p from "@/assets/projects/castle-cove/castle-248p.jpg.asset.json
 import castle274p from "@/assets/projects/castle-cove/castle-274p.jpg.asset.json";
 import castle1796p from "@/assets/projects/castle-cove/castle-1796p.jpg.asset.json";
 import castle1776p from "@/assets/projects/castle-cove/castle-1776p.jpg.asset.json";
+// Five Dock
+import fd05L from "@/assets/projects/five-dock/fd-05L.jpg.asset.json";
+import fd28L from "@/assets/projects/five-dock/fd-28L.jpg.asset.json";
+import fd36L from "@/assets/projects/five-dock/fd-36L.jpg.asset.json";
+import fd39L from "@/assets/projects/five-dock/fd-39L.jpg.asset.json";
+import fd03p from "@/assets/projects/five-dock/fd-03p.jpg.asset.json";
+import fd06p from "@/assets/projects/five-dock/fd-06p.jpg.asset.json";
+import fd10p from "@/assets/projects/five-dock/fd-10p.jpg.asset.json";
+import fd11p from "@/assets/projects/five-dock/fd-11p.jpg.asset.json";
+import fd16p from "@/assets/projects/five-dock/fd-16p.jpg.asset.json";
+import fd18p from "@/assets/projects/five-dock/fd-18p.jpg.asset.json";
+import fd21p from "@/assets/projects/five-dock/fd-21p.jpg.asset.json";
+import fd23p from "@/assets/projects/five-dock/fd-23p.jpg.asset.json";
+import fd25p from "@/assets/projects/five-dock/fd-25p.jpg.asset.json";
+import fd27p from "@/assets/projects/five-dock/fd-27p.jpg.asset.json";
+import fd29p from "@/assets/projects/five-dock/fd-29p.jpg.asset.json";
+import fd30p from "@/assets/projects/five-dock/fd-30p.jpg.asset.json";
+import fd31p from "@/assets/projects/five-dock/fd-31p.jpg.asset.json";
+import fd38p from "@/assets/projects/five-dock/fd-38p.jpg.asset.json";
 import birch01p from "@/assets/projects/birchgrove/birch-01p.jpg.asset.json";
 import birch13p from "@/assets/projects/birchgrove/birch-13p.jpg.asset.json";
 import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
