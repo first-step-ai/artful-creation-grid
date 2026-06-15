@@ -1046,6 +1046,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       canadaWEB11.url, canadaWEB14.url, canadaWEB19.url, canadaWEB21.url, canadaWEB22.url,
       canadaWEB23.url, canadaWEB1.url,
     ],
+    beforeImages: [canadaBefore1.url, canadaBefore2.url, canadaBefore3.url],
+    afterImages: [canadaAfter1.url, canadaAfter2.url, canadaAfter3.url],
   },
 
   "rozelle-whole-home-transformation": {
