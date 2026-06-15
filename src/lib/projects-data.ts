@@ -429,6 +429,14 @@ import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.js
 import canadaWEB21 from "@/assets/projects/canada-bay/canada-WEB_21.jpg.asset.json";
 import canadaWEB22 from "@/assets/projects/canada-bay/canada-WEB_22.jpg.asset.json";
 import canadaWEB23 from "@/assets/projects/canada-bay/canada-WEB_23.jpg.asset.json";
+// Canada Bay before/after
+import canadaBefore1 from "@/assets/projects/canada-bay-ba/canada-before-1.jpg.asset.json";
+import canadaBefore2 from "@/assets/projects/canada-bay-ba/canada-before-2.jpg.asset.json";
+import canadaBefore3 from "@/assets/projects/canada-bay-ba/canada-before-3.jpg.asset.json";
+import canadaAfter1 from "@/assets/projects/canada-bay-ba/canada-after-1.jpg.asset.json";
+import canadaAfter2 from "@/assets/projects/canada-bay-ba/canada-after-2.jpg.asset.json";
+import canadaAfter3 from "@/assets/projects/canada-bay-ba/canada-after-3.jpg.asset.json";
+
 
 export type ProjectSummary = {
   suburb: string;
@@ -1038,6 +1046,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       canadaWEB11.url, canadaWEB14.url, canadaWEB19.url, canadaWEB21.url, canadaWEB22.url,
       canadaWEB23.url, canadaWEB1.url,
     ],
+    beforeImages: [canadaBefore1.url, canadaBefore2.url, canadaBefore3.url],
+    afterImages: [canadaAfter1.url, canadaAfter2.url, canadaAfter3.url],
   },
 
   "rozelle-whole-home-transformation": {
