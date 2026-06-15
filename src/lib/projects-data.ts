@@ -429,6 +429,14 @@ import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.js
 import canadaWEB21 from "@/assets/projects/canada-bay/canada-WEB_21.jpg.asset.json";
 import canadaWEB22 from "@/assets/projects/canada-bay/canada-WEB_22.jpg.asset.json";
 import canadaWEB23 from "@/assets/projects/canada-bay/canada-WEB_23.jpg.asset.json";
+// Canada Bay before/after
+import canadaBefore1 from "@/assets/projects/canada-bay-ba/canada-before-1.jpg.asset.json";
+import canadaBefore2 from "@/assets/projects/canada-bay-ba/canada-before-2.jpg.asset.json";
+import canadaBefore3 from "@/assets/projects/canada-bay-ba/canada-before-3.jpg.asset.json";
+import canadaAfter1 from "@/assets/projects/canada-bay-ba/canada-after-1.jpg.asset.json";
+import canadaAfter2 from "@/assets/projects/canada-bay-ba/canada-after-2.jpg.asset.json";
+import canadaAfter3 from "@/assets/projects/canada-bay-ba/canada-after-3.jpg.asset.json";
+
 
 export type ProjectSummary = {
   suburb: string;
