@@ -407,6 +407,9 @@ import fd29p from "@/assets/projects/five-dock/fd-29p.jpg.asset.json";
 import fd30p from "@/assets/projects/five-dock/fd-30p.jpg.asset.json";
 import fd31p from "@/assets/projects/five-dock/fd-31p.jpg.asset.json";
 import fd38p from "@/assets/projects/five-dock/fd-38p.jpg.asset.json";
+import fdBefore1 from "@/assets/projects/five-dock/fd-before-1.jpg.asset.json";
+import fdBefore2 from "@/assets/projects/five-dock/fd-before-2.jpg.asset.json";
+import fdBefore3 from "@/assets/projects/five-dock/fd-before-3.jpg.asset.json";
 // Rozelle Home Facelift
 import rhf05L from "@/assets/projects/rozelle-facelift/rhf-05L.jpg.asset.json";
 import rhf20L from "@/assets/projects/rozelle-facelift/rhf-20L.jpg.asset.json";
@@ -1299,6 +1302,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "We are very happy with how the renovation went and how the design all came together.",
     gallery: [fd05L.url, fd03p.url, fd06p.url, fd39L.url, fd10p.url, fd11p.url, fd28L.url, fd16p.url, fd18p.url, fd36L.url, fd21p.url, fd23p.url, fd25p.url, fd27p.url, fd29p.url, fd30p.url, fd31p.url, fd38p.url],
+    beforeImages: [fdBefore1.url, fdBefore2.url, fdBefore3.url],
+    afterImages: [fd05L.url, fd28L.url, fd36L.url],
   },
 
   "rozelle-home-facelift": {
