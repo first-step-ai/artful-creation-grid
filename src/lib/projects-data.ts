@@ -382,6 +382,12 @@ import castle248p from "@/assets/projects/castle-cove/castle-248p.jpg.asset.json
 import castle274p from "@/assets/projects/castle-cove/castle-274p.jpg.asset.json";
 import castle1796p from "@/assets/projects/castle-cove/castle-1796p.jpg.asset.json";
 import castle1776p from "@/assets/projects/castle-cove/castle-1776p.jpg.asset.json";
+import castleBefore1 from "@/assets/projects/castle-cove-ba/castle-before-1.jpg.asset.json";
+import castleBefore2 from "@/assets/projects/castle-cove-ba/castle-before-2.jpg.asset.json";
+import castleBefore3 from "@/assets/projects/castle-cove-ba/castle-before-3.jpg.asset.json";
+import castleAfter1 from "@/assets/projects/castle-cove-ba/castle-after-1.jpg.asset.json";
+import castleAfter2 from "@/assets/projects/castle-cove-ba/castle-after-2.jpg.asset.json";
+import castleAfter3 from "@/assets/projects/castle-cove-ba/castle-after-3.jpg.asset.json";
 // Five Dock
 import fd05L from "@/assets/projects/five-dock/fd-05L.jpg.asset.json";
 import fd28L from "@/assets/projects/five-dock/fd-28L.jpg.asset.json";
