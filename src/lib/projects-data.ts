@@ -435,6 +435,13 @@ import rozelleRefinedAfter2 from "@/assets/projects/rozelle-refined-ba/rozelle-r
 import rozelleRefinedAfter3 from "@/assets/projects/rozelle-refined-ba/rozelle-refined-after-3.jpg.asset.json";
 import birch01p from "@/assets/projects/birchgrove/birch-01p.jpg.asset.json";
 import birch13p from "@/assets/projects/birchgrove/birch-13p.jpg.asset.json";
+// Birchgrove before/after
+import birchBefore1 from "@/assets/projects/birchgrove-ba/birch-before-1.jpg.asset.json";
+import birchBefore2 from "@/assets/projects/birchgrove-ba/birch-before-2.jpg.asset.json";
+import birchBefore3 from "@/assets/projects/birchgrove-ba/birch-before-3.jpg.asset.json";
+import birchAfter1 from "@/assets/projects/birchgrove-ba/birch-after-1.jpg.asset.json";
+import birchAfter2 from "@/assets/projects/birchgrove-ba/birch-after-2.jpg.asset.json";
+import birchAfter3 from "@/assets/projects/birchgrove-ba/birch-after-3.jpg.asset.json";
 import canadaWEB19 from "@/assets/projects/canada-bay/canada-WEB_19.jpg.asset.json";
 import canadaWEB21 from "@/assets/projects/canada-bay/canada-WEB_21.jpg.asset.json";
 import canadaWEB22 from "@/assets/projects/canada-bay/canada-WEB_22.jpg.asset.json";
@@ -1215,6 +1222,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "AM Bathrooms took the time to visit, measure up and discuss my new bathroom and laundry plans. He was very helpful and knowledgeable and had other ideas for me to consider. He kept in contact throughout the planning and fitting stages. I've had so many comments about the workmanship — I'd highly recommend AM Bathrooms.",
     gallery: [birch08.url, birch03.url, birch04.url, birch05.url, birch01p.url, birch13p.url, birch06.url, birch07.url, birch09.url, birch11.url, birch14.url, birch15.url, birch16.url, birch17.url, birch18.url, birch19.url],
+    beforeImages: [birchBefore1.url, birchBefore2.url, birchBefore3.url],
+    afterImages: [birchAfter1.url, birchAfter2.url, birchAfter3.url],
   },
 
   "castle-cove-full-family-home-refresh": {
