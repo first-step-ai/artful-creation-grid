@@ -255,6 +255,16 @@ import rwh21 from "@/assets/projects/rozelle-whole/rwh-21.jpg.asset.json";
 import rwh22 from "@/assets/projects/rozelle-whole/rwh-22.jpg.asset.json";
 import rwh24 from "@/assets/projects/rozelle-whole/rwh-24.jpg.asset.json";
 
+// Manly — Beachside Apartment Revival before/after
+import manlyBefore1 from "@/assets/projects/manly-ba/manly-before-1.jpg.asset.json";
+import manlyBefore2 from "@/assets/projects/manly-ba/manly-before-2.jpg.asset.json";
+import manlyBefore3 from "@/assets/projects/manly-ba/manly-before-3.jpg.asset.json";
+import manlyAfter1 from "@/assets/projects/manly-ba/manly-after-1.jpg.asset.json";
+import manlyAfter2 from "@/assets/projects/manly-ba/manly-after-2.jpg.asset.json";
+import manlyAfter3 from "@/assets/projects/manly-ba/manly-after-3.jpg.asset.json";
+
+
+
 // Manly — Beachside Apartment Revival
 import manly1 from "@/assets/projects/manly/manly-1.jpg.asset.json";
 import manly3 from "@/assets/projects/manly/manly-3.jpg.asset.json";
@@ -1129,6 +1139,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       manly21.url, manly23.url,
       manly27.url, manly33.url,
     ],
+    beforeImages: [manlyBefore1.url, manlyBefore2.url, manlyBefore3.url],
+    afterImages: [manlyAfter1.url, manlyAfter2.url, manlyAfter3.url],
   },
 
   "drummoyne-award-finalist-kitchen-and-bath": {
