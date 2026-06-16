@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
 import annan1 from "@/assets/projects/2024-hia-bathroom.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
-import teamGroup from "@/assets/team-nsw-2022.jpg.asset.json";
+import teamGroup from "@/assets/2022-small-business-award.png.asset.json";
 import hia2025 from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
