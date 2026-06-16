@@ -216,7 +216,7 @@ const years: YearGroup[] = [
     year: "2020",
     intro: "HIA NSW Housing Awards",
     blurb:
-      "HIA NSW Bathroom of the Year finalist recognition for a Birchgrove renovation by AM Bathrooms + Projects.",
+      "HIA NSW Bathroom of the Year finalist recognition for a Birchgrove renovation.",
     projects: [
       {
         id: "birchgrove-2020",
