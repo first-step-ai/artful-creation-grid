@@ -224,7 +224,9 @@ const years: YearGroup[] = [
       {
         id: "birchgrove-2020",
         suburb: "Birchgrove",
-        title: "Bathroom of the Year Finalist",
+        title: "Modern Hamptons Bathrooms",
+        image: birchHero.url,
+        href: "/projects/birchgrove-modern-hamptons-bathrooms",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom of the Year" },
         ],
