@@ -86,7 +86,7 @@ function ContactPage() {
     <div className="min-h-screen bg-[var(--background)] text-[var(--ivory)] flex flex-col">
       <Nav />
       <main className="grid grid-cols-1 lg:grid-cols-2 flex-1">
-        {/* LEFT — form panel */}
+        {/* LEFT - form panel */}
         <section className="flex flex-col px-6 md:px-14 lg:px-20 pt-28 md:pt-32 pb-20">
           <div className="max-w-xl w-full">
             <p className="text-[11px] tracking-[0.32em] uppercase text-[var(--ivory)]/60 mb-8">
@@ -238,7 +238,7 @@ function ContactPage() {
           </div>
         </section>
 
-        {/* RIGHT — sticky image panel */}
+        {/* RIGHT - sticky image panel */}
         <aside className="relative hidden lg:block">
           <div className="sticky top-0 h-screen w-full overflow-hidden">
             <img

@@ -68,11 +68,11 @@ export function Awards() {
         ref={ref}
         className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-10 md:py-12"
       >
-        {/* Awards headline — separated, sitting above the content block */}
+        {/* Awards headline - separated, sitting above the content block */}
         <div className="eyebrow mb-8 md:mb-10">Awards</div>
 
         <div className="w-full flex flex-col md:flex-row gap-8 md:gap-0 md:items-stretch">
-          {/* Left: Logo + Awards list — 35% — centered (rendered second on mobile so featured image appears first) */}
+          {/* Left: Logo + Awards list - 35% - centered (rendered second on mobile so featured image appears first) */}
           <div className="order-2 md:order-1 md:basis-[35%] md:pr-[2.5%] flex flex-col items-center text-center">
             {/* Logo placeholder */}
             <img
@@ -119,7 +119,7 @@ export function Awards() {
           </div>
 
 
-          {/* Right: Featured Image — 60% — matches left column height exactly */}
+          {/* Right: Featured Image - 60% - matches left column height exactly */}
           <div
             className="order-1 md:order-2 md:basis-[60%] md:ml-auto relative"
             onMouseEnter={() => setIsHovering(true)}
@@ -130,7 +130,7 @@ export function Awards() {
                 <img
                   key={a.title}
                   src={a.image}
-                  alt={`${a.title} — ${a.description}`}
+                  alt={`${a.title} - ${a.description}`}
                   loading="eager"
                   className={`absolute inset-0 h-full w-full ${a.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} transition-opacity duration-700 ease-in-out ${i === active ? "opacity-100" : "opacity-0"}`}
                   style={{ willChange: "opacity" }}

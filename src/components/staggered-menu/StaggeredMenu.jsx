@@ -110,7 +110,7 @@ export const StaggeredMenu = ({
 
     const tl = gsap.timeline({ paused: true });
 
-    // Hide prelayers — single sleek panel slide only
+    // Hide prelayers - single sleek panel slide only
     if (layers.length) {
       gsap.set(layers, { xPercent: offscreen });
     }

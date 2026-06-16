@@ -96,7 +96,7 @@ import pyrmontBefore3 from "@/assets/projects/pyrmont-ba/pyrmont-before-3.jpg.as
 import pyrmontAfter1 from "@/assets/projects/pyrmont-ba/pyrmont-after-1.jpg.asset.json";
 import pyrmontAfter2 from "@/assets/projects/pyrmont-ba/pyrmont-after-2.jpg.asset.json";
 import pyrmontAfter3 from "@/assets/projects/pyrmont-ba/pyrmont-after-3.jpg.asset.json";
-// Drummoyne — Modern Luxury Living before/after
+// Drummoyne - Modern Luxury Living before/after
 import drumBefore1 from "@/assets/projects/drummoyne-ba/drum-before-1.png.asset.json";
 import drumBefore2 from "@/assets/projects/drummoyne-ba/drum-before-2.png.asset.json";
 import drumBefore3 from "@/assets/projects/drummoyne-ba/drum-before-3.png.asset.json";
@@ -188,7 +188,7 @@ import putney87 from "@/assets/projects/putney/putney-87.jpg.asset.json";
 import putney90 from "@/assets/projects/putney/putney-90.jpg.asset.json";
 import putney94 from "@/assets/projects/putney/putney-94.jpg.asset.json";
 import putney95 from "@/assets/projects/putney/putney-95.jpg.asset.json";
-// Elizabeth St Rozelle — Calm Family Bathroom
+// Elizabeth St Rozelle - Calm Family Bathroom
 import eliz1 from "@/assets/projects/eliz-rozelle/eliz-1.jpg.asset.json";
 import eliz2 from "@/assets/projects/eliz-rozelle/eliz-2.jpg.asset.json";
 import eliz3 from "@/assets/projects/eliz-rozelle/eliz-3.jpg.asset.json";
@@ -225,7 +225,7 @@ import elizAfter1 from "@/assets/projects/eliz-rozelle-ba/eliz-after-1.jpg.asset
 import elizAfter2 from "@/assets/projects/eliz-rozelle-ba/eliz-after-2.jpg.asset.json";
 import elizAfter3 from "@/assets/projects/eliz-rozelle-ba/eliz-after-3.jpg.asset.json";
 
-// Rozelle — Ensuite and Study Conversion
+// Rozelle - Ensuite and Study Conversion
 import rze1 from "@/assets/projects/rozelle-ensuite-study/rze-1.jpg.asset.json";
 import rze2 from "@/assets/projects/rozelle-ensuite-study/rze-2.jpg.asset.json";
 import rze3 from "@/assets/projects/rozelle-ensuite-study/rze-3.jpg.asset.json";
@@ -239,7 +239,7 @@ import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json
 import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
 import rze15 from "@/assets/projects/rozelle-ensuite-study/rze-15.jpg.asset.json";
 
-// Rozelle — Whole-Home Transformation
+// Rozelle - Whole-Home Transformation
 import rwh3 from "@/assets/projects/rozelle-whole/rwh-3.jpg.asset.json";
 import rwh6 from "@/assets/projects/rozelle-whole/rwh-6.jpg.asset.json";
 import rwh7 from "@/assets/projects/rozelle-whole/rwh-7.jpg.asset.json";
@@ -255,7 +255,7 @@ import rwh21 from "@/assets/projects/rozelle-whole/rwh-21.jpg.asset.json";
 import rwh22 from "@/assets/projects/rozelle-whole/rwh-22.jpg.asset.json";
 import rwh24 from "@/assets/projects/rozelle-whole/rwh-24.jpg.asset.json";
 
-// Manly — Beachside Apartment Revival before/after
+// Manly - Beachside Apartment Revival before/after
 import manlyBefore1 from "@/assets/projects/manly-ba/manly-before-1.jpg.asset.json";
 import manlyBefore2 from "@/assets/projects/manly-ba/manly-before-2.jpg.asset.json";
 import manlyBefore3 from "@/assets/projects/manly-ba/manly-before-3.jpg.asset.json";
@@ -265,7 +265,7 @@ import manlyAfter3 from "@/assets/projects/manly-ba/manly-after-3.jpg.asset.json
 
 
 
-// Manly — Beachside Apartment Revival
+// Manly - Beachside Apartment Revival
 import manly1 from "@/assets/projects/manly/manly-1.jpg.asset.json";
 import manly3 from "@/assets/projects/manly/manly-3.jpg.asset.json";
 import manly4 from "@/assets/projects/manly/manly-4.jpg.asset.json";
@@ -285,7 +285,7 @@ import manly27 from "@/assets/projects/manly/manly-27.jpg.asset.json";
 import manly33 from "@/assets/projects/manly/manly-33.jpg.asset.json";
 import manly42 from "@/assets/projects/manly/manly-42.jpg.asset.json";
 
-// Roseville — Calm Family Spaces
+// Roseville - Calm Family Spaces
 import roseville1 from "@/assets/projects/roseville/roseville-1.jpg.asset.json";
 import roseville2 from "@/assets/projects/roseville/roseville-2.jpg.asset.json";
 import roseville3 from "@/assets/projects/roseville/roseville-3.jpg.asset.json";
@@ -301,7 +301,7 @@ import roseville24 from "@/assets/projects/roseville/roseville-24.jpg.asset.json
 import roseville34 from "@/assets/projects/roseville/roseville-34.jpg.asset.json";
 import roseville36 from "@/assets/projects/roseville/roseville-36.jpg.asset.json";
 import roseville38 from "@/assets/projects/roseville/roseville-38.jpg.asset.json";
-// Enmore — Award-Winning Family Bathroom
+// Enmore - Award-Winning Family Bathroom
 import enmore26 from "@/assets/projects/enmore/enmore-26.jpg.asset.json";
 import enmore2 from "@/assets/projects/enmore/enmore-2.jpg.asset.json";
 import enmore3 from "@/assets/projects/enmore/enmore-3.jpg.asset.json";
@@ -318,7 +318,7 @@ import enmore24 from "@/assets/projects/enmore/enmore-24.jpg.asset.json";
 import enmore31 from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
 import enmore32 from "@/assets/projects/enmore/enmore-32.jpg.asset.json";
 import enmore34 from "@/assets/projects/enmore/enmore-34.jpg.asset.json";
-// Lindfield — Award-Finalist Bathrooms
+// Lindfield - Award-Finalist Bathrooms
 import lind10 from "@/assets/projects/lindfield/lindfield-10.jpg.asset.json";
 import lind11 from "@/assets/projects/lindfield/lindfield-11.jpg.asset.json";
 import lind9 from "@/assets/projects/lindfield/lindfield-9.jpg.asset.json";
@@ -341,7 +341,7 @@ import lindBefore3 from "@/assets/projects/lindfield-ba/lind-before-3.jpg.asset.
 import lindAfter1 from "@/assets/projects/lindfield-ba/lind-after-1.jpg.asset.json";
 import lindAfter2 from "@/assets/projects/lindfield-ba/lind-after-2.jpg.asset.json";
 import lindAfter3 from "@/assets/projects/lindfield-ba/lind-after-3.jpg.asset.json";
-// Canada Bay — Considered Main Bathroom
+// Canada Bay - Considered Main Bathroom
 import canadaWEB1 from "@/assets/projects/canada-bay/canada-WEB_1.jpg.asset.json";
 import canadaWEB4 from "@/assets/projects/canada-bay/canada-WEB_4.jpg.asset.json";
 import canadaWEB6 from "@/assets/projects/canada-bay/canada-WEB_6.jpg.asset.json";
@@ -350,7 +350,7 @@ import canadaWEB8 from "@/assets/projects/canada-bay/canada-WEB_8.jpg.asset.json
 import canadaWEB10 from "@/assets/projects/canada-bay/canada-WEB_10.jpg.asset.json";
 import canadaWEB11 from "@/assets/projects/canada-bay/canada-WEB_11.jpg.asset.json";
 import canadaWEB14 from "@/assets/projects/canada-bay/canada-WEB_14.jpg.asset.json";
-// Birchgrove — Modern Hamptons Bathrooms
+// Birchgrove - Modern Hamptons Bathrooms
 import birch03 from "@/assets/projects/birchgrove/birch-03.jpg.asset.json";
 import birch04 from "@/assets/projects/birchgrove/birch-04.jpg.asset.json";
 import birch05 from "@/assets/projects/birchgrove/birch-05.jpg.asset.json";
@@ -579,11 +579,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   "abbotsford-hotel-inspired-luxury": {
     heroCaption: "A hotel-inspired Abbotsford master suite where ensuite, robe and bathroom finally feel like one home.",
     scope:
-      "Ensuite, walk-in robe, main bathroom and bespoke study storage — reimagined as one cohesive master suite.",
+      "Ensuite, walk-in robe, main bathroom and bespoke study storage - reimagined as one cohesive master suite.",
     awards: [],
     rightHeading: "Hotel-Inspired Luxury",
     rightIntro:
-      "An Abbotsford home renovated to deliver what a previous renovation couldn't. The ensuite, walk-in robe, and main bathroom were each reimagined with a hotel-inspired approach — balancing sophistication with storage, function, and a material palette that feels calm and considered throughout.",
+      "An Abbotsford home renovated to deliver what a previous renovation couldn't. The ensuite, walk-in robe, and main bathroom were each reimagined with a hotel-inspired approach - balancing sophistication with storage, function, and a material palette that feels calm and considered throughout.",
     whatWasntWorking: [
       "A previous renovation had left the clients disappointed",
       "Bathrooms lacked warmth and visual depth",
@@ -643,13 +643,13 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
 
   "annandale-smart-family-living": {
     badge: "Finalist",
-    heroCaption: "An Annandale terrace bathroom reworked for a family — light, layered and properly functional.",
+    heroCaption: "An Annandale terrace bathroom reworked for a family - light, layered and properly functional.",
     scope:
-      "Reworked bathroom within an existing terrace footprint — separate bath and shower, retained skylight, bespoke detailing.",
+      "Reworked bathroom within an existing terrace footprint - separate bath and shower, retained skylight, bespoke detailing.",
     awards: ["2024 HIA Renovated Bathroom of the Year · Finalist"],
     rightHeading: "Smart Family Living",
     rightIntro:
-      "An Annandale terrace bathroom that wasn't working for a family. Dark, tight, and short on storage — the brief was to make it genuinely functional without losing character. The result is a light-filled space with a separate bath and shower, generous storage, and bespoke detailing throughout.",
+      "An Annandale terrace bathroom that wasn't working for a family. Dark, tight, and short on storage - the brief was to make it genuinely functional without losing character. The result is a light-filled space with a separate bath and shower, generous storage, and bespoke detailing throughout.",
     whatWasntWorking: [
       "Original bathroom was dark and worked against the household",
       "Tight footprint limited what the space could hold",
@@ -694,7 +694,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "camperdown-inner-city-charm": {
-    heroCaption: "A Camperdown apartment reconsidered within a fixed footprint — calm, cohesive and quietly tailored.",
+    heroCaption: "A Camperdown apartment reconsidered within a fixed footprint - calm, cohesive and quietly tailored.",
     scope:
       "Kitchen, bathroom, and living spaces reconsidered within a fixed apartment footprint.",
     awards: [],
@@ -702,7 +702,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     rightIntro:
       "A Camperdown apartment renovation where the footprint was fixed and the challenge was making every centimetre count. Kitchen, bathroom, and living spaces were each reconsidered, creating a home that feels cohesive, calm, and genuinely well-designed for the way the client lives.",
     whatWasntWorking: [
-      "No ability to expand the footprint — every spatial decision had to be deliberate",
+      "No ability to expand the footprint - every spatial decision had to be deliberate",
       "Existing layout wasn't making the most of what was there",
       "Storage was limited",
       "Connections between spaces felt unresolved",
@@ -727,11 +727,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   "bexley-bold-utility": {
     heroCaption: "A Bexley bathroom and laundry brought back to life with sculptural form, warmth and bold personality.",
     scope:
-      "Bathroom and laundry redesigned within the existing footprint — sculptural, layered, and tailored to the clients.",
+      "Bathroom and laundry redesigned within the existing footprint - sculptural, layered, and tailored to the clients.",
     awards: [],
     rightHeading: "Bold Utility",
     rightIntro:
-      "A Bexley bathroom and laundry brought back to life with personality and purpose. Working within the existing footprint, the brief was to create spaces that felt genuinely elevated — functional for daily use, layered with warmth and texture, and tailored to the clients' tastes rather than off-the-shelf.",
+      "A Bexley bathroom and laundry brought back to life with personality and purpose. Working within the existing footprint, the brief was to create spaces that felt genuinely elevated - functional for daily use, layered with warmth and texture, and tailored to the clients' tastes rather than off-the-shelf.",
     whatWasntWorking: [
       "Bathroom layout was awkward and restrictive",
       "Storage was limited",
@@ -760,13 +760,13 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "drummoyne-modern-luxury-living": {
-    heroCaption: "Two Drummoyne apartment bathrooms reimagined within a fixed footprint — warm, light and quietly luxurious.",
+    heroCaption: "Two Drummoyne apartment bathrooms reimagined within a fixed footprint - warm, light and quietly luxurious.",
     scope:
       "Two bathrooms in a Drummoyne apartment, each reimagined from the ground up within a fixed footprint.",
     awards: [],
     rightHeading: "Modern Luxury Living",
     rightIntro:
-      "Two bathrooms in a Drummoyne apartment, each reimagined from the ground up. Within a fixed apartment footprint, the goal was to improve functionality, increase storage, and introduce warmth and softness — creating bathrooms that feel calm, light-filled, and properly suited to everyday living.",
+      "Two bathrooms in a Drummoyne apartment, each reimagined from the ground up. Within a fixed apartment footprint, the goal was to improve functionality, increase storage, and introduce warmth and softness - creating bathrooms that feel calm, light-filled, and properly suited to everyday living.",
     whatWasntWorking: [
       "Both bathrooms felt dated and narrow",
       "Limited storage throughout",
@@ -800,12 +800,12 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     awards: [],
     rightHeading: "Reimagined Heritage Living",
     rightIntro:
-      "A heritage Putney home reworked from the inside out — converting awkward, underused rooms into a luxurious downstairs master suite, with refined finishes and considered detailing carried throughout the home.",
+      "A heritage Putney home reworked from the inside out - converting awkward, underused rooms into a luxurious downstairs master suite, with refined finishes and considered detailing carried throughout the home.",
     whatWasntWorking: [
       "After years as an investment property, the home no longer supported the clients' lifestyle or modern family living",
       "Generous room sizes, but the layout felt inefficient and disconnected with awkward transitional spaces",
       "Upstairs master bedroom lacked both an ensuite and walk-in robe, making it impractical as a long-term retreat",
-      "Downstairs rooms — an outdated bathroom and redundant playroom — lacked purpose, storage, or flow",
+      "Downstairs rooms - an outdated bathroom and redundant playroom - lacked purpose, storage, or flow",
       "Family needed additional bathroom functionality, improved storage, and more cohesive, calmer living spaces",
       "Beautiful heritage character needed thoughtful modernisation without losing warmth and charm",
     ],
@@ -937,7 +937,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "A seamlessly managed Roseville renovation creating practical, family-friendly bathroom and laundry spaces, delivered with minimal disruption for a growing family.",
     whatWasntWorking: [
       "A collection of spaces throughout the home were no longer working for the clients and their growing family",
-      "With the client eight months pregnant, a low-disruption, fully managed approach was essential — the work had to progress seamlessly without upending daily life",
+      "With the client eight months pregnant, a low-disruption, fully managed approach was essential - the work had to progress seamlessly without upending daily life",
       "The laundry was large with unusable areas due to the placement of plumbing points",
       "A key request was for practical storage and an area for their cat to call home",
     ],
@@ -1088,7 +1088,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     whatWasntWorking: [
       "A bathroom and ensuite sharing a common wall were constrained and underperforming, limiting the vanity configuration and storage both rooms needed",
       "The broader ensuite renovation required a complete rethink to deliver the indulgent, functional finish the clients envisioned",
-      "The laundry — the last remaining space in the home yet to be touched — was awkward and unappealing",
+      "The laundry - the last remaining space in the home yet to be touched - was awkward and unappealing",
       "The clients had long dreamed of incorporating an infrared sauna but needed expert advice on whether it was achievable within the existing footprint",
     ],
     whatWeDid:
@@ -1181,7 +1181,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     whatWasntWorking: [
       "Despite having plenty of rooms, the home felt disconnected and poorly lit",
       "Flow throughout was inefficient and the layout no longer served the family well",
-      "The laundry could only be reached from outside the home — a daily frustration that disrupted the rhythm of family life",
+      "The laundry could only be reached from outside the home - a daily frustration that disrupted the rhythm of family life",
       "The space allocated for a new bathroom was narrow and constrained, making it difficult to achieve the openness, storage, and light the family needed",
     ],
     whatWeDid:
@@ -1208,7 +1208,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     heroCaption:
       "An award-finalist Birchgrove renovation reconfiguring three bathrooms in a refined modern Hamptons aesthetic that honours the home's original character.",
     scope:
-      "Engaged for interior design and a three-bathroom renovation across a much-loved Birchgrove family home — main bathroom, ensuite and powder room — in a modern Hamptons palette that respects the home's heritage character.",
+      "Engaged for interior design and a three-bathroom renovation across a much-loved Birchgrove family home - main bathroom, ensuite and powder room - in a modern Hamptons palette that respects the home's heritage character.",
     awards: ["2020 HIA NSW Bathroom of the Year · Finalist"],
     rightHeading: "Modern Hamptons Bathrooms",
     rightIntro:
@@ -1222,14 +1222,14 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     whatWeDid:
       "AMBP designed and built three new bathrooms across the home, reconfiguring layouts for better flow and storage and selecting a refined modern Hamptons palette that ties the spaces together while honouring the home's original character.",
     designFeatures: [
-      "Three-bathroom reconfiguration — main, ensuite and powder",
+      "Three-bathroom reconfiguration - main, ensuite and powder",
       "Modern Hamptons palette of soft tones and classic detailing",
       "Layouts reworked for family-friendly daily use",
       "Considered storage and vanity planning in each room",
       "Tile and stone selections that respect the home's heritage",
     ],
     testimonial:
-      "AM Bathrooms took the time to visit, measure up and discuss my new bathroom and laundry plans. He was very helpful and knowledgeable and had other ideas for me to consider. He kept in contact throughout the planning and fitting stages. I've had so many comments about the workmanship — I'd highly recommend AM Bathrooms.",
+      "AM Bathrooms took the time to visit, measure up and discuss my new bathroom and laundry plans. He was very helpful and knowledgeable and had other ideas for me to consider. He kept in contact throughout the planning and fitting stages. I've had so many comments about the workmanship - I'd highly recommend AM Bathrooms.",
     gallery: [birch08.url, birch03.url, birch04.url, birch05.url, birch01p.url, birch13p.url, birch06.url, birch07.url, birch09.url, birch11.url, birch14.url, birch15.url, birch16.url, birch17.url, birch18.url, birch19.url],
     beforeImages: [birchBefore1.url, birchBefore2.url, birchBefore3.url],
     afterImages: [birchAfter1.url, birchAfter2.url, birchAfter3.url],
@@ -1238,7 +1238,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   "castle-cove-full-family-home-refresh": {
     badge: "Finalist",
     heroCaption:
-      "An award-finalist Castle Cove transformation refreshing the entire family home — three calming bathrooms, a new laundry, plus flooring, staircase and kitchen updates.",
+      "An award-finalist Castle Cove transformation refreshing the entire family home - three calming bathrooms, a new laundry, plus flooring, staircase and kitchen updates.",
     scope:
       "A full family home refresh in Castle Cove covering three bathrooms, a new laundry, a kitchen update with reconstituted stone feature and stainless-steel splashback, new floorboards (sanded and polished), new timber stair treads, a timber slat staircase railing, new electrical and a full repaint.",
     awards: [
@@ -1248,7 +1248,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     rightHeading: "Full Family Home Refresh",
     rightIntro:
-      "A whole-home update for a returning client — three calming bathrooms, a new laundry, kitchen, flooring, staircase and electrical, all coordinated end-to-end.",
+      "A whole-home update for a returning client - three calming bathrooms, a new laundry, kitchen, flooring, staircase and electrical, all coordinated end-to-end.",
     whatWasntWorking: [
       "Dated finishes throughout the home pulling the overall feel down",
       "Bathrooms and laundry that didn't suit a busy family",
@@ -1256,19 +1256,19 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "A staircase and railing that no longer matched the new aesthetic",
     ],
     whatWeDid:
-      "We refreshed the entire home end-to-end — designing and building three new bathrooms and a new laundry, updating the kitchen with a reconstituted stone feature and stainless-steel splashback, refinishing the floorboards, replacing stair treads with timber and adding a timber slat railing, plus new electrical and a full repaint. The third project completed with this returning client — all designed over Zoom.",
+      "We refreshed the entire home end-to-end - designing and building three new bathrooms and a new laundry, updating the kitchen with a reconstituted stone feature and stainless-steel splashback, refinishing the floorboards, replacing stair treads with timber and adding a timber slat railing, plus new electrical and a full repaint. The third project completed with this returning client - all designed over Zoom.",
     designFeatures: [
       "Three new bathrooms in a calming family palette",
       "New laundry designed for daily use",
       "Kitchen update with reconstituted stone feature and stainless-steel splashback",
-      "New floorboards — sanded and polished",
+      "New floorboards - sanded and polished",
       "New timber stair treads",
       "Timber slat staircase railing",
       "New electrical throughout",
       "Full repaint",
     ],
     testimonial:
-      "Our third renovation with the team and we couldn't be happier — considering we completed all the design over Zoom!",
+      "Our third renovation with the team and we couldn't be happier - considering we completed all the design over Zoom!",
     gallery: [castle296L.url, castle201p.url, castle260p.url, castle211L.url, castle257p.url, castle218p.url, castle1761L.url, castle205p.url, castle251p.url, castle243L.url, castle266p.url, castle267p.url, castle248p.url, castle274p.url, castle1796p.url, castle1776p.url],
     beforeImages: [castleBefore1.url, castleBefore2.url, castleBefore3.url],
     afterImages: [castleAfter1.url, castleAfter2.url, castleAfter3.url],
@@ -1278,7 +1278,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     badge: null,
     heroCaption: "A reimagined attic space for a family-shared bathroom.",
     scope:
-      "We reimagined the first floor of this Five Dock home — borrowing some attic space — to deliver a generous family bathroom with a wet zone, a luxurious freestanding bath and proper storage for a family that shares the room.",
+      "We reimagined the first floor of this Five Dock home - borrowing some attic space - to deliver a generous family bathroom with a wet zone, a luxurious freestanding bath and proper storage for a family that shares the room.",
     awards: [],
     rightHeading: "Family Bathroom and Bedroom Storage Upgrade",
     rightIntro:
@@ -1296,7 +1296,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "New freestanding wall with a soft curve to soften the angled ceiling",
       "Private wet zone with a freestanding bath",
       "Walk-around shower",
-      "Toilet tucked around a corner — usable but not a feature",
+      "Toilet tucked around a corner - usable but not a feature",
       "Intentional niches for shared family storage",
     ],
     testimonial:
@@ -1311,11 +1311,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     heroCaption:
       "With the design and selections signed off, our clients took a long holiday overseas while the work was completed.",
     scope:
-      "A home facelift across three levels for a busy family — two bathrooms reworked along with broader updates so the home flows more functionally for daily life.",
+      "A home facelift across three levels for a busy family - two bathrooms reworked along with broader updates so the home flows more functionally for daily life.",
     awards: ["2023 HIA NSW Bathroom Design of the Year · Finalist"],
     rightHeading: "Rozelle Home Facelift",
     rightIntro:
-      "A three-level family home given the tender love and care it needed — including two reworked bathrooms designed around awkward attic angles.",
+      "A three-level family home given the tender love and care it needed - including two reworked bathrooms designed around awkward attic angles.",
     whatWasntWorking: [
       "A three-level family home needing much-needed care",
       "Bathrooms that didn't flow functionally for the family",
@@ -1332,7 +1332,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Full design and selections signed off ahead of works so the family could travel",
     ],
     testimonial:
-      "Wow!! Congratulations on being finalist. It's already award winning in our book. A year on — love the bathrooms AND all the new stuff you made happen last year. Gives us constant happiness.",
+      "Wow!! Congratulations on being finalist. It's already award winning in our book. A year on - love the bathrooms AND all the new stuff you made happen last year. Gives us constant happiness.",
     gallery: [rhf05L.url, rhf01p.url, rhf02p.url, rhf27L.url, rhf04p.url, rhf06p.url, rhf20L.url, rhf08p.url, rhf11p.url, rhf22L.url, rhf14p.url, rhf17p.url, rhf24L.url, rhf23p.url, rhf28p.url, rhf29p.url, rhf31p.url],
   },
 };
@@ -1346,7 +1346,7 @@ function buildDetail(s: ProjectSummary): ProjectDetail {
     hero: o.hero ?? s.image,
     heroCaption:
       o.heroCaption ??
-      `A considered ${s.category.toLowerCase()} renovation in ${s.suburb} — crafted for how this family really lives.`,
+      `A considered ${s.category.toLowerCase()} renovation in ${s.suburb} - crafted for how this family really lives.`,
     scope:
       o.scope ??
       `Full design + build across the ${s.category.toLowerCase()}, delivered end-to-end by the AM team.`,
