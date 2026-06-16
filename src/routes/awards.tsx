@@ -204,7 +204,9 @@ const years: YearGroup[] = [
       {
         id: "castle-cove-2021",
         suburb: "Castle Cove",
-        title: "Three-Category Recognition",
+        title: "Full Family Home Refresh",
+        image: castleHero.url,
+        href: "/projects/castle-cove-full-family-home-refresh",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design" },
           { kind: "Finalist", label: "HIA NSW Bathroom of the Year · Medium (6–10sqm Ensuite)" },
