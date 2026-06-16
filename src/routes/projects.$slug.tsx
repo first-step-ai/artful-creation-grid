@@ -10,7 +10,7 @@ export const Route = createFileRoute("/projects/$slug")({
     const p = getProjectDetail(params.slug);
     return {
       meta: [
-        { title: `${p.suburb} | ${p.title} - AM Bathrooms + Projects` },
+        { title: `${p.suburb} | ${p.title} | AM Bathrooms + Projects` },
         { name: "description", content: p.heroCaption },
         { property: "og:title", content: `${p.suburb} | ${p.title}` },
         { property: "og:description", content: p.heroCaption },
