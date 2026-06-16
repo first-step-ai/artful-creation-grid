@@ -45,7 +45,7 @@ export function Footer() {
               <div>
                 <div style={labelStyle} className="mb-1.5">Studio Location</div>
                 <div className="font-sans text-[13px] leading-relaxed">
-                  77 - 105 Victoria Road, Drummoyne NSW 2047
+                  77 to 105 Victoria Road, Drummoyne NSW 2047
                 </div>
                 <div className="font-sans text-[13px] mt-0.5" style={{ color: TEXT_MUTED }}>
                   By Appointment Only
