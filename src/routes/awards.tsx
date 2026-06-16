@@ -283,7 +283,7 @@ function ProjectCard({ project }: { project: ProjectAward }) {
           {project.awards.map((a, i) => (
             <li key={i} className="flex items-start gap-3 text-ivory/90">
               <span
-                className={`shrink-0 mt-[3px] text-[9px] tracking-[0.22em] uppercase px-2 py-[2px] border ${
+                className={`shrink-0 mt-[3px] inline-block w-[78px] text-center text-[9px] tracking-[0.22em] uppercase px-2 py-[2px] border ${
                   a.kind === "Winner"
                     ? "bg-ivory text-oxblood border-ivory"
                     : "border-ivory/40 text-ivory/80"
