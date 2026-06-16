@@ -511,7 +511,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: rozelle1.url, badge: "Award", tags: ["Full Interior", "Kitchen", "Laundry", "Ensuite"] },
   { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Multi-Space", image: abbots5.url, tags: ["Multi-Space", "Ensuite", "Bathroom"] },
   { suburb: "Pyrmont", title: "Elevated City Living", category: "Multi-Space", image: pyrmont3.url, tags: ["Multi-Space", "Kitchen", "Living Room"] },
-  { suburb: "Annandale", title: "Smart Family Living", category: "Multi-Space", image: annan01.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Living Room"] },
+  { suburb: "Annandale", title: "Smart Family Living", category: "Full Interior", image: annan01.url, badge: "Finalist", tags: ["Full Interior", "Bathroom", "Living Room"] },
   { suburb: "Camperdown", title: "Inner-city Charm", category: "Multi-Space", image: camp1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Bexley", title: "Bold Utility", category: "Bathroom", image: bexley1.url, tags: ["Bathroom", "Laundry"] },
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Full Interior", image: drum1.url, tags: ["Full Interior", "Living Room"] },
@@ -673,7 +673,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Custom finishes selected to wear well day to day",
     ],
     testimonial:
-      "We couldn't be more thrilled with our experience working with AM Renovations, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
+      "We couldn't be more thrilled with our experience working with AM Bathrooms + Projects, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
     gallery: [
       annanN09.url, // fireplace living
       annan02.url,  // green bathroom basin+toilet
