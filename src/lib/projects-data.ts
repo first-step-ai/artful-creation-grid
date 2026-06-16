@@ -976,7 +976,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     afterImages: [enmoreAfter1.url, enmoreAfter2.url, enmoreAfter3.url],
   },
 
-  "lindfield-award-finalist-bathrooms": {
+  "lindfield-award-finalist-bathroom": {
     badge: "Finalist",
     heroCaption:
       "An award-finalist Lindfield renovation delivering two refined bathrooms with cohesive detailing and an elevated, timeless material palette.",
