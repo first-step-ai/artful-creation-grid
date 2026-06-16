@@ -8,6 +8,7 @@ import { getProjectDetail, getMoreProjects, slugify } from "@/lib/projects-data"
 export const Route = createFileRoute("/projects/$slug")({
   head: ({ params }) => {
     const p = getProjectDetail(params.slug);
+    const url = `https://artful-creation-grid.lovable.app/projects/${params.slug}`;
     return {
       meta: [
         { title: `${p.suburb} | ${p.title} | AM Bathrooms + Projects` },
@@ -15,6 +16,26 @@ export const Route = createFileRoute("/projects/$slug")({
         { property: "og:title", content: `${p.suburb} | ${p.title}` },
         { property: "og:description", content: p.heroCaption },
         { property: "og:image", content: p.hero },
+        { name: "twitter:image", content: p.hero },
+        { property: "og:type", content: "article" },
+        { property: "og:url", content: url },
+      ],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: `${p.suburb} | ${p.title}`,
+            description: p.heroCaption,
+            image: p.hero,
+            url,
+            author: { "@type": "Organization", name: "AM Bathrooms + Projects" },
+            publisher: { "@type": "Organization", name: "AM Bathrooms + Projects" },
+            about: p.category,
+          }),
+        },
       ],
     };
   },
