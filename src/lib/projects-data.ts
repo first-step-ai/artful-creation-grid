@@ -324,18 +324,14 @@ import enmoreAfter3 from "@/assets/projects/enmore-ba/enmore-after-3.jpg.asset.j
 import lind10 from "@/assets/projects/lindfield/lindfield-10.jpg.asset.json";
 import lind11 from "@/assets/projects/lindfield/lindfield-11.jpg.asset.json";
 import lind9 from "@/assets/projects/lindfield/lindfield-9.jpg.asset.json";
-import lind29 from "@/assets/projects/lindfield/lindfield-29.jpg.asset.json";
-import lind41 from "@/assets/projects/lindfield/lindfield-41.jpg.asset.json";
 import lind44 from "@/assets/projects/lindfield/lindfield-44.jpg.asset.json";
 import lind3 from "@/assets/projects/lindfield/lindfield-3.jpg.asset.json";
 import lind4 from "@/assets/projects/lindfield/lindfield-4.jpg.asset.json";
 import lind7 from "@/assets/projects/lindfield/lindfield-7.jpg.asset.json";
 import lind12 from "@/assets/projects/lindfield/lindfield-12.jpg.asset.json";
 import lind13 from "@/assets/projects/lindfield/lindfield-13.jpg.asset.json";
-import lind40 from "@/assets/projects/lindfield/lindfield-40.jpg.asset.json";
 import lind42 from "@/assets/projects/lindfield/lindfield-42.jpg.asset.json";
 import lind26 from "@/assets/projects/lindfield/lindfield-26.jpg.asset.json";
-import lind30 from "@/assets/projects/lindfield/lindfield-30.jpg.asset.json";
 import lind48 from "@/assets/projects/lindfield/lindfield-48.jpg.asset.json";
 import lindBefore1 from "@/assets/projects/lindfield-ba/lind-before-1.jpg.asset.json";
 import lindBefore2 from "@/assets/projects/lindfield-ba/lind-before-2.jpg.asset.json";
@@ -1010,11 +1006,9 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       lind7.url, lind12.url,
       lind11.url,
       lind13.url, lind42.url,
-      lind40.url, lind26.url,
+      lind26.url,
       lind9.url,
-      lind30.url, lind29.url,
       lind48.url,
-      lind41.url,
       lind44.url,
     ],
     beforeImages: [lindBefore1.url, lindBefore2.url, lindBefore3.url],
