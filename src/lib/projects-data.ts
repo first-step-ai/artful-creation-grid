@@ -1081,6 +1081,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       rwh21.url,
       rwh22.url, rwh24.url,
     ],
+    beforeImages: [rwhBefore1.url, rwhBefore2.url, rwhBefore3.url],
+    afterImages: [rwhAfter1.url, rwhAfter2.url, rwhAfter3.url],
   },
 
   "manly-beachside-apartment-revival": {
