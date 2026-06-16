@@ -8,20 +8,22 @@ import bathroom from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact | AM Bathrooms + Projects" },
+      { title: "Contact AM Bathrooms + Projects | Sydney Renovation Studio" },
       {
         name: "description",
         content:
           "Tell us a little about your home. We'll arrange a quick, obligation-free phone call, then come to you for a paid in-home consult.",
       },
-      { property: "og:title", content: "Contact | AM Bathrooms + Projects" },
+      { property: "og:title", content: "Contact AM Bathrooms + Projects" },
       {
         property: "og:description",
         content: "Let's talk about your home.",
       },
+      { property: "og:url", content: "https://artful-creation-grid.lovable.app/contact" },
       { property: "og:image", content: bathroom.url },
       { name: "twitter:image", content: bathroom.url },
     ],
+    links: [{ rel: "canonical", href: "https://artful-creation-grid.lovable.app/contact" }],
   }),
   component: ContactPage,
 });
