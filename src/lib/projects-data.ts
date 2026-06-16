@@ -284,6 +284,7 @@ import manly23 from "@/assets/projects/manly/manly-23.jpg.asset.json";
 import manly27 from "@/assets/projects/manly/manly-27.jpg.asset.json";
 import manly33 from "@/assets/projects/manly/manly-33.jpg.asset.json";
 import manly42 from "@/assets/projects/manly/manly-42.jpg.asset.json";
+import manlyHeroKitchen from "@/assets/manly-hero-kitchen.jpg.asset.json";
 
 // Roseville, Calm Family Spaces
 import roseville1 from "@/assets/projects/roseville/roseville-1.jpg.asset.json";
@@ -518,7 +519,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Lindfield", title: "Award-Finalist Bathroom", category: "Multi-Space", image: lind10.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB1.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
-  { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manly8.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
+  { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manlyHeroKitchen.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Multi-Space", image: drumN20.url, badge: "Finalist", tags: ["Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Multi-Space", image: birch08.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
