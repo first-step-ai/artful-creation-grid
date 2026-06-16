@@ -43,7 +43,7 @@
 :root {
   --radius: 0.25rem;
 
-  /* Brand palette — flipped: charcoal canvas, sage as accent */
+  /* Brand palette - flipped: charcoal canvas, sage as accent */
   --oxblood:        #383d38;  /* charcoal surface */
   --burgundy:       #383d38;  /* secondary charcoal surface */
   --burgundy-soft:  #848b7d;  /* sage accent (use deliberately) */
@@ -158,7 +158,7 @@
     100% { transform: scale(1.00) translate3d(0, -1.5%, 0); }
   }
 
-  /* Brass shimmer sweep — for accents */
+  /* Brass shimmer sweep - for accents */
   .shimmer {
     background: linear-gradient(
       100deg,

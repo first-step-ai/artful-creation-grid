@@ -29,7 +29,7 @@ export const Route = createFileRoute("/projects/")({
       { property: "og:title", content: "Projects | AM Bathrooms + Projects" },
       {
         property: "og:description",
-        content: "Real homes, real people, real results — the AM portfolio.",
+        content: "Real homes, real people, real results - the AM portfolio.",
       },
     ],
     links: [

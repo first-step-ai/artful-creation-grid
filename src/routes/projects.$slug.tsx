@@ -10,7 +10,7 @@ export const Route = createFileRoute("/projects/$slug")({
     const p = getProjectDetail(params.slug);
     return {
       meta: [
-        { title: `${p.suburb} | ${p.title} — AM Bathrooms + Projects` },
+        { title: `${p.suburb} | ${p.title} - AM Bathrooms + Projects` },
         { name: "description", content: p.heroCaption },
         { property: "og:title", content: `${p.suburb} | ${p.title}` },
         { property: "og:description", content: p.heroCaption },
@@ -42,7 +42,7 @@ function ProjectDetailPage() {
             alt={`${p.title}, ${p.suburb}`}
             className="absolute inset-0 h-full w-full object-cover"
           />
-          {/* Stronger gradient for legibility — dark at bottom where text sits */}
+          {/* Stronger gradient for legibility - dark at bottom where text sits */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/20" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />
           <div className="relative z-10 mx-auto max-w-[1600px] px-6 md:px-10 h-full flex flex-col justify-end pb-16 md:pb-24">
@@ -66,7 +66,7 @@ function ProjectDetailPage() {
         {/* THREE-COLUMN BODY */}
         <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-14 md:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,2fr)_1fr] gap-10 lg:gap-12">
-            {/* LEFT COLUMN — sticky scroll (mobile: after gallery) */}
+            {/* LEFT COLUMN - sticky scroll (mobile: after gallery) */}
             <aside className="order-3 lg:order-1 lg:sticky lg:top-28 lg:self-start lg:pr-2 space-y-12">
               <Block label="Scope">
                 <p className="font-sans text-sm text-ivory/85">
@@ -131,17 +131,17 @@ function ProjectDetailPage() {
 
             </aside>
 
-            {/* CENTER — image stack */}
+            {/* CENTER - image stack */}
             <div className="order-2 lg:order-2">
               <GalleryStack images={p.gallery} title={p.title} />
             </div>
 
 
-            {/* RIGHT COLUMN — sticky scroll (mobile: first) */}
+            {/* RIGHT COLUMN - sticky scroll (mobile: first) */}
             <aside className="order-1 lg:order-3 lg:sticky lg:top-28 lg:self-start lg:pl-2 space-y-12">
               <div>
                 <h2 className="font-sans text-lg md:text-xl font-light leading-snug text-ivory">
-                  {p.rightHeading.replace(/[-–—]/g, " ")}
+                  {p.rightHeading.replace(/[-–-]/g, " ")}
                 </h2>
                 <p className="mt-5 font-sans text-[13px] leading-relaxed text-ivory/80">
                   {p.rightIntro}
@@ -419,7 +419,7 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
               <figure key={it.index} className="overflow-hidden bg-burgundy h-full">
                 <img
                   src={it.src}
-                  alt={`${title} — image ${it.index + 1}`}
+                  alt={`${title} - image ${it.index + 1}`}
                   loading="lazy"
                   className="w-full h-full object-cover"
                 />
@@ -430,7 +430,7 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
           <figure key={ri} className="overflow-hidden bg-burgundy">
             <img
               src={row.items[0].src}
-              alt={`${title} — image ${row.items[0].index + 1}`}
+              alt={`${title} - image ${row.items[0].index + 1}`}
               loading="lazy"
               className="w-full h-auto object-cover"
             />
