@@ -498,7 +498,7 @@ export function slugify(suburb: string, title: string) {
 
 // All projects shown on /projects (single source of truth)
 export const projects: ProjectSummary[] = [
-  { suburb: "Rozelle", title: "Refined Family Living", category: "Multi-Space", image: rozelle1.url, badge: "Award", tags: ["Multi-Space", "Kitchen", "Laundry", "Ensuite"] },
+  { suburb: "Rozelle", title: "Refined Family Living", category: "Full Interior", image: rozelle1.url, badge: "Award", tags: ["Full Interior", "Kitchen", "Laundry", "Ensuite"] },
   { suburb: "Abbotsford", title: "Hotel-Inspired Luxury", category: "Multi-Space", image: abbots5.url, tags: ["Multi-Space", "Ensuite", "Bathroom"] },
   { suburb: "Pyrmont", title: "Elevated City Living", category: "Full Interior", image: pyrmont3.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Living Room"] },
   { suburb: "Annandale", title: "Smart Family Living", category: "Multi-Space", image: annan01.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Living Room"] },
