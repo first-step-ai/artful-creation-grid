@@ -130,7 +130,7 @@ export function Awards() {
                 <img
                   key={a.title}
                   src={a.image}
-                  alt={`${a.title} - ${a.description}`}
+                  alt={`${a.title}, ${a.description}`}
                   loading="eager"
                   className={`absolute inset-0 h-full w-full ${a.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} transition-opacity duration-700 ease-in-out ${i === active ? "opacity-100" : "opacity-0"}`}
                   style={{ willChange: "opacity" }}
