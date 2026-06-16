@@ -21,17 +21,20 @@ const filters = [
 export const Route = createFileRoute("/projects/")({
   head: () => ({
     meta: [
-      { title: "Projects | AM Bathrooms + Projects" },
+      { title: "Sydney Bathroom & Interior Portfolio | AM Bathrooms + Projects" },
       {
         name: "description",
         content:
           "Bathrooms, kitchens, laundries and full interiors crafted across Sydney by AM Bathrooms + Projects.",
       },
-      { property: "og:title", content: "Projects | AM Bathrooms + Projects" },
+      { property: "og:title", content: "Sydney Bathroom & Interior Portfolio" },
       {
         property: "og:description",
         content: "Real homes, real people, real results, the AM portfolio.",
       },
+      { property: "og:url", content: "https://artful-creation-grid.lovable.app/projects" },
+      { property: "og:image", content: portfolioHero.url },
+      { name: "twitter:image", content: portfolioHero.url },
     ],
     links: [
       { rel: "canonical", href: "https://artful-creation-grid.lovable.app/projects" },
