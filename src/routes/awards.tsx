@@ -174,7 +174,7 @@ const years: YearGroup[] = [
       {
         id: "annandale-2022",
         suburb: "Annandale",
-        title: "New Bathroom Finalist",
+        title: "Bathroom Finalist",
         image: annan2.url,
         awards: [
           { kind: "Finalist", label: "HIA NSW New Bathroom of the Year" },
