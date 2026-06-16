@@ -158,7 +158,7 @@ const years: YearGroup[] = [
     year: "2022",
     intro: "HIA NSW Awards · NSW Business Awards",
     blurb:
-      "A standout year, winning the NSW Small Business Management Award and earning HIA NSW finalist placements for new bathroom and bathroom design across Drummoyne and Annandale.",
+      "AM Bathrooms + Projects won the NSW Small Business Management Award this year, with HIA NSW finalist placements for bathroom projects across Drummoyne and Annandale.",
     projects: [
       {
         id: "drummoyne-2022",
@@ -174,7 +174,7 @@ const years: YearGroup[] = [
       {
         id: "annandale-2022",
         suburb: "Annandale",
-        title: "New Bathroom Finalist",
+        title: "Bathroom Finalist",
         image: annan2.url,
         awards: [
           { kind: "Finalist", label: "HIA NSW New Bathroom of the Year" },
@@ -182,7 +182,7 @@ const years: YearGroup[] = [
       },
       {
         id: "nsw-2022",
-        suburb: "AM Studio",
+        suburb: "AM Bathrooms + Projects",
         title: "State Recognition",
         image: nsw2022.url,
         fit: "contain",
