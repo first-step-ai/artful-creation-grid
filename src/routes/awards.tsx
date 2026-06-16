@@ -160,7 +160,7 @@ const years: YearGroup[] = [
     year: "2022",
     intro: "HIA NSW Awards · NSW Business Awards",
     blurb:
-      "A standout year - winning the NSW Small Business Management Award and earning HIA NSW finalist placements for new bathroom and bathroom design across Drummoyne and Annandale.",
+      "A standout year, winning the NSW Small Business Management Award and earning HIA NSW finalist placements for new bathroom and bathroom design across Drummoyne and Annandale.",
     projects: [
       {
         id: "drummoyne-2022",
