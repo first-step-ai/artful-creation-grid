@@ -24,12 +24,14 @@ type ProjectAward = {
   awards: AwardEntry[];
   href?: string;
 };
-type YearGroup = { year: string; intro: string; projects: ProjectAward[] };
+type YearGroup = { year: string; intro: string; blurb: string; projects: ProjectAward[] };
 
 const years: YearGroup[] = [
   {
     year: "2025",
     intro: "HIA NSW Housing, Kitchen & Bathroom Awards",
+    blurb:
+      "HIA NSW recognition across Rozelle, Annandale and Newtown — a Renovated Kitchen of the Year win for AM Bathrooms + Projects alongside multiple finalist placements for kitchen and bathroom design across Sydney's Inner West.",
     projects: [
       {
         id: "rozelle-2025",
@@ -67,6 +69,8 @@ const years: YearGroup[] = [
   {
     year: "2024",
     intro: "HIA NSW Housing Awards · National Business Awards",
+    blurb:
+      "A national year for AM Bathrooms + Projects — winning the Australian Small Business Management Award and HIA NSW Renovated Bathroom of the Year, with further finalist placements across kitchen and bathroom projects in Enmore, Lindfield and Drummoyne.",
     projects: [
       {
         id: "enmore-2024",
@@ -103,7 +107,7 @@ const years: YearGroup[] = [
       },
       {
         id: "national-2024",
-        suburb: "AM Studio",
+        suburb: "AM Bathrooms + Projects",
         title: "National Recognition",
         image: national2024.url,
         fit: "contain",
@@ -116,6 +120,8 @@ const years: YearGroup[] = [
   {
     year: "2023",
     intro: "HIA NSW Kitchen & Bathroom Awards",
+    blurb:
+      "HIA NSW finalist recognition across Drummoyne, Rozelle and Lane Cove — repeat acknowledgement for considered kitchen and bathroom design from AM Bathrooms + Projects.",
     projects: [
       {
         id: "drummoyne-2023",
@@ -151,6 +157,8 @@ const years: YearGroup[] = [
   {
     year: "2022",
     intro: "HIA NSW Awards · NSW Business Awards",
+    blurb:
+      "A standout year — winning the NSW Small Business Management Award and earning HIA NSW finalist placements for new bathroom and bathroom design across Drummoyne and Annandale.",
     projects: [
       {
         id: "drummoyne-2022",
@@ -187,6 +195,8 @@ const years: YearGroup[] = [
   {
     year: "2021",
     intro: "HIA-CSR NSW Housing and Kitchen & Bathroom Awards",
+    blurb:
+      "HIA-CSR NSW finalist recognition for a single Castle Cove home across three bathroom categories — design, medium ensuite and powder room.",
     projects: [
       {
         id: "castle-cove-2021",
@@ -203,6 +213,8 @@ const years: YearGroup[] = [
   {
     year: "2020",
     intro: "HIA NSW Housing Awards",
+    blurb:
+      "HIA NSW Bathroom of the Year finalist recognition for a Birchgrove renovation by AM Bathrooms + Projects.",
     projects: [
       {
         id: "birchgrove-2020",
@@ -271,7 +283,7 @@ function ProjectCard({ project }: { project: ProjectAward }) {
           {project.awards.map((a, i) => (
             <li key={i} className="flex items-start gap-3 text-ivory/90">
               <span
-                className={`shrink-0 mt-[3px] text-[9px] tracking-[0.22em] uppercase px-2 py-[2px] border ${
+                className={`shrink-0 mt-[3px] inline-block w-[78px] text-center text-[9px] tracking-[0.22em] uppercase px-2 py-[2px] border ${
                   a.kind === "Winner"
                     ? "bg-ivory text-oxblood border-ivory"
                     : "border-ivory/40 text-ivory/80"
@@ -360,11 +372,9 @@ function YearSection({ group }: { group: YearGroup }) {
           <p className="mt-6 text-ivory/70 text-[14px] md:text-[15px] max-w-sm mx-auto">
             {group.intro}
           </p>
-          {group.projects.length > 1 && (
-            <p className="mt-3 text-ivory/45 text-[11px] tracking-[0.22em] uppercase">
-              Auto-transitioning · {group.projects.length} cards
-            </p>
-          )}
+          <p className="mt-4 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm mx-auto">
+            {group.blurb}
+          </p>
         </div>
 
         <div className="md:col-span-7 flex justify-center">
@@ -397,7 +407,7 @@ function AwardsPage() {
           />
           <div className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-24 md:pt-28 pb-16 md:pb-20">
             <div className="max-w-3xl">
-              <div className="eyebrow mb-6">Awards · Year Timeline</div>
+              <div className="eyebrow mb-6">Industry Recognition</div>
               <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-2xl sm:text-3xl md:text-4xl lg:text-5xl [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]">
                 A timeline of recognition.
               </h1>
