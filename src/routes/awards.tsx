@@ -30,6 +30,8 @@ const years: YearGroup[] = [
   {
     year: "2025",
     intro: "HIA NSW Housing, Kitchen & Bathroom Awards",
+    blurb:
+      "HIA NSW recognition across Rozelle, Annandale and Newtown — a Renovated Kitchen of the Year win for AM Bathrooms + Projects alongside multiple finalist placements for kitchen and bathroom design across Sydney's Inner West.",
     projects: [
       {
         id: "rozelle-2025",
