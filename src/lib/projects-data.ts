@@ -1086,6 +1086,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "manly-beachside-apartment-revival": {
+    hero: manly14.url,
     heroCaption:
       "A tired 1980s beachside Manly apartment fully reimagined into a bright, modern three-bedroom home built for relaxed coastal entertaining.",
     scope:
