@@ -187,7 +187,7 @@ function Profiles() {
       className="reveal pb-24 md:pb-40 px-6 md:px-12 lg:px-16"
     >
       <div className="max-w-[1400px] mx-auto">
-        <p className="eyebrow text-brass mb-8">Meet the team</p>
+        <p className="eyebrow text-brass mb-8">Meet Jenny and Ante</p>
         <div className="h-px w-16 bg-brass/60 mb-16" />
 
         <div className="space-y-24 md:space-y-32">
