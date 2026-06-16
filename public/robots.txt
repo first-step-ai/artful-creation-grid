@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://artful-creation-grid.lovable.app/sitemap.xml
