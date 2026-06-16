@@ -108,7 +108,7 @@ function Hero() {
     >
       <div className="eyebrow mb-6">Our Expertise</div>
       <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl">
-        What we do.
+        Sydney Renovation Services
       </h1>
       <div className="mt-6 max-w-xl font-sans text-sm md:text-base text-ivory/75 leading-relaxed space-y-1">
         <p>Everything from a single bathroom to a full interior renovation.</p>
