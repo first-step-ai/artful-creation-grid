@@ -123,7 +123,7 @@ const years: YearGroup[] = [
     year: "2023",
     intro: "HIA NSW Kitchen & Bathroom Awards",
     blurb:
-      "HIA NSW finalist recognition across Drummoyne, Rozelle and Lane Cove, repeat acknowledgement for considered kitchen and bathroom design from AM Bathrooms + Projects.",
+      "HIA NSW finalist recognition for kitchen and bathroom projects across Drummoyne, Rozelle and Lane Cove, with AM Bathrooms + Projects receiving repeat acknowledgement for considered design.",
     projects: [
       {
         id: "drummoyne-2023",
