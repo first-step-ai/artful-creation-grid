@@ -77,6 +77,7 @@ const years: YearGroup[] = [
         id: "enmore-2024",
         suburb: "Enmore",
         title: "Renovated Bathroom Winner",
+        image: nsw2024bathroom.url,
         awards: [
           { kind: "Winner", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
