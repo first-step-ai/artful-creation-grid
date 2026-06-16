@@ -10,7 +10,7 @@ export const Route = createFileRoute("/projects/$slug")({
     const p = getProjectDetail(params.slug);
     return {
       meta: [
-        { title: `${p.suburb} | ${p.title} - AM Bathrooms + Projects` },
+        { title: `${p.suburb} | ${p.title} | AM Bathrooms + Projects` },
         { name: "description", content: p.heroCaption },
         { property: "og:title", content: `${p.suburb} | ${p.title}` },
         { property: "og:description", content: p.heroCaption },
@@ -419,7 +419,7 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
               <figure key={it.index} className="overflow-hidden bg-burgundy h-full">
                 <img
                   src={it.src}
-                  alt={`${title} - image ${it.index + 1}`}
+                  alt={`${title}, image ${it.index + 1}`}
                   loading="lazy"
                   className="w-full h-full object-cover"
                 />
@@ -430,7 +430,7 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
           <figure key={ri} className="overflow-hidden bg-burgundy">
             <img
               src={row.items[0].src}
-              alt={`${title} - image ${row.items[0].index + 1}`}
+              alt={`${title}, image ${row.items[0].index + 1}`}
               loading="lazy"
               className="w-full h-auto object-cover"
             />

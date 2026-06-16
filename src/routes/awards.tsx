@@ -32,7 +32,7 @@ const years: YearGroup[] = [
     year: "2025",
     intro: "HIA NSW Housing, Kitchen & Bathroom Awards",
     blurb:
-      "HIA NSW recognition across Rozelle, Annandale and Newtown - a Renovated Kitchen of the Year win for AM Bathrooms + Projects alongside multiple finalist placements for kitchen and bathroom design across Sydney's Inner West.",
+      "HIA NSW recognition across Rozelle, Annandale and Newtown, including a Renovated Kitchen of the Year win for AM Bathrooms + Projects alongside multiple finalist placements for kitchen and bathroom design across Sydney's Inner West.",
     projects: [
       {
         id: "rozelle-2025",
@@ -71,7 +71,7 @@ const years: YearGroup[] = [
     year: "2024",
     intro: "HIA NSW Housing Awards · National Business Awards",
     blurb:
-      "A national year for AM Bathrooms + Projects - winning the Australian Small Business Management Award and HIA NSW Renovated Bathroom of the Year, with further finalist placements across kitchen and bathroom projects in Enmore, Lindfield and Drummoyne.",
+      "A national year for AM Bathrooms + Projects, winning the Australian Small Business Management Award and HIA NSW Renovated Bathroom of the Year, with further finalist placements across kitchen and bathroom projects in Enmore, Lindfield and Drummoyne.",
     projects: [
       {
         id: "enmore-2024",
@@ -123,7 +123,7 @@ const years: YearGroup[] = [
     year: "2023",
     intro: "HIA NSW Kitchen & Bathroom Awards",
     blurb:
-      "HIA NSW finalist recognition across Drummoyne, Rozelle and Lane Cove - repeat acknowledgement for considered kitchen and bathroom design from AM Bathrooms + Projects.",
+      "HIA NSW finalist recognition across Drummoyne, Rozelle and Lane Cove, repeat acknowledgement for considered kitchen and bathroom design from AM Bathrooms + Projects.",
     projects: [
       {
         id: "drummoyne-2023",
@@ -160,7 +160,7 @@ const years: YearGroup[] = [
     year: "2022",
     intro: "HIA NSW Awards · NSW Business Awards",
     blurb:
-      "A standout year - winning the NSW Small Business Management Award and earning HIA NSW finalist placements for new bathroom and bathroom design across Drummoyne and Annandale.",
+      "A standout year, winning the NSW Small Business Management Award and earning HIA NSW finalist placements for new bathroom and bathroom design across Drummoyne and Annandale.",
     projects: [
       {
         id: "drummoyne-2022",
@@ -198,7 +198,7 @@ const years: YearGroup[] = [
     year: "2021",
     intro: "HIA-CSR NSW Housing and Kitchen & Bathroom Awards",
     blurb:
-      "HIA-CSR NSW finalist recognition for a single Castle Cove home across three bathroom categories - design, medium ensuite and powder room.",
+      "HIA-CSR NSW finalist recognition for a single Castle Cove home across three bathroom categories: design, medium ensuite and powder room.",
     projects: [
       {
         id: "castle-cove-2021",
@@ -415,7 +415,7 @@ function AwardsPage() {
               </h1>
               <p className="mt-6 max-w-xl text-ivory/90 text-sm md:text-base font-light leading-relaxed [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">
                 Year by year, the projects and the people behind them recognised by
-                the industry. Cards rotate automatically - hover to pause.
+                the industry. Cards rotate automatically, hover to pause.
               </p>
             </div>
           </div>
