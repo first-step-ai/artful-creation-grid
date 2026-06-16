@@ -990,8 +990,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Reconfigured layout to bring the courtyard into the room, with the bath now feeling part of it",
     ],
     gallery: [
-      enmore26.url,
-      enmore2.url, enmore3.url,
+      enmore2.url,
+      enmore26.url, enmore3.url,
       enmore4.url, enmore5.url,
       enmore6.url, enmore7.url,
       enmore8.url, enmore9.url,
