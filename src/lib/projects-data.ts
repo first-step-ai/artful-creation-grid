@@ -303,18 +303,13 @@ import roseville34 from "@/assets/projects/roseville/roseville-34.jpg.asset.json
 import roseville36 from "@/assets/projects/roseville/roseville-36.jpg.asset.json";
 import roseville38 from "@/assets/projects/roseville/roseville-38.jpg.asset.json";
 // Enmore, Award-Winning Family Bathroom
-import enmore26 from "@/assets/projects/enmore/enmore-26.jpg.asset.json";
-import enmore2 from "@/assets/projects/enmore/enmore-2.jpg.asset.json";
-import enmore3 from "@/assets/projects/enmore/enmore-3.jpg.asset.json";
-import enmore4 from "@/assets/projects/enmore/enmore-4.jpg.asset.json";
-import enmore5 from "@/assets/projects/enmore/enmore-5.jpg.asset.json";
-import enmore6 from "@/assets/projects/enmore/enmore-6.jpg.asset.json";
+import enmore1 from "@/assets/projects/enmore/enmore-1.jpg.asset.json";
 import enmore7 from "@/assets/projects/enmore/enmore-7.jpg.asset.json";
-import enmore8 from "@/assets/projects/enmore/enmore-8.jpg.asset.json";
-import enmore9 from "@/assets/projects/enmore/enmore-9.jpg.asset.json";
+import enmore10 from "@/assets/projects/enmore/enmore-10.jpg.asset.json";
+import enmore17 from "@/assets/projects/enmore/enmore-17.jpg.asset.json";
+import enmore18 from "@/assets/projects/enmore/enmore-18.jpg.asset.json";
 import enmore20 from "@/assets/projects/enmore/enmore-20.jpg.asset.json";
 import enmore21 from "@/assets/projects/enmore/enmore-21.jpg.asset.json";
-import enmore22 from "@/assets/projects/enmore/enmore-22.jpg.asset.json";
 import enmore24 from "@/assets/projects/enmore/enmore-24.jpg.asset.json";
 import enmore31 from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
 import enmore32 from "@/assets/projects/enmore/enmore-32.jpg.asset.json";
@@ -514,7 +509,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: eliz10.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Ensuite", image: rze1.url, tags: ["Ensuite", "Bathroom"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Multi-Space", image: roseville1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
-  { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: enmore2.url, badge: "Award", tags: ["Bathroom"] },
+  { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: enmore17.url, badge: "Award", tags: ["Bathroom"] },
   { suburb: "Lindfield", title: "Award-Finalist Bathroom", category: "Multi-Space", image: lind10.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB1.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
@@ -964,15 +959,12 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Reconfigured layout to bring the courtyard into the room, with the bath now feeling part of it",
     ],
     gallery: [
-      enmore2.url,
-      enmore26.url, enmore3.url,
-      enmore4.url, enmore5.url,
-      enmore6.url, enmore7.url,
-      enmore8.url, enmore9.url,
+      enmore17.url,
+      enmore1.url, enmore7.url,
+      enmore10.url, enmore18.url,
       enmore20.url, enmore21.url,
-      enmore22.url, enmore24.url,
-      enmore31.url, enmore32.url,
-      enmore34.url,
+      enmore24.url, enmore31.url,
+      enmore32.url, enmore34.url,
     ],
   },
 
