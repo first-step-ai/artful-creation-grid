@@ -10,6 +10,7 @@ import annan2 from "@/assets/projects/annandale-new/annan-07.jpg.asset.json";
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
 import drum3 from "@/assets/projects/drummoyne-3.jpg.asset.json";
+import nsw2024bathroom from "@/assets/2024-nsw-bathroom-winner.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
@@ -76,6 +77,7 @@ const years: YearGroup[] = [
         id: "enmore-2024",
         suburb: "Enmore",
         title: "Renovated Bathroom Winner",
+        image: nsw2024bathroom.url,
         awards: [
           { kind: "Winner", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
