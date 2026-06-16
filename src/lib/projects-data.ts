@@ -331,7 +331,6 @@ import lind7 from "@/assets/projects/lindfield/lindfield-7.jpg.asset.json";
 import lind12 from "@/assets/projects/lindfield/lindfield-12.jpg.asset.json";
 import lind13 from "@/assets/projects/lindfield/lindfield-13.jpg.asset.json";
 import lind42 from "@/assets/projects/lindfield/lindfield-42.jpg.asset.json";
-import lind26 from "@/assets/projects/lindfield/lindfield-26.jpg.asset.json";
 import lind48 from "@/assets/projects/lindfield/lindfield-48.jpg.asset.json";
 import lindBefore1 from "@/assets/projects/lindfield-ba/lind-before-1.jpg.asset.json";
 import lindBefore2 from "@/assets/projects/lindfield-ba/lind-before-2.jpg.asset.json";
