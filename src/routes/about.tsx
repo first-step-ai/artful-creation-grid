@@ -10,21 +10,23 @@ import antePhoto from "@/assets/team/ante.jpg.asset.json";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About | AM Bathrooms + Projects" },
+      { title: "About Jenny & Ante Matek | AM Bathrooms + Projects Sydney" },
       {
         name: "description",
         content:
           "A boutique studio founded by Jenny and Ante Matek. One team handling design, build and project management from first sketch to final handover.",
       },
-      { property: "og:title", content: "About | AM Bathrooms + Projects" },
+      { property: "og:title", content: "About AM Bathrooms + Projects | Sydney Renovation Studio" },
       {
         property: "og:description",
         content:
           "One team. Every detail. Start to finish.",
       },
+      { property: "og:url", content: "https://artful-creation-grid.lovable.app/about" },
       { property: "og:image", content: teamPhoto.url },
       { name: "twitter:image", content: teamPhoto.url },
     ],
+    links: [{ rel: "canonical", href: "https://artful-creation-grid.lovable.app/about" }],
   }),
   component: AboutPage,
 });
