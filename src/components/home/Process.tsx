@@ -33,7 +33,7 @@ export function Process() {
   return (
     <section id="process" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
-        <div className="eyebrow mb-12 md:mb-16">Process</div>
+        <h2 className="eyebrow mb-12 md:mb-16">Process</h2>
 
         <div ref={gridRef} className="reveal reveal-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {steps.map((s) => (
