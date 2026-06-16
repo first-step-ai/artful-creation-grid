@@ -512,7 +512,6 @@ export const projects: ProjectSummary[] = [
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "Multi-Space", image: drum1.url, tags: ["Multi-Space", "Living Room"] },
   { suburb: "Putney", title: "Reimagined Heritage Living", category: "Full Interior", image: putney1.url, tags: ["Full Interior", "Multi-Space", "Ensuite", "Bathroom", "Living Room"] },
   { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: eliz10.url, tags: ["Bathroom"] },
-  { suburb: "Newtown", title: "Reimagined Ensuite Retreat", category: "Ensuite", image: drum1.url, badge: "Finalist", tags: ["Ensuite", "Bathroom"] },
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Ensuite", image: rze1.url, tags: ["Ensuite", "Bathroom"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Multi-Space", image: roseville1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: enmore2.url, badge: "Award", tags: ["Bathroom"] },
