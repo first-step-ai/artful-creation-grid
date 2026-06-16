@@ -314,6 +314,12 @@ import enmore24 from "@/assets/projects/enmore/enmore-24.jpg.asset.json";
 import enmore31 from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
 import enmore32 from "@/assets/projects/enmore/enmore-32.jpg.asset.json";
 import enmore34 from "@/assets/projects/enmore/enmore-34.jpg.asset.json";
+import enmoreBefore1 from "@/assets/projects/enmore-ba/enmore-before-1.jpg.asset.json";
+import enmoreBefore2 from "@/assets/projects/enmore-ba/enmore-before-2.jpg.asset.json";
+import enmoreBefore3 from "@/assets/projects/enmore-ba/enmore-before-3.jpg.asset.json";
+import enmoreAfter1 from "@/assets/projects/enmore-ba/enmore-after-1.jpg.asset.json";
+import enmoreAfter2 from "@/assets/projects/enmore-ba/enmore-after-2.jpg.asset.json";
+import enmoreAfter3 from "@/assets/projects/enmore-ba/enmore-after-3.jpg.asset.json";
 // Lindfield, Award-Finalist Bathrooms
 import lind10 from "@/assets/projects/lindfield/lindfield-10.jpg.asset.json";
 import lind11 from "@/assets/projects/lindfield/lindfield-11.jpg.asset.json";
@@ -966,6 +972,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       enmore24.url, enmore31.url,
       enmore32.url, enmore34.url,
     ],
+    beforeImages: [enmoreBefore1.url, enmoreBefore2.url, enmoreBefore3.url],
+    afterImages: [enmoreAfter1.url, enmoreAfter2.url, enmoreAfter3.url],
   },
 
   "lindfield-award-finalist-bathrooms": {
