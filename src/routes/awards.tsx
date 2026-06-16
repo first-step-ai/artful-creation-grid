@@ -71,7 +71,7 @@ const years: YearGroup[] = [
     year: "2024",
     intro: "HIA NSW Housing Awards · National Business Awards",
     blurb:
-      "A national year for AM Bathrooms + Projects, winning the Australian Small Business Management Award and HIA NSW Renovated Bathroom of the Year, with further finalist placements across kitchen and bathroom projects in Enmore, Lindfield and Drummoyne.",
+      "AM Bathrooms + Projects received national recognition with the Australian Small Business Management Award, alongside HIA NSW Renovated Bathroom of the Year, with further finalist placements across kitchen and bathroom projects in Enmore, Lindfield and Drummoyne.",
     projects: [
       {
         id: "enmore-2024",
