@@ -38,7 +38,7 @@ const services = [
   {
     title: "Laundries",
     body: "Hardworking laundry spaces designed for daily life. Concealed storage, smart layouts and finishes that elevate the everyday.",
-    image: laundry,
+    image: laundry.url,
   },
   {
     title: "Kitchen",
