@@ -372,11 +372,9 @@ function YearSection({ group }: { group: YearGroup }) {
           <p className="mt-6 text-ivory/70 text-[14px] md:text-[15px] max-w-sm mx-auto">
             {group.intro}
           </p>
-          {group.projects.length > 1 && (
-            <p className="mt-3 text-ivory/45 text-[11px] tracking-[0.22em] uppercase">
-              Auto-transitioning · {group.projects.length} cards
-            </p>
-          )}
+          <p className="mt-4 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm mx-auto">
+            {group.blurb}
+          </p>
         </div>
 
         <div className="md:col-span-7 flex justify-center">
