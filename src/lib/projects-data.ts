@@ -764,31 +764,34 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "drummoyne-modern-luxury-living": {
-    heroCaption: "Two Drummoyne apartment bathrooms reimagined within a fixed footprint, warm, light and quietly luxurious.",
+    heroCaption: "A full Drummoyne apartment interior reimagined within a fixed footprint, warm, light and quietly luxurious across the bathrooms, kitchen and living spaces.",
     scope:
-      "Two bathrooms in a Drummoyne apartment, each reimagined from the ground up within a fixed footprint.",
+      "Full interior renovation of a Drummoyne apartment, two bathrooms, kitchen and living spaces, each reimagined from the ground up within a fixed footprint.",
     awards: [],
     rightHeading: "Modern Luxury Living",
     rightIntro:
-      "Two bathrooms in a Drummoyne apartment, each reimagined from the ground up. Within a fixed apartment footprint, the goal was to improve functionality, increase storage, and introduce warmth and softness, creating bathrooms that feel calm, light-filled, and properly suited to everyday living.",
+      "A full interior renovation of a Drummoyne apartment, covering two bathrooms, the kitchen and the living spaces, each reimagined from the ground up. Within a fixed apartment footprint, the goal was to improve functionality, increase storage, and introduce warmth and softness, creating a home that feels calm, light-filled, and properly suited to everyday living.",
     whatWasntWorking: [
       "Both bathrooms felt dated and narrow",
+      "Kitchen layout was closed-off and worked against daily routines",
+      "Living spaces felt disconnected from the rest of the apartment",
       "Limited storage throughout",
-      "Layouts weren't working for the clients' daily routine",
       "Apartment footprint ruled out structural change",
       "Finishes felt cold and uninspiring",
     ],
     whatWeDid:
-      "Both the ensuite and main bathroom were redesigned to maximise function within the fixed footprint. Bespoke cabinetry and integrated storage transformed what felt constrained into spaces that feel streamlined and calm. Warm blush feature tiles, sculptural shower detailing, and refined brass fixtures introduced softness and depth. Subtle heating elements added comfort.",
+      "Both the ensuite and main bathroom were redesigned to maximise function within the fixed footprint, while the kitchen was reworked to open up to the living spaces and bring the apartment together as one continuous home. Bespoke cabinetry and integrated storage transformed what felt constrained into rooms that feel streamlined and calm. Warm blush feature tiles, sculptural shower detailing, and refined brass fixtures introduced softness and depth across the bathrooms, with a complementary material palette carried through the kitchen and living areas. Subtle heating elements added comfort.",
     designFeatures: [
       "Full redesign of both ensuite and main bathroom",
+      "Reworked kitchen opening up to the living spaces",
+      "Living spaces tied together with a cohesive material palette",
       "Bespoke cabinetry maximising integrated storage throughout",
       "Warm blush feature tiles introducing softness and warmth",
       "Sculptural shower detailing creating architectural interest",
       "Refined brass fixtures throughout",
-      "Layered ambient and task lighting",
+      "Layered ambient and task lighting across every room",
       "Subtle underfloor heating for comfort and livability",
-      "Streamlined vanity designs improving circulation",
+      "Streamlined vanity and joinery designs improving circulation",
       "Light-filled layouts despite compact proportions",
     ],
     gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url, drum8.url, drum9.url, drum10.url, drum11.url],
