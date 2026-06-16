@@ -938,6 +938,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       roseville16.url, roseville21.url, roseville23.url, roseville24.url,
       roseville34.url, roseville36.url, roseville38.url,
     ],
+    beforeImages: [rosBefore1.url, rosBefore2.url, rosBefore3.url],
+    afterImages: [rosAfter1.url, rosAfter2.url, rosAfter3.url],
   },
 
   "enmore-award-winning-family-bathroom": {
