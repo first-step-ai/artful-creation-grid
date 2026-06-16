@@ -21,7 +21,7 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 
 const projects = [
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "FULL INTERIOR", image: drummoyne1.url, slug: "drummoyne-modern-luxury-living" },
-  { suburb: "Drummoyne", title: "Full Home Renewal", category: "LIVING ROOM", image: drummoyne1.url, slug: "drummoyne-modern-luxury-living" },
+  { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "MULTI-SPACE", image: drumN20.url, slug: "drummoyne-award-finalist-kitchen-and-bath" },
   { suburb: "Camperdown", title: "Inner-City Charm", category: "BATHROOM", image: camp2.url, slug: "camperdown-inner-city-charm" },
 ];
 
