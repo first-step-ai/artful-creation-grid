@@ -407,7 +407,7 @@ function AwardsPage() {
           />
           <div className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-24 md:pt-28 pb-16 md:pb-20">
             <div className="max-w-3xl">
-              <div className="eyebrow mb-6">Awards · Year Timeline</div>
+              <div className="eyebrow mb-6">Industry Recognition</div>
               <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-2xl sm:text-3xl md:text-4xl lg:text-5xl [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]">
                 A timeline of recognition.
               </h1>
