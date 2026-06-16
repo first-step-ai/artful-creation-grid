@@ -700,11 +700,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   "camperdown-inner-city-charm": {
     heroCaption: "A Camperdown apartment reconsidered within a fixed footprint, calm, cohesive and quietly tailored.",
     scope:
-      "Kitchen, bathroom, and living spaces reconsidered within a fixed apartment footprint.",
+      "Bathroom and laundry reconsidered within a fixed apartment footprint.",
     awards: [],
     rightHeading: "Inner-city Charm",
     rightIntro:
-      "A Camperdown apartment renovation where the footprint was fixed and the challenge was making every centimetre count. Kitchen, bathroom, and living spaces were each reconsidered, creating a home that feels cohesive, calm, and genuinely well-designed for the way the client lives.",
+      "A Camperdown apartment renovation where the footprint was fixed and the challenge was making every centimetre count. Bathroom and laundry were each reconsidered, creating spaces that feel cohesive, calm, and genuinely well-designed for the way the client lives.",
     whatWasntWorking: [
       "No ability to expand the footprint, every spatial decision had to be deliberate",
       "Existing layout wasn't making the most of what was there",
@@ -713,9 +713,9 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Aesthetic didn't reflect the client's taste",
     ],
     whatWeDid:
-      "Working within the fixed footprint, we rethought each space from the floor plan outward. Bespoke kitchen joinery integrated storage without visual clutter. Custom bathroom joinery made compact spaces feel considered rather than constrained. Soft curves, layered lighting, and a warm tonal palette brought the apartment together as a cohesive whole.",
+      "Working within the fixed footprint, we rethought each space from the floor plan outward. Custom bathroom joinery made compact spaces feel considered rather than constrained. Bespoke laundry joinery integrated storage without visual clutter. Soft curves, layered lighting, and a warm tonal palette brought the apartment together as a cohesive whole.",
     designFeatures: [
-      "Bespoke kitchen joinery with integrated storage",
+      "Bespoke laundry joinery with integrated storage",
       "Streamlined cabinetry throughout for a clean architectural finish",
       "Custom bathroom joinery designed for compact living",
       "Soft curves and sculptural detailing improving flow",
