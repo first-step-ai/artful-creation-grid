@@ -308,6 +308,12 @@ import roseville24 from "@/assets/projects/roseville/roseville-24.jpg.asset.json
 import roseville34 from "@/assets/projects/roseville/roseville-34.jpg.asset.json";
 import roseville36 from "@/assets/projects/roseville/roseville-36.jpg.asset.json";
 import roseville38 from "@/assets/projects/roseville/roseville-38.jpg.asset.json";
+import rosBefore1 from "@/assets/projects/roseville-ba/ros-before1.jpg.asset.json";
+import rosBefore2 from "@/assets/projects/roseville-ba/ros-before2.jpg.asset.json";
+import rosBefore3 from "@/assets/projects/roseville-ba/ros-before3.jpg.asset.json";
+import rosAfter1 from "@/assets/projects/roseville-ba/ros-after1.jpg.asset.json";
+import rosAfter2 from "@/assets/projects/roseville-ba/ros-after2.jpg.asset.json";
+import rosAfter3 from "@/assets/projects/roseville-ba/ros-after3.jpg.asset.json";
 // Enmore, Award-Winning Family Bathroom
 import enmore1 from "@/assets/projects/enmore/enmore-1.jpg.asset.json";
 import enmore7 from "@/assets/projects/enmore/enmore-7.jpg.asset.json";
@@ -932,6 +938,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       roseville16.url, roseville21.url, roseville23.url, roseville24.url,
       roseville34.url, roseville36.url, roseville38.url,
     ],
+    beforeImages: [rosBefore1.url, rosBefore2.url, rosBefore3.url],
+    afterImages: [rosAfter1.url, rosAfter2.url, rosAfter3.url],
   },
 
   "enmore-award-winning-family-bathroom": {
