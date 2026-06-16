@@ -305,13 +305,14 @@ function ProjectCard({ project }: { project: ProjectAward }) {
 function AutoCarousel({ projects }: { projects: ProjectAward[] }) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+  const [pinned, setPinned] = useState(false);
   const count = projects.length;
 
   useEffect(() => {
-    if (paused || count <= 1) return;
+    if (paused || pinned || count <= 1) return;
     const id = setInterval(() => setIndex((i) => (i + 1) % count), 1800);
     return () => clearInterval(id);
-  }, [paused, count]);
+  }, [paused, pinned, count]);
 
   return (
     <div
@@ -337,18 +338,51 @@ function AutoCarousel({ projects }: { projects: ProjectAward[] }) {
       </div>
 
       {count > 1 && (
-        <div className="mt-6 flex items-center gap-3">
-          {projects.map((p, i) => (
-            <button
-              key={p.id}
-              type="button"
-              onClick={() => setIndex(i)}
-              aria-label={`Show ${p.suburb} ${p.title}`}
-              className={`h-[2px] transition-all duration-500 ${
-                i === index ? "w-10 bg-ivory" : "w-5 bg-ivory/30 hover:bg-ivory/60"
-              }`}
-            />
-          ))}
+        <div className="mt-6 flex flex-col items-center gap-2">
+          <div className="flex items-center gap-2">
+            {projects.map((p, i) => {
+              const active = i === index;
+              const heldHere = active && pinned;
+              return (
+                <button
+                  key={p.id}
+                  type="button"
+                  onClick={() => {
+                    setIndex(i);
+                    setPinned((prev) => (active ? !prev : true));
+                  }}
+                  aria-label={
+                    heldHere
+                      ? `Resume rotation (currently holding ${p.suburb} ${p.title})`
+                      : `Hold on ${p.suburb} ${p.title}`
+                  }
+                  aria-pressed={heldHere}
+                  title={heldHere ? "Click to resume" : `Click to hold · ${p.suburb}`}
+                  className={`group cursor-pointer flex items-center gap-1.5 rounded-full border px-2.5 py-1 transition-all duration-300 ${
+                    active
+                      ? heldHere
+                        ? "border-brass bg-brass/15 text-brass"
+                        : "border-ivory/70 bg-ivory/10 text-ivory"
+                      : "border-ivory/25 text-ivory/55 hover:border-ivory/60 hover:text-ivory/90 hover:bg-ivory/5"
+                  }`}
+                >
+                  <span
+                    className={`block h-[2px] transition-all duration-500 ${
+                      active ? "w-8 bg-current" : "w-4 bg-current/70"
+                    }`}
+                  />
+                  {active && (
+                    <span aria-hidden="true" className="text-[9px] leading-none">
+                      {heldHere ? "▍▍" : "▶"}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+          <div className="text-[10px] tracking-[0.22em] uppercase text-ivory/45">
+            {pinned ? "Holding · click again to resume" : "Click a marker to hold an image"}
+          </div>
         </div>
       )}
     </div>
