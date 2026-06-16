@@ -510,15 +510,15 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Ensuite", image: rze1.url, tags: ["Ensuite", "Bathroom"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Multi-Space", image: roseville1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: enmore17.url, badge: "Award", tags: ["Bathroom"] },
-  { suburb: "Lindfield", title: "Award-Finalist Bathroom", category: "Multi-Space", image: lind10.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
+  { suburb: "Lindfield", title: "Award-Finalist Bathroom", category: "Bathroom", image: lind10.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB1.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manlyHeroKitchen.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Multi-Space", image: drumN20.url, badge: "Finalist", tags: ["Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
-  { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Multi-Space", image: birch08.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
+  { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
-  { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Multi-Space", image: fd05L.url, tags: ["Multi-Space", "Bathroom"] },
-  { suburb: "Rozelle", title: "Home Facelift", category: "Multi-Space", image: rhf05L.url, badge: "Finalist", tags: ["Multi-Space", "Bathroom", "Ensuite"] },
+  { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Full Interior", image: fd05L.url, tags: ["Full Interior", "Bathroom"] },
+  { suburb: "Rozelle", title: "Home Facelift", category: "Bathroom", image: rhf05L.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
 ];
 
 // Rich detail overrides (keyed by slug). Anything missing falls back to a sensible default.
