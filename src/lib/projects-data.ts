@@ -1277,14 +1277,13 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     afterImages: [fd05L.url, fd28L.url, fd36L.url],
   },
 
-  "rozelle-home-facelift": {
-    badge: "Finalist",
+  "rozelle-bathrooms-facelift": {
     heroCaption:
       "With the design and selections signed off, our clients took a long holiday overseas while the work was completed.",
     scope:
       "A home facelift across three levels for a busy family, two bathrooms reworked along with broader updates so the home flows more functionally for daily life.",
-    awards: ["2023 HIA NSW Bathroom Design of the Year · Finalist"],
-    rightHeading: "Rozelle Home Facelift",
+    awards: [],
+    rightHeading: "Rozelle Bathrooms Facelift",
     rightIntro:
       "A three-level family home given the tender love and care it needed, including two reworked bathrooms designed around awkward attic angles.",
     whatWasntWorking: [
