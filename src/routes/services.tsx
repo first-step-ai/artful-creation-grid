@@ -4,6 +4,7 @@ import { Footer } from "@/components/home/Footer";
 import { Process } from "@/components/home/Process";
 import { useReveal } from "@/hooks/use-reveal";
 import bathroom from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
+import laundry from "@/assets/service-laundries.jpg";
 import kitchen from "@/assets/projects/rozelle-1.jpg.asset.json";
 import multiSpace from "@/assets/projects/rozelle-multispace.jpg.asset.json";
 import fullInterior from "@/assets/projects/drummoyne-fullhome.jpg.asset.json";
