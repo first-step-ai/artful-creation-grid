@@ -520,15 +520,15 @@ export const projects: ProjectSummary[] = [
   { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Ensuite", image: rze1.url, tags: ["Ensuite", "Bathroom"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Multi-Space", image: roseville1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: enmore17.url, badge: "Award", tags: ["Bathroom"] },
-  { suburb: "Lindfield", title: "Award-Finalist Bathroom", category: "Bathroom", image: lind10.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
+  { suburb: "Lindfield", title: "Refined Family Bathrooms", category: "Bathroom", image: lind10.url, tags: ["Bathroom", "Ensuite"] },
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB1.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manlyHeroKitchen.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "Multi-Space", image: drumN20.url, badge: "Finalist", tags: ["Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
-  { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
-  { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, badge: "Finalist", tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
+  { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, tags: ["Bathroom", "Ensuite"] },
+  { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Multi-Space", image: fd05L.url, tags: ["Multi-Space", "Bathroom"] },
-  { suburb: "Rozelle", title: "Bathrooms Facelift", category: "Bathroom", image: rhf05L.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
+  { suburb: "Rozelle", title: "Bathrooms Facelift", category: "Bathroom", image: rhf05L.url, tags: ["Bathroom", "Ensuite"] },
 ];
 
 // Rich detail overrides (keyed by slug). Anything missing falls back to a sensible default.
@@ -984,19 +984,15 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     afterImages: [enmoreAfter1.url, enmoreAfter2.url, enmoreAfter3.url],
   },
 
-  "lindfield-award-finalist-bathroom": {
-    badge: "Finalist",
+  "lindfield-refined-family-bathrooms": {
     heroCaption:
-      "An award-finalist Lindfield renovation delivering two refined bathrooms with cohesive detailing and an elevated, timeless material palette.",
+      "A considered Lindfield renovation delivering two refined bathrooms with cohesive detailing and an elevated, timeless material palette.",
     scope:
-      "This Lindfield home renovation encompassed two bathrooms across the same property: a family bathroom and an ensuite. Both were recognised at the 2024 HIA NSW Awards, winning Bathroom of the Year and named finalists for Bathroom Design of the Year. The family bathroom, set within a wonderful character home, was transformed to deliver a light-filled, luxurious bathing space with ample family storage and a dedicated shower zone. The ensuite addressed an oversized and poorly configured shower, a dark palette, and a vanity too small to share, the goal being a calming retreat, easily used by two, with enough storage for all.",
-    awards: [
-      "2024 HIA NSW Bathroom Design of the Year · Finalist",
-      "2024 HIA NSW Renovated Bathroom of the Year · Finalist",
-    ],
-    rightHeading: "Award-Finalist Bathrooms",
+      "This Lindfield home renovation encompassed two bathrooms across the same property: a family bathroom and an ensuite. The family bathroom, set within a wonderful character home, was transformed to deliver a light-filled, luxurious bathing space with ample family storage and a dedicated shower zone. The ensuite addressed an oversized and poorly configured shower, a dark palette, and a vanity too small to share, the goal being a calming retreat, easily used by two, with enough storage for all.",
+    awards: [],
+    rightHeading: "Refined Family Bathrooms",
     rightIntro:
-      "An award-finalist Lindfield renovation delivering two refined bathrooms with cohesive detailing and an elevated, timeless material palette.",
+      "Two Lindfield bathrooms reworked with cohesive detailing and an elevated, timeless material palette built around how the family lives.",
     whatWasntWorking: [
       "The ensuite was dysfunctional and uninviting, a continual wet floor caused by an oversized shower, a vanity impossible to share, and a dark palette made it a space neither occupant wanted to spend time in",
       "The family bathroom, while set within a beautiful character home, had not kept pace with the home's quality and no longer met the needs of the household",
@@ -1185,12 +1181,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "birchgrove-modern-hamptons-bathrooms": {
-    badge: "Finalist",
     heroCaption:
-      "An award-finalist Birchgrove renovation reconfiguring three bathrooms in a refined modern Hamptons aesthetic that honours the home's original character.",
+      "A considered Birchgrove renovation reconfiguring three bathrooms in a refined modern Hamptons aesthetic that honours the home's original character.",
     scope:
       "Engaged for interior design and a three-bathroom renovation across a much-loved Birchgrove family home, main bathroom, ensuite and powder room, in a modern Hamptons palette that respects the home's heritage character.",
-    awards: ["2020 HIA NSW Bathroom of the Year · Finalist"],
+    awards: [],
     rightHeading: "Modern Hamptons Bathrooms",
     rightIntro:
       "Three reconfigured bathrooms designed around the family, balancing classic Hamptons detailing with a modern, liveable feel.",
@@ -1217,16 +1212,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "castle-cove-full-family-home-refresh": {
-    badge: "Finalist",
     heroCaption:
-      "An award-finalist Castle Cove transformation refreshing the entire family home, three calming bathrooms, a new laundry, plus flooring, staircase and kitchen updates.",
+      "A whole-home Castle Cove transformation refreshing the entire family home, three calming bathrooms, a new laundry, plus flooring, staircase and kitchen updates.",
     scope:
       "A full family home refresh in Castle Cove covering three bathrooms, a new laundry, a kitchen update with reconstituted stone feature and stainless-steel splashback, new floorboards (sanded and polished), new timber stair treads, a timber slat staircase railing, new electrical and a full repaint.",
-    awards: [
-      "2021 HIA-CSR NSW Bathroom Design · Finalist",
-      "2021 HIA-CSR NSW Bathroom of the Year, Medium (6–10sqm) Ensuite · Finalist",
-      "2021 HIA-CSR NSW Bathroom of the Year, Small (up to 6sqm) Powder Room · Finalist",
-    ],
+    awards: [],
     rightHeading: "Full Family Home Refresh",
     rightIntro:
       "A whole-home update for a returning client, three calming bathrooms, a new laundry, kitchen, flooring, staircase and electrical, all coordinated end-to-end.",
@@ -1287,14 +1277,13 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     afterImages: [fd05L.url, fd28L.url, fd36L.url],
   },
 
-  "rozelle-home-facelift": {
-    badge: "Finalist",
+  "rozelle-bathrooms-facelift": {
     heroCaption:
       "With the design and selections signed off, our clients took a long holiday overseas while the work was completed.",
     scope:
       "A home facelift across three levels for a busy family, two bathrooms reworked along with broader updates so the home flows more functionally for daily life.",
-    awards: ["2023 HIA NSW Bathroom Design of the Year · Finalist"],
-    rightHeading: "Rozelle Home Facelift",
+    awards: [],
+    rightHeading: "Rozelle Bathrooms Facelift",
     rightIntro:
       "A three-level family home given the tender love and care it needed, including two reworked bathrooms designed around awkward attic angles.",
     whatWasntWorking: [
