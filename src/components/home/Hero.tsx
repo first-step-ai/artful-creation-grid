@@ -26,9 +26,6 @@ export function Hero() {
         className="reveal absolute inset-0 z-10 mx-auto flex max-w-[1600px] flex-col justify-end md:justify-between px-6 md:px-10 pt-32 md:pt-[20.8rem] pb-20 md:pb-12"
       >
         <div className="max-w-4xl">
-          <div className="eyebrow mb-5 md:mb-6" style={{ color: "var(--ivory)" }}>
-            Sydney Renovation Specialists
-          </div>
           <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl [text-shadow:0_2px_18px_rgba(0,0,0,0.75)]">
             Thoughtfully designed spaces. Beautifully executed.
           </h1>
