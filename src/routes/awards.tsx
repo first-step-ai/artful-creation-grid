@@ -24,7 +24,7 @@ type ProjectAward = {
   awards: AwardEntry[];
   href?: string;
 };
-type YearGroup = { year: string; intro: string; projects: ProjectAward[] };
+type YearGroup = { year: string; intro: string; blurb: string; projects: ProjectAward[] };
 
 const years: YearGroup[] = [
   {
