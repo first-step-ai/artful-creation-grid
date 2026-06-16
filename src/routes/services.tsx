@@ -136,7 +136,7 @@ function ServiceCard({
       {image ? (
         <img
           src={image}
-          alt={title}
+          alt={`${title} renovation by AM Bathrooms + Projects`}
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
         />
