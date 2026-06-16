@@ -381,7 +381,7 @@ function AutoCarousel({ projects }: { projects: ProjectAward[] }) {
             })}
           </div>
           <div className="text-[10px] tracking-[0.22em] uppercase text-ivory/45">
-            {pinned ? "Holding · click again to resume" : "Click a marker to hold an image"}
+            Click a marker to hold an image
           </div>
         </div>
       )}
