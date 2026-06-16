@@ -15,7 +15,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Bathrooms, laundries, kitchens, multi-space and full interior renovations across Sydney - designed, built and managed by AM Bathrooms + Projects.",
+          "Bathrooms, laundries, kitchens, multi-space and full interior renovations across Sydney, designed, built and managed by AM Bathrooms + Projects.",
       },
       { property: "og:title", content: "Services | AM Bathrooms + Projects" },
       {
