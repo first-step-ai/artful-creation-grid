@@ -128,9 +128,9 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2023",
         suburb: "Drummoyne",
-        title: "Kitchen Design Recognition",
-        image: drum2.url,
-        href: "/projects/drummoyne-modern-luxury-living",
+        title: "Award-Finalist Kitchen and Bath",
+        image: drumFinalist.url,
+        href: "/projects/drummoyne-award-finalist-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Kitchen Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Kitchen of the Year" },
@@ -139,8 +139,9 @@ const years: YearGroup[] = [
       {
         id: "rozelle-2023",
         suburb: "Rozelle",
-        title: "Bathroom Design Finalist",
-        image: rozelle3.url,
+        title: "Home Facelift",
+        image: rhfHero.url,
+        href: "/projects/rozelle-home-facelift",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
@@ -165,8 +166,8 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2022",
         suburb: "Drummoyne",
-        title: "Bathroom Design & New Build",
-        image: drum3.url,
+        title: "Modern Luxury Living",
+        image: drum1.url,
         href: "/projects/drummoyne-modern-luxury-living",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
