@@ -43,8 +43,8 @@ const years: YearGroup[] = [
       {
         id: "rozelle-2025",
         suburb: "Rozelle",
-        title: "Award-Winning Family Living",
-        image: rozelle1.url,
+        title: "Refined Family Living",
+        image: rozelleKitchen.url,
         href: "/projects/rozelle-refined-family-living",
         awards: [
           { kind: "Winner", label: "HIA NSW Renovated Kitchen of the Year" },
@@ -56,19 +56,12 @@ const years: YearGroup[] = [
       {
         id: "annandale-2025",
         suburb: "Annandale",
-        title: "Considered Bathroom Renewal",
+        title: "Smart Family Living",
         image: annan1.url,
+        href: "/projects/annandale-smart-family-living",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
-        ],
-      },
-      {
-        id: "newtown-2025",
-        suburb: "Newtown",
-        title: "Inner-West Bathroom",
-        awards: [
-          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
       },
     ],
@@ -82,8 +75,9 @@ const years: YearGroup[] = [
       {
         id: "enmore-2024",
         suburb: "Enmore",
-        title: "Renovated Bathroom Winner",
-        image: nsw2024bathroom.url,
+        title: "Award-Winning Family Bathroom",
+        image: enmoreHero.url,
+        href: "/projects/enmore-award-winning-family-bathroom",
         awards: [
           { kind: "Winner", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
@@ -92,10 +86,10 @@ const years: YearGroup[] = [
       {
         id: "linfield-2024",
         suburb: "Lindfield",
-        title: "Twin Bathroom Renovation",
+        title: "Award-Finalist Bathroom",
+        image: lindHero.url,
+        href: "/projects/lindfield-award-finalist-bathroom",
         awards: [
-          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
-          { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
         ],
@@ -103,9 +97,9 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2024",
         suburb: "Drummoyne",
-        title: "Modern Luxury Living",
-        image: drum1.url,
-        href: "/projects/drummoyne-modern-luxury-living",
+        title: "Award-Finalist Kitchen and Bath",
+        image: drumFinalist.url,
+        href: "/projects/drummoyne-award-finalist-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
