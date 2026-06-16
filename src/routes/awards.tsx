@@ -1,16 +1,19 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import { useReveal } from "@/hooks/use-reveal";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
-import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
+import rozelleKitchen from "@/assets/projects/rozelle-new-9.jpg.asset.json";
 import annan1 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
 import annan2 from "@/assets/projects/annandale-new/annan-07.jpg.asset.json";
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
-import drum2 from "@/assets/projects/drummoyne-2.jpg.asset.json";
-import drum3 from "@/assets/projects/drummoyne-3.jpg.asset.json";
-import nsw2024bathroom from "@/assets/2024-nsw-bathroom-winner.jpg.asset.json";
+import drumFinalist from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
+import enmoreHero from "@/assets/projects/enmore/enmore-2.jpg.asset.json";
+import lindHero from "@/assets/projects/lindfield/lindfield-10.jpg.asset.json";
+import birchHero from "@/assets/projects/birchgrove/birch-08.jpg.asset.json";
+import castleHero from "@/assets/projects/castle-cove/castle-296L.jpg.asset.json";
+import rhfHero from "@/assets/projects/rozelle-facelift/rhf-05L.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
@@ -37,8 +40,8 @@ const years: YearGroup[] = [
       {
         id: "rozelle-2025",
         suburb: "Rozelle",
-        title: "Award-Winning Family Living",
-        image: rozelle1.url,
+        title: "Refined Family Living",
+        image: rozelleKitchen.url,
         href: "/projects/rozelle-refined-family-living",
         awards: [
           { kind: "Winner", label: "HIA NSW Renovated Kitchen of the Year" },
@@ -50,19 +53,12 @@ const years: YearGroup[] = [
       {
         id: "annandale-2025",
         suburb: "Annandale",
-        title: "Considered Bathroom Renewal",
+        title: "Smart Family Living",
         image: annan1.url,
+        href: "/projects/annandale-smart-family-living",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
-        ],
-      },
-      {
-        id: "newtown-2025",
-        suburb: "Newtown",
-        title: "Inner-West Bathroom",
-        awards: [
-          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
       },
     ],
@@ -76,8 +72,9 @@ const years: YearGroup[] = [
       {
         id: "enmore-2024",
         suburb: "Enmore",
-        title: "Renovated Bathroom Winner",
-        image: nsw2024bathroom.url,
+        title: "Award-Winning Family Bathroom",
+        image: enmoreHero.url,
+        href: "/projects/enmore-award-winning-family-bathroom",
         awards: [
           { kind: "Winner", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
@@ -86,10 +83,10 @@ const years: YearGroup[] = [
       {
         id: "linfield-2024",
         suburb: "Lindfield",
-        title: "Twin Bathroom Renovation",
+        title: "Award-Finalist Bathroom",
+        image: lindHero.url,
+        href: "/projects/lindfield-award-finalist-bathroom",
         awards: [
-          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
-          { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
         ],
@@ -97,9 +94,9 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2024",
         suburb: "Drummoyne",
-        title: "Modern Luxury Living",
-        image: drum1.url,
-        href: "/projects/drummoyne-modern-luxury-living",
+        title: "Award-Finalist Kitchen and Bath",
+        image: drumFinalist.url,
+        href: "/projects/drummoyne-award-finalist-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
@@ -128,9 +125,9 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2023",
         suburb: "Drummoyne",
-        title: "Kitchen Design Recognition",
-        image: drum2.url,
-        href: "/projects/drummoyne-modern-luxury-living",
+        title: "Award-Finalist Kitchen and Bath",
+        image: drumFinalist.url,
+        href: "/projects/drummoyne-award-finalist-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Kitchen Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Kitchen of the Year" },
@@ -139,8 +136,9 @@ const years: YearGroup[] = [
       {
         id: "rozelle-2023",
         suburb: "Rozelle",
-        title: "Bathroom Design Finalist",
-        image: rozelle3.url,
+        title: "Home Facelift",
+        image: rhfHero.url,
+        href: "/projects/rozelle-home-facelift",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
@@ -165,8 +163,8 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2022",
         suburb: "Drummoyne",
-        title: "Bathroom Design & New Build",
-        image: drum3.url,
+        title: "Modern Luxury Living",
+        image: drum1.url,
         href: "/projects/drummoyne-modern-luxury-living",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
@@ -203,7 +201,9 @@ const years: YearGroup[] = [
       {
         id: "castle-cove-2021",
         suburb: "Castle Cove",
-        title: "Three-Category Recognition",
+        title: "Full Family Home Refresh",
+        image: castleHero.url,
+        href: "/projects/castle-cove-full-family-home-refresh",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design" },
           { kind: "Finalist", label: "HIA NSW Bathroom of the Year · Medium (6–10sqm Ensuite)" },
@@ -221,7 +221,9 @@ const years: YearGroup[] = [
       {
         id: "birchgrove-2020",
         suburb: "Birchgrove",
-        title: "Bathroom of the Year Finalist",
+        title: "Modern Hamptons Bathrooms",
+        image: birchHero.url,
+        href: "/projects/birchgrove-modern-hamptons-bathrooms",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom of the Year" },
         ],
@@ -253,7 +255,7 @@ export const Route = createFileRoute("/awards")({
 
 function ProjectCard({ project }: { project: ProjectAward }) {
   const hasImage = Boolean(project.image);
-  return (
+  const content = (
     <div className="relative h-full w-full">
       {hasImage ? (
         <img
@@ -275,8 +277,15 @@ function ProjectCard({ project }: { project: ProjectAward }) {
         </div>
       )}
       <div className="absolute inset-x-0 bottom-0 pt-20 px-6 pb-6 md:px-7 md:pb-7 bg-gradient-to-t from-black/95 via-black/75 to-transparent">
-        <div className="text-[11px] tracking-[0.28em] uppercase text-ivory/85 mb-2">
-          {project.suburb}
+        <div className="flex items-center justify-between mb-2">
+          <div className="text-[11px] tracking-[0.28em] uppercase text-ivory/85">
+            {project.suburb}
+          </div>
+          {project.href && (
+            <span className="text-[10px] tracking-[0.24em] uppercase text-brass/90 group-hover:text-brass transition-colors">
+              View Project →
+            </span>
+          )}
         </div>
         <div className="font-sans text-2xl md:text-[28px] leading-tight text-ivory mb-4">
           {project.title}
@@ -300,6 +309,19 @@ function ProjectCard({ project }: { project: ProjectAward }) {
       </div>
     </div>
   );
+
+  if (project.href) {
+    return (
+      <Link
+        to={project.href}
+        className="group block h-full w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brass"
+        aria-label={`View ${project.suburb} ${project.title} project`}
+      >
+        {content}
+      </Link>
+    );
+  }
+  return content;
 }
 
 function AutoCarousel({ projects }: { projects: ProjectAward[] }) {
