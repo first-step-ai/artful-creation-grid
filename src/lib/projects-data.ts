@@ -389,8 +389,6 @@ import fd05L from "@/assets/projects/five-dock/fd-05L.jpg.asset.json";
 import fd28L from "@/assets/projects/five-dock/fd-28L.jpg.asset.json";
 import fd36L from "@/assets/projects/five-dock/fd-36L.jpg.asset.json";
 import fd39L from "@/assets/projects/five-dock/fd-39L.jpg.asset.json";
-import fd03p from "@/assets/projects/five-dock/fd-03p.jpg.asset.json";
-import fd06p from "@/assets/projects/five-dock/fd-06p.jpg.asset.json";
 import fd10p from "@/assets/projects/five-dock/fd-10p.jpg.asset.json";
 import fd11p from "@/assets/projects/five-dock/fd-11p.jpg.asset.json";
 import fd16p from "@/assets/projects/five-dock/fd-16p.jpg.asset.json";
