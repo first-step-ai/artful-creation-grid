@@ -258,7 +258,7 @@ export const Route = createFileRoute("/awards")({
 
 function ProjectCard({ project }: { project: ProjectAward }) {
   const hasImage = Boolean(project.image);
-  return (
+  const content = (
     <div className="relative h-full w-full">
       {hasImage ? (
         <img
@@ -280,8 +280,15 @@ function ProjectCard({ project }: { project: ProjectAward }) {
         </div>
       )}
       <div className="absolute inset-x-0 bottom-0 pt-20 px-6 pb-6 md:px-7 md:pb-7 bg-gradient-to-t from-black/95 via-black/75 to-transparent">
-        <div className="text-[11px] tracking-[0.28em] uppercase text-ivory/85 mb-2">
-          {project.suburb}
+        <div className="flex items-center justify-between mb-2">
+          <div className="text-[11px] tracking-[0.28em] uppercase text-ivory/85">
+            {project.suburb}
+          </div>
+          {project.href && (
+            <span className="text-[10px] tracking-[0.24em] uppercase text-brass/90 group-hover:text-brass transition-colors">
+              View Project →
+            </span>
+          )}
         </div>
         <div className="font-sans text-2xl md:text-[28px] leading-tight text-ivory mb-4">
           {project.title}
@@ -305,6 +312,19 @@ function ProjectCard({ project }: { project: ProjectAward }) {
       </div>
     </div>
   );
+
+  if (project.href) {
+    return (
+      <Link
+        to={project.href}
+        className="group block h-full w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brass"
+        aria-label={`View ${project.suburb} ${project.title} project`}
+      >
+        {content}
+      </Link>
+    );
+  }
+  return content;
 }
 
 function AutoCarousel({ projects }: { projects: ProjectAward[] }) {
