@@ -107,7 +107,7 @@ const years: YearGroup[] = [
       },
       {
         id: "national-2024",
-        suburb: "AM Studio",
+        suburb: "AM Bathrooms + Projects",
         title: "National Recognition",
         image: national2024.url,
         fit: "contain",
