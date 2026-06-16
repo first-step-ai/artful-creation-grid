@@ -9,7 +9,7 @@ import annan1 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
 import annan2 from "@/assets/projects/annandale-new/annan-07.jpg.asset.json";
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import drumFinalist from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
-import enmoreHero from "@/assets/projects/enmore/enmore-2.jpg.asset.json";
+import enmoreHero from "@/assets/projects/enmore/enmore-17.jpg.asset.json";
 import lindHero from "@/assets/projects/lindfield/lindfield-10.jpg.asset.json";
 import birchHero from "@/assets/projects/birchgrove/birch-08.jpg.asset.json";
 import castleHero from "@/assets/projects/castle-cove/castle-296L.jpg.asset.json";
