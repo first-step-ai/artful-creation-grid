@@ -182,7 +182,7 @@ const years: YearGroup[] = [
       },
       {
         id: "nsw-2022",
-        suburb: "AM Studio",
+        suburb: "AM Bathrooms + Projects",
         title: "State Recognition",
         image: nsw2022.url,
         fit: "contain",
