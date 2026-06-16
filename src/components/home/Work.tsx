@@ -4,7 +4,7 @@ import rozelle3 from "@/assets/projects/rozelle-3.jpg.asset.json";
 import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
 import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
 import rozelleMultispace from "@/assets/projects/rozelle-multispace.jpg.asset.json";
-import camp2 from "@/assets/projects/camperdown-v3-1.jpg.asset.json";
+import bexleyV21 from "@/assets/projects/bexley-v2-1.jpg.asset.json";
 import drummoyne1 from "@/assets/projects/drummoyne-v2-1.jpg.asset.json";
 import drumN20 from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
@@ -22,7 +22,7 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 const projects = [
   { suburb: "Drummoyne", title: "Modern Luxury Living", category: "FULL INTERIOR", image: drummoyne1.url, slug: "drummoyne-modern-luxury-living" },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen and Bath", category: "MULTI-SPACE", image: drumN20.url, slug: "drummoyne-award-finalist-kitchen-and-bath" },
-  { suburb: "Camperdown", title: "Inner-City Charm", category: "BATHROOM", image: camp2.url, slug: "camperdown-inner-city-charm" },
+  { suburb: "Bexley", title: "Bold Utility", category: "BATHROOM", image: bexleyV21.url, slug: "bexley-bold-utility" },
 ];
 
 const suburbs = [
