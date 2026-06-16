@@ -41,7 +41,7 @@ const services = [
   },
   {
     title: "Multi-Space",
-    body: "Two or more connected spaces planned and built together - kitchen and living, ensuite and main bath, or a whole level. One schedule, one team.",
+    body: "Two or more connected spaces planned and built together, kitchen and living, ensuite and main bath, or a whole level. One schedule, one team.",
     image: multiSpace.url,
   },
   {
