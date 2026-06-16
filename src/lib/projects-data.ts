@@ -876,32 +876,6 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     afterImages: [elizAfter1.url, elizAfter2.url, elizAfter3.url],
   },
 
-  "newtown-reimagined-ensuite-retreat": {
-    heroCaption:
-      "An award-finalist Newtown ensuite transformed within a tight footprint through clever reconfiguration, a space-saving sliding door, and a softened curved entry.",
-    scope:
-      "This Newtown ensuite was completely reimagined to unlock its full potential. Working within a tight footprint, the layout was reconfigured, a sliding door was introduced, and the flow from the bedroom was refined. The project was a 2025 HIA NSW Finalist for Bathroom Design of the Year.",
-    awards: ["2025 HIA NSW Bathroom Design of the Year · Finalist"],
-    rightHeading: "Reimagined Ensuite Retreat",
-    rightIntro:
-      "An award-finalist Newtown ensuite transformed within a tight footprint through clever reconfiguration, a space-saving sliding door, and a softened curved entry.",
-    whatWasntWorking: [
-      "The master is located on the first floor and had a very small WC attached",
-      "There was no storage and no shower",
-      "The client's goal was to update the bathroom's style and increase storage",
-      "They wished for a shower but believed it was not possible",
-      "Continued to go downstairs to use the main bathroom",
-    ],
-    whatWeDid:
-      "The entire master bedroom layout was reviewed to see what was possible. The layout was reconfigured by relocating the bifold entry door to the WC with a new sliding door. The flow from the bedroom was refined with a soft curved corner wall to elevate the overall experience. With this change, a walk in shower was made possible with a bench seat changing area and a custom curved vanity provided the much needed storage space requested.",
-    designFeatures: [
-      "Reconfigured master bedroom layout",
-      "New cavity sliding door",
-      "A new curved corner detail wall for easy flow",
-    ],
-    gallery: [drum1.url, drum2.url, drum3.url, drum4.url, drum5.url, drum6.url],
-  },
-
   "rozelle-ensuite-and-study-conversion": {
     heroCaption:
       "A Rozelle renovation transforming an unused bedroom into a refined private ensuite and practical home study through considered floorplan reconfiguration.",
