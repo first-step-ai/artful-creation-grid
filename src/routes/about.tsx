@@ -174,7 +174,7 @@ function Profiles() {
       image: antePhoto.url,
       heading: "Meet Ante Matek",
       paragraphs: [
-        "Ante Matek leads the build side of AM Bathrooms + Projects, bringing two decades of hands-on construction and project management experience to every renovation. His skill set sits where craft and coordination meet - running trades, sequencing work tightly, and protecting the quality of the finish from demolition through to handover.",
+        "Ante Matek leads the build side of AM Bathrooms + Projects, bringing two decades of hands-on construction and project management experience to every renovation. His skill set sits where craft and coordination meet, running trades, sequencing work tightly, and protecting the quality of the finish from demolition through to handover.",
         "Ante started the studio with Jenny because he kept seeing the same problem on site: a disconnect between the people designing a space and the people building it, which left clients absorbing the cost in time, money and stress. He wanted a model where design decisions and build decisions were made by the same team, in the same room.",
         "What he is most proud of is the way that model now plays out in real homes. One accountable team, clear communication, fewer surprises, and a finished result that holds up to the way families actually live.",
       ],
