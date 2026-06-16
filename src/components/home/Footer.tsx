@@ -1,7 +1,7 @@
 import amLogo from "@/assets/am-full.png.asset.json";
 import socialInstagram from "@/assets/projects/bexley-3.jpg.asset.json";
-import socialPinterest from "@/assets/projects/pyrmont-4.jpg.asset.json";
-import socialFacebook from "@/assets/projects/annandale-new/annan-07.jpg.asset.json";
+import socialPinterest from "@/assets/projects/abbotsford-new-1.jpg.asset.json";
+import socialFacebook from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
 
 const SOCIALS = [
   { label: "Instagram", img: socialInstagram.url, href: "https://www.instagram.com/ambathrooms/" },
