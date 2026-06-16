@@ -648,13 +648,13 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
 
   "annandale-smart-family-living": {
     badge: "Finalist",
-    heroCaption: "An Annandale terrace bathroom reworked for a family, light, layered and properly functional.",
+    heroCaption: "A whole-floor rework of an Annandale terrace, reshaping how a family moves through the home, from the living and dining areas through to a new laundry and an award-recognised bathroom.",
     scope:
-      "Reworked bathroom within an existing terrace footprint, separate bath and shower, retained skylight, bespoke detailing.",
+      "Multi-room renovation within an existing terrace: bathroom, laundry, living and dining, and the connecting space leading to the garden.",
     awards: ["2024 HIA Renovated Bathroom of the Year · Finalist"],
     rightHeading: "Smart Family Living",
     rightIntro:
-      "An Annandale terrace bathroom that wasn't working for a family. Dark, tight, and short on storage, the brief was to make it genuinely functional without losing character. The result is a light-filled space with a separate bath and shower, generous storage, and bespoke detailing throughout.",
+      "A whole-floor rework of an Annandale terrace, reshaping how a family moves through the home, from the living and dining areas through to a new laundry and an award-recognised bathroom.",
     whatWasntWorking: [
       "Original bathroom was dark and worked against the household",
       "Tight footprint limited what the space could hold",
@@ -663,15 +663,14 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Layout hadn't been thought through for daily use",
     ],
     whatWeDid:
-      "A new layout was developed to fit both a separate bath and shower within the existing footprint. The existing skylight was retained, keeping the room light without structural changes. Bespoke curves, integrated lighting, and considered finishes were brought in to give the space character without compromising practicality.",
+      "The original bathroom was dark, tight, and short on storage, and the layout worked against the household's daily routine, with no room for both a bath and a shower. Working within the existing footprint, we reworked the layout to hold a separate bath and shower, retained the existing skylight so the room gained light without structural change, and built in storage sized for a family. Bespoke curves, layered lighting, and custom finishes give the room character without costing it practicality. It was named a finalist for the 2024 HIA Renovated Bathroom of the Year.",
     designFeatures: [
-      "New layout fitting separate bath and shower within a tight footprint",
-      "Skylight retained to maintain natural light",
-      "Bespoke curved detailing softening the room",
-      "Generous integrated storage throughout",
+      "Separate bath and shower planned into the original footprint",
+      "Existing skylight retained for natural light",
+      "Bespoke curved detailing softening the room's lines",
+      "Integrated storage sized for a family",
       "Layered ambient and task lighting",
-      "Custom finishes balancing character with everyday function",
-      "Considered material selection throughout",
+      "Custom finishes selected to wear well day to day",
     ],
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Renovations, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
