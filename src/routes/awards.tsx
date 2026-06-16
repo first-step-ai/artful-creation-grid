@@ -195,6 +195,8 @@ const years: YearGroup[] = [
   {
     year: "2021",
     intro: "HIA-CSR NSW Housing and Kitchen & Bathroom Awards",
+    blurb:
+      "HIA-CSR NSW finalist recognition for a single Castle Cove home across three bathroom categories — design, medium ensuite and powder room.",
     projects: [
       {
         id: "castle-cove-2021",
