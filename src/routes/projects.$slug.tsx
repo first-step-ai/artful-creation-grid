@@ -430,7 +430,7 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
           <figure key={ri} className="overflow-hidden bg-burgundy">
             <img
               src={row.items[0].src}
-              alt={`${title} - image ${row.items[0].index + 1}`}
+              alt={`${title}, image ${row.items[0].index + 1}`}
               loading="lazy"
               className="w-full h-auto object-cover"
             />
