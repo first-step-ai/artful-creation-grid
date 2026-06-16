@@ -43,7 +43,7 @@ export function Process() {
                   src={s.image}
                   alt={s.title}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                  className={`h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04] ${s.title === "Build" ? "scale-[1.15]" : ""}`}
                 />
               </div>
               <div className="mt-5">
