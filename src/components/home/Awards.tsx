@@ -69,7 +69,7 @@ export function Awards() {
         className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-10 md:py-12"
       >
         {/* Awards headline - separated, sitting above the content block */}
-        <div className="eyebrow mb-8 md:mb-10">Awards</div>
+        <h2 className="eyebrow mb-8 md:mb-10">Awards</h2>
 
         <div className="w-full flex flex-col md:flex-row gap-8 md:gap-0 md:items-stretch">
           {/* Left: Logo + Awards list - 35% - centered (rendered second on mobile so featured image appears first) */}

@@ -1,0 +1,19 @@
+# AM Bathrooms + Projects
+
+> A Sydney design + build studio shaping bathrooms, kitchens, laundries and full interiors since 1998.
+
+AM Bathrooms + Projects is a boutique Sydney renovation studio founded by Jenny and Ante Matek. One team handles design, build and project management from first sketch to final handover, with a fixed-price promise and HIA award recognition year after year.
+
+## Pages
+
+- [Home](/): Studio overview, featured projects, and awards.
+- [Services](/services): Bathroom, kitchen, laundry, multi-space and full interior renovations across Sydney.
+- [Projects](/projects): Portfolio of completed Sydney renovations.
+- [Awards](/awards): HIA NSW winners and finalists, year by year.
+- [About](/about): Story of Jenny and Ante Matek and the AM team.
+- [Contact](/contact): Book a consultation for a Sydney renovation.
+
+## Optional
+
+- [Rozelle | Refined Family Living](/projects/rozelle-refined-family-living): 2025 HIA NSW Renovated Kitchen of the Year.
+- [Drummoyne | Award-Winning Kitchen and Bath](/projects/drummoyne-award-winning-kitchen-and-bath): 2023 HIA NSW Kitchen Design of the Year.

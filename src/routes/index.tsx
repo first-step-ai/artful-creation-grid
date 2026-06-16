@@ -16,21 +16,23 @@ import heroImg from "@/assets/hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AM Bathrooms + Projects | Sydney Renovation Specialists" },
+      { title: "Sydney Bathroom, Kitchen & Interior Renovations | AM Bathrooms + Projects" },
       {
         name: "description",
         content:
           "A Sydney design + build studio shaping bathrooms, kitchens, laundries and interiors with care, collaboration and a fixed-price promise.",
       },
-      { property: "og:title", content: "AM Bathrooms + Projects | Sydney Renovation Specialists" },
+      { property: "og:title", content: "Sydney Bathroom, Kitchen & Interior Renovations" },
       {
         property: "og:description",
         content:
           "Considered interiors, built across Sydney. Design + build renovations since 1998.",
       },
+      { property: "og:url", content: "https://artful-creation-grid.lovable.app/" },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
     ],
+    links: [{ rel: "canonical", href: "https://artful-creation-grid.lovable.app/" }],
   }),
   component: Home,
 });

@@ -72,17 +72,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AM Bathrooms + Projects | Sydney Renovation Specialists" },
-      { name: "description", content: "Sydney design + build studio shaping bathrooms, kitchens, laundries and interiors since 1998." },
       { name: "author", content: "AM Bathrooms + Projects" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "AM Bathrooms + Projects" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "AM Bathrooms + Projects | Sydney Renovation Specialists" },
-      { name: "twitter:title", content: "AM Bathrooms + Projects | Sydney Renovation Specialists" },
-      { property: "og:description", content: "Sydney design + build studio shaping bathrooms, kitchens, laundries and interiors since 1998." },
-      { name: "twitter:description", content: "Sydney design + build studio shaping bathrooms, kitchens, laundries and interiors since 1998." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/974a5e9b-be50-4d6f-9559-c62d32971168/id-preview-0ad1a1fa--7845c90f-b684-47ba-ac4e-fa40de7dabd9.lovable.app-1780039546659.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/974a5e9b-be50-4d6f-9559-c62d32971168/id-preview-0ad1a1fa--7845c90f-b684-47ba-ac4e-fa40de7dabd9.lovable.app-1780039546659.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -91,6 +84,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "AM Bathrooms + Projects",
+          description:
+            "Sydney design + build studio shaping bathrooms, kitchens, laundries and full interiors since 1998.",
+          url: "https://artful-creation-grid.lovable.app",
+          telephone: "+61 2 9556 0220",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "77-105 Victoria Road",
+            addressLocality: "Drummoyne",
+            addressRegion: "NSW",
+            postalCode: "2047",
+            addressCountry: "AU",
+          },
+          areaServed: "Sydney",
+          foundingDate: "1998",
+          sameAs: [
+            "https://www.instagram.com/ambathrooms/",
+            "https://pinterest.com/ambathroomsprojects/",
+            "https://www.facebook.com/ambathrooms/",
+          ],
+        }),
       },
     ],
   }),

@@ -12,17 +12,38 @@ import fullInterior from "@/assets/projects/drummoyne-fullhome.jpg.asset.json";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services | Bathroom, Kitchen & Full Interior Renovations" },
+      { title: "Sydney Renovation Services | Bathrooms, Kitchens & Interiors" },
       {
         name: "description",
         content:
           "Bathrooms, laundries, kitchens, multi-space and full interior renovations across Sydney, designed, built and managed by AM Bathrooms + Projects.",
       },
-      { property: "og:title", content: "Services | AM Bathrooms + Projects" },
+      { property: "og:title", content: "Sydney Renovation Services | AM Bathrooms + Projects" },
       {
         property: "og:description",
         content:
           "Everything from a single bathroom to a full interior renovation. One team, end to end.",
+      },
+      { property: "og:url", content: "https://artful-creation-grid.lovable.app/services" },
+      { property: "og:image", content: bathroom.url },
+      { name: "twitter:image", content: bathroom.url },
+    ],
+    links: [{ rel: "canonical", href: "https://artful-creation-grid.lovable.app/services" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Sydney Renovation Services",
+          itemListElement: [
+            { "@type": "Service", name: "Bathroom Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
+            { "@type": "Service", name: "Laundry Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
+            { "@type": "Service", name: "Kitchen Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
+            { "@type": "Service", name: "Multi-Space Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
+            { "@type": "Service", name: "Full Interior Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
+          ],
+        }),
       },
     ],
   }),
@@ -87,7 +108,7 @@ function Hero() {
     >
       <div className="eyebrow mb-6">Our Expertise</div>
       <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl">
-        What we do.
+        Sydney Renovation Services
       </h1>
       <div className="mt-6 max-w-xl font-sans text-sm md:text-base text-ivory/75 leading-relaxed space-y-1">
         <p>Everything from a single bathroom to a full interior renovation.</p>
@@ -115,7 +136,7 @@ function ServiceCard({
       {image ? (
         <img
           src={image}
-          alt={title}
+          alt={`${title} renovation by AM Bathrooms + Projects`}
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
         />

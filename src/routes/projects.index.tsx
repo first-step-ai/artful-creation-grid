@@ -3,6 +3,7 @@ import { useState } from "react";
 import { projects, slugify, type ProjectSummary } from "@/lib/projects-data";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
+import portfolioHero from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
 
 const filters = [
   "All",
@@ -20,17 +21,20 @@ const filters = [
 export const Route = createFileRoute("/projects/")({
   head: () => ({
     meta: [
-      { title: "Projects | AM Bathrooms + Projects" },
+      { title: "Sydney Bathroom & Interior Portfolio | AM Bathrooms + Projects" },
       {
         name: "description",
         content:
           "Bathrooms, kitchens, laundries and full interiors crafted across Sydney by AM Bathrooms + Projects.",
       },
-      { property: "og:title", content: "Projects | AM Bathrooms + Projects" },
+      { property: "og:title", content: "Sydney Bathroom & Interior Portfolio" },
       {
         property: "og:description",
         content: "Real homes, real people, real results, the AM portfolio.",
       },
+      { property: "og:url", content: "https://artful-creation-grid.lovable.app/projects" },
+      { property: "og:image", content: portfolioHero.url },
+      { name: "twitter:image", content: portfolioHero.url },
     ],
     links: [
       { rel: "canonical", href: "https://artful-creation-grid.lovable.app/projects" },
@@ -76,7 +80,7 @@ function ProjectsPage() {
         <section className="mx-auto max-w-[1600px] px-6 md:px-10 pt-28 md:pt-48 pb-12 md:pb-16">
           <div className="eyebrow mb-6">Portfolio</div>
           <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-3xl md:text-4xl lg:text-5xl">
-            HOMES WE ARE PROUD OF.
+            Sydney Bathroom & Interior Portfolio
           </h1>
           <p className="mt-8 max-w-xl font-sans text-base md:text-lg text-ivory/80 leading-relaxed">
             Every project here is a real home. Real people, real results.

@@ -235,20 +235,22 @@ const years: YearGroup[] = [
 export const Route = createFileRoute("/awards")({
   head: () => ({
     meta: [
-      { title: "Awards | AM Bathrooms + Projects" },
+      { title: "HIA Award-Winning Sydney Renovations | AM Bathrooms + Projects" },
       {
         name: "description",
         content:
           "A timeline of recognition. HIA NSW winners and finalists alongside national business awards earned year after year.",
       },
-      { property: "og:title", content: "Awards | AM Bathrooms + Projects" },
+      { property: "og:title", content: "HIA Award-Winning Sydney Renovations" },
       {
         property: "og:description",
         content: "A timeline of recognition. Projects and the awards they earned.",
       },
+      { property: "og:url", content: "https://artful-creation-grid.lovable.app/awards" },
       { property: "og:image", content: rozelle1.url },
       { name: "twitter:image", content: rozelle1.url },
     ],
+    links: [{ rel: "canonical", href: "https://artful-creation-grid.lovable.app/awards" }],
   }),
   component: AwardsPage,
 });
