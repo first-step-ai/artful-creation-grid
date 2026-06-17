@@ -172,6 +172,9 @@ function ProjectsPage() {
 
 function Tile({ project }: { project: ProjectSummary }) {
   const slug = slugify(project.suburb, project.title);
+  const awards = getProjectDetail(slug).awards ?? [];
+  const isWinner = project.badge === "Award" || awards.some((a) => /winner/i.test(a));
+  const isFinalist = project.badge === "Finalist" || awards.some((a) => /finalist/i.test(a));
   return (
     <Link
       to="/projects/$slug"
@@ -187,11 +190,18 @@ function Tile({ project }: { project: ProjectSummary }) {
             loading="lazy"
             className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
           />
-          {project.badge && (
-            <span className="absolute top-5 right-5 bg-ivory text-oxblood px-3 py-1.5 text-[10px] tracking-[0.28em] uppercase font-medium">
-              {project.badge === "Award" ? "AWARD WINNING" : project.badge}
-            </span>
-          )}
+          <div className="absolute top-5 right-5 flex flex-col items-end gap-2">
+            {isWinner && (
+              <span className="bg-ivory text-oxblood px-3 py-1.5 text-[10px] tracking-[0.28em] uppercase font-medium">
+                Award Winning
+              </span>
+            )}
+            {isFinalist && (
+              <span className="bg-ivory text-oxblood px-3 py-1.5 text-[10px] tracking-[0.28em] uppercase font-medium">
+                Finalist
+              </span>
+            )}
+          </div>
         </div>
         <figcaption className="mt-5">
           <div className="font-sans text-sm md:text-base text-brass font-light tracking-[0.1em] uppercase break-words">
