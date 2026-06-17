@@ -80,13 +80,14 @@ function ProjectsPage() {
         <section className="mx-auto max-w-[1600px] px-6 md:px-10 pt-28 md:pt-48 pb-12 md:pb-16">
           <div className="eyebrow mb-6">Portfolio</div>
           <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-3xl md:text-4xl lg:text-5xl">
-            Sydney Bathroom & Interior Portfolio
+            Homes We Are Proud Of
           </h1>
           <p className="mt-8 max-w-xl font-sans text-base md:text-lg text-ivory/80 leading-relaxed">
-            Every project here is a real home. Real people, real results.
+            Every project in our Sydney bathroom and interior portfolio is a real home. Real people, real results.
             <br />
             Click through to see the full story.
           </p>
+
 
           <div className="mt-14 flex flex-wrap gap-3">
             {filters.map((f) => {
