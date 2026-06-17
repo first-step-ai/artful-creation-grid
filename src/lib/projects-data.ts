@@ -795,6 +795,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Light-filled layouts despite compact proportions",
     ],
     gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url, drum8.url, drum9.url, drum10.url, drum11.url],
+    beforeImages: [drumBefore1.url, drumBefore2.url, drumBefore3.url],
+    afterImages: [drumAfter1.url, drumAfter2.url, drumAfter3.url],
   },
 
   "putney-reimagined-heritage-living": {
@@ -1085,6 +1087,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       rwh21.url,
       rwh22.url, rwh24.url,
     ],
+    beforeImages: [rwhBefore1.url, rwhBefore2.url, rwhBefore3.url],
+    afterImages: [rwhAfter1.url, rwhAfter2.url, rwhAfter3.url],
   },
 
   "manly-beachside-apartment-revival": {
