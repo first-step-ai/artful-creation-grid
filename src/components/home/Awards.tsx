@@ -1,15 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
-import annan1 from "@/assets/projects/2024-hia-bathroom.jpg.asset.json";
+import enmore31 from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
+import enmore7 from "@/assets/projects/enmore/enmore-7.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import teamGroup from "@/assets/2022-small-business-award.png.asset.json";
 import hia2025 from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
-const awards: { title: string; description: string; image: string; fit?: "cover" | "contain" }[] = [
+type AwardItem = { title: string; description: string; image: string; images?: string[]; fit?: "cover" | "contain" };
+const awards: AwardItem[] = [
   { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: hia2025.url },
-  { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: annan1.url },
+  { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: enmore31.url, images: [enmore31.url, enmore7.url] },
   { title: "NATIONAL WINNER 2024 AUSTRALIA", description: "Small Business Management Award", image: national2024.url },
   { title: "NSW WINNER 2022", description: "Small Business Management Award", image: teamGroup.url },
 ];
@@ -127,14 +129,32 @@ export function Awards() {
           >
             <div className="w-full overflow-hidden bg-burgundy aspect-[4/5] md:aspect-auto md:absolute md:inset-0">
               {awards.map((a, i) => (
-                <img
+                <div
                   key={a.title}
-                  src={a.image}
-                  alt={`${a.title}, ${a.description}`}
-                  loading="eager"
-                  className={`absolute inset-0 h-full w-full ${a.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} transition-opacity duration-700 ease-in-out ${i === active ? "opacity-100" : "opacity-0"}`}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${i === active ? "opacity-100" : "opacity-0"}`}
                   style={{ willChange: "opacity" }}
-                />
+                >
+                  {a.images && a.images.length > 1 ? (
+                    <div className="grid grid-cols-2 gap-3 md:gap-4 h-full w-full">
+                      {a.images.slice(0, 2).map((src, j) => (
+                        <img
+                          key={j}
+                          src={src}
+                          alt={`${a.title}, ${a.description}`}
+                          loading="eager"
+                          className="h-full w-full object-cover"
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <img
+                      src={a.image}
+                      alt={`${a.title}, ${a.description}`}
+                      loading="eager"
+                      className={`h-full w-full ${a.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"}`}
+                    />
+                  )}
+                </div>
               ))}
             </div>
           </div>
