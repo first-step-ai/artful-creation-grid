@@ -992,7 +992,10 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "A considered Lindfield renovation delivering two refined bathrooms with cohesive detailing and an elevated, timeless material palette.",
     scope:
       "This Lindfield home renovation encompassed two bathrooms across the same property: a family bathroom and an ensuite. The family bathroom, set within a wonderful character home, was transformed to deliver a light-filled, luxurious bathing space with ample family storage and a dedicated shower zone. The ensuite addressed an oversized and poorly configured shower, a dark palette, and a vanity too small to share, the goal being a calming retreat, easily used by two, with enough storage for all.",
-    awards: [],
+    awards: [
+      "2024 HIA NSW Bathroom Design of the Year · Finalist (×2)",
+      "2024 HIA NSW Renovated Bathroom of the Year · Finalist (×2)",
+    ],
     rightHeading: "Refined Family Bathrooms",
     rightIntro:
       "Two Lindfield bathrooms reworked with cohesive detailing and an elevated, timeless material palette built around how the family lives.",
