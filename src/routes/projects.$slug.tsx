@@ -86,9 +86,10 @@ function ProjectDetailPage() {
 
         {/* THREE-COLUMN BODY */}
         <section className="mx-auto max-w-[1600px] px-6 md:px-10 py-14 md:py-28">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,2fr)_1fr] gap-10 lg:gap-12">
-            {/* LEFT COLUMN - sticky scroll (mobile: after gallery) */}
-            <aside className="order-3 lg:order-1 lg:sticky lg:top-28 lg:self-start lg:pr-2 space-y-12">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,2fr)_1fr] gap-10 lg:gap-12 lg:items-start">
+            {/* LEFT COLUMN - independent scroll on desktop (mobile: after gallery) */}
+            <aside className="order-3 lg:order-1 lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pr-4 lg:-mr-2 space-y-12 scrollbar-thin">
+
               <Block label="Scope">
                 <p className="font-sans text-sm text-ivory/85">
                   {p.scope}
@@ -158,8 +159,9 @@ function ProjectDetailPage() {
             </div>
 
 
-            {/* RIGHT COLUMN - sticky scroll (mobile: first) */}
-            <aside className="order-1 lg:order-3 lg:sticky lg:top-28 lg:self-start lg:pl-2 space-y-12">
+            {/* RIGHT COLUMN - independent scroll on desktop (mobile: first) */}
+            <aside className="order-1 lg:order-3 lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pl-4 lg:-ml-2 space-y-12 scrollbar-thin">
+
               <div>
                 <h2 className="font-sans text-lg md:text-xl font-light leading-snug text-ivory">
                   {p.rightHeading.replace(/[-–-]/g, " ")}
