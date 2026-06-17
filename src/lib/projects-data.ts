@@ -1178,6 +1178,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial: "",
     hero: drumN20.url,
     gallery: [drumN20.url, drumN46.url, drumN45.url, drumN33.url, drumN36.url, drumN44.url, drumN37.url, drumN38.url, drumN43.url, drumN28.url, drumN23.url, drumN21.url, drumN25.url, drumN22.url, drumN27.url, drumN26.url],
+    beforeImages: [],
+    afterImages: [],
   },
 
   "birchgrove-modern-hamptons-bathrooms": {
@@ -1304,6 +1306,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "Wow!! Congratulations on being finalist. It's already award winning in our book. A year on, love the bathrooms AND all the new stuff you made happen last year. Gives us constant happiness.",
     gallery: [rhf05L.url, rhf01p.url, rhf02p.url, rhf27L.url, rhf04p.url, rhf06p.url, rhf20L.url, rhf08p.url, rhf11p.url, rhf22L.url, rhf14p.url, rhf17p.url, rhf24L.url, rhf23p.url, rhf28p.url, rhf29p.url, rhf31p.url],
+    beforeImages: [],
+    afterImages: [],
   },
 };
 
