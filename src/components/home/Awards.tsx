@@ -129,14 +129,32 @@ export function Awards() {
           >
             <div className="w-full overflow-hidden bg-burgundy aspect-[4/5] md:aspect-auto md:absolute md:inset-0">
               {awards.map((a, i) => (
-                <img
+                <div
                   key={a.title}
-                  src={a.image}
-                  alt={`${a.title}, ${a.description}`}
-                  loading="eager"
-                  className={`absolute inset-0 h-full w-full ${a.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"} transition-opacity duration-700 ease-in-out ${i === active ? "opacity-100" : "opacity-0"}`}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${i === active ? "opacity-100" : "opacity-0"}`}
                   style={{ willChange: "opacity" }}
-                />
+                >
+                  {a.images && a.images.length > 1 ? (
+                    <div className="grid grid-cols-2 gap-3 md:gap-4 h-full w-full">
+                      {a.images.slice(0, 2).map((src, j) => (
+                        <img
+                          key={j}
+                          src={src}
+                          alt={`${a.title}, ${a.description}`}
+                          loading="eager"
+                          className="h-full w-full object-cover"
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <img
+                      src={a.image}
+                      alt={`${a.title}, ${a.description}`}
+                      loading="eager"
+                      className={`h-full w-full ${a.fit === "contain" ? "object-contain p-4 md:p-6" : "object-cover"}`}
+                    />
+                  )}
+                </div>
               ))}
             </div>
           </div>
