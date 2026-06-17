@@ -82,14 +82,12 @@ function ProjectsPage() {
       <Nav />
       <main>
         <section className="mx-auto max-w-[1600px] px-6 md:px-10 pt-28 md:pt-48 pb-12 md:pb-16">
-          <div className="eyebrow mb-6">Portfolio</div>
+          <div className="eyebrow mb-6">Sydney Bathroom and Interior Portfolio</div>
           <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-3xl md:text-4xl lg:text-5xl">
             Homes We Are Proud Of.
           </h1>
           <p className="mt-8 font-sans text-base md:text-lg text-ivory/80 leading-relaxed whitespace-nowrap">
-            Every project in our Sydney bathroom and interior portfolio is a real home.
-            <br />
-            Real people, real results.
+            Every project in our portfolio is a real home, real people, real results.
             <br />
             Click through to see the full story.
           </p>
