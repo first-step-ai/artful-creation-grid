@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { projects, slugify, type ProjectSummary } from "@/lib/projects-data";
+import { projects, slugify, getProjectDetail, type ProjectSummary } from "@/lib/projects-data";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import portfolioHero from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
