@@ -159,8 +159,9 @@ function ProjectDetailPage() {
             </div>
 
 
-            {/* RIGHT COLUMN - sticky scroll (mobile: first) */}
-            <aside className="order-1 lg:order-3 lg:sticky lg:top-28 lg:self-start lg:pl-2 space-y-12">
+            {/* RIGHT COLUMN - independent scroll on desktop (mobile: first) */}
+            <aside className="order-1 lg:order-3 lg:sticky lg:top-28 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pl-4 lg:-ml-2 space-y-12 scrollbar-thin">
+
               <div>
                 <h2 className="font-sans text-lg md:text-xl font-light leading-snug text-ivory">
                   {p.rightHeading.replace(/[-–-]/g, " ")}
