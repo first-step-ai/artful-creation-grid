@@ -472,7 +472,7 @@ function AwardsPage() {
               </h1>
               <p className="mt-6 max-w-xl text-ivory/90 text-sm md:text-base font-light leading-relaxed [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">
                 Year by year, the projects and the people behind them recognised by
-                the industry. Cards rotate automatically, hover to pause.
+                the industry.
               </p>
             </div>
           </div>
