@@ -82,11 +82,14 @@ function ProjectsPage() {
           <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-3xl md:text-4xl lg:text-5xl">
             Homes We Are Proud Of.
           </h1>
-          <p className="mt-8 max-w-xl font-sans text-base md:text-lg text-ivory/80 leading-relaxed">
-            Every project in our Sydney bathroom and interior portfolio is a real home. Real people, real results.
+          <p className="mt-8 font-sans text-base md:text-lg text-ivory/80 leading-relaxed whitespace-nowrap">
+            Every project in our Sydney bathroom and interior portfolio is a real home.
+            <br />
+            Real people, real results.
             <br />
             Click through to see the full story.
           </p>
+
 
 
           <div className="mt-14 flex flex-wrap gap-3">
