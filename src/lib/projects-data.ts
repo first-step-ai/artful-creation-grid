@@ -651,7 +651,10 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     heroCaption: "A whole-floor rework of an Annandale terrace, reshaping how a family moves through the home, from the living and dining areas through to a new laundry and an award-recognised bathroom.",
     scope:
       "Multi-room renovation within an existing terrace: bathroom, laundry, living and dining, and the connecting space leading to the garden.",
-    awards: ["2024 HIA Renovated Bathroom of the Year · Finalist"],
+    awards: [
+      "2025 HIA NSW Bathroom Design of the Year · Finalist",
+      "2025 HIA NSW Renovated Bathroom of the Year · Finalist",
+    ],
     rightHeading: "Smart Family Living",
     rightIntro:
       "A whole-floor rework of an Annandale terrace, reshaping how a family moves through the home, from the living and dining areas through to a new laundry and an award-recognised bathroom.",
@@ -989,7 +992,10 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "A considered Lindfield renovation delivering two refined bathrooms with cohesive detailing and an elevated, timeless material palette.",
     scope:
       "This Lindfield home renovation encompassed two bathrooms across the same property: a family bathroom and an ensuite. The family bathroom, set within a wonderful character home, was transformed to deliver a light-filled, luxurious bathing space with ample family storage and a dedicated shower zone. The ensuite addressed an oversized and poorly configured shower, a dark palette, and a vanity too small to share, the goal being a calming retreat, easily used by two, with enough storage for all.",
-    awards: [],
+    awards: [
+      "2024 HIA NSW Bathroom Design of the Year · Finalist (×2)",
+      "2024 HIA NSW Renovated Bathroom of the Year · Finalist (×2)",
+    ],
     rightHeading: "Refined Family Bathrooms",
     rightIntro:
       "Two Lindfield bathrooms reworked with cohesive detailing and an elevated, timeless material palette built around how the family lives.",
@@ -1187,7 +1193,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "A considered Birchgrove renovation reconfiguring three bathrooms in a refined modern Hamptons aesthetic that honours the home's original character.",
     scope:
       "Engaged for interior design and a three-bathroom renovation across a much-loved Birchgrove family home, main bathroom, ensuite and powder room, in a modern Hamptons palette that respects the home's heritage character.",
-    awards: [],
+    awards: ["2020 HIA Bathroom of the Year · Finalist"],
     rightHeading: "Modern Hamptons Bathrooms",
     rightIntro:
       "Three reconfigured bathrooms designed around the family, balancing classic Hamptons detailing with a modern, liveable feel.",
@@ -1218,7 +1224,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "A whole-home Castle Cove transformation refreshing the entire family home, three calming bathrooms, a new laundry, plus flooring, staircase and kitchen updates.",
     scope:
       "A full family home refresh in Castle Cove covering three bathrooms, a new laundry, a kitchen update with reconstituted stone feature and stainless-steel splashback, new floorboards (sanded and polished), new timber stair treads, a timber slat staircase railing, new electrical and a full repaint.",
-    awards: [],
+    awards: [
+      "2021 HIA-CSR NSW Bathroom Design · Finalist",
+      "2021 HIA-CSR NSW Bathroom of the Year, Medium Bathroom 6–10sqm (Ensuite) · Finalist",
+      "2021 HIA-CSR NSW Bathroom of the Year, Small Bathroom up to 6sqm (Powder Room) · Finalist",
+    ],
     rightHeading: "Full Family Home Refresh",
     rightIntro:
       "A whole-home update for a returning client, three calming bathrooms, a new laundry, kitchen, flooring, staircase and electrical, all coordinated end-to-end.",
