@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { projects, slugify, type ProjectSummary } from "@/lib/projects-data";
+import { projects, slugify, getProjectDetail, type ProjectSummary } from "@/lib/projects-data";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import portfolioHero from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
@@ -51,8 +51,12 @@ function ProjectsPage() {
 
   const filtered = projects.filter((p) => {
     if (active === "All") return true;
-    if (active === "Award Winning") return p.badge === "Award";
-    if (active === "Award Finalist") return p.badge === "Finalist";
+    if (active === "Award Winning" || active === "Award Finalist") {
+      const awards = getProjectDetail(slugify(p.suburb, p.title)).awards ?? [];
+      const isWinner = p.badge === "Award" || awards.some((a) => /winner/i.test(a));
+      const isFinalist = p.badge === "Finalist" || awards.some((a) => /finalist/i.test(a));
+      return active === "Award Winning" ? isWinner : isFinalist;
+    }
     const tags = p.tags ?? [p.category];
     return tags.includes(active);
   });
