@@ -963,6 +963,12 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "2024 HIA NSW Renovated Bathroom of the Year · Winner",
       "2024 HIA NSW Bathroom Design of the Year · Finalist",
     ],
+    press: [
+      {
+        label: "HIA · NSW Renovated Bathroom of the Year 2024",
+        url: "https://hia.com.au/awards-and-events/awards/new-south-wales-awards-program/new-south-wales-award-winners-2024/bathroom-of-the-year/renovated-bathroom",
+      },
+    ],
     rightHeading: "Award-Winning Family Bathroom",
     rightIntro:
       "An award-winning Enmore bathroom designed for multi-generational living, resolving an awkwardly shaped space into a beautifully zoned, characterful family bathroom.",
