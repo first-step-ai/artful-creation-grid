@@ -51,8 +51,12 @@ function ProjectsPage() {
 
   const filtered = projects.filter((p) => {
     if (active === "All") return true;
-    if (active === "Award Winning") return p.badge === "Award";
-    if (active === "Award Finalist") return p.badge === "Finalist";
+    if (active === "Award Winning" || active === "Award Finalist") {
+      const awards = getProjectDetail(slugify(p.suburb, p.title)).awards ?? [];
+      const isWinner = p.badge === "Award" || awards.some((a) => /winner/i.test(a));
+      const isFinalist = p.badge === "Finalist" || awards.some((a) => /finalist/i.test(a));
+      return active === "Award Winning" ? isWinner : isFinalist;
+    }
     const tags = p.tags ?? [p.category];
     return tags.includes(active);
   });
