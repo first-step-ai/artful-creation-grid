@@ -148,6 +148,7 @@ const years: YearGroup[] = [
         id: "lane-cove-2023",
         suburb: "Lane Cove",
         title: "Bathroom Design Finalist",
+        image: laneCove2023.url,
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
