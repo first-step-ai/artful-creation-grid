@@ -914,6 +914,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Integrated study space",
     ],
     gallery: [rze1.url, rze2.url, rze3.url, rze4.url, rze5.url, rze8.url, rze9.url, rze10.url, rze11.url, rze12.url, rze14.url, rze15.url],
+    beforeImages: [],
+    afterImages: [],
   },
 
   "roseville-calm-family-spaces": {
