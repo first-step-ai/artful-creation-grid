@@ -143,7 +143,7 @@ function ServiceCard({
       ) : null}
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
       <div className="relative h-full flex flex-col justify-end p-6 md:p-10 max-w-2xl">
-        <h2 className="font-serif text-xl md:text-2xl font-light text-ivory leading-tight">
+        <h2 className="font-sans uppercase tracking-[0.06em] text-xl md:text-2xl font-light text-ivory leading-tight">
           {title}
         </h2>
         <p className="mt-3 font-sans text-xs md:text-sm text-ivory/80 leading-relaxed max-w-md">
