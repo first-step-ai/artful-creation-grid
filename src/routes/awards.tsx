@@ -85,7 +85,7 @@ const years: YearGroup[] = [
         suburb: "Lindfield",
         title: "Award-Finalist Bathroom",
         image: lindHero.url,
-        href: "/projects/lindfield-award-finalist-bathroom",
+        href: "/projects/lindfield-refined-family-bathrooms",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
@@ -96,7 +96,7 @@ const years: YearGroup[] = [
         suburb: "Drummoyne",
         title: "Award-Finalist Kitchen and Bath",
         image: drumFinalist.url,
-        href: "/projects/drummoyne-award-finalist-kitchen-and-bath",
+        href: "/projects/drummoyne-award-winning-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
