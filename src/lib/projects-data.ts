@@ -1224,7 +1224,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "A whole-home Castle Cove transformation refreshing the entire family home, three calming bathrooms, a new laundry, plus flooring, staircase and kitchen updates.",
     scope:
       "A full family home refresh in Castle Cove covering three bathrooms, a new laundry, a kitchen update with reconstituted stone feature and stainless-steel splashback, new floorboards (sanded and polished), new timber stair treads, a timber slat staircase railing, new electrical and a full repaint.",
-    awards: [],
+    awards: [
+      "2021 HIA-CSR NSW Bathroom Design · Finalist",
+      "2021 HIA-CSR NSW Bathroom of the Year, Medium Bathroom 6–10sqm (Ensuite) · Finalist",
+      "2021 HIA-CSR NSW Bathroom of the Year, Small Bathroom up to 6sqm (Powder Room) · Finalist",
+    ],
     rightHeading: "Full Family Home Refresh",
     rightIntro:
       "A whole-home update for a returning client, three calming bathrooms, a new laundry, kitchen, flooring, staircase and electrical, all coordinated end-to-end.",
