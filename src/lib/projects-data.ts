@@ -651,7 +651,10 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     heroCaption: "A whole-floor rework of an Annandale terrace, reshaping how a family moves through the home, from the living and dining areas through to a new laundry and an award-recognised bathroom.",
     scope:
       "Multi-room renovation within an existing terrace: bathroom, laundry, living and dining, and the connecting space leading to the garden.",
-    awards: ["2024 HIA Renovated Bathroom of the Year · Finalist"],
+    awards: [
+      "2025 HIA NSW Bathroom Design of the Year · Finalist",
+      "2025 HIA NSW Renovated Bathroom of the Year · Finalist",
+    ],
     rightHeading: "Smart Family Living",
     rightIntro:
       "A whole-floor rework of an Annandale terrace, reshaping how a family moves through the home, from the living and dining areas through to a new laundry and an award-recognised bathroom.",
