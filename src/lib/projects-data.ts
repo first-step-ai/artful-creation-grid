@@ -1193,7 +1193,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "A considered Birchgrove renovation reconfiguring three bathrooms in a refined modern Hamptons aesthetic that honours the home's original character.",
     scope:
       "Engaged for interior design and a three-bathroom renovation across a much-loved Birchgrove family home, main bathroom, ensuite and powder room, in a modern Hamptons palette that respects the home's heritage character.",
-    awards: [],
+    awards: ["2020 HIA Bathroom of the Year · Finalist"],
     rightHeading: "Modern Hamptons Bathrooms",
     rightIntro:
       "Three reconfigured bathrooms designed around the family, balancing classic Hamptons detailing with a modern, liveable feel.",
