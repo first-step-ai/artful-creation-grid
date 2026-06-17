@@ -17,6 +17,7 @@ import rhfHero from "@/assets/projects/rozelle-facelift/rhf-05L.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
+import laneCove2023 from "@/assets/projects/lane-cove-2023.jpg.asset.json";
 
 type AwardEntry = { kind: "Winner" | "Finalist"; label: string };
 type ProjectAward = {
@@ -147,6 +148,7 @@ const years: YearGroup[] = [
         id: "lane-cove-2023",
         suburb: "Lane Cove",
         title: "Bathroom Design Finalist",
+        image: laneCove2023.url,
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
