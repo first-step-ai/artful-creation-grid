@@ -1178,6 +1178,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial: "",
     hero: drumN20.url,
     gallery: [drumN20.url, drumN46.url, drumN45.url, drumN33.url, drumN36.url, drumN44.url, drumN37.url, drumN38.url, drumN43.url, drumN28.url, drumN23.url, drumN21.url, drumN25.url, drumN22.url, drumN27.url, drumN26.url],
+    beforeImages: [],
+    afterImages: [],
   },
 
   "birchgrove-modern-hamptons-bathrooms": {
