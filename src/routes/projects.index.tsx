@@ -88,8 +88,6 @@ function ProjectsPage() {
           </h1>
           <p className="mt-8 font-sans text-base md:text-lg text-ivory/80 leading-relaxed whitespace-nowrap">
             Every project in our portfolio is a real home, real people, real results.
-            <br />
-            Click through to see the full story.
           </p>
 
 
