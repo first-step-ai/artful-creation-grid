@@ -358,7 +358,7 @@ function ExpandableBlock({
               <span className="font-sans text-[11px] tracking-[0.28em] text-ivory-muted pt-1 shrink-0 w-6">
                 {numbered ? String(i + 1).padStart(2, "0") : ""}
               </span>
-              <span>{item}</span>
+              <span>{label === "Testimonial" ? `"${item}"` : item}</span>
             </li>
           ))}
         </ul>
