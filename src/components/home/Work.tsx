@@ -40,10 +40,15 @@ export function Work() {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-12">
 
         <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 mb-10 md:mb-14">
-          <div className="eyebrow">
-            <span>Award Winning</span>
-            <span className="mx-2 opacity-50">|</span>
-            <span>Refined Family Living</span>
+          <div>
+            <div className="font-sans text-[10px] md:text-[11px] tracking-[0.35em] uppercase font-medium text-ivory-muted mb-1.5">
+              Featured Home
+            </div>
+            <div className="eyebrow">
+              <span>Award Winning</span>
+              <span className="mx-2 opacity-50">|</span>
+              <span>Refined Family Living</span>
+            </div>
           </div>
           <div className="eyebrow">
             Rozelle
