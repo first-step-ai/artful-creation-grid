@@ -13,6 +13,7 @@ import enmoreHero from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
 import lindHero from "@/assets/projects/lindfield/lindfield-10.jpg.asset.json";
 import birchHero from "@/assets/projects/birchgrove/birch-08.jpg.asset.json";
 import castleHero from "@/assets/projects/castle-cove/castle-296L.jpg.asset.json";
+import castleCoveRefresh from "@/assets/awards/castle-cove-refresh.jpg.asset.json";
 import rhfHero from "@/assets/projects/rozelle-facelift/rhf-05L.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
@@ -204,7 +205,7 @@ const years: YearGroup[] = [
         id: "castle-cove-2021",
         suburb: "Castle Cove",
         title: "Full Family Home Refresh",
-        image: castleHero.url,
+        image: castleCoveRefresh.url,
         href: "/projects/castle-cove-full-family-home-refresh",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design" },
