@@ -528,7 +528,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, tags: ["Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Multi-Space", image: fd05L.url, tags: ["Multi-Space", "Bathroom"] },
-  { suburb: "Rozelle", title: "Bathrooms Facelift", category: "Bathroom", image: rhf05L.url, tags: ["Bathroom", "Ensuite"] },
+  { suburb: "Rozelle", title: "Bathrooms Facelift", category: "Bathroom", image: rhf05L.url, badge: "Finalist", tags: ["Bathroom", "Ensuite"] },
 ];
 
 // Rich detail overrides (keyed by slug). Anything missing falls back to a sensible default.
@@ -1308,7 +1308,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "With the design and selections signed off, our clients took a long holiday overseas while the work was completed.",
     scope:
       "A home facelift across three levels for a busy family, two bathrooms reworked along with broader updates so the home flows more functionally for daily life.",
-    awards: [],
+    awards: ["2023 Finalist — HIA Bathroom Design of the Year"],
     rightHeading: "Rozelle Bathrooms Facelift",
     rightIntro:
       "A three-level family home given the tender love and care it needed, including two reworked bathrooms designed around awkward attic angles.",
