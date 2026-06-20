@@ -4,6 +4,8 @@ import enmore31 from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
 import enmore7 from "@/assets/projects/enmore/enmore-7.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import teamGroup from "@/assets/2022-small-business-award.png.asset.json";
+import sb2022a from "@/assets/awards/hia-2023-podium.jpg.asset.json";
+import sb2022b from "@/assets/awards/hia-2023-stage.jpg.asset.json";
 import hia2025 from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
