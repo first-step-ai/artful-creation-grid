@@ -223,7 +223,7 @@ function Hero() {
       <div className="relative mx-auto max-w-[1600px] px-6 md:px-10 pt-40 md:pt-48 pb-20 md:pb-28">
         <div className="eyebrow mb-6">Sydney Renovation Services</div>
         <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]">
-          Our Expertise
+          Our Expertise.
         </h1>
         <div className="mt-6 max-w-xl font-sans text-sm md:text-base text-ivory/90 leading-relaxed space-y-1 [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">
           <p>Everything from a single bathroom to a full home renovation.</p>
