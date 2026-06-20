@@ -46,6 +46,25 @@ import drumN43 from "@/assets/projects/drummoyne-new/drum-43.jpg.asset.json";
 import drumN44 from "@/assets/projects/drummoyne-new/drum-44.jpg.asset.json";
 import drumN45 from "@/assets/projects/drummoyne-new/drum-45.jpg.asset.json";
 import drumN46 from "@/assets/projects/drummoyne-new/drum-46.jpg.asset.json";
+// Drummoyne, Award-Winning Kitchen and Bath (Renwick St)
+import drumAw6 from "@/assets/projects/drum-aw/drum-aw-6.jpg.asset.json";
+import drumAw7 from "@/assets/projects/drum-aw/drum-aw-7.jpg.asset.json";
+import drumAw9 from "@/assets/projects/drum-aw/drum-aw-9.jpg.asset.json";
+import drumAw10 from "@/assets/projects/drum-aw/drum-aw-10.jpg.asset.json";
+import drumAw2 from "@/assets/projects/drum-aw/drum-aw-2.jpg.asset.json";
+import drumAw23 from "@/assets/projects/drum-aw/drum-aw-23.jpg.asset.json";
+import drumAw12 from "@/assets/projects/drum-aw/drum-aw-12.jpg.asset.json";
+import drumAw26 from "@/assets/projects/drum-aw/drum-aw-26.jpg.asset.json";
+import drumAw29 from "@/assets/projects/drum-aw/drum-aw-29.jpg.asset.json";
+import drumAw13 from "@/assets/projects/drum-aw/drum-aw-13.jpg.asset.json";
+import drumAw36 from "@/assets/projects/drum-aw/drum-aw-36.jpg.asset.json";
+import drumAw38 from "@/assets/projects/drum-aw/drum-aw-38.jpg.asset.json";
+import drumAw15 from "@/assets/projects/drum-aw/drum-aw-15.jpg.asset.json";
+import drumAw32 from "@/assets/projects/drum-aw/drum-aw-32.jpg.asset.json";
+import drumAw44 from "@/assets/projects/drum-aw/drum-aw-44.jpg.asset.json";
+import drumAw18 from "@/assets/projects/drum-aw/drum-aw-18.jpg.asset.json";
+import drumAw19 from "@/assets/projects/drum-aw/drum-aw-19.jpg.asset.json";
+import drumAw33 from "@/assets/projects/drum-aw/drum-aw-33.jpg.asset.json";
 
 // Rozelle
 import rozelle1 from "@/assets/projects/rozelle-new-9.jpg.asset.json";
