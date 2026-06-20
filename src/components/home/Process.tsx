@@ -1,6 +1,6 @@
 import { useReveal } from "@/hooks/use-reveal";
 import discovery from "@/assets/process/discovery-rozelle.jpg.asset.json";
-import design from "@/assets/process/design-balmain.jpg.asset.json";
+import design from "@/assets/process/design-lindfield.jpg.asset.json";
 import build from "@/assets/process/build-bathroom.jpg.asset.json";
 import handover from "@/assets/process/handover-balmain.jpg.asset.json";
 
