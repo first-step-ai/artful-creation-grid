@@ -99,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           telephone: "+61 2 9556 0220",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "77-105 Victoria Road",
+            streetAddress: "Studio 8, 77-105 Victoria Road",
             addressLocality: "Drummoyne",
             addressRegion: "NSW",
             postalCode: "2047",
