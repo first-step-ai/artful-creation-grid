@@ -416,6 +416,10 @@ function AutoCarousel({ projects }: { projects: ProjectAward[] }) {
 function YearSection({ group }: { group: YearGroup }) {
   const ref = useReveal<HTMLDivElement>();
 
+  const winners = group.projects
+    .flatMap((p) => p.awards)
+    .filter((a) => a.kind === "Winner");
+
   return (
     <section
       ref={ref}
@@ -432,7 +436,26 @@ function YearSection({ group }: { group: YearGroup }) {
           <p className="mt-6 text-ivory/70 text-[14px] md:text-[15px] max-w-sm mx-auto">
             {group.intro}
           </p>
-          <p className="mt-4 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm mx-auto">
+
+          {winners.length > 0 && (
+            <div className="mt-5 flex flex-col items-center gap-3 w-full max-w-sm">
+              {winners.map((w, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-3 w-full justify-center"
+                >
+                  <span className="shrink-0 inline-flex items-center justify-center w-[78px] text-[9px] tracking-[0.22em] uppercase px-2 py-[4px] border bg-ivory text-oxblood border-ivory">
+                    {w.kind}
+                  </span>
+                  <span className="text-left text-[12px] md:text-[13px] leading-snug text-ivory/90">
+                    {w.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <p className="mt-5 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm mx-auto">
             {group.blurb}
           </p>
         </div>
