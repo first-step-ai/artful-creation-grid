@@ -154,7 +154,7 @@ export function Process() {
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   aria-expanded={isOpen}
                   aria-controls={`process-${s.title}`}
-                  className="block text-left w-full"
+                  className="block text-left w-full appearance-none bg-transparent border-0 p-0 m-0 outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brass/60 cursor-pointer"
                 >
                   <div className="relative aspect-square overflow-hidden bg-burgundy">
                     <img
