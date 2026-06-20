@@ -315,7 +315,7 @@ function ServiceCard({
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-controls={`service-${title}`}
-            className="mt-5 self-start inline-flex items-center gap-2 text-[11px] md:text-xs uppercase tracking-[0.18em] text-brass hover:text-ivory transition-colors"
+            className="mt-5 self-start inline-flex items-center gap-2 text-[11px] md:text-xs uppercase tracking-[0.18em] text-brass hover:text-ivory transition-colors appearance-none bg-transparent border-0 outline-none focus:outline-none focus-visible:outline-none focus-visible:text-ivory cursor-pointer"
           >
             <span>{open ? "Show less" : "Learn more"}</span>
             <span aria-hidden="true" className={`transition-transform ${open ? "rotate-45" : ""}`}>+</span>
