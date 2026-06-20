@@ -4,6 +4,8 @@ import enmore31 from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
 import enmore7 from "@/assets/projects/enmore/enmore-7.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import teamGroup from "@/assets/2022-small-business-award.png.asset.json";
+import sb2022a from "@/assets/awards/hia-2023-podium.jpg.asset.json";
+import sb2022b from "@/assets/awards/hia-2023-stage.jpg.asset.json";
 import hia2025 from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
@@ -13,7 +15,7 @@ const awards: AwardItem[] = [
   { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: hia2025.url },
   { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: enmore31.url, images: [enmore31.url, enmore7.url] },
   { title: "NATIONAL WINNER 2024 AUSTRALIA", description: "Small Business Management Award", image: national2024.url },
-  { title: "NSW WINNER 2022", description: "Small Business Management Award", image: teamGroup.url },
+  { title: "NSW WINNER 2022", description: "Small Business Management Award", image: sb2022a.url, images: [sb2022a.url, sb2022b.url] },
 ];
 
 export function Awards() {
