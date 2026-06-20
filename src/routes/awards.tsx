@@ -171,7 +171,7 @@ const years: YearGroup[] = [
         href: "/projects/drummoyne-modern-luxury-living",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
-          { kind: "Finalist", label: "HIA NSW New Bathroom over $425,000" },
+          { kind: "Finalist", label: "HIA NSW New Bathroom over $25,000" },
         ],
       },
       {
