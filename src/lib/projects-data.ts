@@ -770,7 +770,10 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     heroCaption: "A full Drummoyne apartment interior reimagined within a fixed footprint, warm, light and quietly luxurious across the bathrooms, kitchen and living spaces.",
     scope:
       "Full interior renovation of a Drummoyne apartment, two bathrooms, kitchen and living spaces, each reimagined from the ground up within a fixed footprint.",
-    awards: [],
+    awards: [
+      "2022 HIA NSW Bathroom Design of the Year · Finalist",
+      "2022 HIA NSW New Bathroom over $25,000 · Finalist",
+    ],
     rightHeading: "Modern Luxury Living",
     rightIntro:
       "A full interior renovation of a Drummoyne apartment, covering two bathrooms, the kitchen and the living spaces, each reimagined from the ground up. Within a fixed apartment footprint, the goal was to improve functionality, increase storage, and introduce warmth and softness, creating a home that feels calm, light-filled, and properly suited to everyday living.",
