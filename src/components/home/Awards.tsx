@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
-import enmore31 from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
-import enmore7 from "@/assets/projects/enmore/enmore-7.jpg.asset.json";
+import enmore31 from "@/assets/projects/enmore/enmore-31-v2.jpg.asset.json";
+import enmore7 from "@/assets/projects/enmore/enmore-5.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import teamGroup from "@/assets/2022-small-business-award.png.asset.json";
 import sb2022a from "@/assets/awards/hia-2023-podium.jpg.asset.json";
