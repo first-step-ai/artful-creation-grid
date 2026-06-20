@@ -106,9 +106,9 @@ function Hero() {
       ref={ref}
       className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-40 md:pt-48 pb-20 md:pb-28"
     >
-      <div className="eyebrow mb-6">Our Expertise</div>
+      <div className="eyebrow mb-6">Sydney Renovation Services</div>
       <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl">
-        Sydney Renovation Services
+        Our Expertise
       </h1>
       <div className="mt-6 max-w-xl font-sans text-sm md:text-base text-ivory/75 leading-relaxed space-y-1">
         <p>Everything from a single bathroom to a full interior renovation.</p>
