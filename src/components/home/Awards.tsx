@@ -133,7 +133,7 @@ export function Awards() {
             <div className="w-full overflow-hidden bg-burgundy aspect-[4/5] md:aspect-auto md:absolute md:inset-0">
               {awards.map((a, i) => (
                 <div
-                  key={a.title}
+                  key={`img-${a.title}-${i}`}
                   className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${i === active ? "opacity-100" : "opacity-0"}`}
                   style={{ willChange: "opacity" }}
                 >
