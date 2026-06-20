@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import { Process } from "@/components/home/Process";
@@ -16,13 +17,13 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Bathrooms, laundries, kitchens, multi-space and full interior renovations across Sydney, designed, built and managed by AM Bathrooms + Projects.",
+          "Award-winning design, project management and construction under one team. Bathrooms, kitchens, laundries, multi-space and full home renovations across Sydney.",
       },
       { property: "og:title", content: "Sydney Renovation Services | AM Bathrooms + Projects" },
       {
         property: "og:description",
         content:
-          "Everything from a single bathroom to a full interior renovation. One team, end to end.",
+          "One integrated team for design, project management and construction. Bathrooms, kitchens, laundries and full home renovations in Sydney.",
       },
       { property: "og:url", content: "https://artful-creation-grid.lovable.app/services" },
       { property: "og:image", content: bathroom.url },
@@ -41,7 +42,7 @@ export const Route = createFileRoute("/services")({
             { "@type": "Service", name: "Laundry Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
             { "@type": "Service", name: "Kitchen Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
             { "@type": "Service", name: "Multi-Space Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
-            { "@type": "Service", name: "Full Interior Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
+            { "@type": "Service", name: "Full Home Renovations", areaServed: "Sydney", provider: { "@type": "LocalBusiness", name: "AM Bathrooms + Projects" } },
           ],
         }),
       },
@@ -50,34 +51,136 @@ export const Route = createFileRoute("/services")({
   component: ServicesPage,
 });
 
-const services = [
+type ServiceDetail = {
+  heading: string;
+  intro: string[];
+  pointsTitle: string;
+  points: string[];
+  outro?: string;
+};
+
+const services: {
+  title: string;
+  body: string;
+  image: string;
+  detail: ServiceDetail;
+}[] = [
   {
     title: "Bathrooms",
     body: "Considered, calm bathrooms replanned, replumbed and rebuilt to look beautiful for decades, not seasons.",
     image: bathroom.url,
+    detail: {
+      heading: "Bathroom Renovations Sydney",
+      intro: [
+        "We don't just renovate bathrooms, we design spaces that elevate everyday living.",
+        "Our difference lies in award-winning design expertise, detailed project management and exceptional craftsmanship, all delivered through one seamless process.",
+      ],
+      pointsTitle: "What sets us apart",
+      points: [
+        "Award-winning bathroom designers and builders",
+        "Personalised layouts tailored to your lifestyle",
+        "Material and fixture selections curated with you",
+        "Fixed-price transparency and clear communication",
+        "One dedicated team from concept through completion",
+        "A focus on timeless design over short-lived trends",
+      ],
+      outro:
+        "Whether it's a compact ensuite or a luxury retreat, we create bathrooms that feel refined, functional and built to last.",
+    },
   },
   {
     title: "Laundries",
     body: "Hardworking laundry spaces designed for daily life. Concealed storage, smart layouts and finishes that elevate the everyday.",
     image: laundry.url,
+    detail: {
+      heading: "Laundry Renovations Sydney",
+      intro: [
+        "A well-designed laundry makes one of the most-used rooms in your home feel like one of the best.",
+        "We design laundries that work hard, look great and fit seamlessly into the way your household runs.",
+      ],
+      pointsTitle: "What sets us apart",
+      points: [
+        "Smart layouts designed around how you actually use the space",
+        "Custom storage solutions that keep everything in its place",
+        "Quality finishes and fittings that balance style and durability",
+        "Bench space, cabinetry and appliance integration planned with purpose",
+        "Design that complements the rest of your home",
+        "Seamless management from design through to completion",
+      ],
+      outro:
+        "A laundry that's been properly designed doesn't just function better, it makes everyday life a little easier.",
+    },
   },
   {
     title: "Kitchen",
     body: "Kitchens designed around how you actually cook, host and live. Built once, properly, with materials that age beautifully.",
     image: kitchen.url,
+    detail: {
+      heading: "Kitchen Renovations Sydney",
+      intro: [
+        "The kitchen is where life happens. It needs to work beautifully, not just look beautiful.",
+        "We design kitchens around the way your family lives, cooks, entertains and moves through the home.",
+      ],
+      pointsTitle: "What sets us apart",
+      points: [
+        "Interior design expertise combined with construction knowledge",
+        "Custom layouts designed for real-life functionality",
+        "Premium cabinetry, finishes and appliance integration",
+        "Detailed planning to maximise storage and flow",
+        "Seamless management from design to installation",
+        "Timeless, considered design that adds lasting value",
+      ],
+      outro:
+        "The result is a kitchen that feels effortless to use and beautiful to live with every day.",
+    },
   },
   {
     title: "Multi-Space",
     body: "Two or more connected spaces planned and built together, kitchen and living, ensuite and main bath, or a whole level. One schedule, one team.",
     image: multiSpace.url,
+    detail: {
+      heading: "Multi-Space Renovations Sydney",
+      intro: [
+        "When renovating multiple rooms, consistency matters.",
+        "Our design-led approach ensures every space feels connected, cohesive and thoughtfully considered.",
+      ],
+      pointsTitle: "What sets us apart",
+      points: [
+        "A complete vision for your home, not isolated room upgrades",
+        "Cohesive material palettes and detailing throughout",
+        "Expert coordination of trades and timelines",
+        "Interior design and construction managed under one roof",
+        "Reduced stress through a single point of contact",
+        "Solutions tailored to your family's needs and future plans",
+      ],
+      outro:
+        "We transform homes holistically, creating spaces that feel elevated, functional and beautifully connected.",
+    },
   },
   {
-    title: "Full Interior",
-    body: "Whole-of-home interior renovations, planned and delivered as a single cohesive project. One team, one manager, one schedule.",
+    title: "Full Home",
+    body: "Whole-of-home renovations, planned and delivered as a single cohesive project. One team, one manager, one schedule.",
     image: fullInterior.url,
+    detail: {
+      heading: "Full Home Renovations Sydney",
+      intro: [
+        "A full home renovation is one of the most significant investments you'll make. It deserves a team with the expertise to guide every detail.",
+        "Our integrated design-and-build process provides clarity, confidence and exceptional results from start to finish.",
+      ],
+      pointsTitle: "What sets us apart",
+      points: [
+        "Award-winning design expertise",
+        "End-to-end project management",
+        "Detailed planning before construction begins",
+        "Seamless coordination of all trades and suppliers",
+        "Transparent communication throughout the journey",
+        "Beautifully resolved homes designed for modern living",
+      ],
+      outro:
+        "We create homes that not only look extraordinary but feel effortless to live in every day.",
+    },
   },
 ];
-
 
 function ServicesPage() {
   return (
@@ -85,6 +188,7 @@ function ServicesPage() {
       <Nav />
       <main>
         <Hero />
+        <Intro />
         <section className="pb-24 md:pb-32">
           <div className="mx-auto max-w-[1600px] px-6 md:px-10 space-y-8 md:space-y-10">
             {services.map((s, i) => (
@@ -111,10 +215,66 @@ function Hero() {
         Our Expertise
       </h1>
       <div className="mt-6 max-w-xl font-sans text-sm md:text-base text-ivory/75 leading-relaxed space-y-1">
-        <p>Everything from a single bathroom to a full interior renovation.</p>
+        <p>Everything from a single bathroom to a full home renovation.</p>
         <p>We design, build and manage it all. One team, end to end.</p>
       </div>
     </section>
+  );
+}
+
+function Intro() {
+  const ref = useReveal<HTMLDivElement>();
+  return (
+    <section ref={ref} className="reveal border-t border-border/60">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+          <div className="lg:col-span-5">
+            <div className="eyebrow mb-6">The Difference</div>
+            <h2 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-xl md:text-2xl lg:text-[1.75rem]">
+              The AM Bathrooms + Projects Difference
+            </h2>
+          </div>
+          <div className="lg:col-span-7 font-sans text-sm md:text-base text-ivory/80 leading-relaxed space-y-5">
+            <p>
+              Most renovations fail because design, planning and construction are treated as separate services.
+            </p>
+            <p>We've built our process differently.</p>
+            <p>
+              By integrating interior design, project management and construction into one seamless experience,
+              we eliminate the disconnects that often lead to delays, costly mistakes and unnecessary stress.
+            </p>
+            <p>
+              Our clients benefit from award-winning design expertise, expert project management and quality
+              craftsmanship, all delivered through one accountable team.
+            </p>
+            <p>
+              The result is a renovation experience that feels clear, organised and enjoyable, with exceptional
+              outcomes that enhance the way you live every day.
+            </p>
+            <p className="text-brass tracking-[0.05em] uppercase text-xs md:text-sm pt-2">
+              One Team. One Process. One Exceptional Result.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CheckMark() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 16 16"
+      className="mt-[6px] h-3 w-3 flex-none text-brass"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M3 8.5l3.2 3.2L13 5" />
+    </svg>
   );
 }
 
@@ -122,34 +282,79 @@ function ServiceCard({
   title,
   body,
   image,
+  detail,
 }: {
   title: string;
   body: string;
   image: string;
+  detail: ServiceDetail;
 }) {
   const ref = useReveal<HTMLElement>();
+  const [open, setOpen] = useState(false);
   return (
-    <article
-      ref={ref}
-      className="reveal group relative overflow-hidden h-[32vh] min-h-[260px] max-h-[360px] bg-oxblood"
-    >
-      {image ? (
-        <img
-          src={image}
-          alt={`${title} renovation by AM Bathrooms + Projects`}
-          loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
-        />
-      ) : null}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
-      <div className="relative h-full flex flex-col justify-end p-6 md:p-10 max-w-2xl">
-        <h2 className="font-sans uppercase tracking-[0.06em] text-xl md:text-2xl font-light text-ivory leading-tight">
-          {title}
-        </h2>
-        <p className="mt-3 font-sans text-xs md:text-sm text-ivory/80 leading-relaxed max-w-md">
-          {body}
-        </p>
+    <article ref={ref} className="reveal group relative overflow-hidden bg-oxblood">
+      <div className="relative h-[32vh] min-h-[260px] max-h-[360px]">
+        {image ? (
+          <img
+            src={image}
+            alt={`${title} renovation by AM Bathrooms + Projects`}
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
+          />
+        ) : null}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
+        <div className="relative h-full flex flex-col justify-end p-6 md:p-10 max-w-2xl">
+          <h2 className="font-sans uppercase tracking-[0.06em] text-xl md:text-2xl font-light text-ivory leading-tight">
+            {title}
+          </h2>
+          <p className="mt-3 font-sans text-xs md:text-sm text-ivory/80 leading-relaxed max-w-md">
+            {body}
+          </p>
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls={`service-${title}`}
+            className="mt-5 self-start inline-flex items-center gap-2 text-[11px] md:text-xs uppercase tracking-[0.18em] text-brass hover:text-ivory transition-colors"
+          >
+            <span>{open ? "Show less" : "Learn more"}</span>
+            <span aria-hidden="true" className={`transition-transform ${open ? "rotate-45" : ""}`}>+</span>
+          </button>
+        </div>
       </div>
+      {open && (
+        <div
+          id={`service-${title}`}
+          className="border-t border-ivory/10 bg-burgundy/40 px-6 md:px-10 py-8 md:py-12"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 max-w-[1200px]">
+            <div className="lg:col-span-5 space-y-4 font-sans text-sm md:text-base text-ivory/85 leading-relaxed">
+              <h3 className="eyebrow !text-brass mb-2">{detail.heading}</h3>
+              {detail.intro.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+            <div className="lg:col-span-7">
+              <h4 className="font-sans uppercase tracking-[0.06em] text-xs md:text-sm text-ivory/70 mb-4">
+                {detail.pointsTitle}
+              </h4>
+              <ul className="space-y-2.5">
+                {detail.points.map((pt) => (
+                  <li key={pt} className="flex gap-3 font-sans text-sm text-ivory/85 leading-relaxed">
+                    <CheckMark />
+                    <span>{pt}</span>
+                  </li>
+                ))}
+              </ul>
+              {detail.outro && (
+                <p className="mt-6 font-sans text-sm md:text-base text-ivory/80 leading-relaxed italic">
+                  {detail.outro}
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </article>
   );
 }
