@@ -1219,7 +1219,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial: "",
     hero: drumAw6.url,
-    gallery: [drumAw6.url, drumAw7.url, drumAw9.url, drumAw10.url, drumAw2.url, drumAw23.url, drumAw12.url, drumAw26.url, drumAw29.url, drumAw13.url, drumAw36.url, drumAw38.url, drumAw15.url, drumAw32.url, drumAw44.url, drumAw18.url, drumAw19.url, drumAw33.url],
+    gallery: [drumAw6.url, drumAw23.url, drumAw36.url, drumAw18.url, drumAw12.url, drumAw26.url, drumAw44.url, drumAw9.url, drumAw32.url, drumAw7.url, drumAw38.url, drumAw13.url, drumAw29.url, drumAw10.url, drumAw33.url, drumAw15.url, drumAw19.url, drumAw2.url],
     beforeImages: [],
     afterImages: [],
   },
