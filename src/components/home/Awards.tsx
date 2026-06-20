@@ -99,7 +99,7 @@ export function Awards() {
                 const isActive = i === active;
                 return (
                   <li
-                    key={a.title}
+                    key={`${a.title}-${i}`}
                     onMouseEnter={() => queueAward(i)}
                     onFocus={() => queueAward(i)}
                     onClick={() => selectAward(i)}
