@@ -206,19 +206,31 @@ function ServicesPage() {
 function Hero() {
   const ref = useReveal<HTMLDivElement>();
   return (
-    <section
-      ref={ref}
-      className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-40 md:pt-48 pb-20 md:pb-28"
-    >
-      <div className="eyebrow mb-6">Sydney Renovation Services</div>
-      <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl">
-        Our Expertise
-      </h1>
-      <div className="mt-6 max-w-xl font-sans text-sm md:text-base text-ivory/75 leading-relaxed space-y-1">
-        <p>Everything from a single bathroom to a full home renovation.</p>
-        <p>We design, build and manage it all. One team, end to end.</p>
+    <header ref={ref} className="reveal relative isolate overflow-hidden">
+      <img
+        src={bathroom.url}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover ken-burns opacity-70"
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(180deg, color-mix(in oklab, var(--oxblood) 55%, transparent) 0%, color-mix(in oklab, var(--oxblood) 65%, transparent) 50%, var(--oxblood) 100%), linear-gradient(90deg, color-mix(in oklab, var(--oxblood) 65%, transparent) 0%, transparent 75%)",
+        }}
+      />
+      <div className="relative mx-auto max-w-[1600px] px-6 md:px-10 pt-40 md:pt-48 pb-20 md:pb-28">
+        <div className="eyebrow mb-6">Sydney Renovation Services</div>
+        <h1 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-2xl md:text-3xl lg:text-4xl [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]">
+          Our Expertise
+        </h1>
+        <div className="mt-6 max-w-xl font-sans text-sm md:text-base text-ivory/90 leading-relaxed space-y-1 [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">
+          <p>Everything from a single bathroom to a full home renovation.</p>
+          <p>We design, build and manage it all. One team, end to end.</p>
+        </div>
       </div>
-    </section>
+    </header>
   );
 }
 
