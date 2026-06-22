@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { useReveal } from "@/hooks/use-reveal";
 
-
-
 import discovery from "@/assets/process/discovery-rozelle.jpg.asset.json";
 import design from "@/assets/process/design-lindfield.jpg.asset.json";
 import build from "@/assets/process/build-bathroom.jpg.asset.json";
@@ -138,7 +136,7 @@ function CheckMark() {
   );
 }
 
-export function Process() {
+export function Process({ showLearnMore = true }: { showLearnMore?: boolean }) {
   const ref = useReveal<HTMLDivElement>();
   const gridRef = useReveal<HTMLDivElement>();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -156,48 +154,58 @@ export function Process() {
           </Link>
         </div>
 
-
-
-
         <div ref={gridRef} className="reveal reveal-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {steps.map((s, i) => {
             const isOpen = openIndex === i;
-            return (
-              <article key={s.title} className="group">
-                <button
-                  type="button"
-                  onClick={() => setOpenIndex(isOpen ? null : i)}
-                  aria-expanded={isOpen}
-                  aria-controls={`process-${s.title}`}
-                  className="block text-left w-full appearance-none bg-transparent border-0 p-0 m-0 outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brass/60 cursor-pointer"
-                >
-                  <div className="relative aspect-square overflow-hidden bg-burgundy">
-                    <img
-                      src={s.image}
-                      alt={s.title}
-                      loading="lazy"
-                      className={`h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04] ${s.title === "Build" ? "scale-[1.15]" : ""}`}
-                    />
-                  </div>
-                  <div className="mt-5">
-                    <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.05em] uppercase">
-                      {s.title}
-                    </h3>
-                    <p className="mt-2 font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">
-                      {s.body}
-                    </p>
+            const cardInner = (
+              <>
+                <div className="relative aspect-square overflow-hidden bg-burgundy">
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    loading="lazy"
+                    className={`h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04] ${s.title === "Build" ? "scale-[1.15]" : ""}`}
+                  />
+                </div>
+                <div className="mt-5">
+                  <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.05em] uppercase">
+                    {s.title}
+                  </h3>
+                  <p className="mt-2 font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">
+                    {s.body}
+                  </p>
+                  {showLearnMore && (
                     <span className="mt-4 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-brass group-hover:text-ivory transition-colors">
                       {isOpen ? "Show less" : "Learn more"}
                       <span aria-hidden="true" className={`transition-transform ${isOpen ? "rotate-45" : ""}`}>+</span>
                     </span>
+                  )}
+                </div>
+              </>
+            );
+            return (
+              <article key={s.title} className="group">
+                {showLearnMore ? (
+                  <button
+                    type="button"
+                    onClick={() => setOpenIndex(isOpen ? null : i)}
+                    aria-expanded={isOpen}
+                    aria-controls={`process-${s.title}`}
+                    className="block text-left w-full appearance-none bg-transparent border-0 p-0 m-0 outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brass/60 cursor-pointer"
+                  >
+                    {cardInner}
+                  </button>
+                ) : (
+                  <div className="block text-left w-full">
+                    {cardInner}
                   </div>
-                </button>
+                )}
               </article>
             );
           })}
         </div>
 
-        {openIndex !== null && (
+        {showLearnMore && openIndex !== null && (
           <div
             id={`process-${steps[openIndex].title}`}
             className="mt-10 md:mt-12 border-t border-ivory/10 pt-10 md:pt-12"
