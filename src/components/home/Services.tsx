@@ -39,9 +39,16 @@ export function Services() {
   return (
     <section id="services" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-20 md:pb-24">
-        <div className="mb-8 md:mb-10">
+        <div className="mb-8 md:mb-10 flex items-end justify-between gap-6">
           <h2 className="eyebrow">Services</h2>
+          <Link
+            to="/services"
+            className="text-[11px] md:text-xs uppercase tracking-[0.18em] text-brass hover:text-ivory transition-colors"
+          >
+            View all services
+          </Link>
         </div>
+
 
         <div ref={gridRef} className="reveal reveal-stagger grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 md:gap-y-14">
           {services.map((s) => (
