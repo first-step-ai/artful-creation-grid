@@ -44,7 +44,7 @@ export function Services() {
           <h2 className="eyebrow">Services</h2>
           <Link
             to="/services"
-            className="text-[11px] md:text-xs uppercase tracking-[0.18em] text-brass hover:text-ivory transition-colors"
+            className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap"
           >
             View all services
           </Link>
