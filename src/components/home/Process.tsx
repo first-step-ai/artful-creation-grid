@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
+import { Button } from "@/components/ui/button";
 import { useReveal } from "@/hooks/use-reveal";
+
 
 import discovery from "@/assets/process/discovery-rozelle.jpg.asset.json";
 import design from "@/assets/process/design-lindfield.jpg.asset.json";
