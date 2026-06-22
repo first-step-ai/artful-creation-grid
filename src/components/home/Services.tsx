@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { Button } from "@/components/ui/button";
 import bathrooms from "@/assets/projects/annandale-new/annan-02.jpg.asset.json";
 import kitchens from "@/assets/projects/kitchen-services.jpg.asset.json";
 import laundries from "@/assets/projects/full-home-rozelle.jpg.asset.json";
@@ -41,12 +40,16 @@ export function Services() {
   return (
     <section id="services" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 pt-12 md:pt-16 pb-20 md:pb-24">
-        <div className="mb-8 md:mb-10 flex flex-col items-start gap-4">
+        <div className="mb-8 md:mb-10 flex items-end justify-between gap-6">
           <h2 className="eyebrow">Services</h2>
-          <Button asChild variant="outline" className="uppercase tracking-[0.18em] text-[11px] md:text-xs border-ivory/30 text-ivory hover:bg-ivory/10 hover:text-ivory">
-            <Link to="/services">View all services</Link>
-          </Button>
+          <Link
+            to="/services"
+            className="text-[11px] md:text-xs uppercase tracking-[0.18em] text-brass hover:text-ivory transition-colors"
+          >
+            View all services
+          </Link>
         </div>
+
 
 
 
