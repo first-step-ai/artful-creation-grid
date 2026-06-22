@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { useReveal } from "@/hooks/use-reveal";
+
 import discovery from "@/assets/process/discovery-rozelle.jpg.asset.json";
 import design from "@/assets/process/design-lindfield.jpg.asset.json";
 import build from "@/assets/process/build-bathroom.jpg.asset.json";
@@ -142,7 +144,16 @@ export function Process() {
   return (
     <section id="process" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
-        <h2 className="eyebrow mb-12 md:mb-16">Process</h2>
+        <div className="mb-12 md:mb-16 flex items-end justify-between gap-6">
+          <h2 className="eyebrow">Process</h2>
+          <Link
+            to="/services#process"
+            className="text-[11px] md:text-xs uppercase tracking-[0.18em] text-brass hover:text-ivory transition-colors"
+          >
+            See our process
+          </Link>
+        </div>
+
 
         <div ref={gridRef} className="reveal reveal-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {steps.map((s, i) => {
