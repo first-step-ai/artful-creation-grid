@@ -146,15 +146,13 @@ export function Process() {
   return (
     <section id="process" className="border-t border-border/60">
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
-        <div className="mb-12 md:mb-16 flex items-end justify-between gap-6">
+        <div className="mb-12 md:mb-16 flex flex-col items-start gap-4">
           <h2 className="eyebrow">Process</h2>
-          <Link
-            to="/services#process"
-            className="text-[11px] md:text-xs uppercase tracking-[0.18em] text-brass hover:text-ivory transition-colors"
-          >
-            See our process
-          </Link>
+          <Button asChild variant="outline" className="uppercase tracking-[0.18em] text-[11px] md:text-xs border-ivory/30 text-ivory hover:bg-ivory/10 hover:text-ivory">
+            <Link to="/services#process">See our process</Link>
+          </Button>
         </div>
+
 
 
         <div ref={gridRef} className="reveal reveal-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
