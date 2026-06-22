@@ -47,7 +47,7 @@ function Home() {
         <Work />
         <Awards />
         <Services />
-        <Process />
+        <Process showLearnMore={false} />
         
         
         
