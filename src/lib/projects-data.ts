@@ -706,7 +706,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       annanN01.url, // pantry storage
       annan08.url,  // garden steps
       annanN03.url, // pink wall niche tub
-      annanN02.url, // pink bathtub
+      
       annanN07.url, // wall toilet pink
       annanN05.url, // long pink bathroom
       annanN10.url, // staircase
