@@ -192,7 +192,7 @@ function ServicesPage() {
         <section className="pb-24 md:pb-32">
           <div className="mx-auto max-w-[1600px] px-6 md:px-10 space-y-8 md:space-y-10">
             {services.map((s, i) => (
-              <ServiceCard key={i} {...s} />
+              <ServiceCard key={i} slug={serviceSlug(s.title)} {...s} />
             ))}
           </div>
         </section>
