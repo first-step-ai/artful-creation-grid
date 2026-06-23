@@ -41,7 +41,7 @@ export function Work() {
 
         <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 mb-10 md:mb-14">
           <div>
-            <div className="font-sans text-[10px] md:text-[11px] tracking-[0.35em] uppercase font-medium text-ivory-muted mb-1.5">
+            <div className="font-sans text-[10px] md:text-[11px] tracking-[0.35em] uppercase font-medium text-ivory mb-1.5">
               Featured Home
             </div>
             <div className="eyebrow">
