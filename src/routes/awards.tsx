@@ -113,7 +113,7 @@ const years: YearGroup[] = [
         image: national2024.url,
         fit: "contain",
         awards: [
-          { kind: "Winner", label: "National Small Business Management Award · Australia" },
+          { kind: "Winner", label: "National Small Business Management Award" },
         ],
       },
     ],
