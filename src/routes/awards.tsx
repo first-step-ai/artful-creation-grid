@@ -120,10 +120,20 @@ const years: YearGroup[] = [
   },
   {
     year: "2023",
-    intro: "HIA NSW Kitchen & Bathroom Awards",
+    intro: "HIA NSW Kitchen & Bathroom Awards · NSW Business Awards",
     blurb:
-      "HIA NSW finalist recognition for kitchen and bathroom projects across Drummoyne, Rozelle and Lane Cove, with AM Bathrooms + Projects receiving repeat acknowledgement for considered design.",
+      "HIA NSW finalist recognition for kitchen and bathroom projects across Drummoyne, Rozelle and Lane Cove, with AM Bathrooms + Projects receiving repeat acknowledgement for considered design. Awarded NSW Small Business Management Award.",
     projects: [
+      {
+        id: "nsw-2023",
+        suburb: "AM Bathrooms + Projects",
+        title: "State Recognition",
+        image: nsw2022.url,
+        fit: "contain",
+        awards: [
+          { kind: "Winner", label: "NSW Small Business Management Award" },
+        ],
+      },
       {
         id: "drummoyne-2023",
         suburb: "Drummoyne",
