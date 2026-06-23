@@ -285,6 +285,8 @@ import rwh20 from "@/assets/projects/rozelle-whole/rwh-20.jpg.asset.json";
 import rwh21 from "@/assets/projects/rozelle-whole/rwh-21.jpg.asset.json";
 import rwh22 from "@/assets/projects/rozelle-whole/rwh-22.jpg.asset.json";
 import rwh24 from "@/assets/projects/rozelle-whole/rwh-24.jpg.asset.json";
+import rwhWeb8 from "@/assets/projects/rozelle-whole/rwh-web-8.jpg.asset.json";
+import rwhWeb1 from "@/assets/projects/rozelle-whole/rwh-web-1.jpg.asset.json";
 import rwhBefore1 from "@/assets/projects/rozelle-whole-ba/rwh-before-1.jpg.asset.json";
 import rwhBefore2 from "@/assets/projects/rozelle-whole-ba/rwh-before-2-new.jpg.asset.json";
 import rwhBefore3 from "@/assets/projects/rozelle-whole-ba/rwh-before-3.jpg.asset.json";
@@ -1144,6 +1146,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       rwh18.url, rwh20.url,
       rwh21.url,
       rwh22.url, rwh24.url,
+      rwhWeb8.url, rwhWeb1.url,
     ],
     beforeImages: [rwhBefore1.url, rwhBefore2.url, rwhBefore3.url],
     afterImages: [rwhAfter1.url, rwhAfter2.url, rwhAfter3.url],
