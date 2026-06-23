@@ -141,7 +141,7 @@ import annan15 from "@/assets/projects/annandale-new/annan-15.jpg.asset.json";
 import annan16 from "@/assets/projects/annandale-new/annan-16.jpg.asset.json";
 import annan17 from "@/assets/projects/annandale-new/annan-17.jpg.asset.json";
 import annanN01 from "@/assets/projects/annandale-extra/annan-n01.jpg.asset.json";
-import annanN02 from "@/assets/projects/annandale-extra/annan-n02.jpg.asset.json";
+
 import annanN03 from "@/assets/projects/annandale-extra/annan-n03.jpg.asset.json";
 import annanN04 from "@/assets/projects/annandale-extra/annan-n04.jpg.asset.json";
 import annanN05 from "@/assets/projects/annandale-extra/annan-n05.jpg.asset.json";
