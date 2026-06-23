@@ -16,7 +16,7 @@ import heroImg from "@/assets/hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sydney Bathroom, Kitchen & Interior Renovations | AM Bathrooms + Projects" },
+      { title: "Award-Winning Sydney Builder & Interior Design Studio | AM Bathrooms + Projects" },
       {
         name: "description",
         content:
