@@ -714,9 +714,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Bathrooms + Projects, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
     gallery: [
-      
       annanN09.url, // fireplace living
-      annanN01.url, // pantry storage
+      annanK16.url,
       annan08.url,  // garden steps
       annanN03.url, // pink wall niche tub
       annanN07.url, // wall toilet pink
@@ -734,7 +733,6 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       annanK11.url,
       annanK12.url,
       annanK13.url,
-      annanK16.url,
     ],
     beforeImages: [annanBefore1.url, annanBefore2.url, annanBefore3.url],
     afterImages: [annanAfter2.url, annanAfter1.url, annanAfter3.url],
