@@ -438,11 +438,11 @@ function YearSection({ group }: { group: YearGroup }) {
           </p>
 
           {winners.length > 0 && (
-            <div className="mt-5 flex flex-col items-start gap-3 w-full max-w-sm mx-auto">
+            <div className="mt-5 flex flex-col items-center gap-3 w-full max-w-sm mx-auto">
               {winners.map((w, i) => (
                 <div
                   key={i}
-                  className="flex items-start gap-3 w-full"
+                  className="flex items-center gap-3 w-full"
                 >
                   <span className="shrink-0 inline-flex items-center justify-center w-[78px] text-[9px] tracking-[0.22em] uppercase px-2 py-[4px] border bg-ivory text-oxblood border-ivory">
                     {w.kind}
