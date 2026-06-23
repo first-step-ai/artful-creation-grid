@@ -269,6 +269,9 @@ import rze11 from "@/assets/projects/rozelle-ensuite-study/rze-11.jpg.asset.json
 import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json";
 import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
 import rze15 from "@/assets/projects/rozelle-ensuite-study/rze-15.jpg.asset.json";
+import rzeBefore1 from "@/assets/projects/rozelle-ensuite-study/rze-before-1.jpg.asset.json";
+import rzeBefore2 from "@/assets/projects/rozelle-ensuite-study/rze-before-2.jpg.asset.json";
+import rzeBefore3 from "@/assets/projects/rozelle-ensuite-study/rze-before-3.jpg.asset.json";
 
 // Rozelle, Whole-Home Transformation
 import rwh3 from "@/assets/projects/rozelle-whole/rwh-3.jpg.asset.json";
@@ -955,8 +958,8 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Integrated study space",
     ],
     gallery: [rze8.url, rze9.url, rze10.url, rze11.url, rze12.url, rze14.url, rze15.url],
-    beforeImages: [],
-    afterImages: [],
+    beforeImages: [rzeBefore1.url, rzeBefore2.url, rzeBefore3.url],
+    afterImages: [rze8.url, rze10.url, rze12.url],
   },
 
   "roseville-calm-family-spaces": {
