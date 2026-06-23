@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
         content:
           "A Sydney design + build studio shaping bathrooms, kitchens, laundries and interiors with care, collaboration and a fixed-price promise.",
       },
-      { property: "og:title", content: "Sydney Bathroom, Kitchen & Interior Renovations" },
+      { property: "og:title", content: "Award-Winning Sydney Builder & Interior Design Studio | AM Bathrooms + Projects" },
       {
         property: "og:description",
         content:
