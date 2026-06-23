@@ -178,7 +178,7 @@ import putney17 from "@/assets/projects/putney/putney-17.jpg.asset.json";
 import putney20 from "@/assets/projects/putney/putney-20.jpg.asset.json";
 import putneyBefore1 from "@/assets/projects/putney-ba/putney-before-1.png.asset.json";
 import putneyBefore2 from "@/assets/projects/putney-ba/putney-before-2.png.asset.json";
-import putneyBefore3 from "@/assets/projects/putney-ba/putney-before-3-new.jpg.asset.json";
+import putneyBefore3 from "@/assets/projects/putney-ba/putney-before-3-v2.jpg.asset.json";
 import putneyAfter1 from "@/assets/projects/putney-ba/putney-after-1.png.asset.json";
 import putneyAfter2 from "@/assets/projects/putney-ba/putney-after-2.png.asset.json";
 import putneyAfter3 from "@/assets/projects/putney-ba/putney-after-3.jpg.asset.json";
