@@ -134,7 +134,7 @@ import drumN2_27 from "@/assets/projects/drummoyne-new2/drum2-27.jpg.asset.json"
 import drumN2_29 from "@/assets/projects/drummoyne-new2/drum2-29.jpg.asset.json";
 // Annandale
 import annan01 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
-import annan03 from "@/assets/projects/annandale-new/annan-03.jpg.asset.json";
+
 import annan07 from "@/assets/projects/annandale-new/annan-07.jpg.asset.json";
 import annan08 from "@/assets/projects/annandale-new/annan-08.jpg.asset.json";
 import annan15 from "@/assets/projects/annandale-new/annan-15.jpg.asset.json";
@@ -709,12 +709,11 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     testimonial:
       "We couldn't be more thrilled with our experience working with AM Bathrooms + Projects, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
     gallery: [
-      annanN09.url, // fireplace living
       annan07.url,  // garden view
+      annanN09.url, // fireplace living
       annanN01.url, // pantry storage
       annan08.url,  // garden steps
       annanN03.url, // pink wall niche tub
-      
       annanN07.url, // wall toilet pink
       annanN05.url, // long pink bathroom
       annanN10.url, // staircase
@@ -722,7 +721,6 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       annan15.url,  // stone vanity
       annan16.url,  // stone basin
       annanN11.url, // shower
-      annan03.url,  // freestanding tub
       annan17.url,  // stone niche
       annanK3.url,
       annanK7.url,
