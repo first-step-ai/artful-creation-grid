@@ -290,21 +290,27 @@ function CheckMark() {
   );
 }
 
+function serviceSlug(title: string) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 function ServiceCard({
   title,
   body,
   image,
   detail,
+  slug,
 }: {
   title: string;
   body: string;
   image: string;
   detail: ServiceDetail;
+  slug: string;
 }) {
   const ref = useReveal<HTMLElement>();
   const [open, setOpen] = useState(false);
   return (
-    <article ref={ref} className="reveal group relative overflow-hidden bg-oxblood">
+    <article ref={ref} id={`service-${slug}`} className="reveal group relative overflow-hidden bg-oxblood scroll-mt-24">
       <div className="relative h-[32vh] min-h-[260px] max-h-[360px]">
         {image ? (
           <img
