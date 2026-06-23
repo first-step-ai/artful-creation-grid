@@ -122,6 +122,16 @@ import drumBefore3 from "@/assets/projects/drummoyne-ba/drum-before-3.png.asset.
 import drumAfter1 from "@/assets/projects/drummoyne-ba/drum-after-1.png.asset.json";
 import drumAfter2 from "@/assets/projects/drummoyne-ba/drum-after-2.png.asset.json";
 import drumAfter3 from "@/assets/projects/drummoyne-ba/drum-after-3.png.asset.json";
+// Drummoyne, Modern Luxury Living new gallery
+import drumN2_1 from "@/assets/projects/drummoyne-new2/drum2-1.jpg.asset.json";
+import drumN2_5 from "@/assets/projects/drummoyne-new2/drum2-5.jpg.asset.json";
+import drumN2_7 from "@/assets/projects/drummoyne-new2/drum2-7.jpg.asset.json";
+import drumN2_9 from "@/assets/projects/drummoyne-new2/drum2-9.jpg.asset.json";
+import drumN2_20 from "@/assets/projects/drummoyne-new2/drum2-20.jpg.asset.json";
+import drumN2_21 from "@/assets/projects/drummoyne-new2/drum2-21.jpg.asset.json";
+import drumN2_23 from "@/assets/projects/drummoyne-new2/drum2-23.jpg.asset.json";
+import drumN2_27 from "@/assets/projects/drummoyne-new2/drum2-27.jpg.asset.json";
+import drumN2_29 from "@/assets/projects/drummoyne-new2/drum2-29.jpg.asset.json";
 // Annandale
 import annan01 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
 import annan02 from "@/assets/projects/annandale-new/annan-02.jpg.asset.json";
@@ -815,7 +825,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Streamlined vanity and joinery designs improving circulation",
       "Light-filled layouts despite compact proportions",
     ],
-    gallery: [drum2.url, drum3.url, drum4.url, drum5.url, drum6.url, drum7.url, drum8.url, drum9.url, drum10.url, drum11.url],
+    gallery: [drumN2_1.url, drumN2_5.url, drumN2_7.url, drumN2_9.url, drumN2_21.url, drumN2_20.url, drumN2_23.url, drumN2_27.url, drumN2_29.url],
     beforeImages: [drumBefore1.url, drumBefore2.url, drumBefore3.url],
     afterImages: [drumAfter1.url, drumAfter2.url, drumAfter3.url],
   },
