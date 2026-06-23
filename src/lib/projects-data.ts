@@ -272,7 +272,7 @@ import rwh21 from "@/assets/projects/rozelle-whole/rwh-21.jpg.asset.json";
 import rwh22 from "@/assets/projects/rozelle-whole/rwh-22.jpg.asset.json";
 import rwh24 from "@/assets/projects/rozelle-whole/rwh-24.jpg.asset.json";
 import rwhBefore1 from "@/assets/projects/rozelle-whole-ba/rwh-before-1.jpg.asset.json";
-import rwhBefore2 from "@/assets/projects/rozelle-whole-ba/rwh-before-2.jpg.asset.json";
+import rwhBefore2 from "@/assets/projects/rozelle-whole-ba/rwh-before-2-new.jpg.asset.json";
 import rwhBefore3 from "@/assets/projects/rozelle-whole-ba/rwh-before-3.jpg.asset.json";
 import rwhAfter1 from "@/assets/projects/rozelle-whole-ba/rwh-after-1.jpg.asset.json";
 import rwhAfter2 from "@/assets/projects/rozelle-whole-ba/rwh-after-2.jpg.asset.json";
