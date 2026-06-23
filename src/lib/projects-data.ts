@@ -134,9 +134,7 @@ import drumN2_27 from "@/assets/projects/drummoyne-new2/drum2-27.jpg.asset.json"
 import drumN2_29 from "@/assets/projects/drummoyne-new2/drum2-29.jpg.asset.json";
 // Annandale
 import annan01 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
-import annan02 from "@/assets/projects/annandale-new/annan-02.jpg.asset.json";
 import annan03 from "@/assets/projects/annandale-new/annan-03.jpg.asset.json";
-import annan05 from "@/assets/projects/annandale-new/annan-05.jpg.asset.json";
 import annan07 from "@/assets/projects/annandale-new/annan-07.jpg.asset.json";
 import annan08 from "@/assets/projects/annandale-new/annan-08.jpg.asset.json";
 import annan15 from "@/assets/projects/annandale-new/annan-15.jpg.asset.json";
