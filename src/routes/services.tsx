@@ -196,7 +196,7 @@ function ServicesPage() {
             ))}
           </div>
         </section>
-        <Process />
+        <Process showSeeProcessLink={false} />
       </main>
       <Footer />
     </div>
