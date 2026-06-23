@@ -724,6 +724,14 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       annanN11.url, // shower
       annan03.url,  // freestanding tub
       annan17.url,  // stone niche
+      annanK3.url,
+      annanK7.url,
+      annanK23.url,
+      annanK10.url,
+      annanK11.url,
+      annanK12.url,
+      annanK13.url,
+      annanK16.url,
     ],
     beforeImages: [annanBefore1.url, annanBefore2.url, annanBefore3.url],
     afterImages: [annanAfter2.url, annanAfter1.url, annanAfter3.url],
