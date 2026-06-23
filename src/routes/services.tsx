@@ -240,7 +240,7 @@ function Intro() {
     <section ref={ref} className="reveal border-t border-border/60">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
         <div className="eyebrow mb-10">The AM Bathrooms + Projects Difference</div>
-        <div className="font-sans text-sm md:text-base text-ivory/80 leading-relaxed space-y-5 max-w-[900px]">
+        <div className="font-sans text-sm md:text-base text-ivory/80 leading-relaxed space-y-5">
           <p>
             Most renovations fail because design, planning and construction are treated as separate services.
           </p>
