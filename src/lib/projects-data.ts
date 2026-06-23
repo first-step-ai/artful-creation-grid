@@ -724,11 +724,9 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       annanN04.url, // vanity mirror cream
       annan15.url,  // stone vanity
       annan16.url,  // stone basin
-      annanN11.url, // shower
       annan17.url,  // stone niche
       annanK3.url,
       annanK7.url,
-      annanK23.url,
       annanK10.url,
       annanK11.url,
       annanK12.url,
