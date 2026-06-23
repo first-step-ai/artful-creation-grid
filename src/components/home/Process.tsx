@@ -136,7 +136,7 @@ function CheckMark() {
   );
 }
 
-export function Process({ showLearnMore = true }: { showLearnMore?: boolean }) {
+export function Process({ showLearnMore = true, showSeeProcessLink = true }: { showLearnMore?: boolean; showSeeProcessLink?: boolean }) {
   const ref = useReveal<HTMLDivElement>();
   const gridRef = useReveal<HTMLDivElement>();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -146,12 +146,14 @@ export function Process({ showLearnMore = true }: { showLearnMore?: boolean }) {
       <div ref={ref} className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
         <div className="mb-12 md:mb-16 flex items-end justify-between gap-6">
           <h2 className="eyebrow">Process</h2>
-          <Link
-            to="/services#process"
-            className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap"
-          >
-            See our process
-          </Link>
+          {showSeeProcessLink && (
+            <Link
+              to="/services#process"
+              className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap"
+            >
+              See our process
+            </Link>
+          )}
         </div>
 
         <div ref={gridRef} className="reveal reveal-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
