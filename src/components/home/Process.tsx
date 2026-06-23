@@ -184,7 +184,7 @@ export function Process({ showLearnMore = true }: { showLearnMore?: boolean }) {
               </>
             );
             return (
-              <article key={s.title} className="group">
+              <article key={s.title} id={`step-${s.title.toLowerCase()}`} className="group scroll-mt-24">
                 {showLearnMore ? (
                   <button
                     type="button"
@@ -196,9 +196,13 @@ export function Process({ showLearnMore = true }: { showLearnMore?: boolean }) {
                     {cardInner}
                   </button>
                 ) : (
-                  <div className="block text-left w-full">
+                  <Link
+                    to="/services"
+                    hash={`step-${s.title.toLowerCase()}`}
+                    className="block text-left w-full"
+                  >
                     {cardInner}
-                  </div>
+                  </Link>
                 )}
               </article>
             );

@@ -13,24 +13,28 @@ const services = [
     title: "Bathrooms",
     body: "A bathroom built around your routine. Materials and details chosen with you, built by us.",
     image: bathrooms.url,
+    slug: "bathrooms",
   },
   {
     num: "ii",
     title: "Kitchens",
     body: "A kitchen that fits the way your family actually uses it, not just how it looks in a render.",
     image: kitchens.url,
+    slug: "kitchen",
   },
   {
     num: "iii",
     title: "Multi-space Renovations",
     body: "A home that feels considered in every corner. We handle the full picture.",
     image: interiors.url,
+    slug: "multi-space",
   },
   {
     num: "iv",
     title: "Full Home Renovation",
     body: "A complete transformation, finished with the same care we bring to every room.",
     image: laundries.url,
+    slug: "full-home",
   },
 ];
 
@@ -68,35 +72,37 @@ function ServiceCard({
   title,
   body,
   image,
+  slug,
 }: {
   num: string;
   title: string;
   body: string;
   image: string;
+  slug: string;
 }) {
   return (
     <article className="group lift">
-      <div className="relative overflow-hidden h-[36vh] md:h-[46vh] max-h-[520px] bg-burgundy">
-
-        <img
-          src={image}
-          alt={title}
-          loading="lazy"
-          width={1024}
-          height={1280}
-          className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
-        />
-        <div className="absolute inset-0 bg-oxblood/30 transition-opacity duration-700 group-hover:opacity-0" />
-        
-      </div>
-      <div className="mt-4 flex items-start justify-between gap-6">
-        <div>
-          <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.05em] uppercase">
-            {title}
-          </h3>
-          <p className="mt-2 max-w-sm font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">{body}</p>
+      <Link to="/services" hash={`service-${slug}`} className="block">
+        <div className="relative overflow-hidden h-[36vh] md:h-[46vh] max-h-[520px] bg-burgundy">
+          <img
+            src={image}
+            alt={title}
+            loading="lazy"
+            width={1024}
+            height={1280}
+            className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+          />
+          <div className="absolute inset-0 bg-oxblood/30 transition-opacity duration-700 group-hover:opacity-0" />
         </div>
-      </div>
+        <div className="mt-4 flex items-start justify-between gap-6">
+          <div>
+            <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.05em] uppercase">
+              {title}
+            </h3>
+            <p className="mt-2 max-w-sm font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">{body}</p>
+          </div>
+        </div>
+      </Link>
     </article>
   );
 }

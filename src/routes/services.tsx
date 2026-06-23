@@ -192,7 +192,7 @@ function ServicesPage() {
         <section className="pb-24 md:pb-32">
           <div className="mx-auto max-w-[1600px] px-6 md:px-10 space-y-8 md:space-y-10">
             {services.map((s, i) => (
-              <ServiceCard key={i} {...s} />
+              <ServiceCard key={i} slug={serviceSlug(s.title)} {...s} />
             ))}
           </div>
         </section>
@@ -290,21 +290,27 @@ function CheckMark() {
   );
 }
 
+function serviceSlug(title: string) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 function ServiceCard({
   title,
   body,
   image,
   detail,
+  slug,
 }: {
   title: string;
   body: string;
   image: string;
   detail: ServiceDetail;
+  slug: string;
 }) {
   const ref = useReveal<HTMLElement>();
   const [open, setOpen] = useState(false);
   return (
-    <article ref={ref} className="reveal group relative overflow-hidden bg-oxblood">
+    <article ref={ref} id={`service-${slug}`} className="reveal group relative overflow-hidden bg-oxblood scroll-mt-24">
       <div className="relative h-[32vh] min-h-[260px] max-h-[360px]">
         {image ? (
           <img
