@@ -72,35 +72,37 @@ function ServiceCard({
   title,
   body,
   image,
+  slug,
 }: {
   num: string;
   title: string;
   body: string;
   image: string;
+  slug: string;
 }) {
   return (
     <article className="group lift">
-      <div className="relative overflow-hidden h-[36vh] md:h-[46vh] max-h-[520px] bg-burgundy">
-
-        <img
-          src={image}
-          alt={title}
-          loading="lazy"
-          width={1024}
-          height={1280}
-          className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
-        />
-        <div className="absolute inset-0 bg-oxblood/30 transition-opacity duration-700 group-hover:opacity-0" />
-        
-      </div>
-      <div className="mt-4 flex items-start justify-between gap-6">
-        <div>
-          <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.05em] uppercase">
-            {title}
-          </h3>
-          <p className="mt-2 max-w-sm font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">{body}</p>
+      <Link to="/services" hash={`service-${slug}`} className="block">
+        <div className="relative overflow-hidden h-[36vh] md:h-[46vh] max-h-[520px] bg-burgundy">
+          <img
+            src={image}
+            alt={title}
+            loading="lazy"
+            width={1024}
+            height={1280}
+            className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+          />
+          <div className="absolute inset-0 bg-oxblood/30 transition-opacity duration-700 group-hover:opacity-0" />
         </div>
-      </div>
+        <div className="mt-4 flex items-start justify-between gap-6">
+          <div>
+            <h3 className="font-sans text-sm md:text-base text-brass font-light tracking-[0.05em] uppercase">
+              {title}
+            </h3>
+            <p className="mt-2 max-w-sm font-sans text-xs md:text-sm text-ivory/80 leading-relaxed">{body}</p>
+          </div>
+        </div>
+      </Link>
     </article>
   );
 }
