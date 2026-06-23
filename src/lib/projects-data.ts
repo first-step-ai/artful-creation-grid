@@ -1146,6 +1146,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       rwh18.url, rwh20.url,
       rwh21.url,
       rwh22.url, rwh24.url,
+      rwhWeb8.url, rwhWeb1.url,
     ],
     beforeImages: [rwhBefore1.url, rwhBefore2.url, rwhBefore3.url],
     afterImages: [rwhAfter1.url, rwhAfter2.url, rwhAfter3.url],
