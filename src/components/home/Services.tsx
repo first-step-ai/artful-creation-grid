@@ -13,24 +13,28 @@ const services = [
     title: "Bathrooms",
     body: "A bathroom built around your routine. Materials and details chosen with you, built by us.",
     image: bathrooms.url,
+    slug: "bathrooms",
   },
   {
     num: "ii",
     title: "Kitchens",
     body: "A kitchen that fits the way your family actually uses it, not just how it looks in a render.",
     image: kitchens.url,
+    slug: "kitchen",
   },
   {
     num: "iii",
     title: "Multi-space Renovations",
     body: "A home that feels considered in every corner. We handle the full picture.",
     image: interiors.url,
+    slug: "multi-space",
   },
   {
     num: "iv",
     title: "Full Home Renovation",
     body: "A complete transformation, finished with the same care we bring to every room.",
     image: laundries.url,
+    slug: "full-home",
   },
 ];
 
