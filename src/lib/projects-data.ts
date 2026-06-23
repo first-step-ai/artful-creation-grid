@@ -157,6 +157,13 @@ import annanBefore3 from "@/assets/projects/annandale-ba/annan-before-3.jpg.asse
 import annanAfter1 from "@/assets/projects/annandale-ba/annan-after-1.jpg.asset.json";
 import annanAfter2 from "@/assets/projects/annandale-ba/annan-after-2.jpg.asset.json";
 import annanAfter3 from "@/assets/projects/annandale-ba/annan-after-3.jpg.asset.json";
+import ak3 from "@/assets/projects/annandale-kitchen/ak-3.jpg.asset.json";
+import ak7 from "@/assets/projects/annandale-kitchen/ak-7.jpg.asset.json";
+import ak10 from "@/assets/projects/annandale-kitchen/ak-10.jpg.asset.json";
+import ak11 from "@/assets/projects/annandale-kitchen/ak-11.jpg.asset.json";
+import ak12 from "@/assets/projects/annandale-kitchen/ak-12.jpg.asset.json";
+import ak13 from "@/assets/projects/annandale-kitchen/ak-13.jpg.asset.json";
+import ak16 from "@/assets/projects/annandale-kitchen/ak-16.jpg.asset.json";
 // Camperdown
 import camp1 from "@/assets/projects/camperdown-v3-4.jpg.asset.json";
 import camp2 from "@/assets/projects/camperdown-v3-7.jpg.asset.json";
