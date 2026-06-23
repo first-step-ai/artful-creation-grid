@@ -177,8 +177,8 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2022",
         suburb: "Drummoyne",
-        title: "Modern Luxury Living",
-        image: drum1.url,
+        title: "Soft Luxe Main Bathroom",
+        image: drumMainBath.url,
         href: "/projects/drummoyne-modern-luxury-living",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
