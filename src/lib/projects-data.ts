@@ -285,6 +285,8 @@ import rwh20 from "@/assets/projects/rozelle-whole/rwh-20.jpg.asset.json";
 import rwh21 from "@/assets/projects/rozelle-whole/rwh-21.jpg.asset.json";
 import rwh22 from "@/assets/projects/rozelle-whole/rwh-22.jpg.asset.json";
 import rwh24 from "@/assets/projects/rozelle-whole/rwh-24.jpg.asset.json";
+import rwhWeb8 from "@/assets/projects/rozelle-whole/rwh-web-8.jpg.asset.json";
+import rwhWeb1 from "@/assets/projects/rozelle-whole/rwh-web-1.jpg.asset.json";
 import rwhBefore1 from "@/assets/projects/rozelle-whole-ba/rwh-before-1.jpg.asset.json";
 import rwhBefore2 from "@/assets/projects/rozelle-whole-ba/rwh-before-2-new.jpg.asset.json";
 import rwhBefore3 from "@/assets/projects/rozelle-whole-ba/rwh-before-3.jpg.asset.json";
