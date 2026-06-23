@@ -1185,7 +1185,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     awards: [
       "2023 HIA NSW Kitchen Design of the Year · Winner",
       "2022 HIA NSW Bathroom Design of the Year · Finalist",
-      "2022 HIA NSW New Bathroom over $425K · Finalist",
+      "2022 HIA NSW New Bathroom over $25K · Finalist",
       "2023 HIA NSW Renovated Kitchen · Finalist",
       "2024 HIA NSW Bathroom Design · Finalist",
       "2024 HIA NSW Kitchen Design · Finalist",
