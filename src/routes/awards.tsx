@@ -9,6 +9,7 @@ import annan1 from "@/assets/projects/annandale-new/annan-02.jpg.asset.json";
 import annan2 from "@/assets/projects/annandale-2022-award.jpg.asset.json";
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import drumFinalist from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
+import drumMainBath from "@/assets/projects/drummoyne-new2/drum2-1.jpg.asset.json";
 import enmoreHero from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
 import lindHero from "@/assets/projects/lindfield/lindfield-10.jpg.asset.json";
 import birchHero from "@/assets/projects/birchgrove/birch-08.jpg.asset.json";
@@ -176,8 +177,8 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2022",
         suburb: "Drummoyne",
-        title: "Modern Luxury Living",
-        image: drum1.url,
+        title: "Soft Luxe Main Bathroom",
+        image: drumMainBath.url,
         href: "/projects/drummoyne-modern-luxury-living",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },

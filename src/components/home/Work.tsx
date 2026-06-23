@@ -5,7 +5,7 @@ import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
 import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
 import rozelleMultispace from "@/assets/projects/rozelle-multispace.jpg.asset.json";
 import bexleyV21 from "@/assets/projects/bexley-v2-1.jpg.asset.json";
-import drummoyne1 from "@/assets/projects/drummoyne-v2-1.jpg.asset.json";
+import drummoyne1 from "@/assets/projects/drummoyne-new2/drum2-1.jpg.asset.json";
 import drumN20 from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 import { Link } from "@tanstack/react-router";
@@ -20,7 +20,7 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 
 
 const projects = [
-  { suburb: "Drummoyne", title: "Modern Luxury Living", category: "FULL INTERIOR", image: drummoyne1.url, slug: "drummoyne-modern-luxury-living" },
+  { suburb: "Drummoyne", title: "Soft Luxe Main Bathroom", category: "BATHROOM", image: drummoyne1.url, slug: "drummoyne-modern-luxury-living" },
   { suburb: "Drummoyne", title: "Award-Finalist Kitchen", category: "KITCHEN", image: drumN20.url, slug: "drummoyne-award-finalist-kitchen-and-bath" },
   { suburb: "Bexley", title: "Bold Utility", category: "BATHROOM", image: bexleyV21.url, slug: "bexley-bold-utility" },
 ];
