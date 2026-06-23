@@ -399,7 +399,7 @@ import castle243L from "@/assets/projects/castle-cove/castle-243L.jpg.asset.json
 import castle1761L from "@/assets/projects/castle-cove/castle-1761L.jpg.asset.json";
 import castle201p from "@/assets/projects/castle-cove/castle-201p.jpg.asset.json";
 import castle260p from "@/assets/projects/castle-cove/castle-260p.jpg.asset.json";
-import castle257p from "@/assets/projects/castle-cove/castle-257p.jpg.asset.json";
+
 import castle218p from "@/assets/projects/castle-cove/castle-218p.jpg.asset.json";
 import castle205p from "@/assets/projects/castle-cove/castle-205p.jpg.asset.json";
 import castle251p from "@/assets/projects/castle-cove/castle-251p.jpg.asset.json";
@@ -1288,7 +1288,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Our third renovation with the team and we couldn't be happier, considering we completed all the design over Zoom!",
-    gallery: [castle296L.url, castle201p.url, castle260p.url, castle211L.url, castle257p.url, castle218p.url, castle1761L.url, castle205p.url, castle251p.url, castle243L.url, castle266p.url, castle267p.url, castle248p.url, castle274p.url, castle1776p.url],
+    gallery: [castle296L.url, castle201p.url, castle260p.url, castle211L.url, castle218p.url, castle1761L.url, castle205p.url, castle251p.url, castle243L.url, castle266p.url, castle267p.url, castle248p.url, castle274p.url, castle1776p.url],
     beforeImages: [castleBefore1.url, castleBefore2.url, castleBefore3.url],
     afterImages: [castleAfter1.url, castleAfter2.url, castleAfter3.url],
   },
