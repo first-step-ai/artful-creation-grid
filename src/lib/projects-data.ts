@@ -124,7 +124,7 @@ import drumAfter2 from "@/assets/projects/drummoyne-ba/drum-after-2.png.asset.js
 import drumAfter3 from "@/assets/projects/drummoyne-ba/drum-after-3.png.asset.json";
 // Annandale
 import annan01 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
-import annan02 from "@/assets/projects/annandale-new/annan-02.jpg.asset.json";
+import annan02 from "@/assets/projects/annandale-new/annan-pink-vanity.jpg.asset.json";
 import annan03 from "@/assets/projects/annandale-new/annan-03.jpg.asset.json";
 import annan05 from "@/assets/projects/annandale-new/annan-05.jpg.asset.json";
 import annan07 from "@/assets/projects/annandale-new/annan-07.jpg.asset.json";
