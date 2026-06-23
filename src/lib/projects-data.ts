@@ -704,8 +704,6 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "We couldn't be more thrilled with our experience working with AM Bathrooms + Projects, and especially with Jenny, who made our vision a reality from the very first moment we connected. Right from the start, we knew that Jenny just *got it*.",
     gallery: [
       annanN09.url, // fireplace living
-      annan02.url,  // green bathroom basin+toilet
-      annan05.url,  // green basin
       annan07.url,  // garden view
       annanN01.url, // pantry storage
       annan08.url,  // garden steps
