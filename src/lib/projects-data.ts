@@ -407,7 +407,7 @@ import castle266p from "@/assets/projects/castle-cove/castle-266p.jpg.asset.json
 import castle267p from "@/assets/projects/castle-cove/castle-267p.jpg.asset.json";
 import castle248p from "@/assets/projects/castle-cove/castle-248p.jpg.asset.json";
 import castle274p from "@/assets/projects/castle-cove/castle-274p.jpg.asset.json";
-import castle1796p from "@/assets/projects/castle-cove/castle-1796p.jpg.asset.json";
+
 import castle1776p from "@/assets/projects/castle-cove/castle-1776p.jpg.asset.json";
 import castleBefore1 from "@/assets/projects/castle-cove-ba/castle-before-1.jpg.asset.json";
 import castleBefore2 from "@/assets/projects/castle-cove-ba/castle-before-2.jpg.asset.json";
