@@ -259,7 +259,7 @@ function ContactPage() {
 function Step({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
-      <h2 className="font-serif font-light text-2xl md:text-[28px] leading-tight text-[var(--ivory)]">
+      <h2 className="font-sans font-light text-2xl md:text-[28px] leading-tight text-[var(--ivory)]">
         {title}
       </h2>
       {children}
