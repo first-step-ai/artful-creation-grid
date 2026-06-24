@@ -241,15 +241,15 @@ function Intro() {
     <section ref={ref} className="reveal border-t border-border/60">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div className="overflow-hidden flex items-center justify-center">
+          <div className="overflow-hidden flex items-center justify-center self-center">
             <img
               src={showroom.url}
               alt="AM Bathrooms + Projects showroom"
-              className="max-h-[480px] w-auto object-cover"
+              className="max-h-[360px] md:max-h-[420px] w-auto object-cover"
               loading="lazy"
             />
           </div>
-          <div>
+          <div className="self-center">
             <div className="eyebrow mb-4">The AM Bathrooms + Projects</div>
             <h2 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-xl md:text-2xl lg:text-3xl mb-8">
               Why we are different.
