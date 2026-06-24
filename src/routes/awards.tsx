@@ -168,10 +168,10 @@ const years: YearGroup[] = [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
-
-
+      },
     ],
   },
+
   {
     year: "2022",
     intro: "HIA NSW Awards · NSW Business Awards",
