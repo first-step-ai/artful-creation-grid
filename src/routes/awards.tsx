@@ -91,8 +91,11 @@ const years: YearGroup[] = [
         href: "/projects/lindfield-refined-family-bathrooms",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
         ],
+
       },
       {
         id: "drummoyne-2024",
