@@ -166,8 +166,9 @@ const years: YearGroup[] = [
         image: laneCove2023.url,
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
-      },
+
 
     ],
   },
