@@ -5,7 +5,7 @@ import rozelle5 from "@/assets/projects/rozelle-5.jpg.asset.json";
 import rozelle7 from "@/assets/projects/rozelle-7.jpg.asset.json";
 import rozelleMultispace from "@/assets/projects/rozelle-multispace.jpg.asset.json";
 import bexleyV21 from "@/assets/projects/bexley-v2-1.jpg.asset.json";
-import drummoyne1 from "@/assets/projects/drummoyne-new2/drum2-1.jpg.asset.json";
+import annan01 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
 import drumN20 from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 import { Link } from "@tanstack/react-router";
