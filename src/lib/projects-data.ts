@@ -123,15 +123,14 @@ import drumAfter1 from "@/assets/projects/drummoyne-ba/drum-after-1.png.asset.js
 import drumAfter2 from "@/assets/projects/drummoyne-ba/drum-after-2.png.asset.json";
 import drumAfter3 from "@/assets/projects/drummoyne-ba/drum-after-3.png.asset.json";
 // Drummoyne, Modern Luxury Living new gallery
-import drumN2_1 from "@/assets/projects/drummoyne-new2/drum2-1.jpg.asset.json";
-import drumN2_5 from "@/assets/projects/drummoyne-new2/drum2-5.jpg.asset.json";
-import drumN2_7 from "@/assets/projects/drummoyne-new2/drum2-7.jpg.asset.json";
-import drumN2_9 from "@/assets/projects/drummoyne-new2/drum2-9.jpg.asset.json";
-import drumN2_20 from "@/assets/projects/drummoyne-new2/drum2-20.jpg.asset.json";
-import drumN2_21 from "@/assets/projects/drummoyne-new2/drum2-21.jpg.asset.json";
-import drumN2_23 from "@/assets/projects/drummoyne-new2/drum2-23.jpg.asset.json";
-import drumN2_27 from "@/assets/projects/drummoyne-new2/drum2-27.jpg.asset.json";
-import drumN2_29 from "@/assets/projects/drummoyne-new2/drum2-29.jpg.asset.json";
+import sl5 from "@/assets/projects/drummoyne-soft-luxe/soft-luxe-5.jpg.asset.json";
+import sl7 from "@/assets/projects/drummoyne-soft-luxe/soft-luxe-7.jpg.asset.json";
+import sl9 from "@/assets/projects/drummoyne-soft-luxe/soft-luxe-9.jpg.asset.json";
+import sl20 from "@/assets/projects/drummoyne-soft-luxe/soft-luxe-20.jpg.asset.json";
+import sl21 from "@/assets/projects/drummoyne-soft-luxe/soft-luxe-21.jpg.asset.json";
+import sl23 from "@/assets/projects/drummoyne-soft-luxe/soft-luxe-23.jpg.asset.json";
+import sl27 from "@/assets/projects/drummoyne-soft-luxe/soft-luxe-27.jpg.asset.json";
+import sl29 from "@/assets/projects/drummoyne-soft-luxe/soft-luxe-29.jpg.asset.json";
 // Annandale
 import annan01 from "@/assets/projects/annandale-new/annan-01.jpg.asset.json";
 
