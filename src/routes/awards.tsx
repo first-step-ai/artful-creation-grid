@@ -154,7 +154,7 @@ const years: YearGroup[] = [
         suburb: "Rozelle",
         title: "Home Facelift",
         image: rhfHero.url,
-        href: "/projects/rozelle-home-facelift",
+        href: "/projects/rozelle-bathrooms-facelift",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
