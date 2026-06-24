@@ -20,8 +20,8 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 
 
 const projects = [
-  { suburb: "Drummoyne", title: "Soft Luxe Main Bathroom", category: "BATHROOM", image: drummoyne1.url, slug: "drummoyne-modern-luxury-living" },
-  { suburb: "Drummoyne", title: "Award-Finalist Kitchen", category: "KITCHEN", image: drumN20.url, slug: "drummoyne-modern-luxury-living" },
+  { suburb: "Drummoyne", title: "Soft Luxe Main Bathroom", category: "BATHROOM", image: drummoyne1.url, slug: "drummoyne-soft-luxe-main-bathroom" },
+  { suburb: "Drummoyne", title: "Award-Finalist Kitchen", category: "KITCHEN", image: drumN20.url, slug: "drummoyne-award-winning-kitchen-and-bath" },
   { suburb: "Bexley", title: "Bold Utility", category: "BATHROOM", image: bexleyV21.url, slug: "bexley-bold-utility" },
 ];
 
