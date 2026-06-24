@@ -830,7 +830,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Streamlined layout improving circulation",
       "Light-filled finish despite compact proportions",
     ],
-    gallery: [drumN2_1.url, drumN2_5.url, drumN2_7.url, drumN2_9.url, drumN2_21.url, drumN2_20.url, drumN2_23.url, drumN2_27.url, drumN2_29.url],
+    gallery: [sl5.url, sl7.url, sl9.url, sl20.url, sl21.url, sl23.url, sl27.url, sl29.url],
     beforeImages: [drumBefore1.url, drumBefore2.url, drumBefore3.url],
     afterImages: [drumAfter1.url, drumAfter2.url, drumAfter3.url],
   },
