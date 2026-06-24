@@ -241,11 +241,11 @@ function Intro() {
     <section ref={ref} className="reveal border-t border-border/60">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div className="overflow-hidden">
+          <div className="overflow-hidden flex items-center justify-center">
             <img
               src={showroom.url}
               alt="AM Bathrooms + Projects showroom"
-              className="w-full h-auto object-cover"
+              className="max-h-[480px] w-auto object-cover"
               loading="lazy"
             />
           </div>
