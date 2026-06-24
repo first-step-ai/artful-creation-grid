@@ -91,8 +91,11 @@ const years: YearGroup[] = [
         href: "/projects/lindfield-refined-family-bathrooms",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
         ],
+
       },
       {
         id: "drummoyne-2024",
@@ -163,11 +166,12 @@ const years: YearGroup[] = [
         image: laneCove2023.url,
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
       },
-
     ],
   },
+
   {
     year: "2022",
     intro: "HIA NSW Awards · NSW Business Awards",
@@ -177,14 +181,15 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2022",
         suburb: "Drummoyne",
-        title: "Soft Luxe Main Bathroom",
-        image: drumMainBath.url,
-        href: "/projects/drummoyne-modern-luxury-living",
+        title: "Award-Winning Kitchen and Bath",
+        image: drumFinalist.url,
+        href: "/projects/drummoyne-award-winning-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW New Bathroom over $25,000" },
         ],
       },
+
       {
         id: "annandale-2022",
         suburb: "Annandale",
