@@ -799,7 +799,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     afterImages: [bexleyAfter1.url, bexleyAfter2.url, bexleyAfter3.url],
   },
 
-  "drummoyne-modern-luxury-living": {
+  "drummoyne-soft-luxe-main-bathroom": {
     heroCaption: "A Drummoyne main bathroom reimagined within a fixed apartment footprint, warm, light and quietly luxurious.",
     scope:
       "Full redesign of the main bathroom in a Drummoyne apartment, reworked from the ground up within a fixed footprint.",
