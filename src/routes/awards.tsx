@@ -91,8 +91,6 @@ const years: YearGroup[] = [
         href: "/projects/lindfield-refined-family-bathrooms",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
-          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
-          { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
         ],
 
@@ -165,7 +163,6 @@ const years: YearGroup[] = [
         title: "Bathroom Design Finalist",
         image: laneCove2023.url,
         awards: [
-          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
       },
