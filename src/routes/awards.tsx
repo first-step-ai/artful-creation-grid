@@ -138,11 +138,11 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2023",
         suburb: "Drummoyne",
-        title: "Award-Finalist Kitchen and Bath",
+        title: "Award-Winning Kitchen and Bath",
         image: drumFinalist.url,
         href: "/projects/drummoyne-award-winning-kitchen-and-bath",
         awards: [
-          { kind: "Finalist", label: "HIA NSW Kitchen Design of the Year" },
+          { kind: "Winner", label: "HIA NSW Kitchen Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Kitchen of the Year" },
         ],
       },
@@ -163,9 +163,9 @@ const years: YearGroup[] = [
         image: laneCove2023.url,
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
-          { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
         ],
       },
+
     ],
   },
   {
