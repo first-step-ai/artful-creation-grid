@@ -9,6 +9,7 @@ import laundry from "@/assets/services/service-laundry.jpg.asset.json";
 import kitchen from "@/assets/services/service-kitchen.jpg.asset.json";
 import multiSpace from "@/assets/projects/rozelle-multispace.jpg.asset.json";
 import fullInterior from "@/assets/projects/drummoyne-fullhome.jpg.asset.json";
+import showroom from "@/assets/services/showroom.jpg.asset.json";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
