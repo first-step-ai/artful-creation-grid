@@ -453,12 +453,12 @@ function YearSection({ group }: { group: YearGroup }) {
               {winners.map((w, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-3 w-full"
+                  className="flex items-center justify-center gap-3 w-full"
                 >
-                  <span className="shrink-0 inline-flex items-center justify-center w-[78px] text-[9px] tracking-[0.22em] uppercase px-2 py-[4px] border bg-ivory text-oxblood border-ivory">
+                  <span className="shrink-0 inline-flex items-center justify-center w-[78px] text-[11px] tracking-[0.22em] uppercase px-2 py-[4px] border bg-ivory text-oxblood border-ivory">
                     {w.kind}
                   </span>
-                  <span className="text-left text-[12px] md:text-[13px] leading-snug text-ivory/90">
+                  <span className="text-center text-[11px] leading-snug text-ivory/90">
                     {w.label}
                   </span>
                 </div>
