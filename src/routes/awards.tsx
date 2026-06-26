@@ -182,7 +182,7 @@ const years: YearGroup[] = [
         id: "drummoyne-2022",
         suburb: "Drummoyne",
         title: "Award-Winning Kitchen and Bath",
-        image: drumFinalist.url,
+        image: drum2022.url,
         href: "/projects/drummoyne-award-winning-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
