@@ -947,7 +947,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "New ensuite",
       "Integrated study space",
     ],
-    gallery: [rze8.url, rze9.url, rze10.url, rze11.url, rze12.url, rze14.url, rze15.url],
+    gallery: [rze8.url, rze9.url, rze10land.url, rze12.url, rze11.url, rze15.url],
     beforeImages: [rzeBefore1.url, rzeBefore2.url, rzeBefore3.url],
     afterImages: [rze8.url, rze10.url, rze14.url],
   },
