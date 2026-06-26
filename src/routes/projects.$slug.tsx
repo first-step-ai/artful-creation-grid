@@ -155,7 +155,7 @@ function ProjectDetailPage() {
 
             {/* CENTER - image stack */}
             <div className="order-2 lg:order-2">
-              <GalleryStack images={p.gallery} title={p.title} />
+              <GalleryStack images={p.gallery} title={p.title} layout={p.galleryLayout} />
             </div>
 
 
@@ -382,7 +382,7 @@ function BeforeAfter({ src, label }: { src: string; label: string }) {
 
 type Orient = "portrait" | "landscape" | "unknown";
 
-function GalleryStack({ images, title }: { images: string[]; title: string }) {
+function GalleryStack({ images, title, layout }: { images: string[]; title: string; layout?: ("auto" | "single")[] }) {
   const [orients, setOrients] = useState<Orient[]>(() => images.map(() => "unknown"));
 
   useEffect(() => {
@@ -410,9 +410,14 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
   const consumed = new Set<number>();
   for (let idx = 0; idx < images.length; idx++) {
     if (consumed.has(idx)) continue;
+    if (layout?.[idx] === "single") {
+      rows.push({ type: "single", items: [{ src: images[idx], index: idx }] });
+      continue;
+    }
     if (orients[idx] === "portrait") {
       let pair = -1;
       for (let j = idx + 1; j < images.length; j++) {
+        if (layout?.[j] === "single") continue;
         if (!consumed.has(j) && orients[j] === "portrait") {
           pair = j;
           break;
