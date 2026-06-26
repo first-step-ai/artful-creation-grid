@@ -155,7 +155,7 @@ function ProjectDetailPage() {
 
             {/* CENTER - image stack */}
             <div className="order-2 lg:order-2">
-              <GalleryStack images={p.gallery} title={p.title} />
+              <GalleryStack images={p.gallery} title={p.title} layout={p.galleryLayout} />
             </div>
 
 
