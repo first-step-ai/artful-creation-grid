@@ -449,7 +449,7 @@ import fd38p from "@/assets/projects/five-dock/fd-38p.jpg.asset.json";
 import fdBefore1 from "@/assets/projects/five-dock/fd-before-1.jpg.asset.json";
 import fdBefore2 from "@/assets/projects/five-dock/fd-before-2.jpg.asset.json";
 import fdBefore3 from "@/assets/projects/five-dock/fd-before-3.jpg.asset.json";
-// Rozelle Home Facelift
+// Rozelle Bathroom Facelift
 import rhf05L from "@/assets/projects/rozelle-facelift/rhf-05L.jpg.asset.json";
 import rhf20L from "@/assets/projects/rozelle-facelift/rhf-20L.jpg.asset.json";
 import rhf22L from "@/assets/projects/rozelle-facelift/rhf-22L.jpg.asset.json";
