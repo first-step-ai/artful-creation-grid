@@ -306,6 +306,71 @@ function CheckMark() {
   );
 }
 
+const qaItems = [
+  {
+    question: "Why do you charge for the Discovery Consultation?",
+    answer:
+      "Our Discovery Consultation is a professional planning and assessment service designed to provide expert guidance before design and construction begin. This allows us to understand your goals, assess your home and prepare a personalised renovation proposal tailored to your project.",
+  },
+  {
+    question: "Does the Discovery Consultation include designs?",
+    answer:
+      "No. The Discovery Consultation is focused on planning, feasibility and understanding your requirements. Design concepts, drawings and selections are developed during the Design Phase once you choose to proceed with your renovation.",
+  },
+  {
+    question: "Why is the Design Phase important?",
+    answer:
+      "Thoughtful design and planning reduce costly variations, improve functionality and ensure every decision is carefully considered before construction begins.",
+  },
+  {
+    question: "Do you manage the entire renovation process?",
+    answer:
+      "Yes. We manage design, selections, procurement, project management and construction, providing one point of accountability throughout your renovation journey.",
+  },
+  {
+    question: "What areas do you service?",
+    answer: "Sydney-wide.",
+  },
+  {
+    question: "Are you licensed and insured?",
+    answer:
+      "Yes. We are fully licensed and insured, providing complete peace of mind throughout your project.",
+  },
+  {
+    question: "How long does a renovation take?",
+    answer:
+      "Timeframes vary depending on the scope of works. During your Discovery Consultation, we'll discuss expected timelines specific to your project.",
+  },
+];
+
+function Questions() {
+  const ref = useReveal<HTMLElement>();
+  return (
+    <section ref={ref} className="reveal border-t border-border/60">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28">
+        <div className="max-w-3xl mx-auto">
+          <div className="eyebrow mb-4">Common Questions</div>
+          <h2 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-xl md:text-2xl lg:text-3xl mb-10 md:mb-14">
+            Frequently Asked.
+          </h2>
+          <Accordion type="single" collapsible className="w-full">
+            {qaItems.map((item, i) => (
+              <AccordionItem key={i} value={`item-${i}`} className="border-b border-border/60">
+                <AccordionTrigger className="font-sans text-sm md:text-base font-medium text-ivory/90 hover:text-ivory py-5 md:py-6 hover:no-underline text-left leading-relaxed">
+                  {item.question}
+                </AccordionTrigger>
+                <AccordionContent className="font-sans text-sm md:text-base text-ivory/75 leading-relaxed pb-5 md:pb-6">
+                  {item.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function serviceSlug(title: string) {
   return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
