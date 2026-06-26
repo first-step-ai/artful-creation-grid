@@ -410,9 +410,14 @@ function GalleryStack({ images, title, layout }: { images: string[]; title: stri
   const consumed = new Set<number>();
   for (let idx = 0; idx < images.length; idx++) {
     if (consumed.has(idx)) continue;
+    if (layout?.[idx] === "single") {
+      rows.push({ type: "single", items: [{ src: images[idx], index: idx }] });
+      continue;
+    }
     if (orients[idx] === "portrait") {
       let pair = -1;
       for (let j = idx + 1; j < images.length; j++) {
+        if (layout?.[j] === "single") continue;
         if (!consumed.has(j) && orients[j] === "portrait") {
           pair = j;
           break;
