@@ -442,7 +442,7 @@ function YearSection({ group }: { group: YearGroup }) {
       className="reveal border-t border-ivory/10 py-10 md:py-14"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
-        <div className={`md:col-span-5 flex flex-col ${multiWinner ? "items-start text-left" : "items-center text-center"}`}>
+        <div className="md:col-span-5 flex flex-col items-center text-center">
           <img src={hiaLogo.url} alt="HIA" className="h-20 md:h-24 w-auto mb-5 opacity-90" />
           <div className="eyebrow mb-4">Recognition</div>
           <div className="font-sans text-[64px] md:text-[110px] leading-none text-ivory">
