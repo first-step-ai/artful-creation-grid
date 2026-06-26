@@ -18,6 +18,7 @@ import castleCoveRefresh from "@/assets/awards/castle-cove-refresh.jpg.asset.jso
 import rhfHero from "@/assets/projects/rozelle-facelift/rhf-05L.jpg.asset.json";
 import national2024 from "@/assets/2024-national-winner.jpg.asset.json";
 import nsw2022 from "@/assets/2022-nsw-winner.jpg.asset.json";
+import nsw2023 from "@/assets/awards/hia-2023-podium.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import laneCove2023 from "@/assets/projects/lane-cove-2023.jpg.asset.json";
 
