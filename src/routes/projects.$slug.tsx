@@ -383,25 +383,11 @@ function BeforeAfter({ src, label }: { src: string; label: string }) {
 type Orient = "portrait" | "landscape" | "unknown";
 
 function GalleryStack({ images, title }: { images: string[]; title: string }) {
-  // Parse #landscape marker to force a portrait image into a landscape crop
-  const parsed = images.map((raw) => {
-    const forceLandscape = raw.includes("#landscape");
-    return { src: forceLandscape ? raw.replace("#landscape", "") : raw, forceLandscape };
-  });
-
-  const [orients, setOrients] = useState<Orient[]>(() => parsed.map(() => "unknown"));
+  const [orients, setOrients] = useState<Orient[]>(() => images.map(() => "unknown"));
 
   useEffect(() => {
     let cancelled = false;
-    parsed.forEach((p, i) => {
-      if (p.forceLandscape) {
-        setOrients((prev) => {
-          const next = [...prev];
-          next[i] = "landscape";
-          return next;
-        });
-        return;
-      }
+    images.forEach((src, i) => {
       const img = new Image();
       img.onload = () => {
         if (cancelled) return;
@@ -411,7 +397,7 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
           return next;
         });
       };
-      img.src = p.src;
+      img.src = src;
     });
     return () => {
       cancelled = true;
@@ -420,14 +406,14 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
 
   // Pair portraits side-by-side (greedy lookahead, not just consecutive);
   // landscapes/unknowns render full-width on their own row.
-  const rows: { type: "single" | "pair"; items: { src: string; index: number; forceLandscape?: boolean }[] }[] = [];
+  const rows: { type: "single" | "pair"; items: { src: string; index: number }[] }[] = [];
   const consumed = new Set<number>();
-  for (let idx = 0; idx < parsed.length; idx++) {
+  for (let idx = 0; idx < images.length; idx++) {
     if (consumed.has(idx)) continue;
-    if (orients[idx] === "portrait" && !parsed[idx].forceLandscape) {
+    if (orients[idx] === "portrait") {
       let pair = -1;
-      for (let j = idx + 1; j < parsed.length; j++) {
-        if (!consumed.has(j) && orients[j] === "portrait" && !parsed[j].forceLandscape) {
+      for (let j = idx + 1; j < images.length; j++) {
+        if (!consumed.has(j) && orients[j] === "portrait") {
           pair = j;
           break;
         }
@@ -437,17 +423,14 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
         rows.push({
           type: "pair",
           items: [
-            { src: parsed[idx].src, index: idx },
-            { src: parsed[pair].src, index: pair },
+            { src: images[idx], index: idx },
+            { src: images[pair], index: pair },
           ],
         });
         continue;
       }
     }
-    rows.push({
-      type: "single",
-      items: [{ src: parsed[idx].src, index: idx, forceLandscape: parsed[idx].forceLandscape }],
-    });
+    rows.push({ type: "single", items: [{ src: images[idx], index: idx }] });
   }
 
   return (
@@ -467,15 +450,12 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
             ))}
           </div>
         ) : (
-          <figure
-            key={ri}
-            className={`overflow-hidden bg-burgundy ${row.items[0].forceLandscape ? "aspect-[3/2]" : ""}`}
-          >
+          <figure key={ri} className="overflow-hidden bg-burgundy">
             <img
               src={row.items[0].src}
               alt={`${title}, image ${row.items[0].index + 1}`}
               loading="lazy"
-              className={`w-full ${row.items[0].forceLandscape ? "h-full" : "h-auto"} object-cover`}
+              className="w-full h-auto object-cover"
             />
           </figure>
         )
