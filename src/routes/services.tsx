@@ -1,5 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
 import { Process } from "@/components/home/Process";
