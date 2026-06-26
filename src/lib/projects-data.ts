@@ -552,7 +552,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Drummoyne", title: "Soft Luxe Main Bathroom", category: "Bathroom", image: sl5.url, badge: "Finalist", tags: ["Bathroom"] },
   { suburb: "Putney", title: "Reimagined Heritage Living", category: "Multi-Space", image: putney1.url, tags: ["Multi-Space", "Ensuite", "Bathroom", "Living Room"] },
   { suburb: "Rozelle", title: "Calm Family Bathroom", category: "Bathroom", image: eliz10.url, tags: ["Bathroom"] },
-  { suburb: "Rozelle", title: "Ensuite and Study Conversion", category: "Ensuite", image: rze1.url, tags: ["Ensuite", "Bathroom"] },
+  { suburb: "Rozelle", title: "Ensuite Conversion", category: "Bathroom", image: rze1.url, tags: ["Bathroom", "Ensuite"] },
   { suburb: "Roseville", title: "Calm Family Spaces", category: "Multi-Space", image: roseville1.url, tags: ["Multi-Space", "Bathroom", "Laundry"] },
   { suburb: "Enmore", title: "Award-Winning Family Bathroom", category: "Bathroom", image: enmore17.url, badge: "Award", tags: ["Bathroom"] },
   { suburb: "Lindfield", title: "Refined Family Bathrooms", category: "Bathroom", image: lind10.url, tags: ["Bathroom", "Ensuite"] },
@@ -927,26 +927,26 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     afterImages: [elizAfter1.url, elizAfter2.url, elizAfter3.url],
   },
 
-  "rozelle-ensuite-and-study-conversion": {
+  "rozelle-ensuite-conversion": {
     heroCaption:
-      "A Rozelle renovation transforming an unused bedroom into a refined private ensuite and practical home study through considered floorplan reconfiguration.",
+      "A Rozelle bathroom renovation transforming an unused bedroom into a refined private ensuite through considered floorplan reconfiguration.",
     scope:
-      "What was once an unused bedroom is now a beautifully resolved ensuite and study, designed to enhance both function and flow. By reworking the floor plan, a seamless entry was created from the bedroom, and the space was carefully divided to deliver a private ensuite on one side and a practical study on the other.",
+      "What was once an unused bedroom is now a beautifully resolved ensuite, designed to enhance both function and flow. By reworking the floor plan, a seamless entry was created from the master bedroom, delivering a private ensuite that brings everyday luxury to the home.",
     awards: [],
-    rightHeading: "Ensuite and Study Conversion",
+    rightHeading: "Ensuite Conversion",
     rightIntro:
-      "A Rozelle renovation transforming an unused bedroom into a refined private ensuite and practical home study through considered floorplan reconfiguration.",
+      "A Rozelle bathroom renovation transforming an unused bedroom into a refined private ensuite through considered floorplan reconfiguration.",
     whatWasntWorking: [
       "A spare bedroom was sitting unused, adding no real value to the home",
       "The master had no ensuite attached",
       "Overall the home's footprint was being underutilised, leaving everyday potential on the table",
     ],
     whatWeDid:
-      "By reworking the floor plan, we created a seamless entry from the bedroom and carefully divided the space to deliver a private ensuite on one side and a practical study on the other. Through thoughtful planning and a fully managed design and build process, this transformation adds everyday luxury while making smarter use of the home's footprint.",
+      "By reworking the floor plan, we created a seamless entry from the master bedroom and delivered a private ensuite that feels calm, considered and refined. Through thoughtful planning and a fully managed design and build process, this transformation adds everyday luxury while making smarter use of the home's footprint.",
     designFeatures: [
       "Floor plan reconfiguration",
-      "New ensuite",
-      "Integrated study space",
+      "New private ensuite off the master bedroom",
+      "Refined tile, tapware and joinery selections",
     ],
     gallery: [rze8.url, rze9.url, rze10land.url, rze12.url, rze11land.url, rze15land.url],
     beforeImages: [rzeBefore1.url, rzeBefore2.url, rzeBefore3.url],
