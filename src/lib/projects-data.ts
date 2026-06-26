@@ -927,25 +927,25 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     afterImages: [elizAfter1.url, elizAfter2.url, elizAfter3.url],
   },
 
-  "rozelle-ensuite-conversion": {
+  "rozelle-bathroom-conversion": {
     heroCaption:
-      "A Rozelle bathroom renovation transforming an unused bedroom into a refined private ensuite through considered floorplan reconfiguration.",
+      "A Rozelle bathroom renovation transforming an unused bedroom into a refined private bathroom through considered floorplan reconfiguration.",
     scope:
-      "What was once an unused bedroom is now a beautifully resolved ensuite, designed to enhance both function and flow. By reworking the floor plan, a seamless entry was created from the master bedroom, delivering a private ensuite that brings everyday luxury to the home.",
+      "What was once an unused bedroom is now a beautifully resolved bathroom, designed to enhance both function and flow. By reworking the floor plan, a seamless entry was created from the master bedroom, delivering a private bathroom that brings everyday luxury to the home.",
     awards: [],
-    rightHeading: "Ensuite Conversion",
+    rightHeading: "Bathroom Conversion",
     rightIntro:
-      "A Rozelle bathroom renovation transforming an unused bedroom into a refined private ensuite through considered floorplan reconfiguration.",
+      "A Rozelle bathroom renovation transforming an unused bedroom into a refined private bathroom through considered floorplan reconfiguration.",
     whatWasntWorking: [
       "A spare bedroom was sitting unused, adding no real value to the home",
-      "The master had no ensuite attached",
+      "The master had no private bathroom attached",
       "Overall the home's footprint was being underutilised, leaving everyday potential on the table",
     ],
     whatWeDid:
-      "By reworking the floor plan, we created a seamless entry from the master bedroom and delivered a private ensuite that feels calm, considered and refined. Through thoughtful planning and a fully managed design and build process, this transformation adds everyday luxury while making smarter use of the home's footprint.",
+      "By reworking the floor plan, we created a seamless entry from the master bedroom and delivered a private bathroom that feels calm, considered and refined. Through thoughtful planning and a fully managed design and build process, this transformation adds everyday luxury while making smarter use of the home's footprint.",
     designFeatures: [
       "Floor plan reconfiguration",
-      "New private ensuite off the master bedroom",
+      "New private bathroom off the master bedroom",
       "Refined tile, tapware and joinery selections",
     ],
     gallery: [rze8.url, rze9.url, rze10land.url, rze12.url, rze11land.url, rze15land.url],
