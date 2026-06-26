@@ -5,7 +5,7 @@ import { Footer } from "@/components/home/Footer";
 import { useReveal } from "@/hooks/use-reveal";
 import rozelle1 from "@/assets/projects/rozelle-1.jpg.asset.json";
 import rozelleKitchen from "@/assets/projects/rozelle-new-9.jpg.asset.json";
-import annandaleAwards from "@/assets/projects/annandale-new/annandale-awards-2025.jpg.asset.json";
+import annan1 from "@/assets/projects/annandale-new/annan-02.jpg.asset.json";
 import annan2 from "@/assets/projects/annandale-2022-award.jpg.asset.json";
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import drumFinalist from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
@@ -58,7 +58,7 @@ const years: YearGroup[] = [
         id: "annandale-2025",
         suburb: "Annandale",
         title: "Smart Family Living",
-        image: annandaleAwards.url,
+        image: annan1.url,
         href: "/projects/annandale-smart-family-living",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
