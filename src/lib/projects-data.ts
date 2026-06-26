@@ -527,6 +527,7 @@ export type ProjectDetail = ProjectSummary & {
   testimonial?: string;
   press?: { label: string; url: string }[];
   gallery: string[];
+  galleryLayout?: ("auto" | "single")[];
   beforeImage?: string;
   afterImage?: string;
   beforeImages?: string[];
