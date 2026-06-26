@@ -454,7 +454,7 @@ function YearSection({ group }: { group: YearGroup }) {
           </p>
 
           {winners.length > 0 && (
-            <div className={`mt-5 flex flex-col gap-3 w-full max-w-sm ${multiWinner ? "items-start" : "items-center mx-auto"}`}>
+            <div className="mt-5 flex flex-col gap-3 w-full max-w-sm items-center mx-auto">
               {winners.map((w, i) => (
                 <div
                   key={i}
