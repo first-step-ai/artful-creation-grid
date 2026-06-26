@@ -10,6 +10,7 @@ import annan2 from "@/assets/projects/annandale-2022-award.jpg.asset.json";
 import drum1 from "@/assets/projects/drummoyne-1.jpg.asset.json";
 import drumFinalist from "@/assets/projects/drummoyne-new/drum-20.jpg.asset.json";
 import drum2024 from "@/assets/projects/drummoyne-2024-award.jpg.asset.json";
+import drum2022 from "@/assets/projects/drummoyne-2022-award.jpg.asset.json";
 import drumMainBath from "@/assets/projects/drummoyne-new2/drum2-1.jpg.asset.json";
 import enmoreHero from "@/assets/projects/enmore/enmore-31.jpg.asset.json";
 import lindHero from "@/assets/projects/lindfield/lindfield-10.jpg.asset.json";
@@ -181,7 +182,7 @@ const years: YearGroup[] = [
         id: "drummoyne-2022",
         suburb: "Drummoyne",
         title: "Award-Winning Kitchen and Bath",
-        image: drumFinalist.url,
+        image: drum2022.url,
         href: "/projects/drummoyne-award-winning-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
