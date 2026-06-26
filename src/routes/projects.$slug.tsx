@@ -382,7 +382,7 @@ function BeforeAfter({ src, label }: { src: string; label: string }) {
 
 type Orient = "portrait" | "landscape" | "unknown";
 
-function GalleryStack({ images, title }: { images: string[]; title: string }) {
+function GalleryStack({ images, title, layout }: { images: string[]; title: string; layout?: ("auto" | "single")[] }) {
   const [orients, setOrients] = useState<Orient[]>(() => images.map(() => "unknown"));
 
   useEffect(() => {
