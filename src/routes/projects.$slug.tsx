@@ -467,12 +467,15 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
             ))}
           </div>
         ) : (
-          <figure key={ri} className="overflow-hidden bg-burgundy">
+          <figure
+            key={ri}
+            className={`overflow-hidden bg-burgundy ${row.items[0].forceLandscape ? "aspect-[3/2]" : ""}`}
+          >
             <img
               src={row.items[0].src}
               alt={`${title}, image ${row.items[0].index + 1}`}
               loading="lazy"
-              className="w-full h-auto object-cover"
+              className={`w-full ${row.items[0].forceLandscape ? "h-full" : "h-auto"} object-cover`}
             />
           </figure>
         )
