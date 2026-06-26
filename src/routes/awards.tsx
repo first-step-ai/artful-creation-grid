@@ -152,7 +152,7 @@ const years: YearGroup[] = [
       {
         id: "rozelle-2023",
         suburb: "Rozelle",
-        title: "Home Facelift",
+        title: "Bathroom Facelift",
         image: rhfHero.url,
         href: "/projects/rozelle-bathrooms-facelift",
         awards: [
