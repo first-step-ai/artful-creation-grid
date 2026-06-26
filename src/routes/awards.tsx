@@ -434,34 +434,36 @@ function YearSection({ group }: { group: YearGroup }) {
     .flatMap((p) => p.awards)
     .filter((a) => a.kind === "Winner");
 
+  const multiWinner = winners.length > 1;
+
   return (
     <section
       ref={ref}
       className="reveal border-t border-ivory/10 py-10 md:py-14"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
-        <div className="md:col-span-5 flex flex-col items-center text-center">
+        <div className={`md:col-span-5 flex flex-col ${multiWinner ? "items-start text-left" : "items-center text-center"}`}>
           <img src={hiaLogo.url} alt="HIA" className="h-20 md:h-24 w-auto mb-5 opacity-90" />
           <div className="eyebrow mb-4">Recognition</div>
           <div className="font-sans text-[64px] md:text-[110px] leading-none text-ivory">
             {group.year}
           </div>
-          <div className="mt-6 h-px w-16 bg-brass mx-auto" />
-          <p className="mt-6 text-ivory/70 text-[14px] md:text-[15px] max-w-sm mx-auto">
+          <div className={`mt-6 h-px w-16 bg-brass ${multiWinner ? "" : "mx-auto"}`} />
+          <p className={`mt-6 text-ivory/70 text-[14px] md:text-[15px] max-w-sm ${multiWinner ? "" : "mx-auto"}`}>
             {group.intro}
           </p>
 
           {winners.length > 0 && (
-            <div className="mt-5 flex flex-col items-center gap-3 w-full max-w-sm mx-auto">
+            <div className={`mt-5 flex flex-col gap-3 w-full max-w-sm ${multiWinner ? "items-start" : "items-center mx-auto"}`}>
               {winners.map((w, i) => (
                 <div
                   key={i}
-                  className="flex items-center justify-center gap-3 w-full"
+                  className={`flex items-center gap-3 w-full ${multiWinner ? "justify-start" : "justify-center"}`}
                 >
                   <span className="shrink-0 inline-flex items-center justify-center w-[78px] text-[11px] tracking-[0.22em] uppercase px-2 py-[4px] border bg-ivory text-oxblood border-ivory">
                     {w.kind}
                   </span>
-                  <span className="text-center text-[11px] leading-snug text-ivory/90">
+                  <span className={`text-[11px] leading-snug text-ivory/90 ${multiWinner ? "" : "text-center"}`}>
                     {w.label}
                   </span>
                 </div>
@@ -469,7 +471,7 @@ function YearSection({ group }: { group: YearGroup }) {
             </div>
           )}
 
-          <p className="mt-5 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm mx-auto">
+          <p className={`mt-5 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm ${multiWinner ? "" : "mx-auto"}`}>
             {group.blurb}
           </p>
         </div>
