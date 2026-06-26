@@ -261,6 +261,7 @@ import rze1 from "@/assets/projects/rozelle-ensuite-study/rze-1.jpg.asset.json";
 import rze8 from "@/assets/projects/rozelle-ensuite-study/rze-8.jpg.asset.json";
 import rze9 from "@/assets/projects/rozelle-ensuite-study/rze-9.jpg.asset.json";
 import rze10 from "@/assets/projects/rozelle-ensuite-study/rze-10.jpg.asset.json";
+import rze10land from "@/assets/projects/rozelle-ensuite-study/rze-10-landscape.jpg.asset.json";
 import rze11 from "@/assets/projects/rozelle-ensuite-study/rze-11.jpg.asset.json";
 import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json";
 import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
@@ -946,7 +947,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "New ensuite",
       "Integrated study space",
     ],
-    gallery: [rze8.url, rze9.url, rze10.url, rze11.url, rze12.url, rze14.url, rze15.url],
+    gallery: [rze8.url, rze9.url, rze10land.url, rze12.url, rze11.url, rze15.url],
     beforeImages: [rzeBefore1.url, rzeBefore2.url, rzeBefore3.url],
     afterImages: [rze8.url, rze10.url, rze14.url],
   },
