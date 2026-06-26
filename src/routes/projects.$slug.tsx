@@ -383,11 +383,25 @@ function BeforeAfter({ src, label }: { src: string; label: string }) {
 type Orient = "portrait" | "landscape" | "unknown";
 
 function GalleryStack({ images, title }: { images: string[]; title: string }) {
-  const [orients, setOrients] = useState<Orient[]>(() => images.map(() => "unknown"));
+  // Parse #landscape marker to force a portrait image into a landscape crop
+  const parsed = images.map((raw) => {
+    const forceLandscape = raw.includes("#landscape");
+    return { src: forceLandscape ? raw.replace("#landscape", "") : raw, forceLandscape };
+  });
+
+  const [orients, setOrients] = useState<Orient[]>(() => parsed.map(() => "unknown"));
 
   useEffect(() => {
     let cancelled = false;
-    images.forEach((src, i) => {
+    parsed.forEach((p, i) => {
+      if (p.forceLandscape) {
+        setOrients((prev) => {
+          const next = [...prev];
+          next[i] = "landscape";
+          return next;
+        });
+        return;
+      }
       const img = new Image();
       img.onload = () => {
         if (cancelled) return;
@@ -397,7 +411,7 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
           return next;
         });
       };
-      img.src = src;
+      img.src = p.src;
     });
     return () => {
       cancelled = true;
@@ -406,14 +420,14 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
 
   // Pair portraits side-by-side (greedy lookahead, not just consecutive);
   // landscapes/unknowns render full-width on their own row.
-  const rows: { type: "single" | "pair"; items: { src: string; index: number }[] }[] = [];
+  const rows: { type: "single" | "pair"; items: { src: string; index: number; forceLandscape?: boolean }[] }[] = [];
   const consumed = new Set<number>();
-  for (let idx = 0; idx < images.length; idx++) {
+  for (let idx = 0; idx < parsed.length; idx++) {
     if (consumed.has(idx)) continue;
-    if (orients[idx] === "portrait") {
+    if (orients[idx] === "portrait" && !parsed[idx].forceLandscape) {
       let pair = -1;
-      for (let j = idx + 1; j < images.length; j++) {
-        if (!consumed.has(j) && orients[j] === "portrait") {
+      for (let j = idx + 1; j < parsed.length; j++) {
+        if (!consumed.has(j) && orients[j] === "portrait" && !parsed[j].forceLandscape) {
           pair = j;
           break;
         }
@@ -423,14 +437,17 @@ function GalleryStack({ images, title }: { images: string[]; title: string }) {
         rows.push({
           type: "pair",
           items: [
-            { src: images[idx], index: idx },
-            { src: images[pair], index: pair },
+            { src: parsed[idx].src, index: idx },
+            { src: parsed[pair].src, index: pair },
           ],
         });
         continue;
       }
     }
-    rows.push({ type: "single", items: [{ src: images[idx], index: idx }] });
+    rows.push({
+      type: "single",
+      items: [{ src: parsed[idx].src, index: idx, forceLandscape: parsed[idx].forceLandscape }],
+    });
   }
 
   return (
