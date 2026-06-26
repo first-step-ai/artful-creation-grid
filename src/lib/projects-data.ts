@@ -1413,6 +1413,7 @@ function buildDetail(s: ProjectSummary): ProjectDetail {
     testimonial: o.testimonial,
     press: o.press,
     gallery: o.gallery ?? [s.image],
+    galleryLayout: o.galleryLayout,
     beforeImage: o.beforeImage,
     afterImage: o.afterImage,
     beforeImages:
