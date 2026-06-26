@@ -1303,7 +1303,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     ],
     testimonial:
       "Our third renovation with the team and we couldn't be happier, considering we completed all the design over Zoom!",
-    gallery: [castle296L.url, castle201p.url, castle260p.url, castle211L.url, castle218p.url, castle1761L.url, castle205p.url, castle251p.url, castle243L.url, castle266p.url, castle267p.url, castle248p.url, castle274p.url, castle1776p.url],
+    gallery: [castle296L.url, castle201p.url, castle260p.url, castle211L.url, castle218p.url, castle1761L.url, castle205p.url, castle251p.url, castle243L.url, castle266p.url, castle267p.url, castle248p.url, castleAfter2.url, castle1776p.url],
     beforeImages: [castleBefore1.url, castleBefore2.url, castleBefore3.url],
     afterImages: [castleAfter1.url, castleAfter2.url, castleAfter3.url],
   },
