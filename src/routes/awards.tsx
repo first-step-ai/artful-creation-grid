@@ -442,19 +442,19 @@ function YearSection({ group }: { group: YearGroup }) {
       className="reveal border-t border-ivory/10 py-10 md:py-14"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
-        <div className={`md:col-span-5 flex flex-col ${multiWinner ? "items-start text-left" : "items-center text-center"}`}>
+        <div className="md:col-span-5 flex flex-col items-center text-center">
           <img src={hiaLogo.url} alt="HIA" className="h-20 md:h-24 w-auto mb-5 opacity-90" />
           <div className="eyebrow mb-4">Recognition</div>
           <div className="font-sans text-[64px] md:text-[110px] leading-none text-ivory">
             {group.year}
           </div>
-          <div className={`mt-6 h-px w-16 bg-brass ${multiWinner ? "" : "mx-auto"}`} />
-          <p className={`mt-6 text-ivory/70 text-[14px] md:text-[15px] max-w-sm ${multiWinner ? "" : "mx-auto"}`}>
+          <div className="mt-6 h-px w-16 bg-brass mx-auto" />
+          <p className="mt-6 text-ivory/70 text-[14px] md:text-[15px] max-w-sm mx-auto">
             {group.intro}
           </p>
 
           {winners.length > 0 && (
-            <div className={`mt-5 flex flex-col gap-3 w-full max-w-sm ${multiWinner ? "items-start" : "items-center mx-auto"}`}>
+            <div className="mt-5 flex flex-col gap-3 w-full max-w-sm items-center mx-auto">
               {winners.map((w, i) => (
                 <div
                   key={i}
@@ -471,7 +471,7 @@ function YearSection({ group }: { group: YearGroup }) {
             </div>
           )}
 
-          <p className={`mt-5 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm ${multiWinner ? "" : "mx-auto"}`}>
+          <p className="mt-5 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm mx-auto">
             {group.blurb}
           </p>
         </div>
