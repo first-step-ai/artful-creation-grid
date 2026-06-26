@@ -471,7 +471,7 @@ function YearSection({ group }: { group: YearGroup }) {
             </div>
           )}
 
-          <p className={`mt-5 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm ${multiWinner ? "" : "mx-auto"}`}>
+          <p className="mt-5 text-ivory/55 text-[13px] md:text-[14px] leading-relaxed max-w-sm mx-auto">
             {group.blurb}
           </p>
         </div>
