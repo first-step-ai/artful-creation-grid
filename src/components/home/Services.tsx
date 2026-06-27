@@ -62,29 +62,6 @@ export function Services() {
             <ServiceCard key={s.title} {...s} />
           ))}
         </div>
-        <div className="mt-14 text-center flex flex-col items-center gap-5">
-          <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
-            className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap"
-          >
-            Start Smart Site Consultation
-          </a>
-          <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
-            className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap"
-          >
-            AMBP Profile
-          </a>
-          <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
-            className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap"
-          >
-            Renovation Discovery Consultation
-          </a>
-        </div>
       </div>
     </section>
   );
