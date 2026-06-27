@@ -23,7 +23,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/contact", changefreq: "monthly", priority: "0.7" },
         ];
 
-        const projectEntries: SitemapEntry[] = projects.map((p) => ({
+        const projectEntries: SitemapEntry[] = projects.filter((p) => !p.archived).map((p) => ({
           path: `/projects/${slugify(p.suburb, p.title)}`,
           changefreq: "monthly",
           priority: "0.6",

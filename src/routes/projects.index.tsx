@@ -50,6 +50,7 @@ function ProjectsPage() {
   const [page, setPage] = useState(1);
 
   const filtered = projects.filter((p) => {
+    if (p.archived) return false;
     if (active === "All") return true;
     if (active === "Award Winning" || active === "Award Finalist") {
       const awards = getProjectDetail(slugify(p.suburb, p.title)).awards ?? [];
