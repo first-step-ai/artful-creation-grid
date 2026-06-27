@@ -382,7 +382,7 @@ function BeforeAfter({ src, label }: { src: string; label: string }) {
 
 type Orient = "portrait" | "landscape" | "unknown";
 
-function GalleryStack({ images, title, layout }: { images: string[]; title: string; layout?: ("auto" | "single")[] }) {
+function GalleryStack({ images, title, layout }: { images: string[]; title: string; layout?: ("auto" | "single" | "single-landscape-contain")[] }) {
   const [orients, setOrients] = useState<Orient[]>(() => images.map(() => "unknown"));
 
   useEffect(() => {
@@ -406,18 +406,18 @@ function GalleryStack({ images, title, layout }: { images: string[]; title: stri
 
   // Pair portraits side-by-side (greedy lookahead, not just consecutive);
   // landscapes/unknowns render full-width on their own row.
-  const rows: { type: "single" | "pair"; items: { src: string; index: number }[] }[] = [];
+  const rows: { type: "single" | "pair" | "single-landscape-contain"; items: { src: string; index: number }[] }[] = [];
   const consumed = new Set<number>();
   for (let idx = 0; idx < images.length; idx++) {
     if (consumed.has(idx)) continue;
-    if (layout?.[idx] === "single") {
-      rows.push({ type: "single", items: [{ src: images[idx], index: idx }] });
+    if (layout?.[idx] === "single" || layout?.[idx] === "single-landscape-contain") {
+      rows.push({ type: layout[idx] as "single" | "single-landscape-contain", items: [{ src: images[idx], index: idx }] });
       continue;
     }
     if (orients[idx] === "portrait") {
       let pair = -1;
       for (let j = idx + 1; j < images.length; j++) {
-        if (layout?.[j] === "single") continue;
+        if (layout?.[j] === "single" || layout?.[j] === "single-landscape-contain") continue;
         if (!consumed.has(j) && orients[j] === "portrait") {
           pair = j;
           break;
@@ -454,6 +454,15 @@ function GalleryStack({ images, title, layout }: { images: string[]; title: stri
               </figure>
             ))}
           </div>
+        ) : row.type === "single-landscape-contain" ? (
+          <figure key={ri} className="overflow-hidden bg-burgundy aspect-[3/2]">
+            <img
+              src={row.items[0].src}
+              alt={`${title}, image ${row.items[0].index + 1}`}
+              loading="lazy"
+              className="w-full h-full object-contain"
+            />
+          </figure>
         ) : (
           <figure key={ri} className="overflow-hidden bg-burgundy">
             <img

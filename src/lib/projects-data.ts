@@ -528,7 +528,7 @@ export type ProjectDetail = ProjectSummary & {
   testimonial?: string;
   press?: { label: string; url: string }[];
   gallery: string[];
-  galleryLayout?: ("auto" | "single")[];
+  galleryLayout?: ("auto" | "single" | "single-landscape-contain")[];
   beforeImage?: string;
   afterImage?: string;
   beforeImages?: string[];
@@ -950,7 +950,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "Refined tile, tapware and joinery selections",
     ],
     gallery: [rze8.url, rze9.url, rze10land.url, rze12.url, rze11land.url, rze15land.url, rzeNew.url],
-    galleryLayout: ["auto", "auto", "auto", "auto", "auto", "auto", "single"],
+    galleryLayout: ["auto", "auto", "auto", "auto", "auto", "auto", "single-landscape-contain"],
     beforeImages: [rzeBefore1.url, rzeBefore2.url, rzeBefore3.url],
     afterImages: [rze8.url, rze10.url, rze14.url],
   },
