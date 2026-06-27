@@ -77,6 +77,13 @@ export function Services() {
           >
             AMBP Profile
           </a>
+          <a
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap"
+          >
+            Renovation Discovery Consultation
+          </a>
         </div>
       </div>
     </section>
