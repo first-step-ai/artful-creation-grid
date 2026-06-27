@@ -258,7 +258,7 @@ import elizAfter3 from "@/assets/projects/eliz-rozelle-ba/eliz-after-3.jpg.asset
 
 // Rozelle, Ensuite and Study Conversion
 import rze1 from "@/assets/projects/rozelle-ensuite-study/rze-1.jpg.asset.json";
-
+import rze8 from "@/assets/projects/rozelle-ensuite-study/rze-8.jpg.asset.json";
 import rze9 from "@/assets/projects/rozelle-ensuite-study/rze-9.jpg.asset.json";
 import rze10 from "@/assets/projects/rozelle-ensuite-study/rze-10.jpg.asset.json";
 import rze10land from "@/assets/projects/rozelle-ensuite-study/rze-10-landscape.jpg.asset.json";
@@ -266,10 +266,6 @@ import rze11land from "@/assets/projects/rozelle-ensuite-study/rze-11-landscape.
 import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json";
 import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
 import rze15land from "@/assets/projects/rozelle-ensuite-study/rze-15-landscape.jpg.asset.json";
-import rzeH10 from "@/assets/projects/rozelle-ensuite-study/rze-h10.jpg.asset.json";
-import rzeH10Land from "@/assets/projects/rozelle-ensuite-study/rze-h10-landscape.jpg.asset.json";
-import rzeH11 from "@/assets/projects/rozelle-ensuite-study/rze-h11.jpg.asset.json";
-import rzeH11Land from "@/assets/projects/rozelle-ensuite-study/rze-h11-landscape.jpg.asset.json";
 import rzeBefore1 from "@/assets/projects/rozelle-ensuite-study/rze-before-1.jpg.asset.json";
 import rzeBefore2 from "@/assets/projects/rozelle-ensuite-study/rze-before-2.jpg.asset.json";
 import rzeBefore3 from "@/assets/projects/rozelle-ensuite-study/rze-before-3.jpg.asset.json";
@@ -952,9 +948,9 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "New private bathroom off the master bedroom",
       "Refined tile, tapware and joinery selections",
     ],
-    gallery: [rze9.url, rze10land.url, rze12.url, rzeH10Land.url, rzeH11Land.url, rze11land.url, rze15land.url],
+    gallery: [rze8.url, rze9.url, rze10land.url, rze12.url, rze11land.url, rze15land.url],
     beforeImages: [rzeBefore1.url, rzeBefore2.url, rzeBefore3.url],
-    afterImages: [rze10.url, rze14.url],
+    afterImages: [rze8.url, rze10.url, rze14.url],
   },
 
   "roseville-calm-family-spaces": {
