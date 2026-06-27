@@ -266,6 +266,8 @@ import rze11land from "@/assets/projects/rozelle-ensuite-study/rze-11-landscape.
 import rze12 from "@/assets/projects/rozelle-ensuite-study/rze-12.jpg.asset.json";
 import rze14 from "@/assets/projects/rozelle-ensuite-study/rze-14.jpg.asset.json";
 import rze15land from "@/assets/projects/rozelle-ensuite-study/rze-15-landscape.jpg.asset.json";
+import rzeH10 from "@/assets/projects/rozelle-ensuite-study/rze-h10.jpg.asset.json";
+import rzeH11 from "@/assets/projects/rozelle-ensuite-study/rze-h11.jpg.asset.json";
 import rzeBefore1 from "@/assets/projects/rozelle-ensuite-study/rze-before-1.jpg.asset.json";
 import rzeBefore2 from "@/assets/projects/rozelle-ensuite-study/rze-before-2.jpg.asset.json";
 import rzeBefore3 from "@/assets/projects/rozelle-ensuite-study/rze-before-3.jpg.asset.json";
