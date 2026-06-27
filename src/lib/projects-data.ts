@@ -948,7 +948,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
       "New private bathroom off the master bedroom",
       "Refined tile, tapware and joinery selections",
     ],
-    gallery: [rze10.url, rze9.url, rze10land.url, rze12.url, rze11land.url, rze15land.url],
+    gallery: [rze8.url, rze9.url, rze10land.url, rze12.url, rze11land.url, rze15land.url],
     beforeImages: [rzeBefore1.url, rzeBefore2.url, rzeBefore3.url],
     afterImages: [rze8.url, rze10.url, rze14.url],
   },
