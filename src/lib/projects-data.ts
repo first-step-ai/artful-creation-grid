@@ -258,7 +258,7 @@ import elizAfter3 from "@/assets/projects/eliz-rozelle-ba/eliz-after-3.jpg.asset
 
 // Rozelle, Ensuite and Study Conversion
 import rze1 from "@/assets/projects/rozelle-ensuite-study/rze-1.jpg.asset.json";
-import rze8 from "@/assets/projects/rozelle-ensuite-study/rze-8.jpg.asset.json";
+
 import rze9 from "@/assets/projects/rozelle-ensuite-study/rze-9.jpg.asset.json";
 import rze10 from "@/assets/projects/rozelle-ensuite-study/rze-10.jpg.asset.json";
 import rze10land from "@/assets/projects/rozelle-ensuite-study/rze-10-landscape.jpg.asset.json";
