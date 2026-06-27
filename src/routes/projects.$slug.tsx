@@ -406,18 +406,18 @@ function GalleryStack({ images, title, layout }: { images: string[]; title: stri
 
   // Pair portraits side-by-side (greedy lookahead, not just consecutive);
   // landscapes/unknowns render full-width on their own row.
-  const rows: { type: "single" | "pair"; items: { src: string; index: number }[] }[] = [];
+  const rows: { type: "single" | "pair" | "single-landscape-contain"; items: { src: string; index: number }[] }[] = [];
   const consumed = new Set<number>();
   for (let idx = 0; idx < images.length; idx++) {
     if (consumed.has(idx)) continue;
-    if (layout?.[idx] === "single") {
-      rows.push({ type: "single", items: [{ src: images[idx], index: idx }] });
+    if (layout?.[idx] === "single" || layout?.[idx] === "single-landscape-contain") {
+      rows.push({ type: layout[idx] as "single" | "single-landscape-contain", items: [{ src: images[idx], index: idx }] });
       continue;
     }
     if (orients[idx] === "portrait") {
       let pair = -1;
       for (let j = idx + 1; j < images.length; j++) {
-        if (layout?.[j] === "single") continue;
+        if (layout?.[j] === "single" || layout?.[j] === "single-landscape-contain") continue;
         if (!consumed.has(j) && orients[j] === "portrait") {
           pair = j;
           break;
