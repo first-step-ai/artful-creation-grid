@@ -454,6 +454,15 @@ function GalleryStack({ images, title, layout }: { images: string[]; title: stri
               </figure>
             ))}
           </div>
+        ) : row.type === "single-landscape-contain" ? (
+          <figure key={ri} className="overflow-hidden bg-burgundy aspect-[3/2]">
+            <img
+              src={row.items[0].src}
+              alt={`${title}, image ${row.items[0].index + 1}`}
+              loading="lazy"
+              className="w-full h-full object-contain"
+            />
+          </figure>
         ) : (
           <figure key={ri} className="overflow-hidden bg-burgundy">
             <img
