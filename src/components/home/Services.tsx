@@ -62,15 +62,6 @@ export function Services() {
             <ServiceCard key={s.title} {...s} />
           ))}
         </div>
-        <div className="mt-14 md:mt-20 flex justify-center">
-          <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
-            className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap"
-          >
-            AMBP Interior Design Service
-          </a>
-        </div>
       </div>
     </section>
   );
