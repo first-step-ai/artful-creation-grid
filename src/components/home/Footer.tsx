@@ -26,8 +26,8 @@ export function Footer() {
       className="w-full"
       style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
-      <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-14 md:pt-20 pb-14 md:pb-20">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-14 md:pt-20 pb-6 md:pb-8">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-12">
           {/* Left: logo + contact info */}
           <div className="flex flex-col gap-8 md:gap-10">
             {/* Logo */}
@@ -65,51 +65,53 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Right: socials */}
-          <div className="flex items-end gap-4">
-            {SOCIALS.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                aria-label={s.label}
-                className="group block text-center"
-              >
-                <div className="overflow-hidden" style={{ width: 64, height: 82 }}>
-                  <img
-                    src={s.img}
-                    alt={s.label}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div
-                  className="mt-2 font-sans"
-                  style={{
-                    color: TEXT,
-                    fontSize: "10px",
-                    letterSpacing: "0.22em",
-                    textTransform: "uppercase",
-                  }}
+          {/* Right: socials + legal */}
+          <div className="flex flex-col items-end gap-8">
+            <div className="flex items-end gap-4">
+              {SOCIALS.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  aria-label={s.label}
+                  className="group block text-center"
                 >
-                  {s.label}
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+                  <div className="overflow-hidden" style={{ width: 64, height: 82 }}>
+                    <img
+                      src={s.img}
+                      alt={s.label}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div
+                    className="mt-2 font-sans"
+                    style={{
+                      color: TEXT,
+                      fontSize: "10px",
+                      letterSpacing: "0.22em",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    {s.label}
+                  </div>
+                </a>
+              ))}
+            </div>
 
-        {/* Bottom row — legal */}
-        <div className="mt-16 md:mt-20 flex flex-col items-end gap-4">
-          <div className="flex items-center gap-6 font-sans text-[13px]" style={{ color: TEXT_MUTED }}>
-            <a href="#" className="hover:opacity-80 transition-opacity">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:opacity-80 transition-opacity">
-              Terms & Conditions
-            </a>
-          </div>
-          <div className="font-sans text-[13px]" style={{ color: TEXT_MUTED }}>
-            © 2026 AM Bathrooms Pty Ltd. All rights reserved.
+            {/* Legal */}
+            <div className="flex flex-col items-end gap-1.5">
+              <div className="flex items-center gap-6 font-sans text-[13px]" style={{ color: TEXT_MUTED }}>
+                <a href="#" className="hover:opacity-80 transition-opacity">
+                  Privacy Policy
+                </a>
+                <a href="#" className="hover:opacity-80 transition-opacity">
+                  Terms & Conditions
+                </a>
+              </div>
+              <div className="font-sans text-[13px]" style={{ color: TEXT_MUTED }}>
+                © 2026 AM Bathrooms Pty Ltd. All rights reserved.
+              </div>
+            </div>
           </div>
         </div>
       </div>
