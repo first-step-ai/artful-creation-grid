@@ -1,5 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { projects, slugify, getProjectDetail, type ProjectSummary } from "@/lib/projects-data";
 import { Nav } from "@/components/home/Nav";
 import { Footer } from "@/components/home/Footer";
@@ -18,7 +17,21 @@ const filters = [
   "Award Finalist",
 ] as const;
 
+type PortfolioFilter = (typeof filters)[number];
+
+const isPortfolioFilter = (value: unknown): value is PortfolioFilter =>
+  typeof value === "string" && filters.includes(value as PortfolioFilter);
+
+const parsePage = (value: unknown) => {
+  const page = typeof value === "number" ? value : Number(value);
+  return Number.isFinite(page) && page > 0 ? Math.floor(page) : 1;
+};
+
 export const Route = createFileRoute("/projects/")({
+  validateSearch: (search: Record<string, unknown>) => ({
+    page: parsePage(search.page),
+    filter: isPortfolioFilter(search.filter) ? search.filter : "All",
+  }),
   head: () => ({
     meta: [
       { title: "Sydney Bathroom & Interior Portfolio | AM Bathrooms + Projects" },
@@ -46,8 +59,8 @@ export const Route = createFileRoute("/projects/")({
 const PAGE_SIZE = 12;
 
 function ProjectsPage() {
-  const [active, setActive] = useState<(typeof filters)[number]>("All");
-  const [page, setPage] = useState(1);
+  const navigate = useNavigate({ from: Route.fullPath });
+  const { page, filter: active } = Route.useSearch();
 
   const filtered = projects.filter((p) => {
     if (p.archived) return false;
@@ -67,12 +80,23 @@ function ProjectsPage() {
   const visible = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
   const handleFilter = (f: (typeof filters)[number]) => {
-    setActive(f);
-    setPage(1);
+    void navigate({
+      to: ".",
+      search: {
+        page: undefined,
+        filter: f === "All" ? undefined : f,
+      },
+    });
   };
 
   const goToPage = (n: number) => {
-    setPage(n);
+    void navigate({
+      to: ".",
+      search: {
+        page: n <= 1 ? undefined : n,
+        filter: active === "All" ? undefined : active,
+      },
+    });
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
