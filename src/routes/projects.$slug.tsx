@@ -52,12 +52,16 @@ function ProjectDetailPage() {
       <main>
         {/* HERO */}
         <section className="relative h-[70vh] min-h-[520px] md:h-[75vh] md:min-h-[540px] w-full overflow-hidden">
-          <Link
-            to="/projects"
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.history.back();
+            }}
             className="absolute top-20 md:top-28 left-4 md:left-10 z-20 inline-flex items-center gap-2 font-sans text-[10px] md:text-[11px] tracking-[0.28em] uppercase text-ivory hover:text-brass transition-colors bg-oxblood/40 backdrop-blur-md border border-ivory/25 px-3 py-2 md:px-4 md:py-2.5"
           >
             <ArrowLeft className="h-3.5 w-3.5 md:h-4 md:w-4" /> Full Portfolio
-          </Link>
+          </a>
           <img
             src={p.hero}
             alt={`${p.title}, ${p.suburb}`}
