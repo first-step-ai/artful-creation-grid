@@ -26,7 +26,7 @@ export function Footer() {
       className="w-full"
       style={{ backgroundColor: FOOTER_BG, color: TEXT }}
     >
-      <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-14 md:pt-20 pb-6 md:pb-8">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-10 pt-14 md:pt-20 pb-8 md:pb-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-12">
           {/* Left: logo + contact info */}
           <div className="flex flex-col gap-8 md:gap-10">
