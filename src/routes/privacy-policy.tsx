@@ -21,7 +21,7 @@ function PrivacyPolicy() {
     <div className="min-h-screen bg-background flex flex-col">
       <Nav />
       <main className="flex-1 mx-auto w-full max-w-3xl px-6 md:px-10 pt-28 md:pt-36 pb-20">
-      <h1 className="font-sans text-3xl md:text-5xl mb-2 uppercase">
+      <h1 className="font-sans text-lg md:text-2xl mb-2 uppercase">
            <span className="whitespace-nowrap">AM BATHROOMS + PROJECTS</span> PRIVACY POLICY
          </h1>
         <p className="text-sm text-muted-foreground mb-10">
