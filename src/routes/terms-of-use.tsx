@@ -22,8 +22,8 @@ function TermsOfUse() {
       <Nav />
       <main className="flex-1 mx-auto w-full max-w-3xl px-6 md:px-10 pt-28 md:pt-36 pb-20">
       <h1 className="font-sans text-3xl md:text-5xl mb-2 uppercase">
-          AM BATHROOMS + PROJECTS WEBSITE TERMS OF USE
-        </h1>
+           <span className="whitespace-nowrap">AM BATHROOMS + PROJECTS</span> WEBSITE TERMS OF USE
+         </h1>
         <p className="text-sm text-muted-foreground mb-10">
           Effective date: 26 June 2026
         </p>
