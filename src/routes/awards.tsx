@@ -111,16 +111,6 @@ const years: YearGroup[] = [
           { kind: "Finalist", label: "HIA NSW Renovated Kitchen of the Year" },
         ],
       },
-      {
-        id: "national-2024",
-        suburb: "AM Bathrooms + Projects",
-        title: "National Recognition",
-        image: national2024.url,
-        fit: "contain",
-        awards: [
-          { kind: "Winner", label: "National Small Business Management Award" },
-        ],
-      },
     ],
   },
   {
