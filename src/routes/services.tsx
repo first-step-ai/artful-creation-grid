@@ -356,7 +356,7 @@ function Questions() {
           <Accordion type="single" collapsible className="w-full">
             {qaItems.map((item, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="border-b border-border/60">
-                <AccordionTrigger className="font-sans text-xs md:text-sm font-medium text-ivory/90 hover:text-ivory py-5 md:py-6 hover:no-underline text-left leading-relaxed">
+                <AccordionTrigger className="font-sans text-[11px] md:text-xs font-medium text-ivory/90 hover:text-ivory py-5 md:py-6 hover:no-underline text-left leading-relaxed">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="font-sans text-sm md:text-base text-ivory/75 leading-relaxed pb-5 md:pb-6">
