@@ -137,7 +137,7 @@ const years: YearGroup[] = [
         image: nsw2023.url,
         fit: "contain",
         awards: [
-          { kind: "Winner", label: "NSW Small Business Management Award" },
+          { kind: "Winner", label: "National Small Business Management Award" },
         ],
       },
       {
