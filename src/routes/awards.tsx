@@ -71,9 +71,9 @@ const years: YearGroup[] = [
   },
   {
     year: "2024",
-    intro: "HIA NSW Housing Awards · National Business Awards",
+    intro: "HIA NSW Housing Awards",
     blurb:
-      "AM Bathrooms + Projects received national recognition with the Australian Small Business Management Award, alongside HIA NSW Renovated Bathroom of the Year, with further finalist placements across kitchen and bathroom projects in Enmore, Lindfield and Drummoyne.",
+      "HIA NSW Renovated Bathroom of the Year for Enmore, with further finalist placements across kitchen and bathroom projects in Lindfield and Drummoyne.",
     projects: [
       {
         id: "enmore-2024",
