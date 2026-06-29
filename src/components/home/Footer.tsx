@@ -101,7 +101,7 @@ export function Footer() {
             {/* Legal */}
             <div className="flex flex-col items-end gap-1.5">
               <div className="flex items-center gap-6 font-sans text-[13px]" style={{ color: TEXT_MUTED }}>
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <a href="/privacy-policy" className="hover:opacity-80 transition-opacity">
                   Privacy Policy
                 </a>
                 <a href="#" className="hover:opacity-80 transition-opacity">
