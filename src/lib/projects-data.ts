@@ -1114,7 +1114,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     heroCaption:
       "A whole-home Rozelle renovation, including a dedicated laundry, delivering refined, cohesive living throughout the entire house.",
     scope:
-      "This Rozelle townhouse was transformed through a long-running, staged renovation that ultimately covered four bathrooms, a laundry, a kitchen, and a personalised sauna oasis, a complete reimagining of the home delivered across multiple engagements with the same trusted clients. The final chapter transformed an awkward, unappealing laundry into a moody infrared sauna retreat through clever floor plan manipulation, completing a home that now reflects the clients' lifestyle in full.",
+      "This Rozelle townhouse was transformed through a staged renovation covering four bathrooms, a laundry, kitchen and personalised sauna oasis. The final chapter reimagined an awkward laundry into a moody infrared sauna retreat, completing a home that reflects the clients' lifestyle in full.",
     awards: [],
     rightHeading: "Whole-Home Transformation",
     rightIntro:
