@@ -193,7 +193,7 @@ const years: YearGroup[] = [
         id: "nsw-2022",
         suburb: "AM Bathrooms + Projects",
         title: "State Recognition",
-        image: nsw2022.url,
+        image: national2024.url,
         fit: "contain",
         awards: [
           { kind: "Winner", label: "NSW Small Business Management Award" },
