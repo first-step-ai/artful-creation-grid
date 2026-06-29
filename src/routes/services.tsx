@@ -359,7 +359,7 @@ function Questions() {
                 <AccordionTrigger className="font-sans text-[11px] md:text-xs font-medium text-ivory/90 hover:text-ivory py-5 md:py-6 hover:no-underline text-left leading-relaxed">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="font-sans text-sm md:text-base text-ivory/75 leading-relaxed pb-5 md:pb-6">
+                <AccordionContent className="font-sans text-xs md:text-sm text-ivory/75 leading-relaxed pb-5 md:pb-6">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
