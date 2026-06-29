@@ -104,7 +104,7 @@ export function Footer() {
                 <a href="/privacy-policy" className="hover:opacity-80 transition-opacity">
                   Privacy Policy
                 </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <a href="/terms-of-use" className="hover:opacity-80 transition-opacity">
                   Terms & Conditions
                 </a>
               </div>
