@@ -257,7 +257,7 @@ function Intro() {
             />
           </div>
           <div className="self-center">
-            <div className="eyebrow mb-4">The AM Bathrooms + Projects</div>
+            <div className="eyebrow mb-4">AM Bathrooms + Projects</div>
             <h2 className="font-sans font-light text-ivory uppercase tracking-[0.06em] leading-[1.2] text-xl md:text-2xl lg:text-3xl mb-8">
               Why we are different.
             </h2>
