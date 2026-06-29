@@ -10,6 +10,7 @@ import hia2025 from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
 import nsw2022 from "@/assets/awards/nsw-2022-showroom.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
+import { Link } from "@tanstack/react-router";
 
 type AwardItem = { title: string; description: string; image: string; images?: string[]; fit?: "cover" | "contain" };
 const awards: AwardItem[] = [
