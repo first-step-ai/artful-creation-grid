@@ -843,7 +843,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     heroCaption:
       "A thoughtfully reimagined Putney heritage home, transforming awkward unused spaces into a refined family retreat with a luxurious master suite and intelligent modern living.",
     scope:
-      "This heritage Putney home renovation was designed to completely reimagine how the home functions for modern family living. Working within the constraints of an older floorplan filled with awkward, disconnected rooms, the project focused on transforming underutilised spaces into a highly functional and luxurious master suite while improving the overall flow, comfort, and liveability of the home for a family of four. The renovation included a complete redesign of the downstairs floorplan, transforming a former bathroom, spare bedroom, and long unused room into a refined master suite complete with a custom walk-in robe, luxurious ensuite, powder room, and integrated bar servicing the living area. Alongside the spatial redesign, the home was refreshed with new carpet, paintwork, shutters, and window furnishings, bringing cohesion and warmth back into the home.",
+      "This heritage Putney home was completely reimagined for modern family living, transforming awkward, underused rooms into a luxurious downstairs master suite with a custom walk-in robe, ensuite, powder room, and integrated bar. The entire home was refreshed with new carpet, paintwork, shutters, and window furnishings, bringing cohesion, warmth, and liveability back throughout.",
     awards: [],
     press: [
       {
