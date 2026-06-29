@@ -55,11 +55,11 @@ export function Footer() {
               <div>
                 <div style={labelStyle} className="mb-1.5">Phone</div>
                 <a
-                  href="tel:0295560220"
+                  href="tel:0291814776"
                   className="font-sans text-[13px] hover:opacity-80 transition-opacity"
                   style={{ color: TEXT }}
                 >
-                  (02) 9556 0220
+                  (02) 9181 4776
                 </a>
               </div>
             </div>
