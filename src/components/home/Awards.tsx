@@ -10,6 +10,7 @@ import hia2025 from "@/assets/projects/rozelle-kitchen-award.jpg.asset.json";
 import nsw2022 from "@/assets/awards/nsw-2022-showroom.jpg.asset.json";
 import hiaLogo from "@/assets/hia-logo.png.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
+import { Link } from "@tanstack/react-router";
 
 type AwardItem = { title: string; description: string; image: string; images?: string[]; fit?: "cover" | "contain" };
 const awards: AwardItem[] = [
@@ -75,7 +76,12 @@ export function Awards() {
         className="reveal mx-auto max-w-[1600px] px-6 md:px-10 py-10 md:py-12"
       >
         {/* Awards headline - separated, sitting above the content block */}
-        <h2 className="eyebrow mb-8 md:mb-10">Awards</h2>
+        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 mb-8 md:mb-10">
+          <h2 className="eyebrow">Awards</h2>
+          <Link to="/awards" className="inline-flex items-center gap-3 text-ivory text-[11px] tracking-[0.28em] uppercase border-b border-ivory/60 pb-1 hover:gap-5 transition-all whitespace-nowrap">
+            View all Awards
+          </Link>
+        </div>
 
         <div className="w-full flex flex-col md:flex-row gap-8 md:gap-0 md:items-stretch">
           {/* Left: Logo + Awards list - 35% - centered (rendered second on mobile so featured image appears first) */}
