@@ -1112,6 +1112,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "rozelle-whole-home-transformation": {
+    hero: rwhHero.url,
     heroCaption:
       "A whole-home Rozelle renovation, including a dedicated laundry, delivering refined, cohesive living throughout the entire house.",
     scope:
