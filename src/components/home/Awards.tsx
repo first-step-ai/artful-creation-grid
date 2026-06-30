@@ -17,7 +17,7 @@ const awards: AwardItem[] = [
   { title: "WINNER 2025 HIA", description: "NSW Kitchen of the Year", image: hia2025.url },
   { title: "WINNER 2024 HIA", description: "NSW Bathroom of the Year", image: enmore31.url, images: [enmore31.url, enmore7.url] },
   { title: "NATIONAL WINNER 2023", description: "Small Business Management Award", image: sb2022a.url, images: [sb2022a.url, sb2022b.url] },
-  { title: "NSW WINNER 2022", description: "Small Business Management Award", image: national2024.url },
+  { title: "WINNER 2022 HIA", description: "NSW Small Business Management Award", image: national2024.url },
 ];
 
 export function Awards() {
