@@ -117,7 +117,7 @@ const years: YearGroup[] = [
     year: "2023",
     intro: "HIA NSW Kitchen & Bathroom Awards · National Business Awards",
     blurb:
-      "HIA NSW Kitchen Design of the Year for Drummoyne, with finalist placements in Rozelle and Lane Cove. AM Bathrooms + Projects also received the National Small Business Management Award.",
+      "AM Bathrooms + Projects received the National Small Business Management Award, with HIA NSW finalist placements across kitchen and bathroom projects in Drummoyne, Rozelle and Lane Cove.",
     projects: [
       {
         id: "nsw-2023",
@@ -132,12 +132,12 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2023",
         suburb: "Drummoyne",
-        title: "Award-Winning Kitchen and Bath",
+        title: "HIA-Recognised Kitchen and Bath",
         image: drumFinalist.url,
         href: "/projects/drummoyne-award-winning-kitchen-and-bath",
         awards: [
-          { kind: "Winner", label: "HIA NSW Kitchen Design of the Year" },
-          { kind: "Finalist", label: "HIA NSW Renovated Kitchen of the Year" },
+          { kind: "Finalist", label: "HIA NSW Kitchen Design of the Year" },
+          { kind: "Finalist", label: "HIA NSW Renovated Kitchen" },
         ],
       },
       {
@@ -171,12 +171,12 @@ const years: YearGroup[] = [
       {
         id: "drummoyne-2022",
         suburb: "Drummoyne",
-        title: "Award-Winning Kitchen and Bath",
+        title: "HIA-Recognised Kitchen and Bath",
         image: drum2022.url,
         href: "/projects/drummoyne-award-winning-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
-          { kind: "Finalist", label: "HIA NSW New Bathroom over $25,000" },
+          { kind: "Finalist", label: "HIA NSW New Bathrooms over $25K" },
         ],
       },
 
