@@ -562,7 +562,7 @@ export const projects: ProjectSummary[] = [
   { suburb: "Canada Bay", title: "Considered Main Bathroom", category: "Bathroom", image: canadaWEB4.url, tags: ["Bathroom"] },
   { suburb: "Rozelle", title: "Whole-Home Transformation", category: "Full Interior", image: rwh3.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Manly", title: "Beachside Apartment Revival", category: "Full Interior", image: manlyHeroKitchen.url, tags: ["Full Interior", "Multi-Space", "Kitchen", "Bathroom", "Ensuite", "Laundry"] },
-  { suburb: "Drummoyne", title: "Award-Winning Kitchen and Bath", category: "Multi-Space", image: drumAw6.url, badge: "Award", tags: ["Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
+  { suburb: "Drummoyne", title: "HIA-Recognised Kitchen and Bath", category: "Multi-Space", image: drumAw6.url, badge: "Finalist", tags: ["Multi-Space", "Kitchen", "Bathroom", "Laundry"] },
   { suburb: "Birchgrove", title: "Modern Hamptons Bathrooms", category: "Bathroom", image: birch08.url, tags: ["Bathroom", "Ensuite"] },
   { suburb: "Castle Cove", title: "Full Family Home Refresh", category: "Full Interior", image: castle296L.url, tags: ["Full Interior", "Multi-Space", "Bathroom", "Ensuite", "Kitchen", "Laundry"] },
   { suburb: "Five Dock", title: "Family Bathroom and Bedroom Storage", category: "Multi-Space", image: fd05L.url, tags: ["Multi-Space", "Bathroom"] },
@@ -1201,24 +1201,21 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
   },
 
   "drummoyne-award-winning-kitchen-and-bath": {
-    badge: "Award",
+    badge: "Finalist",
     heroCaption:
-      "An award-winning Drummoyne renovation, winner of the 2023 HIA NSW Kitchen Design of the Year, spanning a refined kitchen and bathroom recognised across multiple HIA NSW design categories.",
+      "A Drummoyne renovation recognised across multiple HIA NSW awards as a finalist, spanning a refined kitchen and a thoughtfully resolved new bathroom.",
     scope:
       "This Drummoyne home renovation combined a full interior design service and floor plan reconfiguration with the addition of a brand new family bathroom. The kitchen was reconfigured to incorporate a walk-through pantry and an internally accessible laundry, while the new bathroom was carefully designed to maximise a narrow footprint with natural light, smart storage, and a considered shower zone.",
     awards: [
-      "2023 HIA NSW Kitchen Design of the Year · Winner",
-      "2022 HIA NSW Bathroom Design of the Year · Finalist",
-      "2022 HIA NSW New Bathroom over $25K · Finalist",
-      "2023 HIA NSW Renovated Kitchen · Finalist",
       "2024 HIA NSW Bathroom Design · Finalist",
-      "2024 HIA NSW Kitchen Design · Finalist",
-      "2024 HIA NSW Renovated Bathroom of the Year · Finalist",
-      "2024 HIA NSW Renovated Kitchen of the Year · Finalist",
+      "2023 HIA NSW Kitchen Design of the Year · Finalist",
+      "2023 HIA NSW Renovated Kitchen · Finalist",
+      "2022 HIA NSW Bathroom Design of the Year · Finalist",
+      "2022 HIA NSW New Bathrooms over $25K · Finalist",
     ],
-    rightHeading: "Award-Winning Kitchen and Bath",
+    rightHeading: "HIA-Recognised Kitchen and Bath",
     rightIntro:
-      "A Drummoyne renovation crowned 2023 HIA NSW Kitchen Design of the Year, pairing a refined kitchen with a thoughtfully resolved new bathroom.",
+      "A Drummoyne renovation recognised across five HIA NSW awards as a finalist, pairing a refined kitchen with a thoughtfully resolved new bathroom.",
     whatWasntWorking: [
       "Despite having plenty of rooms, the home felt disconnected and poorly lit",
       "Flow throughout was inefficient and the layout no longer served the family well",
