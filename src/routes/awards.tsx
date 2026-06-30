@@ -103,7 +103,7 @@ const years: YearGroup[] = [
         suburb: "Drummoyne",
         title: "Award-Finalist Kitchen and Bath",
         image: drum2024.url,
-        href: "/projects/drummoyne-award-winning-kitchen-and-bath",
+        href: "/projects/drummoyne-hia-recognised-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Bathroom of the Year" },
@@ -134,7 +134,7 @@ const years: YearGroup[] = [
         suburb: "Drummoyne",
         title: "HIA-Recognised Kitchen and Bath",
         image: drumFinalist.url,
-        href: "/projects/drummoyne-award-winning-kitchen-and-bath",
+        href: "/projects/drummoyne-hia-recognised-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Kitchen Design of the Year" },
           { kind: "Finalist", label: "HIA NSW Renovated Kitchen" },
@@ -173,7 +173,7 @@ const years: YearGroup[] = [
         suburb: "Drummoyne",
         title: "HIA-Recognised Kitchen and Bath",
         image: drum2022.url,
-        href: "/projects/drummoyne-award-winning-kitchen-and-bath",
+        href: "/projects/drummoyne-hia-recognised-kitchen-and-bath",
         awards: [
           { kind: "Finalist", label: "HIA NSW Bathroom Design of the Year" },
           { kind: "Finalist", label: "HIA NSW New Bathrooms over $25K" },
