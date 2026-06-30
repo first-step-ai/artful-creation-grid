@@ -1200,7 +1200,7 @@ const detailOverrides: Record<string, Partial<ProjectDetail>> = {
     afterImages: [manlyAfter1.url, manlyAfter2.url, manlyAfter3.url],
   },
 
-  "drummoyne-award-winning-kitchen-and-bath": {
+  "drummoyne-hia-recognised-kitchen-and-bath": {
     badge: "Finalist",
     heroCaption:
       "A Drummoyne renovation recognised across multiple HIA NSW awards as a finalist, spanning a refined kitchen and a thoughtfully resolved new bathroom.",

@@ -21,7 +21,7 @@ const driftStrip: { label: string; image: string; orientation: "portrait" | "lan
 
 const projects = [
   { suburb: "Annandale", title: "Smart Family Living", category: "Full Interior", image: annan01.url, slug: "annandale-smart-family-living" },
-  { suburb: "Drummoyne", title: "Award-Finalist Kitchen", category: "KITCHEN", image: drumN20.url, slug: "drummoyne-award-winning-kitchen-and-bath" },
+  { suburb: "Drummoyne", title: "Award-Finalist Kitchen", category: "KITCHEN", image: drumN20.url, slug: "drummoyne-hia-recognised-kitchen-and-bath" },
   { suburb: "Bexley", title: "Bold Utility", category: "BATHROOM", image: bexleyV21.url, slug: "bexley-bold-utility" },
 ];
 
