@@ -247,7 +247,7 @@ function Recognition() {
         {/* Header row */}
         <div className="mb-16 md:mb-20">
           <p className="eyebrow text-brass mb-6">Industry Recognition</p>
-          <h2 className="font-sans font-light text-ivory leading-[1.2] text-xl md:text-2xl lg:text-3xl max-w-[40ch]">
+          <h2 className="font-sans font-light text-ivory leading-[1.2] text-xl md:text-2xl lg:text-3xl">
             Award-winning studio, recognised by leading industry organisations for design, craft and client care.
           </h2>
           <div className="h-px w-16 bg-brass/60 mt-10" />
