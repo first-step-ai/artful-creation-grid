@@ -21,11 +21,11 @@ function TermsOfUse() {
     <div className="min-h-screen bg-background flex flex-col">
       <Nav />
       <main className="flex-1 mx-auto w-full max-w-3xl px-6 md:px-10 pt-28 md:pt-36 pb-20">
-      <h1 className="font-sans text-lg md:text-2xl mb-2 uppercase">
-           <span className="whitespace-nowrap">AM BATHROOMS + PROJECTS</span> WEBSITE TERMS OF USE
-         </h1>
+        <h1 className="font-sans text-lg md:text-2xl mb-2 uppercase">
+          <span className="whitespace-nowrap">AM BATHROOMS + PROJECTS</span> WEBSITE TERMS OF USE
+        </h1>
         <p className="text-sm text-muted-foreground mb-10">
-          Effective date: 26 June 2026
+          Effective date: 01 July 2026
         </p>
 
         <div className="font-sans text-[15px] leading-relaxed space-y-6 text-foreground/90">
@@ -50,6 +50,10 @@ function TermsOfUse() {
               <li>Use any content from this website for the purpose of training, developing, or improving any artificial intelligence or machine learning model or system, without our prior written permission. This clause does not prohibit search engines or AI assistants from indexing or referencing this website for the purpose of returning results to users</li>
               <li>Reproduce, distribute, or exploit any content from this website without our prior written permission</li>
             </ul>
+            <p>
+              Nothing on this website constitutes professional building, design,
+              engineering or legal advice.
+            </p>
           </Section>
 
           <Section title="2. Intellectual Property">
@@ -58,6 +62,20 @@ function TermsOfUse() {
               graphics, logos, and portfolio work, is owned by or licensed to AM
               Bathrooms Pty Ltd and is protected by Australian copyright law.
             </p>
+            <p>This includes:</p>
+            <ul className="list-disc pl-6 space-y-1.5">
+              <li>Logos</li>
+              <li>Branding</li>
+              <li>Text</li>
+              <li>Images</li>
+              <li>Photography</li>
+              <li>Renderings</li>
+              <li>Floor plans</li>
+              <li>Drawings</li>
+              <li>Graphics</li>
+              <li>Videos</li>
+              <li>Downloadable resources</li>
+            </ul>
             <p>
               You must not copy, reproduce, modify, distribute, download, print,
               or use any content from this website in any form without our
@@ -73,7 +91,22 @@ function TermsOfUse() {
             </p>
           </Section>
 
-          <Section title="3. Accuracy of Information">
+          <Section title="3. Project Photography">
+            <p>
+              Images shown on this website represent completed projects by AM
+              Bathrooms &amp; Projects unless otherwise stated.
+            </p>
+            <p>
+              Some images may include styling items, furniture or products
+              supplied by third parties.
+            </p>
+            <p>
+              Professional photography, digital renderings and concept imagery
+              are used throughout the website for illustrative purposes.
+            </p>
+          </Section>
+
+          <Section title="4. Accuracy of Information">
             <p>
               We take care to ensure the information on our website is accurate
               and up to date. However, we do not guarantee the completeness or
@@ -88,15 +121,17 @@ function TermsOfUse() {
             </p>
           </Section>
 
-          <Section title="4. Limitation of Liability">
+          <Section title="5. Limitation of Liability">
             <p>
               To the maximum extent permitted by law, AM Bathrooms Pty Ltd
               excludes all liability for any loss or damage arising from your
               use of this website or reliance on its content, including:
             </p>
             <ul className="list-disc pl-6 space-y-1.5">
+              <li>Use of this website</li>
               <li>Errors, omissions, or inaccuracies in website content</li>
               <li>Interruptions to website availability</li>
+              <li>Reliance on information published on this website</li>
               <li>Viruses or harmful code that may be transmitted through the website</li>
               <li>Any decisions made based on content published on this website</li>
             </ul>
@@ -106,7 +141,7 @@ function TermsOfUse() {
             </p>
           </Section>
 
-          <Section title="5. Third-Party Links">
+          <Section title="6. Third-Party Links">
             <p>
               Our website may contain links to third-party websites, including
               suppliers, industry bodies, award organisations, and online
@@ -121,16 +156,17 @@ function TermsOfUse() {
             </p>
           </Section>
 
-          <Section title="6. Reviews and Testimonials">
+          <Section title="7. Reviews and Testimonials">
             <p>
               Our website features client testimonials and reviews. These
               reflect the genuine experiences of individual clients and results
               may vary. We do not guarantee that your experience or project
               outcome will be the same.
             </p>
+            <p>We do not offer incentives in exchange for reviews.</p>
           </Section>
 
-          <Section title="7. Privacy">
+          <Section title="8. Privacy">
             <p>
               Your use of this website is also governed by our{" "}
               <Link to="/privacy-policy" className="underline">
@@ -142,7 +178,7 @@ function TermsOfUse() {
             </p>
           </Section>
 
-          <Section title="8. Cookies">
+          <Section title="9. Cookies">
             <p>
               Our website uses essential and analytics cookies to improve
               functionality and understand how our site is used. We do not
@@ -152,7 +188,7 @@ function TermsOfUse() {
             </p>
           </Section>
 
-          <Section title="9. Changes to These Terms">
+          <Section title="10. Changes to These Terms">
             <p>
               We may update these Terms of Use at any time. The current version
               will be published on this website with an updated effective date.
@@ -161,7 +197,7 @@ function TermsOfUse() {
             </p>
           </Section>
 
-          <Section title="10. Governing Law">
+          <Section title="11. Governing Law">
             <p>
               These Terms are governed by the laws of New South Wales,
               Australia. Any disputes arising from your use of this website are
@@ -170,7 +206,7 @@ function TermsOfUse() {
             </p>
           </Section>
 
-          <Section title="11. Contact Us">
+          <Section title="12. Contact Us">
             <p>
               If you have any questions about these Terms of Use, please
               contact:
