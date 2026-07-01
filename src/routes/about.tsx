@@ -244,54 +244,34 @@ function Recognition() {
       className="reveal py-24 md:py-40 px-6 md:px-12 lg:px-16"
     >
       <div className="max-w-[1400px] mx-auto">
+        {/* Header row */}
+        <div className="mb-16 md:mb-20">
+          <p className="eyebrow text-brass mb-6">Industry Recognition</p>
+          <h2 className="font-sans font-light text-ivory leading-[1.2] text-xl md:text-2xl lg:text-3xl max-w-[40ch]">
+            Award-winning studio, recognised by leading industry organisations for design, craft and client care.
+          </h2>
+          <div className="h-px w-16 bg-brass/60 mt-10" />
+        </div>
+
+        {/* Content grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left column — Industry Recognition */}
+          {/* Left column — Awards list */}
           <div>
-            <p className="eyebrow text-brass mb-8">Industry Recognition</p>
-
-            <h2 className="font-sans font-light text-ivory leading-[1.15] text-2xl md:text-3xl mb-10 max-w-[24ch]">
-              Our commitment to thoughtful design, quality craftsmanship and exceptional client experiences has been recognised by leading industry organisations.
-            </h2>
-
-            <div className="h-px w-16 bg-brass/60 mb-10" />
-
-            <p className="text-ivory/80 text-sm md:text-base leading-relaxed font-light mb-6">
-              Highlights include:
-            </p>
-
-            <ul className="space-y-4 text-ivory/80 text-sm md:text-base leading-relaxed font-light">
-              <li className="flex gap-3">
-                <span className="text-brass mt-1.5">—</span>
-                <span>HIA Australian Small Business Management Award Winner</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-brass mt-1.5">—</span>
-                <span>HIA NSW Renovated Kitchen of the Year Winner</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-brass mt-1.5">—</span>
-                <span>Multiple HIA Bathroom Design & Renovation Awards and Finalist recognitions</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-brass mt-1.5">—</span>
-                <span>Multiple KBDi Design Awards Finalist</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-brass mt-1.5">—</span>
-                <span>Presenter at the Sydney Home Show</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-brass mt-1.5">—</span>
-                <span>Featured in House & Garden, HIA Magazine and Industry Connect Magazine</span>
-              </li>
+            <ul className="space-y-3 text-ivory/80 text-sm md:text-base leading-relaxed font-light list-disc pl-5 marker:text-brass">
+              <li>HIA Australian Small Business Management Award Winner</li>
+              <li>HIA NSW Renovated Kitchen of the Year Winner</li>
+              <li>Multiple HIA Bathroom Design &amp; Renovation Awards and Finalist recognitions</li>
+              <li>Multiple KBDi Design Awards Finalist</li>
+              <li>Presenter at the Sydney Home Show</li>
+              <li>Featured in House &amp; Garden, HIA Magazine and Industry Connect Magazine</li>
             </ul>
           </div>
 
           {/* Right column — Why Clients Choose */}
-          <div className="lg:pt-2">
-            <p className="eyebrow text-brass mb-8">Why Clients Choose AM Bathrooms + Projects</p>
+          <div>
+            <p className="eyebrow text-brass mb-6">Why Clients Choose AM Bathrooms + Projects</p>
 
-            <div className="space-y-6 text-ivory/80 text-sm md:text-base leading-relaxed font-light max-w-[58ch]">
+            <div className="space-y-5 text-ivory/80 text-sm md:text-base leading-relaxed font-light max-w-[58ch]">
               <p>
                 We believe the best renovations happen when design, construction and project management work together from the very beginning.
               </p>
@@ -300,7 +280,7 @@ function Recognition() {
               </p>
             </div>
 
-            <div className="pt-14">
+            <div className="pt-10">
               <Link
                 to="/contact"
                 className="group inline-flex items-center gap-6 bg-[color:var(--burgundy)] border border-ivory/15 text-ivory px-10 py-5 hover:bg-[color:var(--brass)] hover:text-[#1a1a1a] transition-colors duration-500"
