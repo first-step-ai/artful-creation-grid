@@ -166,8 +166,10 @@ function Profiles() {
       image: jennyPhoto.url,
       heading: "Meet Jenny Matek",
       paragraphs: [
-        "Jenny Matek is the award-winning interior designer and creative force behind AM Bathrooms + Projects. With more than 20 years of experience across design, construction and renovation, Jenny brings a rare combination of creative vision, practical thinking and real project knowledge.",
-        "What clients value most is that Jenny is not only focused on how a space looks, but how it functions, how it feels to live in, and how it can be delivered well in real life. Her ability to bridge design and construction gives clients clarity early, helps avoid costly missteps, and creates spaces that feel both beautiful and considered.",
+        "Jenny Matek is the creative director and client lead at AM Bathrooms + Projects, an award-winning interior designer with more than 20 years of experience across design, construction and renovation.",
+        "She founded the studio with Ante after seeing too many beautifully designed spaces compromised during construction. Design intent was lost through substitutions, rushed decisions and a lack of collaboration between designers and builders. Clients who had invested deeply in a vision were often left disappointed by a process that treated design and construction as separate responsibilities rather than one shared commitment.",
+        "What Jenny and Ante built at AM Bathrooms + Projects is the antidote to that. Jenny works alongside Ante from the very first conversation, so every design decision is made with a clear understanding of how it will actually be built, what it will cost, and how it will feel to live in. That alignment early means clients get honest advice before they're committed, fewer surprises mid-build, and a result that reflects what they originally fell in love with.",
+        "What she is most proud of is the experience that creates for clients. Not just a beautiful space, but a process where someone who genuinely cares is in their corner from concept to handover.",
       ],
     },
     {
