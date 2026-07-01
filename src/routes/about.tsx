@@ -39,6 +39,7 @@ function AboutPage() {
         <Hero />
         <Story />
         <Profiles />
+        <Recognition />
       </main>
       <Footer />
     </div>
@@ -225,6 +226,97 @@ function Profiles() {
               </div>
             </article>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* -------------------------------------------------------------- */
+/*  Recognition + Why Clients Choose                              */
+/* -------------------------------------------------------------- */
+
+function Recognition() {
+  const ref = useReveal<HTMLElement>();
+  return (
+    <section
+      ref={ref}
+      className="reveal py-24 md:py-40 px-6 md:px-12 lg:px-16"
+    >
+      <div className="max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+          {/* Left column — Industry Recognition */}
+          <div>
+            <p className="eyebrow text-brass mb-8">Industry Recognition</p>
+
+            <h2 className="font-sans font-light text-ivory leading-[1.15] text-2xl md:text-3xl mb-10 max-w-[24ch]">
+              Our commitment to thoughtful design, quality craftsmanship and exceptional client experiences has been recognised by leading industry organisations.
+            </h2>
+
+            <div className="h-px w-16 bg-brass/60 mb-10" />
+
+            <p className="text-ivory/80 text-sm md:text-base leading-relaxed font-light mb-6">
+              Highlights include:
+            </p>
+
+            <ul className="space-y-4 text-ivory/80 text-sm md:text-base leading-relaxed font-light">
+              <li className="flex gap-3">
+                <span className="text-brass mt-1.5">—</span>
+                <span>HIA Australian Small Business Management Award Winner</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-brass mt-1.5">—</span>
+                <span>HIA NSW Renovated Kitchen of the Year Winner</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-brass mt-1.5">—</span>
+                <span>Multiple HIA Bathroom Design & Renovation Awards and Finalist recognitions</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-brass mt-1.5">—</span>
+                <span>Multiple KBDi Design Awards Finalist</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-brass mt-1.5">—</span>
+                <span>Presenter at the Sydney Home Show</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-brass mt-1.5">—</span>
+                <span>Featured in House & Garden, HIA Magazine and Industry Connect Magazine</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Right column — Why Clients Choose */}
+          <div className="lg:pt-2">
+            <p className="eyebrow text-brass mb-8">Why Clients Choose AM Bathrooms + Projects</p>
+
+            <div className="space-y-6 text-ivory/80 text-sm md:text-base leading-relaxed font-light max-w-[58ch]">
+              <p>
+                We believe the best renovations happen when design, construction and project management work together from the very beginning.
+              </p>
+              <p>
+                By bringing everything under one roof, we provide one accountable team, clear communication and thoughtful planning from concept through to completion. Creating beautiful spaces and a renovation experience our clients can enjoy with confidence.
+              </p>
+            </div>
+
+            <div className="pt-14">
+              <Link
+                to="/contact"
+                className="group inline-flex items-center gap-6 bg-[color:var(--burgundy)] border border-ivory/15 text-ivory px-10 py-5 hover:bg-[color:var(--brass)] hover:text-[#1a1a1a] transition-colors duration-500"
+              >
+                <span className="text-[11px] tracking-[0.32em] uppercase font-medium">
+                  Book a Discovery Consultation
+                </span>
+                <span
+                  aria-hidden
+                  className="transition-transform duration-500 group-hover:translate-x-1"
+                >
+                  →
+                </span>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
