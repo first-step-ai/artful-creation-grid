@@ -114,13 +114,13 @@ function Story() {
               AM Bathrooms + Projects was founded by Jenny and Ante Matek
               because they kept hearing the same story. A renovation that
               should have been exciting had become stressful, drawn out,
-              and full of surprises.
+              and full of disappointing surprises.
             </p>
             <p>
-              So they built a studio where the designer, the builder, and
-              the project manager all sit in the same room. Jenny leads
-              the design and client experience. Ante leads the build. And
-              around them is a tight team of trades, stylists, and
+              So they created a boutique design and build studio where design,
+              construction and project management work together from day one.
+              Jenny leads the design and client experience. Ante leads the build.
+              And around them is a tight team of trades, stylists, and
               coordinators who&rsquo;ve worked together for years.
             </p>
             <p>
@@ -166,8 +166,10 @@ function Profiles() {
       image: jennyPhoto.url,
       heading: "Meet Jenny Matek",
       paragraphs: [
-        "Jenny Matek is the award-winning interior designer and creative force behind AM Bathrooms + Projects. With more than 20 years of experience across design, construction and renovation, Jenny brings a rare combination of creative vision, practical thinking and real project knowledge.",
-        "What clients value most is that Jenny is not only focused on how a space looks, but how it functions, how it feels to live in, and how it can be delivered well in real life. Her ability to bridge design and construction gives clients clarity early, helps avoid costly missteps, and creates spaces that feel both beautiful and considered.",
+        "Jenny Matek is the creative director and client lead at AM Bathrooms + Projects, an award-winning interior designer with more than 20 years of experience across design, construction and renovation.",
+        "She founded the studio with Ante after seeing too many beautifully designed spaces compromised during construction. Design intent was lost through substitutions, rushed decisions and a lack of collaboration between designers and builders. Clients who had invested deeply in a vision were often left disappointed by a process that treated design and construction as separate responsibilities rather than one shared commitment.",
+        "What Jenny and Ante built at AM Bathrooms + Projects is the antidote to that. Jenny works alongside Ante from the very first conversation, so every design decision is made with a clear understanding of how it will actually be built, what it will cost, and how it will feel to live in. That alignment early means clients get honest advice before they're committed, fewer surprises mid-build, and a result that reflects what they originally fell in love with.",
+        "What she is most proud of is the experience that creates for clients. Not just a beautiful space, but a process where someone who genuinely cares is in their corner from concept to handover.",
       ],
     },
     {
@@ -177,7 +179,8 @@ function Profiles() {
       heading: "Meet Ante Matek",
       paragraphs: [
         "Ante Matek leads the build side of AM Bathrooms + Projects, bringing two decades of hands-on construction and project management experience to every renovation. His skill set sits where craft and coordination meet, running trades, sequencing work tightly, and protecting the quality of the finish from demolition through to handover.",
-        "Ante started the studio with Jenny because he kept seeing the same problem on site: a disconnect between the people designing a space and the people building it, which left clients absorbing the cost in time, money and stress. He wanted a model where design decisions and build decisions were made by the same team, in the same room.",
+        "Ante was passionate about starting the studio with Jenny because he kept seeing the same problem on site: a disconnect between the people designing a space and the people building it, which left clients absorbing the cost in time, money and stress. He wanted a model where design decisions and build decisions were made by the same team, in the same room.",
+        "Today, Ante works closely with Jenny to ensure every design is delivered as intended. From coordinating trades and managing quality through to solving challenges on site, his focus is on protecting both the design vision and the client experience. By planning projects collaboratively from the outset, he helps minimise surprises during construction and ensures every renovation is delivered to the standard clients were promised.",
         "What he is most proud of is the way that model now plays out in real homes. One accountable team, clear communication, fewer surprises, and a finished result that holds up to the way families actually live.",
       ],
     },
