@@ -39,6 +39,7 @@ function AboutPage() {
         <Hero />
         <Story />
         <Profiles />
+        <Recognition />
       </main>
       <Footer />
     </div>
