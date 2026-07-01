@@ -114,13 +114,13 @@ function Story() {
               AM Bathrooms + Projects was founded by Jenny and Ante Matek
               because they kept hearing the same story. A renovation that
               should have been exciting had become stressful, drawn out,
-              and full of surprises.
+              and full of disappointing surprises.
             </p>
             <p>
-              So they built a studio where the designer, the builder, and
-              the project manager all sit in the same room. Jenny leads
-              the design and client experience. Ante leads the build. And
-              around them is a tight team of trades, stylists, and
+              So they created a boutique design and build studio where design,
+              construction and project management work together from day one.
+              Jenny leads the design and client experience. Ante leads the build.
+              And around them is a tight team of trades, stylists, and
               coordinators who&rsquo;ve worked together for years.
             </p>
             <p>
