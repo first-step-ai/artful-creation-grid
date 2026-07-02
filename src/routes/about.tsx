@@ -257,6 +257,7 @@ function Recognition() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left column — Awards list */}
           <div>
+            <p className="eyebrow text-brass mb-6">Highlights Include:</p>
             <ul className="space-y-3 text-ivory/80 text-sm md:text-base leading-relaxed font-light list-disc pl-5 marker:text-brass">
               <li>HIA Australian Small Business Management Award Winner</li>
               <li>HIA NSW Renovated Kitchen of the Year Winner</li>
