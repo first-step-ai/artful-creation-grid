@@ -190,7 +190,7 @@ function Profiles() {
   return (
     <section
       ref={ref}
-      className="reveal pb-24 md:pb-40 px-6 md:px-12 lg:px-16"
+      className="reveal pb-16 md:pb-24 px-6 md:px-12 lg:px-16"
     >
       <div className="max-w-[1400px] mx-auto">
         <p className="eyebrow text-brass mb-8">Meet Jenny and Ante</p>
@@ -241,7 +241,7 @@ function Recognition() {
   return (
     <section
       ref={ref}
-      className="reveal py-24 md:py-40 px-6 md:px-12 lg:px-16"
+      className="reveal pt-16 md:pt-24 pb-24 md:pb-40 px-6 md:px-12 lg:px-16"
     >
       <div className="max-w-[1400px] mx-auto">
         {/* Header row */}
